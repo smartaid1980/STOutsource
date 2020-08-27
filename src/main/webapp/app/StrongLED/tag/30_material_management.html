@@ -1,0 +1,145 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        id="detail-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Materials_Management}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="material-list"
+              stk-entity-pk="mtl_id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 33%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Item_Number}</th>
+                  <th>{i18n_ServCloud_Item_Name}</th>
+                  <th>{i18n_ServCloud_Material_Types}</th>
+                  <th>{i18n_ServCloud_Specification}</th>
+                  <th>{i18n_ServCloud_Unit}</th>
+                  <th>{i18n_ServCloud_Remark}</th>
+                  <th>{i18n_ServCloud_Crafts}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="mtl_id"
+                      class="form-control"
+                      placeholder=""
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="mtl_name"
+                      class="form-control"
+                      placeholder=""
+                    />
+                  </td>
+                  <td>
+                    <select name="mtl_type" class="form-control">
+                      <option value=""></option>
+                      <option value="{i18n_ServCloud_Overall_Property}"
+                        >{i18n_ServCloud_Overall_Property}</option
+                      >
+                      <option value="{i18n_ServCloud_Wire}"
+                        >{i18n_ServCloud_Wire}</option
+                      >
+                      <option value="{i18n_ServCloud_Lamp_Beads}"
+                        >{i18n_ServCloud_Lamp_Beads}</option
+                      >
+                      <option value="{i18n_ServCloud_Structure}"
+                        >{i18n_ServCloud_Structure}</option
+                      >
+                      <option value="{i18n_ServCloud_Control_Method}"
+                        >{i18n_ServCloud_Control_Method}</option
+                      >
+                    </select>
+                  </td>
+                  <td>
+                    <!-- <input type="text" name="spec" class="form-control" placeholder="" /> -->
+                    <textarea
+                      name="spec"
+                      cols="30"
+                      rows="3"
+                      style="resize: none; padding: 5px 10px;"
+                    ></textarea>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="unit"
+                      class="form-control"
+                      placeholder=""
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="remark"
+                      class="form-control"
+                      placeholder=""
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="process"
+                      class="form-control"
+                      placeholder=""
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style></style>
+<script>
+  window.importPageScript()
+</script>

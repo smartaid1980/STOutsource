@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <welcome-file-list>
+        <welcom-file>login.html</welcom-file>
+    </welcome-file-list>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <listener>
+        <listener-class>com.servtech.servcloud.core.initializer.SysPropInitializer</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.servtech.servcloud.core.initializer.PlatformInitializer</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.servtech.servcloud.core.initializer.DatabaseInitializer</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.servtech.servcloud.core.initializer.LanguageInitializer</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.servtech.servcloud.core.initializer.MQTTInitializer</listener-class>
+    </listener>
+
+    <!-- 合約實作方式 [Http|Local|Intranet|Mock]-->
+    <context-param>
+        <param-name>license</param-name>
+        <param-value>Local</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>validate</param-name>
+        <param-value>false</param-value>
+    </context-param>
+
+    <!-- spring api 派送 -->
+    <servlet>
+        <servlet-name>rest-api</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rest-api</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- rest api 發生例外的最後一道防線 -->
+    <filter>
+        <filter-name>exceptionHandlerFilter</filter-name>
+        <filter-class>com.servtech.servcloud.core.filter.ExceptionHandlerFilter</filter-class>
+        <init-param>
+            <param-name>printStackTrace</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>exceptionHandlerFilter</filter-name>
+        <url-pattern>/api/*</url-pattern>
+    </filter-mapping>
+
+     <!--合約確認 -->
+    <!-- 目前模式有三種
+        value = 1 的話就是 全部頁面都導入 License 過期的頁面, 而且都不能算
+        value = 2 的話就是 可查舊報表, 可以看監控
+        value = 3 的話就是 可查舊報表, 不能看監控
+     -->
+    <filter>
+        <filter-name>licenseFilter</filter-name>
+        <filter-class>com.servtech.servcloud.core.filter.LicenseFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>licenseFilter</filter-name>
+        <url-pattern>/api/*</url-pattern>
+        <url-pattern>*.html</url-pattern>
+    </filter-mapping>
+
+    <!-- 以 UTF-8 編碼來讀封包 -->
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- 包裝 HttpServletRequest 讓 Body 可以多次讀取 -->
+    <filter>
+        <filter-name>requestWrapperFilter</filter-name>
+        <filter-class>com.servtech.servcloud.core.filter.RequestWrapperFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>requestWrapperFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+     <!-- 使用權限驗證 -->
+    <filter>
+        <filter-name>authFilter</filter-name>
+        <filter-class>com.servtech.servcloud.core.filter.AuthFilter</filter-class>
+        <init-param>
+            <param-name>stkey</param-name>
+            <param-value>9bb0b99adcf44e0ef05e13fc170450cb</param-value>
+        </init-param>
+        <init-param>
+            <param-name>excludePath</param-name>
+            <param-value>/index.html,/login.html,/validate.html,/api/user/login,/api/view/*,/pdf/*,/api/license/validate,/js/*,/css/*,/img/*,/fonts/*,/system_validate.html,/cpuId.txt,/ffg_jump.html,/api/storage/sender/registered</param-value>
+        </init-param>
+        <init-param>
+            <param-name>onlyShowApiLog</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>authFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>

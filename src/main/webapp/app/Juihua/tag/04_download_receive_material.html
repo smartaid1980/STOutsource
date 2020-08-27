@@ -1,0 +1,100 @@
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- UPLOAD ZONE WIDGET START -->
+    <article class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>採購單號輸入</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="form-group">
+                  <div class="col-md-10">
+                    <div class="icon-addon addon-md">
+                      <input
+                        id="order-id"
+                        type="text"
+                        placeholder="採購單編號"
+                        class="form-control"
+                      />
+                      <label
+                        for="orderId"
+                        class="glyphicon glyphicon-search"
+                        rel="tooltip"
+                        title="採購單編號"
+                      ></label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <footer>
+                <button id="order-query-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+    </article>
+    <!-- UPLOAD ZONE WIDGET END -->
+
+    <!-- NESTABLE LIST WIDGET START -->
+    <article class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div class="jarviswidget jarviswidget-color-darken" id="wid-id-1">
+        <header>
+          <span class="widget-icon"> <i class="fa fa-comments"></i> </span>
+          <h2>查詢結果</h2>
+        </header>
+
+        <!-- widget div -->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body">
+            <table id="download-table" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>收料單號 (點擊下載)</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+      </div>
+      <!-- end widget -->
+    </article>
+    <!-- NESTABLE LIST WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+
+<script>
+  window.importPageScript()
+</script>

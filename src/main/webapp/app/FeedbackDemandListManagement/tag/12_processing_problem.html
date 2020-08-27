@@ -1,0 +1,569 @@
+<section id="widget-grid">
+  <a
+    href="javascript: void(0)"
+    id="leave-btn"
+    class="btn btn-default hide"
+    style="margin-bottom: 10px;"
+    ><i class="fa fa-mail-reply"></i>&#xA0; {i18n_ServCloud_Back_To_Demand_List}
+  </a>
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START (加工問題) -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bars"></i> </span>
+          <h2>{i18n_ServCloud_Processing_Problem}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form id="questions-form" class="smart-form">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <label id="qu_id">
+                      <span>{i18n_ServCloud_Processing_Problem_Number}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <label id="form_id">
+                      <span
+                        >{i18n_ServCloud_Associated_Demand_Order_Number}</span
+                      >
+                      | <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <label id="create_time">
+                      <span>{i18n_ServCloud_Problem_Initiation_Time}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <label id="create_by">
+                      <span>{i18n_ServCloud_Problem_Initiation_By}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <label id="assign_to">
+                      <span>{i18n_ServCloud_Currently_Assigned_To}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section
+                    class="col col-xs-12 col-sm-6 col-md-4 col-lg-4 hide"
+                  >
+                    <label id="prev_assign_to">
+                      <span>{i18n_ServCloud_Last_Assigned_Group}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <label id="modify_time">
+                      <span>{i18n_ServCloud_Modify_Time}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <label id="class">
+                      <span>{i18n_ServCloud_Question_Level}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <label id="status">
+                      <span>{i18n_ServCloud_Question_Status}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label id="title">
+                      <span>{i18n_ServCloud_Question_Title}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label id="description">
+                      <span>{i18n_ServCloud_Question_Description}</span> |
+                      <span class="value">---</span>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer class="hide">
+                <div id="change-assign-status" class="pull-left">
+                  <button id="assigned-to" class="btn btn-primary">
+                    {i18n_ServCloud_Assigned_To}：
+                  </button>
+                  <select id="group-select" class="form-control"></select>
+                  <button id="change-status" class="btn btn-primary">
+                    {i18n_ServCloud_Change_Status_To}：
+                  </button>
+                  <select id="status-select" class="form-control"></select>
+                </div>
+                <button id="mark-as-confidential" class="btn btn-warning hide">
+                  {i18n_ServCloud_Mark_As_Confidential}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START (問題回覆紀錄) -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="problem-response-record-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-history"></i> </span>
+          <h2>{i18n_ServCloud_Problem_Response_Record}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="problem-response-record"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 60%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Record_Time}</th>
+                  <th>{i18n_ServCloud_Record_By}</th>
+                  <th>{i18n_ServCloud_Record_Content}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START (檔案附件) -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="attachment-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-paperclip"></i> </span>
+          <h2>{i18n_ServCloud_File_Attachment}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="attachment"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Attached_Name}</th>
+                  <th>{i18n_ServCloud_File_Path}</th>
+                  <th>{i18n_ServCloud_Processing_Problem_Number}</th>
+                  <th>{i18n_ServCloud_Upload_Time}</th>
+                  <th>{i18n_ServCloud_Upload_By}</th>
+                  <th>{i18n_ServCloud_Download_Record}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START (報價附件) -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 hide">
+      <div
+        id="quote-attachment-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-paperclip"></i> </span>
+          <h2>{i18n_ServCloud_Quote_Attachment}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="quote-attachment"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Attached_Name}</th>
+                  <th>{i18n_ServCloud_File_Path}</th>
+                  <th>{i18n_ServCloud_Processing_Problem_Number}</th>
+                  <th>{i18n_ServCloud_Upload_Time}</th>
+                  <th>{i18n_ServCloud_Upload_By}</th>
+                  <th>{i18n_ServCloud_Download_Record}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START (新增問題回覆) -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-comments"></i> </span>
+          <h2>{i18n_ServCloud_Create_Question_Reply}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form
+              id="problem-response"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <table width="100%">
+                  <tr>
+                    <th>{i18n_ServCloud_Record_Content}</th>
+                    <td>
+                      <textarea
+                        id="reply-content"
+                        class="form-control"
+                        rows="5"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>{i18n_ServCloud_Upload_File}</th>
+                    <td>
+                      <div
+                        style="display: flex; justify-content: space-between;"
+                      >
+                        <div id="upload-general-file" style="flex: 0 0 49.5%;">
+                          <div class="dz-message" data-dz-message>
+                            <span class="text-center">
+                              <span
+                                class="font-lg visible-xs-block visible-sm-block visible-lg-block"
+                                style="margin-top: 20.5%;"
+                              >
+                                <span class="font-lg" style="color: #3276b1;"
+                                  >{i18n_ServCloud_General_File}</span
+                                >
+                                <span class="font-lg"
+                                  >{i18n_ServCloud_Drag_File_To_Here}</span
+                                >
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                        <div
+                          id="upload-quotation-file"
+                          style="flex: 0 0 49.5%;"
+                        >
+                          <div class="dz-message" data-dz-message>
+                            <span class="text-center">
+                              <span
+                                class="font-lg visible-xs-block visible-sm-block visible-lg-block"
+                                style="margin-top: 20.5%;"
+                              >
+                                <span class="font-lg" style="color: #b94a48;"
+                                  >{i18n_ServCloud_Quotation_File}</span
+                                >
+                                <span class="font-lg"
+                                  >{i18n_ServCloud_Drag_File_To_Here}</span
+                                >
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+              <footer>
+                <button id="problem-response-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Create_Reply}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START (問題處理紀錄) -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="problem-processing-record-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-history"></i> </span>
+          <h2>{i18n_ServCloud_Problem_Processing_Record}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="problem-processing-record"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 60%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Record_Date}</th>
+                  <th>{i18n_ServCloud_User_Name}</th>
+                  <th>{i18n_ServCloud_Action}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- MODAL END -->
+    <div
+      id="download-history-modal"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">{i18n_ServCloud_Download_Record}</h4>
+          </div>
+          <div class="modal-body">
+            <!-- NEW WIDGET START -->
+            <div
+              id="download-history-widget"
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-history"></i> </span>
+                <h2>{i18n_ServCloud_Download_Record}</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding">
+                  <table
+                    id="download-history"
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>{i18n_ServCloud_File_Name}</th>
+                        <th>{i18n_ServCloud_Download_Time}</th>
+                        <th>{i18n_ServCloud_Download_By}</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- NEW WIDGET END -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL END -->
+    <button id="print" class="hide"></button>
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #header {
+    z-index: 1005 !important;
+  }
+
+  #left-panel {
+    z-index: 1004 !important;
+  }
+
+  #ribbon,
+  .page-footer {
+    z-index: 1003 !important;
+  }
+
+  .smart-form footer .pull-left > select,
+  .smart-form footer .pull-left > button {
+    float: left !important;
+  }
+
+  .smart-form footer .pull-left > select {
+    height: 29px;
+    margin: 10px 20px 0 5px;
+    padding: 0 12px;
+    width: unset;
+  }
+
+  .smart-form table th {
+    width: 10%;
+    vertical-align: text-top;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 15px;
+  }
+
+  .smart-form table td {
+    width: 90%;
+    padding: 0 10px 10px;
+  }
+
+  #reply-content {
+    resize: none;
+    padding: 5px 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #upload-file-type {
+    width: 175px;
+  }
+
+  .dz-preview {
+    margin: 16px !important;
+  }
+
+  #attachment a,
+  #quote-attachment a {
+    text-decoration: underline;
+  }
+
+  .btn[disabled] {
+    cursor: not-allowed !important;
+  }
+
+  #problem-response-record-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  #attachment-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  #quote-attachment-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  #problem-processing-record-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  #download-history-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

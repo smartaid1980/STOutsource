@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -cp .\*;..\..\..\WEB-INF\lib\*  com.servtech.UploadMainHuangliang %1 %2 %3 %4

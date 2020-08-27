@@ -1,0 +1,444 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        id="query-condition-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form
+              id="query-condition-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label st-required">進貨日期起始</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="startDate"
+                          id="start-date"
+                          class="required"
+                        />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label st-required">進貨日期結束</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="endDate"
+                          id="end-date"
+                          class="required"
+                        />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">刀具編碼</label>
+                      <label class="input">
+                        <!-- <select id="tool-id" name="tool_id"></select> -->
+                        <input
+                          type="text"
+                          id="tool-id"
+                          name="tool_id"
+                          placeholder="輸入至少三碼以顯示篩選結果"
+                        />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">刀具廠商</label>
+                      <label class="select">
+                        <select id="tsup-id" name="tsup_id"></select>
+                        <i></i>
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">刀具類型</label>
+                      <label class="select">
+                        <select id="tool-type" name="tool_type"></select>
+                        <i></i>
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">刀具規格</label>
+                      <label class="input">
+                        <select id="tool-spec" name="tool_spec">
+                          <option value=""></option>
+                        </select>
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-3 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">成本分類</label>
+                      <label class="select">
+                        <select id="type-for" name="type_for" multiple></select>
+                        <i></i>
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+                <button id="clear-btn" class="btn btn-success">
+                  清除條件
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+      <!-- detail DATATABLE -->
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>刀具進貨紀錄</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="query-result-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 6%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th style="width: 5%;"></th>
+                </tr>
+                <tr>
+                  <th>進貨日期</th>
+                  <th>成本分類</th>
+                  <th>刀具編碼</th>
+                  <th>廠商名稱</th>
+                  <th>刀具類型</th>
+                  <th>刀具規格</th>
+                  <th>進貨數量</th>
+                  <th>進貨單價</th>
+                  <th>總金額</th>
+                  <th>進貨備註</th>
+                  <th>入庫儲位</th>
+                  <th>修改</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+      <div
+        class="modal fade"
+        id="edit-record-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                ×
+              </button>
+              <h4 class="modal-title">刀具進貨</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <form
+                  id="edit-record-form"
+                  class="smart-form"
+                  novalidate="novalidate"
+                >
+                  <fieldset>
+                    <div class="row">
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">進貨日期</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            name="buy_time"
+                            data-insert
+                            class="form-control"
+                            placeholder="進貨日期"
+                          />
+                        </label>
+                      </section>
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">廠商</label>
+                        <label class="input">
+                          <select
+                            name="tsup_id"
+                            class="form-control"
+                            data-insert
+                          ></select>
+                        </label>
+                      </section>
+                    </div>
+                    <div class="row">
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">刀具編碼</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            name="tool_id"
+                            data-insert
+                            class="form-control"
+                            placeholder="刀具編碼"
+                          />
+                        </label>
+                      </section>
+                    </div>
+                    <div class="row">
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">刀具類型</label>
+                        <label class="input">
+                          <select
+                            name="tool_type"
+                            class="form-control"
+                          ></select>
+                        </label>
+                      </section>
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">刀具規格</label>
+                        <label class="input">
+                          <select
+                            name="tool_spec"
+                            class="form-control"
+                          ></select>
+                        </label>
+                      </section>
+                    </div>
+                    <div class="row">
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">單價</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            name="unit_price"
+                            data-insert
+                            class="form-control"
+                            placeholder="單價"
+                          />
+                        </label>
+                      </section>
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">數量</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            name="buy_qty"
+                            data-insert
+                            class="form-control"
+                            placeholder="數量"
+                          />
+                        </label>
+                      </section>
+                    </div>
+                    <div class="row">
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">總金額</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            name="total_cost"
+                            data-insert
+                            class="form-control"
+                            placeholder="總金額"
+                          />
+                        </label>
+                      </section>
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">入庫儲位</label>
+                        <label class="input">
+                          <div class="row">
+                            <div class="col col-lg-4">
+                              <span class="radio">
+                                <label>
+                                  <input
+                                    type="radio"
+                                    class="radiobox"
+                                    value="new"
+                                    name="tool_location"
+                                  />
+                                  <span> 預設新刀儲位</span>
+                                </label>
+                              </span>
+                            </div>
+                            <div class="col col-lg-4">
+                              <input
+                                class="form-control insert"
+                                name="new_tool_location"
+                                type="text"
+                                readonly
+                              />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-lg-4">
+                              <span class="radio">
+                                <label>
+                                  <input
+                                    type="radio"
+                                    class="radiobox"
+                                    value="backup"
+                                    name="tool_location"
+                                  />
+                                  <span> 備用刀具室</span>
+                                </label>
+                              </span>
+                            </div>
+                            <div class="col col-lg-4">
+                              <select
+                                class="form-control insert"
+                                name="backup_tool_location"
+                              ></select>
+                            </div>
+                          </div>
+                        </label>
+                      </section>
+                    </div>
+                    <div class="row">
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                      >
+                        <label class="label">備註</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            name="remark"
+                            data-insert
+                            class="form-control"
+                            placeholder="備註"
+                          />
+                        </label>
+                      </section>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="save-record">
+                儲存
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+<style>
+  #search-info {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #search-info > span {
+    margin-right: 10px;
+  }
+  #edit-record-form span.radio {
+    padding-left: 0px;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,81 @@
+<!-- <ul id="breadcrumb_table" class="breadcrumbDark"  collapse="#collapse_table">test</ul> -->
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span>
+        > 老舊機台監控 > 機台細節
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<div class="row" id="monitor-panel">
+  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+    <div class="block">
+      <div class="icon fa fa-4x fa-gear"></div>
+      <p>運行狀態</p>
+      <h2 class="txt-yellow">閒置</h2>
+      <div class="comment">加工/閒置/警報</div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+    <div class="block">
+      <p>潤滑油蓋是否被打開</p>
+      <h2 class="txt-green">ON</h2>
+      <div class="comment">comment</div>
+    </div>
+  </div> -->
+</div>
+<style>
+  #monitor-panel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.12),
+      0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 7%;
+  }
+
+  .block p {
+    color: #444;
+  }
+
+  .block h2 {
+    font-weight: 500;
+  }
+
+  .block .icon {
+    box-shadow: 0 12px 20px -10px rgba(255, 152, 0, 0.28),
+      0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(255, 152, 0, 0.2);
+    margin: -20px 10px 0px;
+    flex-basis: auto;
+    background-color: orange;
+    color: white;
+    float: left;
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px;
+    min-width: 72px;
+  }
+
+  .comment {
+    border-top: 1px solid #ddd;
+    text-align: left;
+    padding-top: 5px;
+    color: #bbb;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,91 @@
+package servtech;
+
+option java_package = "com.servtech.servcloud.core.mqtt";
+option java_outer_classname = "PBLean";
+
+message Signal{
+	message Inputs{
+		optional int32 P_NUMBER = 1;
+		optional int32 P_COUNT = 2;
+		optional string P_PARAM = 3;
+		optional string P_STRING = 4;
+		optional string P_VALUE = 5;
+	}
+	
+	required string id = 1;
+	optional Inputs inputs = 2;
+	optional string filters = 3;
+}
+
+message Collect{
+	required int32 waitMs = 1;
+	required int32 count = 2;
+}
+
+message Command{
+	message Item{
+		required Signal signal = 1;
+		required Collect collect = 2;
+	}
+	
+	required string name = 1;
+	required string cycleType = 2;
+	required int32 cycleValue = 3;
+	required int64 timeout = 4;
+	repeated Item items = 5;
+}
+
+message LongArray{
+	repeated int64 array = 1;
+}
+
+message DoubleArray{
+	repeated double array = 1;
+}
+
+message StringArray{
+	repeated string array = 1;
+}
+
+message SignalLongValue{
+	required Signal signal = 1;
+	repeated LongArray values = 2;
+}
+
+message SignalDoubleValue{
+	required Signal signal = 1;
+	repeated DoubleArray values = 2;
+}
+
+message SignalStringValue{
+	required Signal signal = 1;
+	repeated StringArray values = 2;
+}
+
+message Result{
+	repeated SignalLongValue longValues = 1;
+	repeated SignalDoubleValue doubleVlaues = 2;
+	repeated SignalStringValue stringValues = 3;
+}
+
+message Replies{
+	required string type = 1;
+	required string reply = 2;
+}
+
+message PBLeanMsg{
+	required string version = 1;
+	required string from = 2; //平台ID
+	required string to = 3; //BOX ID
+	required string type = 4;
+	
+	repeated Replies replies = 5;
+	
+	optional string machine = 6;
+	optional Result result = 7;
+	optional Command command = 8;
+}
+
+message Msg {
+	required PBLeanMsg pbLeanMsg = 1;
+}

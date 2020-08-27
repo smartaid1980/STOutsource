@@ -1,0 +1,17 @@
+<Register>
+	<Device>
+		<ID>Machine04</ID>
+		<Driver>
+			<File>.\CustomDrivers\FocasLib.dll</File>
+			<AssemblyName>FocasLib.FOCASDriver</AssemblyName>
+			<Parameters>
+				<Parameter name="IP" value="192.168.1.1"/>
+				<Parameter name="PORT" value="8193"/>
+				<Parameter name="SCAN" value ="true"/>
+			</Parameters>
+		</Driver>
+	</Device>
+	<Groups>
+		<Group>CNC</Group>
+	</Groups>
+</Register>

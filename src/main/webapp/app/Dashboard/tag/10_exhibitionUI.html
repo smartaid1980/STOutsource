@@ -1,0 +1,739 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div id="widget-grid-row" class="row" style="margin-top: 42px;">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-togglebutton="false"
+      >
+        <header hidden>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>Widget Title</h2>
+        </header>
+        <div id="frame">
+          <div class="widget-body no-padding">
+            <!-- fullscreen start -->
+            <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <img
+                src="img/logo/Servtech-horizontal-new.png"
+                alt=""
+                style="width: 250px; margin: 7px 20px 0px;"
+              />
+              <button
+                class="btn btn-primary pull-right"
+                id="fullScreen"
+                style="margin: 5px 13px 10px 0;"
+              >
+                <!-- 全螢幕 &nbsp; -->
+                <span style="font-size: 1em;"
+                  ><i class="fa fa-expand"></i
+                ></span>
+              </button>
+              <button
+                class="btn btn-primary pull-right"
+                id="changeStyle"
+                style="margin: 5px 13px 10px 0;"
+              >
+                切換樣式
+              </button>
+            </article>
+            <!-- fullscreen end -->
+            <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <!-- all devices staus start -->
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header hidden>
+                    <span class="widget-icon">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </span>
+                    <h2>狀態</h2>
+                  </header>
+                  <div id="tableFrame">
+                    <div class="widget-body no-padding">
+                      <div
+                        id="machineLigth"
+                        style="float: right; padding-bottom: 5px;"
+                      >
+                        <span>顯示燈號:</span>&nbsp;
+                        <span class="btn machine-light"></span>&nbsp;
+                        <span>離線</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="btn machine-light-online"></span>&nbsp;
+                        <span>加工</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="btn machine-light-idle"></span>&nbsp;
+                        <span>閒置</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="btn machine-light-alarm"></span>&nbsp;
+                        <span>警報</span>
+                      </div>
+                      <div class="row">
+                        <section
+                          class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                        >
+                          <table
+                            id="plantAreaTable"
+                            class="table-bordered"
+                            width="100%"
+                            style="table-layout: fixed;"
+                          >
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody></tbody>
+                          </table>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- all devices staus end -->
+              <!-- device staus start -->
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </span>
+                    <h2>狀態</h2>
+                  </header>
+                  <div>
+                    <div class="widget-body no-padding">
+                      <div
+                        id="device-status-pie-chart"
+                        class="chart"
+                        style="margin: 4px auto; height: 247px; width: 247px;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- device staus end -->
+              <!-- device card start -->
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </span>
+                    <h2>狀態</h2>
+                  </header>
+                  <div>
+                    <div class="widget-body">
+                      <div id="machine-card-list">
+                        <div
+                          class="monitor-overall clear"
+                          style="display: table; margin: 0 auto;"
+                        >
+                          <div class="item card" style="margin: 0 5px;">
+                            <div class="header">
+                              <div class="title"></div>
+                              <div class="status"></div>
+                            </div>
+                            <div class="content">
+                              <div class="tab-chart row">
+                                <div class="col col-xs-6 tab-panel txt-speed">
+                                  <div class="title">轉速</div>
+                                  <div
+                                    class="easy-pie-chart txt-color-blue easyPieChart"
+                                    data-pie-size="60"
+                                    data-rotate="0"
+                                    style="
+                                      height: 60px;
+                                      width: 60px;
+                                      padding: 0px;
+                                    "
+                                  >
+                                    <span class="txt-color-blue txt-percent"
+                                      >0</span
+                                    >
+                                  </div>
+                                </div>
+                                <div class="col col-xs-6 tab-panel txt-feed">
+                                  <div class="title">進給率</div>
+                                  <div
+                                    class="easy-pie-chart txt-color-orange easyPieChart"
+                                    data-pie-size="60"
+                                    data-rotate="0"
+                                    style="
+                                      height: 60px;
+                                      width: 60px;
+                                      padding: 0px;
+                                    "
+                                  >
+                                    <span class="txt-color-orange txt-percent"
+                                      >0</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-text">
+                                <div class="tab-panel txt-program">
+                                  <div class="title">加工程式</div>
+                                  <div class="value">B</div>
+                                </div>
+                                <div class="tab-panel txt-quantity">
+                                  <div class="title">產量</div>
+                                  <div class="value">0</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item card" style="margin: 0 5px;">
+                            <div class="header">
+                              <div class="title"></div>
+                              <div class="status"></div>
+                            </div>
+                            <div class="content">
+                              <div class="tab-chart row">
+                                <div class="col col-xs-6 tab-panel txt-speed">
+                                  <div class="title">轉速</div>
+                                  <div
+                                    class="easy-pie-chart txt-color-blue easyPieChart"
+                                    data-pie-size="60"
+                                    data-rotate="0"
+                                    style="
+                                      height: 60px;
+                                      width: 60px;
+                                      padding: 0px;
+                                    "
+                                  >
+                                    <span class="txt-color-blue txt-percent"
+                                      >0</span
+                                    >
+                                  </div>
+                                </div>
+                                <div class="col col-xs-6 tab-panel txt-feed">
+                                  <div class="title">進給率</div>
+                                  <div
+                                    class="easy-pie-chart txt-color-orange easyPieChart"
+                                    data-pie-size="60"
+                                    data-rotate="0"
+                                    style="
+                                      height: 60px;
+                                      width: 60px;
+                                      padding: 0px;
+                                    "
+                                  >
+                                    <span class="txt-color-orange txt-percent"
+                                      >0</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-text">
+                                <div class="tab-panel txt-program">
+                                  <div class="title">加工程式</div>
+                                  <div class="value">B</div>
+                                </div>
+                                <div class="tab-panel txt-quantity">
+                                  <div class="title">產量</div>
+                                  <div class="value">0</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <link
+                        rel="stylesheet"
+                        type="text/css"
+                        href="./app/EquipMonitor/css/monitor.css"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- device card end -->
+            </article>
+            <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <!-- feed start -->
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </span>
+                    <h2>進給狀態圖</h2>
+                  </header>
+                  <div>
+                    <div class="row">
+                      <section style="float: right;">
+                        <div
+                          name="machineLigth"
+                          style="float: right; padding-right: 15px;"
+                        >
+                          <span>顯示燈號:</span>&nbsp;
+                          <span class="btn" style="background: #2e8b57;"></span
+                          >&nbsp; <span>正常</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <span class="btn" style="background: #ffa500;"></span
+                          >&nbsp; <span>閒置</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <span class="btn" style="background: #037ca9;"></span
+                          >&nbsp;
+                          <span>超出門檻值</span>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="widget-body no-padding">
+                      <div
+                        id="feed-bar-chart1"
+                        class="chart"
+                        style="
+                          width: 98%;
+                          height: 75px;
+                          cursor: pointer;
+                          margin: 15px 5px 10px 10px;
+                        "
+                      ></div>
+                      <div
+                        id="feed-bar-chart2"
+                        class="chart"
+                        style="
+                          width: 98%;
+                          height: 75px;
+                          cursor: pointer;
+                          margin: 10px 5px 10px 10px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- feed end -->
+              <!-- status history start -->
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </span>
+                    <h2>機台狀態歷史堆疊圖</h2>
+                  </header>
+                  <div>
+                    <div class="widget-body no-padding">
+                      <div
+                        id="status-bar-chart1"
+                        class="chart"
+                        style="
+                          width: 98%;
+                          height: 75px;
+                          cursor: pointer;
+                          margin: 15px 5px 10px 10px;
+                        "
+                      ></div>
+                      <div
+                        id="status-bar-chart2"
+                        class="chart"
+                        style="
+                          width: 98%;
+                          height: 75px;
+                          cursor: pointer;
+                          margin: 10px 5px 10px 10px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- status history end -->
+            </article>
+            <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <!-- alarm start -->
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </span>
+                    <h2>警報履歷</h2>
+                  </header>
+                  <div>
+                    <div class="widget-body no-padding">
+                      <div
+                        id="alarm-bar-chart"
+                        class="chart"
+                        style="
+                          width: 98%;
+                          height: 179px;
+                          cursor: pointer;
+                          margin-top: 5px;
+                          margin-bottom: 5px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- alarm end -->
+              <!-- status history start -->
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-bar-chart-o"></i>
+                    </span>
+                    <h2>稼動率</h2>
+                  </header>
+                  <div>
+                    <div class="widget-body no-padding">
+                      <div
+                        id="utilization-bar-chart"
+                        class="chart"
+                        style="
+                          width: 98%;
+                          height: 140px;
+                          cursor: pointer;
+                          margin-top: 5px;
+                          margin-bottom: 5px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- status history end -->
+            </article>
+            <!-- realtime demo start -->
+            <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                  style="margin-bottom: 12px;"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-code"></i>
+                    </span>
+                    <h2>執行程式</h2>
+                  </header>
+                  <table class="table table-bordered">
+                    <tr>
+                      <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        程式名稱
+                      </td>
+                      <td
+                        id="G_PRGM"
+                        class="col-xs-8 col-sm-8 col-md-8 col-lg-8"
+                      ></td>
+                    </tr>
+                    <tr>
+                      <td>行號</td>
+                      <td id="G_SEQN"></td>
+                    </tr>
+                    <tr>
+                      <td>執行單節</td>
+                      <td id="G_EXEP"></td>
+                    </tr>
+                    <tr>
+                      <td>轉速</td>
+                      <td id="G_speed"></td>
+                    </tr>
+                    <tr>
+                      <td>進給率</td>
+                      <td id="G_feed"></td>
+                    </tr>
+                    <!-- <tr>
+                            <td>產量</td>
+                            <td id="G_quantity"></td>
+                          </tr> -->
+                  </table>
+                </div>
+                <!-- <div class="jarviswidget jarviswidget-color-darken no-margin" data-widget-togglebutton="false" data-widget-fullscreenbutton="false">
+                    <header>
+                      <span class="widget-icon"> <i class="fa fa-bolt"></i> </span>
+                      <h2>加工時間統計</h2>
+                    </header>
+                    <table class='table table-bordered no-margin'>
+                      <tr>
+                        <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">通電時間</td>
+                        <td id="G_ELCT" class="col-xs-8 col-sm-8 col-md-8 col-lg-8"></td>
+                      </tr>
+                      <tr>
+                        <td>切削時間</td>
+                        <td id="G_CUTT"></td>
+                      </tr>
+                      <tr>
+                        <td>循環時間</td>
+                        <td id="G_CYCT"></td>
+                      </tr>
+                      <tr>
+                        <td>運轉時間</td>
+                        <td id="G_OPRT"></td>
+                      </tr>
+                    </table>
+                  </div> -->
+              </article>
+              <article
+                class="col col-xs-12 col-sm-12 col-md-12 col-lg-6"
+                id="vedio-articale"
+              >
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-video-camera"></i>
+                    </span>
+                    <h2>Factory</h2>
+                  </header>
+                  <div>
+                    <div
+                      class="widget-body no-padding"
+                      style="margin-bottom: -5px; overflow: hidden;"
+                    >
+                      <video width="103%" autoplay loop>
+                        <source
+                          src="app/EquipMonitor/video/demo.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                <div
+                  class="jarviswidget jarviswidget-color-darken no-margin"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-crosshairs"></i>
+                    </span>
+                    <h2>
+                      機械座標(
+                      <span id="G_POSM_G_PSUT" class="headerSpan"></span> )
+                    </h2>
+                  </header>
+                  <table
+                    id="G_POSM"
+                    class="table table-bordered"
+                    tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                  ></table>
+                </div>
+              </article>
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                <div
+                  class="jarviswidget jarviswidget-color-darken no-margin"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-crosshairs"></i>
+                    </span>
+                    <h2>
+                      剩餘座標(
+                      <span id="G_POSD_G_PSUT" class="headerSpan"></span> )
+                    </h2>
+                  </header>
+                  <table
+                    id="G_POSD"
+                    class="table table-bordered"
+                    tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                  ></table>
+                </div>
+              </article>
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                <div
+                  class="jarviswidget jarviswidget-color-darken no-margin"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-crosshairs"></i>
+                    </span>
+                    <h2>
+                      絕對座標(
+                      <span id="G_POSA_G_PSUT" class="headerSpan"></span> )
+                    </h2>
+                  </header>
+                  <table
+                    id="G_POSA"
+                    class="table table-bordered"
+                    tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                  ></table>
+                </div>
+              </article>
+              <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                <div
+                  class="jarviswidget jarviswidget-color-darken no-margin"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-crosshairs"></i>
+                    </span>
+                    <h2>
+                      相對座標(
+                      <span id="G_POSR_G_PSUT" class="headerSpan"></span> )
+                    </h2>
+                  </header>
+                  <table
+                    id="G_POSR"
+                    class="table table-bordered"
+                    tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                  ></table>
+                </div>
+              </article>
+            </article>
+            <!-- realtime demo end -->
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #frame,
+  #tableFrame {
+    border: 0px;
+  }
+
+  #plantAreaTable td,
+  #plantAreaTable th {
+    height: 35px;
+    text-align: center;
+  }
+
+  #plantAreaTable th {
+    background-color: #f3f3f3;
+  }
+
+  .machine-light {
+    background-color: #d3d3d3;
+  }
+
+  .machine-light-online {
+    background-color: #2e8b57;
+  }
+
+  .machine-light-idle {
+    background-color: #ffa500;
+  }
+
+  .machine-light-alarm {
+    background-color: #a90329;
+  }
+
+  video::-webkit-media-controls {
+    display: none;
+  }
+
+  :-webkit-full-screen video {
+    width: 103%;
+  }
+
+  @media screen and (min-width: 1919px) {
+    video {
+      width: 105%;
+    }
+  }
+
+  .blueStyle,
+  .smart-style-5 {
+    background-color: #2a58d2 !important;
+  }
+
+  #frame span,
+  #frame h2,
+  #frame .title,
+  #frame .value,
+  #frame table,
+  .tickLabel {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .tab-text .tab-panel .title {
+    width: 90px !important;
+  }
+
+  .tab-text .tab-panel .value {
+    width: 70px !important;
+  }
+
+  .monitor-overall .card {
+    height: 229px;
+    width: 196px;
+  }
+
+  .card {
+    margin-bottom: 0px !important;
+  }
+
+  .headerSpan {
+    font-size: 1em !important;
+  }
+
+  @-moz-document url-prefix() {
+    #device-status-pie-chart {
+      width: 243px !important;
+      height: 243px !important;
+    }
+    .monitor-overall {
+      margin: -2px auto !important;
+    }
+    #widget-grid-row {
+      margin-top: 0px !important;
+    }
+    #frame > .widget-body {
+      margin-top: 2px;
+    }
+    #vedio-articale {
+      padding-bottom: 38px !important;
+    }
+    video {
+      width: 102%;
+    }
+    :-moz-full-screen #vedio-articale {
+      padding-bottom: 0px !important;
+    }
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

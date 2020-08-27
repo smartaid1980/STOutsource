@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "HuangLiangCostingCenter",
+    "name": "成本計算中心",
+    "type": 1,
+    "description": "成本計算中心",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_cnc_cost_count",
+      "name": "CNC成本計算"
+    }
+  ],
+  "tags": ["20140918000999"]
+}

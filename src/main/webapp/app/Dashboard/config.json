@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "Dashboard",
+    "name": "i18n_ServCloud_RotateDashboard",
+    "type": 1,
+    "description": "Dashboard",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_dashboard",
+      "name": "i18n_ServCloud_RotateDashboard"
+    }
+  ],
+  "tags": ["20140918000999"]
+}

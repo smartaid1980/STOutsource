@@ -1,0 +1,170 @@
+	zh_tw	zh	en
+i18n_ServCloud_App_List	App 清單	App 清单	App list
+
+# 更改密碼
+i18n_ServCloud_Change_Pwd	更改密碼	更改密码	Change password
+i18n_ServCloud_Old_Pwd	舊密碼	旧密码	Old password
+i18n_ServCloud_New_Pwd	新密碼	新密码	New password
+i18n_ServCloud_Confirm_Pwd	確認密碼	确认密码	Confirm password
+i18n_ServCloud_Pwd_Error	密碼有誤	密码有误	Password incorrect
+i18n_ServCloud_Pwd_Different	密碼不同	密码不同	Password different
+i18n_ServCloud_Submit	送出	送出	Submit
+i18n_ServCloud_Close	關閉	关闭	Close
+
+# 合約標籤
+i18n_ServCloud_License	合約	合约	license
+i18n_ServCloud_License_Expired	合約過期 	合约过期 	License expired 
+i18n_ServCloud_License_Rest	距離合約到期僅剩 	距离合约到期仅剩 	License have 
+i18n_ServCloud_License_Have	距離合約到期尚有 	距离合约到期尚有 	License have 
+i18n_ServCloud_Day	 天！ 	 天！ 	 days left!
+i18n_ServCloud_Day_Over	 天！ 	 天！ 	 days!
+
+#佈景主題
+i18n_ServCloud_Theme	佈景主題	布景主题	Theme
+i18n_ServCloud_Style2	淺色	浅色	Light
+i18n_ServCloud_Style5	深色	深色	Dark
+
+# 登入時間
+i18n_ServCloud_Login_Tip	登入時間: 	登入时间: 	Login time: 
+
+# curdtable
+i18n_ServCloud_Data_Set	資料集	资料集	Dataset
+i18n_ServCloud_Delete_title	刪除資料	删除资料	Delete data
+i18n_ServCloud_Sure_Delete_Data	 確定刪除所選取的項目？	 确定删除所选取的项目？	 Are you sure to delete the selected items?
+i18n_ServCloud_Yes_Delete	是	是	Yes
+i18n_ServCloud_No_Delete	否	否	No
+i18n_ServCloud_StdCrud_Foreign_Key	目前有其他資料引用，無法刪除，請先刪除引用的資料	目前有其他资料引用，无法删除，请先删除引用的资料	There are currently other references and cannot be deleted. Please delete the referenced information first.
+
+# reporttable
+i18n_ServCloud_No_Data	無資料	无资料	No Data
+i18n_ServCloud_Filter	過濾	过滤	Filter
+i18n_ServCloud_Excel	匯出	汇出	Export
+
+# KPI四表
+i18n_ServCloud_Work_Efficiency	作業效率	作业效率	Work Efficiency
+i18n_ServCloud_Utilization_Efficiency	稼動(有效率)	稼动(有效率)	Utilization (efficiency)
+i18n_ServCloud_Yield_Rate	良率	良率	Yield Rate
+i18n_ServCloud_Yield_Target	良率目標	良率目标	Yield Target
+i18n_ServCloud_Production_Efficiency_Target	生產效率目標	生产效率目标	Production Efficiency Target
+i18n_ServCloud_Labor_Downtime	無效人時	无效人时	Labor Downtime
+i18n_ServCloud_Changeover_Time	換線時間	换线时间	Changeover Time
+i18n_ServCloud_date	日期	日期	Date
+i18n_ServCloud_total	總計	总计	Total
+
+
+# production headers
+i18n_ServCloud_Total_Standarf_Working_Hours	總標工	总标工	Total Standard Working Hours
+i18n_ServCloud_Invested_Man_Hour	投入人時	投入人时	Invested Man Hour
+i18n_ServCloud_Total_Downtime	總無效	总无效	Total Downtime
+i18n_ServCloud_Total_Attendance	總出勤	总出勤	Total Attendance
+i18n_ServCloud_Quarter	季	季	Quarter
+i18n_ServCloud_Month	月	月	Month
+i18n_ServCloud_Week	週	周	Week
+i18n_ServCloud_Date	日	日	Date
+
+#invalid headers
+i18n_ServCloud_Downtime_Code	無效代碼	无效代码	Downtime Code
+i18n_ServCloud_Downtime_Description	無效說明	无效说明	Downtime Description
+i18n_ServCloud_Downtime	無效工時	无效工时	Downtime
+i18n_ServCloud_Downtime_Percentage	無效比例	无效比例	DownTime Percentage
+i18n_ServCloud_Cumulative_Proportion	累計比例	累计比例	Cumulative Proportion
+i18n_ServCloud_Changeover_Preparation	換線準備	换线准备	Changeover Preparation
+i18n_ServCloud_Environment_Arrangement	整理環境	整理环境	Environment Arrangement
+i18n_ServCloud_Production_Preparation	生產準備	生产准备	Production Preparation
+i18n_ServCloud_Material_Quality_Error	材料品質異常	材料品质异常	Material Quality Error
+i18n_ServCloud_Material_Shortage	材料缺料	材料缺料	Material Shortage
+i18n_ServCloud_Education_Training	教育訓練	教育训练	Education Training
+
+i18n_ServCloud_Defectives	不良數量	不良数量	Defectives
+i18n_ServCloud_Defectives_Percentage	不良比例	不良比例	Defective Percentage
+i18n_ServCloud_Defectives_Description	不良說明	不良说明	Defective Description
+i18n_ServCloud_Total_Defectives	不良品總數	不良品总数	Total Defectives
+
+#validateForm
+i18n_ServCloud_Required	此欄必填	此栏必填	This field is required.
+i18n_ServCloud_Format_Error	格式錯誤	格式错误	Format error.
+i18n_ServCloud_Require_From_Group	請擇一填寫	请择一填写	Please fill at least one of these fields.
+i18n_ServCloud_Length_Should_Not_Exceed	長度不能超過	长度不能超过	Length should not exceed
+i18n_ServCloud_Not_Less_Than_The_Length_Of	長度不能低於	长度不能低于	Not less than the length of
+i18n_ServCloud_Please_Enter_A_Positive_Integer	請輸入正整數	请输入正整数	Please enter a positive integer
+i18n_ServCloud_A_Maximum_Of	最大值為	最大值为	A maximum of
+i18n_ServCloud_The_Minimum_Value_Is	最小值為	最小值为	The minimum value is
+i18n_ServCloud_Please_Enter_The_Number	請輸入數字	请输入数字	Please enter the number
+i18n_ServCloud_Please_Enter_A_Decimal_Or_Integer_Greater_Than_Zero	請輸入大於零的小數或整數	请输入大于零的小数或整数	Please enter a decimal or integer greater than zero
+i18n_ServCloud_Please_Enter_A_Decimal	請輸入小數	请输入小数	Please enter a decimal
+
+#validateCode
+i18n_ServCloud_Out_Of_Len	長度超出欄位限制: {size}字元	长度超出栏位限制: {size}字元	Length exceeds field limit: {size} characters.
+i18n_ServCloud_Not_Number	不可含有非數字	不可含有非数字	Cannot contain non-numeric.
+i18n_ServCloud_Symbol_String	不可包含特殊字元: '",<>	不可包含特殊字元: '",<>	Cannot contain special characters: '",<>.
+i18n_ServCloud_Number_Unsign	非正整數	非正整数	Non-positive integer.
+i18n_ServCloud_Unsigned	非正數	非正数	Non-positive number.
+i18n_ServCloud_Not_Float	非浮點數	非浮点数	Not a float.
+i18n_ServCloud_Decimal_Format_Error	小數點後不可超過{S}位，總位數不可超過{P}位	小数点后不可超过{S}位，总位数不可超过{P}位	There cannot be more than {S} digits after the decimal point, and the total number of digits cannot exceed {P}.
+
+#appTag
+i18n_ServCloud_Maintenance	保養	保养	Maintenance
+i18n_ServCloud_Production	生產	生产	Production
+i18n_ServCloud_Tool	工具	工具	Tool
+i18n_ServCloud_Prediction	預測	预测	Prediction
+i18n_ServCloud_Energy	能源	能源	Energy
+i18n_ServCloud_Other	其他	其他	Other
+
+#ChartExport
+i18n_ServCloud_Export	匯出	汇出	Export
+i18n_ServCloud_Download_Pdf	以pdf檔下載	以pdf档下载	download as pdf
+i18n_ServCloud_Download_Png	以png檔下載	以png档下载	download as png
+
+#dashboard
+i18n_ServCloud_AchievementRate	目標達成率	目标达成率	Achievement Rate
+i18n_ServCloud_invalidTrend	無效時間推移圖	无效时间推移图	Down Time Trend Report
+i18n_ServCloud_Production_Transition_Diagram	生產有效推移圖	生产有效推移图	Validity Transition Diagram
+i18n_ServCloud_Yield_Transition_Diagram	良率推移圖	良率推移图	Yield Transition Diagram
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_Machine_List	機台列表	机台列表	Machine List
+i18n_ServCloud_Utilization	稼動率	稼动率	Utilization
+i18n_ServCloud_DailyUtilization	日稼動率報表	日稼动率报表	Daily Utilization
+i18n_ServCloud_Utilization_by_Machine	各機台日稼動報表	各机台日稼动报表	Utilization by Machine
+i18n_ServCloud_ProcessParam	過程參數	过程参数	Process Param
+i18n_ServCloud_Monitoring_All_Zone	全廠區	全厂区	All Plant Area
+i18n_ServCloud_DI_Exposure_Machine	單機監控(DI曝光機)	单机监控(DI曝光机)	DI exposure machine
+i18n_ServCloud_Outer_Layer_Treatment	單機監控(外層前處理)	单机监控(外层前处理)	Outer layer treatment
+i18n_ServCloud_Tool_Status	刀具狀態	刀具状态	Tool Status
+
+#general
+i18n_ServCloud_Hippo_OOM	資料量過大，請縮小查詢條件	资料量过大，请缩小查询条件	The amount of data is too large, please narrow down the query conditions.
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_Cancel	取消	取消	Cancel
+i18n_ServCloud_Edit	編輯	编辑	Edit
+i18n_ServCloud_Delete	刪除	删除	delete
+i18n_ServCloud_Add	新增	新增	Add
+i18n_ServCloud_Query	查詢	查询	Query
+i18n_ServCloud_Number	編號	编号	Number
+i18n_ServCloud_Query_Conditions	查詢條件	查询条件	Query conditions
+i18n_ServCloud_Query_Result	查詢結果	查询结果	Query Result
+i18n_ServCloud_Work_Shift	班別	班别	Work Shift
+
+#datatables
+i18n_ServCloud_sEmptyTable	表中數據為空	表中数据为空	No data available in table
+i18n_ServCloud_sInfo	顯示第 _START_ 至 _END_ 項結果，共 _TOTAL_ 項	显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项	Showing _START_ to _END_ of _TOTAL_ entries
+i18n_ServCloud_sInfoEmpty	顯示第 0 至 0 項結果，共 0 項	显示第 0 至 0 项结果，共 0 项	Showing 0 to 0 of 0 entries
+i18n_ServCloud_sInfoFiltered	(由 _MAX_ 項結果過濾)	(由 _MAX_ 项结果过滤)	(filtered from _MAX_ total entries)
+i18n_ServCloud_sInfoThousands	,	,	,
+i18n_ServCloud_sLengthMenu	顯示 _MENU_ 項結果	显示 _MENU_ 项结果	Show _MENU_ entries
+i18n_ServCloud_sLoadingRecords	載入中...	载入中...	Loading...
+i18n_ServCloud_sProcessing	處理中...	处理中...	Processing...
+i18n_ServCloud_sSearch	搜尋	搜寻	Search:
+i18n_ServCloud_sZeroRecords	沒有匹配結果	没有匹配结果	No matching records found
+i18n_ServCloud_oPaginate_sFirst	首頁	首页	First
+i18n_ServCloud_oPaginate_sLast	末頁	末页	Last
+i18n_ServCloud_oPaginate_sNext	下頁	下页	Next
+i18n_ServCloud_oPaginate_sPrevious	上頁	上页	Previous
+i18n_ServCloud_oAria_sSortAscending	: 以升序排列此列	: 以升序排列此列	: activate to sort column ascending
+i18n_ServCloud_oAria_sSortDescending	: 以降序排列此列	: 以降序排列此列	: activate to sort column descending
+
+# servtrack
+i18n_ServCloud_Employee	人員	人员	Employee
+i18n_ServCloud_Tool_ID	刀具編號	刀具编号	Tool ID
+i18n_ServCloud_Mold_Id	模組編號	模组编号	Mold ID
+i18n_ServCloud_Shift	班次	班次	Shift

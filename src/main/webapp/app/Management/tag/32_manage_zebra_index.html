@@ -1,0 +1,86 @@
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-user"></i> </span>
+          <h2>管理Zebra 廠牌Index 參數</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="stk-pg-table"
+              stk-entity-pk="pks"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 40%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>廠牌</th>
+                  <th>名稱</th>
+                  <th>欄位(Number)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <select
+                      name="cnc_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="m_cnc_brand"
+                      stk-getdata-column-value="cnc_id"
+                      stk-getdata-column-text="name"
+                    ></select>
+                  </td>
+                  <td>
+                    <input type="text" name="name" class="form-control" />
+                  </td>
+                  <td>
+                    <input type="text" name="index" class="form-control" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<script>
+  window.importPageScript()
+</script>

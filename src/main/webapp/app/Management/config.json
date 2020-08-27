@@ -1,0 +1,92 @@
+{
+  "app": {
+    "id": "Management",
+    "name": "i18n_ServCloud_Manage",
+    "type": 1,
+    "description": "Management",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_manage_app",
+      "name": "i18n_ServCloud_Manage_Appware"
+    },
+    {
+      "id": "02_manage_user",
+      "name": "i18n_ServCloud_Manage_User"
+    },
+    {
+      "id": "03_manage_group",
+      "name": "i18n_ServCloud_Manage_Group"
+    },
+    {
+      "id": "04_manage_auth",
+      "name": "i18n_ServCloud_Manage_Authorise"
+    },
+    {
+      "id": "05_manage_box",
+      "name": "i18n_ServCloud_Manage_Box"
+    },
+    {
+      "id": "06_manage_machine",
+      "name": "i18n_ServCloud_Manage_Machine"
+    },
+    {
+      "id": "07_manage_machine_name",
+      "name": "i18n_ServCloud_Manage_Machine_Name"
+    },
+    {
+      "id": "08_manage_shift",
+      "name": "i18n_ServCloud_Manage_Work_Shift"
+    },
+    {
+      "id": "09_manage_app_func_cnc_brand",
+      "name": "i18n_ServCloud_Manage_App_Func_Cnc_Brand"
+    },
+    {
+      "id": "10_manage_macro",
+      "name": "i18n_ServCloud_Manage_Macro"
+    },
+    {
+      "id": "11_manage_download_raw_data",
+      "name": "i18n_ServCloud_Download_Raw_Data_Decode"
+    },
+    {
+      "id": "12_manage_line_type",
+      "name": "i18n_ServCloud_Manage_Line_Type"
+    },
+    {
+      "id": "13_manage_cnc_brand",
+      "name": "i18n_ServCloud_Manage_Cnc_Brand"
+    },
+    {
+      "id": "14_manage_group_machine",
+      "name": "i18n_ServCloud_Manage_Machine_Group"
+    },
+    {
+      "id": "16_manage_alarm",
+      "name": "i18n_ServCloud_Manage_Alarm"
+    },
+    {
+      "id": "16_manage_alarm_anko",
+      "name": "i18n_ServCloud_Manage_Alarm_Anko"
+    },
+    {
+      "id": "17_manage_axis_efficiency",
+      "name": "i18n_ServCloud_Manage_Axis_Efficiency"
+    },
+    {
+      "id": "18_manage_alarm_send_spacing_cosmos",
+      "name": "i18n_ServCloud_Manage_Alarm_Send_Spacing"
+    },
+    {
+      "id": "20_manage_host",
+      "name": "i18n_ServCloud_Manage_Host"
+    },
+    {
+      "id": "22_manage_tool",
+      "name": "i18n_ServCloud_Manage_Tool"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

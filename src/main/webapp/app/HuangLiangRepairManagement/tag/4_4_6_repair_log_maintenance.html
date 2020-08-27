@@ -1,0 +1,361 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      機台維護管理
+      <span>
+        > 機台維修記錄維護
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+
+          <h2>維修記錄查詢 / <i class="fa fa-search"></i></h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate" id="main-form">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-3">
+                    <section>
+                      <label class="label">開始日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="startDate" id="start-date" />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">結束日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="endDate" id="end-date" />
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-3">
+                    <section>
+                      <label class="radio">
+                        <input
+                          type="radio"
+                          name="user"
+                          checked="checked"
+                          value="user_type"
+                          id="user_radio_type"
+                        />
+                        <i></i>
+
+                        <p class="st-required">依人員別</p>
+                      </label>
+
+                      <label class="select">
+                        <select id="filter" name="filter">
+                          <option value="repair">維修人員</option>
+                          <option value="rd_manager">研發主管</option>
+                          <option value="rd_regulate">研發校車</option>
+                          <option value="fs_manager">廠務主管</option>
+                          <option value="fs_regulate">廠務校車</option> </select
+                        ><i></i>
+                      </label>
+                      <label></label>
+                      <label class="select select-multiple">
+                        <select
+                          id="employee"
+                          name="employee"
+                          multiple="multiple"
+                          data-rule-required="#user_radio_type:checked"
+                        ></select>
+                      </label>
+                      <label class="radio">
+                        <input
+                          type="radio"
+                          name="user"
+                          value="user_id"
+                          id="user_radio_id"
+                        />
+                        <i></i>
+
+                        <p class="st-required">依員工編號</p>
+                      </label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="user_id"
+                          data-rule-required="#user_radio_id:checked"
+                        />
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-3">
+                    <section>
+                      <label class="label">維修項目</label>
+                      <label class="select select-multiple">
+                        <select id="repair_code" multiple="multiple"></select>
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-3">
+                    <section>
+                      <label class="label st-required">機台編號</label>
+                      <label class="select select-multiple">
+                        <select
+                          id="machine"
+                          name="machine"
+                          multiple="multiple"
+                          data-rule-required="true"
+                        ></select>
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="report-table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>維修記錄查詢結果 / <i class="fa fa-search"></i></h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <h4 id="detail-info" class="alert alert-info"></h4>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="report-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput hide" style="width: 7%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾警報發生時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾故障通報時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 3%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾維修起始時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾維修結束時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾暫停時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾累積時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾維修首件不良品"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾Macro代碼"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾維修項目"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th
+                    class="hide"
+                    data-original-title="*. 機台發生警報 或 無警報但有按下 Macro522=101(故障待修) 時"
+                  ></th>
+                  <th data-original-title="*. 在 Macro522 輸入 101 的時間點">
+                    故障通報時間
+                  </th>
+                  <th>機台編號</th>
+                  <th>班別</th>
+                  <th>維修人員員編</th>
+                  <th>維修人員姓名</th>
+                  <th data-original-title="*. 在 Macro522 輸入 200 的時間點">
+                    維修起始時間
+                  </th>
+                  <th data-original-title="*. 在 Macro522 輸入 204 的時間點">
+                    維修結束時間
+                  </th>
+                  <th data-original-title="*. Macro522 = 215 持續時間">
+                    暫停時間
+                  </th>
+                  <th data-original-title="*. 維修結束時間-維修起始時間-暫停">
+                    累計時間
+                  </th>
+                  <th
+                    data-original-title="*. 累計時間 < 維修基準時間(維修標工時總和+單顆標準工時)"
+                  >
+                    達成數
+                  </th>
+                  <th>維修首件不良品</th>
+                  <th>故障代碼</th>
+                  <th>故障代碼說明</th>
+                  <th>Macro代碼</th>
+                  <th>維修項目</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- day DATATABLE END -->
+
+      <div
+        class="modal fade"
+        id="repair-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style="width: 80%;">
+          <div class="modal-content" id="repair-result-content">
+            <div class="modal-header">
+              <h4 class="modal-title" style="float: left;">維修項目編輯</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="widget-body">
+                <table
+                  height="100%"
+                  class="table table-bordered table-hover"
+                  id="repair-code-table"
+                ></table>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-primary" id="save">儲存</button>
+              <button class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

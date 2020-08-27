@@ -1,0 +1,239 @@
+<section id="widget-grid">
+  <div class="row">
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-togglebutton="false"
+        id="machine-widget"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-pie"></i> </span>
+          <!-- <h2>機台廠區狀態總覽</h2> -->
+        </header>
+        <div>
+          <div class="widget-body no-padding flex-column">
+            <div class="flex">
+              <div class="sr-card" style="flex-basis: 16%;">
+                <div class="txt-lg title">機台狀態</div>
+                <div id="status-count" style="width: 100%; height: 15vh;"></div>
+                <hr style="padding: 0.5vh;" />
+                <div class="txt-lg title">總體稼動</div>
+                <div id="status-time" style="width: 100%; height: 15vh;"></div>
+                <div id="demonstrator" class="flex">
+                  <span class="online point"></span>
+                  <span class="status txt-sm">加工</span>
+                  <span class="idle point"></span>
+                  <span class="status txt-sm">閒置</span>
+                  <span class="alarm point"></span>
+                  <span class="status txt-sm">警報</span>
+                </div>
+              </div>
+              <div
+                class="sr-card"
+                id="plant-div"
+                style="flex-basis: 84%;"
+              ></div>
+            </div>
+            <div class="sr-card">
+              <sub id="update-time" class="pull-right txt-sm"></sub>
+              <div
+                class="flex"
+                style="width: 50%; justify-content: space-between;"
+              >
+                <div class="txt-lg title">機台產品生產狀態</div>
+                <div class="select" style="margin-top: -0.9rem;">
+                  <select
+                    id="product"
+                    class="txt-sm"
+                    style="margin: 0;"
+                  ></select>
+                </div>
+              </div>
+              <div id="product-works" class="text-center txt-md"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<link rel="stylesheet" href="app/Dashboard/css/situation_room_4k.css" />
+<style>
+  @media (min-width: 3840px) {
+    .easy-pie-chart .percent {
+      top: 43%;
+    }
+  }
+
+  /* Customize scrollbar */
+  #plant-div::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  #plant-div::-webkit-scrollbar-thumb {
+    /* bar的樣式 */
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #plant-div::-webkit-scrollbar-track {
+    height: 20px;
+  }
+
+  #plant-div {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  #demonstrator {
+    margin-top: 2vh;
+  }
+
+  #demonstrator > .point {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin: 0.3vh 0.2vh 0 0.8vh;
+  }
+
+  .percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: 1em;
+  }
+
+  /* Make flex container equal size with content */
+  .inline-block {
+    display: inline-block;
+    margin: 1vh 0.5vh;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+  }
+
+  .well.flex-column {
+    background-color: rgba(23, 24, 40, 0.68);
+    margin-top: 7vh;
+  }
+
+  .well-header {
+    font-weight: bold;
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .block {
+    margin: 0.6vh;
+    text-align: center;
+  }
+
+  .block .block-title {
+    padding-bottom: 2vh;
+  }
+
+  .block .content.text {
+    padding: 3.5vh 0.5vh;
+  }
+
+  .progress-xl {
+    height: 3vh !important;
+    line-height: 3vh !important;
+    margin: 1vh 0;
+  }
+
+  .progress-xl span {
+    position: absolute;
+    padding-left: 10px;
+    line-height: 3vh;
+  }
+
+  /* #machine-widget .widget-body {
+    font-size: 4rem;
+  } */
+
+  #machine-widget select {
+    box-shadow: none;
+    border: 0 !important;
+    flex: 1;
+    padding: 0 0.5rem;
+    color: rgb(60, 172, 230);
+    background: rgba(77, 77, 77, 0.62);
+    cursor: pointer;
+  }
+
+  #machine-widget .select {
+    position: relative;
+    display: flex;
+    width: 10rem;
+    height: 2.5rem;
+    overflow: hidden;
+    border-radius: 0.25rem;
+  }
+
+  #machine-widget .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0.6rem 1rem;
+    background: #626262;
+    cursor: pointer;
+    color: white;
+    transition: 0.25s all ease;
+    pointer-events: none;
+  }
+
+  #machine-widget .select:hover::after {
+    color: #2b90f8;
+  }
+
+  #machine-widget option {
+    color: white;
+  }
+
+  #product-works .machine,
+  #product-works .header {
+    margin: 1.7vh 0;
+    line-height: 2vh;
+  }
+
+  #product-works .machine .status {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    align-self: center;
+  }
+
+  .flex-grow-sm {
+    flex: 1 0 0;
+    margin: 0 1vh;
+  }
+
+  .flex-grow-lg {
+    flex: 4 0 0;
+    margin: 0 1vh;
+  }
+
+  .legendColorBox > div > div {
+    border-top-width: 0.1rem !important;
+    border-right-width: 0.1rem !important;
+    border-bottom-width: 0.1rem !important;
+    border-left-width: 0.1rem !important;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

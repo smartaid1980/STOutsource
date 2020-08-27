@@ -1,0 +1,125 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="watch-managment-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>管理智慧手錶</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="watch_id"
+              id="watch-managment"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>手錶代碼</th>
+                  <th>手錶名稱</th>
+                  <th>所屬單位</th>
+                  <th>是否啟用</th>
+                  <th>所屬單位名稱</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="watch_id"
+                      type="text"
+                      class="form-control"
+                      placeholder="手錶代碼"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="watch_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="手錶名稱"
+                    />
+                  </td>
+                  <td>
+                    <select
+                      name="dept_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="a_iiot_dept"
+                      stk-getdata-column-text="dept_name"
+                      stk-getdata-column-value="dept_id"
+                      stk-getdata-where="is_open = 'Y'"
+                    ></select>
+                  </td>
+                  <td>
+                    <span>
+                      <span class="onoffswitch">
+                        <input
+                          type="checkbox"
+                          name="is_open"
+                          class="onoffswitch-checkbox"
+                          checked="checked"
+                          id="isopen-onoffswitch"
+                        />
+                        <label
+                          class="onoffswitch-label"
+                          for="isopen-onoffswitch"
+                        >
+                          <span
+                            class="onoffswitch-inner"
+                            data-swchon-text="ON"
+                            data-swchoff-text="OFF"
+                          ></span>
+                          <span class="onoffswitch-switch"></span
+                        ></label>
+                      </span>
+                    </span>
+                  </td>
+                  <td>
+                    <input
+                      name="dept_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="所屬單位名稱"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

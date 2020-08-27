@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "YihChengServTrack",
+    "name": "i18n_ServCloud_YihChengServTrack",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_yihcheng_servtrack",
+      "name": "i18n_ServCloud_01_YihCheng_ServTrack"
+    }
+  ],
+  "tags": ["20140918000999"]
+}

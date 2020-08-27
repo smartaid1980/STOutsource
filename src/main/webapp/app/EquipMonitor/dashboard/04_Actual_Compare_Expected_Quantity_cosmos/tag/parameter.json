@@ -1,0 +1,19 @@
+{
+  "type": "DeviceStatus",
+  "gridClass": "col-xs-12 col-sm-12 col-md-8 col-lg-8",
+  "title": "<i class='fa fa-bar-chart-o'></i> <strong>Machine List</strong>",
+  "contentPadding": true,
+  "byPlant": true,
+  "dependencies": [
+    "/js/plugin/flot/jquery.flot.cust.min.js",
+    "/js/plugin/flot/jquery.flot.resize.min.js",
+    "/js/plugin/flot/jquery.flot.fillbetween.min.js",
+    "/js/plugin/flot/jquery.flot.orderBar.min.js",
+    "/js/plugin/flot/jquery.flot.pie.min.js",
+    "/js/plugin/flot/jquery.flot.tooltip.min.js",
+    "/js/plugin/flot/jquery.flot.time.min.js",
+    "/js/plugin/flot/jquery.flot.stack.min.js",
+    "/js/plugin/flot/jquery.flot.axislabels.js",
+    "/js/servtech/cosmos/jquery.flot.valuelabels-2.2.0.js"
+  ]
+}

@@ -1,0 +1,520 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <div
+      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+      style="margin: 5px;"
+    >
+      <a
+        href="javascript: void(0)"
+        id="page-btn-search"
+        class="btn btn-default"
+      >
+        <i class="fa fa-paper-plane"></i>&nbsp;
+        {i18n_ServCloud_Search}{i18n_ServCloud_Page}
+      </a>
+      <a
+        href="javascript: void(0)"
+        id="page-btn-compare-list"
+        class="btn btn-default"
+      >
+        <i class="fa fa-exchange"></i>&nbsp;
+        {i18n_ServCloud_Pick}{i18n_ServCloud_Comparison}{i18n_ServCloud_Page}
+      </a>
+      <a
+        href="javascript: void(0)"
+        id="page-btn-main-list"
+        class="btn btn-default"
+      >
+        <i class="fa fa-folder-open"></i>&nbsp;
+        {i18n_ServCloud_Comparison}{i18n_ServCloud_Page}
+      </a>
+    </div>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article
+      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+      id="search-widget"
+    >
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        id="search-jarvis"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Search}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="search_form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label">{i18n_ServCloud_Start_Date}</label>
+                    <label class="input level1"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        name="element2start"
+                        id="start-date"
+                        data-rule-date="true"
+                        class="form-control"
+                      />
+                    </label>
+                    <label class="label">{i18n_ServCloud_End_Date}</label>
+                    <label class="input level1"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        name="element2end"
+                        id="end-date"
+                        data-rule-date="true"
+                        class="form-control"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label">{i18n_ServCloud_Name}</label>
+                    <label class="input level1">
+                      <select class="form-control" id="machineId"></select>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label">{i18n_ServCloud_Main_Program}</label>
+                    <label class="input">
+                      <select class="form-control" name="main-program"></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button
+                  id="search-btn"
+                  href="javascript: void(0)"
+                  class="btn btn-primary"
+                  title="{i18n_ServCloud_Tooltip_Btn_Search}"
+                >
+                  {i18n_ServCloud_Custom_Query}
+                </button>
+                <button
+                  id="submit-all-estimated"
+                  href="javascript: void(0)"
+                  class="btn btn-success"
+                  title="{i18n_ServCloud_Tooltip_Btn_Search}"
+                >
+                  {i18n_ServCloud_Comparison_Estimated_Time}
+                </button>
+                <button
+                  id="submit-longTime-estimated"
+                  href="javascript: void(0)"
+                  class="btn btn-success"
+                  title="{i18n_ServCloud_Tooltip_Btn_LongTime}"
+                >
+                  {i18n_ServCloud_Worst_Comparison_Estimate}
+                </button>
+                <button
+                  id="submit-shortTime-estimated"
+                  href="javascript: void(0)"
+                  class="btn btn-success"
+                  title="{i18n_ServCloud_Tooltip_Btn_ShortTime}"
+                >
+                  {i18n_ServCloud_Best_Comparison_Estimate}
+                </button>
+                <button
+                  id="submit-close10-estimated"
+                  href="javascript: void(0)"
+                  class="btn btn-success"
+                  title="{i18n_ServCloud_Tooltip_Btn_Close10}"
+                >
+                  {i18n_ServCloud_Top_10}
+                </button>
+                <button
+                  id="submit-far10-estimated"
+                  href="javascript: void(0)"
+                  class="btn btn-success"
+                  title="{i18n_ServCloud_Tooltip_Far10}"
+                >
+                  {i18n_ServCloud_Buttom_10}
+                </button>
+                <button
+                  id="submit-All-estimated"
+                  href="javascript: void(0)"
+                  class="btn btn-success"
+                  title="{i18n_ServCloud_Tooltip_Far10}"
+                >
+                  {i18n_ServCloud_All}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- search out main program list -->
+    <!-- NEW WIDGET START -->
+    <article
+      class="col col-xs-6 col-sm-6 col-md-6 col-lg-6"
+      id="list-table-widget"
+    >
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        id="list-jarvis"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Search_List}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              id="list-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Main_Program}</th>
+                  <th>{i18n_ServCloud_Date}</th>
+                  <th>{i18n_ServCloud_Name}</th>
+                  <th>{i18n_ServCloud_Time_Type}</th>
+                  <th>{i18n_ServCloud_Execution_Time}</th>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- compare main program list -->
+    <!-- NEW WIDGET START -->
+    <article
+      class="col col-xs-6 col-sm-6 col-md-6 col-lg-6"
+      id="compare-table-widget"
+    >
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        id="compare-jarvis"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Comparison_List}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              id="compare-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Main_Program}</th>
+                  <th>{i18n_ServCloud_Date}</th>
+                  <th>{i18n_ServCloud_Name}</th>
+                  <th>{i18n_ServCloud_Time_Type}</th>
+                  <th>{i18n_ServCloud_Execution_Time}</th>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article
+      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+      id="main-chart-widget"
+    >
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        id="main-chart-jarvis"
+      >
+        <header id="main-charthead">
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Main_Statistics}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <h4
+              class="alert alert-info"
+              style="margin: 0px; border-bottom: 1px solid #ccc;"
+            >
+              <span>{i18n_ServCloud_Display_Single}</span>
+              <span style="color: blue;">
+                ({i18n_ServCloud_Standard}:{i18n_ServCloud_Blue}</span
+              >
+              <span style="color: red;"
+                >{i18n_ServCloud_Big_Standard}:{i18n_ServCloud_Red}</span
+              >
+              <span style="color: green;"
+                >{i18n_ServCloud_Small_Standard}:{i18n_ServCloud_Green})</span
+              >
+            </h4>
+            <div id="main-bar-chart-all">
+              <div id="main-bar-chart" class="chart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article
+      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+      id="main-table-widget"
+    >
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        id="main-table-jarvis"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Statistical_List}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              id="element5"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Main_Program}</th>
+                  <th>{i18n_ServCloud_Date}</th>
+                  <th>{i18n_ServCloud_Name}</th>
+                  <th>{i18n_ServCloud_Time_Type}</th>
+                  <th>{i18n_ServCloud_Execution_Time}</th>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <a href="javascript: void(0)" id="leave-btn" class="btn btn-default hide">
+        <i class="fa fa-mail-reply"></i>&nbsp; {i18n_ServCloud_Back}
+      </a>
+    </div>
+    <!-- WIDGET END -->
+    <!-- 子程式 -->
+    <article
+      class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 hide"
+      id="run-chart-widget"
+    >
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+      >
+        <header id="run-charthead">
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Run_Statistics}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <h4
+              class="alert alert-info"
+              style="margin: 0px; border-bottom: 1px solid #ccc;"
+            >
+              <span
+                >{i18n_ServCloud_Display_Next} ( {i18n_ServCloud_Main_Program} /
+                {i18n_ServCloud_Date} / {i18n_ServCloud_Name} /
+                {i18n_ServCloud_Time_Type} )</span
+              ><br />
+              <span id="run-info"></span>
+              <span> ({i18n_ServCloud_Comparison_Value})</span><br />
+              <span id="run-stander-info" style="color: red;"></span>
+              <span style="color: red;">({i18n_ServCloud_Standard})</span>
+            </h4>
+            <div id="run-bar-chart-all">
+              <div id="run-bar-chart" class="chart"></div>
+              <div id="legend-run" class="legend-container"></div>
+            </div>
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              id="run-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Subprogram}</th>
+                  <th>{i18n_ServCloud_Execution_Time}</th>
+                  <th>{i18n_ServCloud_Standard}</th>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <!-- 單節 -->
+    <article
+      class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 hide"
+      id="single-chart-widget"
+    >
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+      >
+        <header id="single-charthead">
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Single_Statistics}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <h4
+              id="single-info"
+              class="alert alert-info"
+              style="margin: 0px; border-bottom: 1px solid #ccc;"
+            ></h4>
+            <div id="single-bar-chart-all">
+              <div id="single-bar-chart" class="chart"></div>
+              <div id="legend-single" class="legend-container"></div>
+            </div>
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              id="single-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 40%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Program_Block}</th>
+                  <th>{i18n_ServCloud_Execution_Time}</th>
+                  <th>{i18n_ServCloud_Standard}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  a#leave-btn {
+    margin: 10px;
+    border-color: #6190bf;
+  }
+
+  a#leave-btn:hover {
+    background-color: #d4e2fc;
+  }
+
+  .legend-container {
+    background-color: #fff;
+    padding: 2px;
+    margin-bottom: 8px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    margin: 0 auto;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,36 @@
+{
+  "app": {
+    "id": "HuangLiangRepairManagement",
+    "name": "機台維修管理",
+    "type": 1,
+    "description": "機台維修管理",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "4_4_1_repair_checkin",
+      "name": "維修人員報到"
+    },
+    {
+      "id": "4_4_2_machine_prioprity",
+      "name": "機台故障重要性設定"
+    },
+    {
+      "id": "4_4_5_repair_assign",
+      "name": "機台維修手動派工"
+    },
+    {
+      "id": "4_4_6_repair_log_maintenance",
+      "name": "機台維修紀錄維護"
+    },
+    {
+      "id": "4_4_7_repair_alert",
+      "name": "維修通報紀錄查詢"
+    },
+    {
+      "id": "4_4_8_repair_log_query",
+      "name": "機台維修紀錄查詢"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

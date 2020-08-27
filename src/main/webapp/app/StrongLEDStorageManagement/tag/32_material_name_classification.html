@@ -1,0 +1,118 @@
+<!-- widget grid -->
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>原料品名分類</h2></span
+          >
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="stk-machine-type-table"
+              stk-entity-pk="material_id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">品名</th>
+                  <th>品號</th>
+                  <th>規格</th>
+                  <th>單位</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="material_name"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Machine_Type_ID}"
+                      stk-required="{i18n_ServCloud_Stk_Required}"
+                      stk-pk="{i18n_ServCloud_Stk_Pk}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="material_id"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Product_ID}"
+                      stk-getdata-source="db"
+                      stk-getdata-name="m_product"
+                      stk-getdata-column-value="product_id"
+                      stk-getdata-column-text="product_name"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="material_desc"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Machine_Type_Name}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="material_unit"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Machine_Type_Desc}"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+
+<script>
+  window.importPageScript()
+</script>

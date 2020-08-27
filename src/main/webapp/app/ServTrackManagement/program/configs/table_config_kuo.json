@@ -1,0 +1,149 @@
+{
+  "Mode": "kuo",
+  "Head": { "zh_TW": "國全專案版" },
+  "Password": "servtechpwd",
+  "UploadUrl": "/api/kuochuan/servtrack/tablet/upload",
+  "UploadNotOut": true,
+  "Imports": [
+    {
+      "Api": "/api/getdata/db",
+      "Table": "a_servtrack_shift_time",
+      "Identify": "shift_time",
+      "Title": { "zh_TW": "班次時間" },
+      "Columns": ["start_time", "end_time"],
+      "Wheres": " start_time <> '' "
+    },
+    {
+      "Api": "/api/getdata/db",
+      "Table": "a_kuochuan_servtrack_view_line",
+      "Identify": "line",
+      "Title": { "zh_TW": "設備" },
+      "Columns": ["line_id", "line_name", "is_valid", "qrcode_line"],
+      "Wheres": " line_id <> '' "
+    },
+    {
+      "Api": "/api/getdata/db",
+      "Table": "a_servtrack_view_processng",
+      "Identify": "processng",
+      "Title": { "zh_TW": "製程不良原因" },
+      "Columns": ["process_code", "process_name", "ng_code", "ng_name"],
+      "Wheres": " process_code <> '' "
+    },
+    {
+      "Api": "/api/getdata/db",
+      "Table": "a_kuochuan_servtrack_staff",
+      "Identify": "staff",
+      "Title": { "zh_TW": "人員" },
+      "Columns": ["staff_id", "staff_name", "qrcod_staff"],
+      "Wheres": " staff_id <> '' "
+    },
+    {
+      "Api": "/api/getdata/db",
+      "Table": "a_servtrack_view_work_op",
+      "Identify": "workop",
+      "Title": { "zh_TW": "工單" },
+      "Columns": [
+        "work_id",
+        "product_name",
+        "input",
+        "status_id",
+        "op",
+        "process_code",
+        "process_name",
+        "qrcode_op"
+      ],
+      "Wheres": " status_id <> 2 and status_id <> 9"
+    }
+  ],
+  "InList": [
+    {
+      "Id": "SHIFT_DATE",
+      "Title": { "zh_TW": "班次" },
+      "Param": {},
+      "Action": true
+    },
+    {
+      "Id": "LINE_NO",
+      "Title": { "zh_TW": "工作站" },
+      "Param": {},
+      "Action": true
+    },
+    {
+      "Id": "STAFF_NO",
+      "Title": { "zh_TW": "人員" },
+      "Param": {},
+      "Action": true
+    },
+    {
+      "Id": "WORK_NO",
+      "Title": { "zh_TW": "派工單" },
+      "Param": {},
+      "Action": true
+    },
+    {
+      "Id": "PRODUCT",
+      "Title": { "zh_TW": "品項" },
+      "Param": {},
+      "Action": false
+    },
+    ,
+    {
+      "Id": "PROCESS",
+      "Title": { "zh_TW": "製程" },
+      "Param": {},
+      "Action": false
+    }
+  ],
+  "OutList": [
+    {
+      "Id": "LINE_NO",
+      "Title": { "zh_TW": "工作站" },
+      "Param": {},
+      "Action": true
+    },
+    {
+      "Id": "STAFF_NO",
+      "Title": { "zh_TW": "人員" },
+      "Param": {},
+      "Action": true
+    },
+    {
+      "Id": "WORK_NO",
+      "Title": { "zh_TW": "派工單" },
+      "Param": {},
+      "Action": true
+    },
+    {
+      "Id": "PRODUCT",
+      "Title": { "zh_TW": "品項" },
+      "Param": {},
+      "Action": false
+    },
+    {
+      "Id": "PROCESS",
+      "Title": { "zh_TW": "製程" },
+      "Param": {},
+      "Action": false
+    },
+    {
+      "Id": "COUNT",
+      "Title": { "zh_TW": "產量" },
+      "Param": {},
+      "Action": true
+    },
+    {
+      "Id": "BADS",
+      "Title": { "zh_TW": "不良品" },
+      "Param": {},
+      "Action": false
+    }
+  ],
+  "Customize": [
+    {
+      "Id": "VIEW_PDF",
+      "Title": { "zh_TW": "檢視" },
+      "Param": { "api": "/viewsop.html" },
+      "Action": true
+    }
+  ]
+}

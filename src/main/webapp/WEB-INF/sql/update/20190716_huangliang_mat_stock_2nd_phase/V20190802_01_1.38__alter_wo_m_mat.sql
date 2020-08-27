@@ -1,0 +1,1 @@
+ALTER TABLE `servcloud`.`a_huangliang_wo_m_mat` MODIFY COLUMN `type` TINYINT UNSIGNED NOT NULL DEFAULT 1 COMMENT '型態。1:領料/2:補料/3:退庫';

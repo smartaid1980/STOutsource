@@ -1,0 +1,1 @@
+<command name="pmc_rdpmcrng" cycletype="count" cyclevalue="1" timeout="0"><params><param name="G_PMCY" count="1" frequency="0" isRepeat="true"><inputs><input name="P_PARAM">X</input><input name="P_NUMBER">null</input><input name="P_COUNT">null</input></inputs><filters><filter name="AXIS">n</filter></filters><process></process><value></value></param></params></command>

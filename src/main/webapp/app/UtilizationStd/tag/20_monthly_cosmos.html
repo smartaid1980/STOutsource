@@ -1,0 +1,262 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      {i18n_ServCloud_UtilizationStd}
+      <span id="funcName">
+        > {i18n_ServCloud_Monthly_Utilization}
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="query-condition-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form id="report-form" class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-6">
+                    <label class="label">{i18n_ServCloud_Query_Month}</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input id="start-date" type="text" name="startDate" />
+                    </label>
+                    <br />
+                    <label class="label">{i18n_ServCloud_Demonation}</label>
+
+                    <div class="inline-group">
+                      <label class="radio">
+                        <input
+                          type="radio"
+                          name="denominator"
+                          checked="checked"
+                          value="power_millisecond"
+                        />
+                        <i></i>
+
+                        <p>{i18n_ServCloud_Power_Time}</p>
+                      </label>
+                      <label class="radio">
+                        <input
+                          type="radio"
+                          name="denominator"
+                          value="work_shift_millisecond"
+                        />
+                        <i></i>
+
+                        <p>{i18n_ServCloud_Shift_Time}</p>
+                      </label>
+                      <label class="radio">
+                        <input
+                          type="radio"
+                          name="denominator"
+                          value="natural_day"
+                        />
+                        <i></i>
+
+                        <p>{i18n_ServCloud_Natural_Day}</p>
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-6">
+                    <label class="label">{i18n_ServCloud_Plant_Area}</label>
+                    <label class="select">
+                      <select id="plantAreaForm"></select>
+                    </label>
+                    <br />
+                    <label class="label">{i18n_ServCloud_Machine}</label>
+                    <label class="select select-multiple">
+                      <select id="machine" multiple="multiple"></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+                <button id="showdemo" class="btn btn-success">
+                  {i18n_ServCloud_Show_Demo_Data}
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+      </div>
+
+      <!-- BAR CHART -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="BC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header id="charthead">
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+
+          <h2>{i18n_ServCloud_Bar_Chart}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <div id="bar-chart-all">
+              <h4 id="bar-chart-title" align="center"></h4>
+              <div id="bar-chart" class="chart"></div>
+            </div>
+          </div>
+          <!-- widget content end -->
+        </div>
+        <!--widget div end  -->
+      </div>
+      <!-- BAR CHART END -->
+
+      <!-- DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="report-table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Result}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- <h4 id="month-info" class="alert alert-info"></h4> -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="report-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 7%;">
+                    <select type="text" class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <select type="text" class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th data-class="expand">{i18n_ServCloud_Machine}</th>
+                  <th>{i18n_ServCloud_Date}</th>
+                  <th>{i18n_ServCloud_Power_Time}</th>
+                  <th>{i18n_ServCloud_Operation_Time}</th>
+                  <th>{i18n_ServCloud_Cutting_Time}</th>
+                  <th>{i18n_ServCloud_No_Work_Time}</th>
+                  <th>{i18n_ServCloud_Off_Time}</th>
+                  <th>{i18n_ServCloud_Output}</th>
+                  <th id="month-oee1" class="title-utilization">
+                    {i18n_ServCloud_Utilization}
+                  </th>
+                  <th id="month-oee2" class="title-effective-utilization">
+                    {i18n_ServCloud_Effective_Utiliziation}
+                  </th>
+                  <th>{i18n_ServCloud_No_Work_Time} M2</th>
+                  <th>{i18n_ServCloud_No_Work_Time} M3</th>
+                  <th class="title-capacity-utilization">
+                    {i18n_ServCloud_Capacity_Utilization}
+                  </th>
+                  <th>班次時間</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,273 @@
+<!-- widget grid -->
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="dropzone-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-colorbutton="false"
+      >
+        <header>
+          <h2>進貨單品項轉入</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body">
+            <div class="row no-margin">
+              <form
+                action="api/ennoconn/filesyn/parseFile"
+                class="dropzone-v15"
+                id="form_dropzone"
+              >
+                <span class="text-center">
+                  <span
+                    class="font-lg visible-xs-block visible-sm-block visible-lg-block"
+                  >
+                    <span class="font-lg">
+                      <i class="fa fa-caret-right text-danger"></i>
+                      將 入庫單 [CSV]拖曳至此
+                      <span class="font-xs">或按我</span>
+                    </span>
+                  </span>
+                </span>
+              </form>
+            </div>
+            <!-- end .row-->
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+
+<section>
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="csv-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-colorbutton="false"
+      >
+        <header>
+          <h2>解析結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="DataList-table"
+              class="table table-striped table-bordered table-hover responsive"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 17);">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">
+                    入庫單號
+                  </th>
+                  <th>入庫單日期</th>
+                  <th>品項項次</th>
+                  <th>料號</th>
+                  <th>規格</th>
+                  <th>入庫倉別</th>
+                  <th>入庫數</th>
+                  <th>單位</th>
+                  <th>單件數量</th>
+                  <th>出廠日期</th>
+                  <th>採購單號</th>
+                  <th data-hide="laptop,tablet,phone" data-name="採購日期">
+                    採購日期
+                  </th>
+                  <th data-hide="laptop,tablet,phone" data-name="廠商ID">
+                    廠商ID
+                  </th>
+                  <th data-hide="laptop,tablet,phone" data-name="廠商名稱">
+                    廠商名稱
+                  </th>
+                  <th data-hide="laptop,tablet,phone" data-name="供應商批號">
+                    供應商批號
+                  </th>
+                  <th data-hide="laptop,tablet,phone" data-name="供應商料號">
+                    供應商料號
+                  </th>
+                  <th data-hide="laptop,tablet,phone" data-name="到期日">
+                    到期日
+                  </th>
+                </tr>
+              </thead>
+            </table>
+            <table
+              id="Warehousing-table"
+              class="table table-striped table-bordered table-hover responsive hide"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>發料單號</th>
+                  <th>應發料日期</th>
+                  <th>產品</th>
+                  <th>倉別</th>
+                  <th>工單號</th>
+                  <th>工單數</th>
+                  <th>領料單位</th>
+                  <th>線別</th>
+                </tr>
+              </thead>
+            </table>
+            <table
+              id="WarehousingList-table"
+              class="table table-striped table-bordered table-hover responsive hide"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 8);">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>發料單號</th>
+                  <th>品項項次</th>
+                  <th>料號</th>
+                  <th>工單總需求數</th>
+                  <th>單位</th>
+                  <th>組成用量</th>
+                  <th>已發數量</th>
+                  <th>請領數量</th>
+                </tr>
+              </thead>
+            </table>
+            <!-- end .row-->
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<script>
+  window.importPageScript()
+</script>

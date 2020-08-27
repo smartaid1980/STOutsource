@@ -1,0 +1,153 @@
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      稼動管理
+      <span>> 產品追蹤進度表 </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- END ROW -->
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-12">
+                    <label class="label">產品</label>
+                    <select style="width: 100%;" id="product-select"></select>
+                  </section>
+                </div>
+                <div class="row">
+                  <section class="col col-4">
+                    <label class="label">{i18n_ServCloud_Start_Date}</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input type="text" name="startDate" id="start-date" />
+                    </label>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label">{i18n_ServCloud_End_Date}</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input type="text" name="endDate" id="end-date" />
+                    </label>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label">條件</label>
+                    <label class="select">
+                      <select id="condition">
+                        <option value="0" selected="">工單全OP</option>
+                        <option value="1">該工單該天最後一個OP</option>
+                      </select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+                <!--<button id="showdemo" class="btn btn-success">
+               {i18n_ServCloud_Show_Demo_Data}
+             </button>-->
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-th-list"></i> </span>
+          <h2>產品追蹤進度表</h2>
+          <div class="widget-toolbar" role="menu">
+            <div class="btn-group">
+              <button
+                class="btn dropdown-toggle btn-xs btn-success"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Export <i class="fa fa-caret-down"></i>
+              </button>
+              <ul class="dropdown-menu pull-right">
+                <li>
+                  <a id="excel-download" href="javascript:void(0);"
+                    >download as Excel</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div>
+          <!-- widget div-->
+          <div class="jarviswidget-editbox">
+            <!-- widget edit box -->
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <h4 id="product-info" class="alert alert-info"></h4>
+          <div class="widget-body no-padding">
+            <!-- widget content -->
+            <div class="table-responsive" id="table-responsive">
+              <table
+                id="product-tracking-table"
+                class="table table-striped table-bordered table-hover"
+              ></table>
+              <!-- 長datatables -->
+            </div>
+          </div>
+          <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+</section>
+<!-- end widget grid -->
+
+<style>
+  .tooltip {
+    position: fixed;
+  }
+
+  .popover {
+    position: fixed;
+  }
+</style>
+
+<script type="text/javascript">
+  window.importPageScript()
+</script>

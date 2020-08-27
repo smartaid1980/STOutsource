@@ -1,0 +1,87 @@
+<!-- widget grid -->
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Manage_Alarm_Send_Spacing}</h2></span
+          >
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="stk-alarm-spacing-table"
+              stk-entity-pk="upper_limit_spacing"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 50%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 50%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">持續超出門檻值發送間隔時間(分)</th>
+                  <th>持續警報發送間隔時間(分)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="upper_limit_spacing"
+                      class="form-control"
+                      placeholder="間隔時間(分)"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="alarm_spacing"
+                      class="form-control"
+                      placeholder="間隔時間(分)"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,413 @@
+<!-- <ul id="breadcrumb_table" class="breadcrumbDark"  collapse="#collapse_table">test</ul> -->
+<div class="row">
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span
+        >>
+        <span id="machine-id-head"></span>
+        > {i18n_ServCloud_Dashboard}
+      </span>
+    </h1>
+  </div>
+</div>
+
+<section id="widget-grid">
+  <a href="javascript: void(0)" id="leave-btn" class="btn btn-default"
+    ><i class="fa fa-mail-reply"></i>&nbsp; {i18n_ServCloud_Go_Back} </a
+  ><br /><br />
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+      <div class="row">
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div
+            class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+            data-widget-fullscreenbutton="false"
+            data-widget-editbutton="false"
+            data-widget-collapsed="false"
+            data-widget-colorbutton="false"
+            data-widget-deletebutton="false"
+            data-widget-togglebutton="false"
+          >
+            <header class="head">
+              <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+              <span
+                >&nbsp;&nbsp;&nbsp;
+                <h2>{i18n_ServCloud_Machine_Information}</h2></span
+              >
+            </header>
+            <table class="table table-bordered">
+              <tr>
+                <td class="head">LEAN ID</td>
+                <td class="head">{i18n_ServCloud_Machine_Id}</td>
+                <td class="head">{i18n_ServCloud_Name}</td>
+                <td class="head">{i18n_ServCloud_Cnc_Brand}</td>
+                <td class="head">{i18n_ServCloud_Monitoring_Zone}</td>
+              </tr>
+              <tr>
+                <td class="value text-center" id="box-id">---</td>
+                <td class="value text-center" id="machine-id">---</td>
+                <td class="value text-center" id="machine-name">---</td>
+                <td class="value text-center" id="machine-controller">---</td>
+                <td class="value text-center" id="machine-zone">---</td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </div>
+
+      <div class="row">
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div
+            class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+            data-widget-fullscreenbutton="false"
+            data-widget-editbutton="false"
+            data-widget-collapsed="false"
+            data-widget-colorbutton="false"
+            data-widget-deletebutton="false"
+            data-widget-togglebutton="false"
+          >
+            <header class="head">
+              <span class="widget-icon"> <i class="fa fa-code"></i> </span>
+              <span
+                >&nbsp;&nbsp;&nbsp;
+                <h2>{i18n_ServCloud_Execute_Program}</h2></span
+              >
+            </header>
+            <table class="table table-bordered">
+              <tr>
+                <td class="head">{i18n_ServCloud_Program}</td>
+                <td class="head">{i18n_ServCloud_Line_Number}</td>
+                <td class="head">{i18n_ServCloud_Cycle_Time}</td>
+              </tr>
+              <tr>
+                <td class="value" id="G_PRGM">---</td>
+                <td class="value" id="G_SEQN">---</td>
+                <td class="value text-right" id="G_CYCT">-- H -- M -- S</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="head">
+                  {i18n_ServCloud_Line_Execution_Block}
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" id="G_EXEP" class="value">---</td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="row">
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div
+            class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+            data-widget-fullscreenbutton="false"
+            data-widget-editbutton="false"
+            data-widget-collapsed="false"
+            data-widget-colorbutton="false"
+            data-widget-deletebutton="false"
+            data-widget-togglebutton="false"
+          >
+            <header class="head">
+              <span class="widget-icon">
+                <i class="fa fa-file-image-o"></i>
+              </span>
+              <span
+                >&nbsp;&nbsp;&nbsp;
+                <h2>{i18n_ServCloud_Machine_Status}</h2></span
+              >
+            </header>
+            <table id="" class="table table-bordered">
+              <tr>
+                <td>
+                  <img
+                    style="width: 100%;"
+                    src="./app/EquipMonitor/img/machine/equipment.png"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td id="G_CONS" style="background: #f3f3f3;"></td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="false"
+        data-widget-colorbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header class="head">
+          <span class="widget-icon"> <i class="fa fa-gear"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Servo_Spindle}</h2></span
+          >
+        </header>
+        <table class="table table-bordered">
+          <tr>
+            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              {i18n_ServCloud_Servo_Feedrate_Override}
+            </td>
+            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+              <div
+                id="G_FERP"
+                title="{i18n_ServCloud_Servo_Feedrate_Override}"
+                class="easy-pie-chart txt-color-blue easyPieChart"
+                data-percent="0"
+                data-pie-size="35"
+              >
+                <span class="percent percent-sign font-xs">0</span>
+              </div>
+            </td>
+            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              {i18n_ServCloud_Servo_Actual_Feedrate}
+            </td>
+            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+              <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                  <div
+                    title="{i18n_ServCloud_Servo_Actual_Feedrate}"
+                    class="progress"
+                  >
+                    <div
+                      id="G_ACTF"
+                      class="progress-bar bg-color-blue"
+                      style="width: 0%;"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                  <div
+                    id="G_ACTF_VAL"
+                    title="{i18n_ServCloud_Servo_Actual_Feedrate}"
+                  >
+                    ---
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              {i18n_ServCloud_Spindle_Speed_Override}
+            </td>
+            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+              <div
+                id="G_SPSO"
+                title="{i18n_ServCloud_Spindle_Speed_Override}"
+                class="easy-pie-chart txt-color-blue easyPieChart"
+                data-percent="0"
+                data-pie-size="35"
+              >
+                <span class="percent percent-sign font-xs">0</span>
+              </div>
+            </td>
+            <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              {i18n_ServCloud_Spindle_Actual_Speed}
+            </td>
+            <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+              <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                  <div
+                    title="{i18n_ServCloud_Spindle_Actual_Speed}"
+                    class="progress"
+                  >
+                    <div
+                      id="G_ACTS"
+                      class="progress-bar bg-color-blue"
+                      style="width: 0%;"
+                    ></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                  <div
+                    id="G_ACTS_VAL"
+                    title="{i18n_ServCloud_Spindle_Actual_Speed}"
+                  >
+                    ---
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </article>
+  </div>
+
+  <div class="row">
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="false"
+        data-widget-colorbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header class="head">
+          <span class="widget-icon"> <i class="fa fa-crosshairs"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Monitoring_Position} ( mm )</h2></span
+          >
+        </header>
+        <table id="coordinate-table" class="table table-bordered">
+          <tr>
+            <td class="head">---</td>
+            <td class="value text-center">---</td>
+            <td class="value text-center">---</td>
+            <td class="value text-center">---</td>
+            <td class="value text-center">---</td>
+          </tr>
+          <tr>
+            <td class="head">---</td>
+            <td class="value text-center">---</td>
+            <td class="value text-center">---</td>
+            <td class="value text-center">---</td>
+            <td class="value text-center">---</td>
+          </tr>
+        </table>
+      </div>
+    </article>
+  </div>
+
+  <div class="row">
+    <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div
+        class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="false"
+        data-widget-colorbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header class="head">
+          <span class="widget-icon"> <i class="fa fa-gavel"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Parts_Data}</h2></span
+          >
+          <span class="workshift-part-count"></span>
+        </header>
+        <table class="table table-bordered">
+          <tr>
+            <td class="head">{i18n_ServCloud_Parts_Total}</td>
+            <td class="value text-center" id="G_TOCP">---</td>
+          </tr>
+          <tr>
+            <td class="head">{i18n_ServCloud_Parts_Required}</td>
+            <td class="value text-center" id="G_USCP">---</td>
+          </tr>
+          <tr>
+            <td class="head">{i18n_ServCloud_Parts_Count}</td>
+            <td class="value text-center" id="G_PSCP">---</td>
+          </tr>
+        </table>
+      </div>
+    </article>
+
+    <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div
+        class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="false"
+        data-widget-colorbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header class="head">
+          <span class="widget-icon"> <i class="fa fa-bolt"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Processing_Time_Statistics}</h2></span
+          >
+          <span class="workshift-name"></span>
+        </header>
+        <table class="table table-bordered">
+          <tr>
+            <td class="head">{i18n_ServCloud_Power_Time}</td>
+            <td class="value text-right" id="G_ELCT">-- H -- M -- S</td>
+          </tr>
+          <tr>
+            <td class="head">{i18n_ServCloud_Cutting_Time}</td>
+            <td class="value text-right" id="G_CUTT">-- H -- M -- S</td>
+          </tr>
+          <tr>
+            <td class="head">{i18n_ServCloud_Run_Time}</td>
+            <td class="value text-right" id="G_OPRT">-- H -- M -- S</td>
+          </tr>
+        </table>
+      </div>
+    </article>
+
+    <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div
+        class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="false"
+        data-widget-colorbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header class="head">
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Modal_Other_Code}</h2></span
+          >
+        </header>
+        <table class="table table-bordered">
+          <tr>
+            <td class="head">T</td>
+            <td id="G_NONG_T" class="value text-center">---</td>
+          </tr>
+          <tr>
+            <td class="head">M</td>
+            <td id="G_NONG_M" class="value text-center">---</td>
+          </tr>
+          <tr>
+            <td class="head">F</td>
+            <td id="G_NONG_F" class="value text-center">---</td>
+          </tr>
+          <tr>
+            <td class="head">S</td>
+            <td id="G_NONG_S" class="value text-center">---</td>
+          </tr>
+        </table>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+  #monitor .head {
+    color: #aaa;
+  }
+  #monitor .value {
+    font-weight: bold;
+  }
+</style>
+
+<script type="text/javascript">
+  window.importPageScript()
+</script>

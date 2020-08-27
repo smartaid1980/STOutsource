@@ -1,0 +1,198 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      {i18n_ServCloud_ServTrackManagement_000007}
+      <span>
+        > {i18n_ServCloud_ServTrackManagement_000120}
+      </span>
+    </h1>
+  </div>
+</div>
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_ServTrackManagement_000020}</h2>
+        </header>
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate" id="main-form">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-3">
+                    <label class="label"
+                      >{i18n_ServCloud_ServTrackManagement_000070}</label
+                    >
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="start-date"
+                        name="start-date"
+                        data-rule-required="true"
+                        data-rule-dateISO="true"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-3">
+                    <label class="label"
+                      >{i18n_ServCloud_ServTrackManagement_000071}</label
+                    >
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="end-date"
+                        name="end-date"
+                        data-rule-required="true"
+                        data-rule-dateISO="true"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-3">
+                    <label class="label"
+                      >{i18n_ServCloud_ServTrackManagement_000049}</label
+                    >
+                    <label class="input">
+                      <!-- <select class="select2" id="work-id"> </select> -->
+                      <input type="hidden" id="work-id" class="full-width" />
+                    </label>
+                  </section>
+                  <section class="col col-3">
+                    <label class="label"
+                      >{i18n_ServCloud_ServTrackManagement_000043}</label
+                    >
+                    <label class="input">
+                      <!-- <select class="select2" id="product-id"> </select> -->
+                      <input type="hidden" id="product-id" class="full-width" />
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button name="submit-clean" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrackManagement_000018}
+                </button>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrackManagement_000020}
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+      </div>
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        id="work-table-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+        style="display: none;"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-user"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_ServTrackManagement_000053}</h2></span
+          >
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div id="work-table-body" class="widget-body no-padding">
+            <table
+              id="work-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 1%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 18%;"></th>
+                </tr>
+                <tr>
+                  <th data-class="expand">
+                    {i18n_ServCloud_ServTrackManagement_000049}
+                  </th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000044}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000045}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000062}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000035}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000076}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000025}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000080}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000072}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000074}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000081}</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+    <div id="stk-file"></div>
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<script>
+  window.importPageScript()
+</script>

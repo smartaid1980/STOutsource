@@ -1,0 +1,243 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa-fw fa fa-exclamation-circle"></i>
+      {i18n_ServCloud_AlarmHistory}
+      <span style="font-size: 16px;">
+        >{i18n_ServCloud_AlarmHistory_By_Machine}
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right">
+      <img src="./img/devs/servtech.png" />
+    </div>
+  </div>
+</div>
+<section id="widget-grid">
+  <div class="row">
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-colorbutton="false"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i class="fa fa-edit"></i>
+          </span>
+
+          <h2>
+            <strong>{i18n_ServCloud_Query_Condition}</strong>
+          </h2>
+        </header>
+
+        <div>
+          <div class="widget-body no-padding">
+            <form
+              id="stk-report-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <section class="col col-3">
+                    <label class="label">{i18n_ServCloud_Start_Date}</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input type="text" id="start-date" />
+                    </label>
+                  </section>
+                  <section class="col col-3">
+                    <label class="label">{i18n_ServCloud_End_Date}</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input type="text" id="end-date" />
+                    </label>
+                  </section>
+                  <section class="plant_area col col-3">
+                    <label class="label">{i18n_ServCloud_Plant}</label>
+                    <label class="select">
+                      <select id="plant">
+                        <!-- <option value="0">ChooseName</option> -->
+                      </select>
+                      <i></i>
+                    </label>
+                  </section>
+                  <section class="col col-3">
+                    <label class="label">{i18n_ServCloud_Machine}</label>
+                    <label class="select">
+                      <select id="machine">
+                        <!-- <option value="0">ChooseName</option> -->
+                      </select>
+                      <i></i>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+                <button id="showdemo" class="btn btn-success">
+                  {i18n_ServCloud_demo}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="BC"
+        data-widget-colorbutton="false"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header id="charthead">
+          <span class="widget-icon">
+            <i class="fa fa-bar-chart-o"></i>
+          </span>
+
+          <h2>
+            <strong>{i18n_ServCloud_Query_Bar_Chart}</strong>
+          </h2>
+        </header>
+
+        <div>
+          <div class="widget-body">
+            <div
+              id="bar-chart"
+              class="chart"
+              style="width: 98%; height: 300px; cursor: pointer;"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="DT"
+        data-widget-colorbutton="false"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i class="fa fa-table"></i>
+          </span>
+
+          <h2>
+            <strong>{i18n_ServCloud_Query_Results_Bar}</strong>
+          </h2>
+        </header>
+
+        <div>
+          <div class="widget-body no-padding">
+            <!-- <div class="custom-scroll table-responsive" style="height:290px; overflow-y: scroll;"> -->
+            <table
+              id="table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              data-page-length="2"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">{i18n_ServCloud_Machine}</th>
+                  <th>{i18n_ServCloud_Cnc_Brand}</th>
+                  <th>{i18n_ServCloud_AlarmCode}</th>
+                  <th>{i18n_ServCloud_Alarm_Name}</th>
+                  <th>{i18n_ServCloud_AlarmDescription}</th>
+                  <th>{i18n_ServCloud_AlarmNumber}</th>
+                  <th>{i18n_ServCloud_Alarm_Details}</th>
+                </tr>
+              </thead>
+            </table>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div
+    id="modal"
+    class="modal fade"
+    role="dialog"
+    aria-labelledby="remoteModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">{i18n_ServCloud_Alarm_Details}</h4>
+          <h6 class="modal-subtitle text-primary" style="margin: 0px;"></h6>
+        </div>
+
+        <div class="modal-body">
+          <div
+            class="custom-scroll table-responsive"
+            style="overflow-y: scroll;"
+          >
+            <table id="detail-table" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Machine}</th>
+                  <th>{i18n_ServCloud_Start_Time}</th>
+                  <th>{i18n_ServCloud_End_Time}</th>
+                  <th>{i18n_ServCloud_Duration}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  window.importPageScript()
+</script>

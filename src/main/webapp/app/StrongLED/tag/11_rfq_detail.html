@@ -1,0 +1,834 @@
+<section id="widget-grid">
+  <button class="btn btn-default" id="leave-btn">
+    <i class="fa fa-mail-reply" aria-hidden="true"></i>&#xA0;
+    {i18n_ServCloud_Back_to_list}
+  </button>
+  <!-- row -->
+  <div class="row">
+    <!-- 需求單資訊 START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="demand-list-information-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i class="fa fa-edit" aria-hidden="true"></i>
+          </span>
+          <h2>{i18n_ServCloud_Inquiry_Details}</h2>
+        </header>
+        <div role="content">
+          <div class="widget-body no-padding">
+            <form id="rfq-detail" novalidate>
+              <div id="rfq-detail-view">
+                <fieldset>
+                  <div class="row">
+                    <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                      {i18n_ServCloud_Date_of_filing}：
+                    </div>
+                    <div
+                      class="col col-lg-2 col-md-4 col-sm-4 value"
+                      style="border: none;"
+                      data-column="create_time"
+                    ></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                      {i18n_ServCloud_clients_name}：
+                    </div>
+                    <div
+                      class="col col-lg-4 col-md-4 col-sm-4 value"
+                      style="border: none;"
+                      data-column="cus_id"
+                    ></div>
+                    <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                      {i18n_ServCloud_Fill_in_a_form}：
+                    </div>
+                    <div
+                      class="col col-lg-2 col-md-4 col-sm-4 value"
+                      style="border: none;"
+                      data-column="create_by"
+                    ></div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="row">
+                    <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                      {i18n_ServCloud_Orders_species}
+                    </div>
+                    <div
+                      class="col col-lg-3 col-md-4 col-sm-4 value"
+                      data-column="form_type"
+                    ></div>
+                    <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                      {i18n_ServCloud_Expected_number_of_lamps}
+                    </div>
+                    <div
+                      class="col col-lg-3 col-md-4 col-sm-4 value"
+                      data-column="po_qty"
+                    ></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                      {i18n_ServCloud_Expected_Order_Time}
+                    </div>
+                    <div
+                      class="col col-lg-3 col-md-4 col-sm-4 value"
+                      data-column="st_po_time"
+                    ></div>
+                    <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                      {i18n_ServCloud_Expected_delivery_date}
+                    </div>
+                    <div
+                      class="col col-lg-3 col-md-4 col-sm-4 value"
+                      data-column="st_lead_time"
+                    ></div>
+                  </div>
+                </fieldset>
+                <fieldset id="custom-rfq-column-view"></fieldset>
+                <fieldset>
+                  <div class="row">
+                    <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                      {i18n_ServCloud_Remark}
+                    </div>
+                    <div
+                      class="col col-lg-9 col-md-9 col-sm-9 value multiple-line"
+                      data-column="description"
+                    ></div>
+                  </div>
+                </fieldset>
+              </div>
+              <div id="rfq-detail-edit">
+                <fieldset>
+                  <div class="row">
+                    <label class="col col-lg-2 col-md-2 col-sm-2 item"
+                      >{i18n_ServCloud_Date_of_filing}</label
+                    >
+                    <div class="col col-lg-4 col-md-4 col-sm-4 value">
+                      <input
+                        name="create_time"
+                        type="text"
+                        class="form-control date"
+                        data-rule-date="true"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 col-md-2 col-sm-2 item"
+                      >{i18n_ServCloud_clients_name}</label
+                    >
+                    <div class="col col-lg-4 col-md-4 col-sm-4 value">
+                      <input
+                        name="cus_id"
+                        type="text"
+                        class="form-control"
+                        disabled
+                        data-rule-maxlength="50"
+                      />
+                    </div>
+                    <label
+                      class="col col-lg-2 col-md-2 col-sm-2 item st-required"
+                      >{i18n_ServCloud_Fill_in_a_form}</label
+                    >
+                    <div class="col col-lg-4 col-md-4 col-sm-4 value">
+                      <select
+                        class="form-control"
+                        name="create_by"
+                        data-rule-required="true"
+                        disabled
+                      ></select>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="row">
+                    <label class="col col-lg-2 col-md-2 col-sm-2 item"
+                      >{i18n_ServCloud_Orders_species}</label
+                    >
+                    <div class="col col-lg-4 col-md-4 col-sm-4 value">
+                      <select
+                        name="form_type"
+                        class="form-control"
+                        disabled
+                        data-rule-required="true"
+                      >
+                        <option value=""></option>
+                        <option value="2"
+                          >{i18n_ServCloud_Inquiry_Order}</option
+                        >
+                      </select>
+                    </div>
+                    <label
+                      class="col col-lg-2 col-md-2 col-sm-2 item st-required"
+                      >{i18n_ServCloud_Expected_number_of_lamps}</label
+                    >
+                    <div class="col col-lg-4 col-md-4 col-sm-4 value">
+                      <input
+                        name="po_qty"
+                        type="text"
+                        class="form-control vld-pos-int"
+                        data-rule-required="true"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label
+                      class="col col-lg-2 col-md-2 col-sm-2 item st-required"
+                      >{i18n_ServCloud_Expected_Order_Time}</label
+                    >
+                    <div class="col col-lg-4 col-md-4 col-sm-4 value">
+                      <input
+                        name="st_po_time"
+                        type="text"
+                        class="form-control date"
+                        data-rule-required="true"
+                        data-rule-date="true"
+                      />
+                    </div>
+                    <label class="col col-lg-2 col-md-2 col-sm-2 item"
+                      >{i18n_ServCloud_Expected_delivery_date}</label
+                    >
+                    <div class="col col-lg-4 col-md-4 col-sm-4 value">
+                      <input
+                        name="st_lead_time"
+                        type="text"
+                        class="form-control date"
+                        data-rule-date="true"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset id="custom-rfq-column"></fieldset>
+                <fieldset>
+                  <div class="row">
+                    <label class="col col-lg-2 col-md-2 col-sm-2 item"
+                      >{i18n_ServCloud_Remark}<br />({i18n_ServCloud_Most}200字)</label
+                    >
+                    <div
+                      class="col col-lg-9 col-md-10 col-sm-10 value"
+                      style="height: fit-content;"
+                    >
+                      <textarea
+                        name="description"
+                        class="form-control"
+                        data-rule-maxlength="200"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label
+                      class="col col-lg-2 col-md-2 col-sm-2 item st-required"
+                      >{i18n_ServCloud_Modify_Reason}<br />({i18n_ServCloud_Most}100字)</label
+                    >
+                    <div
+                      class="col col-lg-9 col-md-10 col-sm-10 value"
+                      style="height: fit-content;"
+                    >
+                      <textarea
+                        name="reason"
+                        class="form-control"
+                        data-rule-required="true"
+                        data-rule-maxlength="100"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+            <div class="smart-form">
+              <footer>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  data-is-edit="false"
+                  id="submit-demand-list"
+                >
+                  {i18n_ServCloud_Send_Out}
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="edit-demand-list"
+                >
+                  {i18n_ServCloud_Edit}
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  id="cancel-edit-demand-list"
+                >
+                  {i18n_ServCloud_Cancel}
+                </button>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 需求單資訊 END -->
+    <!-- 標品匹配結果 START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="matched-rfq-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i class="fa fa-paperclip" aria-hidden="true"></i>
+          </span>
+          <h2>{i18n_ServCloud_Standard_Products_Match_Result}</h2>
+        </header>
+        <div role="content">
+          <div class="widget-body no-padding">
+            <div class="alert alert-info fade in">
+              <button class="close" data-dismiss="alert">
+                ×
+              </button>
+              <i class="fa-fw fa fa-info" aria-hidden="true"></i>
+              比對結果為該系列型號中必填欄位是否全部符合，<span
+                id="compared-columns"
+              ></span>
+            </div>
+            <table
+              id="matched-rfq"
+              class="table table-striped table-bordered table-hover"
+            >
+              <thead>
+                <tr></tr>
+                <tr></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 標品匹配結果 END -->
+    <!-- 料件資訊 START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="material-information-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i class="fa fa-table" aria-hidden="true"></i>
+          </span>
+          <h2>{i18n_ServCloud_Material_Information}</h2>
+        </header>
+        <div role="content">
+          <div class="widget-body no-padding">
+            <div class="alert alert-info fade in" id="material-alert-bom-list">
+              {i18n_ServCloud_Judgement_Result}<br />
+              {i18n_ServCloud_Standard_Products}/{i18n_ServCloud_Non-Standard_Products}：<span
+                id="material-alert-std-product"
+              ></span
+              ><br />
+              BOM{i18n_ServCloud_Rule}：<span id="material-alert-module"></span>
+            </div>
+            <table
+              id="rfq-material"
+              class="table table-striped table-bordered table-hover"
+            >
+              <thead>
+                <tr></tr>
+                <tr></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div id="mtl-cost-info"></div>
+            <div class="smart-form" id="material-btns">
+              <footer>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="material-confirm-btn"
+                  disabled
+                >
+                  {i18n_ServCloud_Send_Out}
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="material-save-btn"
+                  disabled
+                >
+                  {i18n_ServCloud_Store}
+                </button>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 料件資訊 END -->
+    <!-- 報價確認 START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="price-confirm-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i class="fa fa-table" aria-hidden="true"></i>
+          </span>
+          <h2>{i18n_ServCloud_Quote_Confirmation}</h2>
+        </header>
+        <div role="content">
+          <div class="widget-body no-padding">
+            <div class="alert alert-warning fade in hide" id="price-alert">
+              <button class="close" data-dismiss="alert">
+                ×
+              </button>
+              <i class="fa-fw fa fa-info" aria-hidden="true"></i>
+              <strong
+                >{i18n_ServCloud_Please_Select_Products_Labeled_Reloading_Market_Profits}</strong
+              >
+            </div>
+            <div class="alert alert-info fade in">
+              <button class="close" data-dismiss="alert">
+                ×
+              </button>
+              <i class="fa-fw fa fa-info" aria-hidden="true"></i>
+              {i18n_ServCloud_The_Formula}：{i18n_ServCloud_Cost_of_Material} *
+              {i18n_ServCloud_Factory_profit} * {i18n_ServCloud_Market_profits}
+              = {i18n_ServCloud_Offer_Suggestions}；
+              {i18n_ServCloud_E.G}：100({i18n_ServCloud_Cost_of_Material}) *
+              1.2({i18n_ServCloud_Factory_profit}) *
+              1.5({i18n_ServCloud_Market_profits}) =
+              180({i18n_ServCloud_Offer_Suggestions})
+            </div>
+            <form class="smart-form" id="price-confirm">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-2">
+                    <label class="label"
+                      >{i18n_ServCloud_Cost_of_Material}</label
+                    >
+                    <label class="input" id="mtl-cost"> </label>
+                  </section>
+                  <section class="col col-2">
+                    <label class="label"
+                      >{i18n_ServCloud_Factory_profit}({i18n_ServCloud_Coefficient})</label
+                    >
+                    <label class="input" id="produce-coef"> </label>
+                  </section>
+                  <section class="col col-2">
+                    <label class="label"
+                      >{i18n_ServCloud_Market_profits}({i18n_ServCloud_Coefficient})</label
+                    >
+                    <label class="input" id="market-coef"> </label>
+                  </section>
+                  <section class="col col-2">
+                    <label class="label"
+                      >{i18n_ServCloud_Recommend_Price}</label
+                    >
+                    <label class="input" id="price"></label>
+                  </section>
+                  <section class="col col-2">
+                    <label class="label">{i18n_ServCloud_Quantity}</label>
+                    <label class="input" id="po_qty"></label>
+                  </section>
+                  <section class="col col-2">
+                    <label class="label">{i18n_ServCloud_Quoted_price}</label>
+                    <label class="input" id="quote"></label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="price-confirm-btn"
+                >
+                  {i18n_ServCloud_Send_Out}
+                </button>
+                <button
+                  type="button"
+                  id="show-edit-price-modal-btn"
+                  class="btn btn-success"
+                  data-toggle="modal"
+                  data-target="#edit-quote-modal-widget"
+                >
+                  {i18n_ServCloud_Edit_Offer}
+                </button>
+                <button
+                  type="button"
+                  id="show-quote-history-modal-btn"
+                  class="btn btn-info hide"
+                  data-toggle="modal"
+                  data-target="#quote-history-modal-widget"
+                >
+                  {i18n_ServCloud_View_Record}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 報價確認 END -->
+    <!-- 編輯報價 MODAL START -->
+    <div
+      class="modal fade"
+      id="edit-quote-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">{i18n_ServCloud_Edit_Offer}</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form
+              class="form-horizontal"
+              id="edit-quote-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="form-group">
+                  <label class="col-md-2 control-label st-required"
+                    >{i18n_ServCloud_Money}</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      class="form-control vld-pos-int"
+                      name="quote"
+                      type="text"
+                      data-rule-required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2 control-label st-required"
+                    >{i18n_ServCloud_Remark}<br />({i18n_ServCloud_Most}50字)</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      class="form-control"
+                      name="remark"
+                      type="text"
+                      data-rule-required="true"
+                      data-rule-maxlength="50"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button type="button" class="btn btn-primary" id="edit-quote-btn">
+              {i18n_ServCloud_Send_Out}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 編輯報價 MODAL END-->
+    <!-- 查看報價紀錄 MODAL START -->
+    <div
+      class="modal fade"
+      id="quote-history-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">{i18n_ServCloud_Quote_Record}</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul id="widget-tab-1" class="nav nav-tabs">
+              <li class="active">
+                <a data-toggle="tab" href="#tab1"
+                  >{i18n_ServCloud_Quote_Record}</a
+                >
+              </li>
+              <li>
+                <a data-toggle="tab" href="#tab2"
+                  >{i18n_ServCloud_Ask_For_A_Discount_Record}</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="tab1">
+                <table
+                  id="quote-history-table"
+                  class="table table-striped table-bordered table-hover"
+                >
+                  <thead>
+                    <tr></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+              <div class="tab-pane fade in" id="tab2">
+                <table
+                  id="request-discount-history-table"
+                  class="table table-striped table-bordered table-hover"
+                >
+                  <thead>
+                    <tr></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_Return}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 查看報價紀錄 MODAL END-->
+    <!-- 新建物料 MODAL START -->
+    <div
+      class="modal fade"
+      id="material-management-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">{i18n_ServCloud_New_Material}</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="widget-body no-padding">
+              <form
+                class="smart-form"
+                id="material-management-modal"
+                novalidate="novalidate"
+              >
+                <fieldset>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Item_Name}</label>
+                    <label class="input">
+                      <input
+                        type="text"
+                        name="mtl_name"
+                        class="form-control required"
+                        data-rule-maxlength="50"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Unit}</label>
+                    <label class="input">
+                      <input
+                        type="text"
+                        name="unit"
+                        class="form-control required"
+                        data-rule-maxlength="5"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Crafts}</label>
+                    <label class="input">
+                      <input
+                        type="text"
+                        name="process"
+                        class="form-control"
+                        data-rule-maxlength="50"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label class="label"
+                      >{i18n_ServCloud_Specification}
+                      ({i18n_ServCloud_Most}100字)</label
+                    >
+                    <label class="input" style="height: fit-content;">
+                      <textarea
+                        name="spec"
+                        class="form-control required"
+                        rows="3"
+                        data-rule-maxlength="100"
+                      ></textarea>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label class="label"
+                      >{i18n_ServCloud_Remark}
+                      ({i18n_ServCloud_Most}50字)</label
+                    >
+                    <label class="input" style="height: fit-content;">
+                      <textarea
+                        name="remark"
+                        class="form-control"
+                        rows="3"
+                        data-rule-maxlength="50"
+                      ></textarea>
+                    </label>
+                  </section>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="add-material-btn"
+            >
+              {i18n_ServCloud_New}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新建物料 MODAL END-->
+    <!-- 新增現有物料 MODAL START -->
+    <div
+      class="modal fade"
+      id="existing-material-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">{i18n_ServCloud_Existing_Materials}</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="widget-body">
+              <div id="existing-material-filter">
+                <h2>{i18n_ServCloud_Query_Conditions}</h2>
+                <div class="row">
+                  <div class="col col-md-3">
+                    <input
+                      class="form-control"
+                      id="filter-mtl-id"
+                      placeholder="{i18n_ServCloud_Item_Number}"
+                    />
+                  </div>
+                  <div class="col col-md-3">
+                    <select
+                      class="form-control"
+                      id="filter-mtl-name"
+                      placeholder="mtl_name"
+                    >
+                      <option value="" selected
+                        >{i18n_ServCloud_Item_Name}</option
+                      >
+                    </select>
+                  </div>
+                  <div class="col col-md-1">
+                    <button
+                      class="btn btn-primary"
+                      id="submit-filter-condition"
+                    >
+                      {i18n_ServCloud_Query}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <table
+                id="existing-material-list"
+                class="table table-striped table-bordered table-hover"
+              >
+                <thead></thead>
+                <tbody></tbody>
+              </table>
+              <div id="add-material-list">
+                <h1>{i18n_ServCloud_Selected_Materials}</h1>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="add-existing-material-btn"
+            >
+              {i18n_ServCloud_New}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新增現有物料 MODAL END-->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  @import url('app/StrongLED/css/main.css');
+  @import url('app/StrongLED/css/rfqDetailMain.css');
+  @import url('app/StrongLED/css/rfqDetailEdit.css');
+  @import url('app/StrongLED/css/rfqDetailView.css');
+  @import url('app/StrongLED/css/rfqMaterial.css');
+
+  /* 報價 */
+  #price-confirm-widget .alert {
+    margin: 0;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "DWGDecoder",
+    "name": "智能排配",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_dwg_decoder",
+      "name": "智能排配"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

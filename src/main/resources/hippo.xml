@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Hippos>
+    <Hippo name="fileio_hippo" open="true"
+           type="com.servtech.hippopotamus.fileio.FileDBHippo"
+           path="C:/Servtech/Servolution/Platform/hippo" threadSize="5" />
+</Hippos>

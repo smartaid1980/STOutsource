@@ -1,0 +1,320 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="search-query-conditions-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+          <h2>{i18n_ServCloud_Efficiency_Statistics}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form
+              class="smart-form form-horizontal"
+              novalidate="novalidate"
+              id="form"
+            >
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="form-group">
+                      <label class="col-md-3 label st-required text-right"
+                        ><span>{i18n_ServCloud_Year}：</span></label
+                      >
+                      <div class="col-md-9">
+                        <label class="input"
+                          ><i class="icon-append fa fa-calendar"></i>
+                          <input
+                            type="text"
+                            id="year"
+                            name="year"
+                            data-rule-required="true"
+                            data-rule-date="true"
+                            class="form-control"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="form-group">
+                      <label class="col-md-3 label st-required text-right"
+                        ><span>{i18n_ServCloud_Month}：</span></label
+                      >
+                      <div class="col-md-9">
+                        <label class="input">
+                          <select
+                            class="form-control"
+                            id="month"
+                            name="month"
+                            data-rule-required="true"
+                          ></select>
+                        </label>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="form-group">
+                      <label class="col-md-3 label text-right"
+                        ><span>{i18n_ServCloud_Product}：</span></label
+                      >
+                      <div class="col-md-9">
+                        <label class="input"
+                          ><i class="icon-append fa fa-calendar"></i>
+                          <input
+                            type="text"
+                            name="product"
+                            id="product-select"
+                            class="full-width"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="form-group">
+                      <label class="col-md-3 label st-required text-right"
+                        ><span>{i18n_ServCloud_Work_Center}：</span></label
+                      >
+                      <div class="col-md-9">
+                        <label class="select">
+                          <select
+                            name="division"
+                            id="division-select"
+                            data-rule-required="true"
+                            multiple
+                          ></select>
+                        </label>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="form-group">
+                      <label class="col-md-3 label st-required text-right"
+                        ><span>{i18n_ServCloud_Op}</span></label
+                      >
+                      <div class="col-md-9">
+                        <label class="input">
+                          <input
+                            name="op"
+                            id="op"
+                            data-rule-required="true"
+                            class="full-width"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                  </section>
+
+                  <div
+                    id="btn-frame"
+                    class="col col-xs-12 col-sm-12 col-md-3 col-lg-3"
+                  >
+                    <button id="query-btn" class="btn btn-primary">
+                      {i18n_ServCloud_Query}
+                    </button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            <div id="info" class="hide">
+              <div>
+                {i18n_ServCloud_Op}：<span id="op-text"
+                  >ALL( {i18n_ServCloud_Whole_Factory} )</span
+                >
+              </div>
+              <div>
+                {i18n_ServCloud_Target_Value}：
+                <input
+                  id="target-value"
+                  type="text"
+                  class="form-control"
+                />&nbsp;%&nbsp;&nbsp;
+                <button id="target-btn" class="btn btn-success">
+                  {i18n_ServCloud_Confirm}
+                </button>
+                <code id="target-alert" class="note-error"></code>
+              </div>
+              <div class="smart-form">
+                <div class="inline-group">
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      name="show-chart"
+                      value="0"
+                      checked="checked"
+                    />
+                    <i></i>{i18n_ServCloud_Staff_Efficiency_Statistics}</label
+                  >
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      name="show-chart"
+                      value="1"
+                      checked="checked"
+                    />
+                    <i></i>{i18n_ServCloud_Line_Efficiency_Statistics}</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="chart"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #form {
+    border-bottom: 1px dashed;
+    margin: 0px 13px;
+  }
+
+  label.col-md-3.label.st-required.text-right {
+    line-height: 28px;
+  }
+
+  label.label.st-required.text-right > span {
+    padding-right: 13px;
+  }
+
+  #btn-frame {
+    text-align: center;
+  }
+
+  #btn-frame #query-btn {
+    margin: auto;
+    height: 31px;
+    padding: 0 22px;
+    cursor: pointer;
+  }
+
+  /* info */
+  #info {
+    padding: 5px 25px;
+    font-size: 1.2em;
+  }
+
+  #info > div {
+    padding: 5px 0;
+  }
+
+  #info input {
+    display: inline;
+    width: 100px;
+  }
+
+  .note-error {
+    color: #da2929 !important;
+    background: none;
+  }
+
+  /* chart */
+  #chart {
+    padding: 0 13px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #chart > div {
+    flex: auto;
+  }
+
+  .chart-frame {
+    margin-bottom: 13px;
+    height: 94%;
+  }
+
+  .chart-frame .header {
+    height: 30px;
+    background-color: #716f6cab;
+    border: 1px solid #cfcfd096;
+    border-bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+
+  .chart-frame .chart-body {
+    border: 1px solid #cfcfd096;
+    min-height: 200px;
+    padding: 10px;
+    height: 91%;
+  }
+
+  .chart-frame .chart-body > .chart {
+    margin: 0;
+    width: 100%;
+    min-height: 180px;
+  }
+
+  /* chart legend */
+  .chart-legend {
+    display: flex;
+    justify-content: center;
+  }
+
+  .chart-legend > div {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .chart-legend hr {
+    width: 30px;
+    margin: 5px 6px;
+    border-top-width: 3px;
+  }
+
+  .chart-legend .data-hr {
+    position: relative;
+  }
+
+  .chart-legend .data-hr > div {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 40%;
+    top: -79%;
+  }
+
+  .chart-controlNav {
+    text-align: center;
+  }
+
+  .chart-controlNav a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    margin: 6px 2px 0;
+    background-color: #50505096;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #50505096;
+  }
+
+  .chart-controlNav a.active {
+    cursor: default;
+    background-color: #cfcfd096;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

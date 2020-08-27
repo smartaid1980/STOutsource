@@ -1,0 +1,315 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      稼動資料維護
+      <span>
+        > 品質檢測數據維護
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">{i18n_ServCloud_Start_Date}</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="startDate" id="start-date" />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">{i18n_ServCloud_End_Date}</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="endDate" id="end-date" />
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">{i18n_ServCloud_class}</label>
+                      <label class="select select-multiple">
+                        <select
+                          id="shift"
+                          name="shift"
+                          multiple="multiple"
+                        ></select>
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">{i18n_ServCloud_Machine}</label>
+                      <label class="select select-multiple">
+                        <select
+                          id="machine"
+                          name="machine"
+                          multiple="multiple"
+                        ></select>
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+                <button id="showdemo" class="btn btn-success hide">
+                  {i18n_ServCloud_Show_Demo_Data}
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- detail DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Result}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <p class="alert alert-danger">
+              <strong
+                ><i class="fa fa-info-circle"></i> {i18n_ServCloud_Hint}</strong
+              >
+              {i18n_ServCloud_HintDetail}
+            </p>
+            <table
+              id="table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Filter}實際產量"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Filter}例檢不良品"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 27%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Filter}例檢不良品原因"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Filter}例檢良品"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Filter}維修首件不良品"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Filter}校車首件不良品"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Filter}QC總數量"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Filter}QC不良品"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Filter}QC後良品數量"
+                    />
+                  </th>
+                  <th class="hide"></th>
+                </tr>
+                <tr>
+                  <th data-class="expand">日期</th>
+                  <th>員編</th>
+                  <th>人員姓名</th>
+                  <th>班別</th>
+                  <th>機台</th>
+                  <th>訂單號碼</th>
+                  <th>多次製程</th>
+                  <th>實際產量</th>
+                  <th>例檢不良品</th>
+                  <th>例檢不良品原因</th>
+                  <th>例檢良品</th>
+                  <th>維修首件不良品</th>
+                  <th>校車首件不良品</th>
+                  <th>QC總數量</th>
+                  <th>QC不良品</th>
+                  <th>QC後良品數量</th>
+                  <th class="hide"></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+        <div class="text-center" style="padding-bottom: 15px;">
+          <button id="submit_edit" class="btn btn-primary">
+            {i18n_ServCloud_Submit}
+          </button>
+        </div>
+      </div>
+      <!-- detail DATATABLE END -->
+
+      <!-- modal dialog START -->
+      <div
+        class="modal fade"
+        id="repair-result"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" style="width: fit-content;">
+          <div
+            class="modal-content"
+            id="repair-result-content"
+            style="width: 1200px;"
+          >
+            <div class="modal-header">
+              <h4 class="modal-title" style="float: left;">例檢不良品原因</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="widget-body">
+                <table
+                  height="100%"
+                  class="table table-striped table-bordered table-hover"
+                  id="reason_table"
+                >
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" id="repay_btn">確定</button>
+              <button class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal dialog END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+<script>
+  window.importPageScript()
+</script>

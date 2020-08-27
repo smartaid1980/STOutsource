@@ -1,0 +1,1 @@
+<command name="cnc_PLCTimer" cycletype="count" cyclevalue = "1" timeout ="-1"><params><param name="G_PMTR2" count="1" frequency="0" isRepeat="true"><inputs><input name="P_NUMBER">1</input><input name="P_COUNT">10</input></inputs><filters></filters><process></process><value></value></param></params></command>

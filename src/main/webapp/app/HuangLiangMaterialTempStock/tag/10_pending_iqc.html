@@ -1,0 +1,191 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      材料暫入
+      <span>
+        > 待驗料紀錄查詢
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="query"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-4">
+                    <section>
+                      <label class="label st-required">暫入上架起始日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="startDate" id="start-date" />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label st-required" st-required
+                        >暫入上架結束日期</label
+                      >
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="endDate" id="end-date" />
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">材料庫</label>
+                      <label for="" class="select">
+                        <select id="mrp" name="mrp" class=""></select>
+                        <i></i>
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">採購單號</label>
+                      <label for="" class="input">
+                        <input type="text" name="po" id="po" class="" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+                <button id="showdemo" class="btn btn-success hide">
+                  Demo
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- detail DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>查詢結果</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 14%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 14%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                </tr>
+                <tr>
+                  <th>暫入上架時間</th>
+                  <th>材料庫</th>
+                  <th>採購單號</th>
+                  <th>廠商</th>
+                  <th>材料條碼</th>
+                  <th>外徑</th>
+                  <th>長度</th>
+                  <th>上漆顏色</th>
+                  <th>材料位置</th>
+                  <th>上架數量(KG)</th>
+                  <th>上架人員</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,127 @@
+	zh_tw	zh	en
+i18n_ServCloud_Dashboard	輪播看板	轮播看板	Dashboard
+i18n_ServCloud_Screen	輪播	轮播	Play
+i18n_ServCloud_Group_Manage	管理群組	管理群组	Group Management
+i18n_ServCloud_Work	工單	工单	Work order
+i18n_ServCloud_Product_Number	產品編號	产品编号	Product Number
+i18n_ServCloud_Work_Start_time	工單起始時間	工单起始时间	Work start time
+i18n_ServCloud_Work_End_time	工單結束時間	工单结束时间	Work end time
+i18n_ServCloud_Light_Style	亮版	亮版	Light style
+i18n_ServCloud_Dark_Style	暗版	暗版	Dark style
+i18n_ServCloud_Technology_Style	科技版	科技版	Technology style
+i18n_ServCloud_Change_Freq	畫面切換頻率(秒)	画面切换频率(秒)	Change Frequency (sec)
+i18n_ServCloud_Group_ID	群組編號	群组编号	Group ID
+i18n_ServCloud_Group_Name	群組名稱	群组名称	Group Name
+i18n_ServCloud_Line	產線	产线	Line
+i18n_ServCloud_Is_Open	是否啟用	是否启用	Activate
+i18n_ServCloud_Move_In_Time	進站時間	进站时间	Move in time
+i18n_ServCloud_Move_Out_Time	出站時間	出站时间	Move out time
+i18n_ServCloud_Product	產品	产品	Product
+i18n_ServCloud_Process	工序	工序	Process
+i18n_ServCloud_Output	產量	产量	Output
+i18n_ServCloud_Invalid_Reason	無效原因	无效原因	Inefficiency reason
+i18n_ServCloud_Start_Time	開始時間	开始时间	Start time
+i18n_ServCloud_Cumulative_Minute	累計分鐘	累计分钟	Cumulative time (min)
+i18n_ServCloud_Second	秒	秒	Seconds
+i18n_ServCloud_Adverse_Number	不良數	不良数	Adverse number
+i18n_ServCloud_Yield	良率	良率	Yield
+
+# 工單排程 45_production_schedule
+i18n_ServCloud_Production_Schedule_Recommend	工單排程及建議	工单排程及建议	Production schedule And Recommend
+i18n_ServCloud_Schedule	排程	排程	Schedule
+i18n_ServCloud_Work_Order	工單	工单	Work order
+i18n_ServCloud_Booking_Delivery_Date	預訂交貨日	预订交货日	Booking delivery date
+i18n_ServCloud_Delivery_Volume	交付量	交付量	Delivery volume
+i18n_ServCloud_Standard_Work	標工	标工	Standard work
+i18n_ServCloud_Expected_Completion_Date	預計完工日	预计完工日	Expected completion date
+i18n_ServCloud_Disparity	差距	差距	Disparity
+i18n_ServCloud_Scheduling_Advice	排程建議	排程建议	Scheduling advice
+i18n_ServCloud_Adjusted_Completion_Date	調整後完工日	制程报工状况	Adjusted completion date
+i18n_ServCloud_Impact_Note	影響備註	影响备注	Impact note
+i18n_ServCloud_Process_Report_Status	製程報工狀況	制程报工状况	Process report status
+i18n_ServCloud_Ongoing_Process	進行中製程	进行中制程	Ongoing process
+i18n_ServCloud_Process_Completed	已完成製程	已完成制程	Process completed
+i18n_ServCloud_Idle_Reason	閒置原因	闲置原因	Idle reason
+i18n_ServCloud_Ng_Reason	不良原因	不良原因	Ng reason
+i18n_ServCloud_Statistics	統計	统计	 statistics
+i18n_ServCloud_Take_Top	取前	取前	Top
+i18n_ServCloud_Today_Take_Top	當日取前	当日取前	Today Top
+i18n_ServCloud_Today_History_Comparison	今/昔比對	今/昔比对	Today/History Comparison
+i18n_ServCloud_Line_State_Stacking_Diagram	線別狀態堆疊圖	线别状态堆叠图	Line state stacking diagram
+i18n_ServCloud_Reason1	元料件短缺	元料件短缺	Shortage of materials
+i18n_ServCloud_Reason_Info1	原料供給排程需調整	原料供给排程需调整	Raw material supply schedule needs to be adjusted
+i18n_ServCloud_Reason2	休息時間	休息时间	Break time
+i18n_ServCloud_Reason_Info2	分批調整休息時段	分批调整休息时段	Batch adjustment of rest periods
+i18n_ServCloud_Reason3	清潔料管	清洁料管	Cleaning tube
+i18n_ServCloud_Reason_Info3	提高清潔洗料管轉速與射速	提高清洁洗料管转速与射速	Improve cleaning washing tube speed and rate of fire
+i18n_ServCloud_Reason4	當機	当机	Fake
+i18n_ServCloud_Reason_Info4	機台需安排檢修	机台需安排检修	The machine needs to be arranged for overhaul
+i18n_ServCloud_Reason5	治具維修	治具维修	Fixture repair
+i18n_ServCloud_Reason_Info5	增補機台備用治具	增补机台备用治具	Supplementary machine spare fixture
+i18n_ServCloud_Reason6	停機待料	停机待料	Shutdown
+i18n_ServCloud_Reason_Info6	前製程加工時程過久	前制程加工时程过久	Excessive processing time is too long
+i18n_ServCloud_Reason7	組裝件數目不一	组装件数目不一	The number of assemblies is different
+i18n_ServCloud_Reason_Info7	前製程不良品過多導致	前制程不良品过多导致	Excessive pre-process defective products
+i18n_ServCloud_Reason8	修整組裝件	修整组装件	Trimming assembly
+i18n_ServCloud_Reason_Info8	前製程良率待提升(如毛屑問題)	前制程良率待提升(如毛屑问题)	Before the process yield to be lifted (e.g., dander problem)
+i18n_ServCloud_Reason9	料件未到	料件未到	Materials and parts yet to come
+i18n_ServCloud_Reason_Info9	料件輸送效率待提升	料件输送效率待提升	Transport efficiency feed member to be lifted
+i18n_ServCloud_Reason10	毛邊過多	毛边过多	Excessive burrs
+i18n_ServCloud_Reason_Info10	機台鎖模力不足	机台锁模力不足	Machine clamping force shortage
+i18n_ServCloud_Reason11	氣泡過多	气泡过多	Excessive bubble
+i18n_ServCloud_Reason_Info11	減慢射出速度	减慢射出速度	Slow down the injection speed
+i18n_ServCloud_Reason12	異色範圍過大	异色范围过大	Harmonia is too large
+i18n_ServCloud_Reason_Info12	料管需清理	料管需清理	Feeding tube to be cleaned
+i18n_ServCloud_Reason13	螺紋不均	螺纹不均	Thread unevenness
+i18n_ServCloud_Reason_Info13	限制調整或降低進給率	限制调整或降低进给率	Limit or reduce the feedrate adjustment
+i18n_ServCloud_Reason14	預留量過多	预留量过多	Excessive amounts set aside
+i18n_ServCloud_Reason_Info14	減少預留量	减少预留量	Reduce the amount of reserve
+i18n_ServCloud_Reason15	工件硬度不足	工件硬度不足	Insufficient hardness of the workpiece
+i18n_ServCloud_Reason_Info15	增補機台冷卻切削液	增补机台冷却切削液	Added machine cutting fluid cooling
+i18n_ServCloud_Reason16	成品不對稱	成品不对称	Finished asymmetry
+i18n_ServCloud_Reason_Info16	確認組裝SOP及人員培訓	确认组装SOP及人员培训	Confirm assembly SOP and personnel training
+i18n_ServCloud_Reason17	組裝密合度不足	组装密合度不足	Assembly adaptation inadequate
+i18n_ServCloud_Reason_Info17	檢視前製程產出精度	检视前制程产出精度	View previous process output accuracy
+i18n_ServCloud_Reason18	成品受潮	成品受潮	Finished damp
+i18n_ServCloud_Reason_Info18	重整生產及料庫環境	重整生产及料库环境	Reforming production and material database environment
+
+# 加工進度 46_processing_progress
+i18n_ServCloud_Processing_Progress	加工進度	加工进度	Processing progress
+i18n_ServCloud_Picking_Storage_State	領料入庫狀態	领料入库状态	Picking storage state
+i18n_ServCloud_Realtime_State_machine	機台即時狀態	机台即时状态	Real-time state machine
+i18n_ServCloud_Storage	入庫	入库	Storage
+i18n_ServCloud_Out_Library	出庫	出库	Out of the library
+i18n_ServCloud_Outbound	出站	出站	Outbound
+i18n_ServCloud_Pit_Stop	進站	进站	Pit stop
+i18n_ServCloud_Assembly	組裝	组装	Assembly
+i18n_ServCloud_CNC_Machining	CNC加工	CNC加工	CNC machining
+i18n_ServCloud_Injection_Processing	射出加工	射出加工	Injection processing
+i18n_ServCloud_Reclaimer	領料	领料	Reclaimer
+i18n_ServCloud_Instant_Monitoring_Parameters	即時監控參數	即时监控参数	Instant monitoring parameters
+i18n_ServCloud_Machine_Status	機台狀態	机台状态	Machine status
+i18n_ServCloud_Power_On_Time	通電時間	通电时间	Power on time
+i18n_ServCloud_Running_Time	運轉時間	运转时间	Running time
+i18n_ServCloud_Cutting_Time	切削時間	切削时间	cutting time
+i18n_ServCloud_Circulation_Time	循環時間	循环时间	circulation time
+i18n_ServCloud_Total_Processing_Components	加工生產數量	加工生产数量	Total number of processing components
+i18n_ServCloud_Processing_Program_Name	加工程式名稱	加工程式名称	Processing program name
+i18n_ServCloud_Execute_Single_Section	執行單節	执行单节	Execute a single section
+i18n_ServCloud_Spindle_Command_Speed	主軸命令轉速	主轴命令转速	Spindle command speed
+i18n_ServCloud_Actual_Feed_Rate	實際進給率	实际进给率	Actual feed rate
+i18n_ServCloud_Mold_Temperature	模具温度	模具温度	Mold temperature
+i18n_ServCloud_Injection_Speed	射出速度	射出速度	Injection Speed
+i18n_ServCloud_Injection_Pressure	射出压力	射出压力	Injection pressure
+i18n_ServCloud_Water_Cooled_Outlet_Temp	水冷機出口溫度	水冷机出口温度	Water-cooled machine outlet temperatures
+i18n_ServCloud_Water_Cooled_Inlet_Temp	水冷機入口溫度	水冷机入口温度	Water-cooled machine inlet temperatures
+i18n_ServCloud_Entity_Apparatus_May_Output_Data	實體設備可輸出數據	实体设备可输出数据	Entity apparatus may output data
+i18n_ServCloud_Quantity	數量	数量	Quantity
+i18n_ServCloud_Grid_Name	第{index}層	第{index}层	{index} grid
+
+i18n_ServCloud_Work_ID	工單編號	工单编号	Work Id
+i18n_ServCloud_Material_Num	料號	料号	Material num
+i18n_ServCloud_Item_Name	品名	品名	Item name
+i18n_ServCloud_Specification	規格	规格	specification
+i18n_ServCloud_Production_Plan	計畫生產量	计画生产量	Production plan
+i18n_ServCloud_Actual_Production	實際生產量	实际生产量	Actual production
+i18n_ServCloud_The_Number_Of_Unfinished_Work_Order	工單未完數量	工单未完数量	The number of unfinished work order
+i18n_ServCloud_The_Last_Production_Time	最後生產時間	最后生产时间	The last production time

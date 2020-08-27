@@ -1,0 +1,170 @@
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span>> {i18n_ServCloud_Plant_Area_Management} </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right">
+      <img src="./img/devs/servtech.png" />
+    </div>
+  </div>
+</div>
+
+<!-- widget grid -->
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i class="fa fa-th-list"></i>
+          </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Plant_Area_Information}</h2>
+          </span>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="stk-plant-table"
+              stk-entity-pk="plant_id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 70%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control hide" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">{i18n_ServCloud_Plant_Area}</th>
+                  <th>{i18n_ServCloud_Machine}</th>
+                  <th data-hide="phone">{i18n_ServCloud_Layers}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="plant_id"
+                      class="form-control"
+                      placeholder="ID"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="plant_areas"
+                      class="form-control"
+                      disabled="disabled"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="plant_id"
+                      class="form-control"
+                      disabled="disabled"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+
+  <div id="dialog-edit-plant-area" style="display: none;">
+    <form id="create-plan-areat-form" class="form-inline" role="form">
+      <fieldset>
+        <div class="form-group" style="vertical-align: top;">
+          {i18n_ServCloud_Plant_Area}：
+          <span id="select-edit-plant"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="form-group">
+          {i18n_ServCloud_Plant_Area_Size}：
+        </div>
+        <div class="form-group" style="vertical-align: top;">
+          <div class="input-group">
+            <input
+              class="form-control"
+              id="create-plant-row"
+              type="text"
+              name="row"
+              placeholder="{i18n_ServCloud_Row}"
+            />
+          </div>
+        </div>
+        {i18n_ServCloud_Row}
+        <div class="form-group" style="vertical-align: top;">
+          <div class="input-group">
+            <input
+              class="form-control"
+              id="create-plant-column"
+              type="text"
+              name="column"
+              placeholder="{i18n_ServCloud_Column}"
+            />
+          </div>
+        </div>
+        {i18n_ServCloud_Column}
+        <div class="form-group" style="vertical-align: top;">
+          <button id="create-plant-area" type="submit" class="btn btn-primary">
+            {i18n_ServCloud_Create}
+          </button>
+        </div>
+      </fieldset>
+    </form>
+    {i18n_ServCloud_Create_Plant_Area__Explanation}
+    <form>
+      <div id="plant-area-table"></div>
+    </form>
+    <font color="red">
+      <div id="error-msg"></div>
+    </font>
+    <div id="no-plant-machines" style="position: absolute; width: 200px;"></div>
+  </div>
+  <div id="dialog-setting-plant-row-column" style="display: none;">
+    <div>{i18n_ServCloud_Re_Create_Plant_Area__Explanation}</div>
+  </div>
+</section>
+<!-- end widget grid -->
+
+<script>
+  window.importPageScript()
+</script>

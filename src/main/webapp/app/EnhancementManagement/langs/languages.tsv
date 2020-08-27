@@ -1,0 +1,46 @@
+	zh_tw	zh	en
+i18n_ServCloud_enhancement_10_001	管理機台	管理机台	Management Machine
+i18n_ServCloud_enhancement_10_002	機台授權碼	机台授权码	License ID
+i18n_ServCloud_enhancement_10_003	機台名稱	机台名称	Machine Name
+i18n_ServCloud_enhancement_10_004	控制器廠牌	控制器厂牌	CNC Brand Management
+i18n_ServCloud_enhancement_10_005	工單報工類型	工单报工类型	Work Tracking Type
+i18n_ServCloud_enhancement_10_006	閒置報工類型	闲置报工类型	Idle Tracking Type
+i18n_ServCloud_enhancement_10_007	Raw Data	Raw Data	Raw Data
+i18n_ServCloud_enhancement_10_008	平板 & 平台	平板 & 平台	Tablet & Web
+i18n_ServCloud_enhancement_10_009	外部系統	外部系统	Other
+i18n_ServCloud_enhancement_20_001	製程管理	制程管理	Management Process
+i18n_ServCloud_enhancement_20_002	製程代碼	制程代码	Process Code
+i18n_ServCloud_enhancement_20_003	製程名稱	制程名称	Process Name
+i18n_ServCloud_enhancement_20_004	製程良率	制程良率	Process Quality
+i18n_ServCloud_enhancement_20_005	是否啟用	是否启用	Available
+i18n_ServCloud_enhancement_20_006	備註	备注	Remark 
+i18n_ServCloud_enhancement_21_001	製程不良管理	制程不良管理	Management Process NG
+i18n_ServCloud_enhancement_21_002	製程代碼	制程代码	Process Code
+i18n_ServCloud_enhancement_21_003	不良原因代碼	不良原因代码	NG Code
+i18n_ServCloud_enhancement_21_004	不良原因名稱	不良原因名称	NG Name
+i18n_ServCloud_enhancement_21_005	是否啟用	是否启用	Available
+i18n_ServCloud_enhancement_21_006	備註	备注	Remark 
+i18n_ServCloud_enhancement_30_001	產品管理	产品管理	Management Product
+i18n_ServCloud_enhancement_30_002	產品代碼	产品代码	Product ID
+i18n_ServCloud_enhancement_30_003	產品名稱	产品名称	Product Name
+i18n_ServCloud_enhancement_30_004	產品良率	产品良率	Product Quality
+i18n_ServCloud_enhancement_30_005	是否啟用	是否启用	Is Open
+i18n_ServCloud_enhancement_30_006	備註	备注	Remark 
+i18n_ServCloud_enhancement_31_001	產品工序管理	产品工序管理	Management Product OP
+i18n_ServCloud_enhancement_31_002	產品代碼	产品代码	Product ID
+i18n_ServCloud_enhancement_31_003	產品工序	产品工序	Product OP
+i18n_ServCloud_enhancement_31_004	製程代碼	制程代码	Process Code
+i18n_ServCloud_enhancement_31_005	單件標工	单件标工	Product cycle time per unit 
+i18n_ServCloud_enhancement_31_006	產品工序良率目標值	产品工序良率目标值	Product OP Quality Target
+i18n_ServCloud_enhancement_31_007	是否啟用	是否启用	Available
+i18n_ServCloud_enhancement_31_008	備註	备注	Remark 
+i18n_ServCloud_enhancement_40_001	閒置原因管理	闲置原因管理	Management Idel Reason
+i18n_ServCloud_enhancement_40_002	閒置代碼	闲置代码	Idle Code
+i18n_ServCloud_enhancement_40_003	閒置原因	闲置原因	Idle reason
+i18n_ServCloud_enhancement_40_004	是否啟用	是否启用	Available
+i18n_ServCloud_enhancement_10_info	10 機台管理	10 机台管理	10 Management Machine
+i18n_ServCloud_enhancement_20_info	20 製程管理	20 制程管理	20 Management Process
+i18n_ServCloud_enhancement_21_info	21 製程不良管理	21 制程不良管理	21 Management Process NG
+i18n_ServCloud_enhancement_30_info	30 產品管理	30 产品管理	30 Management Product
+i18n_ServCloud_enhancement_31_info	31 產品工序管理	31 产品工序管理	31 Management Product OP
+i18n_ServCloud_enhancement_40_info	40 閒置原因管理	40 闲置原因管理	40 Management Idle Reason

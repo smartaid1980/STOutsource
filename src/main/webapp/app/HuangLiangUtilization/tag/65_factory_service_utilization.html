@@ -1,0 +1,231 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      稼動管理應用服務
+      <span>
+        > 產品廠務部稼動紀錄表查詢
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+
+          <h2>搜尋條件</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-12">
+                    <section>
+                      <label class="label">管編</label>
+                      <label class="input">
+                        <input type="text" id="manage_id" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  提交
+                </button>
+                <button id="showdemo" class="btn btn-success hide">
+                  顯示Demo資料
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- order table -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="order-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>訂單編號</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="order-table"
+              class="table table-striped table-bordered table-hover"
+            ></table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- order table END -->
+
+      <!-- factory service table -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="factory-service-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>訂單內容</h2>
+          <ul id="widget-tab" class="nav nav-tabs pull-right">
+            <li class="active">
+              <a data-toggle="tab" href="#process1">
+                <span class="hidden-mobile hidden-tablet"> 一次製程 </span></a
+              >
+            </li>
+          </ul>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <div class="tab-content" id="tab-content">
+              <div class="tab-pane fade" id="process1">
+                <div class="widget-body-toolbar">
+                  <div class="row">
+                    <div class="col-xs-9 col-sm-5 col-md-5 col-lg-5">
+                      <span class="product_type"></span>
+                    </div>
+
+                    <div class="col-xs-3 col-sm-7 col-md-7 col-lg-7 text-right">
+                      <button class="btn btn-success" name="download-excel">
+                        <i class="fa fa-file-excel-o"></i>
+                        <span class="hidden-mobile">下載查詢結果為Excel</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <table
+                  data-name="info-table"
+                  class="table table-striped table-bordered table-hover"
+                >
+                  <thead>
+                    <tr>
+                      <th width="8%" class="gray-th">圖號</th>
+                      <td class="product_name"></td>
+                      <th class="gray-th">訂單編號</th>
+                      <td class="order_id"></td>
+                      <th class="gray-th">程式號碼</th>
+                      <td class="pg_name"></td>
+                      <th class="gray-th">標準工時(最近/現在)</th>
+                      <td class="std_second"></td>
+                      <th class="gray-th">每班產能(pcs)</th>
+                      <td class="shift_production_capacity"></td>
+                    </tr>
+                    <tr>
+                      <th class="gray-th">管編號碼</th>
+                      <td class="manage_id"></td>
+                      <th class="gray-th">訂購數量</th>
+                      <td class="quantity"></td>
+                      <th class="gray-th">機台編號</th>
+                      <td class="machine_name"></td>
+                      <th class="gray-th">前三次總品質稼動率</th>
+                      <td class="quality_utilizations"></td>
+                      <th class="gray-th">單工件+切刀寬+預留量(mm)</th>
+                      <td class="reserved_width"></td>
+                    </tr>
+                    <tr>
+                      <th class="gray-th">材質</th>
+                      <td>
+                        <span class="material"></span>
+                        <br />
+                        <span class="comment"></span>
+                      </td>
+                      <th class="gray-th">加工方式</th>
+                      <td class="n8"></td>
+                      <th class="gray-th">殘材(mm)</th>
+                      <td class="residue"></td>
+                      <th class="gray-th">清洗時間</th>
+                      <td class="clean_time"></td>
+                      <th class="gray-th">後續工程</th>
+                      <td class="follow_up"></td>
+                    </tr>
+                  </thead>
+                </table>
+
+                <table
+                  data-name="material-table"
+                  class="table table-striped table-bordered table-hover"
+                ></table>
+
+                <table
+                  data-name="detail-table"
+                  class="table table-striped table-bordered table-hover"
+                ></table>
+              </div>
+            </div>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- factory service table END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<style>
+  .gray-th {
+    background-color: #dddddd;
+  }
+</style>
+
+<script>
+  window.importPageScript()
+</script>

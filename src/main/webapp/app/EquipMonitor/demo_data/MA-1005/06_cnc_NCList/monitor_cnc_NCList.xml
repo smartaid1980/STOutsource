@@ -1,0 +1,151 @@
+<record>
+	<params>
+		<param name="G_PGIF()" type="Array">
+			<contents>
+				<content fetchtime="20120926165210849" elapsed_sec="0.1628620">
+					<values type="Array">
+						<value fromType="STR" toType="STR">O0001</value>
+						<value fromType="STR" toType="STR">O0002</value>
+						<value fromType="STR" toType="STR">O0003</value>
+						<value fromType="STR" toType="STR">O0004</value>
+						<value fromType="STR" toType="STR">O0005</value>
+						<value fromType="STR" toType="STR">O0099</value>
+						<value fromType="STR" toType="STR">O0101</value>
+						<value fromType="STR" toType="STR">O0110</value>
+						<value fromType="STR" toType="STR">O0111</value>
+						<value fromType="STR" toType="STR">O0112</value>
+						<value fromType="STR" toType="STR">O0113</value>
+						<value fromType="STR" toType="STR">O0114</value>
+						<value fromType="STR" toType="STR">O0115</value>
+						<value fromType="STR" toType="STR">O0116</value>
+						<value fromType="STR" toType="STR">O0117</value>
+						<value fromType="STR" toType="STR">O0118</value>
+						<value fromType="STR" toType="STR">O0119</value>
+						<value fromType="STR" toType="STR">O0199</value>
+						<value fromType="STR" toType="STR">O0201</value>
+						<value fromType="STR" toType="STR">O0211</value>
+						<value fromType="STR" toType="STR">O0212</value>
+						<value fromType="STR" toType="STR">O1000</value>
+						<value fromType="STR" toType="STR">O1001</value>
+						<value fromType="STR" toType="STR">O1002</value>
+						<value fromType="STR" toType="STR">O1003</value>
+						<value fromType="STR" toType="STR">O1004</value>
+						<value fromType="STR" toType="STR">O1010</value>
+						<value fromType="STR" toType="STR">O1234</value>
+						<value fromType="STR" toType="STR">O2222</value>
+						<value fromType="STR" toType="STR">O5566</value>
+						<value fromType="STR" toType="STR">O6002</value>
+						<value fromType="STR" toType="STR">O6003</value>
+						<value fromType="STR" toType="STR">O6004</value>
+						<value fromType="STR" toType="STR">O6008</value>
+						<value fromType="STR" toType="STR">O6010</value>
+						<value fromType="STR" toType="STR">O6011</value>
+						<value fromType="STR" toType="STR">O7788</value>
+						<value fromType="STR" toType="STR">O7789</value>
+						<value fromType="STR" toType="STR">O7800</value>
+						<value fromType="STR" toType="STR">O7801</value>
+						<value fromType="STR" toType="STR">O7803</value>
+						<value fromType="STR" toType="STR">O7811</value>
+						<value fromType="STR" toType="STR">O7812</value>
+						<value fromType="STR" toType="STR">O7900</value>
+						<value fromType="STR" toType="STR">O9999</value>
+					</values>
+					<values type="Array">
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+						<value fromType="DEC" toType="DEC">500</value>
+					</values>
+					<values type="Array">
+						<value fromType="STR" toType="STR">(test1)</value>
+						<value fromType="STR" toType="STR">(test2)</value>
+						<value fromType="STR" toType="STR">(test3)</value>
+						<value fromType="STR" toType="STR">(test4)</value>
+						<value fromType="STR" toType="STR">(test5)</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">(Test)</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">(VSS TEST 6002)</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">(VSS TEST 6004)</value>
+						<value fromType="STR" toType="STR">(VSS TEST 6008)</value>
+						<value fromType="STR" toType="STR">(120S TEST 6010)</value>
+						<value fromType="STR" toType="STR">(SimReal TEST 6011)</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+						<value fromType="STR" toType="STR">()</value>
+					</values>
+				</content>
+			</contents>
+		</param>
+	</params>
+</record>

@@ -1,0 +1,190 @@
+#ladder-graph table,
+#ladder-graph caption,
+#ladder-graph tbody,
+#ladder-graph tfoot,
+#ladder-graph thead,
+#ladder-graph tr,
+#ladder-graph th,
+#ladder-graph td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+#ladder-graph table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#ladder-graph table {
+  font-size: 12px;
+  line-height: 12px;
+}
+#ladder-graph table tr td {
+  width: 75px;
+  text-align: center;
+  height: 10px;
+} /* change height based on browser */
+#ladder-graph table tr td:nth-child(odd) {
+  width: 50px;
+  text-align: center;
+  min-width: 20px;
+} /* change height based on browser */
+#ladder-graph table tr td.rightBorder {
+  border-right: 2px solid #000000;
+}
+#ladder-graph table tr td.leftBorder {
+  border-left: 2px solid #000000;
+}
+#ladder-graph table tr td.upBorder {
+  border-top: 2px solid #000000;
+}
+#ladder-graph table tr td.downBorder {
+  border-bottom: 2px solid #000000;
+}
+
+#ladder-graph table tr td.borderLeftUpRight {
+  border-left: 2px solid #000000;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+#ladder-graph table tr td.borderUpRight {
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+#ladder-graph table tr td.borderLeftRight {
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+#ladder-graph table tr td.borderLeftDownRight {
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+#ladder-graph table tr td.borderDownRight {
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+
+#ladder-graph table tr td.empty {
+}
+#ladder-graph table tr td.text {
+  border: 1px solid #000000;
+}
+#ladder-graph table tr td.textGreen {
+  color: #059600;
+}
+#ladder-graph table tr td.textBlue {
+  color: #065dba;
+}
+#ladder-graph table tr td.textBlack {
+  color: #000000;
+}
+
+#ladder-graph table tr td.rn {
+  background: url('../img/ladder/RN_1.png') no-repeat;
+}
+#ladder-graph table tr td.rd {
+  background: url('../img/ladder/RD.png') no-repeat;
+}
+#ladder-graph table tr td.wr {
+  background: url('../img/ladder/WR.png') no-repeat;
+}
+#ladder-graph table tr td.wn {
+  background: url('../img/ladder/WN_1.png') no-repeat;
+}
+#ladder-graph table tr td.rs {
+  background: url('../img/ladder/RS.png') no-repeat;
+}
+#ladder-graph table tr td.st {
+  background: url('../img/ladder/ST.png') no-repeat;
+}
+#ladder-graph table tr td.rnBridge {
+  background: url('../img/ladder/RN.png') no-repeat;
+}
+#ladder-graph table tr td.rdBridge {
+  background: url('../img/ladder/RD_1.png') no-repeat;
+}
+#ladder-graph table tr td.wrBridge {
+  background: url('../img/ladder/WR_1.png') no-repeat;
+}
+#ladder-graph table tr td.wnBridge {
+  background: url('../img/ladder/WN.png') no-repeat;
+}
+#ladder-graph table tr td.rsBridge {
+  background: url('../img/ladder/RS_1.png') no-repeat;
+}
+#ladder-graph table tr td.stBridge {
+  background: url('../img/ladder/ST_1.png') no-repeat;
+}
+
+#ladder-graph table tr td.ca {
+  border: 1px solid #000000;
+}
+#ladder-graph table tr td.brace {
+  background: url('../img/ladder/Vline.png') repeat-y;
+}
+#ladder-graph table tr td.braceRight {
+  background: url('../img/ladder/VlineRight.png') no-repeat;
+}
+#ladder-graph table tr td.braceLeft {
+  background: url('../img/ladder/VlineLeft.png') no-repeat;
+}
+#ladder-graph table tr td.VlineRightTop {
+  background: url('../img/ladder/VlineRightTop.png') no-repeat;
+}
+#ladder-graph table tr td.VlineLeftTop {
+  background: url('../img/ladder/VlineLeftTop.png') no-repeat;
+}
+#ladder-graph table tr td.braceTopDownFromRight {
+  background: url('../img/ladder/VTopDownFormRight.png') no-repeat;
+}
+#ladder-graph table tr td.braceTopDownFromLeft {
+  background: url('../img/ladder/VTopDownFormLeft.png') no-repeat;
+}
+#ladder-graph table tr td.line {
+  background: url('../img/ladder/line.png') no-repeat;
+}
+#ladder-graph table tr td.lineBottom {
+  background: url('../img/ladder/lineBottom.png') no-repeat;
+}
+#ladder-graph table tr td.lineTop {
+  background: url('../img/ladder/lineTop.png') no-repeat;
+}
+#ladder-graph table tr td.lineCenter {
+  background: url('../img/ladder/lineCenter.png') no-repeat;
+}
+#ladder-graph table tr td.rd {
+  background: url('../img/ladder/rd.png') no-repeat;
+}
+
+#ladder-graph table tr td.sub_address {
+  border-right: 2px solid #000000;
+}
+
+#ladder-graph .highlight {
+  border: 2px dotted #ff3535;
+}
+
+.highlight-sign {
+  width: 12px;
+  height: 2px;
+  background-color: #ff3535;
+  position: fixed;
+  right: 0;
+  z-index: 925;
+}
+
+.highlight-level {
+  background-color: rgba(255, 53, 53, 0.5);
+  border-color: #ff3535;
+}
+
+.ladder-level,
+.ladder-address {
+  cursor: pointer;
+}

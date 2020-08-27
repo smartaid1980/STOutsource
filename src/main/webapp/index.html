@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>ServCloud</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=10.0, user-scalable=yes"
+    />
+    <!-- #CSS Links -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/all.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/servtech.css"
+    />
+    <!-- ICONS -->
+    <link
+      rel="shortcut icon"
+      href="img/logo/Servcloud-icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="img/logo/Servcloud-icon.ico" type="image/x-icon" />
+    <!-- #APP SCREEN / ICONS -->
+    <!-- Specifying a Webpage Icon for Web Clip
+       Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+    <link rel="apple-touch-icon" href="img/splash/sptouch-icon-iphone.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/splash/touch-icon-ipad.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/splash/touch-icon-iphone-retina.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/splash/touch-icon-ipad-retina.png"
+    />
+    <!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- Startup image for web apps -->
+    <link
+      rel="apple-touch-startup-image"
+      href="img/splash/ipad-landscape.png"
+      media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="img/splash/ipad-portrait.png"
+      media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="img/splash/iphone.png"
+      media="screen and (max-device-width: 320px)"
+    />
+
+    <script defer src="js/my-core-js-bundle.js"></script>
+    <script defer src="js/libs/jquery-2.1.1.min.js"></script>
+    <script defer src="js/libs/jquery-ui-1.10.3.min.js"></script>
+    <script defer src="js/libs/underscore-min.js"></script>
+    <!-- moment -->
+    <script defer src="js/plugin/moment/moment.min.js"></script>
+    <script defer src="js/plugin/moment/locale/zh-tw.js"></script>
+    <!-- IMPORTANT: APP CONFIG -->
+    <script defer src="js/app.config.js"></script>
+    <!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+    <script
+      defer
+      src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script defer src="js/plugin/jquery-csv/jquery.csv.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script defer src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- CUSTOM NOTIFICATION -->
+    <script defer src="js/notification/SmartNotification.min.js"></script>
+    <!-- JARVIS WIDGETS -->
+    <script defer src="js/smartwidgets/jarvis.widget.min.js"></script>
+    <!-- EASY PIE CHARTS -->
+    <script
+      defer
+      src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"
+    ></script>
+    <!-- SPARKLINES -->
+    <script defer src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
+    <!-- JQUERY VALIDATE -->
+    <script
+      defer
+      src="js/plugin/jquery-validate/jquery.validate.min.js"
+    ></script>
+    <script
+      defer
+      src="js/plugin/jquery-validate/additional-methods.min.js"
+    ></script>
+    <!-- JQUERY MASKED INPUT -->
+    <script
+      defer
+      src="js/plugin/masked-input/jquery.maskedinput.min.js"
+    ></script>
+    <!-- JQUERY SELECT2 INPUT -->
+    <script defer src="js/plugin/select2/select2.min.js"></script>
+    <!-- JQUERY UI + Bootstrap Slider -->
+    <script
+      defer
+      src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"
+    ></script>
+    <!-- browser msie issue fix -->
+    <script defer src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+    <!-- FastClick: For mobile devices: you can disable this in app.js -->
+    <script defer src="js/plugin/fastclick/fastclick.min.js"></script>
+    <!-- video JS -->
+    <script defer src="js/plugin/video/video.min.js"></script>
+
+    <!-- Html to canvas -->
+    <script defer src="js/export/html2canvas.js"></script>
+
+    <!-- crate pdf file -->
+    <script defer src="js/export/png_support/zlib.js"></script>
+    <script defer src="js/export/png_support/png.js"></script>
+    <script defer src="js/export/jspdf.debug.js"></script>
+
+    <!-- SmartChat UI : plugin -->
+    <script defer src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
+    <script defer src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
+
+    <!-- babel runtime -->
+    <script defer src="js/plugin/babel/runtime.js"></script>
+
+    <script
+      type="module"
+      src="./js/servtech/module/feature/applyCustomStyle.js"
+    ></script>
+    <script
+      type="module"
+      src="./js/servtech/module/servkit/bindImportPageScript.js"
+    ></script>
+    <script defer src="js/app.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </head>
+
+  <body
+    class="fixed-page-footer fixed-header fixed-navigation fixed-ribbon smart-style-2"
+  >
+    <!-- #HEADER -->
+    <header id="header">
+      <div id="logo-group">
+        <!-- PLACE YOUR LOGO HERE -->
+        <span id="logo">
+          <a
+            ><img
+              src="img/logo/Servcloud-horizontal.png"
+              alt="ServCloud"
+              class="serv-info"
+              style="width: 178px;"
+          /></a>
+        </span>
+        <!-- END LOGO PLACEHOLDER -->
+      </div>
+      <!-- #TOGGLE LAYOUT BUTTONS -->
+      <!-- pulled right: nav area -->
+      <div class="pull-right">
+        <!-- collapse menu button -->
+        <div id="hide-menu" class="btn-header pull-right">
+          <span>
+            <a
+              href="javascript:void(0);"
+              data-action="toggleMenu"
+              title="Collapse Menu"
+              ><i class="fa fa-reorder"></i
+            ></a>
+          </span>
+        </div>
+        <!-- end collapse menu -->
+
+        <!-- logout button -->
+        <div id="logout" class="btn-header transparent pull-right">
+          <span>
+            <a href="#" title="Sign Out"><i class="fa fa-sign-out"></i></a>
+          </span>
+        </div>
+        <!-- end logout button -->
+        <!-- fullscreen button -->
+        <div id="fullscreen" class="btn-header transparent pull-right">
+          <span>
+            <a
+              href="javascript:void(0);"
+              data-action="launchFullscreen"
+              title="Full Screen"
+              ><i class="fa fa-arrows-alt"></i
+            ></a>
+          </span>
+        </div>
+        <!-- end fullscreen button -->
+        <!-- multiple lang dropdown : find all flags in the flags page -->
+        <ul id="lang" class="header-dropdown-list hidden-xs">
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- <img src="img/blank.gif" class="flag flag-us" style="background: none;"> <span> English (US)</span> <i class="fa fa-angle-down"></i> -->
+            </a>
+            <ul class="dropdown-menu pull-right">
+              <li data-lang="en">
+                <a href="javascript:void(0);"
+                  ><img
+                    src="img/blank.gif"
+                    class="flag flag-us"
+                    style="background: none;"
+                  />
+                  English (US)</a
+                >
+              </li>
+              <li data-lang="zh_tw">
+                <a href="javascript:void(0);"
+                  ><img
+                    src="img/blank.gif"
+                    class="flag flag-tw"
+                    style="background: none;"
+                  />
+                  繁體中文</a
+                >
+              </li>
+              <li data-lang="zh">
+                <a href="javascript:void(0);"
+                  ><img
+                    src="img/blank.gif"
+                    class="flag flag-cn"
+                    style="background: none;"
+                  />
+                  简体中文</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- end multiple lang -->
+        <!-- multiple theme dropdown : find all flags in the flags page -->
+        <ul id="theme" class="header-dropdown-list hidden-xs hide">
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span> 佈景主題</span> <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu pull-right">
+              <li>
+                <a id="style2" href="javascript:void(0);">
+                  <i class="fa fa-check fa-fw"></i>
+                </a>
+              </li>
+              <li>
+                <a id="style5" href="javascript:void(0);">
+                  <i class="fa fa-check fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- end theme lang -->
+      </div>
+      <!-- end pulled right: nav area -->
+    </header>
+    <!-- END HEADER -->
+    <!-- #NAVIGATION -->
+    <!-- Left panel : Navigation area -->
+    <!-- Note: This width of the aside area can be adjusted through LESS/SASS variables -->
+    <aside id="left-panel">
+      <!-- User info -->
+      <div class="login-info">
+        <span>
+          <!-- User image size is adjusted inside CSS, it should stay as is -->
+
+          <a href="javascript:void(0);" id="user">
+            <i class="fa fa-lg fa-fw fa-user"></i>
+          </a>
+
+          <div class="change-pwd-panel">
+            <form class="form-horizontal">
+              <fieldset>
+                <legend id="main-change-pwd">Change password</legend>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="hide"
+                    name="username"
+                    autocomplete="username"
+                  />
+                  <div class="col-lg-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><i class="fa fa-unlock"></i
+                      ></span>
+                      <input
+                        id="main-old-pwd"
+                        class="form-control"
+                        placeholder="Old password"
+                        type="password"
+                        autocomplete="current-password"
+                      />
+                    </div>
+                    <span id="main-pwd-error" class="help-block hide"
+                      >Old password incorrect!</span
+                    >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><i class="fa fa-lock"></i
+                      ></span>
+                      <input
+                        id="main-new-pwd"
+                        class="form-control"
+                        placeholder="New password"
+                        type="password"
+                        autocomplete="new-password"
+                      />
+                    </div>
+                    <span id="main-pwd-diff1" class="help-block hide"
+                      >New password different!</span
+                    >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><i class="fa fa-chain"></i
+                      ></span>
+                      <input
+                        id="main-confirm-pwd"
+                        class="form-control"
+                        placeholder="Confirm password"
+                        type="password"
+                        autocomplete="new-password"
+                      />
+                    </div>
+                    <span id="main-pwd-diff2" class="help-block hide"
+                      >New password different!</span
+                    >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="pwd-submit col-lg-12">
+                    <button class="btn btn-primary submit-change-pwd">
+                      <i class="fa fa-save"></i>
+                      <span id="main-pwd-submit">Submit</span>
+                    </button>
+                    <button class="btn btn-default cancel-change-pwd">
+                      <i class="fa fa-times"></i>
+                      <span id="main-pwd-close">Close</span>
+                    </button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </span>
+      </div>
+      <!-- end user info -->
+      <!-- NAVIGATION : This navigation is also responsive
+
+      To make this navigation dynamic please make sure to link the node
+      (the reference to the nav > ul) after page load. Or the navigation
+      will not initialize.
+      -->
+      <nav>
+        <!--
+        NOTE: Notice the gaps after each icon usage <i></i>..
+        Please note that these links work a bit different than
+        traditional href="" links. See documentation for details.
+        -->
+        <ul>
+          <li id="stk-app-list" class="">
+            <a href="applist.html" title="App list"
+              ><i class="fa fa-lg fa-fw fa-th-large"></i>
+              <span class="menu-item-parent"><span id="app-list"></span></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <a href="#ajax/difver.html" class="btn btn-primary nav-demo-btn">AngularJS, PHP and .Net Versions</a> -->
+      <span class="minifyme" data-action="minifyMenu">
+        <i class="fa fa-arrow-circle-left hit"></i>
+      </span>
+    </aside>
+    <!-- END NAVIGATION -->
+    <!-- #MAIN PANEL -->
+    <div id="main" role="main">
+      <!-- RIBBON -->
+      <div id="ribbon" class="hidden-xs">
+        <!-- <span class="ribbon-button-alignment">
+          <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true" data-reset-msg="Would you like to RESET all your saved widgets and clear LocalStorage?"><i class="fa fa-refresh"></i></span>
+        </span> -->
+        <!-- breadcrumb -->
+        <ol class="breadcrumb hide">
+          <!-- This is auto generated -->
+        </ol>
+        <!-- end breadcrumb -->
+        <!-- You can also add more buttons to the
+        ribbon for further usability
+
+        Example below: -->
+        <span
+          id="license-date"
+          class="pull-right badge bg-color-greenLight serv-info"
+          rel="tooltip"
+          title=""
+          data-placement="left"
+          data-original-title=""
+        ></span>
+      </div>
+      <!-- END RIBBON -->
+      <!-- #MAIN CONTENT -->
+      <div id="content"></div>
+      <!-- END #MAIN CONTENT -->
+
+      <!-- GoGo CONTEXT MENU -->
+      <div id="gogo-ctx-menu">
+        <h6 class="title"><i class="fa fa-share-square-o"></i>Go to</h6>
+        <ul class="inbox-menu-lg"></ul>
+      </div>
+      <!-- END GoGo CONTEXT MENU -->
+    </div>
+    <!-- END #MAIN PANEL -->
+    <!-- #PAGE FOOTER -->
+    <div class="page-footer">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <span id="copyright" class="txt-color-blueLight serv-info"></span>
+        </div>
+        <div class="hidden-xs col-md-6 text-right">
+          <span id="system-version" class="badge bg-color-greenLight"></span>
+          <span>
+            <i class="txt-color-blueLight hidden-mobile"
+              ><span id="main-login-tip">Login at</span>
+              <strong id="login-time"></strong> &nbsp;<i
+                class="fa fa-clock-o"
+              ></i
+            ></i>
+          </span>
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- END FOOTER -->
+  </body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "app": {
+    "id": "ServTrack",
+    "name": "i18n_ServCloud_ServTrack",
+    "type": 1,
+    "description": "ServTrack",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_product_process_quality",
+      "name": "i18n_ServCloud_10_Product_Process_Quality"
+    },
+    {
+      "id": "20_work_quality",
+      "name": "i18n_ServCloud_20_Work_Quality"
+    },
+    {
+      "id": "30_work_process",
+      "name": "i18n_ServCloud_30_Work_Process"
+    },
+    {
+      "id": "40_line_oee",
+      "name": "i18n_ServCloud_40_Line_Oee"
+    },
+    {
+      "id": "50_line_oee_day",
+      "name": "i18n_ServCloud_50_Line_Oee_Day"
+    },
+    {
+      "id": "51_line_use_day",
+      "name": "i18n_ServCloud_51_Line_Use_Day"
+    },
+    {
+      "id": "60_operating_performance",
+      "name": "i18n_ServCloud_60_Operating_Performance"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

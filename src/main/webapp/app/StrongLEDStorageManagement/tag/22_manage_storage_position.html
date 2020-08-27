@@ -1,0 +1,112 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="store-position-table-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Shelf_Position_Manage}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="position_id"
+              id="store-position-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 40%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Position_Name}</th>
+                  <th>{i18n_ServCloud_Shelf}</th>
+                  <th>{i18n_ServCloud_Grid_Index}</th>
+                  <th>{i18n_ServCloud_Cell_Index}</th>
+                  <th>{i18n_ServCloud_Position_Desc}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="position_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Position_Name}"
+                    />
+                  </td>
+                  <td>
+                    <select
+                      name="store_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="a_storage_store"
+                      stk-getdata-column-value="store_id"
+                      stk-getdata-column-text="store_name"
+                      disabled
+                    ></select>
+                  </td>
+                  <td>
+                    <select
+                      name="store_grid_index"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Grid_Index}"
+                      disabled
+                    ></select>
+                  </td>
+                  <td>
+                    <select
+                      name="store_cell_index"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Cell_Index}"
+                      disabled
+                    ></select>
+                  </td>
+                  <td>
+                    <textarea
+                      name="position_desc"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Position_Desc}"
+                      cols="20"
+                      rows="5"
+                    ></textarea>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

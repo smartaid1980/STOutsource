@@ -1,0 +1,342 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      i18n_ServCloud_UtilizationStd
+      <span>
+        > i18n_ServCloud_Adapter_Params
+      </span>
+    </h1>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <span id="loading-hint" class="widget-icon">
+            <i class="fa fa-refresh fa-spin"></i>
+          </span>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="adapter-param-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th style="text-align: center; width: 10%;">
+                    i18n_ServCloud_Adapter_Params_Name
+                  </th>
+                  <th style="text-align: center; width: 10%;">
+                    i18n_ServCloud_Adapter_Params_RW
+                  </th>
+                </tr>
+              </thead>
+              <tbody style="word-break: break-all;">
+                <tr>
+                  <td>最大控制軸數</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>目前軸數</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>所有軸名稱</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>伺服軸名稱</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>伺服軸實際電流</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>伺服軸負載</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>伺服軸實際轉速</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>伺服軸命令轉速</td>
+                  <td style="text-align: center;">X</td>
+                </tr>
+                <tr>
+                  <td>伺服軸轉速百分比</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>主軸名稱</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>主軸實際電流</td>
+                  <td style="text-align: center;">X</td>
+                </tr>
+                <tr>
+                  <td>主軸負載</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>主軸實際轉速</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>主軸命令轉速</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>主軸轉速百分比</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>主軸警報</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>控制器型號</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>刀具補償</td>
+                  <td style="text-align: center;">R/W</td>
+                </tr>
+                <tr>
+                  <td>刀具補償最大號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>刀具補償最小號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>刀具號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>刀長</td>
+                  <td style="text-align: center;">X</td>
+                </tr>
+                <tr>
+                  <td>工件座標補償</td>
+                  <td style="text-align: center;">R/W</td>
+                </tr>
+                <tr>
+                  <td>工作座標補償最大號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>工作座標補償最小號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>通電時間</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>切削時間</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>運轉時間</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>循環時間</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>加工零件總數</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>加工零件數</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>所需零件數</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>警報履歷</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>訊息履歷</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>操作履歷</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>系統參數</td>
+                  <td style="text-align: center;">R/W</td>
+                </tr>
+                <tr>
+                  <td>診斷參數</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>巨集變數</td>
+                  <td style="text-align: center;">R/W</td>
+                </tr>
+                <tr>
+                  <td>目前警報</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>目前狀態</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>GCode</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>Modal Code</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>自動模式選項</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>絕對座標</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>相對座標</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>機械座標</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>剩餘距離</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>實際進給率</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>命令進給率</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>進給率百分比</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>加工程式內容</td>
+                  <td style="text-align: center;">R/W</td>
+                </tr>
+                <tr>
+                  <td>目前執行單節</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>主程式號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>執行中程式號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>目前執行列號</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>程式列表</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>刪除加工程式</td>
+                  <td style="text-align: center;">R/W</td>
+                </tr>
+                <tr>
+                  <td>螺距誤差補償</td>
+                  <td style="text-align: center;">R/W</td>
+                </tr>
+                <tr>
+                  <td>螺距誤差補償最大號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>螺距誤差補償最小號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>PLC位址值</td>
+                  <td style="text-align: center;">R/W</td>
+                </tr>
+                <tr>
+                  <td>多系統絕對座標</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>多系統相對座標</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>多系統機械座標</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>多系統剩餘距離</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>多系統目前執行單節</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>多系統主加工程式號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+                <tr>
+                  <td>多系統執行中加工程式號碼</td>
+                  <td style="text-align: center;">R</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

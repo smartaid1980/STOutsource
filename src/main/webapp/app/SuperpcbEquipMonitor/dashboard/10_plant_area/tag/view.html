@@ -1,0 +1,123 @@
+<section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div id="machineLigth" class="col col-6 pull-right" style="float: right;">
+    <span>{i18n_ServCloud_Light_Status}:</span>&nbsp;
+    <span class="btn" style="background: #d3d3d3;"></span>&nbsp;
+    <span>{i18n_ServCloud_Offline}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="btn" style="background: #2e8b57;"></span>&nbsp;
+    <span>{i18n_ServCloud_Light_Working}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="btn" style="background: #ffa500;"></span>&nbsp;
+    <span>{i18n_ServCloud_Light_Idle}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="btn" style="background: #a90329;"></span>&nbsp;
+    <span>{i18n_ServCloud_Light_Alarm}</span>
+  </div>
+  <div id="plant-area-time" class="col col-6">
+    <h1>
+      {i18n_ServCloud_System_Update_Time}：<span
+      ></span>(<span>{i18n_ServCloud_Updated_Frequency}</span>)
+    </h1>
+  </div>
+</section>
+<section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div id="plant-area-space">
+    <div>
+      <img
+        class="bg"
+        src="./app/SuperpcbEquipMonitor/img/plant_area_background.png"
+      />
+      <div
+        data-page-name="outer_layer_treatment"
+        class="device"
+        style="top: 29%; left: 25%;"
+      >
+        <div class="device-title clearfix">
+          <div class="text"><span>外層前處理</span></div>
+        </div>
+        <div class="picture"></div>
+      </div>
+      <div
+        data-page-name="DI_exposure_machine"
+        class="device"
+        style="top: 37%; left: 84%;"
+      >
+        <div class="device-title clearfix">
+          <div class="text"><span>DI曝光機</span></div>
+        </div>
+        <div class="picture"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #machineLigth {
+    padding-top: 18px;
+  }
+
+  #machineLigth .btn {
+    height: 20px;
+    width: 40px;
+  }
+
+  #plant-area-time h1 {
+    margin-top: 11px;
+  }
+
+  #plant-area-space {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+  #plant-area-space > div {
+    position: relative;
+  }
+
+  #plant-area-space .bg {
+    padding-top: 50px;
+    max-width: 100%;
+  }
+
+  #plant-area-space .device {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  }
+
+  #plant-area-space .device-title {
+    font-size: 1.5em;
+  }
+
+  #plant-area-space .device .picture {
+    margin: auto;
+    border: 1px #a9a9a9 solid;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 104px;
+    background-image: url('./app/SuperpcbEquipMonitor/img/light/offline.png');
+    height: 40px;
+    width: 104px;
+  }
+
+  #plant-area-space .device.online .picture {
+    background-image: url('./app/SuperpcbEquipMonitor/img/light/online.png');
+  }
+
+  #plant-area-space .device.idle .picture {
+    background-image: url('./app/SuperpcbEquipMonitor/img/light/idle.png');
+  }
+
+  #plant-area-space .device.alarm .picture {
+    background-image: url('./app/SuperpcbEquipMonitor/img/light/alarm.png');
+  }
+
+  #machineLigth,
+  #plant-area-time,
+  #plant-area-space {
+    font-size: 2em;
+  }
+
+  #jarviswidget-fullscreen-mode #plant-area-space .bg {
+    padding-top: 130px;
+  }
+</style>

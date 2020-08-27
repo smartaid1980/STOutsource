@@ -1,0 +1,504 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div id="zone-widget" class="jarviswidget jarviswidget-color-darken">
+        <header>
+          <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+          <h2>【<span id="zoneId"></span>】</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <div id="space"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div id="store-widget" class="jarviswidget jarviswidget-color-darken">
+        <header>
+          <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+          <h2>【<span id="storeId"></span>】</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <div id="color-info" class="alert alert-info"></div>
+            <div id="store"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  .store {
+    color: #000 !important;
+  }
+
+  #space {
+    /* position: relative; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #space > div {
+    position: relative;
+  }
+
+  #space .bg {
+    display: block;
+    margin: auto;
+    max-width: 95%;
+  }
+
+  #space .store {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #666;
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+  }
+
+  #space .store:hover {
+    z-index: 1;
+  }
+
+  #space .store .store-title {
+    text-align: center;
+    padding: 0.5em;
+    background-color: #d3d3d3;
+  }
+
+  #space .store .store-title .text {
+    font-weight: bold;
+  }
+
+  #space.auto-show-other-signal .store .store-info {
+    display: none;
+  }
+
+  #space.auto-show-other-signal .store:hover .store-info {
+    display: block;
+  }
+
+  #space .store .store-info {
+    float: left;
+    margin: 0.5em;
+  }
+
+  #space .store .store-info .value-head {
+    padding: 0.25em 0.5em;
+  }
+
+  #space .store .store-info .value-head span {
+    display: inline-block;
+  }
+
+  #space .store .store-info .value-text {
+    border-left: 1px solid #aaa;
+    padding: 0.25em 0.5em;
+  }
+
+  #space .store .store-info .value-progress {
+    border-left: 1px solid #aaa;
+    padding: 0 0.5em;
+  }
+
+  #space .store .store-info .value-progress .progress {
+    margin: 0;
+    width: 130px;
+  }
+
+  #space .store .store-info .dynamic-value .value {
+    /* width: 10em; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #space .store .store-img {
+    text-align: center;
+    position: absolute;
+    top: 110%;
+    /* left: 50%; */
+  }
+
+  #space .store .store-img img[src=''] {
+    display: none;
+  }
+
+  #space .store .store-img > img {
+    /* position: relative; */
+    /* left: -50%; */
+    width: 100%;
+    height: 100%;
+  }
+
+  #space .store.online .store-title {
+    background: rgb(189, 226, 205);
+  }
+
+  #space .store.idle .store-title {
+    background: #ffa500;
+  }
+
+  #space .store.alarm .store-title {
+    background: #a90329;
+  }
+
+  #space .store.offline .store-title {
+    background: #d3d3d3;
+  }
+
+  #space .store.non-empty .store-title {
+    background: #ff7f0e;
+  }
+
+  #flotTip {
+    z-index: 1061 !important;
+    font-size: 1.1em !important;
+  }
+
+  #store {
+    margin: 20px auto;
+    padding-right: 10px;
+    width: 93%;
+  }
+
+  .grid {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    word-break: keep-all;
+    text-align: center;
+  }
+
+  .cell-name-title {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* word-break: keep-all; */
+    /* text-align: center; */
+  }
+
+  .cell-name-body {
+    /* margin: 10px 0; */
+    display: flex;
+    align-items: center;
+    word-break: keep-all;
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-name {
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    margin: 5px;
+    width: 100px;
+    font-size: 1.5em;
+  }
+
+  .grid-body {
+    width: 100%;
+    /* height: 100px; */
+    border: #666 2px solid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .cell {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cell * {
+    display: none;
+  }
+
+  .cell:hover * {
+    display: block;
+  }
+
+  .cell-name-body .cell {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .grid .cell {
+    border: #666 1px solid;
+    color: black;
+    flex: 1 0 5%;
+    min-height: 25px;
+  }
+
+  .grid .cell.empty {
+    background-color: #ccc;
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      100% 100%,
+      color-stop(0.25, #f9f9f9),
+      color-stop(0.25, transparent),
+      color-stop(0.5, transparent),
+      color-stop(0.5, #f9f9f9),
+      color-stop(0.75, #f9f9f9),
+      color-stop(0.75, transparent),
+      to(transparent)
+    );
+    background-size: 7px 7px;
+  }
+
+  .grid .cell-name {
+    display: none;
+  }
+
+  .thing-name {
+    font-size: 1.5em;
+  }
+
+  .cell.online {
+    background-color: rgb(189, 226, 205);
+  }
+
+  .cell.online.border-right {
+    border-right-color: rgb(189, 226, 205);
+  }
+
+  .cell.online.border-left {
+    border-left-color: rgb(189, 226, 205);
+  }
+
+  .non-empty .store-title {
+    animation-duration: 300ms;
+    animation-name: non-empty;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes non-empty {
+    0% {
+      background-color: rgb(255, 127, 14);
+    }
+
+    100% {
+      background-color: rgb(253, 184, 123);
+    }
+  }
+
+  .cell-non-empty {
+    animation-duration: 300ms;
+    animation-name: cell-non-empty;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes cell-non-empty {
+    0% {
+      background-color: rgb(255, 127, 14);
+    }
+
+    100% {
+      background-color: rgb(253, 184, 123);
+    }
+  }
+
+  .cell-non-empty.Y {
+    animation-name: cell-non-empty-Y;
+  }
+
+  @keyframes cell-non-empty-Y {
+    0% {
+      /* background-color: rgb(255, 255, 54); */
+      background-color: rgb(255, 255, 143);
+    }
+
+    100% {
+      background-color: rgb(247, 247, 223);
+    }
+  }
+
+  .cell-non-empty.R {
+    animation-name: cell-non-empty-R;
+  }
+
+  @keyframes cell-non-empty-R {
+    0% {
+      background-color: rgb(255, 89, 89);
+    }
+
+    100% {
+      background-color: rgb(249, 188, 188);
+    }
+  }
+
+  .cell-non-empty.G {
+    animation-name: cell-non-empty-G;
+  }
+
+  @keyframes cell-non-empty-G {
+    0% {
+      background-color: rgb(74, 193, 126);
+    }
+
+    100% {
+      background-color: rgb(199, 251, 222);
+    }
+  }
+
+  .cell-non-empty.border-right {
+    animation-duration: 300ms;
+    animation-name: cell-non-empty-border-right;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes cell-non-empty-border-right {
+    0% {
+      border-right-color: rgb(255, 127, 14);
+      background-color: rgb(255, 127, 14);
+    }
+
+    100% {
+      border-right-color: rgb(253, 184, 123);
+      background-color: rgb(253, 184, 123);
+    }
+  }
+
+  .cell-non-empty.border-right.Y {
+    animation-name: cell-non-empty-border-right-Y;
+  }
+
+  @keyframes cell-non-empty-border-right-Y {
+    0% {
+      border-right-color: rgb(255, 255, 143);
+      background-color: rgb(255, 255, 143);
+    }
+
+    100% {
+      border-right-color: rgb(247, 247, 223);
+      background-color: rgb(247, 247, 223);
+    }
+  }
+
+  .cell-non-empty.border-right.R {
+    animation-name: cell-non-empty-border-right-R;
+  }
+
+  @keyframes cell-non-empty-border-right-R {
+    0% {
+      border-right-color: rgb(255, 89, 89);
+      background-color: rgb(255, 89, 89);
+    }
+
+    100% {
+      border-right-color: rgb(249, 188, 188);
+      background-color: rgb(249, 188, 188);
+    }
+  }
+
+  .cell-non-empty.border-right.G {
+    animation-name: cell-non-empty-border-right-G;
+  }
+
+  @keyframes cell-non-empty-border-right-G {
+    0% {
+      border-right-color: rgb(74, 193, 126);
+      background-color: rgb(74, 193, 126);
+    }
+
+    100% {
+      border-right-color: rgb(199, 251, 222);
+      background-color: rgb(199, 251, 222);
+    }
+  }
+
+  .cell-non-empty.border-left {
+    animation-duration: 300ms;
+    animation-name: cell-non-empty-border-left;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes cell-non-empty-border-left {
+    0% {
+      border-left-color: rgb(255, 127, 14);
+      background-color: rgb(255, 127, 14);
+    }
+
+    100% {
+      border-left-color: rgb(253, 184, 123);
+      background-color: rgb(253, 184, 123);
+    }
+  }
+
+  .cell-non-empty.border-left.Y {
+    animation-name: cell-non-empty-border-left-Y;
+  }
+
+  @keyframes cell-non-empty-border-left-Y {
+    0% {
+      border-left-color: rgb(255, 255, 143);
+      background-color: rgb(255, 255, 143);
+    }
+
+    100% {
+      border-left-color: rgb(247, 247, 223);
+      background-color: rgb(247, 247, 223);
+    }
+  }
+
+  .cell-non-empty.border-left.R {
+    animation-name: cell-non-empty-border-left-R;
+  }
+
+  @keyframes cell-non-empty-border-left-R {
+    0% {
+      border-left-color: rgb(255, 89, 89);
+      background-color: rgb(255, 89, 89);
+    }
+
+    100% {
+      border-left-color: rgb(249, 188, 188);
+      background-color: rgb(249, 188, 188);
+    }
+  }
+
+  .cell-non-empty.border-left.G {
+    animation-name: cell-non-empty-border-left-G;
+  }
+
+  @keyframes cell-non-empty-border-left-G {
+    0% {
+      border-left-color: rgb(74, 193, 126);
+      background-color: rgb(74, 193, 126);
+    }
+
+    100% {
+      border-left-color: rgb(199, 251, 222);
+      background-color: rgb(199, 251, 222);
+    }
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

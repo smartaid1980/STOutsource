@@ -1,0 +1,9 @@
+#query-result a {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1024px) {
+  .btn-group .dropdown-menu > li > a {
+    font-size: 16px;
+    padding: 6px 20px;
+  }
+}

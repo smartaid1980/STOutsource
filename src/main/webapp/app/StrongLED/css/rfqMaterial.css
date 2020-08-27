@@ -1,0 +1,79 @@
+/* 物料分類(結構) */
+#material-information-widget .filter-material.active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  background-image: none;
+  position: relative;
+  top: 1px;
+  left: 1px;
+  outline: 0;
+}
+/* 物料資訊Table */
+#rfq-material tbody tr.read .cancel-material,
+#rfq-material tbody tr.read .update-material {
+  display: none;
+}
+#rfq-material tbody tr.edit .edit-material,
+#rfq-material tbody tr.edit input[type='checkbox'] {
+  display: none;
+}
+#rfq-material tbody tr.emphasize-row {
+  background-color: #f39898;
+}
+/* 物料成本資訊 */
+#mtl-cost-info {
+  text-align: center;
+  font-size: 24px;
+  padding: 15px 0;
+}
+/* 新增現有物料 */
+#existing-material-list .form-control {
+  width: 100%;
+}
+#existing-material-filter {
+  margin: 10px 0;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+}
+#existing-material-modal-widget .modal-dialog {
+  width: 1200px;
+}
+/* 新增現有物料-已選擇物料 */
+#add-material-list .label {
+  margin: 4px 5px;
+}
+#add-material-list {
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+}
+#add-material-list > div {
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  display: flex;
+  flex-flow: row wrap;
+}
+.label .remove-label {
+  padding: 0 5px;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+.label .remove-label:hover {
+  color: darkblue;
+}
+@media screen and (max-width: 1024px) {
+  #material-management-modal-widget .modal-dialog {
+    width: 960px;
+  }
+  #existing-material-modal-widget .modal-dialog {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #material-management-modal-widget .modal-dialog {
+    width: 700px;
+  }
+  #existing-material-modal-widget .modal-dialog {
+    width: 700px;
+  }
+}

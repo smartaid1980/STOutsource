@@ -1,0 +1,24 @@
+{
+  "app": {
+    "id": "IIOTDeviceWatchManagement",
+    "name": "���嚙踝蕭�����蕭嚙�",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_device_management",
+      "name": "������蕭謕嚙踝蕭嚙�"
+    },
+    {
+      "id": "02_device_idle_overtime_management",
+      "name": "��蔭頞���身摰�"
+    },
+    {
+      "id": "03_watch_management",
+      "name": "智慧手錶管理"
+    }
+  ],
+  "tags": ["20140918000001"]
+}

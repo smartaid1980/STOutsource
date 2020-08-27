@@ -1,0 +1,60 @@
+{
+  "app": {
+    "id": "HuangLiangUtilization",
+    "name": "i18n_ServCloud_Utilization_Statistics",
+    "type": 1,
+    "description": "Provide usage statistics, daily reports, schedule adjustment, chart display, product names, working program reaction management and custom reaction management for each devices in the factory.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_daily",
+      "name": "各機台日稼動率"
+    },
+    {
+      "id": "15_downtime_report",
+      "name": "無效時間分析"
+    },
+    {
+      "id": "20_employee_utilization_by_machine",
+      "name": "各機台顧車人員稼動率查詢"
+    },
+    {
+      "id": "25_product_utilization",
+      "name": "產品稼動率查詢"
+    },
+    {
+      "id": "30_Quality_Utilization_by_Machine",
+      "name": "各機台品質稼動率查詢"
+    },
+    {
+      "id": "35_quality_utilization_by_employee",
+      "name": "品質稼動率報表(人)'"
+    },
+    {
+      "id": "40_quality_utilization_by_product",
+      "name": "產品品質稼動率查詢"
+    },
+    {
+      "id": "45_calibration_record_by_machine",
+      "name": "各機台校車紀錄查詢"
+    },
+    {
+      "id": "50_calibration_record_by_product",
+      "name": "產品校車時間查詢"
+    },
+    {
+      "id": "55_employee_performance",
+      "name": "顧車人員績效查詢"
+    },
+    {
+      "id": "60_customer_sample_analysis",
+      "name": "客戶樣本分析"
+    },
+    {
+      "id": "65_plant_department_utilization_record",
+      "name": "產品廠務部稼動紀錄表查詢"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

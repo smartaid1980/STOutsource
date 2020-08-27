@@ -1,0 +1,100 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="element4-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>管理APP功能廠牌</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="pks"
+              id="element4"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>APP名稱</th>
+                  <th>功能名稱</th>
+                  <th>廠牌</th>
+                  <th>稼動報表切削時間與產出顯示設定</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <select
+                      name="app_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="m_app_info"
+                      stk-getdata-column-text="app_name"
+                      stk-getdata-column-value="app_id"
+                      stk-pk
+                    ></select>
+                  </td>
+                  <td>
+                    <select
+                      name="func_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="m_sys_func"
+                      stk-getdata-column-text="func_name"
+                      stk-getdata-column-value="func_id"
+                      stk-pk
+                    ></select>
+                  </td>
+                  <td>
+                    <select
+                      name="cnc_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="m_cnc_brand"
+                      stk-getdata-column-text="name"
+                      stk-getdata-column-value="cnc_id"
+                      stk-pk
+                    ></select>
+                  </td>
+                  <td>
+                    <select
+                      name="not_default_key"
+                      class="form-control"
+                    ></select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,200 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>工單上傳</h2>
+        </header>
+        <div>
+          <div class="widget-body">
+            <form class="dropzone dropzone-v15" id="fileupload-zone">
+              <div class="dz-message" data-dz-message>
+                <span class="text-center">
+                  <span
+                    class="font-lg visible-xs-block visible-sm-block visible-lg-block"
+                  >
+                    <span class="font-lg">
+                      <i class="fa fa-caret-right text-danger"></i> 將 .xls
+                      的檔案拖曳至此或按我
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="work-list-table-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>工單清單</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              id="work-list-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 11%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>工號</th>
+                  <th>機種別</th>
+                  <th>工單號碼</th>
+                  <th>開始日期</th>
+                  <th>完成日期</th>
+                  <th>需求量</th>
+                  <th>工序製程</th>
+                  <th>狀態</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+
+    <div
+      class="modal fade"
+      id="work-op-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">工序製程</h4>
+          </div>
+          <div class="modal-body">
+            <div
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>派工單</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding" id="holder-result-body">
+                  <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <span id="wo-id-modal-text"></span>
+                  </div>
+                  <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <span id="work-id-modal-text"></span>
+                  </div>
+                  <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <span id="part-no-modal-text"></span>
+                  </div>
+                  <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <span id="product-id-modal-text"></span>
+                  </div>
+                  <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <span id="e-quantity-modal-text"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NEW WIDGET START -->
+            <div
+              class="jarviswidget jarviswidget-color-darken"
+              id="work-op-list-table-widget"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>製程</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding">
+                  <table
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                    id="work-op-list-table"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="hasinput" style="width: 50%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 50%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>製程</th>
+                        <th>預計工時合計</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

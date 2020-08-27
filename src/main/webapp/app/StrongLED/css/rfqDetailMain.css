@@ -1,0 +1,30 @@
+#rfq-detail {
+  font-size: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+#rfq-detail .row .item {
+  text-align: right;
+  font-weight: bolder;
+}
+#rfq-detail .row .item.updated {
+  color: red;
+}
+#rfq-detail #rfq-detail-edit {
+  display: none;
+}
+#rfq-detail.editable #rfq-detail-view {
+  display: none;
+}
+#rfq-detail.editable #rfq-detail-edit {
+  display: block;
+}
+#rfq-detail .row {
+  padding: 10px 0;
+}
+#rfq-detail fieldset {
+  padding: 10px 0;
+}
+#rfq-detail fieldset + fieldset {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

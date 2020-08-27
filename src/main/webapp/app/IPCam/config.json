@@ -1,0 +1,24 @@
+{
+  "app": {
+    "id": "IPCam",
+    "name": "IP cam",
+    "type": 1,
+    "description": "IP cam",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "90_ip_cam_grid",
+      "name": "i18n_ServCloud_Ip_Cam_Grid"
+    },
+    {
+      "id": "91_ip_cam_grid_demo",
+      "name": "i18n_ServCloud_Ip_Cam_Grid_Demo"
+    },
+    {
+      "id": "99_manage_ip_cam",
+      "name": "i18n_ServCloud_Manage_Ip_Cam"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

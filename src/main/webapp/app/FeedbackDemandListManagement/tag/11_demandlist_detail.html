@@ -1,0 +1,1255 @@
+<section id="widget-grid">
+  <a
+    href="javascript: void(0)"
+    id="leave-btn"
+    class="btn btn-default hide"
+    style="margin-bottom: 10px;"
+    ><i class="fa fa-mail-reply"></i>&#xA0;
+    {i18n_ServCloud_Back_To_Demand_List_Query}
+  </a>
+
+  <!-- row -->
+  <div class="row">
+    <!-- 需求單資訊 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="demand-list-information-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Demand_Order_Information}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form
+              class="smart-form"
+              id="demand-list-information"
+              novalidate="novalidate"
+            >
+              <fieldset style="padding: 14px;">
+                <div class="row">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="td-title">
+                          {i18n_ServCloud_Demand_Order_Number}　｜
+                        </td>
+                        <td class="td-content" id="form_id">
+                          <span class="value">---</span>
+                        </td>
+                        <td class="td-title">
+                          {i18n_ServCloud_Pre_Delivery_Date}　｜
+                        </td>
+                        <td class="td-content" id="st_lead_time">
+                          <span class="value">---</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td-title">
+                          {i18n_ServCloud_Serial_Number}　｜
+                        </td>
+                        <td class="td-content" id="seq_no">
+                          <span class="value">---</span>
+                        </td>
+                        <td class="td-title">
+                          {i18n_ServCloud_Original_Advance_Date}　｜
+                        </td>
+                        <td class="td-content" id="orig_lead_time">
+                          <span class="value">---</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td-title">
+                          {i18n_ServCloud_Document_Type}　｜
+                        </td>
+                        <td class="td-content" id="form_type">
+                          <span class="value">---</span>
+                        </td>
+                        <td class="td-title">
+                          {i18n_ServCloud_Delivery_Confirmation_Date}　｜
+                        </td>
+                        <td class="td-content" id="cfm_lead_time">
+                          <span class="value">---</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td-title">
+                          {i18n_ServCloud_Document_Status}　｜
+                        </td>
+                        <td class="td-content" id="is_close">
+                          <span class="value">---</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td-title">{i18n_ServCloud_Create_By}　｜</td>
+                        <td class="td-content" id="create_by">
+                          <span class="value">---</span>
+                        </td>
+                        <td class="td-title">
+                          {i18n_ServCloud_Create_Time}　｜
+                        </td>
+                        <td class="td-content" id="create_time">
+                          <span class="value">---</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td-title">{i18n_ServCloud_Modify_By}　｜</td>
+                        <td class="td-content" id="modify_by">
+                          <span class="value">---</span>
+                        </td>
+                        <td class="td-title">
+                          {i18n_ServCloud_Modify_Time}　｜
+                        </td>
+                        <td class="td-content" id="modify_time">
+                          <span class="value">---</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </fieldset>
+              <footer class="hide">
+                <button
+                  id="date-record-btn"
+                  class="btn btn-success"
+                  data-toggle="modal"
+                  data-target="#modify-delivery-date-modal"
+                >
+                  {i18n_ServCloud_Delivery_Record}
+                </button>
+                <button
+                  id="confirm-btn"
+                  class="btn btn-warning hide"
+                  data-toggle="modal"
+                  data-target="#ensure-modal"
+                  disabled
+                >
+                  {i18n_ServCloud_Confirm_Delivery}
+                </button>
+                <button
+                  id="modify-btn"
+                  class="btn btn-primary hide"
+                  data-toggle="modal"
+                  data-target="#modify-modal"
+                >
+                  {i18n_ServCloud_Modify_Delivery}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 需求單資訊 END -->
+
+    <!-- 修改交期 -->
+    <div
+      class="modal fade bd-example-modal-sm"
+      id="modify-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" style="display: inline-block;">
+              {i18n_ServCloud_Modify_Delivery}
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="widget-body no-padding">
+              <form
+                class="smart-form"
+                novalidate="novalidate"
+                id="modify-modal-form"
+              >
+                <fieldset style="padding: 14px 14px 5px;">
+                  <div class="row">
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    >
+                      <div
+                        class="col col-xs-6 col-sm-6 col-md-12 col-lg-12"
+                        style="margin-bottom: 17px;"
+                      >
+                        <label class="label"
+                          >{i18n_ServCloud_Pre_Delivery_Date}</label
+                        >
+                        <label class="input">
+                          <input
+                            type="text"
+                            id="origin-date"
+                            class="form-control"
+                            disabled
+                          />
+                        </label>
+                      </div>
+                      <div class="col col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                        <label class="label st-required"
+                          >{i18n_ServCloud_Modify_Pre_Delivery_Date_To}</label
+                        >
+                        <label class="input">
+                          <i class="icon-append fa fa-calendar"></i>
+                          <input
+                            type="text"
+                            id="modify-date"
+                            name="endDate"
+                            data-rule-required="true"
+                            data-rule-date="true"
+                            class="form-control"
+                          />
+                        </label>
+                      </div>
+                    </section>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button type="button" class="btn btn-primary" id="modify-modal-btn">
+              {i18n_ServCloud_Confirm}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 確認交期 -->
+    <div
+      class="modal fade bd-example-modal-sm"
+      id="ensure-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" style="display: inline-block;">
+              {i18n_ServCloud_Confirm_Delivery}
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="widget-body no-padding">
+              <form class="smart-form" novalidate="novalidate">
+                <fieldset style="padding: 14px 14px 5px;">
+                  <div class="row">
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    >
+                      <div
+                        class="col col-xs-6 col-sm-6 col-md-12 col-lg-12"
+                        style="margin-bottom: 17px;"
+                      >
+                        <label class="label"
+                          >{i18n_ServCloud_Pre_Delivery_Date}</label
+                        >
+                        <label class="input">
+                          <input
+                            type="text"
+                            id="ensure-original-date"
+                            class="form-control"
+                            disabled
+                          />
+                        </label>
+                      </div>
+                      <div class="col col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                        <label class="label"
+                          >{i18n_ServCloud_Modify_Pre_Delivery_Date_To}</label
+                        >
+                        <label class="input">
+                          <input
+                            type="text"
+                            id="ensure-date"
+                            class="form-control"
+                            disabled
+                          />
+                        </label>
+                      </div>
+                    </section>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button type="button" class="btn btn-primary" id="ensure-modal-btn">
+              {i18n_ServCloud_Confirm}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  交期修改紀錄 -->
+    <div
+      id="modify-delivery-date-modal"
+      class="modal fade bd-example-modal-lg"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" style="display: inline-block;">
+              {i18n_ServCloud_Delivery_Record}
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- NEW WIDGET START -->
+            <div
+              id="modify-delivery-date-widget"
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-history"></i> </span>
+                <h2>{i18n_ServCloud_Delivery_Record}</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding">
+                  <table
+                    id="modify-delivery-date"
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="hasinput" style="width: 15%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 9%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 15%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 12%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 12%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 12%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 15%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 10%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>{i18n_ServCloud_Demand_Order_Number}</th>
+                        <th>{i18n_ServCloud_Serial_Number}</th>
+                        <th>{i18n_ServCloud_Transfer_Time}</th>
+                        <th>
+                          {i18n_ServCloud_Before_Modify_Pre_Delivery_Date}
+                        </th>
+                        <th>{i18n_ServCloud_After_Modify_Pre_Delivery_Date}</th>
+                        <th>{i18n_ServCloud_Change_By}</th>
+                        <th>{i18n_ServCloud_Confirm_Delivery_Time}</th>
+                        <th>{i18n_ServCloud_Confirm_Delivery_By}</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- NEW WIDGET END -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 料件資訊 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="material-information-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Material_Information}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <div class="tab-content">
+              <div>
+                <table
+                  id="material-information"
+                  class="table table-striped table-bordered table-hover"
+                  width="100%"
+                >
+                  <thead>
+                    <tr>
+                      <th class="hasinput" style="width: 25%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 25%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 20%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 15%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 15%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>{i18n_ServCloud_Item_Number}</th>
+                      <th>{i18n_ServCloud_Item_Name}</th>
+                      <th>{i18n_ServCloud_Specification}</th>
+                      <th>{i18n_ServCloud_Purchase_Quantity}</th>
+                      <th>{i18n_ServCloud_Unit}</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 料件資訊 END -->
+
+    <!-- 加工問題 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="processing-problem-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-paperclip"></i> </span>
+          <h2>{i18n_ServCloud_Processing_Problem}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="processing-problem"
+              class="table table-striped table-bordered table-hover"
+              name="processing-problem-form"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control group1" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control group1" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control group1" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control group1" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control group1" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control group1" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Question_Level}</th>
+                  <th>{i18n_ServCloud_Processing_Problem_Number}</th>
+                  <th>{i18n_ServCloud_Question_Title}</th>
+                  <th>{i18n_ServCloud_Status}</th>
+                  <th>{i18n_ServCloud_Create_Time}</th>
+                  <th>{i18n_ServCloud_Create_By}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 加工問題 END -->
+
+    <!-- 新增加工問題modal -->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="new-processing-problem-widget"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" style="display: inline-block;">
+              {i18n_ServCloud_Create_Processing_Problem}
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <div class="widget-body no-padding">
+              <form
+                class="smart-form"
+                id="new-processing-problem"
+                novalidate="novalidate"
+              >
+                <fieldset style="padding: 25px 30px 30px;">
+                  <div class="row">
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                      style="margin: 0 auto;"
+                    >
+                      <table class="table add-question-table">
+                        <tbody class="card card-body card-style">
+                          <tr>
+                            <td style="text-align: right;">
+                              <label
+                                class="label"
+                                style="display: inline-block;"
+                                >{i18n_ServCloud_Associated_Demand_Order_Number}</label
+                              >
+                            </td>
+                            <td>
+                              <label
+                                class="input"
+                                style="
+                                  display: inline-block;
+                                  margin-left: 15px;
+                                "
+                              >
+                                <input
+                                  type="text"
+                                  id="modal-form_id"
+                                  name="modal-form_id"
+                                  style="width: 25vw;"
+                                  disabled
+                                />
+                              </label>
+                              <div class="pull-right hide">
+                                <label class="checkbox">
+                                  <input type="checkbox" id="isClassified" />
+                                  <i></i
+                                  ><span style="color: #d62728;"
+                                    >{i18n_ServCloud_Mark_As_Confidential}</span
+                                  ></label
+                                >
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="text-align: right;">
+                              <label
+                                class="label"
+                                style="display: inline-block;"
+                                >{i18n_ServCloud_Question_Level}</label
+                              >
+                            </td>
+                            <td>
+                              <label
+                                class="radio"
+                                style="
+                                  display: inline-block;
+                                  margin-left: 15px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  value="1"
+                                  name="machining-problemLevel"
+                                  checked
+                                />
+                                <i></i>
+                                <p>{i18n_ServCloud_Urgent}</p>
+                              </label>
+                              <label
+                                class="radio"
+                                style="
+                                  display: inline-block;
+                                  margin-left: 15px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  value="0"
+                                  name="machining-problemLevel"
+                                />
+                                <i></i>
+                                <p>{i18n_ServCloud_General}</p>
+                              </label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="text-align: right;">
+                              <label
+                                class="label"
+                                style="display: inline-block;"
+                                >{i18n_ServCloud_Assigned_To}</label
+                              >
+                            </td>
+                            <td>
+                              <label
+                                class="input"
+                                style="
+                                  display: inline-block;
+                                  margin-left: 15px;
+                                "
+                              >
+                                <select
+                                  id="group-select"
+                                  name="group-select"
+                                  class="form-control"
+                                  style="padding-left: 5px;"
+                                ></select>
+                              </label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="text-align: right;">
+                              <label
+                                class="label st-required"
+                                style="display: inline-block;"
+                                >{i18n_ServCloud_Question_Title}</label
+                              >
+                            </td>
+                            <td>
+                              <label
+                                class="input"
+                                style="
+                                  display: inline-block;
+                                  margin-left: 15px;
+                                "
+                              >
+                                <input
+                                  type="text"
+                                  id="modal-title"
+                                  name="modal-title"
+                                  data-rule-required="true"
+                                  style="width: 25vw;"
+                                />
+                              </label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="text-align: right;">
+                              <label
+                                class="label st-required"
+                                style="display: inline-block;"
+                                >{i18n_ServCloud_Question_Description}</label
+                              >
+                            </td>
+                            <td>
+                              <label
+                                class="input"
+                                style="
+                                  display: inline-block;
+                                  margin-left: 15px;
+                                  width: 100%;
+                                  height: 3vw;
+                                  min-height: 70px;
+                                "
+                              >
+                                <textarea
+                                  id="modal-description"
+                                  name="modal-description"
+                                  class="form-control"
+                                  aria-label="With textarea"
+                                  data-rule-required="true"
+                                  style="
+                                    width: 98%;
+                                    height: 100%;
+                                    resize: none;
+                                    padding: 5px 7px;
+                                    box-sizing: border-box;
+                                  "
+                                ></textarea>
+                              </label>
+                            </td>
+                          </tr>
+
+                          <tr class="form-group">
+                            <td style="text-align: right;">
+                              <label
+                                class="label"
+                                style="display: inline-block;"
+                                >{i18n_ServCloud_Upload_File}</label
+                              >
+                            </td>
+                            <td
+                              style="
+                                display: flex;
+                                padding: 0 0 0 24px;
+                                margin-top: 0.7vw;
+                                width: 95%;
+                              "
+                            >
+                              <div
+                                id="upload-general-file"
+                                style="margin-right: 1vw; width: 49.5%;"
+                              >
+                                <div class="dz-message" data-dz-message>
+                                  <span class="text-center">
+                                    <span
+                                      class="font-lg visible-xs-block visible-sm-block visible-lg-block"
+                                      style="margin-top: 15%;"
+                                    >
+                                      <span
+                                        class="font-lg"
+                                        style="color: #3276b1;"
+                                        >{i18n_ServCloud_General_File}</span
+                                      ><br />
+                                      <span class="font-lg"
+                                        >{i18n_ServCloud_Drag_File_To_Here}</span
+                                      >
+                                    </span>
+                                  </span>
+                                </div>
+                              </div>
+
+                              <div
+                                id="upload-quotation-file"
+                                style="width: 49.5%;"
+                              >
+                                <div class="dz-message" data-dz-message>
+                                  <span class="text-center">
+                                    <span
+                                      class="font-lg visible-xs-block visible-sm-block visible-lg-block"
+                                      style="margin-top: 15%;"
+                                    >
+                                      <span
+                                        class="font-lg"
+                                        style="color: #b94a48;"
+                                        >{i18n_ServCloud_Quotation_File}</span
+                                      ><br />
+                                      <span class="font-lg"
+                                        >{i18n_ServCloud_Drag_File_To_Here}</span
+                                      >
+                                    </span>
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="modal-footer"
+            style="margin-top: 0.5vw; text-align: right;"
+          >
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="add-question-btn"
+            >
+              {i18n_ServCloud_Create_Problem}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新增加工問題END   -->
+
+    <!-- 下載紀錄 END -->
+    <div
+      id="download-history-modal"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">{i18n_ServCloud_Download_Record}</h4>
+          </div>
+          <div class="modal-body">
+            <!-- NEW WIDGET START -->
+            <div
+              id="download-history-widget"
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-history"></i> </span>
+                <h2>{i18n_ServCloud_Download_Record}</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding">
+                  <table
+                    id="download-history"
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>{i18n_ServCloud_File_Name}</th>
+                        <th>{i18n_ServCloud_Download_Time}</th>
+                        <th>{i18n_ServCloud_Download_By}</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- NEW WIDGET END -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 下載紀錄 END -->
+
+    <!-- 檔案附件 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="attachment-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-paperclip"></i> </span>
+          <h2>{i18n_ServCloud_File_Attachment}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="attachment"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_File_Name}</th>
+                  <th>{i18n_ServCloud_File_Path}</th>
+                  <th>{i18n_ServCloud_Processing_Problem_Number}</th>
+                  <th>{i18n_ServCloud_Upload_Time}</th>
+                  <th>{i18n_ServCloud_Upload_By}</th>
+                  <th>{i18n_ServCloud_Download_Record}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 檔案附件 END -->
+
+    <!-- 報價附件 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 hide">
+      <div
+        id="quote-attachment-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-paperclip"></i> </span>
+          <h2>{i18n_ServCloud_Quote_Attachment}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="quote-attachment"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_File_Name}</th>
+                  <th>{i18n_ServCloud_File_Path}</th>
+                  <th>{i18n_ServCloud_Processing_Problem_Number}</th>
+                  <th>{i18n_ServCloud_Upload_Time}</th>
+                  <th>{i18n_ServCloud_Upload_By}</th>
+                  <th>{i18n_ServCloud_Download_Record}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 報價附件 END -->
+
+    <!-- 供應商資訊 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="supplier-information-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Supplier_Information}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <div class="tab-content">
+              <div>
+                <table
+                  id="supplier-information"
+                  class="table table-striped table-bordered table-hover"
+                  width="100%"
+                >
+                  <thead>
+                    <tr>
+                      <th class="hasinput" style="width: 13%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 10%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 10%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 12%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 12%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 12%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 15%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 16%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                    </tr>
+                    <tr>
+                      <th data-class="expand">{i18n_ServCloud_Company_Name}</th>
+                      <th>{i18n_ServCloud_Principal}</th>
+                      <th>{i18n_ServCloud_Contact_Person}</th>
+                      <th>TEL({i18n_ServCloud_One})</th>
+                      <th>TEL({i18n_ServCloud_Two})</th>
+                      <th>FAX NO.</th>
+                      <th data-class="expand">EMAIL</th>
+                      <th data-class="expand">
+                        {i18n_ServCloud_Contact_Address}
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 供應商資訊 END -->
+    <button id="print" class="hide"></button>
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  .add-question-table > tbody > tr > td,
+  .add-question-table > tbody > tr > th,
+  .add-question-table > tfoot > tr > td,
+  .add-question-table > tfoot > tr > th,
+  .add-question-table > thead > tr > td,
+  .add-question-table > thead > tr > th {
+    border: none;
+  }
+
+  /* 需求單資訊 */
+  .td-title {
+    text-align: right;
+    width: 10%;
+    display: inline-block;
+  }
+
+  .td-content {
+    width: 30%;
+    display: inline-block;
+  }
+
+  .table-border > tbody > tr > td,
+  .table-border > tbody > tr > th,
+  .table-border > tfoot > tr > td,
+  .table-border > tfoot > tr > th,
+  .table-border > thead > tr > td,
+  .table-border > thead > tr > th {
+    border-top: none;
+  }
+
+  @media screen and (max-width: 1307px) {
+    .td-title {
+      width: 13%;
+    }
+  }
+
+  @media screen and (max-width: 1066px) {
+    .td-title {
+      width: 15%;
+    }
+
+    .td-content {
+      width: 29%;
+    }
+  }
+
+  @media screen and (max-width: 787px) {
+    .td-title {
+      width: 19%;
+    }
+
+    .td-content {
+      width: 24%;
+    }
+  }
+
+  @media screen and (max-width: 598px) {
+    .td-title {
+      width: 26%;
+    }
+
+    .td-content {
+      width: 14%;
+    }
+  }
+
+  #demand-list-information-widget .table-bordered,
+  #demand-list-information-widget .table-bordered > tbody > tr > td,
+  #demand-list-information-widget .table-bordered > tbody > tr > th,
+  #demand-list-information-widget .table-bordered > tfoot > tr > td,
+  #demand-list-information-widget .table-bordered > tfoot > tr > th,
+  #demand-list-information-widget .table-bordered > thead > tr > td,
+  #demand-list-information-widget .table-bordered > thead > tr > th {
+    border: none;
+  }
+
+  #demand-list-information-widget .table > tbody > tr > td,
+  #demand-list-information-widget .table > tbody > tr > th,
+  #demand-list-information-widget .table > tfoot > tr > td,
+  #demand-list-information-widget .table > tfoot > tr > th,
+  #demand-list-information-widget .table > thead > tr > td,
+  #demand-list-information-widget .table > thead > tr > th {
+    border: none;
+  }
+
+  /* 供應商資訊 */
+  #supplier-information-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  /* 料號資訊 */
+  .material_table {
+    border-right: 1px solid #dadada !important;
+    border-bottom: 1px solid #dadada !important;
+  }
+
+  /* 料件資訊 */
+  #material-information-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  /* 檔案附件 */
+  #attachment-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  /* 報價附件 */
+  #quote-attachment-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  /* 交期修改紀錄 */
+  #modify-delivery-date-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  /* 下載紀錄 */
+  #download-history-widget .dt-toolbar {
+    border: none;
+    padding: 0;
+  }
+
+  /* 加工問題 選擇緊急時字為紅色*/
+  .emergency {
+    color: red;
+    font-weight: bolder;
+  }
+
+  #processingProblem tr th,
+  #processingProblem tr td {
+    border: 1px solid #dadada !important;
+  }
+
+  #processingProblem .table > tbody > tr > td,
+  #processingProblem .table > tbody > tr > th,
+  #processingProblem .table > tfoot > tr > td,
+  #processingProblem .table > tfoot > tr > th,
+  #processingProblem .table > thead > tr > td,
+  #processingProblem .table > thead > tr > th {
+    padding: 0 !important;
+  }
+
+  .dropzone-v15,
+  .dropzone {
+    min-height: 225px;
+  }
+
+  .dz-preview {
+    margin: 16px !important;
+  }
+
+  #processing-problem a,
+  #attachment a,
+  #quote-attachment a {
+    text-decoration: underline;
+  }
+
+  #modify-delivery-date td:nth-child(6),
+  #modify-delivery-date td:nth-child(8) {
+    word-break: keep-all !important;
+  }
+
+  .btn[disabled] {
+    cursor: not-allowed !important;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

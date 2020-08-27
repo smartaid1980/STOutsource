@@ -1,0 +1,55 @@
+<div>
+  <select class="machine"></select>
+  <ol class="content"></ol>
+</div>
+
+<script>
+  $('.machine')
+    .html(
+      _.map(servkit.getMachineList(), function (machineId) {
+        return '<option value="' + machineId + '">' + machineId + '</option>'
+      }).join('')
+    )
+    .on('change', function () {
+      $('.content li').html('')
+    })
+
+  servkit.ajax(
+    {
+      url: 'api/mqttpool/topics',
+      type: 'GET',
+    },
+    {
+      success: function (data) {
+        _.each(data, function (topic) {
+          $('.content').append(
+            '<li class="' +
+              topic +
+              '" style="display: inline-block; vertical-align: top; margin: 10px;"></li>'
+          )
+
+          servkit.subscribe(topic, {
+            machines: servkit.getMachineList(),
+            handler: function (data) {
+              var machineId = $('.machine :selected').val()
+              if (data[machineId]) {
+                var liContent = _.map(data[machineId], function (d, k) {
+                  return '<li>' + k + ': ' + d + '</li>'
+                }).join('')
+
+                $('li.' + topic).html(
+                  '<div style="font-weight: bolder">' +
+                    topic +
+                    '</div>' +
+                    '<ul>' +
+                    liContent +
+                    '</ul>'
+                )
+              }
+            },
+          })
+        })
+      },
+    }
+  )
+</script>

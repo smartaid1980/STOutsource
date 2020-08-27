@@ -1,0 +1,2 @@
+ALTER TABLE `servcloud`.`a_storage_log` ADD COLUMN `store_grid_index` INT NOT NULL DEFAULT 0 COMMENT '格的索引' AFTER `store_id`;
+ALTER TABLE `servcloud`.`a_storage_log` ADD COLUMN `store_cell_index` INT NOT NULL DEFAULT 0 COMMENT '格間的索引' AFTER `store_grid_index`;

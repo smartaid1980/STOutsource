@@ -1,0 +1,286 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        id="query-condition-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form
+              id="query-condition-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">訂單編號</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="order_id-input"
+                          name="order_id"
+                        />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">型態</label>
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="type"
+                            value="1"
+                            checked
+                          />
+                          <i></i>領料
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="type"
+                            value="2"
+                            checked
+                          />
+                          <i></i>補料
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="type"
+                            value="3"
+                            checked
+                          />
+                          <i></i>退庫
+                        </label>
+                      </div>
+                    </section>
+                    <section>
+                      <label class="label">派工狀態</label>
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="m_mat_status"
+                            value="unclosed"
+                            checked
+                          />
+                          <i></i>未完成
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="m_mat_status"
+                            value="closed"
+                          />
+                          <i></i>已完成
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="m_mat_status"
+                            value="canceled"
+                          />
+                          <i></i>取消
+                        </label>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label st-required">機台編號</label>
+                      <label class="select select-multiple">
+                        <select
+                          id="machine_id-select"
+                          name="machine_id"
+                          multiple="multiple"
+                          data-rule-required="true"
+                          aria-required="true"
+                        ></select>
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+      <!-- detail DATATABLE -->
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>材料派工紀錄</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="query-result-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th></th>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>生產指令</th>
+                  <th>機台</th>
+                  <th>型態</th>
+                  <th>派工時間</th>
+                  <th>管編</th>
+                  <th>圖號</th>
+                  <th>修尾尺寸(mm)</th>
+                  <th>儲位明細</th>
+                  <th>派工狀態</th>
+                  <th>取消</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+    <div
+      class="modal fade"
+      id="confirm-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title" id="confirm-title"></h3>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <h5 id="confirm-content"></h5>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-toggle="modal"
+              data-target="#confirm-modal-widget"
+            >
+              取消
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="confirm-yes"
+            >
+              確認
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ROW END -->
+</section>
+<style>
+  #material-to-assign-info {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+  }
+  #location-detail-modal-widget #assignable-material-container,
+  #location-detail-modal-widget #temp-stock-material-container,
+  #location-detail-modal-widget #update-material-assignment-btn,
+  #location-detail-modal-widget #cancel-edit-btn {
+    display: none;
+  }
+  #location-detail-modal-widget.edit #update-material-assignment-btn,
+  #location-detail-modal-widget.edit #cancel-edit-btn {
+    display: inline-block;
+  }
+  #location-detail-modal-widget.edit #assignable-material-container,
+  #location-detail-modal-widget.edit #temp-stock-material-container {
+    display: block;
+  }
+  #location-detail-modal-widget.edit #edit-material-assignment-btn,
+  #location-detail-modal-widget.edit #return-main-page-btn {
+    display: none;
+  }
+
+  label.error {
+    color: red;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

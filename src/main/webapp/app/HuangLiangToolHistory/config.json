@@ -1,0 +1,20 @@
+{
+  "app": {
+    "id": "HuangLiangToolHistory",
+    "name": "刀具履歷",
+    "type": 1,
+    "description": "刀具履歷",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_mp_tool_history",
+      "name": "量產刀具履歷記錄查詢"
+    },
+    {
+      "id": "02_sp_tool_history",
+      "name": "樣品刀具履歷記錄查詢"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

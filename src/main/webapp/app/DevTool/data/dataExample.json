@@ -1,0 +1,311 @@
+{
+  "head": ["cnc_id", "alarm_code", "alrm_info", "count"],
+  "keys": ["cnc_id", "alarm_code"],
+  "data": [
+    ["FANUC_CNC_FOCAS", "1080", "1080 : 未定義警報說明</br>", "1"],
+    ["FANUC_CNC_FOCAS", "1005", "1005 : 未定義警報說明</br>", "17"],
+    ["FANUC_CNC_FOCAS", "1090", "1090 : 未定義警報說明</br>", "13"],
+    ["FANUC_CNC_FOCAS", "1035", "1035 : 未定義警報說明</br>", "3"],
+    ["FANUC_CNC_FOCAS", "1065", "1065 : 未定義警報說明</br>", "90"],
+    ["FANUC_CNC_FOCAS", "501", "501 : OVER TRAVEL : -n</br>", "7"],
+    [
+      "FANUC_CNC_FOCAS",
+      "1090,1000",
+      "1000 : 未定義警報說明</br>1090 : 未定義警報說明</br>",
+      "5"
+    ],
+    ["FANUC_CNC_FOCAS", "1100", "1100 : 未定義警報說明</br>", "1"],
+    ["FANUC_CNC_FOCAS", "500", "500 : OVER TRAVEL : +n</br>", "2"],
+    [
+      "FANUC_CNC_FOCAS",
+      "1000,1040",
+      "1000 : 未定義警報說明</br>1040 : 未定義警報說明</br>",
+      "8"
+    ],
+    ["FANUC_CNC_FOCAS", "1040", "1040 : 未定義警報說明</br>", "7"],
+    [
+      "FANUC_CNC_FOCAS",
+      "1090,1040",
+      "1040 : 未定義警報說明</br>1090 : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "1090,1000,1040",
+      "1000 : 未定義警報說明</br>1040 : 未定義警報說明</br>1090 : 未定義警報說明</br>",
+      "3"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "443,443,443,443,610,610,610,610,9059",
+      "443 : n AXIS : CNV. COOLING FAN FAILURE</br>610 : 未定義警報說明</br>9059 : 未定義警報說明</br>",
+      "5"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "443,443,443,443,610,610,610,610,9059,1000",
+      "443 : n AXIS : CNV. COOLING FAN FAILURE</br>610 : 未定義警報說明</br>1000 : 未定義警報說明</br>9059 : 未定義警報說明</br>",
+      "3"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "1000,1100",
+      "1000 : 未定義警報說明</br>1100 : 未定義警報說明</br>",
+      "1"
+    ],
+    ["FANUC_CNC_FOCAS", "1000", "1000 : 未定義警報說明</br>", "131"],
+    ["FANUC_CNC_FOCAS", "1055", "1055 : 未定義警報說明</br>", "40"],
+    ["FANUC_CNC_FOCAS", "1085", "1085 : 未定義警報說明</br>", "21"],
+    [
+      "FANUC_CNC_FOCAS",
+      "1110,1060",
+      "1060 : 未定義警報說明</br>1110 : 未定義警報說明</br>",
+      "4"
+    ],
+    ["FANUC_CNC_FOCAS", "1110", "1110 : 未定義警報說明</br>", "4"],
+    ["FANUC_CNC_FOCAS", "N/A", "N/A", "11"],
+    ["FANUC_CNC_FOCAS", "5074", "5074 : ADDRESS DUPLICATION ERROR</br>", "1"],
+    ["FANUC_CNC_FOCAS", "507", "507 : OVER TRAVEL : -n</br>", "9"],
+    [
+      "FANUC_CNC_FOCAS",
+      "507,1040",
+      "507 : OVER TRAVEL : -n</br>1040 : 未定義警報說明</br>",
+      "7"
+    ],
+    ["FANUC_CNC_FOCAS", "70", "70 : NO PROGRAM SPACE IN MEMORY</br>", "7"],
+    ["FANUC_CNC_FOCAS", "71", "71 : DATA NOT FOUND</br>", "23"],
+    ["FANUC_CNC_FOCAS", "1170", "1170 : 未定義警報說明</br>", "1"],
+    [
+      "FANUC_CNC_FOCAS",
+      "1000,1090",
+      "1000 : 未定義警報說明</br>1090 : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "1025,1090",
+      "1025 : 未定義警報說明</br>1090 : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "1040,1110",
+      "1040 : 未定義警報說明</br>1110 : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "1060,1110",
+      "1060 : 未定義警報說明</br>1110 : 未定義警報說明</br>",
+      "1"
+    ],
+    ["FANUC_CNC_FOCAS", "10", "10 : IMPROPER G-CODE</br>", "2"],
+    [
+      "FANUC_CNC_FOCAS",
+      "33",
+      "33 : NO SOLUTION AT CRC (M / T series)</br>",
+      "2"
+    ],
+    ["FANUC_CNC_FOCAS", "9031", "9031 : 未定義警報說明</br>", "1"],
+    ["FANUC_CNC_FOCAS", "100", "100 : PARAMETER WRITE ENABLE</br>", "1"],
+    [
+      "FANUC_CNC_FOCAS",
+      "431,612,612,612,612,9009",
+      "431 : n AXIS : CNV. OVERLOAD</br>612 : 未定義警報說明</br>9009 : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "431,612,612,612,612,9009,1000",
+      "431 : n AXIS : CNV. OVERLOAD</br>612 : 未定義警報說明</br>1000 : 未定義警報說明</br>9009 : 未定義警報說明</br>",
+      "3"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "443,443,443,443,610,610,610,610",
+      "443 : n AXIS : CNV. COOLING FAN FAILURE</br>610 : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "431,612,612,612,612,9058",
+      "431 : n AXIS : CNV. OVERLOAD</br>612 : 未定義警報說明</br>9058 : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "443,443,443,443,610,610,610,610,9059,1040",
+      "443 : n AXIS : CNV. COOLING FAN FAILURE</br>610 : 未定義警報說明</br>1040 : 未定義警報說明</br>9059 : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "431,612,612,612,612,9058,1000",
+      "431 : n AXIS : CNV. OVERLOAD</br>612 : 未定義警報說明</br>1000 : 未定義警報說明</br>9058 : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "443,443,443,443,610,610,610,610,1000",
+      "443 : n AXIS : CNV. COOLING FAN FAILURE</br>610 : 未定義警報說明</br>1000 : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "FANUC_CNC_FOCAS",
+      "9009,1000",
+      "1000 : 未定義警報說明</br>9009 : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,2011",
+      "2011 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "1655"
+    ],
+    ["MITSUBISHI_CNC_EZNCCOM", "M01 ", "M01  : 未定義警報說明</br>", "278"],
+    ["MITSUBISHI_CNC_EZNCCOM", "EMG ", "EMG  : 未定義警報說明</br>", "18"],
+    ["MITSUBISHI_CNC_EZNCCOM", "2020", "2020 : 未定義警報說明</br>", "114"],
+    ["MITSUBISHI_CNC_EZNCCOM", "2011", "2011 : 未定義警報說明</br>", "1866"],
+    ["MITSUBISHI_CNC_EZNCCOM", "2024", "2024 : 未定義警報說明</br>", "26"],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "EMG ,2024",
+      "2024 : 未定義警報說明</br>EMG  : 未定義警報說明</br>",
+      "24"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,2024",
+      "2024 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "3"
+    ],
+    ["MITSUBISHI_CNC_EZNCCOM", "1023", "1023 : 未定義警報說明</br>", "14"],
+    ["MITSUBISHI_CNC_EZNCCOM", "N/A", "N/A", "5"],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,2011,2020",
+      "2011 : 未定義警報說明</br>2020 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "10"
+    ],
+    ["MITSUBISHI_CNC_EZNCCOM", "1015", "1015 : 未定義警報說明</br>", "41"],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "1015,2024",
+      "1015 : 未定義警報說明</br>2024 : 未定義警報說明</br>",
+      "14"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "EMG ,1015,2024",
+      "1015 : 未定義警報說明</br>2024 : 未定義警報說明</br>EMG  : 未定義警報說明</br>",
+      "15"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,1015",
+      "1015 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,2020",
+      "2020 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "3"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "1015,2011",
+      "1015 : 未定義警報說明</br>2011 : 未定義警報說明</br>",
+      "4"
+    ],
+    ["MITSUBISHI_CNC_EZNCCOM", "P33 ", "P33  : 未定義警報說明</br>", "5"],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,1023,2011",
+      "1023 : 未定義警報說明</br>2011 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "3"
+    ],
+    ["MITSUBISHI_CNC_EZNCCOM", "P32 ", "P32  : 未定義警報說明</br>", "2"],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "1023,2011",
+      "1023 : 未定義警報說明</br>2011 : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "P32 ,2011",
+      "2011 : 未定義警報說明</br>P32  : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "1023,2020",
+      "1023 : 未定義警報說明</br>2020 : 未定義警報說明</br>",
+      "1"
+    ],
+    ["MITSUBISHI_CNC_EZNCCOM", "1047", "1047 : 未定義警報說明</br>", "2"],
+    ["MITSUBISHI_CNC_EZNCCOM", "1020", "1020 : 未定義警報說明</br>", "3"],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "P33 ,2011",
+      "2011 : 未定義警報說明</br>P33  : 未定義警報說明</br>",
+      "6"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "1020,2024",
+      "1020 : 未定義警報說明</br>2024 : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,1015,2020,2024",
+      "1015 : 未定義警報說明</br>2020 : 未定義警報說明</br>2024 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,1015,2024",
+      "1015 : 未定義警報說明</br>2024 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,1015,2020",
+      "1015 : 未定義警報說明</br>2020 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "2"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,2020,2024",
+      "2020 : 未定義警報說明</br>2024 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "2011,2020",
+      "2011 : 未定義警報說明</br>2020 : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "2011,2024",
+      "2011 : 未定義警報說明</br>2024 : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "M01 ,2011,2024",
+      "2011 : 未定義警報說明</br>2024 : 未定義警報說明</br>M01  : 未定義警報說明</br>",
+      "1"
+    ],
+    [
+      "MITSUBISHI_CNC_EZNCCOM",
+      "EMG ,2011,2024",
+      "2011 : 未定義警報說明</br>2024 : 未定義警報說明</br>EMG  : 未定義警報說明</br>",
+      "1"
+    ]
+  ],
+  "format": []
+}

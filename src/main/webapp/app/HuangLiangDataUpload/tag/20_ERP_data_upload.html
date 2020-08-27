@@ -1,0 +1,185 @@
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      資料上傳服務
+      <span>> 生產資料轉入 </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<!-- widget grid -->
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="dropzone-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-colorbutton="false"
+      >
+        <header>
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#golf-order">
+                <i class="fa fa-file-excel-o"></i>
+                <span class="hidden-mobile hidden-tablet">GOLF生產指令</span>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#golf-sample">
+                <i class="fa fa-file-excel-o"></i>
+                <span class="hidden-mobile hidden-tablet">GOLF樣品管理</span>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#mrp-order">
+                <i class="fa fa-file-excel-o"></i>
+                <span class="hidden-mobile hidden-tablet">MRP生產指令</span>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#mrp-sample">
+                <i class="fa fa-file-excel-o"></i>
+                <span class="hidden-mobile hidden-tablet">MRP樣品管理</span>
+              </a>
+            </li>
+          </ul>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body">
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="golf-order"></div>
+              <div class="tab-pane fade" id="golf-sample"></div>
+              <div class="tab-pane fade" id="mrp-order"></div>
+              <div class="tab-pane fade" id="mrp-sample"></div>
+            </div>
+            <!-- end .tab-content-->
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+
+<section>
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="erp-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-colorbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>ERP資料查詢</h2></span
+          >
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="erp-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 12%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾訂單編號"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾管編"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾圖號"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾總數量"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾未交數"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">類別</th>
+                  <th>訂單編號</th>
+                  <th>管編</th>
+                  <th>圖號</th>
+                  <th>客戶編號</th>
+                  <th>客戶簡稱</th>
+                  <th>總數量</th>
+                  <th>未交數</th>
+                </tr>
+              </thead>
+            </table>
+            <!-- end .row-->
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

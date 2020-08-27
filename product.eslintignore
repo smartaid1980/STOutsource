@@ -1,0 +1,19 @@
+# Ignore built files except src/main/webapp/js/servtech
+src/main/webapp/powerBI.html
+src/main/webapp/chart
+src/main/webapp/pdf
+src/main/webapp/WEB-INF
+src/main/webapp/js/*
+
+# js/servtech
+!src/main/webapp/js/servtech
+src/main/webapp/js/servtech/jquery.flot.valuelabels.js
+src/main/webapp/js/servtech/servcloud.bhreport.js
+src/main/webapp/js/servtech/servcloud.servkit.chart.ex.js
+src/main/webapp/js/servtech/servcloud.servkit.chart.js
+# src/main/webapp/js/servtech/servcloud.servkit.monitor.js
+
+# for test whether task eslint can pass in gradle
+# add dependsOn: 'eslint' to gradle task clearFrontendInTomcat to lint before clearFrontendInTomcat
+# src/main/webapp/*
+# !src/main/webapp/index.html

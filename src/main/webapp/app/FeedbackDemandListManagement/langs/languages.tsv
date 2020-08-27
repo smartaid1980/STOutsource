@@ -1,0 +1,116 @@
+	zh_tw	zh	en
+i18n_ServCloud_Query_Conditions	查詢條件	查询条件	Query conditions
+i18n_ServCloud_Category_Query	類別查詢	类别查询	Category query
+i18n_ServCloud_Integrated_Query	綜合查詢	综合查询	Integrated Query
+i18n_ServCloud_Demand_Order_Number	需求單號	需求单号	Demand order number
+i18n_ServCloud_All_Responsibility_Demand_Orders	所有責任處理需求單	所有责任处理需求单	All responsibility to process demand orders
+i18n_ServCloud_All_Open_Demand_Orders	所有未結案需求單	所有未结案需求单	All open demand orders
+i18n_ServCloud_Urgent_Problem_Pending_Demand_List	緊急問題待處理需求單	紧急问题待处理需求单	Urgent problem pending demand list
+i18n_ServCloud_Problem_Pending_Demand_List	問題待處理需求單	问题待处理需求单	Problem pending demand list
+i18n_ServCloud_Overdue_Demand_Order	已逾期需求單	已逾期需求单	Overdue demand order
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start date
+i18n_ServCloud_End_Date	結束日期	结束日期	End date
+i18n_ServCloud_Pre_Delivery_Date	預交日	预交日	Pre-delivery date
+i18n_ServCloud_Document_Type	單據類型	单据类型	Document Type
+i18n_ServCloud_Responsible_Manufacturer	負責廠商	负责厂商	Responsible manufacturer
+i18n_ServCloud_Document_Status	單據狀態	单据状态	Document status
+i18n_ServCloud_Unfinished	未結案	未结案	Unfinished
+i18n_ServCloud_Closed_Case	已結案	已结案	Closed case
+i18n_ServCloud_Query	查詢	查询	Query
+i18n_ServCloud_Query_result	查詢結果	查询结果	Query result
+i18n_ServCloud_Serial_Number	序號	序号	Serial number
+i18n_ServCloud_Item_Number	品號	品号	Item number
+i18n_ServCloud_Item_Name	品名	品名	Item name
+i18n_ServCloud_Original_Advance_Date	原預交日	原预交日	Original advance date
+i18n_ServCloud_Closing_Time	結案時間	结案时间	Closing time
+i18n_ServCloud_Close_Case	結案	结案	Close case
+i18n_ServCloud_Create_Demand_List	新增需求單	新增需求单	Create demand list
+i18n_ServCloud_Inquiry_Order	詢價單	询价单	Inquiry Order
+i18n_ServCloud_Purchase_Order	採購單	采购单	Purchase Order
+i18n_ServCloud_Create_Processing_Problem	新增加工問題	新增加工问题	Create processing problem
+i18n_ServCloud_Create_Problem	新增問題	新增问题	Create problem
+i18n_ServCloud_Question_Level	問題等級	问题等级	Question level
+i18n_ServCloud_Question_Status	問題狀態	问题状态	Question Status
+i18n_ServCloud_Urgent	緊急	紧急	Urgent
+i18n_ServCloud_General	一般	一般	General
+i18n_ServCloud_Mark_As_Confidential	標註為機密問題	标注为机密问题	Mark as confidential
+i18n_ServCloud_Question_Title	問題標題	问题标题	Question title
+i18n_ServCloud_Question_Description	問題說明	问题说明	Question description
+i18n_ServCloud_Upload_File	上傳檔案	上传档案	Upload file
+i18n_ServCloud_General_File	一般檔案	一般档案	General file
+i18n_ServCloud_Quotation_File	報價檔案	报价档案	Quotation file
+i18n_ServCloud_Drag_File_To_Here	拖曳檔案至此	拖曳档案至此	Drag file to here
+i18n_ServCloud_None	無	无	None
+i18n_ServCloud_This_Demand_Number_Already_Exists	此需求單號已存在	此需求单号已存在	This demand number already exists
+i18n_ServCloud_Back_To_Demand_List_Query	回到需求單查詢	回到需求单查询	Back to demand list query
+i18n_ServCloud_Demand_Order_Information	需求單資訊	需求单资讯	Demand order information
+i18n_ServCloud_Delivery_Confirmation_Date	交期確認日	交期确认日	Delivery confirmation date
+i18n_ServCloud_Create_By	建立人	建立人	Create by
+i18n_ServCloud_Create_Time	建立時間	建立时间	Create time
+i18n_ServCloud_Modify_By	最後修改人	最后修改人	Modify by
+i18n_ServCloud_Modify_Time	最後修改時間	最后修改时间	Modify time
+i18n_ServCloud_Delivery_Record	交期修改紀錄	交期修改纪录	Delivery record
+i18n_ServCloud_Confirm_Delivery	確認交期	确认交期	Confirm delivery
+i18n_ServCloud_Modify_Delivery	修改交期	修改交期	Modify delivery
+i18n_ServCloud_Modify_Pre_Delivery_Date_To	修改預交日為	修改预交日为	Modify the pre-delivery date to
+i18n_ServCloud_Cancel	取消	取消	Cancel
+i18n_ServCloud_Confirm	確認	确认	Confirm
+i18n_ServCloud_Transfer_Time	異動時間	转移时间	Transfer time
+i18n_ServCloud_Before_Modify_Pre_Delivery_Date	異動前預交日	异动前预交日	Before Modify Pre-delivery date
+i18n_ServCloud_After_Modify_Pre_Delivery_Date	異動後預交日	异动后预交日	After Modify Pre-delivery date
+i18n_ServCloud_Change_By	異動人	异动人	Change by
+i18n_ServCloud_Confirm_Delivery_Time	確認交期時間	确认交期时间	Confirm delivery time
+i18n_ServCloud_Confirm_Delivery_By	確認交期人	确认交期人	Confirm delivery by
+i18n_ServCloud_Material_Information	料件資訊	料件资讯	Material information
+i18n_ServCloud_Specification	規格	规格	Specification
+i18n_ServCloud_Purchase_Quantity	採購數量	采购数量	Purchase quantity
+i18n_ServCloud_Unit	單位	单位	Unit
+i18n_ServCloud_Processing_Problem	加工問題	加工问题	Processing problem
+i18n_ServCloud_Processing_Problem_Number	加工問題編號	加工问题编号	Processing problem number
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_Associated_Demand_Order_Number	關聯需求單號	关联需求单号	Associated demand order number
+i18n_ServCloud_Assigned_To	指派給	指派给	Assigned to
+i18n_ServCloud_Download_Record	下載紀錄	下载纪录	Download record
+i18n_ServCloud_File_Name	檔案名稱	档案名称	File name
+i18n_ServCloud_Download_Time	下載時間	下载时间	Download time
+i18n_ServCloud_Download_By	下載人	下载人	Download by
+i18n_ServCloud_File_Attachment	檔案附件	档案附件	File attachment
+i18n_ServCloud_Quote_Attachment	報價附件	报价附件	Quote attachment
+i18n_ServCloud_Attached_Name	附檔名稱	附档名称	Attached name
+i18n_ServCloud_File_Path	檔案路徑	档案路径	File path
+i18n_ServCloud_Upload_Time	上傳時間	上传时间	Upload time
+i18n_ServCloud_Upload_By	上傳人	上传人	Upload by
+i18n_ServCloud_Supplier_Information	供應商資訊	供应商资讯	Supplier information
+i18n_ServCloud_Company_Name	公司名稱	公司名称	Company name
+i18n_ServCloud_Principal	負責人	负责人	Principal
+i18n_ServCloud_Contact_Person	聯絡人	联络人	Contact person
+i18n_ServCloud_One	一	一	One
+i18n_ServCloud_Two	二	二	Two
+i18n_ServCloud_Contact_Address	聯絡地址	联络地址	Contact Address
+i18n_ServCloud_Same_Date_Error_Info	您輸入的日期與原預交日相同，請重新輸入	您输入的日期与原预交日相同，请重新输入	The date you entered is the same as the original pre-delivery date, please re-enter
+i18n_ServCloud_New_Problem	新問題	新问题	New problem
+i18n_ServCloud_Processing	進行中	进行中	Processing
+i18n_ServCloud_Cancelled	已取消	已取消	Cancelled
+i18n_ServCloud_Closed	已關閉	已关闭	Closed
+i18n_ServCloud_Cancel_Problem	取消問題	取消问题	Cancel Problem
+i18n_ServCloud_Close_Problem	關閉問題	关闭问题	Close Problem
+i18n_ServCloud_Back_To_Demand_List	回到需求單	回到需求单	Back to demand list
+i18n_ServCloud_Problem_Initiation_Time	問題發起時間	问题发起时间	Problem initiation time
+i18n_ServCloud_Problem_Initiation_By	問題發起人	问题发起人	Problem initiation by
+i18n_ServCloud_Currently_Assigned_To	目前指派給	目前指派给	Currently Assigned to
+i18n_ServCloud_Last_Assigned_Group	上一站被指派群組	上一站被指派群组	The last station was assigned a group
+i18n_ServCloud_Change_Status_To	變更狀態為	变更状态为	Change status to
+i18n_ServCloud_Problem_Response_Record	問題回覆紀錄	问题回覆纪录	Problem response record
+i18n_ServCloud_Record_Time	回覆時間	回覆时间	Record time
+i18n_ServCloud_Record_By	回覆人	回覆人	Record by
+i18n_ServCloud_Record_Content	回覆內容	回覆内容	Record content
+i18n_ServCloud_Create_Question_Reply	新增問題回覆	新增问题回覆	Create question reply
+i18n_ServCloud_Confidential	機密問題	机密问题	Confidential
+i18n_ServCloud_Create_Reply	新增回覆	新增回覆	Create reply
+i18n_ServCloud_Problem_Processing_Record	問題處理紀錄	问题处理纪录	Problem processing record
+i18n_ServCloud_Record_Date	紀錄日期	纪录日期	Record date
+i18n_ServCloud_User_Name	使用者名稱	使用者名称	User name
+i18n_ServCloud_Action	動作	动作	Action
+i18n_ServCloud_Change_Status	變更狀態	变更状态	Change status
+i18n_ServCloud_Portion_To	分配給	分配给	Portion to
+i18n_ServCloud_Add_File	新增檔案	新增档案	Add file

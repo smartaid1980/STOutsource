@@ -1,0 +1,374 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- 選擇型號 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="search-query-conditions-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Model_Selection}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate" id="main-form1">
+              <fieldset style="padding: 14px 14px 5px;">
+                <div class="row">
+                  <div class="col col-10">
+                    <div class="row">
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-6 col-lg-4"
+                      >
+                        <div
+                          class="col col-xs-6 col-sm-6 col-md-12 col-lg-12"
+                          style="margin-bottom: 17px;"
+                        >
+                          <label class="label"
+                            >{i18n_ServCloud_Lighting_Series}</label
+                          >
+                          <label class="select">
+                            <select id="series-select"> </select>
+                            <i></i>
+                          </label>
+                        </div>
+                      </section>
+                      <section
+                        id="status"
+                        class="col col-xs-12 col-sm-12 col-md-6 col-lg-4"
+                      >
+                        <div
+                          class="col col-xs-6 col-sm-6 col-md-12 col-lg-12"
+                          style="margin-bottom: 15px;"
+                        >
+                          <label class="label"
+                            >{i18n_ServCloud_Lighting_Model}</label
+                          >
+                          <label class="select">
+                            <select id="model-select"> </select>
+                            <i></i>
+                          </label>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Query}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 選擇型號 END -->
+    <!-- 規則樹 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="rule-tree-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{規則}</h2>
+          <div class="widget-toolbar" role="menu">
+            <button class="btn btn-xs btn-success" id="edit-tree">
+              {編輯}
+            </button>
+            <button
+              class="btn btn-xs btn-default"
+              id="quit-edit-tree"
+              style="display: none;"
+            >
+              {取消}
+            </button>
+            <button
+              class="btn btn-xs btn-primary"
+              id="save-tree"
+              style="display: none;"
+            >
+              {儲存}
+            </button>
+          </div>
+        </header>
+        <div>
+          <div class="widget-body">
+            <div class="tree" id="tree-container"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 規則樹 END -->
+    <!-- 增加節點 MODAL START -->
+    <div
+      class="modal fade bd-example-modal-lg close-modal"
+      id="add-node-modal-widget"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" style="display: inline-block;">{新增}</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body no-padding" style="border: none !important;">
+            <ul id="myTab1" class="nav nav-tabs bordered">
+              <li class="active">
+                <a href="#s1" data-toggle="tab" aria-expanded="true"
+                  >{篩選條件}</a
+                >
+              </li>
+              <li class="">
+                <a href="#s2" data-toggle="tab" aria-expanded="false">{模組}</a>
+              </li>
+            </ul>
+            <div id="myTabContent1" class="tab-content padding-10">
+              <div class="tab-pane fade active in" id="s1">
+                <form
+                  class="form-horizontal"
+                  id="add-rule-form"
+                  novalidate="novalidate"
+                >
+                  <fieldset>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label st-required"
+                        >{欄位}</label
+                      >
+                      <div class="col-md-9 field">
+                        <select class="form-control" name="field"></select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label st-required"
+                        >{數值}</label
+                      >
+                      <div class="col-md-9 value">
+                        <select class="form-control" name="val"></select>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="s2">
+                <form class="" id="add-module-form" novalidate="novalidate">
+                  <fieldset>
+                    <div
+                      class="form-group"
+                      style="display: flex; align-items: flex-end;"
+                    >
+                      <section class="col-md-6">
+                        <label class="control-label st-required">{模組}</label>
+                        <select
+                          class="form-control"
+                          name="module"
+                          data-rule-required="true"
+                          data-msg-required="{模組必填}"
+                        ></select>
+                      </section>
+                      <section class="col-md-4">
+                        <label class="control-label st-required">{組數}</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="module-count"
+                          data-rule-required="true"
+                          data-msg-required="{組數必填}"
+                          data-rule-number="true"
+                          data-msg-number="{組數請填正整數}"
+                        />
+                      </section>
+                      <section class="col-md-2">
+                        <button
+                          class="btn btn-primary btn-sm"
+                          id="add-module-btn"
+                        >
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </section>
+                    </div>
+                    <div class="text-center error-msg"></div>
+                  </fieldset>
+                </form>
+                <form class="" id="add-material-form" novalidate="novalidate">
+                  <fieldset>
+                    <div
+                      class="form-group"
+                      style="display: flex; align-items: flex-end;"
+                    >
+                      <section class="col-md-6">
+                        <label class="control-label st-required">{物料}</label>
+                        <select
+                          class="form-control"
+                          name="material"
+                          data-rule-required="true"
+                          data-msg-required="{物料必填}"
+                        ></select>
+                      </section>
+                      <section class="col-md-4">
+                        <label class="control-label st-required">{數量}</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="material-count"
+                          data-rule-required="true"
+                          data-msg-required="{數量必填}"
+                          data-rule-number="true"
+                          data-msg-number="{數量請填正整數}"
+                        />
+                      </section>
+                      <section class="col-md-2">
+                        <button
+                          class="btn btn-primary btn-sm"
+                          id="add-material-btn"
+                        >
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </section>
+                    </div>
+                    <div class="text-center error-msg"></div>
+                  </fieldset>
+                </form>
+                <div id="module-display"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer" style="text-align: right;">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button type="button" class="btn btn-primary" id="confirm-add-btn">
+              {i18n_ServCloud_Confirm}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 增加節點 MODAL END-->
+    <!-- 確認刪除節點 MODAL START -->
+    <div
+      class="modal fade bd-example-modal-lg close-modal"
+      id="remove-node-modal-widget"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" style="display: inline-block;">{刪除}</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <h5>{刪除後將無法復原，確定要刪除此節點} ?</h5>
+          </div>
+
+          <div
+            class="modal-footer"
+            style="margin-top: 0.5vw; text-align: right;"
+          >
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="confirm-remove-btn"
+            >
+              {i18n_ServCloud_Confirm}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 確認刪除節點 MODAL END-->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #module-display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+  }
+  #module-display label {
+    margin: 5px;
+  }
+  .remove-module-btn:hover {
+    color: #333;
+    cursor: pointer;
+  }
+  #tree-container.editable .plus-node,
+  #tree-container.editable .remove-node {
+    display: inline-block;
+  }
+  #tree-container .plus-node,
+  #tree-container .remove-node {
+    display: none;
+  }
+
+  #s1 .value {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  #s1 .value select + input {
+    opacity: 0;
+    flex: 0;
+    padding: 0;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #s1 .value select {
+    flex: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #s1 .value.custom input {
+    flex: 4;
+    opacity: 1;
+    margin-left: 5px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    /* width: 74%; */
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

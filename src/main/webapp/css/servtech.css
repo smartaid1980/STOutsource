@@ -1,0 +1,22 @@
+.select2-container .select2-choice abbr {
+  right: 45px;
+  font-size: 16px;
+}
+.select2-container .select2-choice abbr:hover {
+  color: #bbb;
+}
+.select2-container-multi .select2-search-choice-close {
+  min-width: 16px;
+  min-height: 16px;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-52%);
+  position: absolute;
+  padding: 0;
+  background: url(/ServCloud/img/clear.png) no-repeat;
+  background-size: contain;
+}
+.select2-container-multi .select2-search-choice-close:hover {
+  background: url(/ServCloud/img/clear.png) no-repeat #111;
+  background-size: contain;
+}

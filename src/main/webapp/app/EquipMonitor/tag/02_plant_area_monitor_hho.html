@@ -1,0 +1,325 @@
+<section id="widget-grid">
+  <div class="row">
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="plant-widget"
+        class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="false"
+        data-widget-colorbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+          <h2>【<span id="plantAreaId"></span>】</h2>
+          <!-- 暫時使用 -->
+          <div class="widget-toolbar hide" role="menu">
+            <button
+              id="changeStyle"
+              class="btn bg-color-blue txt-color-white hide"
+            >
+              {i18n_ServCloud_Switch_Style}
+            </button>
+            <!-- <a href="javascript:void(0);" class="btn bg-color-blue txt-color-white stk-load">Load</a> -->
+          </div>
+        </header>
+
+        <div class="tab-content padding-10 widget-body">
+          <!--  系統1  -->
+          <div id="space">
+            <button id="monitor-btn" class="btn btn-primary show-mode">
+              生產狀態
+            </button>
+            <button id="status-btn" class="btn btn-success show-mode">
+              廠區監控系統
+            </button>
+            <div>
+              <img class="bg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 生產狀態 WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 hide">
+      <div
+        id="monitor-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <h2>生產狀態</h2>
+        </header>
+        <div>
+          <div class="widget-body">
+            <button class="btn btn-default show-mode back">
+              &nbsp; {i18n_ServCloud_Go_Back}
+            </button>
+            <h5 id="update-info">
+              <b>{i18n_ServCloud_Last_Update_Time}：</b><span>---</span>
+            </h5>
+            <img id="monitor-img" src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 生產狀態 WIDGET END -->
+    <!-- 廠區監控系統 WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 hide">
+      <div
+        id="status-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <h2>廠區監控系統</h2>
+        </header>
+        <div>
+          <div class="widget-body">
+            <button class="btn btn-default show-mode back">
+              &nbsp; {i18n_ServCloud_Go_Back}
+            </button>
+            <ul class="status-angle">
+              <li>
+                <a
+                  href="javascript: void(0)"
+                  class="angle-tab active"
+                  data-config-key="A"
+                >
+                  <img
+                    src="app/EquipMonitor/img/plantArea/hho_angleA.jpg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript: void(0)"
+                  class="angle-tab"
+                  data-config-key="B"
+                >
+                  <img
+                    src="app/EquipMonitor/img/plantArea/hho_angleB.jpg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="angle-pane active" style="height: 80vh;">
+              <iframe
+                src="http://192.168.10.210"
+                width="100%"
+                height="100%"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 廠區監控系統 WIDGET END -->
+  </div>
+</section>
+<style>
+  .show-mode {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+
+  .show-mode:active {
+    position: absolute;
+  }
+
+  #status-widget .show-mode {
+    /* position: relative; */
+  }
+
+  #update-info {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+  }
+
+  #monitor-img {
+    padding-top: 50px;
+  }
+
+  ul.status-angle {
+    margin: 0;
+    padding: 10px 0 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .status-angle li {
+    list-style-type: none;
+    padding: 2px 1px 1px;
+    display: inline;
+  }
+
+  .angle-tab img {
+    width: 10vw;
+    /* box-shadow: 0px 0px 1px 0px #204c72; */
+    border: 1px solid #2e8b57;
+  }
+
+  .angle-tab img:hover {
+    border-top: 0.25vw solid #2e8b5799;
+  }
+
+  .angle-tab.active img {
+    /* box-shadow: 0px -2px 3px 3px #204c72; */
+    border-top: 0.25vw solid #2e8b57;
+  }
+
+  .angle-pane > * {
+    border: 1px solid #2e8b57;
+  }
+
+  #status-btn {
+    top: 39px;
+  }
+
+  .device {
+    color: #000 !important;
+  }
+
+  #space {
+    position: relative;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #space > div {
+    position: relative;
+  }
+
+  #space .bg,
+  .widget-body > img {
+    display: block;
+    margin: auto;
+    max-width: 95%;
+  }
+
+  #space .device {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #666;
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+  }
+
+  #space .device[disabled='true'] {
+    cursor: not-allowed;
+  }
+
+  #space .device:hover {
+    z-index: 1;
+  }
+
+  #space .device .device-title {
+    text-align: center;
+    padding: 0.5em;
+    background-color: #d3d3d3;
+  }
+
+  #space .device .device-title .text {
+    font-weight: bold;
+  }
+
+  #space.auto-show-other-signal .device .device-info {
+    display: none;
+  }
+
+  #space.auto-show-other-signal .device:hover .device-info {
+    /* display: block; */
+  }
+
+  #space .device .device-info {
+    float: left;
+    margin: 0.5em;
+  }
+
+  #space .device .device-info .value-head {
+    padding: 0.25em 0.5em;
+  }
+
+  #space .device .device-info .value-head span {
+    display: inline-block;
+  }
+
+  #space .device .device-info .value-text {
+    border-left: 1px solid #aaa;
+    padding: 0.25em 0.5em;
+  }
+
+  #space .device .device-info .value-progress {
+    border-left: 1px solid #aaa;
+    padding: 0 0.5em;
+  }
+
+  #space .device .device-info .value-progress .progress {
+    margin: 0;
+    width: 130px;
+  }
+
+  #space .device .device-info .dynamic-value .value {
+    /* width: 10em; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #space .device .device-img {
+    text-align: center;
+    position: absolute;
+    top: 110%;
+    /* left: 50%; */
+  }
+
+  #space .device .device-img img[src=''] {
+    display: none;
+  }
+
+  #space .device .device-img > img {
+    /* position: relative; */
+    /* left: -50%; */
+    width: 100%;
+    height: 100%;
+  }
+
+  #space .device.online .device-title {
+    background: #2e8b57;
+  }
+
+  #space .device.idle .device-title {
+    background: #ffa500;
+  }
+
+  #space .device.alarm .device-title {
+    background: #a90329;
+  }
+
+  #space .device.offline .device-title {
+    background: #d3d3d3;
+  }
+
+  #flotTip {
+    z-index: 1061 !important;
+    font-size: 1.1em !important;
+  }
+</style>
+<script type="text/javascript">
+  window.importPageScript()
+</script>

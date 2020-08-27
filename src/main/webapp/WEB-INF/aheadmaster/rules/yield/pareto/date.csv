@@ -1,0 +1,8 @@
+groupCol(newCol(A),"日期") ###(A)groupCol(newCol(J),"殼別")groupCol(newCol(T),"製程")
+groupCol(newCol(P),"不良代碼") ###(B)
+groupCol(newCol(R),"不良說明") ###(C)
+dataCol(newCol(Q),"不良品總數",SUM,"%.0f") ###(D)
+dataCol(newCol(N),"實際總數",SUM,"%.0f") ###(E)
+dataCol(newCol(O),"不良率分母之實際總數",SUM,"%.0f") ###(F)
+calcCol(reportCol(D)/reportCol(F),"不良率","%.4f") ###(G)
+calcCol(1-reportCol(D)/reportCol(F),"良率","%.4f") ###(I)

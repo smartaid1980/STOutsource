@@ -1,0 +1,281 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cloud"></i>
+      {i18n_ServCloud_After_Sales_Service}
+      <span>
+        > {i18n_ServCloud_14_Manage_Repair_Assign}
+      </span>
+    </h1>
+  </div>
+</div>
+<section id="widget-grid" class="">
+  <div class="row">
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-blueDark"
+        id="stk-repair-Assign-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <!--Attribute Tag Title Start-->
+        <header>
+          <span class="widget-icon"> <i class="fa fa-cloud-upload"></i> </span>
+          <h2>{i18n_ServCloud_Manage_Repair_Assign}</h2>
+          <!--Attribute Tag Title End-->
+        </header>
+        <!--Area Tag End-->
+        <!--Area Tag Div Start-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-3">
+                    <label class="label">建立時間起</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input type="text" name="start-date" id="start-date" />
+                    </label>
+                  </section>
+                  <section class="col col-3">
+                    <label class="label">建立時間迄</label>
+                    <label class="input"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input type="text" name="end-date" id="end-date" />
+                    </label>
+                  </section>
+                  <section class="col col-3">
+                    <label class="label">客戶名稱</label>
+                    <label class="input">
+                      <select class="select2" id="cus_id"> </select>
+                    </label>
+                  </section>
+                  <section class="col col-3">
+                    <label class="label">機號</label>
+                    <label class="input">
+                      <select class="select2" id="machine_id"> </select>
+                    </label>
+                  </section>
+                </div>
+                <div class="row">
+                  <section class="col col-3">
+                    <label class="label">客訴單代碼</label>
+                    <label class="input">
+                      <select class="select2" id="repair_id"> </select>
+                    </label>
+                  </section>
+                  <section class="col col-3">
+                    <label class="label">客訴單狀態</label>
+                    <div class="form-group">
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        value="0"
+                        name="repairStatus"
+                      />
+                      <span>未派工</span>
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        value="1"
+                        name="repairStatus"
+                      />
+                      <span>已派工尚未回報</span>
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        value="2"
+                        name="repairStatus"
+                      />
+                      <span> 處理中</span>
+                    </div>
+                  </section>
+
+                  <section class="col col-3">
+                    <label class="label">緊急度</label>
+                    <!-- <div class="form-group"> -->
+                    <lable>
+                      <label class="radio-inline">
+                        <input
+                          type="radio"
+                          name="repairEmergency"
+                          value="1"
+                          class="radiobox style-2"
+                        />
+                        <span>高</span>
+                      </label>
+                      <label class="radio-inline">
+                        <input
+                          type="radio"
+                          name="repairEmergency"
+                          value="0"
+                          class="radiobox style-2"
+                        />
+                        <span>一般</span>
+                      </label>
+                      <label class="radio-inline">
+                        <input
+                          type="radio"
+                          name="repairEmergency"
+                          value="2"
+                          class="radiobox style-2"
+                        />
+                        <span>低</span>
+                      </label>
+                    </lable>
+                    <!-- </div> -->
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button class="btn btn-default" id="clear-btn">清除</button>
+                <button class="btn btn-primary" id="submit-btn">查詢</button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+      <div
+        class="jarviswidget jarviswidget-color-blueDark"
+        id="repair-assign-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        style="display: none;"
+      >
+        <!--Attribute Tag Title Start-->
+        <header>
+          <span class="widget-icon"> <i class="fa fa-cloud-upload"></i> </span>
+          <h2>{i18n_ServCloud_Manage_Repair_result}</h2>
+          <!--Attribute Tag Title End-->
+        </header>
+        <div>
+          <!-- row -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- widget div-->
+          <!-- widget content -->
+          <div class="widget-body">
+            <table
+              id="repair-assign-table"
+              class="table table-striped table-bordered table-hover"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control" style="width: 100%;"></select>
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control" style="width: 100%;"></select>
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control" style="width: 100%;"></select>
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control" style="width: 100%;"></select>
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control" style="width: 100%;"></select>
+                  </th>
+                  <th class="hasinput"></th>
+                </tr>
+                <tr>
+                  <th data-class="expand">客訴單代碼</th>
+                  <th data-class="expand">緊急度</th>
+                  <th data-class="expand">建立時間</th>
+                  <th data-class="expand">客戶名稱</th>
+                  <th data-class="expand">機號</th>
+                  <th data-class="expand">問題項目</th>
+                  <th data-class="expand">狀態</th>
+                  <th>派工</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- end widget content -->
+          <!-- end widget div -->
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="repair-result"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content" id="repair-result-content">
+            <div class="modal-header">
+              <h4 class="modal-title">客訴單派工</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="widget-body">
+                <div
+                  class="jarviswidget jarviswidget-color-blueDark"
+                  id="repair-assign-widget"
+                  data-widget-editbutton="false"
+                  data-widget-deletebutton="false"
+                  data-widget-colorbutton="false"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-cloud-upload"></i>
+                    </span>
+                    <h2>{i18n_ServCloud_Manage_Repair}</h2>
+                  </header>
+                  <div>
+                    <div class="jarviswidget-editbox"></div>
+                    <div class="widget-body">
+                      <table
+                        id="repair-result-table"
+                        class="table table-striped table-bordered table-hover"
+                      ></table>
+                    </div>
+                  </div>
+                </div>
+                <div id="repair-result-assign"></div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" id="assign_btn">儲存</button>
+                  <button class="btn btn-default" data-dismiss="modal">
+                    取消
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--==================== Details Modal END ====================-->
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+  <!-- end well -->
+</section>
+<script>
+  window.importPageScript()
+</script>

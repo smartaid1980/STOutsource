@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en"> </head>
+  <body></body>
+  <script>
+    var url = window.location.toString()
+
+    if (url.indexOf('?') != -1) {
+      var params = url.split('?')[1]
+      var rootUrl = url.split('//')[1]
+      var ipAddress = rootUrl.substring(0, rootUrl.indexOf('/'))
+      window.location.href =
+        'http://' +
+        ipAddress +
+        '/ServCloud/index2.html#app/FFGProductionProcess/function/zh_tw/10_FFG_production_process.html?' +
+        params
+    }
+  </script>
+</html>

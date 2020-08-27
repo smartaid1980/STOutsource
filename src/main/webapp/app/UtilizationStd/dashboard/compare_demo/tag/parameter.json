@@ -1,0 +1,18 @@
+{
+  "type": "Report",
+  "gridClass": "col-xs-12 col-sm-12 col-md-12 col-lg-12",
+  "title": "<i class='fa fa-bar-chart-o'></i> <strong>{i18n_ServCloud_DailyUtilization}</strong>",
+  "contentPadding": true,
+  "dependencies": [
+    "/js/plugin/flot/jquery.flot.cust.min.js",
+    "/js/plugin/flot/jquery.flot.resize.min.js",
+    "/js/plugin/flot/jquery.flot.fillbetween.min.js",
+    "/js/plugin/flot/jquery.flot.orderBar.min.js",
+    "/js/plugin/flot/jquery.flot.pie.min.js",
+    "/js/plugin/flot/jquery.flot.tooltip.min.js",
+    "/js/plugin/flot/jquery.flot.time.min.js",
+    "/js/plugin/flot/jquery.flot.stack.min.js",
+    "/js/plugin/flot/jquery.flot.axislabels.js",
+    "/js/servtech/cosmos/jquery.flot.valuelabels-2.2.0.js"
+  ]
+}

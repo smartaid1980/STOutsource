@@ -1,0 +1,5 @@
+groupCol(newCol(C),"月") ###(A)
+dataCol(newCol(Q),"不良品總數",SUM,"%.0f") ###(B)
+dataCol(newCol(N),"實際總數",SUM,"%.0f") ###(C)
+calcCol(reportCol(B)/reportCol(C),"不良率","%.4f") ###(D)
+calcCol(1-reportCol(B)/reportCol(C),"良率","%.4f") ###(E)

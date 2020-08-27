@@ -1,0 +1,98 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="search-query-conditions-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Inquire}</h2>
+          <ul class="nav nav-tabs pull-right">
+            <li class="active">
+              <a data-toggle="tab" href="#create-new-thing">建新條碼</a>
+            </li>
+            <li>
+              <a
+                id="to-re-download-tab"
+                data-toggle="tab"
+                href="#re-download-thing"
+                >重新下載未綁定條碼</a
+              >
+            </li>
+          </ul>
+        </header>
+        <div role="content">
+          <div class="widget-body no-padding">
+            <div class="tab-content">
+              <div id="create-new-thing" class="tab-pane fade in active">
+                <form class="smart-form" novalidate="novalidate" id="form">
+                  <fieldset>
+                    <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                      <div>
+                        <label class="input">
+                          請輸入PKGID數量
+                          <input id="pkgid" type="text" class="form-control" />
+                          每日上限產生 9999
+                        </label>
+                      </div>
+                    </section>
+                  </fieldset>
+                  <footer>
+                    <button type="button" id="dl_pkgid" class="btn btn-primary">
+                      下載PKGID條碼
+                    </button>
+                    <button
+                      type="button"
+                      id="dl_pkgid_hide"
+                      class="btn btn-primary hide"
+                    >
+                      下載PKGID條碼
+                    </button>
+                  </footer>
+                </form>
+              </div>
+              <div id="re-download-thing" class="tab-pane fade">
+                <table
+                  id="thing-pre-table"
+                  class="table table-striped table-bordered table-hover"
+                  width="100%"
+                >
+                  <thead>
+                    <tr>
+                      <th class="hasinput" style="width: 40%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 30%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 30%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        PKGID
+                      </th>
+                      <th>建立時間</th>
+                      <th>建立者</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

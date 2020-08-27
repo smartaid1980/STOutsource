@@ -1,0 +1,94 @@
+	zh_tw	zh	en
+i18n_ServCloud_After_Sales_Service	售後服務	售后服务	After Sales Service
+i18n_ServCloud_01_Manage_Customer_Trade	01 客戶行業別維護	01 客户行业别维护	01 Manage Customer Trade
+i18n_ServCloud_Manage_Customer_Trade	客戶行業別維護	客户行业别维护	Manage Customer Trade
+i18n_ServCloud_Trade_ID	行業別代碼	行业别代码	Trade ID
+i18n_ServCloud_Trade_Name	行業別名稱	行业别名称	Trade Name
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_02_Manage_Customer_Type	02 客戶屬性維護	02 客户属性维护	02 Manage Customer Attribute
+i18n_ServCloud_Manage_Customer_Type	客戶屬性維護	客户属性维护	Manage Customer Attribute
+i18n_ServCloud_Type_ID	屬性代碼	属性代码	Attribute ID
+i18n_ServCloud_Type_Name	屬性名稱	属性名称	Attribute Name
+i18n_ServCloud_03_Manage_Customer_Area	03 客戶地區維護	03 客户地区维护	03 Customer Area
+i18n_ServCloud_Manage_Customer_Area	客戶地區維護	客户地区维护	Customer Area
+i18n_ServCloud_Area_ID	地區代碼	地区代码	Area ID
+i18n_ServCloud_Area_Name	地區名稱	地区名称	Area Name
+i18n_ServCloud_04_Manage_Customer_Factor	04 代理商維護	04 代理商维护	04 Customer Factor
+i18n_ServCloud_Manage_Customer_Factor	代理商維護	代理商维护	Customer Factor
+i18n_ServCloud_Factor_ID	代理商代碼	代理商代码	Factor ID
+i18n_ServCloud_Factor_Name	代理商名稱	代理商名称	Factor Name
+i18n_ServCloud_05_Manage_Customer	05 客戶資料維護	05 客户资料维护	05 Customer
+i18n_ServCloud_Manage_Customer	客戶資料維護	客户资料维护	Customer
+i18n_ServCloud_Customer_ID	客戶代碼	客户代码	Customer ID
+i18n_ServCloud_Customer_Name	客戶名稱	客户名称	Customer Name
+i18n_ServCloud_Trade	行業別	行业别	Trade
+i18n_ServCloud_Area	地區別	地区别	Area
+i18n_ServCloud_phone	電話	电话	Phone
+i18n_ServCloud_address	地址 	地址	Address
+i18n_ServCloud_sales	負責業務	负责业务	Sales
+i18n_ServCloud_factor	負責代理商	负责代理商	Factor
+i18n_ServCloud_fax	傳真	传真	Fax
+i18n_ServCloud_Payment_Goods	累積未收款	累积未收款	Payment Goods
+i18n_ServCloud_Contact_Name	連絡人	连络人	Contact Name
+i18n_ServCloud_Ext_Phone	連絡人分機	连络人分机	Ext Phone
+i18n_ServCloud_Cell_Phone	連絡人手機	连络人手机	Cell Phone
+i18n_ServCloud_email	E-mail	E-mail	E-mail
+i18n_ServCloud_06_Manage_Product	06 產品別維護	06 产品别维护	06 Manage Product
+i18n_ServCloud_Manage_Product	產品別維護	产品别维护	Manage Product
+i18n_ServCloud_Product_ID	產品代碼	产品代码	Product ID
+i18n_ServCloud_Product_Name	產品名稱	产品名称	Product Name
+i18n_ServCloud_08_Manage_Entity	08 問題類別維護	08 问题类别维护	08 Manage Entity
+i18n_ServCloud_Manage_Entity	問題類別維護	问题类别维护	Manage Entity
+i18n_ServCloud_Entity_ID	問題代碼	问题代码	Entity ID
+i18n_ServCloud_Entity_name	問題名稱	问题名称	Entity Name
+i18n_ServCloud_Entity_Group	可維修工程師	可维修工程师	Entity Group
+i18n_ServCloud_09_Manage_Entity_Breakdown	09 問題項目	09 问题项目	09 Manage Entity Breakdown
+i18n_ServCloud_Manage_Entity_Breakdown	問題項目	问题项目	Manage Entity Breakdown
+i18n_ServCloud_Entity_breakdown_ID	項目代碼	项目代码	Breakdown ID
+i18n_ServCloud_Entity_Breakdown_Name	項目名稱	项目名称	Breakdown Name
+i18n_ServCloud_10_Manage_Material	10 料件維護	10 料件维护	10 Manage Material
+i18n_ServCloud_Manage_Material	料件維護	料件维护	Manage Material
+i18n_ServCloud_Material_ID	料件代碼	料件代码	Material ID
+i18n_ServCloud_Material_Name	料件名稱	料件名称	Material Name
+i18n_ServCloud_Material_Price	價格	价格	Material Price
+i18n_ServCloud_Material_Desc	說明	说明	Material Desc
+i18n_ServCloud_11_Manage_Repair_Kind	11 客訴單類型	11 客诉单类型	11 Manage Repair Kind
+i18n_ServCloud_Manage_Repair_Kind	客訴單類型	客诉单类型	Manage Repair Kind
+i18n_ServCloud_Kind_ID	類型代碼	类型代码	Kind ID
+i18n_ServCloud_Kind_Name	類型名稱	类型名称	Kind Name
+i18n_ServCloud_Assign_ID	派工單代碼	派工单代码	Assign ID
+i18n_ServCloud_Repair_ID	客訴單代碼	客诉单代码	Repair ID
+i18n_ServCloud_Order_Date	預約前往日期	预约前往日期	Order Date
+i18n_ServCloud_Recommend	派工建議	派工建议	Recommend
+i18n_ServCloud_07_Manage_Machine_Type	07 機種維護	07 机种维护	07 Machine Type
+i18n_ServCloud_Manage_Machine_Type	機種維護	机种维护	Machine Type
+i18n_ServCloud_09_Manage_Entity_Breakdown	09 問題項目維護	09 问题项目维护	09 Manage Entity Breakdown
+i18n_ServCloud_Manage_Entity_Breakdown	問題項目維護	问题项目维护	Manage Entity Breakdown
+i18n_ServCloud_12_Manage_Repair_List	12 客訴單管理	12 客诉单管理	12 Manage Repair List
+i18n_ServCloud_Manage_Repair_List	客訴單管理	客诉单管理	Manage Repair List
+i18n_ServCloud_Manage_Repair_Kind	客訴單類型	客诉单类型	11 Manage Repair Kind
+i18n_ServCloud_13_Manage_Repair	13 新增客訴單	13 新增客诉单	13 Manage Repair
+i18n_ServCloud_13_Manage_Repair	新增客訴單	新增客诉单	Manage Repair
+i18n_ServCloud_14_Manage_Repair_Assign	14 客訴單派工	14 客诉单派工	14 Manage Repair Assign 
+i18n_ServCloud_Manage_Repair_Assign	客訴單派工	客诉单派工	Manage Repair Assign 
+i18n_ServCloud_15_Manage_Repair_Repay	15 客訴單回報	15 客诉单回报	15 Manage Repair Repay
+i18n_ServCloud_Manage_Repair_Reply	客訴單回報	客诉单回报	Manage Repair Reply
+i18n_ServCloud_Manage_Machine_Type_ID	機種	机种	Machine Type 
+i18n_ServCloud_Type_Desc	機種說明	机种说明	Machine Desc
+i18n_ServCloud_Entity_group	可維修工程師	可维修工程师	Entity Group
+i18n_ServCloud_Entity_Breakdown_ID	問題代碼	问题代码	Entity Breakdown ID
+i18n_ServCloud_Manage_Repair	客訴單	客诉单	Repair Add
+i18n_ServCloud_Manage_Repair_result	查詢結果	查询结果	Query Result
+i18n_ServCloud_16_Manage_Repair_Close	16 客訴單結案	16 客诉单结案	16 Repair Close
+i18n_ServCloud_Manage_Repair_Close	客訴單結案	客诉单结案	Repair Close
+i18n_ServCloud_Attribute_ID	屬性代碼	属性代码	Attribute ID
+i18n_ServCloud_Attribute_Name	屬性名稱	属性名称	Attirbute Name
+i18n_ServCloud_Uni_No	統一編號	统一编号	Uni No
+i18n_ServCloud_Machine_Type_ID	機種	机种	Machine Type 
+i18n_ServCloud_detail	詳細訊息	详细讯息	Detail
+i18n_ServCloud_12_Manage_Repair_Assign	客訴單派工	客诉单派工	Repair Assign
+i18n_ServCloud_Manage_Repair_Repay	客訴單回報	客诉单回报	Repair Repay
+i18n_ServCloud_Manage_Repair_reault	查詢結果	查询结果	Query Result
+i18n_ServCloud_Manage_Entity_List	問題細項	问题细项	Entity Breakdown
+i18n_ServCloud_17_Repair_Report	17 客訴單統計	17 客诉单统计	17 Repair Report

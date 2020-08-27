@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<command name="cnc_Information" cycletype="count" cyclevalue="-1" timeout="-1">
+   <params>
+      <param name="G_POSM" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters>
+            <filter name="AXIS">T</filter>
+         </filters>
+         <process />
+      </param>
+      <param name="G_POSR" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters>
+            <filter name="AXIS">T</filter>
+         </filters>
+         <process />
+      </param>
+      <param name="G_POSA" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters>
+            <filter name="AXIS">T</filter>
+         </filters>
+         <process />
+      </param>
+      <param name="G_POSD" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters>
+            <filter name="AXIS">T</filter>
+         </filters>
+         <process />
+      </param>
+      <param name="G_ELCT" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_CUTT" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_OPRT" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_CYCT" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_PSCP" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_TOCP" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_USCP" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_MODA" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_EXEP" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_ACTS" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_SPMS" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_SPSO" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_STAT" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_PRGR" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_PRGM" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_SEQN" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_SRNE" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_PSUT" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_FRUT" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_ACTF" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+      <param name="G_FERP" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+	   <param name="G_SRMC" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+	   <param name="G_SPMC" count="1" frequency="0" isRepeat="true">
+         <inputs />
+         <filters />
+         <process />
+      </param>
+   </params>
+</command>

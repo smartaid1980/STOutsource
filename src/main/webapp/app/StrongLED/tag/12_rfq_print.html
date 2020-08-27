@@ -1,0 +1,281 @@
+<section id="widget-grid">
+  <button class="btn btn-default" id="leave-btn">
+    <i class="fa fa-mail-reply" aria-hidden="true"></i>&#xA0;
+    {i18n_ServCloud_Back_to_list}
+  </button>
+  <!-- row -->
+  <div class="row">
+    <!-- 報價單 START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="demand-list-information-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i aria-hidden="true" class="fa fa-edit"></i>
+          </span>
+          <h2>{i18n_ServCloud_Quote}</h2>
+          <div class="widget-toolbar" role="menu">
+            <div id="export_image" class="btn-group">
+              <button
+                class="btn dropdown-toggle btn-xs btn-success"
+                data-toggle="dropdown"
+              >
+                {i18n_ServCloud_Export}
+                <i aria-hidden="true" class="fa fa-caret-down"></i>
+              </button>
+              <ul class="dropdown-menu pull-right">
+                <li>
+                  <a id="print-btn" href="javascript:void(0);"
+                    >{i18n_ServCloud_Print}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div role="content">
+          <div class="widget-body no-padding" id="rfq-detail">
+            <div id="rfq-detail-view">
+              <fieldset id="quotation-header">
+                <div id="quotation-logo">
+                  <img
+                    src="app/StrongLED/img/strongled-logo.jpg"
+                    alt="logo"
+                    height="50px"
+                  />
+                </div>
+                <div id="quotation-title">{i18n_ServCloud_Quote}</div>
+              </fieldset>
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_RFQ_Number}：
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    style="border: none;"
+                    data-column="form_id"
+                  ></div>
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_Date_of_filing}：
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    style="border: none;"
+                    data-column="create_time"
+                  ></div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_clients_name}：
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    style="border: none;"
+                    data-column="cus_id"
+                  ></div>
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_Fill_in_a_form}：
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    style="border: none;"
+                    data-column="create_by"
+                  ></div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_Quoted_price}：
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    style="border: none; color: rgb(6, 89, 245);"
+                    data-column="quoted_price"
+                  ></div>
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_Quote_Date}：
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    style="border: none;"
+                    data-column="quote_time"
+                  ></div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_Orders_species}
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    data-column="form_type"
+                  ></div>
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_Expected_number_of_lamps}
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    data-column="po_qty"
+                  ></div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_Expected_Order_Time}
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    data-column="st_po_time"
+                  ></div>
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_Expected_delivery_date}
+                  </div>
+                  <div
+                    class="col col-lg-3 col-md-4 col-sm-4 value"
+                    data-column="st_lead_time"
+                  ></div>
+                </div>
+              </fieldset>
+              <fieldset id="custom-rfq-column"></fieldset>
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-2 col-md-2 col-sm-2 item">
+                    {i18n_ServCloud_Remark}
+                  </div>
+                  <div
+                    class="col col-lg-8 col-md-10 col-sm-10 value multiple-line"
+                    data-column="description"
+                  ></div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  @import url('app/StrongLED/css/main.css');
+  @import url('app/StrongLED/css/rfqDetailMain.css');
+  @import url('app/StrongLED/css/rfqDetailView.css');
+  /* for screen */
+  #quotation-header {
+    display: none;
+  }
+  @media screen and (max-width: 1024px) {
+    #rfq-detail-view .row {
+      padding: 15px 0;
+    }
+  }
+  /* for print only. Need to assign all the style again in print mode. */
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  @media print {
+    #header,
+    #left-panel,
+    #ribbon,
+    .page-footer,
+    #leave-btn,
+    #demand-list-information-widget > header,
+    .modal,
+    .hide {
+      display: none;
+    }
+    #quotation-header {
+      display: block;
+      position: relative;
+      padding: 10px 0;
+    }
+    #quotation-title {
+      margin: 0 auto;
+      width: fit-content;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 15px;
+    }
+    #quotation-logo {
+      position: absolute;
+    }
+    #rfq-detail-view {
+      font-size: 13px;
+      width: 210mm;
+      height: 290mm;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+    /* 為了蓋掉print預設的css */
+    #rfq-detail-view fieldset {
+      border: none;
+    }
+    #rfq-detail-view .group {
+      padding: 10px 0;
+      margin: 10px 0;
+      border: none;
+    }
+    #rfq-detail-view .group .item.group-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 900;
+    }
+    #rfq-detail-view .group .item.group-subtitle {
+      text-align: center;
+      font-size: 16px;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    #rfq-detail-view section {
+      padding: 8px 60px 8px 0;
+      box-sizing: border-box;
+    }
+    #rfq-detail-view .row {
+      padding: 3px 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+    #rfq-detail-view .col {
+      padding: 3px 8px;
+      box-sizing: border-box;
+    }
+    #rfq-detail-view .col-lg-1 {
+      flex: 1;
+    }
+    #rfq-detail-view .col-lg-2 {
+      flex: 2;
+    }
+    #rfq-detail-view .col-lg-3 {
+      flex: 3;
+    }
+    #rfq-detail-view .col-lg-4 {
+      flex: 4;
+    }
+    #rfq-detail-view .col-lg-5 {
+      flex: 5;
+    }
+    #rfq-detail-view .col-lg-8 {
+      flex: 8;
+    }
+    #rfq-detail-view .col-lg-9 {
+      flex: 9;
+    }
+    #rfq-detail-view .col-lg-10 {
+      flex: 10;
+    }
+    #rfq-detail-view .row .item {
+      text-align: right;
+      font-weight: bolder;
+    }
+    #rfq-detail-view .row .value {
+      border-bottom: none;
+    }
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

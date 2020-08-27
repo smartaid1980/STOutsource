@@ -1,0 +1,24 @@
+{
+  "app": {
+    "id": "HuangLiangToolStock",
+    "name": "刀具進貨",
+    "type": 1,
+    "description": "刀具進貨",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_tool_purchase_record",
+      "name": "刀具進貨記錄"
+    },
+    {
+      "id": "02_tool_stock",
+      "name": "刀具庫存查詢"
+    },
+    {
+      "id": "03_tool_stock_chg_log",
+      "name": "刀具庫存異動記錄查詢"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

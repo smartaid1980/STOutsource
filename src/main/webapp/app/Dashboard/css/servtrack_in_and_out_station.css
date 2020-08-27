@@ -1,0 +1,181 @@
+[data-style='light'] .work-background {
+  stroke: #009245;
+  fill: #ffffff;
+}
+
+[data-style='dark'] .work-background {
+  stroke: #161523;
+  fill: #535353;
+}
+
+[data-style='technology'] .work-background {
+  stroke: #11445bd4;
+  fill: #3b656d80;
+}
+
+[data-style='light'] .gone-work-background {
+  fill: #fffdc0;
+}
+
+[data-style='dark'] .gone-work-background {
+  fill: #f4a016;
+}
+
+[data-show-type='3'][data-style='dark'] .gone-work-background {
+  fill: #a2a2a29c;
+}
+
+[data-style='technology'] .gone-work-background {
+  fill: #906600;
+}
+
+[data-style='light'] .worked {
+  fill: rgb(209, 224, 181);
+}
+
+[data-style='dark'] .worked {
+  fill: #0b252d;
+}
+
+[data-style='light'] .working {
+  fill: rgb(135, 204, 147);
+}
+
+[data-style='dark'] .working {
+  fill: #339938;
+}
+
+[data-style='technology'] .working {
+  fill: #00b94e;
+}
+
+[data-show-type='3'][data-style='dark'] .invalid {
+  fill: #f4a016;
+}
+
+[data-style='light'] .circle {
+  opacity: 0.8;
+  fill: #ffffff;
+}
+
+[data-style='dark'] .circle {
+  opacity: 0.8;
+  fill: #ffffff;
+}
+
+[data-style='dark'] .working .circle {
+  fill: #ffff00;
+}
+
+.circle-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+[data-style='light'] .circle-text {
+  fill: #009245;
+}
+
+[data-style='dark'] .circle-text {
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+[data-style='dark'] .working.circle-text {
+  fill: #ffff00;
+}
+
+.scales-g {
+  fill: none;
+  /* font-size: 10px; */
+  font-family: sans-serif;
+  text-anchor: middle;
+}
+
+.scales-text {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+[data-style='light'] .scales-text {
+  fill: #4e4e4e;
+}
+
+[data-style='dark'] .scales-text {
+  fill: #00a99d;
+}
+
+[data-style='light'] .now-time-path {
+  fill: #009245;
+}
+
+[data-style='dark'] .now-time-path {
+  fill: #ffffff;
+}
+
+[data-style='technology'] .now-time-path {
+  fill: #ffffff63;
+}
+
+[data-style='light'] .scales-text.now-time {
+  fill: #ffffff;
+}
+
+[data-style='dark'] .scales-text.now-time {
+  fill: rgb(22, 21, 35);
+}
+
+.work-table,
+.invalid-table {
+  width: 98%;
+  margin: 10px;
+}
+
+.work-table tbody > tr,
+.invalid-table tbody > tr {
+  color: #cecece;
+}
+
+.work-table tr.working,
+.invalid-table tr.working {
+  font-weight: bold;
+}
+
+.work-table th,
+.work-table td,
+.invalid-table th,
+.invalid-table td {
+  padding: 5px;
+  text-align: center;
+}
+
+.work-table th,
+.invalid-table th {
+  font-size: 1.2em;
+}
+
+[data-style='dark'] .work-table {
+  /* background-color: #2f2f2f96; */
+  background-color: #10420096;
+}
+
+[data-style='dark'] .invalid-table {
+  /* background-color: #2f2f2f96; */
+  background-color: #4e4e25c4;
+}
+
+[data-style='dark'] .work-table tr.working {
+  background-color: #5be87a;
+  color: black;
+}
+
+[data-style='dark'] .invalid-table tr.working {
+  background-color: #d4dc5a;
+  color: black;
+}
+
+[data-style='dark'] .work-table th,
+[data-style='dark'] .work-table td,
+[data-style='dark'] .invalid-table th,
+[data-style='dark'] .invalid-table td {
+  border: 1px solid #565656;
+}

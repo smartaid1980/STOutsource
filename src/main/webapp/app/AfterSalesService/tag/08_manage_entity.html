@@ -1,0 +1,176 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cloud"></i>
+      {i18n_ServCloud_After_Sales_Service}
+      <span>
+        > {i18n_ServCloud_08_Manage_Entity}
+      </span>
+    </h1>
+  </div>
+</div>
+<!--Section START-->
+<section id="widget-grid" class="">
+  <!--Div row START-->
+  <div class="row">
+    <!--widget Strat-->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-blueDark"
+        id="stk-entity-type-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <!--Attribute Tag Title Start-->
+        <header>
+          <span class="widget-icon"> <i class="fa fa-cloud-upload"></i> </span>
+          <h2>{i18n_ServCloud_Manage_Entity}</h2>
+          <!--Attribute Tag Title End-->
+        </header>
+        <!--Area Tag End-->
+        <!--Area Tag Div Start-->
+        <div>
+          <!--machine_type_id Tag  Table Start-->
+          <div class="widget-body">
+            <table
+              id="stk-entity-type-table"
+              stk-entity-pk="entity_id"
+              class="table table-striped table-bordered table-hover"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput">
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">{i18n_ServCloud_Entity_ID}</th>
+                  <th>{i18n_ServCloud_Entity_name}</th>
+                  <th>{i18n_ServCloud_Entity_group}</th>
+                  <th>{i18n_ServCloud_Manage_Entity_List}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="entity_id"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Entity_ID}"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="entity_name"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Entity_name}"
+                    />
+                  </td>
+                  <td>
+                    <select
+                      multiple
+                      style="width: 100%;"
+                      class="select2"
+                      name="user_group"
+                    >
+                    </select>
+                  </td>
+                  <td>
+                    <button
+                      disabled="disabled"
+                      class="btn btn-primary"
+                      name="detail-btn"
+                    >
+                      {i18n_ServCloud_Manage_Entity_List}
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!--Area Tag Table End-->
+          </div>
+          <!--Area Tag Div End-->
+        </div>
+      </div>
+      <!--widget END-->
+      <div
+        class="modal fade"
+        id="entity-result"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content" id="entity-result-content">
+            <div class="modal-header">
+              <h4 class="modal-title">{i18n_ServCloud_detail}</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="widget-body">
+                <div id="entity-result-table-header" class="no-padding"></div>
+                <br />
+                <div>
+                  <table
+                    id="entity-result-table"
+                    class="table table-striped table-bordered table-hover"
+                  ></table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+        <!--==================== Details Modal END ====================-->
+      </div>
+    </article>
+    <!--Div row END-->
+  </div>
+  <!--Section END-->
+</section>
+<script>
+  window.importPageScript()
+</script>

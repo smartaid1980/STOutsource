@@ -1,0 +1,55 @@
+	zh_tw	zh	en
+i18n_ServCloud_ToolUsed	刀具使用量	刀具使用量	Tool Usage
+i18n_ServCloud_Functions	功能	功能	Functions
+i18n_ServCloud_01_Report	01 報告	01 报告	01 Report
+i18n_ServCloud_Report	報告	报告	Report
+i18n_ServCloud_Single_Measure_IIOT	報告	报告	Report
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Criteria
+i18n_ServCloud_Query_Result	搜尋結果	搜寻结果	Query Result
+i18n_ServCloud_Query_Results_Bar_Chart	搜尋結果(直條圖)	搜寻结果(直条图)	Query Results (Bar Chart)
+i18n_ServCloud_Query_Results_Table	搜尋結果(表格)	搜寻结果(表格)	Query Results(Table)
+i18n_ServCloud_Please_Select_Search_Criteria	請選擇搜尋條件	请选择搜寻条件	Please select search criteria
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Tool	刀具	刀具	Tool
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start Date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_Bar_Chart	長條圖	长条图	Bar Chart
+i18n_ServCloud_Show_Demo_Data	顯示Demo資料	显示Demo资料	Show Demo Data
+i18n_ServCloud_Submit	提交	提交	Submit
+i18n_ServCloud_demo	顯示DEMO資料	显示DEMO资料	Show Demo Data
+i18n_ServCloud_Number	編號	编号	Number
+i18n_ServCloud_Tool_Changing_Time	換刀時間	换刀时间	Tool changing time
+i18n_ServCloud_Tool_Cumulative_Time_Minutes	刀具加工總時間(分)	刀具加工总时间(分)	Accumulated tool usage time (Minutes)
+i18n_ServCloud_Details	詳細資訊	详细资讯	Detail
+i18n_ServCloud_Processing_Times	加工次數	加工次数	Tool using frequency
+i18n_ServCloud_Program	加工程式	加工程式	Program
+i18n_ServCloud_Start_Time	加工開始時間	加工开始时间	Start time
+i18n_ServCloud_Tool_Changing_Start_Time	換刀開始時間	换刀开始时间	Tool changing Start time
+i18n_ServCloud_Tool_Changing_End_Time	換刀結束時間	换刀结束时间	Tool changing End time
+i18n_ServCloud_Tool_Using_Time_Minutes	刀具加工時間(分)	刀具加工时间(分)	Tool usage time (Minutes)
+i18n_ServCloud_Close	關閉	关闭	Close
+i18n_ServCloud_Production_Id	產品編號	产品编号	Product ID
+i18n_ServCloud_Work_Order_Id	製令號碼	制令号码	Work Order ID
+i18n_ServCloud_Total_Average_Minutes	總平均 (分)	总平均 (分)	Average (Minutes)
+i18n_ServCloud_Total_Minutes	加總 (分)	加总 (分)	Sum (Minutes)
+i18n_ServCloud_Number_Of_Tool_Changes	換刀次數	换刀次数	Tool change times
+i18n_ServCloud_Power_Time	通電時間	通电时间	Power Time
+i18n_ServCloud_Operation_Time	運轉時間	运转时间	Operation Time
+i18n_ServCloud_Cutting_Time	切削時間	切削时间	Cutting Time
+i18n_ServCloud_No_Work_Time	無效時間	无效时间	Downtime
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Class	班次	班次	Shift
+i18n_ServCloud_Mode	報表形式	报表形式	Mode
+i18n_ServCloud_03_Tool_Usage_Statistics_For_Production	03產品刀具使用統計	03产品刀具使用统计	03 Product Tool Usage Analysis
+i18n_ServCloud_Query_Results_Horizontal_Bar_Chart	搜尋結果(水平長條圖)	搜寻结果(水平长条图)	Query Results (Horizontal Bar Chart)
+i18n_ServCloud_Accumulative_Millisecond	累積使用時間	累积使用时间	Accumulated tool usage time
+i18n_ServCloud_Average_Millisecond	平均使用時間	平均使用时间	Average tool usage time
+i18n_ServCloud_Time	時間	时间	Time
+i18n_ServCloud_Work_Id	工單編號	工单编号	Work Order ID
+i18n_ServCloud_Tool_Number	刀號	刀号	Tool Number
+i18n_ServCloud_Tool_Log	刀具位置歷史	刀具位置历史	Tool Log
+i18n_ServCloud_Tool_Slot	刀槽	刀槽	Tool Slot
+i18n_ServCloud_Personnel	人員	人员	Personnel
+i18n_ServCloud_Change_Time	變動時間	变动时间	Change time
+i18n_ServCloud_Start_End_Time	查詢起訖時間	查询起讫时间	Query Date
+i18n_ServCloud_Query_Summary	搜尋結果(總結)	搜寻结果(总结)	Query Results(Summary)

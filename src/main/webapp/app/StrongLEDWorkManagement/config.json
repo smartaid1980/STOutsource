@@ -1,0 +1,44 @@
+{
+  "app": {
+    "id": "ServTrackManagement",
+    "name": "i18n_ServCloud_ServTrack_Management",
+    "type": 1,
+    "description": "ServTrackManagement",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "11_tablet_authority",
+      "name": "i18n_ServCloud_11_Tablet_Authority"
+    },
+    {
+      "id": "21_process_maintain",
+      "name": "i18n_ServCloud_21_Process_Maintain"
+    },
+    {
+      "id": "22_product_op_maintain",
+      "name": "i18n_ServCloud_22_Product_Op_Maintain"
+    },
+    {
+      "id": "23_shift_time_maintain",
+      "name": "i18n_ServCloud_23_Shift_Time_Maintain"
+    },
+    {
+      "id": "31_line_qrcode_print",
+      "name": "i18n_ServCloud_31_Line_Qrcode_Print"
+    },
+    {
+      "id": "32_work",
+      "name": "i18n_ServCloud_32_Work"
+    },
+    {
+      "id": "33_work_op_qrcode_print",
+      "name": "i18n_ServCloud_33_Work_Op_Qrcode_Print"
+    },
+    {
+      "id": "34_line_working_hour",
+      "name": "i18n_ServCloud_34_Line_Working_Hour"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

@@ -1,0 +1,472 @@
+[data-monitor-id] .jarviswidget > div {
+  font-size: 1.1em;
+}
+
+[data-monitor-id]:not(article) {
+  padding: 0;
+}
+
+[data-monitor-id] > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+[data-monitor-id^='partition'] {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-monitor-id] .jarviswidget .widget-body,
+[data-monitor-id] .jarviswidget .partition-body {
+  display: flex;
+  flex-flow: wrap;
+  flex-grow: 1;
+  min-height: 30px;
+}
+
+hr {
+  margin: 5px 0;
+  width: 100%;
+}
+
+[data-monitor-id^='dividingLine'] {
+  width: 97%;
+}
+
+[data-monitor-id^='dividingLine'].vertical {
+  width: 1px;
+}
+
+[data-monitor-id^='dividingLine'].vertical hr {
+  height: 97%;
+  border-top: 0px;
+  border-right: 1px solid;
+  margin: 0;
+}
+
+.button-element {
+  cursor: pointer;
+}
+
+.button-element:hover {
+  opacity: 0.8;
+}
+
+.button-element:active {
+  opacity: 0.4;
+}
+
+/* 分布 */
+[data-monitor-id] .distribute {
+  display: flex;
+}
+
+[data-monitor-id] .distribute.break-all {
+  flex-direction: column;
+}
+
+[data-monitor-id] .distribute.break-all.reverse {
+  flex-direction: column-reverse;
+}
+
+[data-monitor-id] .distribute.break-all.left {
+  align-items: flex-start;
+}
+
+[data-monitor-id] .distribute.break-all.right {
+  align-items: flex-start;
+}
+
+[data-monitor-id] .distribute.break-all.center {
+  align-items: center;
+  text-align: center;
+}
+
+[data-monitor-id] .distribute.break-all.average {
+  align-items: space-between;
+  justify-content: space-evenly;
+}
+
+[data-monitor-id] .distribute.break-full,
+[data-monitor-id] .distribute.keep-all {
+  flex-direction: row;
+}
+
+[data-monitor-id] .distribute.break-full.reverse,
+[data-monitor-id] .distribute.keep-all.reverse {
+  flex-direction: row-reverse;
+}
+
+[data-monitor-id] .distribute.keep-all {
+  flex-wrap: nowrap;
+}
+
+[data-monitor-id] .distribute.break-full.left,
+[data-monitor-id] .distribute.keep-all.left {
+  align-items: flex-start;
+}
+
+[data-monitor-id] .distribute.break-full.right,
+[data-monitor-id] .distribute.keep-all.right {
+  align-items: flex-start;
+}
+
+[data-monitor-id] .distribute.break-full.center,
+[data-monitor-id] .distribute.keep-all.center {
+  align-items: center;
+  text-align: center;
+}
+
+[data-monitor-id] .distribute.break-full.average,
+[data-monitor-id] .distribute.keep-all.average {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 看板樣式 */
+.widget-body.dashboard {
+  display: flex;
+  font-size: 1.3em;
+  line-height: initial;
+}
+
+.widget-body.dashboard > div[data-monitor-id^='partition'] {
+  padding: 5px 0;
+}
+
+.widget-body.dashboard .partition-body .block {
+  margin: 5px 5px 0;
+}
+
+.widget-body.dashboard [data-monitor-id^='text'] .value {
+  font-size: 1.3em;
+}
+
+#jarviswidget-fullscreen-mode .jarviswidget > div {
+  overflow-y: hidden;
+}
+
+/* 黑色版 */
+.widget-body.black {
+  background-color: #524f4fe3;
+  color: white;
+}
+
+.widget-body.black > div {
+  padding: 5px;
+}
+
+.widget-body.black .block {
+  background-color: #4a4646;
+}
+
+.widget-body.black .legendLabel > span {
+  color: white;
+}
+
+#jarviswidget-fullscreen-mode .jarviswidget > div[role='content'] {
+  border-color: #4a4646 !important;
+}
+
+/* 區塊 */
+.block {
+  height: 50px;
+  padding: 3px;
+  margin: 5px;
+  border-radius: 5px;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.block .partition-title {
+  padding-left: 10px;
+  font-size: 1.3em;
+}
+
+.block .partition-body {
+  justify-content: center;
+}
+
+.block .partition-body {
+  padding: 4px;
+}
+
+/* 框線 */
+.border {
+  border-bottom: 1px solid #dadada;
+  border-left: 1px solid #dadada;
+}
+
+.widget-body.border > [data-monitor-id],
+.border > .partition-body > [data-monitor-id] {
+  border-top: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  padding: 5px 9px 2px 9px;
+}
+
+.border > .partition-body > [data-monitor-id^='partition'] [data-monitor-id] {
+  padding: 0px !important;
+}
+
+.widget-body.black .border {
+  border-bottom-color: #464646;
+  border-left-color: #464646;
+}
+
+.widget-body.black.border > [data-monitor-id],
+.widget-body.black .border > .partition-body > [data-monitor-id] {
+  border-top-color: #464646;
+  border-right-color: #464646;
+}
+
+/* text */
+[data-monitor-id^='text'] > div {
+  align-items: center;
+  height: auto;
+}
+
+[data-monitor-id^='text'] .text {
+  white-space: nowrap;
+}
+
+[data-monitor-id^='text'] .value {
+  font-size: 1.5em;
+}
+
+[data-monitor-id^='text'] .average .value {
+  text-align: right;
+}
+
+[data-monitor-id^='text'] > .border {
+  padding: 5px 10px;
+  width: max-content;
+  background: #d3d3d3;
+  border: 1px solid #666;
+  color: #000;
+  font-size: 1.1em;
+}
+
+[data-monitor-id^='text'] .box {
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+}
+
+[data-monitor-id^='text'] .line {
+  width: 10px;
+  height: 40px;
+  margin-right: 6px;
+}
+
+/* easypiechart */
+[data-monitor-id^='easypiechart'] > div {
+  align-items: center;
+}
+
+[data-monitor-id^='easypiechart'] > .chart-after .info {
+  padding-left: 5px;
+}
+
+[data-monitor-id^='easypiechart'] > .chart-inside,
+[data-monitor-id^='easypiechart'] > .chart-bottom {
+  position: relative;
+}
+
+[data-monitor-id^='easypiechart'] > .chart-inside .info,
+[data-monitor-id^='easypiechart'] > .chart-bottom .info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  white-space: nowrap;
+  text-align: center;
+}
+
+[data-monitor-id^='easypiechart'] > .chart-inside .value,
+[data-monitor-id^='easypiechart'] > .chart-bottom .value {
+  font-size: 1.3em;
+}
+
+/* 進度條 */
+.progress {
+  width: 100%;
+  height: 7px;
+  margin: 10px 0;
+}
+
+[data-monitor-id^='progress'] {
+  padding: 5px 9px 2px 9px !important;
+}
+
+[data-monitor-id^='progress'] > .keep-all > .progress {
+  width: 80%;
+  height: 22px;
+}
+
+/* 儀錶板 */
+.gauge > * {
+  display: flex;
+  margin: auto;
+}
+
+.gauge svg text {
+  font-weight: bold;
+}
+
+/* 圖檔 */
+[data-monitor-id^='image'] {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+img {
+  height: 100%;
+}
+
+/* 圖表 */
+[data-monitor-id^='linechart'][class^='col'] > div:first-child,
+[data-monitor-id^='piechart'][class^='col'] > div:first-child,
+[data-monitor-id^='barchart'][class^='col'] > div:first-child {
+  width: 100%;
+}
+
+[data-monitor-id^='linechart']:not([class^='col']),
+[data-monitor-id^='piechart']:not([class^='col']),
+[data-monitor-id^='barchart']:not([class^='col']) {
+  width: 100%;
+}
+
+[data-monitor-id^='linechart'] > div:first-child,
+[data-monitor-id^='piechart'] > div:first-child,
+[data-monitor-id^='barchart'] > div:first-child {
+  position: relative;
+  min-height: 80px;
+  padding: 5px;
+  height: 100%;
+}
+
+.widget-body.dashboard [data-monitor-id^='linechart'] > div,
+.widget-body.dashboard [data-monitor-id^='barchart'] > div {
+  padding: 0;
+}
+
+[data-monitor-id^='linechart'] .diagram,
+[data-monitor-id^='piechart'] .diagram,
+[data-monitor-id^='barchart'] .diagram {
+  width: 100%;
+  height: 100%;
+}
+
+[data-monitor-id^='linechart'] .header,
+[data-monitor-id^='piechart'] .header,
+[data-monitor-id^='barchart'] .header {
+  display: flex;
+  justify-content: space-between;
+  /* position: absolute; */
+}
+
+[data-monitor-id^='piechart'] .header {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  font-size: 1.8em;
+  top: 0px;
+  left: 0px;
+}
+
+.abreast {
+  flex-direction: row !important;
+}
+
+.abreast > .header,
+.abreast > .diagram {
+  width: 50%;
+}
+
+.abreast > .legend {
+  padding-left: 10px;
+}
+
+/* sparkline */
+[data-monitor-id^='sparkline'] {
+  width: 100%;
+}
+
+[data-monitor-id^='sparkline'] canvas {
+  width: 100% !important;
+  margin: auto;
+}
+
+/* 加入cosmos版本 */
+
+/* 加入4K */
+@media (min-width: 3840px) {
+  [data-monitor-id] .jarviswidget > div,
+  [data-monitor-id^='text'] > .border,
+  [data-monitor-id^='easypiechart'] > .chart-inside .info,
+  [data-monitor-id^='easypiechart'] > .chart-bottom .info {
+    font-size: 4rem;
+  }
+
+  .widget-body.dashboard,
+  .widget-body.dashboard [data-monitor-id^='text'] .value,
+  .block .partition-title {
+    font-size: 4.6rem;
+  }
+
+  .widget-body.dashboard [data-monitor-id^='text'] .value {
+    font-size: 6.3rem;
+  }
+
+  [data-monitor-id^='text'] .value,
+  [data-monitor-id^='piechart'] .header {
+    font-size: 8rem;
+  }
+
+  [data-monitor-id^='easypiechart'] > .chart-inside .value,
+  [data-monitor-id^='easypiechart'] > .chart-bottom .value {
+    font-size: 6rem;
+  }
+
+  [data-monitor-id^='linechart'] > div:first-child,
+  [data-monitor-id^='piechart'] > div:first-child,
+  [data-monitor-id^='barchart'] > div:first-child {
+    min-height: 150px;
+  }
+
+  [data-monitor-id^='progress'] > .keep-all > .progress {
+    height: 40px;
+  }
+
+  .legendColorBox > div > div {
+    border-top-width: 0.5rem !important;
+    border-right-width: 0.5rem !important;
+    border-bottom-width: 0.5rem !important;
+    border-left-width: 0.5rem !important;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  [data-monitor-id^='text'] .box {
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+  }
+
+  [data-monitor-id^='text'] .line {
+    width: 2rem;
+    margin-right: 2rem;
+  }
+}

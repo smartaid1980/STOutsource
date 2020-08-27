@@ -1,0 +1,20 @@
+{
+  "app": {
+    "id": "StrongLEDMonitorManagement",
+    "name": "i18n_ServCloud_Monitor_Management",
+    "type": 1,
+    "description": "StrongLED Monitor Management",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_all_store_monitor",
+      "name": "i18n_ServCloud_10_All_Store_Monitor"
+    },
+    {
+      "id": "10_all_store_monitor_edit",
+      "name": "i18n_ServCloud_10_All_Store_Monitor_Edit"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

@@ -1,0 +1,139 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="query-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label st-required"
+                      >{i18n_ServCloud_Start_Date}</label
+                    >
+                    <label class="input"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="start-date"
+                        name="start-date"
+                        data-rule-required="true"
+                        data-rule-date="true"
+                        class="form-control"
+                      />
+                    </label>
+                    <label class="label st-required"
+                      >{i18n_ServCloud_End_Date}</label
+                    >
+                    <label class="input"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="end-date"
+                        name="end-date"
+                        data-rule-required="true"
+                        data-rule-date="true"
+                        class="form-control"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label">{i18n_ServCloud_Program}</label>
+                    <label class="input">
+                      <select class="select2 full-width" id="nc-name"></select>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label">{i18n_ServCloud_Machine}</label>
+                    <label class="input">
+                      <select class="form-control" id="machine"></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="tool-tracking-table-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Query_Result}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              id="tool-tracking-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 18%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 18%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Machine}</th>
+                  <th>{i18n_ServCloud_Program}</th>
+                  <th>{i18n_ServCloud_Tool_No}</th>
+                  <th>{i18n_ServCloud_Chuck_Number_2}</th>
+                  <th>{i18n_ServCloud_Move_In_Time}</th>
+                  <th>{i18n_ServCloud_Move_Out_Time}</th>
+                  <th>{i18n_ServCloud_Route_List_Bar_Code}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

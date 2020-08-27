@@ -1,0 +1,154 @@
+[
+  {
+    "seq": {
+      "value": "1"
+    },
+    "work_id": {
+      "value": "F997"
+    },
+    "deliver_date": {
+      "value": "2019/10/03"
+    },
+    "e_quantity": {
+      "value": "550"
+    },
+    "std_hour": {
+      "value": "0.5"
+    },
+    "finish_date": {
+      "value": "2019/10/03"
+    },
+    "diff": {
+      "value": "0"
+    },
+    "org_seq": {
+      "value": "1"
+    },
+    "adj_seq": {
+      "value": "3"
+    },
+    "adjusted_finish_date": {
+      "value": "2019/10/03"
+    },
+    "remark": {
+      "value": "延後派工(無影響交期)"
+    }
+  },
+  {
+    "seq": {
+      "value": "2"
+    },
+    "work_id": {
+      "value": "L531"
+    },
+    "deliver_date": {
+      "value": "2019/10/03"
+    },
+    "e_quantity": {
+      "value": "1500"
+    },
+    "std_hour": {
+      "value": "0.4"
+    },
+    "finish_date": {
+      "value": "2019/10/03"
+    },
+    "diff": {
+      "value": "0"
+    },
+    "org_seq": {
+      "value": "2"
+    },
+    "adj_seq": {
+      "value": "4",
+      "color": "#ff0000"
+    },
+    "adjusted_finish_date": {
+      "value": "2019/10/04",
+      "color": "#ff0000"
+    },
+    "remark": {
+      "value": "延後派工(交期延後1日)"
+    }
+  },
+  {
+    "seq": {
+      "value": "3"
+    },
+    "work_id": {
+      "value": "M410"
+    },
+    "deliver_date": {
+      "value": "2019/10/03"
+    },
+    "e_quantity": {
+      "value": "1400"
+    },
+    "std_hour": {
+      "value": "1.0"
+    },
+    "finish_date": {
+      "value": "2019/10/04",
+      "color": "#ff0000"
+    },
+    "diff": {
+      "value": "-200",
+      "background-color": "#ff0000",
+      "color": "#ffffff"
+    },
+    "org_seq": {
+      "value": "3"
+    },
+    "adj_seq": {
+      "value": "1",
+      "color": "#00ff00"
+    },
+    "adjusted_finish_date": {
+      "value": "2019/10/03",
+      "color": "#00ff00"
+    },
+    "remark": {
+      "value": "提前派工(初次合作客源)"
+    }
+  },
+  {
+    "seq": {
+      "value": "4"
+    },
+    "work_id": {
+      "value": "Q313"
+    },
+    "deliver_date": {
+      "value": "2019/10/03"
+    },
+    "e_quantity": {
+      "value": "1000"
+    },
+    "std_hour": {
+      "value": "0.8"
+    },
+    "finish_date": {
+      "value": "2019/10/04",
+      "color": "#ff0000"
+    },
+    "diff": {
+      "value": "-200",
+      "background-color": "#ff0000",
+      "color": "#ffffff"
+    },
+    "org_seq": {
+      "value": "4"
+    },
+    "adj_seq": {
+      "value": "2",
+      "color": "#00ff00"
+    },
+    "adjusted_finish_date": {
+      "value": "2019/10/03",
+      "color": "#00ff00"
+    },
+    "remark": {
+      "value": "提前派工(避免逾期罰金)"
+    }
+  }
+]

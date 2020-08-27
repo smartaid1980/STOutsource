@@ -1,0 +1,22 @@
+<record>
+	<params>
+		<param name="G_AAMH()" type="Array">
+			<contents>
+				<content fetchtime="20120926165059727" elapsed_sec="0.2685961">
+					<values type="Array">
+						<value fromType="STR" toType="STR">2012-04-05 15:01:03</value>
+                        <value fromType="STR" toType="STR">2012-04-06 16:02:55</value>
+                        <value fromType="STR" toType="STR">2012-04-06 16:03:25</value>
+                        <value fromType="STR" toType="STR">2012-04-06 16:04:11</value>
+					</values>
+					<values type="Array">
+						<value fromType="STR" toType="STR">1112</value>
+                        <value fromType="STR" toType="STR">1110</value>
+                        <value fromType="STR" toType="STR">1110</value>
+                        <value fromType="STR" toType="STR">1111</value>
+					</values>
+				</content>
+			</contents>
+		</param>
+	</params>
+</record>

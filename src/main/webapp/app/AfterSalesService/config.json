@@ -1,0 +1,80 @@
+{
+  "app": {
+    "id": "AfterSalesService",
+    "name": "i18n_ServCloud_After_Sales_Service",
+    "type": 1,
+    "description": "After Sales Service ",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_manage_customer_trade",
+      "name": "i18n_ServCloud_01_Manage_Customer_Trade"
+    },
+    {
+      "id": "02_manage_customer_type",
+      "name": "i18n_ServCloud_02_Manage_Customer_Type"
+    },
+    {
+      "id": "03_manage_customer_area",
+      "name": "i18n_ServCloud_03_Manage_Customer_Area"
+    },
+    {
+      "id": "04_manage_customer_factor",
+      "name": "i18n_ServCloud_04_Manage_Customer_Factor"
+    },
+    {
+      "id": "05_manage_customer",
+      "name": "i18n_ServCloud_05_Manage_Customer"
+    },
+    {
+      "id": "06_manage_product",
+      "name": "i18n_ServCloud_06_Manage_Product"
+    },
+    {
+      "id": "07_manage_machine_type",
+      "name": "i18n_ServCloud_07_Manage_Machine_Type"
+    },
+    {
+      "id": "08_manage_entity",
+      "name": "i18n_ServCloud_08_Manage_Entity"
+    },
+    {
+      "id": "09_manage_entity_breakdown",
+      "name": "i18n_ServCloud_09_Manage_Entity_Breakdown"
+    },
+    {
+      "id": "10_manage_material",
+      "name": "i18n_ServCloud_10_Manage_Material"
+    },
+    {
+      "id": "11_manage_repair_kind",
+      "name": "i18n_ServCloud_11_Repair_Kind"
+    },
+    {
+      "id": "12_manage_repair_list",
+      "name": "i18n_ServCloud_12_Repair_List"
+    },
+    {
+      "id": "13_manage_repair",
+      "name": "i18n_ServCloud_13_Repair"
+    },
+    {
+      "id": "14_manage_repair_assign",
+      "name": "i18n_ServCloud_14_Repair_Assign"
+    },
+    {
+      "id": "15_manage_repair_reply",
+      "name": "i18n_ServCloud_15_Repair_Reply"
+    },
+    {
+      "id": "16_manage_repair_close",
+      "name": "i18n_ServCloud_16_Repair_Close"
+    },
+    {
+      "id": "17_after_sales_service_report",
+      "name": "i18n_ServCloud_17_Repair_Report"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

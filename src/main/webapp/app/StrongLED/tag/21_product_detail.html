@@ -1,0 +1,1281 @@
+<section id="widget-grid">
+  <a
+    href="javascript: void(0)"
+    id="leave-btn"
+    class="btn btn-default"
+    style="margin-bottom: 10px;"
+    ><i class="fa fa-mail-reply"></i>&#xA0; {i18n_ServCloud_Back_to_list}
+  </a>
+
+  <!-- row -->
+  <div class="row">
+    <!-- 需求單資訊 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="demand-list-information-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Inquiry_Details}</h2>
+        </header>
+        <div role="content">
+          <div class="jarviswidget-editbox"></div>
+          <div class="widget-body no-padding">
+            <form id="rfq-detail" novalidate>
+              <div id="rfq-detail-view">
+                <fieldset>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_RFQ_Number}</label
+                    >
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="form_id"
+                    >
+                      <input
+                        name="form_id"
+                        type="text"
+                        class="form-control"
+                        data-rule-required="true"
+                        data-rule-maxlength="40"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Quoted_price}</label
+                    >
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="quote"
+                    >
+                      <!-- <input name="quote" type="text" class="form-control"  data-rule-required="true" data-rule-number="true" /> -->
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Closing_Time}</label
+                    >
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="close_time"
+                    >
+                      <!-- <input name="close_time" type="text" class="form-control" data-rule-date="true" data-rule-required="true" data-rule-maxlength="40" /> -->
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Cost_of_Material}</label
+                    >
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="mtl_cost"
+                    >
+                      <input
+                        name="mtl_cost"
+                        type="text"
+                        class="form-control"
+                        data-rule-number="true"
+                        data-rule-required="true"
+                        data-rule-maxlength="40"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Factory_profit}</label
+                    >
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="produce_coef"
+                    >
+                      <!-- <input name="produce_coef" type="text" class="form-control" data-rule-number="true" data-rule-required="true" data-rule-maxlength="40" /> -->
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Market_profits}</label
+                    >
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="market_coef"
+                    >
+                      <!-- <input name="market_coef" type="text" class="form-control" data-rule-number="true" data-rule-required="true" data-rule-maxlength="40" /> -->
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_product}：
+                    </div>
+                    <div
+                      class="col col-lg-10 value"
+                      style="border: none;"
+                      data-column="product_id"
+                    ></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Numbering}：
+                    </div>
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="seq_no"
+                    ></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Date_of_filing}：
+                    </div>
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="create_time"
+                    ></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_clients_name}：
+                    </div>
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="cus_id"
+                    ></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Fill_in_a_form}：
+                    </div>
+                    <div
+                      class="col col-lg-3 value"
+                      style="border: none;"
+                      data-column="create_by"
+                    ></div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Orders_species}
+                    </div>
+                    <div
+                      class="col col-lg-3 value"
+                      data-column="form_type"
+                    ></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Expected_number_of_lamps}
+                    </div>
+                    <div class="col col-lg-3 value" data-column="po_qty"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Expected_Order_Time}
+                    </div>
+                    <div
+                      class="col col-lg-3 value"
+                      data-column="st_po_time"
+                    ></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Expected_delivery_date}
+                    </div>
+                    <div
+                      class="col col-lg-3 value"
+                      data-column="st_lead_time"
+                    ></div>
+                  </div>
+                </fieldset>
+                <fieldset id="custom-rfq-column-view"></fieldset>
+                <fieldset>
+                  <div class="row">
+                    <div class="col col-lg-2 item">{i18n_ServCloud_Remark}</div>
+                    <div
+                      class="col col-lg-9 value"
+                      data-column="description"
+                    ></div>
+                  </div>
+                </fieldset>
+                <fieldset class="hide">
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Universal_label}
+                    </div>
+                    <div class="col col-lg-9 value" data-column="label"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 item">{i18n_ServCloud_Model}</div>
+                    <div class="col col-lg-3 value" data-column="model"></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Voltage}
+                    </div>
+                    <div class="col col-lg-3 value" data-column="voltage"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 item">{i18n_ServCloud_Power}</div>
+                    <div class="col col-lg-3 value" data-column="power"></div>
+                    <div class="col col-lg-2 item">{i18n_ServCloud_IP}</div>
+                    <div class="col col-lg-3 value" data-column="ip"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 item">{i18n_ServCloud_Color}</div>
+                    <div class="col col-lg-3 value" data-column="color"></div>
+                    <div class="col col-lg-2 item">{i18n_ServCloud_Angle}</div>
+                    <div class="col col-lg-3 value" data-column="angle"></div>
+                  </div>
+                </fieldset>
+                <fieldset class="hide">
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Shipping_bracket_is_installed}
+                    </div>
+                    <div
+                      class="col col-lg-1 value"
+                      data-column="is_support_ship"
+                    ></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Whether_the_need_for_seal_like_sample}
+                    </div>
+                    <div
+                      class="col col-lg-1 value"
+                      data-column="is_pack_sample"
+                    ></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_The_need_for_installation_instructions}
+                    </div>
+                    <div
+                      class="col col-lg-1 value"
+                      data-column="is_inst_manual"
+                    ></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_The_need_for_product_specifications}
+                    </div>
+                    <div
+                      class="col col-lg-1 value"
+                      data-column="is_pd_manual"
+                    ></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_The_packaging_is_neutral}
+                    </div>
+                    <div
+                      class="col col-lg-1 value"
+                      data-column="is_pack_neutral"
+                    ></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Whether_lamps_neutral}
+                    </div>
+                    <div
+                      class="col col-lg-1 value"
+                      data-column="is_lamp_neutral"
+                    ></div>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Do_you_want_to_fall_protection_device}
+                    </div>
+                    <div
+                      class="col col-lg-1 value"
+                      data-column="is_fall_prev"
+                    ></div>
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Do_you_want_to_plug_foreign_specifications}
+                    </div>
+                    <div
+                      class="col col-lg-1 value"
+                      data-column="is_plug_switch"
+                    ></div>
+                    <!-- <div class="col col-lg-2 item">{i18n_ServCloud_Do_you_want_to_over_EMC}</div>
+                      <div class="col col-lg-1 value" data-column="is_emc"></div> -->
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-2 item">
+                      {i18n_ServCloud_Other_requirements_Content}
+                    </div>
+                    <div
+                      class="col col-lg-9 value"
+                      data-column="other_claim"
+                    ></div>
+                  </div>
+                </fieldset>
+              </div>
+              <div id="rfq-detail-edit">
+                <fieldset id="quote-info">
+                  <div class="row">
+                    <label class="col col-lg-2 item st-required"
+                      >{i18n_ServCloud_RFQ_Number}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="form_id"
+                        type="text"
+                        class="form-control"
+                        data-rule-required="true"
+                        data-rule-maxlength="40"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item st-required"
+                      >{i18n_ServCloud_Quoted_price}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="quote"
+                        type="text"
+                        class="form-control"
+                        data-rule-required="true"
+                        data-rule-number="true"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item st-required"
+                      >{i18n_ServCloud_Closing_Time}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="close_time"
+                        type="text"
+                        class="form-control date"
+                        data-rule-date="true"
+                        data-rule-required="true"
+                        data-rule-maxlength="40"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item st-required"
+                      >{i18n_ServCloud_Cost_of_Material}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="mtl_cost"
+                        type="text"
+                        class="form-control"
+                        data-rule-number="true"
+                        data-rule-required="true"
+                        data-rule-maxlength="40"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item st-required"
+                      >{i18n_ServCloud_Factory_profit}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="produce_coef"
+                        type="text"
+                        class="form-control"
+                        data-rule-number="true"
+                        data-rule-required="true"
+                        data-rule-maxlength="40"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item st-required"
+                      >{i18n_ServCloud_Market_profits}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="market_coef"
+                        type="text"
+                        class="form-control"
+                        data-rule-number="true"
+                        data-rule-required="true"
+                        data-rule-maxlength="40"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_product}</label
+                    >
+                    <div class="col col-lg-9 value">
+                      <input
+                        name="product_id"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="40"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Numbering}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="seq_no"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="5"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Date_of_filing}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="create_time"
+                        type="text"
+                        class="form-control date"
+                        data-rule-date="true"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_clients_name}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="cus_id"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="50"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item st-required"
+                      >{i18n_ServCloud_Fill_in_a_form}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <select
+                        class="form-control shorten"
+                        name="create_by"
+                        data-rule-required="true"
+                      ></select>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Orders_species}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <select
+                        name="form_type"
+                        class="form-control shorten"
+                        disabled
+                        data-rule-required="true"
+                      >
+                        <option value=""></option>
+                        <option value="2" selected
+                          >{i18n_ServCloud_Inquiry_Order}</option
+                        >
+                      </select>
+                    </div>
+                    <label class="col col-lg-2 item st-required"
+                      >{i18n_ServCloud_Expected_number_of_lamps}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="po_qty"
+                        type="text"
+                        class="form-control"
+                        data-rule-required="true"
+                        data-rule-maxlength="5"
+                        data-rule-number="true"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item st-required"
+                      >{i18n_ServCloud_Expected_Order_Time}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="st_po_time"
+                        type="text"
+                        class="form-control date"
+                        data-rule-required="true"
+                        data-rule-date="true"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Expected_delivery_date}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="st_lead_time"
+                        type="text"
+                        class="form-control date"
+                        data-rule-date="true"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset id="custom-rfq-column"></fieldset>
+                <fieldset>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Remark}<br />({i18n_ServCloud_Most}200字)</label
+                    >
+                    <div
+                      class="col col-lg-9 value"
+                      style="height: fit-content;"
+                    >
+                      <textarea
+                        name="description"
+                        class="form-control"
+                        data-rule-maxlength="200"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="hide">
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Universal_label}</label
+                    >
+                    <div class="col col-lg-9 value">
+                      <input
+                        name="label"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="100"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Model}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="model"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="20"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Voltage}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="voltage"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="20"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Power}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="power"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="20"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item">{i18n_ServCloud_IP}</label>
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="ip"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="20"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Color}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="color"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="20"
+                      />
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Angle}</label
+                    >
+                    <div class="col col-lg-3 value">
+                      <input
+                        name="angle"
+                        type="text"
+                        class="form-control"
+                        data-rule-maxlength="20"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="hide">
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Shipping_bracket_is_installed}</label
+                    >
+                    <div class="col col-lg-1 value">
+                      <select name="is_support_ship" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Yes}"
+                          >{i18n_ServCloud_Yes}</option
+                        >
+                        <option value="{i18n_ServCloud_No}"
+                          >{i18n_ServCloud_No}</option
+                        >
+                      </select>
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Whether_the_need_for_seal_like_sample}</label
+                    >
+                    <div class="col col-lg-1 value">
+                      <select name="is_pack_sample" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Yes}"
+                          >{i18n_ServCloud_Yes}</option
+                        >
+                        <option value="{i18n_ServCloud_No}"
+                          >{i18n_ServCloud_No}</option
+                        >
+                      </select>
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_The_need_for_installation_instructions}</label
+                    >
+                    <div class="col col-lg-1 value">
+                      <select name="is_inst_manual" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Yes}"
+                          >{i18n_ServCloud_Yes}</option
+                        >
+                        <option value="{i18n_ServCloud_No}"
+                          >{i18n_ServCloud_No}</option
+                        >
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_The_need_for_product_specifications}</label
+                    >
+                    <div class="col col-lg-1 value">
+                      <select name="is_pd_manual" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Yes}"
+                          >{i18n_ServCloud_Yes}</option
+                        >
+                        <option value="{i18n_ServCloud_No}"
+                          >{i18n_ServCloud_No}</option
+                        >
+                      </select>
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_The_packaging_is_neutral}</label
+                    >
+                    <div class="col col-lg-1 value">
+                      <select name="is_pack_neutral" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Yes}"
+                          >{i18n_ServCloud_Yes}</option
+                        >
+                        <option value="{i18n_ServCloud_No}"
+                          >{i18n_ServCloud_No}</option
+                        >
+                      </select>
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Whether_lamps_neutral}</label
+                    >
+                    <div class="col col-lg-1 value">
+                      <select name="is_lamp_neutral" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Yes}"
+                          >{i18n_ServCloud_Yes}</option
+                        >
+                        <option value="{i18n_ServCloud_No}"
+                          >{i18n_ServCloud_No}</option
+                        >
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Do_you_want_to_fall_protection_device}</label
+                    >
+                    <div class="col col-lg-1 value">
+                      <select name="is_fall_prev" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Yes}"
+                          >{i18n_ServCloud_Yes}</option
+                        >
+                        <option value="{i18n_ServCloud_No}"
+                          >{i18n_ServCloud_No}</option
+                        >
+                      </select>
+                    </div>
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Do_you_want_to_plug_foreign_specifications}</label
+                    >
+                    <div class="col col-lg-1 value">
+                      <select name="is_plug_switch" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Yes}"
+                          >{i18n_ServCloud_Yes}</option
+                        >
+                        <option value="{i18n_ServCloud_No}"
+                          >{i18n_ServCloud_No}</option
+                        >
+                      </select>
+                    </div>
+                    <!-- <label class="col col-lg-2 item">{i18n_ServCloud_Do_you_want_to_over_EMC}</label>
+                      <div class="col col-lg-1 value"><select name="is_emc" class="form-control">
+                          <option value=""></option>
+                          <option value="{i18n_ServCloud_Yes}">{i18n_ServCloud_Yes}</option>
+                          <option value="{i18n_ServCloud_No}">{i18n_ServCloud_No}</option>
+                        </select></div> -->
+                  </div>
+                  <div class="row">
+                    <label class="col col-lg-2 item"
+                      >{i18n_ServCloud_Other_requirements_Content}<br />({i18n_ServCloud_Most}100字)</label
+                    >
+                    <div
+                      class="col col-lg-9 value"
+                      style="height: fit-content;"
+                    >
+                      <textarea
+                        name="other_claim"
+                        class="form-control"
+                        data-rule-maxlength="100"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+            <div class="smart-form">
+              <footer>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  data-is-edit="false"
+                  id="submit-demand-list"
+                >
+                  {i18n_ServCloud_Send_Out}
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="edit-demand-list"
+                >
+                  {i18n_ServCloud_Edit}
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  id="cancel-edit-demand-list"
+                >
+                  {i18n_ServCloud_Cancel}
+                </button>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 需求單資訊 END -->
+
+    <!-- 料件資訊 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="material-information-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Material_Information}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="rfq-material"
+              class="table table-striped table-bordered table-hover"
+              name="rfq-material"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 23%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th style="width: 5%;"></th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Item_Number}</th>
+                  <th>{i18n_ServCloud_Item_Name}</th>
+                  <th>{i18n_ServCloud_Material_Types}</th>
+                  <th>{i18n_ServCloud_Specification}</th>
+                  <th>{i18n_ServCloud_Unit}</th>
+                  <th>{i18n_ServCloud_Remark}</th>
+                  <th>{i18n_ServCloud_Crafts}</th>
+                  <th>{i18n_ServCloud_The_Standard_Amount}</th>
+                  <th>{i18n_ServCloud_Tax_Price}</th>
+                  <th>{i18n_ServCloud_Subtotal}</th>
+                  <th>{i18n_ServCloud_Edit}</th>
+                </tr>
+              </thead>
+            </table>
+
+            <form class="smart-form" id="confirm-material">
+              <footer>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="material-save-btn"
+                  disabled
+                >
+                  {i18n_ServCloud_Store}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 料件資訊 END -->
+
+    <!-- 新建物料 MODAL START -->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="material-management-modal-widget"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" style="display: inline-block;">
+              {i18n_ServCloud_New_Material}
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <div class="widget-body no-padding">
+              <form
+                class="smart-form"
+                id="material-management-modal"
+                novalidate="novalidate"
+              >
+                <fieldset>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Item_Name}</label>
+                    <label class="input">
+                      <input type="text" name="mtl_name" class="form-control" />
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Material_Types}</label>
+                    <label class="input">
+                      <select name="mtl_type" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Overall_Property}"
+                          >{i18n_ServCloud_Overall_Property}</option
+                        >
+                        <option value="{i18n_ServCloud_Wire}"
+                          >{i18n_ServCloud_Wire}</option
+                        >
+                        <option value="{i18n_ServCloud_Lamp_Beads}"
+                          >{i18n_ServCloud_Lamp_Beads}</option
+                        >
+                        <option value="{i18n_ServCloud_Structure}"
+                          >{i18n_ServCloud_Structure}</option
+                        >
+                        <option value="{i18n_ServCloud_Control_Method}"
+                          >{i18n_ServCloud_Control_Method}</option
+                        >
+                      </select>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Unit}</label>
+                    <label class="input">
+                      <input type="text" name="unit" class="form-control" />
+                    </label>
+                  </section>
+
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Crafts}</label>
+                    <label class="input">
+                      <input type="text" name="process" class="form-control" />
+                    </label>
+                  </section>
+
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label class="label"
+                      >{i18n_ServCloud_Specification}
+                      ({i18n_ServCloud_Most}100字)</label
+                    >
+                    <label class="input">
+                      <textarea
+                        name="spec"
+                        class="form-control"
+                        rows="3"
+                      ></textarea>
+                      <!-- <input type="text" name="spec" class="form-control"> -->
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label class="label"
+                      >{i18n_ServCloud_Remark}
+                      ({i18n_ServCloud_Most}50字)</label
+                    >
+                    <label class="input">
+                      <textarea
+                        name="remark"
+                        class="form-control"
+                        rows="3"
+                      ></textarea>
+                      <!-- <input type="text" name="remark" class="form-control"> -->
+                    </label>
+                  </section>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="modal-footer"
+            style="margin-top: 0.5vw; text-align: right;"
+          >
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="add-material-btn"
+            >
+              {i18n_ServCloud_New}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新建物料 MODAL END-->
+
+    <!-- 新增現有物料 MODAL START -->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="existing-material-modal-widget"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-lg"
+        role="document"
+        style="width: fit-content;"
+      >
+        <div class="modal-content" style="width: 1200px;">
+          <div class="modal-header">
+            <h3 class="modal-title" style="display: inline-block;">
+              {i18n_ServCloud_Existing_Materials}
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <div class="widget-body">
+              <div
+                class="alert alert-warning fade in"
+                id="price-alert"
+                style="margin: 0;"
+              >
+                <i class="fa-fw fa fa-info"></i>
+                <strong>{i18n_ServCloud_material_widget_alert}</strong>
+              </div>
+
+              <table
+                id="existing-material-list"
+                class="table table-striped table-bordered table-hover"
+                width="100%"
+              >
+                <thead>
+                  <tr>
+                    <th class="hasinput" style="width: 20%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 8%;">
+                      <select class="form-control"></select>
+                    </th>
+                    <th class="hasinput" style="width: 8%;">
+                      <select class="form-control"></select>
+                    </th>
+                    <th class="hasinput" style="width: 30%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 8%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 10%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 8%;">
+                      <select class="form-control"></select>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>{i18n_ServCloud_Item_Number}</th>
+                    <th>{i18n_ServCloud_Item_Name}</th>
+                    <th>{i18n_ServCloud_Material_Types}</th>
+                    <th>{i18n_ServCloud_Specification}</th>
+                    <th>{i18n_ServCloud_Unit}</th>
+                    <th>{i18n_ServCloud_Remark}</th>
+                    <th>{i18n_ServCloud_Crafts}</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+
+          <div
+            class="modal-footer"
+            style="margin-top: 0.5vw; text-align: right;"
+          >
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="add-existing-material-btn"
+            >
+              {i18n_ServCloud_New}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新增現有物料 MODAL END-->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #rfq-detail-edit textarea,
+  #material-management-modal textarea {
+    resize: none;
+    padding: 5px 10px;
+  }
+
+  #demand-list-btns {
+    height: 33px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #demand-list-btns button {
+    margin: 0 10px;
+    padding: 0 22px;
+  }
+
+  #rfq-material tbody tr.read .cancel-material,
+  #rfq-material tbody tr.read .update-material {
+    display: none;
+  }
+
+  #rfq-material tbody tr.edit .edit-material,
+  #rfq-material tbody tr.edit input[type='checkbox'] {
+    display: none;
+  }
+
+  #price-confirm-widget .alert {
+    margin: 0;
+  }
+
+  #existing-material-list .form-control {
+    width: 100%;
+  }
+
+  #rfq-detail {
+    font-size: 16px;
+    /* padding-left: 15px; */
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #rfq-detail .row {
+    padding: 10px 0;
+  }
+
+  #rfq-detail-edit .col {
+    height: 33px;
+    border: none;
+  }
+
+  #rfq-detail fieldset {
+    padding: 10px 0;
+  }
+
+  #rfq-detail fieldset + fieldset {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #rfq-detail-edit input,
+  #rfq-detail-edit select.shorten {
+    padding: 0 10px;
+    /* width: 200px */
+  }
+
+  #rfq-detail-view .col {
+    height: 20px;
+  }
+
+  #rfq-detail .row .item {
+    text-align: right;
+    font-weight: bolder;
+  }
+
+  #rfq-detail-view .value {
+    border-bottom: 1px solid black;
+  }
+
+  #rfq-detail #rfq-detail-edit {
+    display: none;
+  }
+
+  #rfq-detail.editable #rfq-detail-view {
+    display: none;
+  }
+
+  #rfq-detail.editable #rfq-detail-edit {
+    display: block;
+  }
+
+  #rfq-detail-edit .value {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  #rfq-detail-edit .value select + input {
+    opacity: 0;
+    flex: 0;
+    padding: 0;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #rfq-detail-edit .value select {
+    flex: 2;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #rfq-detail-edit .value.custom input {
+    flex: 7;
+    opacity: 1;
+    margin-left: 5px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    /* width: 74%; */
+  }
+
+  #rfq-detail-edit .value.custom select {
+    /* display: inline-block; */
+    /* width: 25%; */
+  }
+
+  #rfq-detail-edit label.error {
+    width: 100%;
+  }
+  #rfq-detail #rfq-detail-edit .group {
+    padding: 10px 0;
+    margin: 10px 0;
+    border-width: 1px 0;
+    border-color: #ccc;
+    border-style: dashed;
+    background-color: #f7f7f7;
+  }
+  #rfq-detail #rfq-detail-edit .group .group-title {
+    font-size: 18px;
+    font-weight: 900;
+    /* text-decoration: underline; */
+  }
+  #rfq-detail #rfq-detail-edit .group .group-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  #rfq-detail-view .group {
+    padding: 10px 0;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+  }
+  #rfq-detail-view .group .group-title {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  #rfq-detail-view .group .group-subtitle {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

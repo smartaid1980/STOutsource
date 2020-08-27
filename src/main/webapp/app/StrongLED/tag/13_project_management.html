@@ -1,0 +1,98 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- 項目清單 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i aria-hidden="true" class="fa fa-table"></i>
+          </span>
+          <h2>{i18n_ServCloud_The_List_Of_Items}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="project-table"
+              stk-entity-pk="project_id"
+              class="table table-striped table-bordered table-hover"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Project_Number}</th>
+                  <th>{i18n_ServCloud_Project_Name}</th>
+                  <th>{i18n_ServCloud_Principal}</th>
+                  <th>{i18n_ServCloud_clients_name}</th>
+                  <th>{i18n_ServCloud_View_Project_Content}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden>
+                  <td>
+                    <input
+                      type="text"
+                      name="project_id"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Project_Number}"
+                      disabled
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="project_name"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Project_Name}"
+                    />
+                  </td>
+                  <td>
+                    <select name="user_id" class="form-control"></select>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="cus_id"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_clients_name}"
+                    />
+                  </td>
+                  <td>
+                    <input type="text" name="empty" class="hide" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 項目清單 END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

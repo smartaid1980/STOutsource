@@ -1,0 +1,34 @@
+{
+  "S2002": {
+    "name": "S2002",
+    "tripTime": 1
+  },
+  "S2003": {
+    "name": "S2003",
+    "tripTime": 1
+  },
+  "S1004": {
+    "name": "S1004",
+    "tripTime": 1
+  },
+  "S1035": {
+    "name": "S1035",
+    "tripTime": 1
+  },
+  "S1057": {
+    "name": "S1057",
+    "tripTime": 1
+  },
+  "S5001": {
+    "name": "S5001",
+    "tripTime": 1
+  },
+  "S5002": {
+    "name": "S5002",
+    "tripTime": 1
+  },
+  "god": {
+    "name": "god",
+    "tripTime": 1
+  }
+}

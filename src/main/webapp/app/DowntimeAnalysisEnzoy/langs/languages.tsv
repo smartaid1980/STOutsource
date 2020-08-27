@@ -1,0 +1,155 @@
+	zh_tw	zh	en
+i18n_ServCloud_DowntimeAnalysisEnzoy	閒置時間分析	闲置时间分析	Downtime Analysis
+i18n_ServCloud_Functions	功能	功能	Functions
+i18n_ServCloud_10_DowntimeAnalysis_Enzoy	機台閒置時間分析	机台闲置时间分析	Machine Downtime Analysis
+i18n_ServCloud_20_DowntimeAnalysis_by_workorder_Enzoy	製令閒置分析	制令闲置分析	Work Order Downtime Analysis
+i18n_ServCloud_30_IdleMacroEditor	Macro查詢(舊)	Macro查询(旧)	Macro Query (Old)
+i18n_ServCloud_40_WorkMacroEditor	Macro編輯	Macro编辑	Macro Editor
+i18n_ServCloud_11_DowntimeAnalysis_MachineIdle	11 閒置分析	11 闲置分析	11 Downtime Analysis
+i18n_ServCloud_12_DowntimeAnalysis_OrderQuery	12 製令查詢	12 制令查询	12 Downtime Analysis - Order Query
+i18n_ServCloud_13_DowntimeAnalysis_OrderIdle	13 製令閒置	13 制令闲置	13 Downtime Analysis - Order Idle
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Condition
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start Date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Show_Demo_Data	顯示Demo資料	显示Demo资料	Show Demo Data
+i18n_ServCloud_Submit	提交	提交	Submit
+i18n_ServCloud_Device_Downtime	機台閒置	机台闲置	Machine Downtime
+i18n_ServCloud_Total_Power_Time	總通電時間	总通电时间	Total Power Time
+i18n_ServCloud_Total_Operation_Time	總運轉時間	总运转时间	Total Operation Time
+i18n_ServCloud_Total_Cutting_Time	總切削時間	总切削时间	Total Cutting Time
+i18n_ServCloud_Total_Downtime	總閒置時間	总闲置时间	Total Downtime
+i18n_ServCloud_Total_Off_Time	總斷電時間	总断电时间	Total Off Time
+i18n_ServCloud_Machine_Downtime_Detail	機台閒置細節	机台闲置细节	Machine Downtime Detail
+i18n_ServCloud_M1	更換刀具(M1)	更换刀具(M1)	Change Tool (M1)
+i18n_ServCloud_M2	設定時間(M2)	设定时间(M2)	Setting Time (M2)
+i18n_ServCloud_M3	工件量測(M3)	工件量测(M3)	Measuring (M3)
+i18n_ServCloud_M4	故障待修(M4)	故障待修(M4)	Failure to be Repaired (M4)
+i18n_ServCloud_M5	待料(M5)	待料(M5)	Wait for Material (M5)
+i18n_ServCloud_M6	待刀具(M6)	待刀具(M6)	Wait for Tool (M6)
+i18n_ServCloud_M7	待人設定(M7)	待人设定(M7)	Wait for Setting (M7)
+i18n_ServCloud_M8	待單(M8)	待单(M8)	Wait for Order(M8)
+i18n_ServCloud_M8_2	待廠商測試(M8)	待厂商测试(M8)	Wait for Vendor(M8)
+i18n_ServCloud_M9	機台清理(M9)	机台清理(M9)	Cleaning (M9)
+i18n_ServCloud_M10	治具加工(M10)	治具加工(M10)	Fixture Processing(M10)
+i18n_ServCloud_M11	程式變更(M11)	程式变更(M11)	Change Program (M11)
+i18n_ServCloud_M12	更換刀具(M12)	更换刀具(M12)	Change Tool (M12)
+i18n_ServCloud_M13	機台預備(M13)	机台预备(M13)	Prepare Machine (M13)
+i18n_ServCloud_M14	故障待修(M14)	故障待修(M14)	Wait for Repairing (M14)
+i18n_ServCloud_M15	機台清理(M15)	机台清理(M15)	Cleaning (M15)
+i18n_ServCloud_M999	其他(M999)	其他(M999)	Others(M999)
+i18n_ServCloud_MOther	其他(M999)	其他(M999)	Others(M999)
+i18n_ServCloud_others	其他	其他	Others
+i18n_ServCloud_Production_Blank	製令生產間隔	制令生产间隔	Production Blank
+i18n_ServCloud_Work_Order_Downtime	製令閒置	制令闲置	Work Order Downtime
+i18n_ServCloud_ProductId	產品編號	产品编号	Production Id
+i18n_ServCloud_WorkOrder	製令號碼	制令号码	Work Order Id
+i18n_ServCloud_N1	產品編號(N1)	产品编号(N1)	Production Id(N1)
+i18n_ServCloud_N1_Tooltip	***代表製令生產間隔<br>---代表加工程式註解未填	***代表制令生产间隔<br>---代表加工程式注解未填	***:Production Blank<br>---:No Production ID
+i18n_ServCloud_N1_Tooltip_peter	***:代表製令生產間隔<br>---:代表加工程式註解未填	***:代表制令生产间隔<br>---:代表加工程式注解未填	***:Production Blank<br>---:No Production ID
+i18n_ServCloud_N2	製令號碼(N2)	制令号码(N2)	Work Order Id(N2)
+i18n_ServCloud_Operation_Time	運轉時間	运转时间	Operation Time
+i18n_ServCloud_Downtime	閒置時間	闲置时间	Downtime
+i18n_ServCloud_Work_Order_Summary	製令總覽	制令总览	Overall Work Order
+i18n_ServCloud_Start_Time	開始時間	开始时间	Start Time
+i18n_ServCloud_End_Time	結束時間	结束时间	End Time
+i18n_ServCloud_Total_Process_Time	總生產時間	总生产时间	Total Processing Time
+i18n_ServCloud_N4	加工部門(N4)	加工部门(N4)	Processing Department(N4)
+i18n_ServCloud_N5	加工機台(N5)	加工机台(N5)	Processing Machine(N5)
+i18n_ServCloud_N6	加工步驟(N6)	加工步骤(N6)	Processing Step(N6)
+i18n_ServCloud_N7	編輯人員(N7)	编辑人员(N7)	Operator Id(N7)
+i18n_ServCloud_N7_peter	操作員(N7)	操作员(N7)	Operator Id(N7)
+i18n_ServCloud_N3	標準工時(N3)	标准工时(N3)	Standard Cycle Time Per Part(N3)
+i18n_ServCloud_N3_peter	單件標準工時(N3)	单件标准工时(N3)	Standard Work Time(N3)
+i18n_ServCloud_Act_Work_Time	實際工時	实际工时	Actual Cycle Time Per Part
+i18n_ServCloud_Act_Work_Time_peter	實際單件生產時間	实际单件生产时间	Actual Work Time
+i18n_ServCloud_Work_Time_Ratiio	工時達成率	工时达成率	Work Time Achievement Rate
+i18n_ServCloud_Work_Time_Ratiio_peter	生產時間效率	生产时间效率	Work Time Achievement Rate
+i18n_ServCloud_Ext_Qty	預期顆數(N8)	预期颗数(N8)	Expected Quantity(N8)
+i18n_ServCloud_Ext_Qty_peter	預計產量(N8)	预计产量(N8)	Expected Quantity(N8)
+i18n_ServCloud_Part_Count	實際顆數	实际颗数	Actual Quantity Produced
+i18n_ServCloud_Part_Count_peter	實際產量	实际产量	Actual Quantity
+i18n_ServCloud_Achievement_Total	總目標達成率	总目标达成率	Total Quantity Achievement Rate
+i18n_ServCloud_Achievement	目標達成率	目标达成率	Production Efficiency
+i18n_ServCloud_Achievement_peter	產量達成率	产量达成率	Quantity Achievement Rate
+i18n_ServCloud_Work_Order_Detail	製令閒置細節	制令闲置细节	Work Order Downtime Detal
+i18n_ServCloud_Pie_Chart	圓餅圖	圆饼图	Pie Chart
+i18n_ServCloud_Column	閒置原因	闲置原因	Downtime Reason
+i18n_ServCloud_Value	時間	时间	Time
+i18n_ServCloud_Hint	提示	提示	Hint
+i18n_ServCloud_HintDetail	點擊任意列查詢產品與製令細節	点击任意列查询产品与制令细节	Click any row to show details of product and work order.
+i18n_ServCloud_Demonstration	檢視各機台主要閒置類型及其時間	检视各机台主要闲置类型及其时间	Examine time and tyes of machine main downtime.
+i18n_ServCloud_work_detail_hint	以下資料為製令第一次出現於系統至目前之資料	以下资料为制令第一次出现于系统至目前之资料	The following informations are summary for work order from first appeared in the system to now.
+i18n_ServCloud_duration	期間	期间	Duration
+i18n_ServCloud_IdleMacroEditor	上下班Macro編輯	上下班Macro编辑	Idle Macro Editor
+i18n_ServCloud_Editor	修改	修改	Edit
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_On_Duty	上班	上班	on duty
+i18n_ServCloud_Off_Duty	下班	下班	off duty
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Time	時間	时间	Time
+i18n_ServCloud_Dauration	累積時間	累积时间	Duration
+i18n_ServCloud_Shift	班次	班次	Shift
+i18n_ServCloud_Edit_By	修改者	修改者	Edit By
+i18n_ServCloud_Edit_Time	修改時間	修改时间	Edit Time
+i18n_ServCloud_Now_Time	目前時間	目前时间	Time
+i18n_ServCloud_On_Off_Hint	請選擇上下班時間	请选择上下班时间	Please choose work status.
+i18n_ServCloud_Change_Macro_Hint	請變換狀態	请变换状态	Please change macro.
+i18n_ServCloud_Work_Macro_Query	上下班macro紀錄查詢	上下班macro纪录查询	Work Macro Query
+i18n_ServCloud_All_On	全部上班	全部上班	All On Duty
+i18n_ServCloud_All_Off	全部下班	全部下班	All Off Duty
+i18n_ServCloud_Close	關閉	关闭	Close
+i18n_ServCloud_Idle_Macro_Hint	*僅可查詢2017年3月17日之前的舊資料	*仅可查询2017年3月17日之前的旧资料	*Can only query old data before 2017/03/17.
+i18n_ServCloud_Macro_Tooltip	M2: 包含M2運轉時間及M2閒置時間<br>M4: 包含所有警報時間、M4運轉時間及M4閒置時間<br>M10: 包含M10運轉時間及M10閒置時間	M2: 包含M2运转时间及M2闲置时间<br>M4: 包含所有警报时间、M4运转时间及M4闲置时间<br>M10: 包含M10运转时间及M10闲置时间	M2: Including M2 operation time and M2 idle time.<br>M4: Including alarm time, M4 operation time and M4 idle time.<br>M10: Including M10 operation time and M10 idle time.
+i18n_ServCloud_Off_Time	離線時間	离线时间	Off Time
+i18n_ServCloud_12_DowntimeAnalysis_MacroIdle_Cosmos	12 閒置代碼時間分析	12 闲置代码时间分析	12 Macro Downtime Analysis
+i18n_ServCloud_11_DowntimeAnalysis_MachineIdle_Cosmos	11 閒置時間分析	11 闲置时间分析	11 Downtime Analysis
+i18n_ServCloud_Macro	代碼	代码	Macro
+i18n_ServCloud_Time_Minutes	時間(分鐘)	时间(分钟)	Time(minutes)
+i18n_ServCloud_Work_Achievement_Rate_peter	時間(分鐘)	时间(分钟)	Time(minutes)
+i18n_ServCloud_Idle_Code	閒置代碼	闲置代码	Downtime Code
+i18n_ServCloud_Idle_Code_Name	閒置代碼名稱	闲置代码名称	Downtime Name
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_M4_Alarm	警報將合併到M4中。	警报将合并到M4中。	Alarm will be merged into M4.
+i18n_ServCloud_Macro_Insert	無效代碼輸入	无效代码输入	Downtime Code Insert
+i18n_ServCloud_Macro_Query	無效代碼記錄查詢	无效代码记录查询	Downtime Code Query
+i18n_ServCloud_Plant_Area	廠區	厂区	Plant Area
+i18n_ServCloud_Creator	建立者	建立者	Creator
+i18n_ServCloud_Operator_Id	操作員	操作员	Operator Id
+i18n_ServCloud_Idle_For_Administrative_Reasons	閒置原因管理	闲置原因管理	Idle for administrative reasons
+i18n_ServCloud_Color_Code	代碼顏色	代码颜色	Color Code
+i18n_ServCloud_Enable	啟用	启用	Enable
+i18n_ServCloud_Idle_Code_Status	閒置代碼狀態	闲置代码状态	Idle code status
+i18n_ServCloud_Idle_Records_Compilation	閒置紀錄編輯	闲置纪录编辑	Idle Records compilation
+i18n_ServCloud_Has_Been_Out_Of_Range_Please_Adjust_The_Query	已超出範圍，請先調整查詢條件	已超出范围，请先调整查询条件	Out of range, please adjust the query condition.
+i18n_ServCloud_Query_Result	搜尋結果	搜寻结果	Query Result
+i18n_ServCloud_Modify	修改	修改	modify
+i18n_ServCloud_Invalid_Code	無效代碼	无效代码	Invalid Code
+i18n_ServCloud_Store	儲存	储存	Store
+i18n_ServCloud_Idle_Records_Compilation	閒置紀錄編輯	闲置纪录编辑	Idle Records compilation
+i18n_ServCloud_Has_Been_Out_Of_Range_Please_Adjust_The_Query	已超出範圍，請先調整查詢條件	已超出范围，请先调整查询条件	Out of range, please adjust the query condition.
+i18n_ServCloud_Overview	總覽	总览	Overview
+i18n_ServCloud_Average_Effective_Utilization_Rate	平均有效稼動率	平均有效稼动率	Average effective utilization rate
+i18n_ServCloud_Total_Output	總產量	总产量	Total output
+i18n_ServCloud_Denominator	分母	分母	Denominator
+i18n_ServCloud_Idle_Time_Setting	閒置時間設定	闲置时间设定	Idle time setting
+i18n_ServCloud_Idle_Time	閒置時間	闲置时间	Idle Time
+i18n_ServCloud_Group_Name	群組名稱	群组名称	Group Name
+i18n_ServCloud_Reorganize	重新整理	重新整理	reorganize
+i18n_ServCloud_New_Group	新增群組	新增群组	New Group
+i18n_ServCloud_Cancel	取消	取消	cancel
+i18n_ServCloud_Delete	刪除	删除	delete
+i18n_ServCloud_Remark	備註	备注	Remark
+i18n_ServCloud_Starting_Time	開始時間	开始时间	Starting time
+i18n_ServCloud_End_Time	結束時間	结束时间	End Time
+i18n_ServCloud_Set_At_Least_One_Set_Of_Idle_Time	請至少設定一組閒置時間	请至少设定一组闲置时间	Set at least one set of idle time
+i18n_ServCloud_Set_At_Least_One_Group	請至少設定一個群組	请至少设定一个群组	Set at least one group
+i18n_ServCloud_The_Machine_Can_Not_Be_Null	機台不能為空	机台不能为空	The machine can not be null
+i18n_ServCloud_Intergroup_Machine_Can_Not_Be_Repeated	群組間機台不能重複	群组间机台不能重复	Intergroup machine can not be repeated
+i18n_ServCloud_Idle_Interval_Is_Not_Set_Complete	閒置區間未設定完整	闲置区间未设定完整	Idle interval is not set complete
+i18n_ServCloud_Wrong_Time	時間範圍有誤	时间范围有误	Wrong time
+i18n_ServCloud_Time_Format_Error	時間格式錯誤	时间格式错误	Time format error
+i18n_ServCloud_Form_Information_Is_Wrong	表格資訊有誤	表格资讯有误	Form information is wrong
+i18n_ServCloud_Error	錯誤	错误	error
+i18n_ServCloud_The_Same_Record_At_The_Same_Time_Machine_Already_Exists	已存在同一機台同一時間的紀錄	已存在同一机台同一时间的纪录	The same record at the same time machine already exists

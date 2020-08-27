@@ -1,0 +1,60 @@
+{
+  "app": {
+    "id": "EquipMonitor",
+    "name": "i18n_ServCloud_EquipMonitor",
+    "type": 1,
+    "description": "Machine monitor.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "00_overall",
+      "name": "i18n_ServCloud_Monitor_Overall"
+    },
+    {
+      "id": "00_overall_card",
+      "name": "i18n_ServCloud_Monitor_Overall_List"
+    },
+    {
+      "id": "00_overall_edit",
+      "name": "i18n_ServCloud_Monitor_Overall_Edit"
+    },
+    {
+      "id": "01_info_production_line",
+      "name": "i18n_ServCloud_Production_line"
+    },
+    {
+      "id": "01_info_production_line_edit",
+      "name": "i18n_ServCloud_Production_line_Edit"
+    },
+    {
+      "id": "02_plant_area_monitor",
+      "name": "i18n_ServCloud_Plant_Area_Monitor"
+    },
+    {
+      "id": "02_plant_area_monitor_enzoy",
+      "name": "i18n_ServCloud_Plant_Area_Monitor_Macro"
+    },
+    {
+      "id": "02_plant_area_monitor_anko",
+      "name": "i18n_ServCloud_Plant_Area_Monitor_Anko"
+    },
+    {
+      "id": "03_management_plant",
+      "name": "i18n_ServCloud_Plant_Area_Management"
+    },
+    {
+      "id": "04_manage_machine_light",
+      "name": "i18n_ServCloud_Number_Machine_Status_Management"
+    },
+    {
+      "id": "20_part_count_merged",
+      "name": "i18n_ServCloud_Part_Count_Merged"
+    },
+    {
+      "id": "50_machine_time_diffContent",
+      "name": "i18n_ServCloud_Machine_Time_Diff_Query"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

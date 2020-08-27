@@ -1,0 +1,20 @@
+{
+  "app": {
+    "id": "HuangLiangDashboard",
+    "name": "電子看板",
+    "type": 1,
+    "description": "Dashboard",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_inner_dashboard",
+      "name": "內部電子看板"
+    },
+    {
+      "id": "02_outter_dashboard",
+      "name": "外部電子看板"
+    }
+  ],
+  "tags": ["20140918000999"]
+}

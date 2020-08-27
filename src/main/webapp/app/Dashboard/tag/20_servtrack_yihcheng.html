@@ -1,0 +1,504 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article
+      id="group-table"
+      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+    >
+      <div
+        id="sender-table-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+          <h2>{i18n_ServCloud_Group_Manage}</h2>
+          <div class="widget-toolbar smart-form">
+            <a
+              id="rotate-start"
+              href="javascript:void(0);"
+              class="btn btn-labeled btn-info"
+            >
+              {i18n_ServCloud_Screen}
+              <span><i class="fa fa-desktop"></i></span>
+            </a>
+          </div>
+          <div class="widget-toolbar">
+            <span class="onoffswitch-title">{i18n_ServCloud_Change_Freq}</span>
+            <span class="onoffswitch">
+              <input
+                class="form-control spinner spinner-right"
+                id="refresh-freq-spinner"
+                value="10"
+                type="text"
+                disabled
+              />
+            </span>
+          </div>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="group_id"
+              id="line-group-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Group_ID}</th>
+                  <th>{i18n_ServCloud_Group_Name}</th>
+                  <th>{i18n_ServCloud_Line}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="group_id"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Group_ID}"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="group_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Group_Name}"
+                    />
+                  </td>
+                  <td>
+                    <select name="lines" class="form-control" multiple></select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article
+      id="dashboard-widget"
+      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 hide"
+      data-style="dark"
+    >
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+          <h2>{i18n_ServCloud_Dashboard}</h2>
+          <div class="jarviswidget-ctrls">
+            <a
+              id="rotate-backward"
+              href="javascript:void(0);"
+              class="button-icon"
+            >
+              <i class="fa fa-backward"></i>
+            </a>
+            <a id="rotate-pause" href="javascript:void(0);" class="button-icon">
+              <i class="fa fa-pause"></i>
+            </a>
+            <a
+              id="rotate-forward"
+              href="javascript:void(0);"
+              class="button-icon"
+            >
+              <i class="fa fa-forward"></i>
+            </a>
+            <a id="rotate-end" href="javascript:void(0);" class="button-icon">
+              <i class="fa fa-times"></i>
+            </a>
+          </div>
+        </header>
+        <div>
+          <div id="dashboard-widget-body" class="widget-body no-padding">
+            <div class="line-container">
+              <div class="line-info">
+                <div class="line-status">
+                  <div class="line-status-light">
+                    <div class="round"><i class="fa"></i></div>
+                  </div>
+                  <div class="line-name"></div>
+                </div>
+                <div class="line-detail container">
+                  <div class="row">
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Work_ID}
+                      </div>
+                      <div class="detail-value col-lg-8 work-id"></div>
+                    </div>
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Material_Num}
+                      </div>
+                      <div class="detail-value col-lg-8 product-id"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Item_Name}
+                      </div>
+                      <div class="detail-value col-lg-8 product-name"></div>
+                    </div>
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Specification}
+                      </div>
+                      <div class="detail-value col-lg-8 product-desc"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Process}
+                      </div>
+                      <div class="detail-value col-lg-8 process-name"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="line-output">
+                <div class="output-main">
+                  <div class="theory-output">
+                    <div class="main-output-title">
+                      {i18n_ServCloud_Production_Plan}
+                    </div>
+                    <div class="main-output-value"></div>
+                  </div>
+                  <div class="actual-output">
+                    <div class="main-output-title">
+                      {i18n_ServCloud_Actual_Production}
+                    </div>
+                    <div class="main-output-value"></div>
+                  </div>
+                </div>
+                <div class="other-info">
+                  <div class="qty-to-produce">
+                    <div class="other-info-title">
+                      {i18n_ServCloud_The_Number_Of_Unfinished_Work_Order}
+                    </div>
+                    <div class="other-info-value"></div>
+                  </div>
+                  <div class="last-produce-time">
+                    <div class="other-info-title">
+                      {i18n_ServCloud_The_Last_Production_Time}
+                    </div>
+                    <div class="other-info-value"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line-container">
+              <div class="line-info">
+                <div class="line-status">
+                  <div class="line-status-light">
+                    <div class="round"><i class="fa"></i></div>
+                  </div>
+                  <div class="line-name"></div>
+                </div>
+                <div class="line-detail container">
+                  <div class="row">
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Work_ID}
+                      </div>
+                      <div class="detail-value col-lg-8 work-id"></div>
+                    </div>
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Material_Num}
+                      </div>
+                      <div class="detail-value col-lg-8 product-id"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Item_Name}
+                      </div>
+                      <div class="detail-value col-lg-8 product-name"></div>
+                    </div>
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Specification}
+                      </div>
+                      <div class="detail-value col-lg-8 product-desc"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="line-detail-col col-lg-6">
+                      <div class="detail-title col-lg-4">
+                        {i18n_ServCloud_Process}
+                      </div>
+                      <div class="detail-value col-lg-8 process-name"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="line-output">
+                <div class="output-main">
+                  <div class="theory-output">
+                    <div class="main-output-title">
+                      {i18n_ServCloud_Production_Plan}
+                    </div>
+                    <div class="main-output-value"></div>
+                  </div>
+                  <div class="actual-output">
+                    <div class="main-output-title">
+                      {i18n_ServCloud_Actual_Production}
+                    </div>
+                    <div class="main-output-value"></div>
+                  </div>
+                </div>
+                <div class="other-info">
+                  <div class="qty-to-produce">
+                    <div class="other-info-title">
+                      {i18n_ServCloud_The_Number_Of_Unfinished_Work_Order}
+                    </div>
+                    <div class="other-info-value"></div>
+                  </div>
+                  <div class="last-produce-time">
+                    <div class="other-info-title">
+                      {i18n_ServCloud_The_Last_Production_Time}
+                    </div>
+                    <div class="other-info-value"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  /* 扣掉 header */
+  #jarviswidget-fullscreen-mode > div {
+    height: calc(100% - 34px);
+    border: none;
+  }
+
+  [data-style='dark'] .jarviswidget > div {
+    background-color: #1f1e2c !important;
+    color: white;
+  }
+
+  .jarviswidget-ctrls .button-icon:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #refresh-freq-spinner {
+    padding-left: 5px;
+  }
+
+  #refresh-freq-spinner ~ a.ui-spinner-button {
+    line-height: 19px;
+    cursor: pointer;
+  }
+
+  span.ui-spinner.ui-widget.ui-widget-content.ui-corner-all {
+    margin-top: -9px;
+  }
+
+  #dashboard-widget-body {
+    display: flex;
+    flex-flow: column;
+    /* 加回 margin (原本 -13px) */
+    height: calc(100% + 13px);
+  }
+
+  .line-container {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px 0 0;
+  }
+
+  .line-container + .line-container {
+    border-top: 1px solid #ccc;
+  }
+
+  .line-info {
+    flex: 3;
+    display: flex;
+  }
+
+  .line-output {
+    flex: 2;
+    display: flex;
+  }
+
+  .line-status {
+    flex: 2;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .line-detail {
+    flex: 13;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+  }
+
+  .line-status-light {
+    flex: 1;
+  }
+
+  .round {
+    position: relative;
+    width: 68%;
+    background-color: lightgreen;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .round.play {
+    background-color: green;
+  }
+
+  .round > .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 68px;
+  }
+
+  .round.play > .fa-play {
+    transform: translate(-39%, -50%);
+  }
+
+  .round.pause {
+    background-color: darkred;
+  }
+
+  .round:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .line-name {
+    flex: 1;
+    font-size: 64px;
+  }
+
+  .detail-title {
+    font-size: 36px;
+    text-align: right;
+  }
+
+  .detail-value {
+    font-size: 36px;
+    word-break: break-all;
+  }
+
+  .font-smaller {
+    font-size: 32px;
+  }
+
+  .output-main {
+    flex: 3;
+    display: flex;
+  }
+
+  .other-info {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .theory-output {
+    flex: 1;
+    display: flex;
+  }
+
+  .actual-output {
+    flex: 1;
+    display: flex;
+  }
+
+  .main-output-title {
+    font-size: 52px;
+    flex: 1;
+    background-color: #444;
+  }
+
+  .main-output-value {
+    font-size: 84px;
+    flex: 1;
+    background-color: #333;
+  }
+
+  .theory-output > .main-output-value {
+    color: lightgreen;
+  }
+
+  .actual-output > .main-output-value {
+    color: yellow;
+  }
+
+  .qty-to-produce,
+  .last-produce-time {
+    display: flex;
+    flex: 1;
+  }
+
+  .other-info-title {
+    flex: 1;
+    background-color: darkcyan;
+    font-size: 28px;
+  }
+
+  .other-info-value {
+    flex: 1;
+    background-color: lightgray;
+    color: #666666;
+    font-size: 42px;
+  }
+
+  .other-info-title,
+  .other-info-value,
+  .main-output-title,
+  .main-output-value,
+  .line-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="./app/Dashboard/css/servtrack_in_and_out_station.css"
+/>
+<script>
+  window.importPageScript()
+</script>

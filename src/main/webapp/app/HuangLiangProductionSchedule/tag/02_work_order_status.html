@@ -1,0 +1,560 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        id="query-condition-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form
+              id="query-condition-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label st-required">材料庫</label>
+                      <label class="select select-multiple">
+                        <select
+                          id="mstock_name-select"
+                          name="mstock_name"
+                          class="required"
+                          multiple
+                        ></select>
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">訂單編號</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="order_id-input"
+                          name="order_id"
+                        />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">生產指令狀態</label>
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="order_status"
+                            value="unclosed"
+                            checked
+                          />
+                          <i></i>未結案
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="order_status"
+                            value="closed"
+                          />
+                          <i></i>已結案
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="order_status"
+                            value="canceled"
+                          />
+                          <i></i>已取消
+                        </label>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">管編</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class=""
+                          id="product_id-input"
+                          name="product_id"
+                        />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+      <!-- detail DATATABLE -->
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>查詢結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="query-result-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 13%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th style="width: 4%;"></th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th style="width: 4%;"></th>
+                  <th style="width: 3%;"></th>
+                  <th style="width: 3%;"></th>
+                </tr>
+                <tr>
+                  <th>訂單編號</th>
+                  <th>管編</th>
+                  <th>客戶代碼</th>
+                  <th>圖號</th>
+                  <th>預計交期</th>
+                  <th>報價秒數</th>
+                  <th>單顆報價</th>
+                  <th>訂單數</th>
+                  <th>生產數</th>
+                  <th>不良數</th>
+                  <th>已派工數</th>
+                  <th>多製程加工</th>
+                  <th>生產進度</th>
+                  <th>生產指令狀態</th>
+                  <th>採購單綁定</th>
+                  <th>取消</th>
+                  <th>結案</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+    <div
+      class="modal fade"
+      id="confirm-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title" id="confirm-title"></h3>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <h5 id="confirm-content"></h5>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-toggle="modal"
+              data-target="#confirm-modal-widget"
+            >
+              取消
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="confirm-yes"
+            >
+              確認
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="production-progress-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document" style="width: 1200px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">生產進度檢視</h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <h3 id="production-progress-title"></h3>
+            <hr />
+            <h3>機台生產進度長條圖</h3>
+            <div id="production-progress-bar-container"></div>
+            <hr />
+            <h3>機台生產進度明細</h3>
+            <table
+              id="production-progress-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                </tr>
+                <tr>
+                  <th>機台</th>
+                  <th>機台派工時間</th>
+                  <th>派工數</th>
+                  <th>已生產總數</th>
+                  <th>不良總數</th>
+                  <th>預計生產日</th>
+                  <th>實際生產日</th>
+                  <th>派工進度</th>
+                  <th>製程順序</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="edit-wo-list-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">編輯<span id="edit-column-name"></span></h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <form
+              id="edit-wo-list-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <section id="edit-exp-date">
+                <label class="label">期望交期</label>
+                <label class="input">
+                  <input type="text" class="form-control" name="exp_date" />
+                </label>
+              </section>
+              <section id="edit-quote-seconds">
+                <label class="label">報價秒數</label>
+                <label class="input">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="quote_seconds"
+                  />
+                </label>
+              </section>
+              <section id="edit-quote-price">
+                <label class="label">單顆報價</label>
+                <label class="input">
+                  <input type="text" class="form-control" name="quote_price" />
+                </label>
+              </section>
+              <section id="edit-multiprogram">
+                <label class="label">多製程加工</label>
+                <label class="input">
+                  <input type="text" class="form-control" name="multiprogram" />
+                </label>
+              </section>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-toggle="modal"
+              data-target="#edit-wo-list-modal-widget"
+            >
+              取消
+            </button>
+            <button
+              type="button"
+              class="btn btn-success btnClass"
+              id="save-wo-list"
+            >
+              儲存
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="bind-po-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document" style="width: 1200px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">採購單綁定</h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <h3>生產指令： <span id="wo-to-bind"></span></h3>
+            <hr />
+            <h3>已綁定</h3>
+            <table
+              id="binded-po-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 7%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                </tr>
+                <tr>
+                  <th>材料庫</th>
+                  <th>採購單號</th>
+                  <th>綁定日期</th>
+                  <th>材料條碼</th>
+                  <th>已綁定數量</th>
+                  <th>單位</th>
+                  <th>綁定已領</th>
+                  <th>狀態</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <hr />
+            <h3>可綁定採購單</h3>
+            <table
+              id="bindable-po-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 7%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>材料庫</th>
+                  <th>採購單號</th>
+                  <th>材料條碼</th>
+                  <th>採購數量</th>
+                  <th>可綁定數量</th>
+                  <th>綁定數量</th>
+                  <th>單位</th>
+                  <th>入庫總數</th>
+                  <th>領用總數</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ROW END -->
+</section>
+<style>
+  .progress.highlight {
+    border: 2px solid red;
+  }
+  #binded-po-table td input,
+  #binded-po-table td .stk-cancel-btn,
+  #binded-po-table td .stk-save-btn {
+    display: none;
+  }
+  #binded-po-table td.edit input,
+  #binded-po-table td.edit .stk-cancel-btn,
+  #binded-po-table td.edit .stk-save-btn {
+    display: table-cell;
+  }
+  #binded-po-table td.edit .stk-edit-btn,
+  #binded-po-table td.edit .bind-qty-display {
+    display: none;
+  }
+  label.error {
+    color: red;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

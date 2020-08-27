@@ -1,0 +1,670 @@
+tag	zh_tw	zh	en
+
+# 警報履歷
+i18n_ServCloud_AlarmHistory	警報履歷	警报履历	Machine Alarm Analysis
+i18n_ServCloud_10_Alarm_Statistic_by_Codes	10 依警報代碼查詢警報履歷	10 依警报代码查询警报履历	10 Alarm Statistic by Codes
+i18n_ServCloud_20_Alarm_Statisti_by_Machine	20 依機台查詢警報履歷	20 依机台查询警报履历	20 Alarm Statistic by Machine
+i18n_ServCloud_30_Alarm_Statisti_by_Machine	30 依機台查詢警報履歷明細	30 依机台查询警报履历明细	30 Alarm Statistic Detail by Machine
+i18n_ServCloud_By_Code_Anko	30 依照警報代碼搜尋 (PLC)	30 依照警报代码搜寻 (PLC)	30 Search By Code (PLC)
+i18n_ServCloud_By_Machine_Anko	40 依照機台搜尋 (PLC)	40 依照机台搜寻 (PLC)	40 Search By Machine (PLC)
+i18n_ServCloud_30_Alarm_Statistic_by_Codes_aidc	30 依警報代碼搜尋(aidc)	30 依照警报代码搜寻(aidc)	30 Search By Code(aidc)
+i18n_ServCloud_40_Alarm_Statisti_by_Machine_aidc	40 依機台搜尋(aidc)	40 依机台搜寻(aidc)	40 Search By Machine(aidc)
+i18n_ServCloud_10_Alarm_Statistic_by_Codes_all_brand	10 依警報代碼查詢警報履歷(all brand test)	10 依警报代码查询警报履历(all brand test)	10 Alarm Statistic by Codes(all brand test)
+i18n_ServCloud_20_Alarm_Statisti_by_Machine_all_brand	20 依機台查詢警報履歷(all brand test)	20 依机台查询警报履历(all brand test)	20 Alarm Statistic by Machine(all brand test)
+
+# 馬達故障診斷
+i18n_ServCloud_MotorFaultDiagnosis	馬達故障診斷	马达故障诊断	Motor Fault Diagnosis
+i18n_ServCloud_01_Motor_list	01 馬達列表	01 马达列表	01 motor list
+
+# 刀具管理
+i18n_ServCloud_ToolUsed	刀具使用量	刀具使用量	Tool Usage
+i18n_ServCloud_01_Report	01 報告	01 报告	01 report
+i18n_ServCloud_03_Tool_Usage_Statistics_For_Production	03產品刀具使用統計	03产品刀具使用统计	03 Tool Usage Statistics For Production
+i18n_ServCloud_04_Tool_Log	04 刀具位置歷史	04 刀具位置历史	04 Tool Log
+
+# 刀具監控
+i18n_ServCloud_Cutting_Alarm_Monitoring	切削異常監控	切削异常监控	Cutting Alarm Monitoring
+i18n_ServCloud_Tool_Monitor	刀具監控	刀具监控	Tool Monitor
+i18n_ServCloud_Tool_Diagnosis	刀具診斷	刀具诊断	Tool Diagnosis
+i18n_ServCloud_Tool_Monitor_new	刀具監控(new)	刀具监控(new)	Tool Monitor(new)
+i18n_ServCloud_Tool_Diagnosis_new	刀具診斷(new)	刀具诊断(new)	Tool Diagnosis(new)
+
+# 軸承RUL預測
+i18n_ServCloud_BearingRULprediction	軸承RUL預測	轴承RUL预测	Bearing RUL prediction
+i18n_ServCloud_10_Machine_Status	10 機台狀態	10 机台状态	10 Machine Status
+i18n_ServCloud_20_Prediction_History_Query	20 預測紀錄查詢	20 预测纪录查询	20 Prediction History Query
+
+# 監控
+i18n_ServCloud_EquipMonitor	設備監控	设备监控	Machine Monitor
+i18n_ServCloud_All_Plant_Area	00 全廠區監控	00 全厂区监控	00 All Plant area
+i18n_ServCloud_All_Plant_Area_Edit	00 全廠區監控(編輯)	00 全厂区监控(编辑)	00 All Plant area (Edit)
+i18n_ServCloud_Plant_Area_Edit	02 廠區監控(編輯)	02 厂区监控(编辑)	02 Plant area (Edit)
+i18n_ServCloud_Machine_Edit	01 機台監控(編輯)	01 机台监控(编辑)	01 Machine (Edit)
+i18n_ServCloud_Plant_Area_Monitor	02 廠區機台監視	02 厂区机台监视	02 Plant area machine monitor
+i18n_ServCloud_Plant_Area_Monitor_Macro	廠區機台監視(Macro)	厂区机台监视(Macro)	Plant area machine monitor (Macro)
+i18n_ServCloud_Plant_Area_Monitor_Anko	廠區機台監視(PLC)	厂区机台监视(PLC)	Plant area machine monitor (PLC)
+i18n_ServCloud_Plant_Area_Monitor_Cho	廠區機台監視(PLC-2)	厂区机台监视(PLC-2)	Plant area machine monitor (PLC-2)
+i18n_ServCloud_Plant_Area_Monitor_HHO	02 自動化線監控	02 自动化线监控	02 Automated line monitoring
+i18n_ServCloud_Plant_Area_Monitor_Multi_Brand	02 廠區機台多廠牌監視	02 厂区机台多厂牌监视	02 Plant area machine multi brand monitor
+i18n_ServCloud_Management_Section	05 管理工段	05 管理工段	05 Section management
+i18n_ServCloud_Plant_Area_Management	03 管理廠區	03 管理厂区	03 Plant area management
+i18n_ServCloud_Plant_Area_Management_Include_Name	03 管理廠區(含廠區名稱)	03 管理厂区(含厂区名称)	03 Plant area management(include name)
+i18n_ServCloud_Number_Machine_Status_Management	04 管理機台狀態	04 管理机台状态	04 Machine status management
+i18n_ServCloud_Unconnected_Machine_Macro_Input	05 未連線機台macro 輸入	05 未连线机台macro 输入	05 Unconnected machine macro input
+i18n_ServCloud_Monitor_Overall	整場監控	整场监控	Plant Area Overall
+i18n_ServCloud_Monitor_Overall_List	機台監控列表	机台监控列表	Machine Monitor List
+i18n_ServCloud_Monitor_Overall_Edit	整場監控(編輯)	整场监控(编辑)	Plant Area Overall(Edit)
+i18n_ServCloud_Production_Line	產線監控	产线监控	Production Line
+i18n_ServCloud_Production_Line_Edit	產線監控(編輯)	产线监控(编辑)	Production Line (Edit)
+i18n_ServCloud_Part_Count_Merged	加工顆數查詢	加工颗数查询	Part Count Query
+i18n_ServCloud_Ip_Cam_Grid	Ip Camera 監控站	Ip Camera 监控站	Ip Camera Monitoring Station
+i18n_ServCloud_Ip_Cam_Grid_Demo	Ip Camera 監控站備援	Ip Camera 监控站备援	Ip Camera Monitoring Station Demo
+i18n_ServCloud_Machine_Time_Diff_Query	標工差異查詢	标工差异查询	Machine Time Diff Query
+i18n_ServCloud_Device_Status_Stack_Chart	機台歷史狀態查詢	机台历史状态查询	Machine Status History
+i18n_ServCloud_Historical_Location_Current_Statistics	60 歷史位置及電流統計圖	60 历史位置及电流统计图	60 Historical location and current statistics
+
+
+#加工程式上下傳
+i18n_ServCloud_ProgTransmit	CNC 程式上下傳	CNC 程式上下传	CNC Program Upload/Download
+i18n_ServCloud_Machines	01 機台列表	01 机台列表	01 Machine List
+i18n_ServCloud_Cnc_Upload	加工程式上傳	加工程式上传	Program Upload
+i18n_ServCloud_Cnc_Download	加工程式下載	加工程式下载	Program Download
+i18n_ServCloud_Fanuc_Cnc_Upload	03 機台程式管理平台	03 机台程式管理平台	03 Machine Program Management
+i18n_ServCloud_Fanuc_Data_Server	機台程式管理平台	机台程式管理平台	Machine Program Management
+i18n_ServCloud_Fanuc_Log_Query	06 查詢加工程式日誌(上傳/刪除)	06 查询加工程式日志（上传/删除）	06 Query Process Program Log (Upload/Delete)
+
+# 稼動
+i18n_ServCloud_UtilizationStd	稼動管理	稼动管理	Utilization Rate Analysis
+i18n_ServCloud_05_Alarm_Message	05 警示訊息	05 警示讯息	05 Alarm Message
+i18n_ServCloud_05_Main_Axis_Efficiency_TH	05 主軸效率監控TH	05 主轴效率监控TH	05 Main Axis Efficiency TH
+i18n_ServCloud_NC_Production_Progress	07 NC機台生產進度	07 NC机台生产进度	07 NC Production Progress
+i18n_ServCloud_10_DailUtilization	10 日稼動率報表	10 日稼动率报表	10 Daily Utilization
+i18n_ServCloud_10_DailUtilization_Enzoy	日稼動率報表	日稼动率报表	Daily Utilization
+i18n_ServCloud_10_DailUtilization_Cosmos	10 日稼動率報表	10 日稼动率报表	01 Daily Utilization
+i18n_ServCloud_10_daily_kuohwaoa	10 日稼動率報表	10 日稼动率报表	01 Daily Utilization
+i18n_ServCloud_12_oee_cosmos	12 稼動率報表	12 稼动率报表	12 OEE Report
+i18n_ServCloud_11_Amd	11 AMD	11 AMD	11 AMD
+i18n_ServCloud_20_Monthly_Utilization	20 月稼動率報表	20 月稼动率报表	20 Monthly Utilization
+i18n_ServCloud_20_monthly_kuohwaoa	20 月稼動率報表	20 月稼动率报表	20 Monthly Utilization
+i18n_ServCloud_22_Monthly_Utilization	22 月稼動率報表	22 月稼动率报表	22 Monthly Utilization
+i18n_ServCloud_20_Monthly_Utilization_Enzoy	月稼動率報表	月稼动率报表	Monthly Utilization
+i18n_ServCloud_25_Yearly_Utilization	25 年稼動率報表	25 年稼动率报表	25 Yearly Utilization
+i18n_ServCloud_26_Monthly_Utilization	26 月稼動率報表	26 年稼动率报表	26 Yearly Utilization
+i18n_ServCloud_30_Product_Information	30 產品資訊	30 产品资讯	30 Product Information
+i18n_ServCloud_30_Daily_Product_Info	30 詳細稼動率與產品資訊	30 详细稼动率与产品资讯	30 Detail Daily And Product Info
+i18n_ServCloud_30_Edit_Quality_Cosmos	30 不良品數編輯	30 不良品数编辑	30 Edit Defective Quality
+i18n_ServCloud_40_Edit_Idle_Cosmos	40 閒置編輯	40 闲置编辑	40 Edit Downtime
+i18n_ServCloud_40_Customer_Management	40 客戶及品名設定	40 客户及品名设定	40 Customer Management
+i18n_ServCloud_50_Product_Management	50 品名及加工程式對應設定	50 品名及加工程式对应设定	50 Product Management
+i18n_ServCloud_60_Adapter_Params	60 擷取參數	60 撷取参数	60 Fetch Parameters
+i18n_ServCloud_70_Machine_Status_History	70 機台歷史狀態查詢	70 机台历史状态查询	70 Machine Status History
+i18n_ServCloud_10_DailUtilization_Anko	10 日稼動率報表(PLC)	10 日稼动率报表(PLC)	10 Daily Utilization(PLC)
+i18n_ServCloud_80_Product_Tracking_Aerowin	80 產品追蹤進度表	80 产品追踪进度表	80 Product Tracking Schedule
+i18n_ServCloud_90_Product_Daily_Aerowin	90 生產日報表	90 生产日报表	90 Production Daily Report
+i18n_ServCloud_10_DailUtilization_Cosmos_Pony	10 日稼動率報表	10 日稼动率报表	01 Daily Utilization
+i18n_ServCloud_70_Machine_Status_History_all_brand	70 機台歷史狀態查詢(all brand test)	70 机台历史状态查询(all brand test)	70 Machine Status History(all brand test)
+i18n_ServCloud_70_Machine_Status_History_downtime_code	70 機台歷史狀態查詢(閒置原因)	70 机台历史状态查询(闲置原因)	70 Machine Status History(Downtime Code)
+
+
+# 穎嘉閒置分析
+i18n_ServCloud_DowntimeAnalysis	閒置時間分析	闲置时间分析	Downtime Analysis
+i18n_ServCloud_DowntimeAnalysisEnzoy	閒置時間分析	闲置时间分析	Downtime Analysis
+i18n_ServCloud_10_DowntimeAnalysis_Enzoy	機台閒置時間分析	机台闲置时间分析	Machine Downtime Analysis
+i18n_ServCloud_20_DowntimeAnalysis_by_workorder_Enzoy	製令閒置分析	制令闲置分析	Work Order Downtime Analysis
+i18n_ServCloud_30_IdleMacroEditor	Macro查詢(舊)	Macro查询(旧)	Macro Query (Old)
+i18n_ServCloud_11_DowntimeAnalysis_MachineIdle	11 閒置時間分析	11 闲置时间分析	11 Downtime Analysis
+i18n_ServCloud_11_DowntimeAnalysis_MachineIdle_Cosmos	11 閒置時間分析	11 闲置时间分析	11 Downtime Analysis
+i18n_ServCloud_12_DowntimeAnalysis_OrderQuery	12 製令查詢	12 制令查询	12 Downtime Analysis - Order Query
+i18n_ServCloud_13_DowntimeAnalysis_OrderIdle	13 製令閒置	13 制令闲置	13 Downtime Analysis - Order Idle
+i18n_ServCloud_12_DowntimeAnalysis_MacroIdle_Cosmos	12 閒置代碼時間分析	12 闲置代码时间分析	12 Macro Downtime Analysis
+i18n_ServCloud_14_Machine_Idle_All_Machine_Cosmos	14 閒置時間分析(所有機台)	14 闲置原因管理(所有机台)	14 Downtime Analysis(All Machine)
+i18n_ServCloud_21_DowntimeAnalysis_MachineIdle_Webmacro	21 閒置時間分析(WebMacro)	21 闲置时间分析(WebMacro)	21 Downtime Analysis(WebMacro)
+i18n_ServCloud_22_DowntimeAnalysis_MacroIdle_Cosmos_Webmacro	22 閒置代碼時間分析(WebMacro)	22 闲置代码时间分析(WebMacro)	22 Macro Downtime Analysis(WebMacro)
+i18n_ServCloud_24_DowntimeAnalysis_MachineIdleAll_Webmacro	24 閒置時間分析(所有機台WebMacro)	24 闲置原因管理(所有机台WebMacro)	24 Downtime Analysis(All Machine Web Macro)
+i18n_ServCloud_40_WorkMacroEditor	40 無效代碼輸入	40 無效代碼輸入	40 Downtime Macro Insert
+i18n_ServCloud_50_Macro_Json_Edit	50 閒置原因管理	50 闲置原因管理	50 Downtime Reason Edit
+i18n_ServCloud_51_Macro_Json_Edit_forCosmos	51 閒置原因管理	51 闲置原因管理	51 Downtime Reason Edit
+i18n_ServCloud_60_Idle_Time_Setting	60 閒置時間設定	60 闲置时间设定	60 Idle time setting
+
+# 管理
+i18n_ServCloud_Manage	系統管理	系統管理	System Management
+i18n_ServCloud_Manage_Appware	01管理 APP	01 管理 APP	01 Manage App
+i18n_ServCloud_Manage_Authorise	04 管理權限	04 管理权限	04 Manage Authority
+i18n_ServCloud_Manage_Box	05 Box 管理	05 Box 管理	05 Box Management
+i18n_ServCloud_Manage_Group	03 管理群組	03 管理群组	03 Manage Group
+i18n_ServCloud_Line_Number_Barcode_Generation	03 線別機台號條碼產生	03 线别机台号条码产生	03 Line_Number_Barcode_Generation
+i18n_ServCloud_Track_Number_Barcode_Generation	04 軌道號條碼產生	04 轨道号条码产生	04 Track_Number_Barcode_Generation
+i18n_ServCloud_Feeder_Type_Number_Barcode_Generation	05 供料器類型條碼產生	05 供料器类型条码产生	05 Feeder_Type_Number_Barcode_Generation
+i18n_ServCloud_Manage_Machine_new	管理機台(new)	管理机台(new)	Manage Machine (new)
+i18n_ServCloud_Manage_Machine_Name	07 管理機台名稱	07 管理机台名称	07 Manage Machine Name
+i18n_ServCloud_Manage_Machine_Type	07 管理設備類型	07 管理设备类型	07 Machine Type Management
+i18n_ServCloud_Manage_Machine_Info	管理設備資訊	管理设备资讯	Machine Information Management
+i18n_ServCloud_Manage_Macro	10 管理巨集	10 管理巨集	10 Manage Macro
+i18n_ServCloud_Manage_Schedule	管理排程	管理排程	Manage Schedule
+i18n_ServCloud_Manage_User	02 管理使用者	02 管理使用者	02 Manage User
+i18n_ServCloud_Manage_Work_Shift	08 管理班次	08 管理班次	08 Manage Work Shift
+i18n_ServCloud_Manage_App_Func_Cnc_Brand	09 管理APP功能廠牌	09 管理APP功能厂牌	09 Manage App Func CNC Brand
+i18n_ServCloud_Download_Raw_Data_Decode	11 下載設備原始資料(解碼)	11 下载设备原始资料(解码)	11 Download Machine Raw Data (Decode)
+i18n_ServCloud_Download_Raw_Data_Cho_Decode	下載設備原始資料Cho(解碼)	下载设备原始资料Cho(解码)	Download Machine Raw Data Cho (Decode)
+i18n_ServCloud_Manage_Line_Type	12 管理產線類別	12 管理产线类别	12 Manage Line Type
+i18n_ServCloud_Manage_Line_Group	12 管理產線群組	12 管理产线群组	12 Manage Line Group
+i18n_ServCloud_Manage_Cnc_Brand	13 管理CNC廠牌	13 管理CNC厂牌	13 Manage CNC brand
+i18n_ServCloud_Machine_Editor	管理設備連接	管理设备连接	Management Machine Connection 
+i18n_ServCloud_Manage_Machine_Group	14 管理機台群組	14 管理机台群组	14 Manage Machine Group
+i18n_ServCloud_Manage_Ip_Cam	Ip Camera 管理	Ip Camera 管理	Ip Camera Management
+i18n_ServCloud_Manage_Alarm	16 管理警報代碼	16 管理警报代码	16 Manage Alarm
+i18n_ServCloud_Manage_Alarm_Anko	16 管理警報代碼(PLC)	16 管理警报代码(PLC)	16 Manage Alarm (PLC)
+i18n_ServCloud_Manage_Axis_Efficiency	17 管理機台主軸與進給門檻值	17 管理机台主轴与进给门槛值	17 Manage Axis Efficiency
+i18n_ServCloud_Manage_Axis_Efficiency_TH	17 管理機台主軸與進給門檻值TH	17 管理机台主轴与进给门槛值TH	17 Manage Axis Efficiency TH
+i18n_ServCloud_Manage_Alarm_Send_Spacing	18 管理警報通知發送間隔時間	18 管理警报通知发送间隔时间	18 Manage Alarm Send Spacing
+i18n_ServCloud_Manage_Depart_Machine_Aerowin	部門機台	部门机台	Department Machine
+i18n_ServCloud_Manage_Mail	19 管理信箱發送群組	19 管理信箱发送群组	19 Manage Mail
+i18n_ServCloud_Recipient_Mailbox_Management	19 收件者信箱管理	19 收件者信箱管理	19 Recipient mailbox management
+i18n_ServCloud_Manage_Mail_Server	20 管理信件發送伺服器	20 管理信箱伺服器	20 Manage Mail Server
+i18n_ServCloud_Manage_Machine_Connection_Settings	06 管理機台連線資訊	06 管理机台连线资讯	06 Manage Machine Connection Settings
+i18n_ServCloud_Manage_Host	20 管理 Host	20 管理 Host	20 Manage Host
+i18n_ServCloud_Download_Machine_Yield_Cho	下載機台產量Cho	下载机台产量Cho	Download Machine Yield Cho
+i18n_ServCloud_Manage_Tool	22 刀具管理	22 刀具管理	22 Tool Management
+i18n_ServCloud_Manage_CNC_Server_Type	25 管理 CNC Server 類型	25 管理 CNC Server 类型	25 Manage CNC Server Type
+i18n_ServCloud_Manage_Machine_Data_Server	26 管理機台 Data Server	26 管理机台 Data Server	26 Manage Machine Data Server
+i18n_ServCloud_Manage_Dashboard	27 管理輪播看板	27 管理轮播看板	27 Manage Dashboard
+i18n_ServCloud_Manage_Dashboard_Authorise	28 管理輪播看板權限	28 管理轮播看板权限	28 Manage Dashboard Authority
+i18n_ServCloud_Manage_Dashboard_Group	29 管理輪播看板群組	29 管理轮播看板群组	29 Manage Dashboard Group
+i18n_ServCloud_Manage_Unit_Type	30 ServUnit 機種設定	30 ServUnit 机种设定	30 ServUnit Machine Type Settings
+i18n_ServCloud_Manage_Unit_Param	31 ServUnit 機種參數設定	31 ServUnit 机种参数设定	31 ServUnit Machine Type Parameter Settings
+i18n_ServCloud_Manage_Dow	31 ServUnit 機種參數設定	31 ServUnit 机种参数设定	31 ServUnit Machine Type Parameter Settings
+i18n_ServCloud_Manage_Work_Query	33 EPR資料查詢	33 EPR資料查詢	33 ERP Info Query
+i18n_ServCloud_Download_Treated_Data_Decode	50 下載 Treated 資料	50 下载 Treated 资料	50 Download Treated Data
+i18n_ServCloud_Download_Source_Data_Decode	51 下載 Source 資料	51 下载 Source 资料	51 Download Source Data
+
+
+
+# 產線管理
+i18n_ServCloud_ProductLineManegement	產線管理	产线管理	Product Line Manegement
+
+# ServMarket
+i18n_ServCloud_ServMarket	APP市集	APP市集	APP Market
+i18n_ServCloud_List_App	APP列表	APP列表	List APPs
+
+# 華宇企業管理
+i18n_ServCloud_AHeadmaster	KPI四表	KPI四表	KPI Reports
+i18n_ServCloud_Production_Daily_Report	生產作業日報表v1	生产作业日报表v1	Production Daily Report v1
+i18n_ServCloud_Transition_Diagram	生產有效推移圖v1	生产有效推移图v1	Validity Transition Diagram v1
+i18n_ServCloud_Production_Transition_Diagram	生產有效推移圖	生产有效推移图	Validity Transition Diagram
+i18n_ServCloud_Yield_Transition_Diagram	良率推移圖	良率推移图	Yield Transition Diagram
+i18n_ServCloud_Invalid_Transition_Diagram	無效時間推移圖	无效时间推移图	Invalid Time Transition Diagram
+i18n_ServCloud_Line_Transition_Diagram	換線分析推移圖	换线分析推移图	Line Change Analysis Transition Diagram
+i18n_ServCloud_Upload_Source	上傳原始資料	上传原始资料	Upload Source
+i18n_ServCloud_Manage_Map	管理對應表	管理对应表	Manage Map
+i18n_ServCloud_Transform_Excel	報表轉換	报表转换	Transform Excel
+i18n_ServCloud_Pivot	樞紐分析	枢纽分析	Pivot
+i18n_ServCloud_Pivot_Report	樞紐分析報表	枢纽分析报表	Pivot Report
+i18n_ServCloud_Custom_Pivot	自訂樞紐分析	自订枢纽分析	Custom Pivot
+i18n_ServCloud_Dashboard	綜整儀錶板	综整仪表板	Dashboard
+i18n_ServCloud_Upload_Daily_Report	上傳手中工廠日報表資料	上传手中工厂日报表资料	Upload Factory At Hand Daily Report
+
+# 睿華國際顧問
+i18n_ServCloud_Juihua	睿華國際報表管理	睿华国际报表管理	睿華國際報表管理
+i18n_ServCloud_Juihua_Order_To_Month_Plan	01 計畫訂單轉月計畫	01 计画订单转月计画	01 計畫訂單轉月計畫
+i18n_ServCloud_Juihua_Order_To_Month_Plan_Demo	01 計畫訂單轉月計畫(demo)	01 计画订单转月计画(demo)	01 計畫訂單轉月計畫(demo)
+i18n_ServCloud_Juihua_Order_Transform	02 轉採購單	02 转采购单	02 轉採購單
+i18n_ServCloud_Juihua_Supplier_Give_Material_Amount	03 供應商交料輸入	03 供应商交料输入	03 供應商交料輸入
+i18n_ServCloud_Juihua_Download_Receive_Material	04 下載交貨收料單	04 下载交货收料单	04 下載交貨收料單
+i18n_ServCloud_Juihua_Receive_Material	05 收料	05 收料	05 收料
+i18n_ServCloud_Juihua_Supplier_Name_Settings	06 供應商名稱設定	06 供应商名称设定	06 供應商名稱設定
+i18n_ServCloud_Juihua_Supplier_Deliver_Settings	07 供應商交貨日設定	07 供应商交货日设定	07 供應商交貨日設定
+i18n_ServCloud_Juihua_Supplier_Trip_Settings	08 供應商交貨趟次設定	08 供应商交货趟次设定	08 供應商交貨趟次設定
+i18n_ServCloud_Juihua_Query_No_Received	09 未交料查詢	09 未交料查询	09 未交料查詢
+
+# 日報表
+i18n_ServCloud_ProductionDailyReport	生產日報表	生产日报表	Production Daily Report
+i18n_ServCloud_10_daily_report	日報表	日报表	Daily Report
+i18n_ServCloud_ManageWorkShift_daily	班次設定(日報表)	班次设定(日报表)	Manage Work Shift (Daily Report)
+
+# 代理商聯絡頁面
+i18n_ServCloud_Customer_Service	客戶服務	客戶服务	Customer Service
+i18n_ServCloud_01_agent_info	代理商資訊	代理商资讯	Agent information
+i18n_ServCloud_02_license_update	更新合約	更新合约	License update
+i18n_ServCloud_30_Log_Download	日誌下載	日志下载	Log Download
+
+# 目標達成率
+i18n_ServCloud_AchievementRate	目標達成率	目标达成率	Achievement Rate
+
+# 過程參數
+i18n_ServCloud_ProcessParam	過程參數	过程参数	Process Param
+
+# 電子看板
+i18n_ServCloud_RotateDashboard	輪播看板	轮播看板	Dashboard
+i18n_ServCloud_MachineMonitor	單機監控	单机监控	Machine Monitor
+i18n_ServCloud_SituationRoom	戰情室	战情室	Situation Room
+i18n_ServCloud_SituationRoom_Logic	戰情室(預估)	战情室(预估)	Situation Room(Estimate)
+i18n_ServCloud_Production_Schedule	工單排程	工单排程	Production Schedule
+i18n_ServCloud_Processing_Progress	加工進度	加工进度	Processing Progress
+i18n_ServCloud_Assembling_Immediate_Production_Line_Of_Electronic_Billboards	組立線即時產量電子看板	组立线即时产量电子看板	Assembling immediate production line of electronic billboards
+
+# 溫昇熱補
+i18n_ServCloud_Heat_Compensation	溫昇熱補	温升热补	Heat Compensation
+
+# 友嘉溫昇熱補
+i18n_ServCloud_FFGHeatCompensatory	溫昇熱補償技術	温昇热补偿技术	Heat Compensation
+i18n_ServCloud_FFGHeatCompensatory_Current	即時資料	即时资料	Realtime Data
+i18n_ServCloud_FFGHeatCompensatory_History	歷史數據	历史数据	History Data
+
+#FFGChatterAnalysis
+i18n_ServCloud_FFGChatterAnalysis	友嘉顫振分析	友嘉颤振分析	FFG Chatter Analysis
+i18n_ServCloud_FFGChatterAnalysis_chatter	顫振分析(顫振)	颤振分析(颤振)	Chatter Analysis (Chatter)
+i18n_ServCloud_FFGChatterAnalysis_normal	顫振分析(穩定)	颤振分析(稳定)	Chatter Analysis (Normal)
+i18n_ServCloud_FFGChatterAnalysis_merged	顫振分析	颤振分析	Chatter Analysis
+
+# 五軸量測
+i18n_ServCloud_FiveAxisMeasure	五軸量測	五轴量测	Five Axis Measurement
+i18n_ServCloud_Error_Analysis	誤差分析	误差分析	Error Analysis
+
+# 上下班Macro編輯
+i18n_ServCloud_IdleMacroEditor	上下班Macro編輯	上下班Macro编辑	Idle Macro Editor
+
+# 派工單管理
+i18n_ServCloud_Dispatch_Management	派工單管理	派工单管理	Dispatch Management
+i18n_ServCloud_Dispatch_Upload	派工單上傳	派工单上传	Dispatch Upload
+i18n_ServCloud_Upload_Employee_Aerowin	人員資料上傳	人员资料上传	Employee Data Upload
+i18n_ServCloud_Assignment_Different	派工差異	派工差异	Assignment Different
+
+# 故障排除
+i18n_ServCloud_Alarm_Clear	故障排除	故障排除	Alarm Clear
+i18n_ServCloud_Alarm_Clear_Guide	故障排除指引	故障排除指引	Alarm Clear Guide
+i18n_ServCloud_Alarm_Clear_Troubleshooting	故障排除操作	故障排除操作	Troubleshooting
+i18n_ServCloud_Alarm_Log	故障排除記錄	故障排除记录	Alarm Clear Log
+i18n_ServCloud_Alarm_Log_History	故障排除歷史記錄	故障排除历史记录	Alarm Clear Log / History
+i18n_ServCloud_Alarm_Clear_Edit	故障排除指引維護	故障排除指引维护	Alarm Clear Guide Maintenance
+i18n_ServCloud_Alarm_Clear_Edit_Setting_Method	故障排除指引維護方法	故障排除指引维护方法	Alarm Clear Guide Maintenance Methods
+i18n_ServCloud_Alarm_Clear_File	檔案上傳	档案上传	File Upload
+i18n_ServCloud_Alarm_Clear_Statistics	故障排除統計	故障排除统计	Alarm Clear Statistics
+
+#售服
+i18n_ServCloud_After_Sales_Service	售後服務	售后服务	After Sales Service
+i18n_ServCloud_01_Manage_Customer_Trade	01 客戶行業別維護	01 客户行业别维护	01 Manage Customer Trade
+i18n_ServCloud_02_Manage_Customer_Type	02 客戶屬性維護	02 客户属性维护	02 Manage Customer Attribute
+i18n_ServCloud_03_Manage_Customer_Area	03 客戶地區維護	03 客户地区维护	03 Customer Area
+i18n_ServCloud_04_Manage_Customer_Factor	04 代理商維護	04 代理商维护	04 Customer Factor
+i18n_ServCloud_05_Manage_Customer	05 客戶資料維護	05 客户资料维护	05 Customer
+i18n_ServCloud_06_Manage_Product	06 產品別維護	06 产品别维护	06 Manage Product
+i18n_ServCloud_08_Manage_Entity	08 問題類別維護	08 问题类别维护	08 Manage Entity
+i18n_ServCloud_09_Manage_Entity_Breakdown	09 問題項目	09 问题项目	09 Manage Entity Breakdown
+i18n_ServCloud_10_Manage_Material	10 料件維護	10 料件维护	10 Manage Material
+i18n_ServCloud_11_Manage_Repair_Kind	11 客訴單類型	11 客诉单类型	11 Manage Repair Kind
+i18n_ServClou_12_Manage_Repair_List	12 客訴單管理	12 客诉单管理	12 Manage Repair List
+i18n_ServCloud_13_Manage_Repair	13 新增客訴單	13 新增客诉单	13 Manage Repair
+i18n_ServCloud_14_Manage_Repair_Assign	14 客訴單派工	14 客诉单派工	14 Manage Repair Assign
+i18n_ServCloud_15_Manage_Repair_Repay	15 客訴單回報	15 客诉单回报	15 Manage Repair Reply
+i18n_ServCloud_07_Manage_Machine_Type	07 機種維護	07 机种维护	07 Machine Type
+i18n_ServCloud_16_Manage_Repair_Close	16 客訴單結案	客訴單結案	16 Repair Close
+i18n_ServCloud_17_Repair_Report	17 客訴單統計	17 客诉单统计	17 Repair Report
+
+#Ladder
+i18n_ServCloud_Ladder	遠端PLC梯形圖監視	远端PLC梯形图监视	Remote PLC Ladder Monitoring
+i18n_ServCloud_01_Machine_List	01 機台清單	01 机台清单	01 Machine list
+i18n_ServCloud_02_Ladder_Monitor	02 梯形圖監視	02 梯形图监视	02 Ladder monitor
+
+#生產效率管理
+i18n_ServCloud_Production_Efficiency	生產效率管理	生产效率管理	Production Efficiency
+i18n_ServCloud_01_Operate_Analysis	01 運轉工時分析	01 运转工时分析	01 Operate Analysis
+i18n_ServCloud_02_Single_Measure	02 單件工時量測	02 单件工时量测	02 Single Measure
+i18n_ServCloud_03_Process_Rate_Prediction	03 加工進度預估	03 加工进度预估	03 Process Rate Prediction
+i18n_ServCloud_04_Machine_Auto_Reply	04 機器自動報工	04 机器自动报工	04 Machine Auto Reply
+i18n_ServCloud_05_Main_Axis_Efficiency	05 主軸效率監控	05 主轴效率监控	05 Main Axis Efficiency
+
+# 資料上傳
+i18n_ServCloud_Data_Upload	資料上傳	资料上传	Data Upload
+i18n_ServCloud_Employee_Data_Upload	員工資料上傳	员工资料上传	Employee Data Upload
+i18n_ServCloud_ERP_Data_Upload	ERP資料上傳	ERP资料上传	ERP Data Upload
+
+# 皇亮稼動率(稼動應用統計)
+i18n_ServCloud_Utilization_Statistics	稼動應用統計	稼动应用统计	Utilization Statistics
+i18n_ServCloud_Utilization_by_Machine	各機台日稼動報表	各机台​​日稼动报表	Utilization by Machine
+i18n_ServCloud_Downtime_Report	無效時間分析	无效时间分析	Downtime Report
+i18n_ServCloud_Employee_Utilization_by_Machine	各機台顧車人員稼動率查詢	各机台​​顾车人员稼动率查询	Employee Utilization by Machine
+i18n_ServCloud_Product_Utilization	產品稼動率查詢	产品稼动率查询	Product Utilization
+i18n_ServCloud_Quality_Utilization_by_Machine	各機台品質稼動率	各机台​​品质稼动率	Quality Utilization by Machine
+i18n_ServCloud_Quality_Utilization_by_Product	產品品質稼動率	产品品质稼动率	Quality Utilization by Product
+i18n_ServCloud_Calibration_Record_by_Machine	各機台校車紀錄查詢	各机台​​校车纪录查询	Calibration Record by Machine
+i18n_ServCloud_Calibration_Record_by_Product	產品校車紀錄查詢	产品校车纪录查询	Calibration Record by Product
+i18n_ServCloud_Employee_Performance	顧車人員績效查詢	顾车人员绩效查询	Employee Performance
+i18n_ServCloud_Customer_Sample_Analysis	客戶樣本分析	客户样本分析	Customer Sample Analysis
+i18n_ServCloud_Utilization_of_Factory_Affairs_Department 	廠務部稼動紀錄表查詢	厂务部稼动纪录表查询	Utilization of Factory Affairs Department
+
+# 工件量測
+i18n_ServCloud_WorkPieceMeasurment	工件檢驗	工件检验	Work Piece Inspection
+i18n_ServCloud_WorkPieceMeasurment_Report	工件檢驗結果報表	工件检验结果报表	Work Piece Measurment Report
+i18n_ServCloud_The_Dimensions_Trend_Tables	各尺寸趨勢表	各尺寸趋势表	The Dimensions Trend Tables
+i18n_ServCloud_Yield_Transition_Diagrams	良率推移圖	良率推移图	Yield Transition Diagrams
+
+# 機上量測
+i18n_ServCloud_OnMachineMeasurement	機上量測	机上量测	On-Machine Measurement
+i18n_ServCloud_OnMachineMeasurementResults	機上量測結果	机上量测结果	On-Machine Measurement Results
+i18n_ServCloud_OnMachineMeasurementPositionHistoricalTrends	機上量測位置歷史趨勢	机上量测位置历史趋势	On-Machine Measurement Position Historical Trends
+
+# 刀具管理
+i18n_ServCloud_01_Tool_Status	01 刀具狀態	01 刀具状态	01 Tool Status
+i18n_ServCloud_02_Tool_Compensate	02 刀具補償	02 刀具补偿	02 Tool Compensate
+i18n_ServCloud_03_Tool_History	03 刀具歷程	03 刀具历程	03 Tool History
+
+# 行動報工站
+i18n_ServCloud_10_Product_Process_Quality	10 產品製程良率與不良分析	10 产品制程良率与不良分析	10 Yield and defective rate analysis for the production process of the product
+i18n_ServCloud_20_Work_Quality	20 派工單良率	20 派工单良率	20 Work order yield rate
+i18n_ServCloud_30_Work_Process	30 派工單在製過程	30 派工单在制过程	30 Work order in-production process
+i18n_ServCloud_40_Line_Oee	40 各線總體稼動率	40 各线总体稼动率	40 Production line overall equipment effectiveness (OEE)
+i18n_ServCloud_50_Line_Oee_Day	50 各線單日總體稼動率	50 各线单日总体稼动率	50 Production line overall equipment effectiveness (OEE) for a single day
+i18n_ServCloud_51_Line_Use_Day	51 每日利用度	51 每日利用度	51 Daily utilization rate
+i18n_ServCloud_60_Operating_Performance	60 作業績效	60 作业绩效	60 Working performance
+i18n_ServCloud_61_Worktime_Transfer_Record	61 工時轉移與紀錄	61 工时转移与纪录	61 工时转移与纪录
+i18n_ServCloud_70_tracking_no_move_out	70 報工進站未出站	70 报工进站未出站	70 Move in but not move out
+i18n_ServCloud_71_invalid_line_status_no_end	71 無效報工紀錄	71 无效报工纪录	71 Record of inefficiency report
+i18n_ServCloud_ServTrack	行動報工站	行动报工站	ServTrack
+
+#行動報工站管理
+i18n_ServCloud_11_Tablet_Authority	11 平板授權	11 平板授权	11 Tablet authorization
+i18n_ServCloud_20_invalid_reason_maintain_strongled	20 通用無效原因維護	20 通用无效原因维护	20 Common inefficiency reason maintenance
+i18n_ServCloud_21_Process_Maintain	21 製程及不良原因維護	21 制程及不良原因维护	21 Production process and defective reason maintenance
+i18n_ServCloud_22_Product_Op_Maintain	22 產品工序維護	22 产品工序维护	22 Production process sequence maintenance
+i18n_ServCloud_23_Shift_Time_Maintain	23 班次天起訖時間設定	23 班次天起讫时间设定	23 Shift start and end time settings for a single day
+i18n_ServCloud_31_Line_Qrcode_Print	31 線別條碼列印	31 线别条码列印	31 Print QR code for production line
+i18n_ServCloud_32_Work	32 派工單填寫	32 派工单填写	32 Work order creation
+i18n_ServCloud_33_Work_Op_Qrcode_Print	33 派工單工序條碼列印	33 派工单工序条码列印	33 Print QR code for the production process sequence of the work order
+i18n_ServCloud_34_Line_Working_Hour	34 各線每日應生產工時	34 各线每日应生产工时	34 Production line default working hours
+i18n_ServCloud_35_tracking_ng_fill_in_strongled	35 報工資料不良品數填寫	35 报工资料不良品数填写	35 Modify defective product quantity
+i18n_ServCloud_ServTrack_Management	報工站管理	报工站管理	ServTrack Management
+i18n_ServCloud_50_Basic_Data_Import	50 上傳基本資料	50 上传基本资料	50 Basic information upload
+i18n_ServCloud_60_Work_Data_Import	60 上傳派工單	60 上传派工单	60 Work order upload
+
+#行動報工站模擬器
+i18n_ServCloud_ServTrack_Simulator	報工站模擬器	报工站模拟器	ServTrack Simulator
+i18n_ServCloud_70_Work_Tracking_Data_Import	70 上傳報工紀錄	70 上传报工纪录	70 Tracking data upload
+
+# ServTank管理
+i18n_ServCloud_01_ServCore_Config	01_ServCore組態設定	10_ServCore组态设定	01_ServCore Configuration
+
+# 備份查詢
+i18n_ServCloud_BackupQuery	備份查詢	备份查询	Backup Query
+i18n_ServCloud_10_BackupQuery	10_備份查詢	10_备份查询	10_Backup Query
+
+# 國全行動報工站
+i18n_ServCloud_10_Emp_Performance	10_人員績效	10_人员绩效	10 Emp performance
+i18n_ServCloud_20_Emp_Use	20_人員利用度	20_人员利用度	20 Emp use
+i18n_ServCloud_30_Oee	30_總體稼動率	30_总体稼动率	30 Oee
+i18n_ServCloud_40_Device_Use	40_設備利用度	40_设备利用度	40 Device use
+i18n_ServCloud_50_Product_Quality	50_產品良率	50_产品良率	50 Product quality
+i18n_ServCloud_60_Ng_Quality	60_不良原因分析	60_不良原因分析	60 Ng quality
+i18n_ServCloud_70_Move_Record	70_進出站紀錄	70_进出站纪录	70 Move record
+i18n_ServCloud_Kuo_Chuan_ServTrack	國全行動報工站	国全行动报工站	Kuo Chuan ServTrack
+
+# 國全行動報工站管理
+i18n_ServCloud_20_Process_Maintain	20_製程設定	20_制程设定	20 Process maintain
+i18n_ServCloud_21_Product_Maintain	21_品項工序維護	21_品项工序维护	21 Product maintain
+i18n_ServCloud_22_Device_Maintain	22_設備條碼列印	22_设备条码列印	22 Device maintain
+i18n_ServCloud_23_Emp_Maintain	23_人員條碼列印	23_人员条码列印	23 Emp maintain
+i18n_ServCloud_31_Work	31_派工單填寫	31_派工单填写	31 Work
+i18n_ServCloud_32_Invalid_Device_Qrcode_Print	32_無效工作站條碼列印	32_无效工作站条码列印	32 Invalid device qrcode print
+i18n_ServCloud_40_Time_Clock_Data_Import	40_打卡機資料上傳	40_打卡机资料上传	40 Time clock data import
+i18n_ServCloud_Kuo_Chuan_ServTrack_Management	國全報工管理	国全报工管理	Kuo Chuan ServTrack management
+
+# AheadmasterMyZone
+i18n_ServCloud_Aheadmaster_My_Zone	我的現場	我的现场	My Zone
+i18n_ServCloud_My_Zone_Achievement_Rate	達成率	达成率	Achievement Rate
+i18n_ServCloud_My_Zone_Yield_Rate	製程良率	制程良率	Yield Rate
+i18n_ServCloud_My_Zone_Efficiency_Rate	製程效率	制程效率	Efficiency Rate
+
+# AheadmasterAchievementRate
+i18n_ServCloud_Aheadmaster_Achievement_Rate	達成率	达成率	Achievement Rate
+# AheadmasterYieldRate
+i18n_ServCloud_Aheadmaster_Yield_Rate	產品良率	产品良率	Yield Rate
+# AheadmasterEfficiencyRate
+i18n_ServCloud_Aheadmaster_Efficiency_Rate	製程效率	制程效率	Efficiency Rate
+
+# 正修
+i18n_ServCloud_CSUStore	商店	商店	Store
+i18n_ServCloud_CSUStore_Sales	銷售	销售	Sales
+i18n_ServCloud_CSUStore_SalesReport	銷售報表	销售报表	Sales Report
+i18n_ServCloud_CSUStore_OrderManagement	訂單管理	订单管理	Order Management
+i18n_ServCloud_CSUStore_ProductSetting	產品設定	产品设定	Product Setting
+i18n_ServCloud_CSUFactoryOrder	廠內訂單	厂内订单	Factory Order
+i18n_ServCloud_CSUFactoryOrder_OrderReceipt	訂單接收	订单接收	Order Receipt
+i18n_ServCloud_CSUFactoryOrder_OrderManagement	訂單管理	订单管理	Order Management
+i18n_ServCloud_CSUProductionDemandAndManufacturing	生產需求與製造	生产需求与制造	Production Demand And Manufacturing
+i18n_ServCloud_CSUProductionDemandAndManufacturing_DemandOrderManagement	需求單管理	需求单管理	Demand Order Management
+i18n_ServCloud_CSUProductionDemandAndManufacturing_ToBeProduced	待生產工單	待生产工单	To Be Produced
+i18n_ServCloud_CSUProductionDemandAndManufacturing_DailyWorkOrderYield	每日工單良率	每日工单良率	Daily Work Order Yield
+i18n_ServCloud_CSUProductionDemandAndManufacturing_DeviceSetting	設備設定	设备设定	Device Setting
+i18n_ServCloud_CSUProductionDemandAndManufacturing_EquipmentMonitoring	設備監控	设备监控	Equipment Monitoring
+i18n_ServCloud_CSUProductionDemandAndManufacturing_ReceivingAndRefueling	收料與換料	收料与换料	Receiving And Refueling
+i18n_ServCloud_CSUProductWarehouse	成品倉	成品仓	Product Warehouse
+i18n_ServCloud_CSUProductWarehouse_ProductSetting	產品設定	产品设定	Product Setting
+i18n_ServCloud_CSUProductWarehouse_StorageEstablish	儲位建立	储位建立	Storage Establish
+i18n_ServCloud_CSUProductWarehouse_Warehousing	成品入庫	成品入库	Warehousing
+i18n_ServCloud_CSUProductWarehouse_StorageQuery	儲位查詢	储位查询	Storage Query
+i18n_ServCloud_CSUProductWarehouse_AdjustStorageLocationManually	手動調整儲位	手动调整储位	Adjust Storage Location Manually
+i18n_ServCloud_CSURawMaterialWarehouse	原料倉	原料仓	Raw Material Warehouse
+i18n_ServCloud_CSURawMaterialWarehouse_BuildBarCode	建立原料條碼	建立原料条码	Build Bar Code
+i18n_ServCloud_CSURawMaterialWarehouse_Warehousing	原料入庫	原料入库	Warehousing
+i18n_ServCloud_CSURawMaterialWarehouse_Shipments	原料出庫	原料出库	Shipments
+i18n_ServCloud_CSURawMaterialWarehouse_AdjustStorageLocationManually	手動調整儲位	手动调整储位	Adjust Storage Location Manually
+i18n_ServCloud_CSURawMaterialWarehouse_StorageQuery	儲位查詢	储位查询	Storage Query
+i18n_ServCloud_CSURawMaterialWarehouse_RemainingProductionInquiries	原料剩餘產量查詢	原料剩余产量查询	Remaining Production Inquiries
+i18n_ServCloud_CSUMonitoringReport	監控報表	监控报表	Monitoring Report
+i18n_ServCloud_CSUMonitoringReport_EnvironmentalSensingMonitoring	環境感測監控	环境感测监控	Environmental Sensing Monitoring
+i18n_ServCloud_CSUMonitoringReport_EnvironmentalSensingAlertHistory	環境感測警報履歷	环境感测警报履历	Environmental Sensing Alert History
+i18n_ServCloud_CSUMonitoringReport_EnvironmentalSensingHistoricalData	環境感測歷史資料	环境感测历史资料	Environmental Sensing Historical Data
+i18n_ServCloud_CSUMonitoringReport_AGVRealTimeMonitoring	AGV即時監控	AGV即时监控	AGV Real Time Monitoring
+i18n_ServCloud_CSUMonitoringReport_FixedImageConnection	固定式影像連結	固定式影像连结	Fixed Image Connection
+i18n_ServCloud_CSUMonitoringReport_AccessControlSystemConnection	門禁系統連結	门禁系统连结	Access Control System Connection
+i18n_ServCloud_CSUMonitoringReport_MonitoringCenterSignIn	監控中心簽到	监控中心签到	Monitoring Center Sign In
+
+#生產履歷
+i18n_ServCloud_FFGProductionProcess	生產履歷	生产履历	Production Process
+
+#DevTool
+i18n_ServCloud_DevTool_01_form	01_form	01_form	01_form
+
+#EnhancementManagement
+i18n_ServCloud_enhancement_10_info	10 機台管理	10 机台管理	10 Management Machine
+i18n_ServCloud_enhancement_20_info	20 製程管理	20 制程管理	20 Management Process
+i18n_ServCloud_enhancement_21_info	21 製程不良管理	21 制程不良管理	21 Management Process NG
+i18n_ServCloud_enhancement_30_info	30 產品管理	30 产品管理	30 Management Product
+i18n_ServCloud_enhancement_31_info	31 產品工序管理	31 产品工序管理	31 Management Product OP
+i18n_ServCloud_enhancement_40_info	40 閒置原因管理	40 闲置原因管理	40 Management Idle Reason
+
+#3DCMM
+i18n_ServCloud_3DCM	三次元量測報表	三次元量测报表	3D CoordinateMeasuring
+i18n_ServCloud_3DCM_10_mould_testing_result	10 模具檢測結果統計	10 模具检测结果统计	10 Mold test results statistics
+i18n_ServCloud_3DCM_10_quality_inspections_report	11 品質檢測報表	11 品质检测报表	11 Quality inspection report
+
+#MoldManagement
+i18n_ServCloud_MoldManagement	模具管理	模具管理	Mold Management
+i18n_ServCloud_MoldManagement_01_mold_progress	01 所有模具進度追蹤表	01 所有模具进度追踪表	01 All mold progress tracking tables
+i18n_ServCloud_MoldManagement_02_item_working_status	02 零件加工狀態	02 零件加工状态	02 Part processing status
+i18n_ServCloud_MoldManagement_03_item_working_process	03 零件在製過程	03 零件在制过程	03 Part in process
+i18n_ServCloud_MoldManagement_04_item_malfunction_reason_track	04 零件異常原因追蹤	04 零件异常原因追踪	04 Part abnormal cause tracking
+i18n_ServCloud_MoldManagement_05_item_malfunction_feedback	05 設備加工異常回饋紀錄	05 设备加工异常回馈纪录	05 Equipment processing abnormal feedback record
+i18n_ServCloud_MoldManagement_10_dashboard	10 電子看板	10 轮播看板	10 Dashboard
+
+#SingleLineAnalysis
+i18n_ServCloud_Single_Line_Analysis	執行單節分析	执行单节分析	Single Line Analysis
+i18n_ServCloud_Execute_Single_Statistics	01 執行單節統計	01 执行单节统计	01 Execute Single Statistics
+i18n_ServCloud_Set_Program_Time	20 設定主程式時間	20 设定主程式时间	20 Setting the main program time
+i18n_ServCloud_21_Upload_Run_Program	21 程式上傳	21 程式上传	21 Program Upload
+
+#feedbackDemandList
+i18n_ServCloud_Feedback_DemandList_Management	需求單管理	需求单管理	DemandList Management
+i18n_ServCloud_10_Search_DemandList	10 查詢需求單	10 查询需求单	10 DemandList Query
+
+#QueryRFQ
+i18n_ServCloud_Inquiry_inquiry	詢價單查詢	询价单查询	Inquiry inquiry
+i18n_ServCloud_10_No_quote_inquiry_inquiry	未報價詢價單查詢	未报价询价单查询	No quote inquiry inquiry
+i18n_ServCloud_20_Search_DemandList	查詢需求單	查询需求单	DemandList Query
+
+#strongLEDStorageManagement
+i18n_ServCloud_Storage_Management	倉庫管理	仓库管理	Storage Management
+i18n_ServCloud_01_Fault_Storage_Setting	01 故障儲位管理	01 故障储位管理	01 Fault_Storage_Setting
+i18n_ServCloud_02_Fault_Storage_Search	02 異常儲位查詢	02 异常储位查询	02 Fault_Storage_Search
+i18n_ServCloud_10_Manage_Storage_Structure	10 管理儲位結構	10 管理储位结构	10 Manage Storage Structure
+i18n_ServCloud_10_Manage_Storage	10 管理儲位	10 管理储位	10 Manage Storage
+i18n_ServCloud_10_Manage_Zone	10 管理庫	10 管理库	10 Manage Storage
+i18n_ServCloud_11_Print_Storage_Qrcode	11 列印儲位條碼	11 列印储位条码	11 Print Storage QRcode
+i18n_ServCloud_12_Create_Material_Qrcode	12 產生原料條碼	12 产生原料条码	12 Produce raw material barcode
+i18n_ServCloud_12_Barcode_Generating_Material	12 產生物料條碼	12 产生物料条码	12 barcode generating material
+i18n_ServCloud_12_Materials_And_Parts_Label_Print	12 料件標籤列印	12 料件标签列印	12 Materials and parts Label Print
+i18n_ServCloud_13_Purchase_Orders_Approved_Demolition	13 採購單拆批	13 采购单拆批	13 purchase orders approved demolition
+i18n_ServCloud_14_Storage_Material_Walkthrough	14 物料儲位預排	14 物料储位预排	14 storage material walkthrough
+i18n_ServCloud_15_Storage_Material_advance	15 物料儲位預排比對	15 物料储位预排比对	15 storage material advance
+i18n_ServCloud_20_Manage_Storage	20 管理儲架	20 管理储架	20 Manage Shelf
+i18n_ServCloud_20_Rack_Bar_Code_Printer	20 料架條碼列印	20 料架条码列印	20 rack bar code printer
+i18n_ServCloud_21_Manage_Storage_Type	21 管理儲架類型	21 管理储架类型	21 Manage Shelf Type
+i18n_ServCloud_22_Manage_Storage_Position	22 管理儲位	22 管理储位	22 Manage Storage Position
+i18n_ServCloud_23_Manage_Position_Light	23 管理儲位燈號	23 管理储位灯号	23 Manage Position Light
+i18n_ServCloud_24_Manage_Piller_Light	24 管理柱位燈號	24 管理柱位灯号	24 Manage Pille Light
+i18n_ServCloud_30_Manage_Thing	30 管理物料	30 管理物料	30 Manage Thing
+i18n_ServCloud_31_Storage_Location_Setting	31 儲位擺放項目設定	31 儲位擺放項目設定	31_Storage_Location_Setting
+i18n_ServCloud_32_material_name_classification	32 原料品名分類	32 原料品名分類	32 material name classification
+i18n_ServCloud_35_Manage_Material	35 管理原料	35 管理原料	35 Manage Material
+i18n_ServCloud_36_Storage_Material	36 原料進貨	36 原料进货	36 Storage Material
+i18n_ServCloud_37_Inquire_Material	37 領料查詢	37 领料查询	37 Inquire Thing
+i18n_ServCloud_37_Inquire_Working_Material	37 領料查詢	37 领料查询	37 Inquire Thing
+i18n_ServCloud_38_Inquire_Material	38 原料查詢	38 原料查询	38 Inquire Thing
+i18n_ServCloud_39_Manage_Pickup	39 管理檢料	39 管理检料	39 Manage Pickup
+i18n_ServCloud_39_Manage_Unlock	39 管理鎖定檢料	39 管理锁定检料	39 Manage Unlock Pickup
+i18n_ServCloud_40_Manage_Document	40 管理單據	40 管理单据	40 Manage Document
+i18n_ServCloud_50_Manage_Sender	50 管理平板	50 管理平板	50 Manage Tablet
+i18n_ServCloud_60_Manage_Employee	60 管理人員	60 管理人员	60 Manage Employee
+i18n_ServCloud_65_Manage_Supplier	65 管理供應商	65 管理供应商	65 Manage Supplier
+i18n_ServCloud_70_Pickup_Dashboard	70 應領料項目	70 应领料项目	70 Receiving item
+i18n_ServCloud_Raw_Material_Number	原料編號	原料编号	Raw material number
+i18n_ServCloud_The_Purchases	進貨日	进货日	The purchases
+i18n_ServCloud_Material_Coding	物料編碼	物料编码	Material coding
+i18n_ServCloud_Hierarchical_Structure	結構層級	结构层级	Hierarchical structure
+
+#StrongLEDReportManagement
+i18n_ServCloud_Report_Management	報表管理	报表管理	Report Management
+i18n_ServCloud_10_Access_Query	10 進出查詢	10 进出查询	10 Access Query
+i18n_ServCloud_13_Comoss_Return_Query	13 退料查詢	13 退料查询	13 Return Query
+i18n_ServCloud_20_Item_Inquiry	20 物料查詢	20 物料查询	20 Item Inquiry
+i18n_ServCloud_30_Position_Inquiry	30 儲位查詢	30 储位查询	30 Position Inquiry
+i18n_ServCloud_40_Comoss_Stock_Out_Main_Edit	40 製令單主檔查詢	40 制令单主档查询	40 Production Order Inquiry
+
+#strongLEDMonitorManagement
+i18n_ServCloud_Monitor_Management	儲位檢視	储位检视	Monitor Management
+i18n_ServCloud_10_Zone	10 全庫檢視	10 全库检视	10 Zone Monitor
+i18n_ServCloud_10_Zone_Edit	10 編輯全庫檢視	10 编辑全库检视	10 Edit Zone Monitor
+
+# strongLED
+i18n_ServCloud_Quick_Quote	快速報價	快速报价	Quick Quote
+i18n_ServCloud_10_Inquiry_inquiry	10 詢價單查詢	10 询价单查询	10 Inquiry inquiry
+i18n_ServCloud_11_Inquiry_contents	11 詢價單內容	11 询价单内容	11 Inquiry contents
+i18n_ServCloud_13_Item_List	13 項目清單	13 项目清单	13 item list
+i18n_ServCloud_30_Material_Management	30 管理物料	30 管理物料	30 Material Management
+i18n_ServCloud_20_Management_Inquiry	20 管理詢價單	20 管理询价单	20 Management Inquiry
+i18n_ServCloud_21_Product_Content	21 產品內容	21 产品内容	21 product content
+i18n_ServCloud_40_Rfq_Field_Management	40 詢價單欄位管理	40 询价单栏位管理	40 RFQ field management
+i18n_ServCloud_50_Material_Management_Module	50 物料模組管理	50 物料模组管理	50 Material Management Module
+i18n_ServCloud_60_Material_Management_Module_Rules	60 物料模組規則管理	60 物料模组规则管理	60 Material Management Module Rules
+
+#strongLEDKPI
+i18n_ServCloud_StrongLED_KPI	KPI	KPI	StrongLED KPI
+10_Yield_Rate_Statistics	10 良率統計	10 良率统计	10 Yield Rate Statistics
+11_Defective_Reason_Analysis	11 不良原因分析	11 不良原因分析	11 Defective Reason Analysis
+20_Invalid_Person_Statistics	20 無效人時統計	20 无效人时统计	20 Invalid Person Statistics
+21_Invalid_Person_Analysis	21 無效人時分析	21 无效人时分析	21 Invalid Person Analysis
+30_Change_Line_Human_Time_Statistics	30 換線人時統計	30 换线人时统计	30 Change Line Human Time Statistics
+31_Change_Line_Human_Time_Analysis	31 換線人時分析	31 换线人时分析	31 Change Line Human Time Analysis
+40_Efficiency_Statistics	40 效率統計	40 效率统计	40 Efficiency Statistics
+41_Efficiency_Analysis	41 效率分析	41 效率分析	41 Efficiency Analysis
+i18n_ServCloud_Daily_Production_Statistics	50 生產日報統計	50 生产日报统计	50 Daily production statistics
+
+#StockInManagement
+i18n_ServCloud_StockInManagement	入庫管理	入库管理	StockInManagement
+i18n_ServCloud_01_Warehousing_Item_Transfer	01 入庫單品項轉入	01 入库单品相转入	01 Warehousing_Item_Transfer
+i18n_ServCloud_02_Storage_Items_Tied_To_A_Single_Product_Bar_Code_Printing_Pkgid	02 入庫單品項綁定與PKGID條碼列印	02 入库单品项绑定与PKGID条码列印	02 storage items tied to a single product bar code printing PKGID
+i18n_ServCloud_03_Warehousing_Item_Transfer_Search	03 入庫單品項轉入紀錄查詢	03 入库单品項转入记录查询	03 Warehousing_Item_Transfer_Search
+i18n_ServCloud_04_Warehousing_Record_Query	04 入庫記錄查詢	04 入库记录查询	04 Warehousing_Record_Query
+i18n_ServCloud_05_No_Storage_Create_Pkgid	05 無入庫單PKGID條碼列印	05 无入库单PKGID条码列印	05_No_Storage_Create_Pkgid
+
+#StockOutManagement
+i18n_ServCloud_StockOutManagement	出庫管理	出库管理	StockOutManagement
+i18n_ServCloud_01_Warehouse_Material_Sending_Online_Transfer	01 發料單線上轉入	01 发料单线上转入	01 Warehouse_Material_Sending_Online_Transfer
+i18n_ServCloud_02_Warehouse_Material_Sending_Search	02 發料單轉入紀錄查詢	02 发料单转入记录查询	02 Warehouse_Material_Sending_Search
+i18n_ServCloud_03_Warehouse_Material_Search_And_Case_Closed	03 發料單查詢與手動結案	03 发料单查询与手动结案	03 Warehouse_Material_Search_And_Case_Closed
+i18n_ServCloud_04_Feed_Station_Table_Transfer	04 料站表轉入	04 料站表转入	04 Feed_Station_Table_Transfer
+i18n_ServCloud_05_Feed_Station_Sending_Search	05 料站表轉入紀錄查詢	05 料站表转入记录查询	05 Feed_Station_Sending_Search
+i18n_ServCloud_06_Feed_Station_Record_Query	06 料站表紀錄查詢	06 料站表记录查询	06 Feed_Station_Record_Query
+i18n_ServCloud_07_Warehouse_Out_Record_Query	07 出庫紀錄查詢	07 出库纪录查询	07 Warehouse_Out_Record_Query
+
+#MaterialManagement
+i18n_ServCloud_MaterialManagement	物料管理	物料管理	MaterialManagement
+i18n_ServCloud_01_Material_Search_And_Transfer	01 物料查詢與轉出	01 物料查询与转出	01 Material_Search_And_Transfer
+i18n_ServCloud_02_Material_Lock_And_Unlock	02 物料鎖定與解鎖	02 物料锁定与解锁	02 Material_Lock_And_Unlock
+
+#YihChengServTrack
+i18n_ServCloud_YihChengServTrack	報工	报工	YihChengServTrack
+i18n_ServCloud_01_YihCheng_ServTrack	01 報工	01 报工	01 YihCheng_ServTrack
+
+# DWGDecoder
+i18n_ServCloud_Intelligent_Deployment	智能排配	智能排配	Intelligent Deployment
+
+# HuangLiangProductionSchedule
+i18n_ServCloud_Production_Scheduling	生產排程	生产排程	Production Scheduling
+i18n_ServCloud_01_Product_Management	01 管編生產條件設定	01 管编生产条件设定	01 Product Management
+i18n_ServCloud_02_Work_Order_Status	02 生產指令狀態查詢	02 生产指令状态查询	02 Work Order Status
+i18n_ServCloud_03_Machine_Assignment	03 生產排程機台派工	03 生产排程机台派工	03 Machine Assignment
+i18n_ServCloud_04_Pre_Scheduling	04 生產排程預排	04 生产排程预排	04 Production Scheduling
+i18n_ServCloud_05_Machine_The_Ability_To_Set	05 機台能力設定	05 机台能力设定	05 machine the ability to set
+i18n_ServCloud_06_Query_Production_Scheduling	06 生產排程預排查詢	06 生产排程预排查询	06 Query Production Scheduling
+i18n_ServCloud_07_Vacation_Days_The_Whole_Plant_Maintenance	07 全廠休假日維護	07 全厂休假日维护	07 vacation days the whole plant maintenance
+
+# HuangLiangMatCollectAndSupplement
+i18n_ServCloud_Material_Collect_And_Supplement	領補料作業	领补料作业	Material Collect And Supplement
+i18n_ServCloud_01_Material_Assignment_Record	01 領補料派工記錄	01 领补料派工记录	01 Material Assignment Record
+i18n_ServCloud_02_Material_Consumption_Status	02 材料耗用狀況查詢	02 材料耗用状况查询	02 Material Consumption Status
+
+#IIOT
+i18n_ServCloud_Tool_Setting	刀具設定	刀具设定	Tool Setting
+i18n_ServCloud_01_Maintenance_Of_Tool_Spec	01_刀具規格維護	01_刀具规格维护	01 Maintenance Of Tool Spec
+i18n_ServCloud_02_Create_Tool_Chuck	02_刀把建檔	02_刀把建档	02 Create Tool Chuck
+i18n_ServCloud_03_Create_Tool	03_刀具建檔	03_刀具建档	03 Create Tool
+i18n_ServCloud_04_Upload_Tool_List	04_備刀單上傳	04_备刀单上传	04 Upload Tool List
+
+i18n_ServCloud_Tool_List_Record	備刀單紀錄	备刀单纪录	Tool List Record
+i18n_ServCloud_01_Edit_Tool_List	01_備刀單填寫	01_备刀单填写	01 Edit Tool List
+
+i18n_ServCloud_Tool_Usage_Report	刀具報表	刀具报表	Tool Usage Report
+i18n_ServCloud_01_Tool_Usage_Record	01_刀具使用履歷	01_刀具使用履历	01 Tool Usage Record
+i18n_ServCloud_02_Tool_Usage_Move_I/O_Record	02_刀具報工紀錄	02_刀具报工纪录	02 Tool Usage Move I/O Record
+
+i18n_ServCloud_Tool_Storage_System	自動化線刀具櫃儲位系統	自动化线刀具柜储位系统	Automated line tool cabinet storage system
+i18n_ServCloud_01_Tool_PrePare_Upload	01_備刀單上架	01_备刀单上架	01 Tool PrePare Upload
+i18n_ServCloud_02_Tool_Storage_Status	02_刀具櫃儲位狀態	02_刀具柜储位状态	02 Tool cabinet storage status
+i18n_ServCloud_03_Repair_Tool_Storage_Status	03_補備刀單上架	03_补备刀单上架	03 Repair Tool PrePare Upload
+i18n_ServCloud_10_Storage_Location_Query	03_刀具櫃儲位異動查詢	03_刀具柜储位异动查询	03 Tool cabinet storage location query
+
+i18n_ServCloud_Machine_Idle_Intelligent_Analysis	機台閒置工時智慧分析	机台闲置工时智慧分析	Intelligent analysis of idle time of machine
+i18n_ServCloud_01_Shift_Idle_Reason_Statistics	01_機台各班閒置原因統計	01_机台各班闲置原因统计	01 The statistics of the idle reasons of each work shift
+
+# HuangLiangToolSetting
+i18n_ServCloud_Tool_Setting	刀具基本設定	刀具基本設定	Tool setting
+i18n_ServCloud_01_Tool_Type_Setting	01 刀具類型設定	01 刀具类型设定	01 Tool type setting
+i18n_ServCloud_02_Tool_Set_Storage_Spaces	02 刀具儲位設定	02 刀具储位设定	02 Tool set storage spaces
+i18n_ServCloud_03_Tool_Vendors_Set	03 刀具廠商設定	03 刀具厂商设定	03 tool vendors set
+i18n_ServCloud_04_Tools_Set	04 刀具設定	04 刀具设定	04 Tools set
+
+# HuangLiangToolStock
+i18n_ServCloud_Tool_Purchase_And_Inventory_Records	刀具進貨與庫存紀錄	刀具进货与库存纪录	Tool purchase and inventory records
+i18n_ServCloud_01_Tool_Purchase_Records_Check	01 刀具進貨記錄查詢	01 刀具进货记录查询	01 tool purchase records check
+i18n_ServCloud_02_Stock_Search_Tool	02 刀具庫存查詢	02 刀具库存查询	02 Stock Search Tool
+i18n_ServCloud_03_Tool_Inventory_Transaction_Record_Query	03 刀具庫存異動紀錄查詢	03 刀具库存异动纪录查询	03 tool inventory transaction record query
+
+# HuangLiangToolUse
+i18n_ServCloud_Collar_Single_Blade_Management	領刀單管理	领刀单管理	Collar single blade management
+i18n_ServCloud_01_Production_Class_Collar_Single_Blade_Management	01 量產類領刀單管理	01 量产类领刀单管理	01 production class collar single blade management
+i18n_ServCloud_02_Other_Categories_Collar_Single_Blade_Management	02 其他類領刀單管理	02 其他类领刀单管理	02 Other categories collar single blade management
+
+# HuangLiangToolHistory
+i18n_ServCloud_Tool_History	刀具履歷	刀具履历	Tool history
+i18n_ServCloud_01_Production_History_Tool	01 量產刀具履歷	01 量产刀具履历	01 production history tool
+i18n_ServCloud_02_Sample_Cutter_Resume	02 樣品刀具履歷	02 样品刀具履历	02 sample cutter resume

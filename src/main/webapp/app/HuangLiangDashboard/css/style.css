@@ -1,0 +1,77 @@
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#rotate-table {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+#rotate-table.full {
+  font-size: 3.5em;
+  font-weight: bolder;
+}
+
+#rotate-table.full .tooltip-inner {
+  font-size: 3em;
+  font-family: 微軟正黑體;
+}
+
+#rotate-table .tooltip-inner {
+  font-size: 2em;
+}
+
+#rotate-table tr:first-of-type th {
+  color: white;
+  background-color: blue;
+  padding: 0;
+  white-space: nowrap;
+}
+
+#rotate-table tr:nth-of-type(2) th {
+  color: white;
+  background-color: rgb(0, 100, 0);
+}
+
+#rotate-table th,
+#rotate-table td {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.row-online td {
+  background-color: lime;
+}
+
+.row-idle td {
+  background-color: yellow;
+}
+
+.row-alarm td {
+  background-color: red;
+  color: white;
+}
+
+.row-offline td {
+  background-color: silver;
+}
+
+#marquee {
+  display: inline-block;
+  position: relative;
+  font-size: 2em;
+}
+
+.full #marquee {
+  margin: -22.5px 0;
+}
+
+body {
+  overflow-x: hidden;
+}

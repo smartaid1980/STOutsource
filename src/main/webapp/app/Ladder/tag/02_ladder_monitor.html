@@ -1,0 +1,140 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      {i18n_ServCloud_Ladder}
+      <span>
+        > {i18n_ServCloud_Ladder_Monitor}
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<!-- widget grid -->
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-sm-12 col-md-3 col-lg-3">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <!-- widget options:
+        usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+        data-widget-colorbutton="false"
+        data-widget-editbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-custombutton="false"
+        data-widget-collapsed="true"
+        data-widget-sortable="false"
+
+        -->
+        <header>
+          <span class="widget-icon"> <i class="fa fa-lg fa-list-ul"></i> </span>
+          <h2 id="machine-title"></h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body">
+            <div class="well">
+              <div class="input-group">
+                <input
+                  class="form-control address-input"
+                  type="text"
+                  placeholder="{i18n_ServCloud_Address}"
+                />
+                <div class="input-group-btn">
+                  <button
+                    class="btn btn-default btn-primary address-search"
+                    type="button"
+                  >
+                    <i class="fa fa-search"></i> {i18n_ServCloud_Search}
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="dd" id="level-tree"></div>
+          </div>
+          <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+      </div>
+      <!-- end widget -->
+    </article>
+
+    <!-- NEW WIDGET START -->
+    <article class="col-sm-12 col-md-9 col-lg-9">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-1"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <!-- widget options:
+        usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+        data-widget-colorbutton="false"
+        data-widget-editbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-custombutton="false"
+        data-widget-collapsed="true"
+        data-widget-sortable="false"
+
+        -->
+        <header>
+          <span class="widget-icon"> <i class="fa fa-lg fa-th"></i> </span>
+          <h2 id="ladder-title"></h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body">
+            <div id="ladder-graph"></div>
+          </div>
+          <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+      </div>
+      <!-- end widget -->
+    </article>
+  </div>
+  <!-- end row -->
+</section>
+<!-- end widget grid -->
+
+<link rel="stylesheet" type="text/css" href="./app/Ladder/css/ladder.css" />
+
+<script>
+  window.importPageScript()
+</script>

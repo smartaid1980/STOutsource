@@ -1,0 +1,132 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Search}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="selectForm" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <label class="label st-required"
+                        >{i18n_ServCloud_Start_Date}</label
+                      >
+                      <label class="input"
+                        ><i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          id="startDate"
+                          name="startDate"
+                          data-rule-required="true"
+                          data-rule-date="true"
+                          class="form-control"
+                        />
+                      </label>
+                    </div>
+                    <div class="col col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <label class="label st-required"
+                        >{i18n_ServCloud_End_Date}</label
+                      >
+                      <label class="input"
+                        ><i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          id="endDate"
+                          name="endDate"
+                          data-rule-required="true"
+                          data-rule-date="true"
+                          class="form-control"
+                        />
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <label class="label">{i18n_ServCloud_machine}</label>
+                      <label class="input">
+                        <select
+                          class="select2 full-width"
+                          id="machineId"
+                        ></select>
+                      </label>
+                    </div>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="selectBtn" class="btn btn-primary">
+                  {i18n_ServCloud_Search}
+                </button>
+                <button id="showdemo" class="btn btn-success">
+                  {i18n_ServCloud_Show_Demo_Data}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken frame"
+        id="detail-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+          <h2>
+            {i18n_ServCloud_Historical_Location_Current_Statistics}-{i18n_ServCloud_Line_Chart}
+          </h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <p
+              class="alert alert-info font-md"
+              style="margin: 0px; border-bottom: 1px solid #ccc;"
+            >
+              {i18n_ServCloud_Historical_Location_Current_Statistics_Info}
+            </p>
+            <div class="chart" id="houeChart" style="height: 300px;"></div>
+            <div class="chart" id="minChart" style="height: 300px;"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  .chart {
+    margin: 15px 10px 15px 7px;
+  }
+
+  #minChart {
+    margin-top: 25px;
+  }
+
+  .dygraph-legend {
+    top: 7px !important;
+    right: 60px !important;
+    left: unset !important;
+    width: 360px !important;
+    text-align: right !important;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

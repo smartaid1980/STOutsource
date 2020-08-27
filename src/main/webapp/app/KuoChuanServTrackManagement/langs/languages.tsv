@@ -1,0 +1,13 @@
+	zh_tw	zh	en
+i18n_ServCloud_20_Process_Maintain	20_製程設定	20_制程设定	20 Process maintain
+i18n_ServCloud_21_Product_Maintain	21_品項工序維護	21_品项工序维护	21 Product maintain
+i18n_ServCloud_22_Device_Maintain	22_設備條碼列印	22_设备条码列印	22 Device maintain
+i18n_ServCloud_23_Emp_Maintain	23_人員條碼列印	23_人员条码列印	23 Emp maintain
+i18n_ServCloud_31_Work	31_派工單填寫	31_派工单填写	31 Work
+i18n_ServCloud_32_Invalid_Device_Qrcode_Print	32_無效工作站條碼列印	32_无效工作站条码列印	32 Invalid device qrcode print
+i18n_ServCloud_33_Work_Op_Qrcode_Print	33_派工單工序條碼列印	33_派工单工序条码列印	33 Work op qrcode print
+i18n_ServCloud_40_Time_Clock_Data_Import	40_打卡機資料上傳	40_打卡机资料上传	40 Time clock data import
+i18n_ServCloud_Kuo_Chuan_ServTrack_Management	國全報工管理	国全报工管理	Kuo Chuan ServTrack management
+
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed

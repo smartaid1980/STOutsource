@@ -1,0 +1,1 @@
+<command name="cnc_ParamValue" cycletype="count" cyclevalue="1" timeout="0"><params><param name="G_PARA" count="1" frequency="0" isRepeat="true"><inputs><input name="P_NUMBER" type="startend">0</input><input name="P_COUNT">1</input></inputs><filters><filter name="AXIS">T</filter></filters><process /></param></params></command>

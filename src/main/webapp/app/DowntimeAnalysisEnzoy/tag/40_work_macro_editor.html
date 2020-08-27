@@ -1,0 +1,294 @@
+<div class="row">
+  <!-- NEW WIDGET START -->
+  <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <!-- DATATABLE -->
+    <div
+      id="table-widget1"
+      class="jarviswidget jarviswidget-color-darken"
+      data-widget-editbutton="false"
+      data-widget-deletebutton="false"
+      data-widget-colorbutton="false"
+      data-widget-fullscreenbutton="false"
+    >
+      <header>
+        <ul class="nav nav-tabs pull-right">
+          <li class="active">
+            <a data-toggle="tab" href="#edit">
+              <i class="fa fa-edit"></i>
+              <span>{i18n_ServCloud_Macro_Insert}</span>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#query">
+              <i class="fa fa-search"></i>
+              <span class="hidden-mobile hidden-tablet"
+                >{i18n_ServCloud_Macro_Query}</span
+              >
+            </a>
+          </li>
+        </ul>
+      </header>
+      <!-- widget div-->
+      <div>
+        <!-- widget edit box -->
+        <div class="jarviswidget-editbox"></div>
+        <!-- end widget edit box -->
+        <!-- widget content -->
+        <div class="widget-body no-padding">
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="edit">
+              <form action="" class="smart-form row">
+                <fieldset>
+                  <section class="col col-6 col-sm-12">
+                    <label class="label font-lg"
+                      >{i18n_ServCloud_Plant_Area}</label
+                    >
+                    <label class="select">
+                      <select id="plant-select" class="input-lg"></select>
+                      <i></i>
+                    </label>
+                  </section>
+                </fieldset>
+              </form>
+              <hr />
+              <div id="machine-btns"></div>
+            </div>
+            <div class="tab-pane fade" id="query">
+              <div class="widget-body-toolbar">
+                <form
+                  id="form_query"
+                  class="smart-form"
+                  novalidate="novalidate"
+                >
+                  <div class="row">
+                    <section class="col col-4">
+                      <label class="label">{i18n_ServCloud_Start_Date}</label>
+                      <label class="input">
+                        <input
+                          class="datepicker"
+                          type="text"
+                          id="start-date"
+                          data-dateformat="yy/mm/dd"
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-4">
+                      <label class="label">{i18n_ServCloud_End_Date}</label>
+                      <label class="input">
+                        <input
+                          class="datepicker"
+                          type="text"
+                          id="end-date"
+                          data-dateformat="yy/mm/dd"
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-4">
+                      <label class="label">{i18n_ServCloud_Machine}</label>
+                      <label class="select">
+                        <select id="device-query" multiple></select>
+                      </label>
+                    </section>
+                  </div>
+                  <footer>
+                    <button id="submit_query" class="btn btn-primary">
+                      {i18n_ServCloud_Submit}
+                    </button>
+                  </footer>
+                </form>
+              </div>
+              <table
+                id="table_query"
+                class="table table-striped table-bordered table-hover"
+                stk-entity-pk="pks"
+                width="100%"
+              >
+                <thead>
+                  <tr>
+                    <th class="hasinput" style="width: 20%;">
+                      <!-- <input class="form-control" type="text"> -->
+                      <select class="form-control"></select>
+                    </th>
+                    <th class="hasinput" style="width: 20%;">
+                      <!-- <input type="text" class="form-control" /> -->
+                      <select class="form-control"></select>
+                    </th>
+                    <th class="hasinput" style="width: 10%;">
+                      <select class="form-control"></select>
+                    </th>
+                    <th class="hasinput" style="width: 30%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 20%;">
+                      <select class="form-control"></select>
+                      <!-- <input class="form-control" type="text"> -->
+                    </th>
+                  </tr>
+                  <tr>
+                    <th data-class="expand">{i18n_ServCloud_Machine}</th>
+                    <th>{i18n_ServCloud_Value}</th>
+                    <th>{i18n_ServCloud_Idle_Code}</th>
+                    <th>{i18n_ServCloud_Idle_Code_Name}</th>
+                    <th>{i18n_ServCloud_Creator}</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+          <!-- end .tab-content -->
+        </div>
+        <!-- end .widget-body -->
+        <!-- widget content END -->
+      </div>
+      <!-- widget div END -->
+    </div>
+    <!-- DATATABLE END -->
+  </article>
+  <!-- WIDGET END -->
+  <div
+    class="modal fade"
+    id="edit-macro-record-modal"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true"
+          >
+            ×
+          </button>
+          <h4 class="modal-title">{i18n_ServCloud_Idle_Records_Compilation}</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <form class="smart-form" novalidate="novalidate">
+              <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <label class="label">{i18n_ServCloud_Machine}</label>
+                <label class="input">
+                  <select
+                    name="machine_id"
+                    class="form-control"
+                    stk-pk
+                  ></select>
+                </label>
+              </section>
+              <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <label class="label">{i18n_ServCloud_Value}</label>
+                <label class="input">
+                  <input
+                    name="macro_create_time"
+                    type="text"
+                    class="form-control"
+                    stk-pk
+                  />
+                </label>
+              </section>
+              <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <label class="label">{i18n_ServCloud_Idle_Code}</label>
+                <label class="input">
+                  <select name="macro" class="form-control"></select>
+                </label>
+              </section>
+              <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 hide">
+                <label class="label">{i18n_ServCloud_Idle_Code_Name}</label>
+                <label class="input">
+                  <input
+                    disabled
+                    type="text"
+                    name="macro_code_name"
+                    class="form-control"
+                  />
+                </label>
+              </section>
+              <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <label class="label">{i18n_ServCloud_Creator}</label>
+                <label class="input">
+                  <select
+                    disabled
+                    name="create_by"
+                    class="form-control"
+                  ></select>
+                </label>
+              </section>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">
+            {i18n_ServCloud_Store}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ROW END -->
+
+<div id="macro-dialog">
+  <div id="macro-btns"></div>
+</div>
+<style>
+  #macro-dialog.progress {
+    cursor: progress;
+  }
+
+  .plant-header {
+    font-size: 3em;
+  }
+
+  .machine-unit {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    width: 20vw;
+  }
+
+  #machine-btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+  }
+
+  .machine-btn {
+    font-size: 3em !important;
+    padding: 0 5px;
+    color: white !important;
+    background-color: #2361ff;
+  }
+
+  .ui-dialog-title .machine-btn {
+    margin: 10px;
+  }
+
+  .machine-macro {
+    font-size: 1.5em;
+    word-wrap: break-word;
+  }
+
+  #macro-btns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .macro-btn {
+    text-align: center;
+    font-size: 2.5em !important;
+    width: 30%;
+    margin: 20px;
+    white-space: inherit;
+  }
+
+  .macro-btn.selected {
+    color: black;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,11 @@
+{
+  "app": {
+    "id": "IIOTToolPrepareRecord",
+    "name": "備刀單記錄",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [{ "id": "01_tool_prepare_record", "name": "01_備刀單填寫" }],
+  "tags": ["20140918000002"]
+}

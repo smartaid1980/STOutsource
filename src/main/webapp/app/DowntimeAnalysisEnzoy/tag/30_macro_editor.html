@@ -1,0 +1,257 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      {i18n_ServCloud_DowntimeAnalysisEnzoy}
+      <span>
+        > {i18n_ServCloud_30_IdleMacroEditor}
+      </span>
+    </h1>
+  </div>
+</div>
+<section>
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- DATATABLE -->
+      <div
+        id="table-widget1"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>{i18n_ServCloud_IdleMacroEditor}</h2>
+          <ul class="nav nav-tabs pull-right">
+            <li class="active">
+              <a data-toggle="tab" href="#edit">
+                <i class="fa fa-edit"></i>
+                <span>{i18n_ServCloud_IdleMacroEditor}</span>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#query">
+                <i class="fa fa-search"></i>
+                <span class="hidden-mobile hidden-tablet"
+                  >{i18n_ServCloud_Work_Macro_Query}</span
+                >
+              </a>
+            </li>
+          </ul>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox"></div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="edit">
+                <div id="machine-btns" class="padding-10"></div>
+              </div>
+
+              <div class="tab-pane fade" id="query">
+                <div class="widget-body-toolbar">
+                  <form
+                    id="form_query"
+                    class="smart-form"
+                    novalidate="novalidate"
+                  >
+                    <div class="row">
+                      <section class="col col-4">
+                        <label class="label">{i18n_ServCloud_Start_Date}</label>
+                        <label class="input">
+                          <input
+                            class="datepicker"
+                            type="text"
+                            id="start-date"
+                            data-dateformat="yy/mm/dd"
+                          />
+                        </label>
+                      </section>
+                      <section class="col col-4">
+                        <label class="label">{i18n_ServCloud_End_Date}</label>
+                        <label class="input">
+                          <input
+                            class="datepicker"
+                            type="text"
+                            id="end-date"
+                            data-dateformat="yy/mm/dd"
+                          />
+                        </label>
+                      </section>
+                      <section class="col col-4">
+                        <label class="label">{i18n_ServCloud_Machine}</label>
+                        <label class="select">
+                          <select
+                            id="device-query"
+                            multiple="multiple"
+                          ></select>
+                          <i></i>
+                        </label>
+                      </section>
+                    </div>
+                    <footer>
+                      <button id="submit_query" class="btn btn-primary">
+                        {i18n_ServCloud_Submit}
+                      </button>
+                    </footer>
+                  </form>
+                </div>
+                <table
+                  id="table_query"
+                  class="table table-striped table-bordered table-hover"
+                  width="100%"
+                >
+                  <thead>
+                    <tr>
+                      <th class="hasinput" style="width: 12%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 8%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 10%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 10%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 8%;">
+                        <input type="text" class="form-control" />
+                      </th>
+                      <th class="hasinput" style="width: 12%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 8%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 8%;">
+                        <select class="form-control"></select>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th data-class="expand">機台(Machine)</th>
+                      <th>日期(Date)</th>
+                      <th>開始時間(Start Time)</th>
+                      <th>結束時間(End Time)</th>
+                      <th>持續時間(Duration)</th>
+                      <th>Macro</th>
+                      <th>機台狀態(Machine Status)</th>
+                      <th>修改者(Updated By)</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+            <!-- end .tab-content -->
+          </div>
+          <!-- end .widget-body -->
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+<div id="macro-dialog">
+  <div id="macro-btns">
+    <div class="grouper">
+      <button id="M1" type="button" class="btn btn-primary macro-btn">
+        (M1) 更換刀具<br />Change Tool
+      </button>
+      <button id="M2" type="button" class="btn btn-primary macro-btn">
+        (M2) 設定時間<br />Setting Time
+      </button>
+      <button id="M3" type="button" class="btn btn-primary macro-btn">
+        (M3) 工件量測<br />Measuring
+      </button>
+    </div>
+    <div class="grouper">
+      <button id="M4" type="button" class="btn btn-primary macro-btn">
+        (M4) 故障待修<br />Failure to be Repaired
+      </button>
+      <button id="M5" type="button" class="btn btn-primary macro-btn">
+        (M5) 待料<br />Wait for Material
+      </button>
+      <button id="M6" type="button" class="btn btn-primary macro-btn">
+        (M6) 待刀具<br />Wait for Tool
+      </button>
+    </div>
+    <div class="grouper">
+      <button id="M7" type="button" class="btn btn-primary macro-btn">
+        (M7) 待人設定<br />Wait for Setting
+      </button>
+      <button id="M8" type="button" class="btn btn-primary macro-btn">
+        (M8) 待單<br />Wait for Order
+      </button>
+      <button id="M9" type="button" class="btn btn-primary macro-btn">
+        (M9)機台清理<br />Cleaning
+      </button>
+    </div>
+    <div class="grouper">
+      <button id="M10" type="button" class="btn btn-primary macro-btn">
+        (M10) 治具加工<br />Fixture Processing
+      </button>
+      <button id="M999" type="button" class="btn btn-primary macro-btn">
+        (M999) 待人顧車<br />Wait for taking care of car
+      </button>
+    </div>
+  </div>
+</div>
+<style>
+  .plant-header {
+    font-size: 3em;
+  }
+
+  .machine-unit {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    width: 280px;
+  }
+
+  .machine-btn {
+    font-size: 3em !important;
+    padding: 0 5px;
+    color: white !important;
+  }
+
+  .ui-dialog-title .machine-btn {
+    margin: 10px;
+  }
+
+  .machine-macro {
+    font-size: 1.5em;
+    word-wrap: break-word;
+  }
+
+  .macro-btn {
+    text-align: center;
+    font-size: 2.5em !important;
+    width: 420px;
+    margin: 20px;
+  }
+
+  .macro-btn.selected {
+    color: black;
+  }
+
+  .macro-btn.disabled {
+    background-color: white;
+    color: #bebebe;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

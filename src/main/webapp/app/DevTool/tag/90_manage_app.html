@@ -1,0 +1,103 @@
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- TABLE WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-cubes"></i> </span>
+          <h2>ServCloud APP</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="stk-app-table"
+              stk-entity-pk="app_id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 40%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">程式編號</th>
+                  <th>程式名稱</th>
+                  <th>描述</th>
+                  <th>類型</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="app_id"
+                      class="form-control"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input type="text" name="app_name" class="form-control" />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="description"
+                      class="form-control"
+                    />
+                  </td>
+                  <td>
+                    <select
+                      name="tag_id"
+                      class="form-control"
+                      stk-api="api/stdcrud?tableModel=com.servtech.servcloud.module.model.TagForApp"
+                      stk-option-value="tag_id"
+                      stk-option-text="tag_name"
+                    ></select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- TABLE WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+
+<script>
+  window.importPageScript()
+</script>

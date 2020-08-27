@@ -1,0 +1,323 @@
+	zh_tw	zh	en
+i18n_ServCloud_Inquiry_inquiry	詢價單查詢	询价单查询	Inquiry inquiry
+i18n_ServCloud_No_quote_inquiry_inquiry	未報價詢價單查詢	未报价询价单查询	No quote inquiry inquiry
+i18n_ServCloud_Back_to_list	返回詢價單查詢	返回询价单查询	Back to RFQ list
+i18n_ServCloud_Inquiry_Details	詢價單詳細信息	询价单详细信息	Inquiry Details
+i18n_ServCloud_Standard_Products_Match_Result	標品匹配結果	标品匹配结果	Standard products match result
+i18n_ServCloud_Inquiry_Contents	詢價單內容	询价单内容	Inquiry contents
+i18n_ServCloud_Cost_of_Material	物料成本	物料成本	cost of material
+i18n_ServCloud_Factory_profit	出廠利潤	出厂利润	Factory profit
+i18n_ServCloud_Market_profits	市場利潤	市场利润	Market profits
+i18n_ServCloud_Quoted_price	報價	报价	Quoted price
+i18n_ServCloud_Orders_species	訂單種類	订单种类	Orders species
+i18n_ServCloud_Expected_number_of_lamps	預計燈具數量	预计灯具数量	Expected number of lamps
+i18n_ServCloud_Expected_Order_Time	預計下單時間	预计下单时间	Expected Order Time
+i18n_ServCloud_Expected_delivery_date	期望交貨日期	期望交货日期	Expected delivery date
+i18n_ServCloud_Item_Description	項目內容說明	项目内容说明	Item Description
+i18n_ServCloud_Lighting_Series	燈具系列	灯具系列	Lighting Series
+i18n_ServCloud_Lighting_Model	燈具型號	灯具型号	Lighting Model
+i18n_ServCloud_Lighting_Type	燈具類型	灯具类型	Lighting type
+i18n_ServCloud_Led_Lamp_Few_Beads	LED燈珠數	LED灯珠数	LED lamp few beads
+i18n_ServCloud_Lighting_Length	燈具長度(mm)	灯具长度(mm)	Lighting length(mm)
+i18n_ServCloud_Light_Color_Requirements	光顏色要求	光颜色要求	Light color requirements
+i18n_ServCloud_Led_Lamp_Color_Temperature	LED燈珠色溫	LED灯珠色温	LED lamp color temperature
+i18n_ServCloud_Composition_Way	組成方式	组成方式	Composition way
+i18n_ServCloud_Composition_Coefficient	組成係數	组成系数	Composition coefficient
+i18n_ServCloud_Control_Method	控制方式	控制方式	control method
+i18n_ServCloud_Segmented_Way	分段方式(P)	分段方式(P)	Segmented way(P)
+i18n_ServCloud_Pixel_Unit_Requirements	像素點要求單位	像素点要求单位	Pixel unit requirements
+i18n_ServCloud_Operating_Voltage	工作電壓(V)	工作电压(V)	Operating Voltage(V)
+i18n_ServCloud_Beam_Angle	發光角度°	发光角度°	Beam angle°
+i18n_ServCloud_Lighting_Power	燈具功率(W)	灯具功率(W)	Lighting power(W)
+i18n_ServCloud_Light_Colors	燈具顏色	灯具颜色	Light colors
+i18n_ServCloud_Led_Light_Source_Brand	LED光源品牌	LED光源品牌	LED light source brand
+i18n_ServCloud_Chip_Specification	芯片規格	芯片规格	Chip Specification
+i18n_ServCloud_Vice_Sorting_Chip	副選芯片	副选芯片	Vice sorting chip
+i18n_ServCloud_Vice_Sorting_Chip_Specifications	副選芯片規格	副选芯片规格	Vice sorting chip specifications
+i18n_ServCloud_The_Length_Of_The_Power_Line_Outlet	電源線出線長度(mm)	电源线出线长度(mm)	The length of the power line outlet(mm)
+i18n_ServCloud_Line_Length_Of_The_Signal_Line	信號線出線長度(mm)	信号线出线长度(mm)	Line length of the signal line(mm)
+i18n_ServCloud_Power_Cord_Connector_With_A_Waterproof	電源線是否帶防水接頭	电源线是否带防水接头	Power cord connector with a waterproof
+i18n_ServCloud_Signal_Wire_Connector_With_A_Waterproof	信號線是否帶防水接頭	信号线是否带防水接头	Signal wire connector with a waterproof
+i18n_ServCloud_Lighting_The_Way_Series	燈具串接方式	灯具串接方式	Lighting the way series
+i18n_ServCloud_Cable_Color	纜線顏色	缆线颜色	Cable Color
+i18n_ServCloud_Lighting_Outlet_Location	燈具出線位置	灯具出线位置	Lighting outlet location
+i18n_ServCloud_Degree_Of_Protection_(Ip)	防護等級(IP)	防护等级(IP)	Degree of protection (IP)
+i18n_ServCloud_Select_The_Bracket	支架選擇	支架选择	Select the bracket
+i18n_ServCloud_Rotary_Angle	旋轉式角度	旋转式角度	Rotary angle
+i18n_ServCloud_Glass_Color	玻璃外觀顏色	玻璃外观颜色	Glass Color
+i18n_ServCloud_Housing	外罩	外罩	Housing
+i18n_ServCloud_Universal_label	通用標籤	通用标签	Universal label
+i18n_ServCloud_Model	Model(編號)	Model(编号)	Model (number)
+i18n_ServCloud_Voltage	Voltage(電壓)	Voltage(电压)	Voltage (voltage)
+i18n_ServCloud_Power	Power(功率)	Power(功率)	Power (power)
+i18n_ServCloud_IP	IP(防護等級)	IP(防护等级)	IP (protection class)
+i18n_ServCloud_Color	Color(色溫)	Color(色温)	Color (color temperature)
+i18n_ServCloud_Angle	Angle(角度)	Angle(角度)	Angle (angle)
+i18n_ServCloud_Shipping_bracket_is_installed	支架是否安裝出貨	支架是否安装出货	Shipping bracket is installed
+i18n_ServCloud_Whether_the_need_for_seal_like_sample	封樣樣品	封样样品	Whether the need for seal-like sample
+i18n_ServCloud_The_need_for_installation_instructions	安裝說明書	安装说明书	The need for installation instructions
+i18n_ServCloud_The_need_for_product_specifications	產品說明書	产品说明书	The need for product specifications
+i18n_ServCloud_The_packaging_is_neutral	包裝是否中性	包装是否中性	The packaging is neutral
+i18n_ServCloud_Whether_lamps_neutral	燈具是否中性	灯具是否中性	Whether lamps neutral
+i18n_ServCloud_Do_you_want_to_fall_protection_device	防墜落裝置	防坠落装置	Do you want to fall protection device
+i18n_ServCloud_Do_you_want_to_plug_foreign_specifications	國外規格插頭	国外规格插头	Do you want to plug foreign specifications
+i18n_ServCloud_Do_you_want_to_over_EMC	是否要過EMC	是否要过EMC	Do you want to over-EMC
+i18n_ServCloud_Other_requirements_Content	其他要求內容	其他要求内容	Other requirements Content
+i18n_ServCloud_Records_related_inquiry	相關詢價紀錄	相关询价纪录	Records related inquiry
+i18n_ServCloud_RFQ_Number	詢價單編號	询价单编号	RFQ Number
+i18n_ServCloud_product	產品	产品	product
+i18n_ServCloud_Numbering	編號	编号	Numbering
+i18n_ServCloud_clients_name	客戶名稱	客户名称	clients name
+i18n_ServCloud_Date_of_filing	填表日期	填表日期	Date of filing
+i18n_ServCloud_Cost_Analysis_Archives	成本分析檔案	成本分析档案	Cost Analysis Archives
+i18n_ServCloud_No_quotation_inquiry_list	未報價詢價單列表	未报价询价单列表	No quotation inquiry list
+i18n_ServCloud_Has_a_similar_inquiry	已有類似詢價(三個月內)	已有类似询价(三个月内)	Has a similar inquiry (within three months)
+i18n_ServCloud_details	詳細信息	详细信息	details
+i18n_ServCloud_Fill_in_a_form	填表人	填表人	Fill in a form
+i18n_ServCloud_Match_Condition	比對條件	比对条件	Match condition
+i18n_ServCloud_Compare_match_field	比對匹配條件	比对匹配条件	Either match conditions
+i18n_ServCloud_Query_Conditions	查詢條件	查询条件	Query conditions
+i18n_ServCloud_Category_Query	類別查詢	类别查询	Category query
+i18n_ServCloud_Integrated_Query	綜合查詢	综合查询	Integrated Query
+i18n_ServCloud_Demand_Order_Number	需求單號	需求单号	Demand order number
+i18n_ServCloud_All_Responsibility_Demand_Orders	所有責任處理需求單	所有责任处理需求单	All responsibility to process demand orders
+i18n_ServCloud_All_Open_Demand_Orders	所有未結案需求單	所有未结案需求单	All open demand orders
+i18n_ServCloud_Urgent_Problem_Pending_Demand_List	緊急問題待處理需求單	紧急问题待处理需求单	Urgent problem pending demand list
+i18n_ServCloud_Problem_Pending_Demand_List	問題待處理需求單	问题待处理需求单	Problem pending demand list
+i18n_ServCloud_Overdue_Demand_Order	已逾期需求單	已逾期需求单	Overdue demand order
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start date
+i18n_ServCloud_End_Date	結束日期	结束日期	End date
+i18n_ServCloud_Pre_Delivery_Date	預交日	预交日	Pre-delivery date
+i18n_ServCloud_Document_Type	單據類型	单据类型	Document Type
+i18n_ServCloud_Responsible_Manufacturer	負責廠商	负责厂商	Responsible manufacturer
+i18n_ServCloud_Document_Status	單據狀態	单据状态	Document status
+i18n_ServCloud_Unfinished	未結案	未结案	Unfinished
+i18n_ServCloud_Closed_Case	已結案	已结案	Closed case
+i18n_ServCloud_Query	查詢	查询	Query
+i18n_ServCloud_Query_result	查詢結果	查询结果	Query result
+i18n_ServCloud_Serial_Number	序號	序号	Serial number
+i18n_ServCloud_Item_Number	品號	品号	Item number
+i18n_ServCloud_Item_Name	品名	品名	Item name
+i18n_ServCloud_Original_Advance_Date	原預交日	原预交日	Original advance date
+i18n_ServCloud_Closing_Time	結案時間	结案时间	Closing time
+i18n_ServCloud_Close_Case	結案	结案	Close case
+i18n_ServCloud_Create_Demand_List	新增需求單	新增需求单	Create demand list
+i18n_ServCloud_Create_rfq	新增詢價單	新增询价单	Create request for quotation
+i18n_ServCloud_Inquiry_Order	詢價單	询价单	Inquiry Order
+i18n_ServCloud_Purchase_Order	採購單	采购单	Purchase Order
+i18n_ServCloud_Create_Processing_Problem	新增加工問題	新增加工问题	Create processing problem
+i18n_ServCloud_Create_Problem	新增問題	新增问题	Create problem
+i18n_ServCloud_Question_Level	問題等級	问题等级	Question level
+i18n_ServCloud_Question_Status	問題狀態	问题状态	Question Status
+i18n_ServCloud_Urgent	緊急	紧急	Urgent
+i18n_ServCloud_General	一般	一般	General
+i18n_ServCloud_Mark_As_Confidential	標註為機密問題	标注为机密问题	Mark as confidential
+i18n_ServCloud_Question_Title	問題標題	问题标题	Question title
+i18n_ServCloud_Question_Description	問題說明	问题说明	Question description
+i18n_ServCloud_Upload_File	上傳檔案	上传档案	Upload file
+i18n_ServCloud_General_File	一般檔案	一般档案	General file
+i18n_ServCloud_Quotation_File	報價檔案	报价档案	Quotation file
+i18n_ServCloud_Drag_File_To_Here	拖曳檔案至此	拖曳档案至此	Drag file to here
+i18n_ServCloud_None	無	无	None
+i18n_ServCloud_This_Demand_Number_Already_Exists	此需求單號已存在	此需求单号已存在	This demand number already exists
+i18n_ServCloud_Back_To_Demand_List_Query	回到需求單查詢	回到需求单查询	Back to demand list query
+i18n_ServCloud_Demand_Order_Information	需求單資訊	需求单资讯	Demand order information
+i18n_ServCloud_Delivery_Confirmation_Date	交期確認日	交期确认日	Delivery confirmation date
+i18n_ServCloud_Create_By	建立人	建立人	Create by
+i18n_ServCloud_Create_Time	建立時間	建立时间	Create time
+i18n_ServCloud_Modify_By	最後修改人	最后修改人	Modify by
+i18n_ServCloud_Modify_Time	最後修改時間	最后修改时间	Modify time
+i18n_ServCloud_Delivery_Record	交期修改紀錄	交期修改纪录	Delivery record
+i18n_ServCloud_Confirm_Delivery	確認交期	确认交期	Confirm delivery
+i18n_ServCloud_Modify_Delivery	修改交期	修改交期	Modify delivery
+i18n_ServCloud_Modify_Pre_Delivery_Date_To	修改預交日為	修改预交日为	Modify the pre-delivery date to
+i18n_ServCloud_Cancel	取消	取消	Cancel
+i18n_ServCloud_Confirm	確認	确认	Confirm
+i18n_ServCloud_Transfer_Time	異動時間	转移时间	Transfer time
+i18n_ServCloud_Before_Modify_Pre_Delivery_Date	異動前預交日	异动前预交日	Before Modify Pre-delivery date
+i18n_ServCloud_After_Modify_Pre_Delivery_Date	異動後預交日	异动后预交日	After Modify Pre-delivery date
+i18n_ServCloud_Change_By	異動人	异动人	Change by
+i18n_ServCloud_Confirm_Delivery_Time	確認交期時間	确认交期时间	Confirm delivery time
+i18n_ServCloud_Confirm_Delivery_By	確認交期人	确认交期人	Confirm delivery by
+i18n_ServCloud_Material_Information	料件資訊	料件资讯	Material information
+i18n_ServCloud_Specification	規格	规格	Specification
+i18n_ServCloud_Purchase_Quantity	採購數量	采购数量	Purchase quantity
+i18n_ServCloud_Unit	單位	单位	Unit
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_Yes	是	是	Yes
+i18n_ServCloud_No	否	否	No
+i18n_ServCloud_Item_Number	物料編號	物料编号	Item number
+i18n_ServCloud_Material_Types	物料類型	物料类型	Material Types
+i18n_ServCloud_The_Standard_Amount	標準用量	标准用量	The standard amount
+i18n_ServCloud_Remark	備註	备注	Remark
+i18n_ServCloud_Crafts	工藝	工艺	Crafts
+i18n_ServCloud_Tax_Price	含稅單價	含税单价	Tax price
+i18n_ServCloud_Subtotal	小計	小计	Subtotal
+i18n_ServCloud_Send_Out	送出	送出	Send Out
+i18n_ServCloud_Quote_Confirmation	報價確認	报价确认	Quote confirmation
+i18n_ServCloud_Bom_To_Be_Demolished	待拆BOM	待拆BOM	BOM to be demolished
+i18n_ServCloud_Be_Monovalent_Filler	待填料價	待填料价	Be monovalent filler
+i18n_ServCloud_Factory_Profit_To_Be_Filled	待填出廠利潤	待填出厂利润	Factory profit to be filled
+i18n_ServCloud_Market_Profits_To_Be_Filled	待填市場利潤	待填市场利润	Market profits to be filled
+i18n_ServCloud_To_Be_Closed	待結案	待结案	To be closed
+i18n_ServCloud_Already_Filled_Materials_Priced_In_The_Last_Three_Months	已填入的物料單價為三個月內最近的一筆	已填入的物料单价为三个月内最近的一笔	Already filled materials priced in the last three months
+i18n_ServCloud_Overall_Property	整體屬性	整体属性	Overall property
+i18n_ServCloud_Wire	線材	线材	Wire
+i18n_ServCloud_Lamp_Beads	燈珠	灯珠	Lamp beads
+i18n_ServCloud_Structure	結構件	结构件	Structure
+i18n_ServCloud_New	新增	新增	New
+i18n_ServCloud_New_Material	新增物料	新增物料	New Material
+i18n_ServCloud_Existing_Materials	現有物料	现有物料	Existing materials
+i18n_ServCloud_Please_Select_Products_Labeled_Reloading_Market_Profits	請先選定標品再填市場利潤	请先选定标品再填市场利润	Please select products labeled reloading market profits
+i18n_ServCloud_Add_Existing_Materials	新增現有物料	新增现有物料	Add existing materials
+i18n_ServCloud_The_Number_Of_Unfilled_Row	行未填數量	行未填数量	The number of unfilled row
+i18n_ServCloud_Selected_Standard_Products	選定標品	选定标品	Selected standard products
+i18n_ServCloud_You_Sure_You_Want_It_Closed	確定要結案嗎	确定要结案吗	You sure you want it closed
+i18n_ServCloud_Successfully_Concluded	成功結案	成功结案	Successfully concluded
+i18n_ServCloud_Materials_Management	物料管理	物料管理	Materials Management
+i18n_ServCloud_Expanded_Materials	已展開物料	已展开物料	Expanded materials
+i18n_ServCloud_Returns_Management_Inquiry	返回管理詢價單	返回管理询价单	Returns management Inquiry
+i18n_ServCloud_Inquiry_List	詢價單列表	询价单列表	Inquiry List
+i18n_ServCloud_Closed	結案	结案	Closed
+i18n_ServCloud_Coefficient	係數	系数	coefficient
+i18n_ServCloud_Select_A_Single_Number	選擇單號	选择单号	Select a single number
+i18n_ServCloud_The_Standard_Amount_Not_Filled	標準用量未填寫	标准用量未填写	The standard amount not filled
+i18n_ServCloud_Tax_Price_Not_Filled	含稅單價未填寫	含税单价未填写	Tax price not filled
+i18n_ServCloud_Please_Fill_In_Numbers	請填數字	请填数字	Please fill in numbers
+i18n_ServCloud_Quote_Record	報價紀錄	报价纪录	Quote record
+i18n_ServCloud_Ask_For_A_Discount_Record	要求折扣紀錄	要求折扣纪录	Ask for a discount record
+i18n_ServCloud_Store	儲存	储存	Store
+i18n_ServCloud_The_Total_Cost_Of_Materials	物料總成本	物料总成本	The total cost of materials
+i18n_ServCloud_Cancel	取消	取消	cancel
+i18n_ServCloud_material_widget_alert	此面板只能用來新增物料，無法透過取消勾選來刪除物料，如要刪除請利用主畫面上的刪除鈕	此面板只能用来新增物料，无法透过取消勾选来删除物料，如要删除请利用主画面上的删除钮	This panel can only be used for new materials, can not be checked to delete the material through the cancellation, if you want to delete Delete button on the main screen use
+i18n_ServCloud_Delete	刪除	删除	delete
+i18n_ServCloud_Reforming	重整	重整	Reforming
+i18n_ServCloud_Offer_Suggestions	建議報價	建议报价	Offer suggestions
+i18n_ServCloud_Custom	自訂	自订	Custom
+i18n_ServCloud_Options	選項	选项	Options
+i18n_ServCloud_Form_Is_Not_Completed	表格未完成	表格未完成	Form is not completed
+i18n_ServCloud_Please_Select_Standard_Products	請先選定標品	请先选定标品	Please select standard products
+i18n_ServCloud_Edit	編輯	编辑	edit
+i18n_ServCloud_The_Formula	計算公式	计算公式	The formula
+i18n_ServCloud_E.G	例如	例如	E.g
+i18n_ServCloud_Edit_Offer	編輯報價	编辑报价	Edit offer
+i18n_ServCloud_View_Record	查看紀錄	查看纪录	View Record
+i18n_ServCloud_Money	金額	金额	Money
+i18n_ServCloud_Requester	請求人	请求人	Requester
+i18n_ServCloud_Time	時間	时间	time
+i18n_ServCloud_The_Reason	原因	原因	the reason
+i18n_ServCloud_Return	返回	返回	return
+i18n_ServCloud_Quote	報價單	报价单	Quote
+i18n_ServCloud_Request_Discounts	請求折扣	请求折扣	Request discounts
+i18n_ServCloud_End_Quote	結束報價	结束报价	End Quote
+i18n_ServCloud_Determined_To_End_Quote	確定要結束報價	确定要结束报价	Determined to end quote
+i18n_ServCloud_Produce_Quotations	產生報價單	产生报价单	Produce quotations
+i18n_ServCloud_View_Quote	查看報價單	查看报价单	View Quote
+i18n_ServCloud_Pre-Sale_Audit	待售前審核	待售前审核	Pre-sale audit
+i18n_ServCloud_Bom_To_Be_Demolished	待拆BOM	待拆BOM	BOM to be demolished
+i18n_ServCloud_To_Be_In_Charge_Of_R_&_D_Review	待研發主管審核	待研发主管审核	To be in charge of R & D review
+i18n_ServCloud_Monovalent_Be_Fed	待補料價	待补料价	Monovalent be fed
+i18n_ServCloud_To_Be_In_Charge_Of_Procurement_Review	待採購主管審核	待采购主管审核	To be in charge of procurement review
+i18n_ServCloud_To_Be_Completed_Factory_Profits	待補出廠利潤	待补出厂利润	To be completed factory profits
+i18n_ServCloud_Treasurer_Pending_Review	待財務主管審核	待财务主管审核	Treasurer pending review
+i18n_ServCloud_To_Be_Completed_Market_Profits	待補市場利潤	待补市场利润	To be completed market profits
+i18n_ServCloud_To_Be_Completed_Market_Profits_(Non-Standard_Products)	待補市場利潤(非標品)	待补市场利润(非标品)	To be completed market profits (non-standard products)	
+i18n_ServCloud_To_Be_Completed_Market_Profits_(Standard_Products)	待補市場利潤(標品)	待补市场利润(标品)	To be completed market profits (standard products)	
+i18n_ServCloud_Non-Standard_Products	非標品	非标品	Non-standard products
+i18n_ServCloud_Standard_Products	標品	标品	Standard products
+i18n_ServCloud_Quote_Completed	報價單完成	报价单完成	Quote completed
+i18n_ServCloud_Not_Generate_Quotes	未產生報價	未产生报价	Not generate quotes
+i18n_ServCloud_The_Offer	報價中	报价中	The offer
+i18n_ServCloud_Quote_Confirmation	報價確認中	报价确认中	Quote confirmation
+i18n_ServCloud_Field_Name	欄位名稱	栏位名称	Field Name
+i18n_ServCloud_Field_Content	欄位內容	栏位内容	Field content
+i18n_ServCloud_Mandatory	必填	必填	Mandatory
+i18n_ServCloud_Edit_Field	編輯欄位	编辑栏位	Edit Field
+i18n_ServCloud_Field_Option	欄位選項	栏位选项	Field Option
+i18n_ServCloud_Prompt	提示	提示	prompt
+i18n_ServCloud_After_Entering_The_Press	輸入後按	输入后按	After entering the press
+i18n_ServCloud_Cursor_Control	控制游標	控制游标	Cursor control
+i18n_ServCloud_Delete_Or_Click_Skewer	或點擊叉叉刪除	或点击叉叉删除	Delete or click skewer
+i18n_ServCloud_With	和	和	with
+i18n_ServCloud_Please_Confirm_Again	請再確認一次	请再确认一次	Please confirm again
+i18n_ServCloud_Rfq_No._Repeated_The	詢價單號重覆了	询价单号重覆了	RFQ No. repeated the
+i18n_ServCloud_Print	列印	列印	Print
+i18n_ServCloud_Export	輸出	输出	Export
+i18n_ServCloud_Quote_Date	報價日期	报价日期	Quote Date
+i18n_ServCloud_Model_Selection	型號選擇	型号选择	Model selection
+i18n_ServCloud_Most	最多	最多	most
+i18n_ServCloud_Rfq_State	詢價單狀態	询价单状态	RFQ state
+i18n_ServCloud_Residence_Time	停留時間	停留时间	Residence time
+i18n_ServCloud_Quote_Status	報價狀態	报价状态	Quote Status
+i18n_ServCloud_Operating	操作	操作	operating
+i18n_ServCloud_You_Sure_You_Want_To_Return_Rfq	確定要退回詢價單	确定要退回询价单	You sure you want to return RFQ
+i18n_ServCloud_Cancel_Quote	取消報價	取消报价	Cancel quote
+i18n_ServCloud_Cancel_Inquiry	取消詢價	取消询价	Cancel Inquiry
+i18n_ServCloud_Return_Rfq	退回詢價單	退回询价单	Return RFQ
+i18n_ServCloud_Over	已結束	已结束	over
+i18n_ServCloud_Does_Not_End	未結束	未结束	Does not end
+i18n_ServCloud_Rfq_Has_Been_Canceled	詢價單已被取消	询价单已被取消	RFQ has been canceled
+i18n_ServCloud_Sorry	抱歉	抱歉	Sorry
+i18n_ServCloud_This_Inquiry_Has_Been_Canceled	此詢價單已被取消	此询价单已被取消	This inquiry has been canceled
+i18n_ServCloud_Can_No_Longer_Carry_Out_Any_Operation	無法再進行任何操作	无法再进行任何操作	Can no longer carry out any operation
+i18n_ServCloud_Brands	品牌	品牌	Brands
+i18n_ServCloud_Composition	組成	组成	composition
+i18n_ServCloud_Color_Temperature_Value	色溫值(K)	色温值(K)	Color temperature value(K)
+i18n_ServCloud_Lighting_Color	燈具外觀顏色	灯具外观颜色	Lighting Color
+i18n_ServCloud_The_Number_Of_Lamps_In_Series	燈具串接數量	灯具串接数量	The number of lamps in series
+i18n_ServCloud_Inlet_And_Outlet	進出線方式	进出线方式	Inlet and outlet
+i18n_ServCloud_Light_Barrier	擋光板	挡光板	Light barrier
+i18n_ServCloud_Fall_Protection	防墜落	防坠落	Fall Protection
+i18n_ServCloud_The_Combined_Power_Line_And_The_Signal_Line	電源線與信號線合併	电源线与信号线合并	The combined power line and the signal line
+i18n_ServCloud_Power_Cord_Out_Of_The_Way	電源線進出方式	电源线进出方式	Power cord out of the way
+i18n_ServCloud_Signal_Lines_Out_Of_The_Way	信號線進出方式	信号线进出方式	Signal lines out of the way
+i18n_ServCloud_Confirm_Brand	確認品牌	确认品牌	Confirm brand
+i18n_ServCloud_Point_Light	點光源	点光源	point Light
+i18n_ServCloud_General_Lights	一般燈	一般灯	General lights
+i18n_ServCloud_Not_Only_Into	只進不出	只进不出	Not only into
+i18n_ServCloud_Entered_A	一進一出	一进一出	Entered a
+i18n_ServCloud_Natural_Aluminum	鋁本色	铝本色	Natural aluminum
+i18n_ServCloud_Custom_Color	客製色	客制色	Custom color
+i18n_ServCloud_Not_Specify	不指定	不指定	Not specify
+i18n_ServCloud_Made_In_China	國產	国产	Made in China
+i18n_ServCloud_Mounting_Bracket	固定支架	固定支架	Mounting bracket
+i18n_ServCloud_Kahuang_Bracket	卡簧支架	卡簧支架	Kahuang bracket
+i18n_ServCloud_None	無	无	no
+i18n_ServCloud_Power_Lines_And_Signal_Lines	電源線和信號線	电源线和信号线	Power lines and signal lines
+i18n_ServCloud_Lamp_Beads_Composition	燈珠組成	灯珠组成	Lamp beads Composition
+i18n_ServCloud_This_Option_Is_Not	無此選項	无此选项	This option is not
+i18n_ServCloud_Modify_Reason	修改原因	修改原因	Modify reason
+i18n_ServCloud_Please_Fill_In_Positive_Integers	請填正整數	请填正整数	Please fill in positive integers
+i18n_ServCloud_Please_Fill_In_Zero_Or_A_Positive_Integer	請填正整數或零	请填正整数或零	Please fill in zero or a positive integer
+i18n_ServCloud_Length_Should_Not_Exceed_Characters	字元長度不得超過	字元长度不得超过	Length should not exceed characters
+i18n_ServCloud_Please_Enter_A_Standard_Format	請輸入標準格式	请输入标准格式	Please enter a standard format
+i18n_ServCloud_Cable_Length	連接線長度(mm)	连接线长度(mm)	Cable length(mm)
+i18n_ServCloud_Led_Lamp	LED燈珠	LED灯珠	LED lamp
+i18n_ServCloud_Project_Number	項目編號	项目编号	Project Number
+i18n_ServCloud_Principal	負責人	负责人	principal
+i18n_ServCloud_Project_Information	項目資訊	项目资讯	Project Information
+i18n_ServCloud_Project_Name	項目名稱	项目名称	project name
+i18n_ServCloud_Go	前往	前往	Go
+i18n_ServCloud_This_Field_Is_Required	此欄必填	此栏必填	This field is required
+i18n_ServCloud_View_Project_Content	查看項目內容	查看项目内容	View project content
+i18n_ServCloud_The_List_Of_Items	項目清單	项目清单	The list of items
+i18n_ServCloud_Back_To_Project_List	返回項目清單	返回项目清单	Back to project list
+i18n_ServCloud_System_Notes	系統註記	系统注记	System Notes
+i18n_ServCloud_Rule	規則	规则	rule
+i18n_ServCloud_Judgement_Result	判定結果	判定结果	judgement result
+i18n_ServCloud_Item_Number_Can_Not_Be_Repeated	項目編號不可重複	项目编号不可重复	Item number can not be repeated
+i18n_ServCloud_There_Are_Projects_Under_The_Inquiry_Can_Not_Be_Deleted_Numbered	項目底下還有詢價單無法刪除，編號為	项目底下还有询价单无法删除，编号为	There are projects under the inquiry can not be deleted, numbered
+i18n_ServCloud_Manually_Add	手動新增	手动新增	Manually add
+i18n_ServCloud_Manually_Modify	手動修改	手动修改	Manually modify
+i18n_ServCloud_New_System	系統新增	系统新增	New System
+i18n_ServCloud_No._Jinhuo_Dan	進貨單號	进货单号	No. Jinhuo Dan
+i18n_ServCloud_Date_Of_Purchase	進貨日期	进货日期	Date of purchase
+i18n_ServCloud_No_Information	無相關資訊	无相关资讯	No Information
+i18n_ServCloud_Selected_Materials	已選的物料	已选的物料	Selected materials
+i18n_ServCloud_Product_Description	產品描述	产品描述	product description
+i18n_ServCloud_Undone	未完成	未完成	undone
+i18n_ServCloud_Save_Filled_Out	保存填寫內容	保存填写内容	Save filled out
+i18n_ServCloud_Quantity	數量	数量	Quantity
+i18n_ServCloud_Recommend_Price	建議單價	建议单价	Recommend Price
+i18n_ServCloud_Cancelled	已取消	已取消	Cancelled
+i18n_ServCloud_Offer_Can_Not_Be_Greater_Than_One_Million	報價不能大於百萬	报价不能大于百万	Offer can not be greater than one million

@@ -1,0 +1,20 @@
+{
+  "app": {
+    "id": "HuangLiangDataUpload",
+    "name": "i18n_ServCloud_Data_Upload",
+    "type": 1,
+    "description": "Data Upload.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_employee_data_upload",
+      "name": "i18n_ServCloud_Employee_Data_Upload"
+    },
+    {
+      "id": "20_ERP_data_upload",
+      "name": "i18n_ServCloud_ERP_Data_Upload"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

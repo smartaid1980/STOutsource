@@ -1,0 +1,42 @@
+textarea {
+  resize: none;
+  padding: 5px 10px;
+}
+label.error {
+  width: 100%;
+}
+.modal-header > h3 {
+  display: inline-block;
+}
+#leave-btn {
+  margin: 10px 0;
+}
+table.bling tbody td:nth-child(1) {
+  animation: blingbling 1s linear;
+}
+@keyframes blingbling {
+  0% {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  12.5% {
+    background-color: #fff;
+  }
+  25% {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  37.5% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  62.5% {
+    background-color: #fff;
+  }
+  75% {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  87.5% {
+    background-color: #fff;
+  }
+}

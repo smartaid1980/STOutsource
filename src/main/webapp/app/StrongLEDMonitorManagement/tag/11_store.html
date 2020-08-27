@@ -1,0 +1,139 @@
+<section id="widget-grid">
+  <a href="javascript: void(0)" id="leave-btn" class="btn btn-default"
+    ><i class="fa fa-mail-reply"></i>&nbsp; {i18n_ServCloud_Go_Back}
+  </a>
+  <br />
+  <br />
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-fullscreenbutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <h2>【<span id="storeId"></span>】</h2>
+      <div class="widget-toolbar hide" role="menu">
+        <button id="changeStyle" class="btn bg-color-blue txt-color-white hide">
+          {i18n_ServCloud_Switch_Style}
+        </button>
+        <!-- <a href="javascript:void(0);" class="btn bg-color-blue txt-color-white stk-load">Load</a> -->
+      </div>
+    </header>
+
+    <div>
+      <div class="widget-body no-padding">
+        <div id="store"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  #store {
+    margin: 20px auto;
+    padding-right: 10px;
+    width: 93%;
+  }
+
+  .grid {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    word-break: keep-all;
+    text-align: center;
+  }
+
+  .cell-name-title {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* word-break: keep-all; */
+    /* text-align: center; */
+  }
+
+  .cell-name-body {
+    /* margin: 10px 0; */
+    display: flex;
+    align-items: center;
+    word-break: keep-all;
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-name {
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    margin: 5px;
+    width: 100px;
+    font-size: 1.5em;
+  }
+
+  .grid-body {
+    width: 100%;
+    /* height: 100px; */
+    border: #666 2px solid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .cell {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cell * {
+    display: none;
+  }
+
+  .cell:hover * {
+    display: block;
+  }
+
+  .cell-name-body .cell {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .grid .cell {
+    border: #666 1px solid;
+    color: black;
+    flex: 1 0 5%;
+    min-height: 25px;
+  }
+
+  .grid .cell.empty {
+    background-color: #ccc;
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      100% 100%,
+      color-stop(0.25, #f9f9f9),
+      color-stop(0.25, transparent),
+      color-stop(0.5, transparent),
+      color-stop(0.5, #f9f9f9),
+      color-stop(0.75, #f9f9f9),
+      color-stop(0.75, transparent),
+      to(transparent)
+    );
+    background-size: 7px 7px;
+  }
+
+  .grid .cell-name {
+    display: none;
+  }
+
+  .thing-name {
+    font-size: 1.5em;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

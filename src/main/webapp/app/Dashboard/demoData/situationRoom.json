@@ -1,0 +1,434 @@
+{
+  "product01": {
+    "works": [
+      {
+        "quantity": 300,
+        "name": "A0001-1",
+        "standard_work": 300,
+        "machine_id": "M1",
+        "staff": "A君"
+      },
+      {
+        "quantity": 300,
+        "name": "A0001-2",
+        "standard_work": 240,
+        "machine_id": "M2",
+        "staff": "B君"
+      },
+      {
+        "quantity": 300,
+        "name": "A0001-3",
+        "standard_work": 480,
+        "machine_id": "M3",
+        "staff": "C君"
+      },
+      {
+        "quantity": 300,
+        "name": "A0001-4",
+        "standard_work": 240,
+        "machine_id": "M4",
+        "staff": "D君"
+      }
+    ],
+    "start_date": "-4",
+    "delivery_date": "4",
+    "estimate_delivery_date": "7",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5,
+    "decision": [
+      {
+        "name": "縮短休時",
+        "delivery_date": "4",
+        "estimate_delivery_date": "4",
+        "cost": 0.3,
+        "estimate_delivery_output": 220
+      },
+      {
+        "name": "人員加班",
+        "delivery_date": "4",
+        "estimate_delivery_date": "4",
+        "cost": 0.4,
+        "estimate_delivery_output": 220
+      },
+      {
+        "name": "增聘臨工",
+        "delivery_date": "4",
+        "estimate_delivery_date": "4",
+        "cost": 0.4,
+        "estimate_delivery_output": 220
+      }
+    ]
+  },
+  "product02": {
+    "works": [
+      {
+        "quantity": 450,
+        "name": "B0001-1",
+        "standard_work": 540,
+        "machine_id": "M5",
+        "staff": "E君"
+      },
+      {
+        "quantity": 450,
+        "name": "B0001-2",
+        "standard_work": 420,
+        "machine_id": "M6",
+        "staff": "F君"
+      },
+      {
+        "quantity": 450,
+        "name": "B0001-3",
+        "standard_work": 420,
+        "machine_id": "M7",
+        "staff": "G君"
+      },
+      {
+        "quantity": 450,
+        "name": "B0001-4",
+        "standard_work": 480,
+        "machine_id": "M8",
+        "staff": "H君"
+      }
+    ],
+    "start_date": "-3",
+    "delivery_date": "3",
+    "estimate_delivery_date": "5",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5,
+    "decision": [
+      {
+        "name": "原料催缺",
+        "delivery_date": "3",
+        "estimate_delivery_date": "3",
+        "cost": 0.2,
+        "estimate_delivery_output": 300
+      },
+      {
+        "name": "他廠補訂料",
+        "delivery_date": "3",
+        "estimate_delivery_date": "3",
+        "cost": 0.2,
+        "estimate_delivery_output": 300
+      }
+    ]
+  },
+  "product03": {
+    "works": [
+      {
+        "quantity": 400,
+        "name": "C0001-1",
+        "standard_work": 360,
+        "machine_id": "M9",
+        "staff": "I君"
+      },
+      {
+        "quantity": 400,
+        "name": "C0001-2",
+        "standard_work": 300,
+        "machine_id": "M10",
+        "staff": "J君"
+      },
+      {
+        "quantity": 400,
+        "name": "C0001-3",
+        "standard_work": 480,
+        "machine_id": "M11",
+        "staff": "K君"
+      },
+      {
+        "quantity": 400,
+        "name": "C0001-4",
+        "standard_work": 420,
+        "machine_id": "M12",
+        "staff": "L君"
+      }
+    ],
+    "start_date": "-2",
+    "delivery_date": "2",
+    "estimate_delivery_date": "3",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5,
+    "decision": [
+      {
+        "name": "機台議題1",
+        "delivery_date": "5",
+        "estimate_delivery_date": "5",
+        "cost": 0.1,
+        "estimate_delivery_output": 400
+      },
+      {
+        "name": "機台議題2",
+        "delivery_date": "5",
+        "estimate_delivery_date": "5",
+        "cost": 0.3,
+        "estimate_delivery_output": 400
+      },
+      {
+        "name": "機台議題3",
+        "delivery_date": "5",
+        "estimate_delivery_date": "5",
+        "customer_complaint_rate": -0.5,
+        "estimate_delivery_output": 400
+      }
+    ]
+  },
+  "product04": {
+    "works": [
+      {
+        "quantity": 200,
+        "name": "D0001-1",
+        "standard_work": 720,
+        "machine_id": "M13",
+        "staff": "M君"
+      },
+      {
+        "quantity": 200,
+        "name": "D0001-2",
+        "standard_work": 720,
+        "machine_id": "M14",
+        "staff": "N君"
+      },
+      {
+        "quantity": 200,
+        "name": "D0001-3",
+        "standard_work": 720,
+        "machine_id": "M15",
+        "staff": "O君"
+      },
+      {
+        "quantity": 200,
+        "name": "D0001-4",
+        "standard_work": 720,
+        "machine_id": "M16",
+        "staff": "P君"
+      }
+    ],
+    "start_date": "-3",
+    "delivery_date": "3",
+    "estimate_delivery_date": "3",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5
+  },
+  "product05": {
+    "works": [
+      {
+        "quantity": 600,
+        "name": "E0001-1",
+        "standard_work": 180,
+        "machine_id": "M17",
+        "staff": "Q君"
+      },
+      {
+        "quantity": 600,
+        "name": "E0001-2",
+        "standard_work": 180,
+        "machine_id": "M18",
+        "staff": "R君"
+      },
+      {
+        "quantity": 600,
+        "name": "E0001-3",
+        "standard_work": 240,
+        "machine_id": "M19",
+        "staff": "S君"
+      },
+      {
+        "quantity": 600,
+        "name": "E0001-4",
+        "standard_work": 240,
+        "machine_id": "M20",
+        "staff": "T君"
+      }
+    ],
+    "start_date": "-4",
+    "delivery_date": "2",
+    "estimate_delivery_date": "2",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5
+  },
+  "product06": {
+    "works": [
+      {
+        "quantity": 150,
+        "name": "F0001-1",
+        "standard_work": 300,
+        "machine_id": "M21",
+        "staff": "U君"
+      },
+      {
+        "quantity": 150,
+        "name": "F0001-2",
+        "standard_work": 360,
+        "machine_id": "M22",
+        "staff": "V君"
+      },
+      {
+        "quantity": 150,
+        "name": "F0001-3",
+        "standard_work": 300,
+        "machine_id": "M23",
+        "staff": "W君"
+      },
+      {
+        "quantity": 150,
+        "name": "F0001-4",
+        "standard_work": 360,
+        "machine_id": "M24",
+        "staff": "X君"
+      }
+    ],
+    "start_date": "-3",
+    "delivery_date": "3",
+    "estimate_delivery_date": "3",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5
+  },
+  "product07": {
+    "works": [
+      {
+        "quantity": 550,
+        "name": "G0001-1",
+        "standard_work": 420,
+        "machine_id": "M25",
+        "staff": "Y君"
+      },
+      {
+        "quantity": 550,
+        "name": "G0001-2",
+        "standard_work": 420,
+        "machine_id": "M26",
+        "staff": "Z君"
+      },
+      {
+        "quantity": 550,
+        "name": "G0001-3",
+        "standard_work": 480,
+        "machine_id": "M27",
+        "staff": "aa君"
+      },
+      {
+        "quantity": 550,
+        "name": "G0001-4",
+        "standard_work": 480,
+        "machine_id": "M28",
+        "staff": "bb君"
+      }
+    ],
+    "start_date": "-5",
+    "delivery_date": "2",
+    "estimate_delivery_date": "2",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5
+  },
+  "product08": {
+    "works": [
+      {
+        "quantity": 500,
+        "name": "H0001-1",
+        "standard_work": 600,
+        "machine_id": "M29",
+        "staff": "cc君"
+      },
+      {
+        "quantity": 500,
+        "name": "H0001-2",
+        "standard_work": 660,
+        "machine_id": "M30",
+        "staff": "dd君"
+      },
+      {
+        "quantity": 500,
+        "name": "H0001-3",
+        "standard_work": 540,
+        "machine_id": "M31",
+        "staff": "ee君"
+      },
+      {
+        "quantity": 500,
+        "name": "H0001-4",
+        "standard_work": 600,
+        "machine_id": "M32",
+        "staff": "ff君"
+      }
+    ],
+    "start_date": "-6",
+    "delivery_date": "1",
+    "estimate_delivery_date": "1",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5
+  },
+  "product09": {
+    "works": [
+      {
+        "quantity": 450,
+        "name": "I0001-1",
+        "standard_work": 480,
+        "machine_id": "M33",
+        "staff": "gg君"
+      },
+      {
+        "quantity": 450,
+        "name": "I0001-2",
+        "standard_work": 540,
+        "machine_id": "M34",
+        "staff": "hh君"
+      },
+      {
+        "quantity": 450,
+        "name": "I0001-3",
+        "standard_work": 540,
+        "machine_id": "M35",
+        "staff": "jj君"
+      },
+      {
+        "quantity": 450,
+        "name": "I0001-4",
+        "standard_work": 600,
+        "machine_id": "M36",
+        "staff": "kk君"
+      }
+    ],
+    "start_date": "-4",
+    "delivery_date": "3",
+    "estimate_delivery_date": "3",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5
+  },
+  "product10": {
+    "works": [
+      {
+        "quantity": 350,
+        "name": "J0001-1",
+        "standard_work": 600,
+        "machine_id": "M37",
+        "staff": "mm君"
+      },
+      {
+        "quantity": 350,
+        "name": "J0001-2",
+        "standard_work": 540,
+        "machine_id": "M38",
+        "staff": "nn君"
+      },
+      {
+        "quantity": 350,
+        "name": "J0001-3",
+        "standard_work": 540,
+        "machine_id": "M39",
+        "staff": "pp君"
+      },
+      {
+        "quantity": 350,
+        "name": "J0001-4",
+        "standard_work": 420,
+        "machine_id": "M40",
+        "staff": "qq君"
+      }
+    ],
+    "start_date": "-5",
+    "delivery_date": "2",
+    "estimate_delivery_date": "2",
+    "start_customer_complaint_rate": 0.5,
+    "start_estimate_delivery_output": 0.5
+  }
+}

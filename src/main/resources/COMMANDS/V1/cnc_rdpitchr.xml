@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<command name="cnc_rdpitchr" cycletype="count" cyclevalue="1" timeout="0"><start/><end/><params><param name="G_PICH" count="1" frequency="0" isRepeat="true"><inputs><input name="P_NUMBER">1</input><input name="P_COUNT">10</input></inputs><filters/><process/><value/></param></params></command>

@@ -1,0 +1,54 @@
+<record>
+    <params>
+        <param name="G_OPMG()" type="Array">
+            <contents>
+                <content fetchtime="20121015150950605" elapsed_sec="1.7530544">
+                    <values type="Array">
+                        <value fromType="STR" toType="STR">904</value>
+                        <value fromType="STR" toType="STR">905</value>
+                        <value fromType="STR" toType="STR">906</value>
+                        <value fromType="STR" toType="STR">907</value>
+                        <value fromType="STR" toType="STR">908</value>
+                        <value fromType="STR" toType="STR">909</value>
+                        <value fromType="STR" toType="STR">910</value>
+                        <value fromType="STR" toType="STR">911</value>
+                        <value fromType="STR" toType="STR">912</value>
+                        <value fromType="STR" toType="STR">913</value>
+                        <value fromType="STR" toType="STR">914</value>
+                        <value fromType="STR" toType="STR">915</value>
+                        <value fromType="STR" toType="STR">916</value>
+                        <value fromType="STR" toType="STR">917</value>
+                        <value fromType="STR" toType="STR">918</value>
+                        <value fromType="STR" toType="STR">919</value>
+                        <value fromType="STR" toType="STR">920</value>
+                        <value fromType="STR" toType="STR">921</value>
+                        <value fromType="STR" toType="STR">922</value>
+                        <value fromType="STR" toType="STR">923</value>
+                    </values>
+                    <values type="Array">
+                        <value fromType="STR" toType="STR">2012/10/08/18:30:32 Event Type:Power on</value>
+                        <value fromType="STR" toType="STR">2012/10/08/18:47:15 Event Type:Power off</value>
+                        <value fromType="STR" toType="STR">2012/10/08/18:47:32 Event Type:Power on</value>
+                        <value fromType="STR" toType="STR">2012/10/09/00:00:00 Event Type:Change date</value>
+                        <value fromType="STR" toType="STR">2012/10/09/09:24:44 Event Type:Power off</value>
+                        <value fromType="STR" toType="STR">2012/10/09/09:25:04 Event Type:Power on</value>
+                        <value fromType="STR" toType="STR">2012/10/09/09:27:23 Event Type:Power off</value>
+                        <value fromType="STR" toType="STR">2012/10/09/09:27:40 Event Type:Power on</value>
+                        <value fromType="STR" toType="STR">2012/10/10/00:00:00 Event Type:Change date</value>
+                        <value fromType="STR" toType="STR">2012/10/11/00:00:00 Event Type:Change date</value>
+                        <value fromType="STR" toType="STR">2012/10/11/03:19:12 Event Type:Power off</value>
+                        <value fromType="STR" toType="STR">2012/10/11/11:49:39 Event Type:Power on</value>
+                        <value fromType="STR" toType="STR">2012/10/12/00:00:00 Event Type:Change date</value>
+                        <value fromType="STR" toType="STR">2012/10/12/17:51:21 Event Type:Power off</value>
+                        <value fromType="STR" toType="STR">2012/10/12/18:00:36 Event Type:Power on</value>
+                        <value fromType="STR" toType="STR">2012/10/12/18:03:35 Event Type:Power off</value>
+                        <value fromType="STR" toType="STR">2012/10/12/18:13:51 Event Type:Power on</value>
+                        <value fromType="STR" toType="STR">2012/10/13/00:00:00 Event Type:Change date</value>
+                        <value fromType="STR" toType="STR">2012/10/14/00:00:00 Event Type:Change date</value>
+                        <value fromType="STR" toType="STR">2012/10/15/00:00:00 Event Type:Change date</value>
+                    </values>
+                </content>
+            </contents>
+        </param>
+    </params>
+</record>

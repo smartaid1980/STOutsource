@@ -1,0 +1,384 @@
+<section id="widget-grid">
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Processing_Progress}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <div class="block">
+              <div class="block-header">
+                <!-- <h3></h3> -->
+              </div>
+              <div>
+                <div id="station-status"></div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-header">
+                <h3>{i18n_ServCloud_Picking_Storage_State}</h3>
+              </div>
+              <div>
+                <div id="storage-status"></div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-header">
+                <h3>{i18n_ServCloud_Realtime_State_machine}</h3>
+              </div>
+              <div>
+                <div id="machine-status"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+</section>
+<style>
+  #jarviswidget-fullscreen-mode .jarviswidget > div {
+    overflow: hidden;
+  }
+
+  .smart-style-5 .jarviswidget > header h2 {
+    font-size: 2.2rem;
+    padding-left: 10px;
+    font-weight: bolder;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    border-left: 5px solid #36a4b5 !important;
+    padding-left: 20px;
+    /* padding: 7px 15px; */
+    color: #36a4b5;
+    margin: 20px 0 0 0;
+  }
+
+  #station-status {
+    display: flex;
+    justify-content: space-evenly;
+    background: #1f1e2c;
+    border-radius: 10px;
+    padding: 1.5rem 0;
+    margin: 0 2rem;
+  }
+
+  #station-status .station {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* width: 10rem; */
+    flex-basis: 50%;
+  }
+
+  #station-status .station + .station::before {
+    content: '';
+    margin: 0 1rem;
+    position: absolute;
+    top: 16%;
+    /* left: -43%; */
+    left: -10%;
+    border-left: 5px solid #2a304a;
+    border-top: 5px solid #2a304a;
+    width: 25px;
+    height: 25px;
+    transform: rotate(-45deg);
+  }
+
+  #station-status .station-block {
+    width: 5rem;
+    height: 5rem;
+    /* border: 2px solid #cccccc; */
+    border-radius: 1rem;
+    background: #2a304a;
+  }
+
+  #station-status .station.working .station-block {
+    background: radial-gradient(
+      circle,
+      rgba(51, 255, 0, 0.98) 0%,
+      rgba(8, 118, 21, 0.7) 60%,
+      rgba(51, 255, 0, 0.07) 100%
+    );
+  }
+
+  #station-status .station.working p {
+    color: rgba(51, 255, 0, 0.75);
+    font-weight: bolder;
+  }
+
+  #station-status p {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #bababa;
+  }
+
+  #storage-status {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-between;
+  }
+
+  #storage-status > div {
+    flex: 50%;
+    margin: 0 2rem;
+    width: 13%;
+  }
+
+  .store-name {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: #1f1e2c;
+    padding: 10px;
+  }
+
+  #storage-status .cell-container {
+    flex: auto;
+    display: flex;
+  }
+
+  #storage-status .station-block {
+    width: 2rem;
+    height: 2rem;
+    /* border: 2px solid #cccccc; */
+    border-radius: 100rem;
+    background: #2a304a;
+    margin: 1rem 2rem;
+  }
+
+  /* 倉庫 */
+  .grid {
+    /* margin: 10px 0; */
+    display: flex;
+    align-items: center;
+    word-break: keep-all;
+    text-align: center;
+  }
+
+  .grid + .grid .grid-body {
+    border-top: none;
+  }
+
+  .cell-name-title {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* word-break: keep-all; */
+    /* text-align: center; */
+  }
+
+  .cell-name-body {
+    /* margin: 10px 0; */
+    display: flex;
+    align-items: center;
+    word-break: keep-all;
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-name {
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    margin: 5px;
+    width: 100px;
+    font-size: 1.5em;
+  }
+
+  .grid-body {
+    width: 100%;
+    /* height: 100px; */
+    border: #666 2px solid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .cell {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cell * {
+    display: none;
+  }
+
+  .cell:hover * {
+    display: block;
+  }
+
+  .cell-name-body .cell {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .grid .cell {
+    border-right: #666 1px solid;
+    border-left: #666 1px solid;
+    color: black;
+    flex: 1 0 5%;
+    min-height: 25px;
+  }
+
+  .grid .cell.empty {
+    background-color: #ccc;
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      100% 100%,
+      color-stop(0.25, #f9f9f9),
+      color-stop(0.25, transparent),
+      color-stop(0.5, transparent),
+      color-stop(0.5, #f9f9f9),
+      color-stop(0.75, #f9f9f9),
+      color-stop(0.75, transparent),
+      to(transparent)
+    );
+    background-size: 7px 7px;
+  }
+
+  .grid .cell-name {
+    display: none;
+  }
+
+  .thing-name {
+    font-size: 1.5em;
+  }
+
+  /* 機台即時監控 */
+  #machine-status {
+    display: flex;
+  }
+
+  .machine-container {
+    flex-basis: 50%;
+    padding: 2rem 2rem 0;
+    margin: 2rem;
+    background: #1f1e2c;
+    border-radius: 2rem;
+  }
+
+  .machine-title {
+    /* text-align: center; */
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #3cbdcf;
+    padding-left: 1rem;
+    margin: 0.5rem;
+  }
+
+  .machine-body {
+    display: flex;
+  }
+
+  .machine-body > * {
+    margin: 1rem;
+  }
+
+  .machine-chart {
+    flex-basis: 30%;
+  }
+
+  .machine-chart > img {
+    max-width: 100%;
+    opacity: 0.7;
+  }
+
+  .machine-pie-chart-container {
+    position: relative;
+  }
+
+  .machine-pie-chart-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .machine-pie-chart {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .chart-label {
+    padding: 0.2rem 0.5rem;
+    font-size: 1.6rem;
+  }
+
+  .machine-info {
+    flex-basis: 70%;
+    margin: 1rem;
+  }
+
+  .machine-info-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+  }
+
+  .machine-info-body {
+    font-size: 1.8rem;
+  }
+
+  .machine-info-body > * {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .machine-info-body > * > span:first-child {
+    padding: 0 1rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-self: flex-start;
+  }
+
+  .machine-info-body .machine-status {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    background: #d3d3d3;
+  }
+
+  .machine-info-body .machine-status.online {
+    background: #2e8b57;
+  }
+
+  .machine-info-body .machine-status.idle {
+    background: #ffa500;
+  }
+
+  .machine-info-body .machine-status.alarm {
+    background: #a90329;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

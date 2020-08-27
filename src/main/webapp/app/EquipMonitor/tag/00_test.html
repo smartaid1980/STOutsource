@@ -1,0 +1,89 @@
+<!-- <ul id="breadcrumb_table" class="breadcrumbDark"  collapse="#collapse_table">test</ul> -->
+<div class="row">
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span>
+        > 測試頁面
+      </span>
+    </h1>
+  </div>
+</div>
+
+<section
+  id="monitor-page"
+  data-ng-controller="monitorCtrl"
+  data-ng-init="init()"
+>
+  <div>
+    <span>命令</span>
+    <br />
+    ip:
+    <input
+      id="ip"
+      type="text"
+      name="startNumber"
+      placeholder="ip"
+      value="192.168.130.202"
+    />
+    <br />
+    port:
+    <input
+      id="port"
+      type="text"
+      name="startNumber"
+      placeholder="port"
+      value="2009"
+    />
+    <br />
+    boxId:
+    <input
+      id="boxId"
+      type="text"
+      name="startNumber"
+      placeholder="boxId"
+      value="IntraD01"
+    />
+    <br />
+    machineId:
+    <input
+      id="machineId"
+      type="text"
+      name="startNumber"
+      placeholder="machineId"
+      value="FANUC01"
+    />
+    <br />
+    command:
+    <br />
+    <textarea
+      id="command"
+      rows="10"
+      cols="100"
+      name="info"
+      placeholder="json command"
+    ></textarea>
+    <br />
+    <button class="btn btn-info" id="submit">送出</button>
+    <br />
+    <br />
+    <br />
+  </div>
+
+  <div class="row">
+    回傳資料:
+    <br />
+    <textarea
+      id="result"
+      rows="10"
+      cols="100"
+      name="info"
+      placeholder="result"
+    ></textarea>
+    <br />
+  </div>
+</section>
+<script type="text/javascript">
+  window.importPageScript()
+</script>

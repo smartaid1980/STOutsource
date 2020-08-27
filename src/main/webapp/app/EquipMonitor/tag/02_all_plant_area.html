@@ -1,0 +1,247 @@
+<section id="widget-grid">
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-editbutton="false"
+    data-widget-collapsed="false"
+    data-widget-colorbutton="false"
+    data-widget-deletebutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <h2>{i18n_ServCloud_Monitoring_All_Zone}</h2>
+      <div class="widget-toolbar hide" role="menu">
+        <button id="changeStyle" class="btn bg-color-blue txt-color-white">
+          {i18n_ServCloud_Switch_Style}
+        </button>
+      </div>
+    </header>
+
+    <div class="widget-body padding-10">
+      <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="machineLigth" style="float: right;"></div>
+      </section>
+      <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="draw-area"></div>
+      </section>
+    </div>
+  </div>
+</section>
+<style>
+  h3 {
+    margin: 10px 0;
+  }
+
+  #no-data-info {
+    position: absolute;
+    left: 20px;
+    text-align: initial;
+  }
+
+  #update-utilization-info {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    text-align: initial;
+  }
+
+  #draw-area {
+    text-align: center;
+  }
+
+  #all-plant-area {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .all-devices {
+    min-height: 300px;
+    /* width: 25%; */
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 0;
+  }
+
+  .all-devices > div {
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    height: 100%;
+  }
+
+  .all-devices > h3 {
+    margin: 12px 0 11px;
+  }
+
+  #all {
+    height: 79%;
+    width: 79%;
+    margin: auto;
+  }
+
+  .devices {
+    /* height: 300px; */
+    width: 75%;
+    display: flex;
+    padding: 0 0 0 10px;
+  }
+
+  .device {
+    width: 20%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    border-top: #ccc 1px solid;
+    border-bottom: #ccc 1px solid;
+  }
+
+  .devices .device:first-child {
+    border-left: #ccc 1px solid;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .devices .device:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .devices .device:first-child:last-child {
+    border-radius: 5px;
+  }
+
+  .device > .device-header {
+    width: 100%;
+    height: 40px;
+    background-color: #1d2028;
+    color: white;
+    padding-top: 5px;
+    font-size: 19px;
+  }
+
+  .devices .device:first-child .device-header {
+    border-radius: 5px 0 0;
+  }
+
+  .devices .device:last-child .device-header {
+    border-radius: 0 5px 0 0;
+  }
+
+  .devices .device:first-child:last-child .device-header {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .device > .device-body {
+    height: 186px;
+  }
+
+  .device > .device-body > div {
+    width: 86%;
+    height: 86%;
+    margin: 26px auto;
+  }
+
+  .device .show-plant-area-info {
+    cursor: pointer;
+  }
+
+  #all-plant-area > .devices > div {
+    /* padding-left: 10px; */
+    width: 100%;
+    display: flex;
+  }
+
+  #all-plant-area .device {
+    width: 25%;
+  }
+
+  #image {
+    position: relative;
+  }
+
+  #image > div {
+    position: relative;
+    float: right;
+    /* padding-top: 50px; */
+    height: 100%;
+    width: 100%;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+  }
+
+  #image img {
+    max-height: 100%;
+    max-width: 100%;
+    float: right;
+  }
+
+  #draw-area > #image {
+    width: 100%;
+    /* height: 400px; */
+    margin-top: 22px;
+    display: flex;
+  }
+
+  #draw-area > .devices {
+    width: 100%;
+    margin-top: 22px;
+  }
+
+  #draw-area > .devices > div {
+    width: 100%;
+    display: flex;
+  }
+
+  #draw-area > #all-plant-area > #image {
+    /* width: 73%; */
+    /* height: 300px; */
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  .device-label {
+    text-align: center;
+    padding: 4px;
+    color: #444;
+    font-weight: bold;
+    font-size: 18px !important;
+  }
+
+  .utilization-rate {
+    background: #0043d2;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 15px;
+    line-height: 25px;
+    z-index: 1;
+    transition: 0.3s background-color ease;
+  }
+
+  .utilization-rate:hover {
+    color: white;
+    background: rgb(29, 93, 219);
+    z-index: 5;
+  }
+
+  .utilization-rate > span {
+    font-size: 18px;
+  }
+
+  @media (min-width: 3840px) {
+    .device > .device-header {
+      font-size: 4rem;
+      height: 80px;
+      line-height: 80px;
+    }
+
+    .device > .device-body {
+      height: 372px;
+    }
+  }
+</style>
+<script type="text/javascript">
+  window.importPageScript()
+</script>

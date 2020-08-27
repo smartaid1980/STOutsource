@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<command name="cnc_DiagInfo" cycletype="count" cyclevalue="1" timeout="0"><params><param name="G_DGNO" count="1" frequency="0" isRepeat="true"><inputs><input name="P_NUMBER" type="startend">0</input><input name="P_COUNT">1</input></inputs><filters><filter name="AXIS">T</filter></filters><process/></param></params></command>

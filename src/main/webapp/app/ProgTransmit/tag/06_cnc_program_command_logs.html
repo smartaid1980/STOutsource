@@ -1,0 +1,149 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_CNC_Data_Server_0034}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="queryID" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label st-required"
+                      >{i18n_ServCloud_CNC_Data_Server_0035}</label
+                    >
+                    <label class="input"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="startID"
+                        name="startID"
+                        data-rule-required="true"
+                        data-rule-date="true"
+                        class="form-control"
+                      />
+                    </label>
+                    <label class="label st-required"
+                      >{i18n_ServCloud_CNC_Data_Server_0036}</label
+                    >
+                    <label class="input"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="endID"
+                        name="endID"
+                        data-rule-required="true"
+                        data-rule-date="true"
+                        class="form-control"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label st-required"
+                      >{i18n_ServCloud_Machines}</label
+                    >
+                    <label class="select select-multiple">
+                      <select
+                        multiple="multiple"
+                        class="form-control"
+                        id="machine"
+                        name="machine"
+                        data-rule-required="true"
+                      ></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submitBtn" class="btn btn-primary">
+                  {i18n_ServCloud_CNC_Upload_0009}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="reportID-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_CNC_Data_Server_0037}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              id="reportID"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_CNC_Upload_0002}</th>
+                  <th>{i18n_ServCloud_CNC_Data_Server_0038}</th>
+                  <th>{i18n_ServCloud_CNC_Data_Server_0039}</th>
+                  <th>{i18n_ServCloud_CNC_Data_Server_0040}</th>
+                  <th>{i18n_ServCloud_CNC_Data_Server_0041}</th>
+                  <th>{i18n_ServCloud_Program}</th>
+                  <th>{i18n_ServCloud_CNC_Data_Server_0042}</th>
+                  <th>{i18n_ServCloud_CNC_Data_Server_0043}</th>
+                  <th>{i18n_ServCloud_CNC_Data_Server_0044}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

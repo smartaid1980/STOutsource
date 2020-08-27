@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "IIOTMachineTemperatureSensor",
+    "name": "機台溫度感測偵測",
+    "type": 1,
+    "description": "Process parameter.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_machine_temperature_sensor",
+      "name": "機台溫度感測器偵測與收集模組"
+    }
+  ],
+  "tags": ["20140918000999"]
+}

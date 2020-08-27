@@ -1,0 +1,224 @@
+<div id="device-status-pie-chart" class="chart"></div>
+<div id="dslt" class="device-status-left-top hide">
+  <label
+    id="dslo"
+    class="device-status-label hide"
+    for="device-status-left-bottom-oee"
+  >
+    {i18n_ServCloud_Utilization}<br />
+    <!-- <canvas id="device-status-left-bottom-oee" width="350" height="250"></canvas> -->
+    <svg id="device-status-left-bottom-oee" width="350" height="250"></svg>
+  </label>
+</div>
+<div id="dsrt" class="device-status-right-top hide">
+  <label
+    id="dslq"
+    class="device-status-label hide"
+    for="device-status-right-bottom-part"
+  >
+    {i18n_ServCloud_Quantity}<br />
+    <!-- <canvas id="device-status-right-bottom-part" width="350" height="250"></canvas> -->
+    <svg id="device-status-right-bottom-part" width="350" height="250"></svg>
+  </label>
+</div>
+
+<div id="dslttop5" class="device-status-left-top hide">
+  <label
+    id="dsltop5"
+    class="device-status-label hide"
+    for="device-status-left-bottom-oee-top5"
+  >
+    {i18n_ServCloud_Utilization} Top 5<br />
+    <!-- <canvas id="device-status-left-bottom-oee" width="350" height="250"></canvas> -->
+    <svg id="device-status-left-bottom-oee-top5" width="350" height="250"></svg>
+  </label>
+</div>
+
+<div id="dsrtlast5" class="device-status-right-top hide">
+  <label
+    id="dsllast5"
+    class="device-status-label hide"
+    for="device-status-left-bottom-oee-last5"
+  >
+    {i18n_ServCloud_Utilization} Last 5<br />
+    <!-- <canvas id="device-status-left-bottom-oee" width="350" height="250"></canvas> -->
+    <svg
+      id="device-status-right-bottom-oee-last5"
+      width="350"
+      height="250"
+    ></svg>
+  </label>
+</div>
+
+<div id="dslbs" class="device-status-left-bottom hide">
+  <label
+    id="dsls"
+    class="device-status-label hide"
+    for="device-status-left-top-speed"
+  >
+    {i18n_ServCloud_Speed}<br />
+    <!--<canvas class=".hidden" id="device-status-left-top-speed" width="350" height="250"></canvas>-->
+    <svg id="device-status-left-top-speed" width="350" height="250"></svg>
+  </label>
+</div>
+<div id="dsrf" class="device-status-right-bottom hide">
+  <label
+    id="dslf"
+    class="device-status-label hide"
+    for="device-status-right-top-feed"
+  >
+    {i18n_ServCloud_Feed}<br />
+
+    <!-- <canvas class=".hidden" id="device-status-right-top-feed" width="350" height="250"></canvas> -->
+    <svg id="device-status-right-top-feed" width="350" height="250"></svg>
+  </label>
+</div>
+
+<!--<style>
+    #device-status-pie-chart {
+        transform:rotate3d(133,132,38,58deg);
+    }
+</style>-->
+
+<style>
+  .bar {
+    fill: steelblue;
+  }
+
+  .bar:hover {
+    fill: brown;
+  }
+
+  .axis--x path {
+    display: none;
+  }
+
+  .bartext {
+    fill: black;
+    font-size: 14px;
+  }
+
+  .device-status-left-top,
+  .device-status-right-top,
+  .device-status-left-bottom,
+  .device-status-right-bottom {
+    position: absolute;
+    display: none;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+  }
+
+  .device-status-left-top {
+    top: 100px;
+    left: 50px;
+    box-shadow: 10px 10px 5px darkgrey;
+  }
+
+  .device-status-right-top {
+    top: 100px;
+    right: 50px;
+    box-shadow: 10px 10px 5px darkgrey;
+  }
+
+  .device-status-left-bottom {
+    bottom: 100px;
+    left: 50px;
+    box-shadow: 10px 10px 5px darkgrey;
+  }
+
+  .device-status-right-bottom {
+    bottom: 100px;
+    right: 50px;
+    box-shadow: 10px 10px 5px darkgrey;
+  }
+
+  .device-status-label {
+    font-weight: none;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .three-d-box {
+    /*margin-top: 80px;*/
+    perspective: 1200px;
+    -webkit-perspective: 1200px;
+    /* Safari 和 Chrome */
+  }
+
+  .three-d-box #device-status-pie-chart {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    /* Safari 和 Chrome */
+    transform: translateZ(-360px);
+    -webkit-transform: translateZ(-360px);
+    /* Safari 和 Chrome */
+    -moz-transform: translateZ(-360px);
+    /* Firefox */
+    -ms-transform: translateZ(-360px);
+    /* IE9 */
+  }
+
+  .three-d-box .device-status-left-top {
+    background: rgba(230, 230, 230, 0.6);
+    border-radius: 5px;
+    padding: 30px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    /* Safari 和 Chrome */
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+    /* Firefox */
+    -ms-transform: rotateY(60deg);
+    /* IE9 */
+  }
+
+  .three-d-box .device-status-right-top {
+    background: rgba(230, 230, 230, 0.6);
+    border-radius: 5px;
+    padding: 30px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    /* Safari 和 Chrome */
+    transform: rotateY(-60deg);
+    -webkit-transform: rotateY(-60deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotateY(-60deg);
+    /* Firefox */
+    -ms-transform: rotateY(-60deg);
+    /* IE9 */
+  }
+
+  .three-d-box .device-status-left-bottom {
+    background: rgba(230, 230, 230, 0.6);
+    border-radius: 5px;
+    padding: 30px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    /* Safari 和 Chrome */
+    transform: rotateY(60deg);
+    -webkit-transform: rotateY(60deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotateY(60deg);
+    /* Firefox */
+    -ms-transform: rotateY(60deg);
+    /* Firefox */
+  }
+
+  .three-d-box .device-status-right-bottom {
+    background: rgba(230, 230, 230, 0.6);
+    border-radius: 5px;
+    padding: 30px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    /* Safari 和 Chrome */
+    transform: rotateY(-60deg);
+    -webkit-transform: rotateY(-60deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotateY(-60deg);
+    /* Firefox */
+    -ms-transform: rotateY(-60deg);
+    /* Firefox */
+  }
+</style>

@@ -1,0 +1,6 @@
+{
+  "modules": ["es"],
+  "blacklist": [],
+  "targets": "chrome 63",
+  "filename": "src/main/webapp/js/my-core-js-bundle.js"
+}

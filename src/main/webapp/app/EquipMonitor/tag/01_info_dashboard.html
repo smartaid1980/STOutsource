@@ -1,0 +1,1019 @@
+<!-- <ul id="breadcrumb_table" class="breadcrumbDark"  collapse="#collapse_table">test</ul> -->
+<div class="row">
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span
+        >>
+        <span id="machineIdHead"></span>
+        > {i18n_ServCloud_Dashboard}
+      </span>
+    </h1>
+  </div>
+</div>
+
+<section id="widget-grid">
+  <div id="monitorHeader"></div>
+
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-fullscreenbutton="false"
+    data-widget-editbutton="false"
+    data-widget-collapsed="false"
+    data-widget-colorbutton="false"
+    data-widget-deletebutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <span
+        >&nbsp;&nbsp;&nbsp;
+        <h2>【{i18n_ServCloud_Monitoring_Information}】</h2></span
+      >
+    </header>
+
+    <div class="tab-content padding-10">
+      <!--  系統1  -->
+      <div class="tab-pane fade in active" id="monitor">
+        <div class="row">
+          <!--<div class="col col-lg-1 hidden-md"></div>-->
+          <div class="col col-lg-4 col-md-3 pane pane-left">
+            <!-- machine start -->
+            <div class="info-title">
+              <div class="title" id="dMachineId">M.ID</div>
+            </div>
+            <!-- machine end -->
+            <!-- status start -->
+            <div class="info-block information hidden-md">
+              <div class="title">
+                {i18n_ServCloud_Monitoring_Machine_Information}
+              </div>
+              <div class="content">
+                <div class="p-row">
+                  <div class="p-col p-col-lg-1 p-col-md-1 head">
+                    {i18n_ServCloud_Monitoring_Type}
+                  </div>
+                  <div
+                    class="p-col p-col-lg-2 p-col-md-2 value"
+                    id="dMachineType"
+                  >
+                    *****
+                  </div>
+                </div>
+                <div class="p-row">
+                  <div class="p-col p-col-lg-1 p-col-md-1 head">
+                    {i18n_ServCloud_Monitoring_Controller}
+                  </div>
+                  <div
+                    class="p-col p-col-lg-2 p-col-md-2 value"
+                    id="dMachineController"
+                  >
+                    *****
+                  </div>
+                </div>
+                <div class="p-row">
+                  <div class="p-col p-col-lg-1 p-col-md-1 head">
+                    {i18n_ServCloud_Monitoring_Zone}
+                  </div>
+                  <div
+                    class="p-col p-col-lg-2 p-col-md-2 value"
+                    id="dMachineZone"
+                  >
+                    *****
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- status end -->
+            <!-- modal other code start -->
+            <div class="info-block modal-other-code">
+              <div class="title">{i18n_ServCloud_Monitoring_Other_Code}</div>
+              <div class="content">
+                <div class="p-row card-group">
+                  <div class="p-col p-col-lg-1 p-ol-md-1 card">
+                    <div class="head">H</div>
+                    <div class="value" id="dOtherCodeH">0</div>
+                  </div>
+                  <div class="p-col p-col-lg-1 p-ol-md-1 card">
+                    <div class="head">D</div>
+                    <div class="value" id="dOtherCodeD">0</div>
+                  </div>
+                  <div class="p-col p-col-lg-1 p-ol-md-1 card">
+                    <div class="head">T</div>
+                    <div class="value" id="dOtherCodeT">0</div>
+                  </div>
+                </div>
+                <div class="p-row card-group">
+                  <div class="p-col p-col-lg-1 p-ol-md-1 card">
+                    <div class="head">M</div>
+                    <div class="value" id="dOtherCodeM">0</div>
+                  </div>
+                  <div class="p-col p-col-lg-1 p-ol-md-1 card">
+                    <div class="head">F</div>
+                    <div class="value" id="dOtherCodeF">0</div>
+                  </div>
+                  <div class="p-col p-col-lg-1 p-ol-md-1 card">
+                    <div class="head">S</div>
+                    <div class="value" id="dOtherCodeS">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal other code end -->
+            <!-- parts start -->
+            <div class="info-block parts">
+              <div class="title">{i18n_ServCloud_Monitoring_Parts}</div>
+              <div class="content">
+                <div class="p-row card-group">
+                  <div class="p-col p-col-lg-1 p-col-lg-1 card">
+                    <div class="head">
+                      {i18n_ServCloud_Monitoring_Parts_Required}
+                    </div>
+                    <div class="value" id="dPartsRequired">0</div>
+                  </div>
+                  <div class="p-col p-col-lg-1 p-col-lg-1 card">
+                    <div class="head">
+                      {i18n_ServCloud_Monitoring_Parts_Count}
+                    </div>
+                    <div class="value" id="dPartsCount">0</div>
+                  </div>
+                  <div class="p-col p-col-lg-1 p-col-lg-1 card">
+                    <div class="head">
+                      {i18n_ServCloud_Monitoring_Parts_Total}
+                    </div>
+                    <div class="value" id="dPartsTotal">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- parts end -->
+            <!-- times start -->
+            <div class="info-block times">
+              <div class="title">{i18n_ServCloud_Monitoring_Times}</div>
+              <div class="content">
+                <div class="p-row card-group">
+                  <div class="p-col p-col-lg-1 p-col-lg-1 card">
+                    <div class="head">
+                      {i18n_ServCloud_Monitoring_Times_Power}
+                    </div>
+                    <div class="value" id="dTimesPower">
+                      <span class="hours">00</span>
+                      <span class="minutes">00</span>
+                      <span class="seconds">00</span>
+                    </div>
+                  </div>
+                  <div class="p-col p-col-lg-1 p-col-lg-1 card">
+                    <div class="head">
+                      {i18n_ServCloud_Monitoring_Times_Run}
+                    </div>
+                    <div class="value" id="dTimesRun">
+                      <span class="hours">00</span>
+                      <span class="minutes">00</span>
+                      <span class="seconds">00</span>
+                    </div>
+                  </div>
+                  <div class="p-col p-col-lg-1 p-col-lg-1 card">
+                    <div class="head">
+                      {i18n_ServCloud_Monitoring_Times_Cutting}
+                    </div>
+                    <div class="value" id="dTimesCutting">
+                      <span class="hours">00</span>
+                      <span class="minutes">00</span>
+                      <span class="seconds">00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- times end -->
+          </div>
+          <!--<div class="col col-lg-1 hidden-md"></div>-->
+          <div class="col col-lg-4 col-md-5 pane pane-center">
+            <div class="info-block status">
+              <div class="p-row card-group">
+                <div class="p-col p-col-lg-2 p-col-md-2 card">
+                  <div class="head">MODE</div>
+                  <div class="value" id="dMode">****</div>
+                </div>
+                <div class="p-col p-col-lg-2 p-col-md-2 card">
+                  <div class="head">STATUS</div>
+                  <div class="value" id="dStatus">****</div>
+                </div>
+                <div class="p-col p-col-lg-2 p-col-md-2 card">
+                  <div class="head">EMG</div>
+                  <div class="value" id="dEMG">****</div>
+                </div>
+                <div class="p-col p-col-lg-2 p-col-md-2 card">
+                  <div class="head">ALM</div>
+                  <div class="value" id="dALM">****</div>
+                </div>
+                <div class="p-col p-col-lg-2 p-col-md-2 card">
+                  <div class="head">MOTION</div>
+                  <div class="value" id="dMotion">****</div>
+                </div>
+              </div>
+            </div>
+            <div class="info-block machine hidden-sm hidden-xs">
+              <div class="machine-image">
+                <img src="./app/EquipMonitor/img/machine/machine.png" />
+                <!--<div class="cycle-time">04:00:48</div>-->
+              </div>
+              <div class="pane-bottom machine-charts">
+                <div class="row no-margin">
+                  <div class="col col-lg-3 col-md-3">
+                    <div
+                      class="easy-pie-chart txt-color-blue easyPieChart"
+                      data-percent="0"
+                      data-pie-size="35"
+                      title="{i18n_ServCloud_Monitoring_Servo_Feedrate_Override}"
+                      id="dFeedrateOverride"
+                    >
+                      <span class="percent percent-sign font-xs">0</span>
+                    </div>
+                  </div>
+                  <div class="col col-lg-6 col-md-6">
+                    <div
+                      class="chart-container bulletChartContainer"
+                      data-value="0"
+                      data-marker="0"
+                      title="{i18n_ServCloud_Monitoring_Servo_Actual_Feedrate}"
+                      id="dFeedrate"
+                    >
+                      <div id="feedChart" class="bulletChart chart-panel"></div>
+                      <div class="chart-label txt-color-blue">0</div>
+                    </div>
+                    <div
+                      class="chart-container bulletChartContainer"
+                      data-value="0"
+                      data-marker="0"
+                      title="{i18n_ServCloud_Monitoring_Spindle_Speed}"
+                      id="dSpeed"
+                    >
+                      <div class="chart-label txt-color-greenLight">0</div>
+                      <div
+                        id="speedChart"
+                        class="bulletChart chart-panel"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col col-lg-3 col-md-3">
+                    <div
+                      class="easy-pie-chart txt-color-greenLight easyPieChart"
+                      data-percent="0"
+                      data-pie-size="35"
+                      title="{i18n_ServCloud_Monitoring_Spindle_Speed_Override}"
+                      id="dSpeedOverride"
+                    >
+                      <span class="percent percent-sign font-xs">0</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info-block program">
+              <div class="p-row card-group">
+                <div class="p-col p-col-lg-2 p-col-md-2 card">
+                  <div class="head">
+                    {i18n_ServCloud_Monitoring_Program_Program}
+                  </div>
+                  <div class="value align-left" id="dProgram">*****</div>
+                </div>
+                <div class="p-col p-col-lg-1 p-col-md-1 card">
+                  <div class="head">
+                    {i18n_ServCloud_Monitoring_Program_Line_Number}
+                  </div>
+                  <div class="value align-left" id="dLineNumber">*****</div>
+                </div>
+                <div class="p-col p-col-lg-1 p-col-md-1 card">
+                  <div class="head">
+                    {i18n_ServCloud_Monitoring_Program_Cycle_Time}
+                  </div>
+                  <div class="value" id="dCycleTime">
+                    <span class="hours">00</span>
+                    <span class="minutes">00</span>
+                    <span class="seconds">00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-group">
+                <div class="card">
+                  <div class="head">
+                    {i18n_ServCloud_Monitoring_Program_Line_Execution_Block}
+                  </div>
+                  <div class="value align-left" id="dLineExeBlock">*****</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="col col-lg-1 hidden-md"></div>-->
+          <div class="col col-lg-4 col-md-4 pane pane-right">
+            <!-- position start -->
+            <div class="info-block position">
+              <div class="title">{i18n_ServCloud_Monitoring_Position}</div>
+              <div class="content">
+                <table class="">
+                  <tbody>
+                    <tr class="header">
+                      <th class="head" width="10%"></th>
+                      <th class="head">
+                        {i18n_ServCloud_Monitoring_Absolute_Position}
+                      </th>
+                      <th class="head">
+                        {i18n_ServCloud_Monitoring_Machine_Position}
+                      </th>
+                      <th class="head hidden-md">
+                        {i18n_ServCloud_Monitoring_Relative_Position}
+                      </th>
+                      <th class="head hidden-md">
+                        {i18n_ServCloud_Monitoring_Distance_To_Go}
+                      </th>
+                    </tr>
+                    <tr class="value">
+                      <th id="dPos0" class="head">---</th>
+                      <td id="dPos0Abs">---</td>
+                      <td id="dPos0Mac">---</td>
+                      <td id="dPos0Rel" class="hidden-md">---</td>
+                      <td id="dPos0Dis" class="hidden-md">---</td>
+                    </tr>
+                    <tr class="value">
+                      <th id="dPos1" class="head">---</th>
+                      <td id="dPos1Abs">---</td>
+                      <td id="dPos1Mac">---</td>
+                      <td id="dPos1Rel" class="hidden-md">---</td>
+                      <td id="dPos1Dis" class="hidden-md">---</td>
+                    </tr>
+                    <tr class="value">
+                      <th id="dPos2" class="head">---</th>
+                      <td id="dPos2Abs">---</td>
+                      <td id="dPos2Mac">---</td>
+                      <td id="dPos2Rel" class="hidden-md">---</td>
+                      <td id="dPos2Dis" class="hidden-md">---</td>
+                    </tr>
+                    <tr class="value">
+                      <th id="dPos3" class="head">---</th>
+                      <td id="dPos3Abs">---</td>
+                      <td id="dPos3Mac">---</td>
+                      <td id="dPos3Rel" class="hidden-md">---</td>
+                      <td id="dPos3Dis" class="hidden-md">---</td>
+                    </tr>
+                    <tr class="value">
+                      <th id="dPos4" class="head">---</th>
+                      <td id="dPos4Abs">---</td>
+                      <td id="dPos4Mac">---</td>
+                      <td id="dPos4Rel" class="hidden-md">---</td>
+                      <td id="dPos4Dis" class="hidden-md">---</td>
+                    </tr>
+                    <tr class="value">
+                      <th id="dPos5" class="head">---</th>
+                      <td id="dPos5Abs">---</td>
+                      <td id="dPos5Mac">---</td>
+                      <td id="dPos5Rel" class="hidden-md">---</td>
+                      <td id="dPos5Dis" class="hidden-md">---</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- position end -->
+            <!-- modal g-code start -->
+            <div class="info-block modal-g-code">
+              <div class="title">G-Code</div>
+              <div class="content">
+                <table class="c-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span id="dGCode0"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode1"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode2"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode3"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode4"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span id="dGCode5"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode6"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode7"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode8"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode9"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span id="dGCode10"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode11"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode12"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode13"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode14"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span id="dGCode15"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode16"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode17"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode18"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode19"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span id="dGCode20"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode21"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode22"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode23"></span>
+                      </td>
+                      <td>
+                        <span id="dGCode24"></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- modal g-code end -->
+          </div>
+          <!--<div class="col col-lg-1 hidden-md"></div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  media="screen"
+  href="js/plugin/jqBullet/bullet.css"
+/>
+<style>
+  /* pane */
+
+  #monitor .pane .pane-bottom {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  /* p grid */
+
+  .p-row {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .p-row .p-col {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+
+  /* align */
+
+  .align-left {
+    text-align: left !important;
+  }
+
+  .align-center {
+    text-align: center !important;
+  }
+
+  .align-right {
+    text-align: right !important;
+  }
+
+  /* info title */
+
+  #monitor .pane .info-title {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+    border: 1px solid #ddd;
+  }
+
+  #monitor .pane .info-title .title {
+    margin: 0.3em 5px;
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  /* info block */
+
+  #monitor .pane .info-block {
+    margin-top: 1.5em;
+    border: 1px solid #ddd;
+    overflow: hidden;
+  }
+
+  #monitor .pane .info-block .title {
+    margin: 0 5px;
+    border-bottom: 1px solid #ddd;
+    padding: 0.1em 0.5em;
+    font-size: 1em;
+    color: #aaa;
+  }
+
+  /* card */
+
+  #monitor .pane .card-group {
+    margin: 0 5px;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+  }
+
+  #monitor .pane .info-block div.card-group:last-of-type {
+    border-bottom: none;
+  }
+
+  #monitor .pane .card-group .card {
+    border-right: 1px solid #ddd;
+  }
+
+  #monitor .pane .card-group > div.card:last-of-type {
+    border-right: none;
+  }
+
+  #monitor .pane .card {
+    padding: 5px;
+  }
+
+  #monitor .pane .card .head {
+    color: #aaa;
+    font-size: 0.1em;
+    padding: 0 0.2em;
+  }
+
+  #monitor .pane .card .value {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #monitor .pane .card.cycle-time {
+    float: right;
+    margin: 0;
+    width: 12em;
+  }
+
+  #monitor .pane .card.cycle-time .value {
+    margin-top: -0.5em;
+    margin-right: 0.3em;
+    font-size: 1.5em;
+    text-align: right;
+  }
+
+  /* box */
+
+  #monitor .pane .box {
+    margin-bottom: 0.1em;
+    border: 1px solid #ddd;
+  }
+
+  #monitor .pane .box > .head {
+    text-align: center;
+    padding: 5px;
+  }
+
+  #monitor .pane .box .content {
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #monitor .pane .box .content .value {
+    font-weight: bold;
+  }
+
+  #monitor .pane .box .content .head {
+    font-size: 0.01em;
+    color: #aaa;
+  }
+
+  /* chart */
+
+  #monitor .pane .guage {
+    display: relative;
+  }
+
+  #monitor .pane .gauge .preview-textfield {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* information */
+
+  #monitor .pane .info-block.information .content .head {
+    margin: 0.3em 0.5em;
+    border-right: 1px solid #ccc;
+    padding: 0 5px;
+    white-space: nowrap;
+  }
+
+  #monitor .pane .info-block.information .content .value {
+    margin: 0.3em 0.5em;
+  }
+
+  /* parts */
+
+  #monitor .pane .info-block.parts th {
+    width: 33.33333333%;
+  }
+
+  /* times */
+
+  #monitor .pane .info-block.times th {
+    width: 33.33333333%;
+  }
+
+  /* machine */
+
+  #monitor .pane .info-block.machine {
+    position: relative;
+    text-align: center;
+  }
+
+  #monitor .pane .info-block.machine .machine-image {
+    text-align: center;
+  }
+
+  #monitor .pane .info-block.machine .machine-image img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+
+  #monitor .pane .info-block.machine .machine-charts {
+    padding: 5px 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  #monitor .pane .info-block.machine .machine-charts .chart-container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  #monitor
+    .pane
+    .info-block.machine
+    .machine-charts
+    .chart-container
+    .chart-label {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    float: left;
+  }
+
+  #monitor
+    .pane
+    .info-block.machine
+    .machine-charts
+    .chart-container
+    .chart-panel {
+    display: inline-block;
+    width: 70%;
+    height: 80%;
+    vertical-align: middle;
+    float: left;
+  }
+
+  #monitor .pane .info-block.machine .machine-charts .bullet .tick {
+    fill: #ddd;
+  }
+
+  #monitor .pane .info-block.machine .machine-charts .bullet .marker {
+    stroke: #8b0000;
+  }
+
+  #feedChart .bullet .measure.s0 {
+    fill: #57889c;
+  }
+
+  #speedChart .bullet .measure.s0 {
+    fill: #71843f;
+  }
+
+  #monitor .pane .info-block.program .value .hours:after,
+  #monitor .pane .info-block.program .value .minutes:after {
+    content: ' :';
+  }
+
+  /* position */
+
+  #monitor .pane .info-block.position .content {
+    padding: 5px;
+  }
+
+  #monitor .pane .info-block.position .content table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  #monitor .pane .info-block.position .content table tr {
+    height: 2em;
+  }
+
+  #monitor .pane .info-block.position .content table .head {
+    text-align: center;
+    color: #aaa;
+  }
+
+  #monitor .pane .info-block.position .content table .header .head {
+    font-size: 0.01em;
+    font-weight: normal;
+  }
+
+  #monitor .pane .info-block.position .content table .value {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #monitor .pane .info-block.position .content table .value .head {
+    width: 10%;
+    font-size: 0.01em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /*#monitor .pane .info-block.position .content table .value td {
+    border-left: 1px solid #ddd;
+  }*/
+
+  /* modal-g-code */
+
+  #monitor .pane .info-block.modal-g-code .content {
+    padding: 5px;
+  }
+
+  #monitor .pane .info-block.modal-g-code .content table {
+    width: 100%;
+  }
+
+  #monitor .pane .info-block.modal-g-code .content table tbody th,
+  #monitor .pane .info-block.modal-g-code .content table tbody td {
+    width: 20%;
+  }
+
+  #monitor .pane .info-block.modal-g-code .content table tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  #monitor .pane .info-block.modal-g-code .content table tr:last-child {
+    border-bottom: none;
+  }
+
+  /* responsive */
+
+  @media screen and (min-width: 992px) {
+    .p-row .p-col-md-1 {
+      -webkit-flex: 1;
+      flex: 1;
+    }
+    .p-row .p-col-md-2 {
+      -webkit-flex: 2;
+      flex: 2;
+    }
+    .p-row .p-col-md-3 {
+      -webkit-flex: 3;
+      flex: 3;
+    }
+    .p-row .p-col-md-4 {
+      -webkit-flex: 4;
+      flex: 4;
+    }
+    .p-row .p-col-md-5 {
+      -webkit-flex: 5;
+      flex: 5;
+    }
+    .p-row .p-col-md-6 {
+      -webkit-flex: 6;
+      flex: 6;
+    }
+    .p-row .p-col-md-7 {
+      -webkit-flex: 7;
+      flex: 7;
+    }
+    .p-row .p-col-md-8 {
+      -webkit-flex: 8;
+      flex: 8;
+    }
+    .p-row .p-col-md-9 {
+      -webkit-flex: 9;
+      flex: 9;
+    }
+    .p-row .p-col-md-10 {
+      -webkit-flex: 10;
+      flex: 10;
+    }
+    .p-row .p-col-md-11 {
+      -webkit-flex: 11;
+      flex: 11;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    /* times */
+    #monitor .pane .info-block.times .p-row {
+      display: block;
+    }
+    #monitor .pane .info-block.times .card-group .card {
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+    #monitor .pane .info-block.times .card-group .card:last-of-type {
+      border-bottom: none;
+    }
+    #monitor .pane .info-block.times .card-group .card .head {
+      display: inline-block;
+      width: 20%;
+      float: left;
+    }
+    #monitor .pane .info-block.times .card-group .card .value {
+      display: inline-block;
+      width: 80%;
+    }
+    #monitor .pane .info-block.times .content {
+      position: relative;
+    }
+    #monitor .pane .info-block.times .content .card-group {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    #monitor .pane .info-block.times .content .value .hours:after,
+    #monitor .pane .info-block.times .content .value .minutes:after {
+      content: ' :';
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    /* flex sytem */
+    .p-row .p-col-lg-1 {
+      -webkit-flex: 1;
+      flex: 1;
+    }
+    .p-row .p-col-lg-2 {
+      -webkit-flex: 2;
+      flex: 2;
+    }
+    .p-row .p-col-lg-3 {
+      -webkit-flex: 3;
+      flex: 3;
+    }
+    .p-row .p-col-lg-4 {
+      -webkit-flex: 4;
+      flex: 4;
+    }
+    .p-row .p-col-lg-5 {
+      -webkit-flex: 5;
+      flex: 5;
+    }
+    .p-row .p-col-lg-6 {
+      -webkit-flex: 6;
+      flex: 6;
+    }
+    .p-row .p-col-lg-7 {
+      -webkit-flex: 7;
+      flex: 7;
+    }
+    .p-row .p-col-lg-8 {
+      -webkit-flex: 8;
+      flex: 8;
+    }
+    .p-row .p-col-lg-9 {
+      -webkit-flex: 9;
+      flex: 9;
+    }
+    .p-row .p-col-lg-10 {
+      -webkit-flex: 10;
+      flex: 10;
+    }
+    .p-row .p-col-lg-11 {
+      -webkit-flex: 11;
+      flex: 11;
+    }
+
+    /* common */
+    #monitor {
+      padding: 0 1.5em;
+      font-size: 16px;
+    }
+    #monitor .pane .info-title {
+      border-bottom: 2px solid #ddd;
+      border-right: 2px solid #ddd;
+    }
+    #monitor .pane .info-block {
+      margin-top: 0.5em;
+      border-bottom: 2px solid #ddd;
+      border-right: 2px solid #ddd;
+    }
+
+    /* times */
+    #monitor .pane .info-block.times .content .value .hours:after {
+      content: ' H';
+      color: #aaa;
+    }
+    #monitor .pane .info-block.times .content .value .minutes:after {
+      content: ' M';
+      color: #aaa;
+    }
+    #monitor .pane .info-block.times .content .value .seconds:after {
+      content: ' S';
+      color: #aaa;
+    }
+
+    /* machine */
+    #monitor
+      .pane
+      .info-block.machine
+      .machine-charts
+      .chart-container
+      .chart-label {
+      width: 20%;
+    }
+    #monitor
+      .pane
+      .info-block.machine
+      .machine-charts
+      .chart-container
+      .chart-panel {
+      width: 80%;
+    }
+
+    /* position */
+    #monitor
+      .pane
+      .info-block.position
+      .content
+      table
+      tr.header
+      .head:first-child,
+    #monitor .pane .info-block.position .content table tr.value .head {
+      display: table-cell;
+    }
+
+    /* modal-g-code */
+    #monitor .pane .info-block.modal-g-code .content table tbody td {
+      text-align: center;
+    }
+    #monitor .pane .info-block.modal-g-code .content table tbody td span {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 5px;
+      width: 80%;
+      text-align: left;
+    }
+  }
+</style>
+
+<script type="text/javascript">
+  window.importPageScript()
+</script>

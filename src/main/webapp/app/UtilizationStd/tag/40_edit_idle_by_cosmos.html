@@ -1,0 +1,348 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="idle_form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label">{i18n_ServCloud_day}</label>
+                    <label class="input"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="query_date"
+                        name="query_date"
+                        data-rule-date="true"
+                        class="form-control"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label">{i18n_ServCloud_Machine}</label>
+                    <label class="input">
+                      <select
+                        class="form-control"
+                        id="machine_id"
+                        name="machine_id"
+                      ></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit_btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken frame"
+        id="idle_table-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Query_Result}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="pks"
+              id="idle_table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th style="width: 3%;">
+                    <!--<input type="text" class="form-control" />-->
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Machine}</th>
+                  <th>{i18n_ServCloud_Date}</th>
+                  <th>{i18n_ServCloud_Status}</th>
+                  <th>{i18n_ServCloud_Idle_Alarm_Code}</th>
+                  <th>{i18n_ServCloud_Start_Time}</th>
+                  <th>{i18n_ServCloud_End_Time}</th>
+                  <th><i class="fa fa-lg fa-gear"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="machine_id"
+                      type="text"
+                      class="form-control"
+                      stk-pk
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="shift_date"
+                      type="text"
+                      class="form-control"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="status"
+                      type="text"
+                      class="form-control"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input name="idle_id" type="text" class="form-control" />
+                  </td>
+                  <td>
+                    <input
+                      name="start_time"
+                      type="text"
+                      class="form-control"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="end_time"
+                      type="text"
+                      class="form-control"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <button
+                      name="column7"
+                      class="btn btn-xs btn-warning fix-btn"
+                      title="Fix"
+                    >
+                      <i class="fa fa-gear"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="fix-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title">{i18n_ServCloud_Time_Fix}</h4>
+            </div>
+            <div class="modal-body">
+              <form class="smart-form" id="modal-form" novalidate="novalidate">
+                <fieldset>
+                  <div class="row">
+                    <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <label class="label">{i18n_ServCloud_Machine}</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="modal_machine_id"
+                          name="modal_machine_id"
+                          class="form-control"
+                          disabled
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <label class="label">{i18n_ServCloud_day}</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="modal_query_date"
+                          name="modal_query_date"
+                          class="form-control"
+                          disabled
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <label class="label">{i18n_ServCloud_Status}</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="modal_status"
+                          name="modal_status"
+                          class="form-control"
+                          disabled
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <label class="label"
+                        >{i18n_ServCloud_Idle_Alarm_Code}</label
+                      >
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="modal_code"
+                          name="modal_code"
+                          class="form-control"
+                          disabled
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <label class="label">{i18n_ServCloud_Start_Time}</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="modal_start"
+                          name="modal_start"
+                          class="form-control"
+                          disabled
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <label class="label">{i18n_ServCloud_End_Time}</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="modal_end"
+                          name="modal_end"
+                          class="form-control"
+                          disabled
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                      <label class="label">{i18n_ServCloud_Split_Count}</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="split_count"
+                          name="split_count"
+                          value="0"
+                          class="form-control"
+                        />
+                      </label>
+                    </section>
+
+                    <table
+                      class="table table-striped table-bordered table-hover"
+                      width="100%"
+                      id="modal_table"
+                      hidden="hidden"
+                    >
+                      <thead>
+                        <tr>
+                          <th>{i18n_ServCloud_Idle_Alarm_Code}</th>
+                          <th>{i18n_ServCloud_Start_Time}</th>
+                          <th>{i18n_ServCloud_End_Time}</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+
+                    <!--<section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                      <label class="label">開始時間</label>
+                      <div class='input-group date' id='modal_startpick'>
+                        <input type='text' class="form-control" id='modal_start' disabled/>
+                        <span class="input-group-addon" disabled>
+                          <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                      </div>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                      <label class="label">結束時間</label>
+                      <div class='input-group date' id='modal_endpick'>
+                        <input type='text' class="form-control" id='modal_end' disabled/>
+                        <span class="input-group-addon" >
+                          <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                      </div>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                      <label class="label">分割筆數</label>
+                      <label class="input">
+                        <input type="text" id="split_count" name="split_count" value="0" class="form-control">
+                      </label>
+                    </section>-->
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default" data-dismiss="modal">
+                {i18n_ServCloud_Cancel}
+              </button>
+              <button id="modal-submit-btn" class="btn btn-primary">
+                {i18n_ServCloud_Submit}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

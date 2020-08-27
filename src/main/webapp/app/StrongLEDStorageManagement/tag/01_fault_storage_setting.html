@@ -1,0 +1,88 @@
+<section id="widget-grid" class="">
+  <div
+    class="jarviswidget jarviswidget-color-darken"
+    id="wid-id-0"
+    data-widget-editbutton="false"
+    data-widget-deletebutton="false"
+    data-widget-togglebutton="false"
+    data-widget-fullscreenbutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-user"></i> </span>
+      <span
+        >&nbsp;&nbsp;&nbsp;
+        <h2>故障儲位管理</h2></span
+      >
+    </header>
+    <!-- widget div-->
+    <div>
+      <!-- widget edit box -->
+      <div class="jarviswidget-editbox">
+        <!-- This area used as dropdown edit box -->
+      </div>
+      <!-- end widget edit box -->
+      <!-- widget content -->
+      <div class="widget-body no-padding" id="stk-table-body">
+        <table
+          id="stk-table"
+          stk-entity-pk="position_id"
+          class="table table-striped table-bordered table-hover"
+          width="100%"
+        >
+          <thead>
+            <tr>
+              <th class="hasinput" style="width: 100%;">
+                <input type="text" class="form-control" />
+              </th>
+              <th class="hasinput" style="width: 5%;">
+                <input type="text" class="form-control" />
+              </th>
+              <th class="hasinput" style="width: 5%;">
+                <input type="text" class="form-control" />
+              </th>
+              <th class="hasinput" style="width: 5%;">
+                <input type="text" class="form-control" />
+              </th>
+              <th class="hasinput" style="width: 5%;">
+                <input type="text" class="form-control" />
+              </th>
+            </tr>
+            <tr>
+              <th data-class="expand">{i18n_ServCloud_Fault_Storage}</th>
+              <th>position_id</th>
+              <th>store</th>
+              <th>grid</th>
+              <th>index</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr stk-input-template hidden="hidden">
+              <td>
+                <select
+                  name="position_name"
+                  class="full-width"
+                  placeholder="故障儲位"
+                ></select>
+              </td>
+              <td>
+                <input name="position_id" class="full-width" stk-pk />
+              </td>
+              <td><input name="store_id" class="full-width" /></td>
+              <td><input name="store_grid_index" class="full-width" /></td>
+              <td><input name="store_cell_index" class="full-width" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- widget content END -->
+    </div>
+    <!-- widget div END -->
+  </div>
+  <!-- Widget ID END -->
+  <!-- NEW WIDGET END -->
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<script>
+  window.importPageScript()
+</script>

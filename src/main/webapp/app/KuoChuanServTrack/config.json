@@ -1,0 +1,40 @@
+{
+  "app": {
+    "id": "KuoChuanServTrack",
+    "name": "i18n_ServCloud_Kuo_Chuan_ServTrack",
+    "type": 1,
+    "description": "KuoChuanServTrack",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_emp_performance",
+      "name": "i18n_ServCloud_10_Emp_Performance"
+    },
+    {
+      "id": "20_emp_use",
+      "name": "i18n_ServCloud_20_Emp_Use"
+    },
+    {
+      "id": "30_oee",
+      "name": "i18n_ServCloud_30_Oee"
+    },
+    {
+      "id": "40_device_use",
+      "name": "i18n_ServCloud_40_Device_Use"
+    },
+    {
+      "id": "50_product_quality",
+      "name": "i18n_ServCloud_50_Product_Quality"
+    },
+    {
+      "id": "60_ng_quality",
+      "name": "i18n_ServCloud_60_Ng_Quality"
+    },
+    {
+      "id": "70_move_record",
+      "name": "i18n_ServCloud_70_Move_Record"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

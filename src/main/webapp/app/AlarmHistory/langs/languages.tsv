@@ -1,0 +1,36 @@
+	zh_tw	zh	en
+i18n_ServCloud_AlarmHistory	警報履歷	警报履历	Machine Alarm Analysis
+i18n_ServCloud_AlarmHistory_By_Code	10 依照警報代碼搜尋	10 依照警报代码搜寻	10 Search By Code
+i18n_ServCloud_AlarmHistory_By_Machine	20 依照機台搜尋	20 依照机台搜寻	20 Search By Machine
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start Date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_OccurrenceDate	發生日期	发生日期	Occurrence Date
+i18n_ServCloud_Query_Bar_Chart	長條圖	长条图	Bar Chart
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Condition
+i18n_ServCloud_Query_Results_Bar	搜尋結果	搜寻结果	Query Results
+i18n_ServCloud_Show_Demo_Data	顯示Demo資料	显示Demo资料	Show Demo Data
+i18n_ServCloud_Submit	提交	提交	Submit
+i18n_ServCloud_demo	顯示DEMO資料	显示DEMO资料	Show Demo Data
+i18n_ServCloud_AlarmCode	機台警報代碼	机台警报代码	Machine Alarm Code
+i18n_ServCloud_AlarmDescription	警報說明	警报说明	Alarm Description
+i18n_ServCloud_Alarm_Name	警報名稱	警报名称	Alarm Name
+i18n_ServCloud_AlarmNumber	次數	次数	Alarm Times
+i18n_ServCloud_Alarm_Details	詳細資料	详细资料	Details
+i18n_ServCloud_Start_Time	開始時間	开始时间	Start Time
+i18n_ServCloud_End_Time	結束時間	结束时间	End Time
+i18n_ServCloud_Duration	持續時間	持续时间	Duration
+i18n_ServCloud_Cnc_Brand	控制器廠牌	控制器厂牌	Cnc brand
+i18n_ServCloud_Alarm_Code_Undefined	未定義警報代碼	未定义警报代码	Alarm Code Undefined
+i18n_ServCloud_By_Code_Anko	30 依照警報代碼搜尋 (PLC)	30 依照警报代码搜寻 (PLC)	30 Search By Code (PLC)
+i18n_ServCloud_By_Machine_Anko	40 依照機台搜尋 (PLC)	40 依照机台搜寻 (PLC)	40 Search By Machine (PLC)
+i18n_ServCloud_Alarm_Code_Decimal	機台警報代碼 (十進位)	机台警报代码 (十进位)	Machine Alarm Code (Decimal)
+i18n_ServCloud_Alarm_Code_Hex	機台警報代碼 (十六進位)	机台警报代码 (十六进位)	Machine Alarm Code (Hexadecimal)
+i18n_ServCloud_Inverter_Brand	變頻器廠牌	变频器厂牌	Inverter Brand
+i18n_ServCloud_Inverter_Status	變頻器狀態	变频器状态	Inverter Status
+i18n_ServCloud_Inverter_Sequence	變頻器序號	变频器序号	Inverter Sequence
+i18n_ServCloud_Filter	過濾	过滤	Filter
+i18n_ServCloud_30_Alarm_Statistic_by_Codes_aidc	30 依警報代碼搜尋(aidc)	30 依照警报代码搜寻(aidc)	30 Search By Code(aidc)
+i18n_ServCloud_40_Alarm_Statisti_by_Machine_aidc	40 依機台搜尋(aidc)	40 依机台搜寻(aidc)	40 Search By Machine(aidc)
+i18n_ServCloud_Plant	廠區	厂区	Plant
+i18n_ServCloud_Machine_Type	機種	机种	Machine Type

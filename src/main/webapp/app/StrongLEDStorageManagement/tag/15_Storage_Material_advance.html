@@ -1,0 +1,176 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- QUERY WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>搜尋條件</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form id="query-form" class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-lg-4 col-md-6 col-sm-12">
+                    <div>
+                      <label class="label st-required">選擇採購單號</label>
+                      <div class="input">
+                        <input
+                          name="pur_id"
+                          class="required"
+                          type="text"
+                          id="pur_id"
+                        />
+                      </div>
+                    </div>
+                  </section>
+                  <section class="col col-lg-4 col-md-6 col-sm-12">
+                    <div>
+                      <label class="label">選擇採購單別</label>
+                      <div class="select">
+                        <select name="show_pur" id="show_pur"> </select>
+                        <i></i>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="col col-lg-4 col-md-6 col-sm-12">
+                    <div>
+                      <label class="label">選擇採購單序號</label>
+                      <div class="select">
+                        <select id="pur_num" name="pur_num"></select>
+                        <i></i>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="query-btn" class="btn btn-primary">
+                  送出
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- QUERY WIDGET END -->
+    <!-- RESULT WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="detail-table-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>搜尋結果</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <p id="chose-position" class="alert alert-info hide"></p>
+            <table
+              id="detail-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 11);">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>進貨單號</th>
+                  <th>進貨單序號</th>
+                  <th>進貨單別</th>
+                  <th>物料編號</th>
+                  <th>預排物料編號</th>
+                  <th>實際儲位</th>
+                  <th>預排儲位</th>
+                  <th>實際入庫日期</th>
+                  <th>預排入庫區間</th>
+                  <th>實際入庫數量</th>
+                  <th>預排入庫數量</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- RESULT WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #chose-position {
+    margin: 0;
+    border: none;
+  }
+
+  .form-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-group > label {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .modal-body > .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  button.print {
+    font-size: 1.5em;
+    width: 100px;
+    height: 50px;
+  }
+
+  #show-path-form {
+    padding-bottom: 10px;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

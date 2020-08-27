@@ -1,0 +1,8 @@
+{
+  "type": "DeviceStatus",
+  "gridClass": "col-xs-12 col-sm-12 col-md-8 col-lg-8",
+  "title": "<i class='fa fa-bar-chart-o'></i> <strong>{i18n_ServCloud_Machine_List}</strong>",
+  "contentPadding": true,
+  "byPlant": true,
+  "disable": false
+}

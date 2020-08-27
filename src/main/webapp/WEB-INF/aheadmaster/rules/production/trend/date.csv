@@ -1,0 +1,7 @@
+groupCol(newCol(A),"日期") ###(A)groupCol(newCol(S),"製程")groupCol(newCol(M),"模號")groupCol(newCol(F),"班次")
+dataCol(newCol(V),"總標工",SUM,"%.2f") ###(B)
+dataCol(newCol(Y),"投入人時",SUM,"%.2f") ###(C)
+dataCol(newCol(AF),"總無效",SUM,"%.2f") ###(D)
+dataCol(newCol(Y),"總出勤",SUM,"%.2f") ###(E)
+calcCol(reportCol(B)/reportCol(C),"作業效率","%.4f") ###(F)標工/投入
+calcCol(1-reportCol(D)/reportCol(E),"稼動(有效率)","%.4f") ###(G) 1-無效/出勤

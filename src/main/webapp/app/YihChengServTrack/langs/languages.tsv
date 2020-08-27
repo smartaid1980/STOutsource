@@ -1,0 +1,401 @@
+	zh_tw	zh	en
+i18n_ServCloud_Agent_Information	代理商聯絡資訊	代理商联络资讯	Agent contact information
+i18n_ServCloud_License_Update	更新合約	更新合约	License update
+i18n_ServCloud_File_Select	將合約檔案拖曳至此	将合约档案拖曳至此	Drop license file into here
+i18n_ServCloud_30_Log_Download	日誌下載	日志下载	Log Download
+i18n_ServCloud_Query_Condition	查詢條件	查询条件	Query Condition
+i18n_ServCloud_Start_Date	開始日期	开始日期	Start date
+i18n_ServCloud_End_Date	結束日期	结束日期	End date
+i18n_ServCloud_ServCore	ServCore	ServCore	ServCore
+i18n_ServCloud_QuerResult	查詢結果	查询结果	QueryResult
+i18n_ServCloud_FileName	檔案名稱	档案名称	File Nmae
+i18n_ServCloud_FileSize	檔案大小	档案大小	File Size
+i18n_ServCloud_UploadTime	上傳時間	上传时间	Upload Time
+
+----5.2.1.2----
+i18n_ServCloud_Inbound_Dispatch	進站派工	进站派工	Inbound Dispatch
+i18n_ServCloud_Dispatch_Confirm	確認派工	确认派工	Dispatch Confirm
+i18n_ServCloud_Line	線別	线别	Line
+i18n_ServCloud_Shift	班次	班次	Shift
+i18n_ServCloud_Shift_Date	班次日期	班次日期	Shift date
+i18n_ServCloud_Work_Order_Process	工單製程	工单制程	Work Order Process
+i18n_ServCloud_Mold_Number	模具編號	模具编号	Mold Number
+i18n_ServCloud_Tool_Number	刀具編號	刀具编号	Tool Number
+i18n_ServCloud_Employee_ID	員工編號	员工编号	Employee ID
+i18n_ServCloud_Number_Of_People	人數	人数	Number Of People
+i18n_ServCloud_Number_Of_People	人數	人数	Number Of People
+i18n_ServCloud_Last_Shift	上一班次	上一班次	Last Shift
+i18n_ServCloud_Next_Shift	下一班次	下一班次	Next Shift
+i18n_ServCloud_Inbound	進站	进站	Inbound
+i18n_ServCloud_Stop	暫停	暂停	Stop
+i18n_ServCloud_Resume	恢復	恢复	Resume
+i18n_ServCloud_Outbound	出站	出站	Outbound
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_Contents	內容	內容	Contents
+i18n_ServCloud_Outbound_Time	出站時間	出站时间	Outbound Time
+i18n_ServCloud_Work	工單	工单	Work
+i18n_ServCloud_Work_Batch_Number	工單批號	工单批号	Work Batch Number
+i18n_ServCloud_Production_Process	製程	制程	Production Process
+
+---4.2.1--- 派工單填寫
+
+i18n_ServCloud_Upper_Layer_Work	上層工單	上层工单	Upper Layer Work
+i18n_ServCloud_Order	訂單	订单	Order 
+i18n_ServCloud_Order_Num	訂單編號	订单編号	Order_Num
+i18n_ServCloud_Order_Number	訂單序號	订单序号	Order Number
+i18n_ServCloud_Estimated_Output	預估產量	预估产量	Estimated Output
+i18n_ServCloud_Starting_Work	起始工序	起始工序	Starting Work
+i18n_ServCloud_Sequential_Production	依序生產	依序生产	Sequential Production
+i18n_ServCloud_Start_Time	開工時間	开工时间	Start Time
+i18n_ServCloud_Founder	建立者	建立者	Founder
+i18n_ServCloud_Purpose_Of_Order_Splitting	拆單目的	拆单目的	Purpose Of Order Splitting
+i18n_ServCloud_Unpacking	拆批	拆批	Unpacking
+i18n_ServCloud_Print	列印	列印	Print
+i18n_ServCloud_Work_Center	工作中心	工作中心	Work Center
+
+---4.1.3---
+i18n_ServCloud_Shift_Setting	班次設定	班次设定	Shift_Setting
+
+---4.1.5--
+i18n_ServCloud_Series	系列	系列	Series
+i18n_ServCloud_Number_Of_Handles	柄數	柄数	Number Of Handles
+i18n_ServCloud_Material	材質	材质	Material
+
+---4.1.1---
+	zh_tw	zh	en
+i18n_ServCloud_ServTrackManagement_000001	長度不可超過50	长度不可超过50	Maximum length 50
+i18n_ServCloud_ServTrackManagement_000002	長度不可超過10	长度不可超过10	Maximum length 10
+i18n_ServCloud_ServTrackManagement_000003	請選取需列印的QRCode...	请选取需列印的QRCode...	Please select the QRCode to print
+i18n_ServCloud_ServTrackManagement_000004	請輸入0 ~ 100範圍的值	请输入0 ~ 100范围的值	Please enter a value ranging from 0 to 100
+i18n_ServCloud_ServTrackManagement_000005	請填目標值	请填目标值	Please input the target value
+i18n_ServCloud_ServTrackManagement_000006	請填數字	请填数字	Please input numbers
+i18n_ServCloud_ServTrackManagement_000007	行動報工站	行动报工站	ServTrack
+i18n_ServCloud_ServTrackManagement_000008	良率目標值(%)	良率目标值(%)	Target yield rate(%)
+i18n_ServCloud_ServTrackManagement_000009	線別維護	线别维护	Production line maintain
+i18n_ServCloud_ServTrackManagement_000010	線別條碼列印	线别条码列印	Print QR code for production line
+i18n_ServCloud_ServTrackManagement_000011	線別查詢	线别查询	Production line query
+i18n_ServCloud_ServTrackManagement_000012	線別名稱	线别名称	Production line name
+i18n_ServCloud_ServTrackManagement_000013	線別代碼	线别代码	Production line code
+i18n_ServCloud_ServTrackManagement_000014	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_ServTrackManagement_000015	稼動目標值(%)	稼动目标值(%)	Target utilization rate(%)
+i18n_ServCloud_ServTrackManagement_000016	產能目標值(%)	产能目标值(%)	Target production capacity(%)
+i18n_ServCloud_ServTrackManagement_000017	特殊符號僅包含	特殊符号仅包含	Special symbols contain only
+i18n_ServCloud_ServTrackManagement_000018	清除	清除	Clear
+i18n_ServCloud_ServTrackManagement_000019	此欄位必填	此栏位必填	This column is required
+i18n_ServCloud_ServTrackManagement_000020	查詢	查询	Query
+i18n_ServCloud_ServTrackManagement_000021	啟用	启用	Activate
+i18n_ServCloud_ServTrackManagement_000022	不能有中文字	不能有中文字	Can not have Chinese characters
+i18n_ServCloud_ServTrackManagement_000023	不可輸入全形字母數字	不可输入全形字母数字	Do not enter fullwidth forms letters and numbers 
+i18n_ServCloud_ServTrackManagement_000024	不可輸入全形字元	不可输入全形字元	Do not enter fullwidth forms characters
+i18n_ServCloud_ServTrackManagement_000025	預估產量	预估产量	Estimated production quantity
+i18n_ServCloud_ServTrackManagement_000026	開立	开立	Initiation
+i18n_ServCloud_ServTrackManagement_000027	開工時間	开工时间	Production start time
+i18n_ServCloud_ServTrackManagement_000028	長度不可超過20	长度不可超过20	Maximum length 20
+i18n_ServCloud_ServTrackManagement_000029	請選擇製程	请选择制程	Please select production process
+i18n_ServCloud_ServTrackManagement_000030	請選擇產品	请选择产品	Please select product
+i18n_ServCloud_ServTrackManagement_000031	請輸入派工單編號	请输入派工单编号	Please input the work order number
+i18n_ServCloud_ServTrackManagement_000032	請輸入0 ~ 999999.9999範圍的值	请输入0 ~ 999999.9999范围的值	Please input a value ranging from 0 to 999999.9999
+i18n_ServCloud_ServTrackManagement_000033	請填單件標工	请填单件标工	Please input the product cycle time per unit
+i18n_ServCloud_ServTrackManagement_000034	設定	设定	Setup
+i18n_ServCloud_ServTrackManagement_000035	製程	制程	Production process
+i18n_ServCloud_ServTrackManagement_000036	編輯派工單	编辑派工单	Edit work order
+i18n_ServCloud_ServTrackManagement_000037	結案	结案	Closed
+i18n_ServCloud_ServTrackManagement_000038	索引不得重覆	索引不得重覆	Index may not be repeated
+i18n_ServCloud_ServTrackManagement_000039	確認此工單結案:	确认此工单结案:	Please confirm to close the work order:
+i18n_ServCloud_ServTrackManagement_000040	確認取消此工單:	确认取消此工单:	Please confirm to cancel the work order:
+i18n_ServCloud_ServTrackManagement_000041	確定要刪除此工序嗎	确定要删除此工序吗	You sure you want to delete this production process sequence?
+i18n_ServCloud_ServTrackManagement_000042	確定	确定	Confirm
+i18n_ServCloud_ServTrackManagement_000043	產品名稱	产品名称	Product name
+i18n_ServCloud_ServTrackManagement_000044	產品代碼	产品代码	Product code
+i18n_ServCloud_ServTrackManagement_000045	產品	产品	Product
+i18n_ServCloud_ServTrackManagement_000046	生產中	生产中	In production
+i18n_ServCloud_ServTrackManagement_000047	狀態	状态	Statue
+i18n_ServCloud_ServTrackManagement_000048	派工單號已存在	派工单号已存在	Work order already existed
+i18n_ServCloud_ServTrackManagement_000049	派工單號	派工单号	Work order number
+i18n_ServCloud_ServTrackManagement_000050	派工單填寫	派工单填写	Work order edit
+i18n_ServCloud_ServTrackManagement_000051	派工單	派工单	Work order
+i18n_ServCloud_ServTrackManagement_000052	此欄為必填	此栏为必填	This column is required
+i18n_ServCloud_ServTrackManagement_000053	查詢結果	查询结果	Query result
+i18n_ServCloud_ServTrackManagement_000054	未開工	未开工	Work order not yet started
+i18n_ServCloud_ServTrackManagement_000055	未結案	未结案	Not yet closed
+i18n_ServCloud_ServTrackManagement_000056	新增派工單	新增派工单	Add work order
+i18n_ServCloud_ServTrackManagement_000057	提交	提交	Submit
+i18n_ServCloud_ServTrackManagement_000058	已結案	已结案	Closed
+i18n_ServCloud_ServTrackManagement_000059	已取消	已取消	Cancelled
+i18n_ServCloud_ServTrackManagement_000060	工序製程	工序制程	Production process sequence & Production process
+i18n_ServCloud_ServTrackManagement_000061	工序編輯	工序编辑	Production process sequence edit
+i18n_ServCloud_ServTrackManagement_000062	工序	工序	Production process sequence
+i18n_ServCloud_ServTrackManagement_000063	工單結案	工单结案	Closed
+i18n_ServCloud_ServTrackManagement_000064	工單狀態	工单状态	Work order status
+i18n_ServCloud_ServTrackManagement_000065	工單更新成功	工单更新成功	Work order updated successfully
+i18n_ServCloud_ServTrackManagement_000066	工單更新失敗	工单更新失败	Work order updated failed
+i18n_ServCloud_ServTrackManagement_000067	工單新增成功	工单新增成功	Work order add successfully
+i18n_ServCloud_ServTrackManagement_000068	工單新增失敗	工单新增失败	Work order add failed
+i18n_ServCloud_ServTrackManagement_000069	確認	确认	Confirmation
+i18n_ServCloud_ServTrackManagement_000070	填寫起始日期	填写起始日期	Start date for work order creation
+i18n_ServCloud_ServTrackManagement_000071	填寫結束日期	填写结束日期	End date for work order creation
+i18n_ServCloud_ServTrackManagement_000072	填寫時間	填写时间	Created time
+i18n_ServCloud_ServTrackManagement_000073	填寫人代碼	填写人代码	Editor code
+i18n_ServCloud_ServTrackManagement_000074	填寫人	填写人	Editor
+i18n_ServCloud_ServTrackManagement_000075	報工站管理	报工站管理	ServTrack Management
+i18n_ServCloud_ServTrackManagement_000076	單件標工(分)	单件标工(分)	Product cycle time per unit (minute)
+i18n_ServCloud_ServTrackManagement_000077	可編輯	可编辑	Editable
+i18n_ServCloud_ServTrackManagement_000078	取消	取消	Cancel
+i18n_ServCloud_ServTrackManagement_000079	刪除工序	删除工序	Delete production process sequence
+i18n_ServCloud_ServTrackManagement_000080	初始投入量	初始投入量	First input amount
+i18n_ServCloud_ServTrackManagement_000081	說明	说明	Description
+i18n_ServCloud_ServTrackManagement_000082	不可為0	不可为0	Not to be 0
+i18n_ServCloud_ServTrackManagement_000083	超過最大授權數量，請先停用其它授權，再行授權	超过最大授权数量，请先停用其它授权，再行授权	Exceed the maximum license quantity, please disbale the license from other tablet before authorizing license to new tablet
+i18n_ServCloud_ServTrackManagement_000084	啟用	启用	Activate
+i18n_ServCloud_ServTrackManagement_000085	平板授權維護	平板授权维护	Tablet authorization maintain
+i18n_ServCloud_ServTrackManagement_000086	平板授權	平板授权	Tablet authorization
+i18n_ServCloud_ServTrackManagement_000087	平板名稱	平板名称	Tablet name
+i18n_ServCloud_ServTrackManagement_000088	平板代碼	平板代码	Tablet code
+i18n_ServCloud_ServTrackManagement_000089	可同時啟用授權數	可同时启用授权数	License quantity which can be authorized at the same time
+i18n_ServCloud_ServTrackManagement_000090	不可為空	不可为空	Not to be empty
+i18n_ServCloud_ServTrackManagement_000091	顯示Demo資料	显示Demo资料	Display demo data
+i18n_ServCloud_ServTrackManagement_000092	請填產品編號	请填产品编号	Please input the product number
+i18n_ServCloud_ServTrackManagement_000093	請填產品名稱	请填产品名称	Please input the product name
+i18n_ServCloud_ServTrackManagement_000094	請填工序	请填工序	Please input the process sequence
+i18n_ServCloud_ServTrackManagement_000095	說明	说明	Description
+i18n_ServCloud_ServTrackManagement_000096	良率目標值(%)	良率目标值(%)	Target yield rate (%)
+i18n_ServCloud_ServTrackManagement_000097	良率目標值	良率目标值	Target yield rate
+i18n_ServCloud_ServTrackManagement_000098	良率目標(%)	良率目标(%)	Target yield rate (%)
+i18n_ServCloud_ServTrackManagement_000099	產品編號重複	产品编号重复	Product number repeated
+i18n_ServCloud_ServTrackManagement_000100	產品編號	产品编号	Product number
+i18n_ServCloud_ServTrackManagement_000101	產品工序維護	产品工序维护	Production process sequence maintain
+i18n_ServCloud_ServTrackManagement_000102	工序重複	工序重复	Production process sequence repeated
+i18n_ServCloud_ServTrackManagement_000103	填目標值	填目标值	Input the target value
+i18n_ServCloud_ServTrackManagement_000104	品號工序	品号工序	Product
+i18n_ServCloud_ServTrackManagement_000105	品號	品号	Product production process sequence
+i18n_ServCloud_ServTrackManagement_000106	說明	说明	Description
+i18n_ServCloud_ServTrackManagement_000107	請輸入製程名稱	请输入制程名称	Please input the production process name
+i18n_ServCloud_ServTrackManagement_000108	請填製程編號	请填制程编号	Please input the production process code
+i18n_ServCloud_ServTrackManagement_000109	請填不良名稱	请填不良名称	Please input the defective reason
+i18n_ServCloud_ServTrackManagement_000110	請填不良代碼	请填不良代码	Please input the defective reason code
+i18n_ServCloud_ServTrackManagement_000111	製程編號重複	制程编号重复	Production process code repeated
+i18n_ServCloud_ServTrackManagement_000112	製程編號	制程编号	Production process code
+i18n_ServCloud_ServTrackManagement_000113	製程名稱	制程名称	Production process name
+i18n_ServCloud_ServTrackManagement_000114	製程及不良原因維護	制程及不良原因维护	Production process and defective reason maintain
+i18n_ServCloud_ServTrackManagement_000115	製程不良原因維護	制程不良原因维护	Production process defective reason maintenance
+i18n_ServCloud_ServTrackManagement_000116	不良名稱	不良名称	Defective reason
+i18n_ServCloud_ServTrackManagement_000117	不良原因	不良原因	Defective reason
+i18n_ServCloud_ServTrackManagement_000118	不良代碼重複	不良代码重复	Defective reason code repeated
+i18n_ServCloud_ServTrackManagement_000119	不良代碼	不良代码	Defective reason code
+i18n_ServCloud_ServTrackManagement_000120	派工單工序條碼列印	派工单工序条码列印	Print QR code for the production process sequence of the work order
+i18n_ServCloud_ServTrackManagement_000121	查詢條件	查询条件	Query condition
+i18n_ServCloud_ServTrackManagement_000122	開始時間	开始时间	Start time
+i18n_ServCloud_ServTrackManagement_000123	班次起迄維護	班次起迄维护	Shift start and end time maintain
+i18n_ServCloud_ServTrackManagement_000124	班次起始時間	班次起始时间	Shift start time
+i18n_ServCloud_ServTrackManagement_000125	班次天起訖時間設定	班次天起讫时间设定	Shift start and end time settings for a single day
+i18n_ServCloud_ServTrackManagement_000126	時數不可超過 24 小時	时数不可超过 24 小时	No more than 24 hours
+i18n_ServCloud_ServTrackManagement_000127	應上班時數	应上班时数	Required working hours
+i18n_ServCloud_ServTrackManagement_000128	小數點後最多2位	小数点后最多2位	Round to two decimal places
+i18n_ServCloud_ServTrackManagement_000129	起始日期不可大於結束日期	起始日期不可大于结束日期	Start date can not be later than end date
+i18n_ServCloud_ServTrackManagement_000130	起始日期	起始日期	Start date
+i18n_ServCloud_ServTrackManagement_000131	請輸入數字...	请输入数字...	Please input numbers
+i18n_ServCloud_ServTrackManagement_000132	編輯工時	编辑工时	Edit working hour
+i18n_ServCloud_ServTrackManagement_000133	線別	线别	Line
+i18n_ServCloud_ServTrackManagement_000134	結束日期	结束日期	End date
+i18n_ServCloud_ServTrackManagement_000135	確定要刪除此日期所有線別的生產工時嗎	确定要删除此日期所有线别的生产工时吗	Are you sure to delete the working hour for all the production lines in this date?
+i18n_ServCloud_ServTrackManagement_000136	生產工時	生产工时	Working hour
+i18n_ServCloud_ServTrackManagement_000137	班次日期	班次日期	Shift date
+i18n_ServCloud_ServTrackManagement_000138	每日工時不能大於24小時	每日工时不能大于24小时	Daily working hour no more than 24 hours
+i18n_ServCloud_ServTrackManagement_000139	時數不可以大於24	时数不可以大于24	No more than 24 hours
+i18n_ServCloud_ServTrackManagement_000140	日期	日期	Date
+i18n_ServCloud_ServTrackManagement_000141	日	日	Sunday
+i18n_ServCloud_ServTrackManagement_000142	新增工時	新增工时	Add working hours
+i18n_ServCloud_ServTrackManagement_000143	新增失敗	新增失败	Add failed
+i18n_ServCloud_ServTrackManagement_000144	應生產工時(小時)	应生产工时(小时)	Required working hours
+i18n_ServCloud_ServTrackManagement_000145	工時新增成功	工时新增成功	Working hour added successfully
+i18n_ServCloud_ServTrackManagement_000146	四	四	Thursday
+i18n_ServCloud_ServTrackManagement_000147	各線每日應生產工時	各线每日应生产工时	Production line required working hours
+i18n_ServCloud_ServTrackManagement_000148	刪除工時	删除工时	Delete working hour
+i18n_ServCloud_ServTrackManagement_000149	六	六	Saturday
+i18n_ServCloud_ServTrackManagement_000150	五	五	Friday
+i18n_ServCloud_ServTrackManagement_000151	二	二	Tuesday
+i18n_ServCloud_ServTrackManagement_000152	上班日	上班日	Working day
+i18n_ServCloud_ServTrackManagement_000153	三	三	Wednesday
+i18n_ServCloud_ServTrackManagement_000154	一	一	Monday
+i18n_ServCloud_ServTrackManagement_000155	(日)	(日)	(Sunday)
+i18n_ServCloud_ServTrackManagement_000156	(四)	(四)	(Thursday)
+i18n_ServCloud_ServTrackManagement_000157	(六)	(六)	(Saturday)
+i18n_ServCloud_ServTrackManagement_000158	(五)	(五)	(Friday)
+i18n_ServCloud_ServTrackManagement_000159	(二)	(二)	(Tuesday)
+i18n_ServCloud_ServTrackManagement_000160	(三)	(三)	(Wednesday)
+i18n_ServCloud_ServTrackManagement_000161	(一)	(一)	(Monday)
+i18n_ServCloud_ServTrackManagement_000162	製程良率目標值	制程良率目标值	Production process targe yield rate
+i18n_ServCloud_ServTrackManagement_000163	製程與不良上傳結果	制程与不良上传结果	Production process and defective reason upload result
+i18n_ServCloud_ServTrackManagement_000164	製程與不良	制程与不良	OP&NG
+i18n_ServCloud_ServTrackManagement_000165	說明	说明	Description
+i18n_ServCloud_ServTrackManagement_000166	製程代碼	制程代码	Production process code
+i18n_ServCloud_ServTrackManagement_000167	線別良率目標值	线别良率目标值	Production line target yield rate
+i18n_ServCloud_ServTrackManagement_000168	線別稼動率目標值	线别稼动率目标值	Production line target utilization rate
+i18n_ServCloud_ServTrackManagement_000169	線別代號	线别代号	Produciton line code
+i18n_ServCloud_ServTrackManagement_000170	線別上傳結果	线别上传结果	Production line upload result
+i18n_ServCloud_ServTrackManagement_000171	產能效率目標值	产能效率目标值	Production output performance target value
+i18n_ServCloud_ServTrackManagement_000172	產品良率目標值	产品良率目标值	Product target yield rate
+i18n_ServCloud_ServTrackManagement_000173	產品工序良率目標值	产品工序良率目标值	Produc production process sequence target yield rate
+i18n_ServCloud_ServTrackManagement_000174	產品及工序上傳結果	产品及工序上传结果	Product and production process sequence upload result
+i18n_ServCloud_ServTrackManagement_000175	產品及工序	产品及工序	Product&ProductionSequence
+i18n_ServCloud_ServTrackManagement_000176	說明	说明	Description
+i18n_ServCloud_ServTrackManagement_000177	班次天時間	班次天时间	Working hour of the shift date
+i18n_ServCloud_ServTrackManagement_000178	班次天	班次天	Shift date
+i18n_ServCloud_ServTrackManagement_000179	標工(分)	标工(分)	Product cycle time per unit (minute)
+i18n_ServCloud_ServTrackManagement_000180	或按我	或按我	Or press me
+i18n_ServCloud_ServTrackManagement_000181	說明	说明	Description
+i18n_ServCloud_ServTrackManagement_000182	將 .csv 的檔案拖曳至此	将 .csv 的档案拖曳至此	Drag the CSV file to here
+i18n_ServCloud_ServTrackManagement_000183	各線應生產工時上傳結果	各线应生产工时上传结果	Production line required working hours upload result
+i18n_ServCloud_ServTrackManagement_000184	各線應生產工時	各线应生产工时	LineWorkingHours
+i18n_ServCloud_ServTrackManagement_000185	不良原因名稱	不良原因名称	Defective reason
+i18n_ServCloud_ServTrackManagement_000186	說明	说明	Description
+i18n_ServCloud_ServTrackManagement_000187	不良原因代碼	不良原因代码	Defective reason code
+i18n_ServCloud_ServTrackManagement_000188	下載上傳範例	下载上传范例	Download example of upload
+i18n_ServCloud_ServTrackManagement_000189	上傳檔名應為 .csv	上传档名应为 .csv	Upload file name should be .csv
+i18n_ServCloud_ServTrackManagement_000190	上傳基本資料	上传基本资料	Basic information upload
+i18n_ServCloud_ServTrackManagement_000191	說明	说明	Description
+i18n_ServCloud_ServTrackManagement_000192	派工單上傳結果	派工单上传结果	Work order upload result
+i18n_ServCloud_ServTrackManagement_000193	上傳派工資料	上传派工资料	Upload work order information
+i18n_ServCloud_ServTrackManagement_000194	上傳派工單	上传派工单	Work order import
+i18n_ServCloud_ServTrackManagement_000195	請輸入預估產量	请输入预估产量	Please input the estimated production quantity
+i18n_ServCloud_ServTrackManagement_000196	請輸入初始投入量	请输入初始投入量	Please input the first input amount
+i18n_ServCloud_ServTrackManagement_000197	禁止使用以下特殊符號 , " < > 以及全形/半形空白	禁止使用以下特殊符号 , " < > 以及全形/半形空白	Prohibit to use the following special symbols:  , " < > fullwidth and halfwidth blank
+i18n_ServCloud_ServTrackManagement_000198	有產品使用此製程無法關閉	有产品使用此制程无法关闭	Production process can not be deactivated before disconnecting with product
+i18n_ServCloud_ServTrackManagement_000199	製程不良原因	制程不良原因	Production process defective reason
+i18n_ServCloud_ServTrackManagement_000200	時數不可小於0	时数不可小于0	No less than 0 hour
+i18n_ServCloud_ServTrackManagement_000201	已有進出站記錄的工序，無法進行修改或刪除	已有进出站记录的工序，无法进行修改或删除	The production process with move-in or move-out record can not be deleted or modified
+i18n_ServCloud_ServTrackManagement_000202	例外錯誤，請聯絡系統管理員	例外错误，请联络系统管理员	Exception error, please contact system administrator
+i18n_ServCloud_ServTrackManagement_000203	請輸入正整數(不包括0)	请输入正整数(不包括0)	Please input positive integer (Not including "0")
+i18n_ServCloud_ServTrackManagement_000204	編輯	编辑	Edit
+i18n_ServCloud_ServTrackManagement_000205	刪除	删除	Delete
+i18n_ServCloud_ServTrackManagement_000206	功能說明 : 新增要計入稼動率的班次日期與應工作時數，並可依各線別調整任意日期之工作時數	功能说明 : 新增要计入稼动率的班次日期与应工作时数，并可依各线别调整任意日期之工作时数	Function explanation: Add the shift date and working hours that need to be included in utilization. The date and working hours can also be adjusted upon specific production line.
+i18n_ServCloud_ServTrackManagement_000207	已結案	已结案	Closed
+i18n_ServCloud_ServTrackManagement_000208	驗證成功	验证成功	Verification success
+i18n_ServCloud_ServTrackManagement_000209	找不到授權文件	找不到授权文件	Can\'t find the authorization file
+i18n_ServCloud_ServTrackManagement_000210	授權碼不匹配	授权码不匹配	The authorization code doesn\'t match
+i18n_ServCloud_ServTrackManagement_000211	資料已建立過，是否確認覆蓋	资料已建立过，是否确认覆盖	working hours had been defined before, want to change the original setting?
+i18n_ServCloud_ServTrackManagement_000212	請重新操作一次	请重新操作一次	Please set up the working hours again
+i18n_ServCloud_ServTrackManagement_000213	是	是	Yes
+i18n_ServCloud_ServTrackManagement_000214	否	否	No
+i18n_ServCloud_ServTrackManagement_000215	不支援 , < > 空白及全形空白符號	不支援 , < > 空白及全形空白符号	Do not enter "," and "<" and ">" and "space" and "fullwidth forms letters" and "fullwidth forms numbers"
+i18n_ServCloud_ServTrackManagement_000216	找不到上傳的檔案	找不到上传的档案	Uploaded file can not be found
+i18n_ServCloud_ServTrackManagement_000217	不支援的檔案編碼	不支援的档案编码	Unsupported file encoding, please confirm
+i18n_ServCloud_ServTrackManagement_000218	找不到上傳檔案支援類型	找不到上传档案支援类型	Unsupported file type
+i18n_ServCloud_ServTrackManagement_000219	IOException : %s	IOException : %s	IOException: %s
+i18n_ServCloud_ServTrackManagement_000220	第 %s 列資料有誤 :	第 %s 列资料有误 :	Incorrect data in row %s:
+i18n_ServCloud_ServTrackManagement_000221	無資料	无资料	No data
+i18n_ServCloud_ServTrackManagement_000222	資料庫設定檔: %s  設定值為空	资料库设定档: %s 设定值为空	Database config file: setting value %s is blank
+i18n_ServCloud_ServTrackManagement_000223	找不到資料庫連線設定檔	找不到资料库连线设定档	Database connection config file can not be found
+i18n_ServCloud_ServTrackManagement_000224	SQLException: %s	SQLException: %s	SQLException: %s
+i18n_ServCloud_ServTrackManagement_000225	上傳資料欄位數量短少	上传资料栏位数量短少	Uploaded data column insufficient
+i18n_ServCloud_ServTrackManagement_000226	上傳資料欄位數量多了 %s 欄	上传资料栏位数量多了 %s 栏	Uploaded data column exceed %s column
+i18n_ServCloud_ServTrackManagement_000227	請確認上傳的資料是以逗點做分隔符號	请确认上传的资料是以逗点做分隔符号	Please confirm the uploaded file is separated by "comma"
+i18n_ServCloud_ServTrackManagement_000228	Exception: %s	Exception: %s	Exception: %s
+i18n_ServCloud_ServTrackManagement_000229	線別代碼不可為空	线别代码不可为空	Production line code can not be blank
+i18n_ServCloud_ServTrackManagement_000230	線別代碼已存在	线别代码已存在	Production line code already exists
+i18n_ServCloud_ServTrackManagement_000231	線別代碼長度不可超過 %s	线别代码长度不可超过 %s	Length of the production line code can not be over %s
+i18n_ServCloud_ServTrackManagement_000232	線別代碼格式有誤	线别代码格式有误	Production line code format incorrect
+i18n_ServCloud_ServTrackManagement_000233	線別名稱不可為空	线别名称不可为空	Production line name can not be blank
+i18n_ServCloud_ServTrackManagement_000234	線別名稱長度不可超過 %s	线别名称长度不可超过 %s	Length of the production line name can not be over %s
+i18n_ServCloud_ServTrackManagement_000235	線別名稱格式有誤	线别名称格式有误	Production line name format incorrect
+i18n_ServCloud_ServTrackManagement_000236	線別稼動目標值有誤，僅能輸入正數值，範圍為 %s 以下且小數不得超過 %s 位，否則為空	线别稼动目标值有误，仅能输入正数值，范围为 %s 以下且小数不得超过 %s 位，否则为空	Production line target utilization rate is incorrect, can only keyin positive value below %s and rounded off to the %s decimal place, otherwise blank
+i18n_ServCloud_ServTrackManagement_000237	線別良率目標值有誤，僅能輸入正數值，範圍為 %s 以下且小數不得超過 %s 位，否則為空	线别良率目标值有误，仅能输入正数值，范围为 %s 以下且小数不得超过 %s 位，否则为空	Production line target yield rate is incorrect, can only keyin positive value below %s and rounded off to the %s decimal place, otherwise blank
+i18n_ServCloud_ServTrackManagement_000238	產能效率目標值有誤，僅能輸入正數值，範圍為 %s 以下且小數不得超過 %s 位，否則為空	产能效率目标值有误，仅能输入正数值，范围为 %s 以下且小数不得超过 %s 位，否则为空	Target production capacity is incorrect, can only keyin positive value below %s and rounded off to the %s decimal place, otherwise blank
+i18n_ServCloud_ServTrackManagement_000239	上傳資料內容索引已有重複	上传资料内容索引已有重复	Uploaded data content duplicated
+i18n_ServCloud_ServTrackManagement_000240	線別代碼不存在	线别代码不存在	Production line code does not exist
+i18n_ServCloud_ServTrackManagement_000241	線別工時已存在	线别工时已存在	Production line working hours already exists
+i18n_ServCloud_ServTrackManagement_000242	班次天不可為空	班次天不可为空	Shift date can not be blank
+i18n_ServCloud_ServTrackManagement_000243	班次天格式有誤，應為 yyyy/MM/dd	班次天格式有误，应为 yyyy/MM/dd	Shift date format is incorrect, should be yyyy/MM/dd
+i18n_ServCloud_ServTrackManagement_000244	班次天時間不可為空	班次天时间不可为空	Shift date hours can not be blank
+i18n_ServCloud_ServTrackManagement_000245	班次天設定值有誤，僅能輸入正數值，範圍為 %s 以下且小數不得超過 %s 位，不得為空	班次天设定值有误，仅能输入正数值，范围为 %s 以下且小数不得超过 %s 位，不得为空	Shift date setting is incorrect, can only keyin positive value below %s and rounded off to the %s decimal place, can not be blank
+i18n_ServCloud_ServTrackManagement_000246	製程代碼不可為空	制程代码不可为空	Production process code can not be blank
+i18n_ServCloud_ServTrackManagement_000247	製程代碼已存在	制程代码已存在	Production process code already exists
+i18n_ServCloud_ServTrackManagement_000248	製程代碼格式有誤	制程代码格式有误	Production process code format is incorrect
+i18n_ServCloud_ServTrackManagement_000249	製程代碼長度不可超過 %s	制程代码长度不可超过 %s	Length of the production process code can not be over %s
+i18n_ServCloud_ServTrackManagement_000250	製程備註長度不可超過 %s	制程备注长度不可超过 %s	Length of the production process remark can not be over %s
+i18n_ServCloud_ServTrackManagement_000251	製程不良長度不可超過 %s	制程不良长度不可超过 %s	Length of the production process defective reason can not be over %s
+i18n_ServCloud_ServTrackManagement_000252	不良原因代碼不可為空	不良原因代码不可为空	Defective reason code can not be blank
+i18n_ServCloud_ServTrackManagement_000253	不良原因代碼長度不可超過 %s	不良原因代码长度不可超过 %s	Length of the defective reason code can not be over %s
+i18n_ServCloud_ServTrackManagement_000254	不良原因名稱長度不可超過 %s	不良原因名称长度不可超过 %s	Length of the defective reason name can not be over %s
+i18n_ServCloud_ServTrackManagement_000255	不良原因名稱不可為空	不良原因名称不可为空	Defective reason name can not be blank
+i18n_ServCloud_ServTrackManagement_000256	製程代碼: %s ，首筆資料製程名稱不可為空	制程代码: %s ，首笔资料制程名称不可为空	Production process code: %s, first production process name can not be blank
+i18n_ServCloud_ServTrackManagement_000257	製程代碼: %s ，首筆資料製程名稱長度不可超過 %s	制程代码: %s ，首笔资料制程名称长度不可超过 %s	Production process code: %s, length of the first production process name can not be over %s
+i18n_ServCloud_ServTrackManagement_000258	製程代碼: %s ，首筆資料製程名稱格式有誤 %s	制程代码: %s ，首笔资料制程名称格式有误 %s	Production process code: %s, first production process name format is incorrect %s
+i18n_ServCloud_ServTrackManagement_000259	製程代碼: %s ，首筆資料製程良率不可為空	制程代码: %s ，首笔资料制程良率不可为空	Production process code: %s, first production process yield rate can not be blank
+i18n_ServCloud_ServTrackManagement_000260	製程代碼: %s ，首筆資料製程良率目標值有誤，僅能輸入正數值，範圍為 %s 以下且小數不得超過 %s 位，不得為空	制程代码: %s ，首笔资料制程良率目标值有误，仅能输入正数值，范围为 %s 以下且小数不得超过 %s 位，不得为空	Production process code: %s, first production process target yield rate is incorrect, can only keyin positive value below %s and rounded off to the %s decimal place, can not be blank
+i18n_ServCloud_ServTrackManagement_000261	製程代碼: %s ，製程名稱已存在，如果不為空內容需一致	制程代码: %s ，制程名称已存在，如果不为空内容需一致	Production process code: %s, production process name already exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000262	製程代碼: %s ，製程備註已存在，如果不為空內容需一致	制程代码: %s ，制程备注已存在，如果不为空内容需一致	Production process code: %s, production process remark already exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000263	製程代碼: %s ，製程良率已存在，如果不為空內容需一致	制程代码: %s ，制程良率已存在，如果不为空内容需一致	Production process code: %s, production process yield rate already exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000264	品號不得為空	品号不得为空	Product number can not be blank
+i18n_ServCloud_ServTrackManagement_000265	品號已存在	品号已存在	Product number already exists
+i18n_ServCloud_ServTrackManagement_000266	品號格式有誤	品号格式有误	Product number format is incorrect
+i18n_ServCloud_ServTrackManagement_000267	品號長度不得超過 %s	品号长度不得超过 %s	Length of the product number can not be over %s
+i18n_ServCloud_ServTrackManagement_000268	產品備註長度不可超過 %s	产品备注长度不可超过 %s	Length of the product remark can not be over %s
+i18n_ServCloud_ServTrackManagement_000269	工序備註長度不可超過 %s	工序备注长度不可超过 %s	Length of the production process sequence remark can not be over %s
+i18n_ServCloud_ServTrackManagement_000270	工序不可為空	工序不可为空	Production process sequence can not be blank
+i18n_ServCloud_ServTrackManagement_000271	工序格式有誤	工序格式有误	Production process sequence format is incorrect
+i18n_ServCloud_ServTrackManagement_000272	工序長度不可超過 %s	工序长度不可超过 %s	Length of the production process sequence can not be over %s
+i18n_ServCloud_ServTrackManagement_000273	製程代碼不存在	制程代码不存在	Production process code does no exist
+i18n_ServCloud_ServTrackManagement_000274	工序良率目標值不可為空	工序良率目标值不可为空	Production process sequence target yield rate can not be blank
+i18n_ServCloud_ServTrackManagement_000275	工序良率目標值有誤，僅能輸入正數值，範圍為 %s 以下且小數不得超過 %s 位，不得為空	工序良率目标值有误，仅能输入正数值，范围为 %s 以下且小数不得超过 %s 位，不得为空	Production process sequence target yield rate is incorrect, can only keyin positive value below %s and rounded off to the %s decimal place, can not be blank
+i18n_ServCloud_ServTrackManagement_000276	工序標工不得為空	工序标工不得为空	Production process sequence cycle time can not be blank
+i18n_ServCloud_ServTrackManagement_000277	工序標工目標值有誤，僅能輸入正數值，範圍為 %s 以下且小數不得超過 %s 位，不得為空	工序标工目标值有误，仅能输入正数值，范围为 %s 以下且小数不得超过 %s 位，不得为空	Production process sequence target cycle time is incorrect, can only keyin positive value below %s and rounded off to the %s decimal place, can not be blank
+i18n_ServCloud_ServTrackManagement_000278	品號: %s ，首筆資料產品名稱不可為空	品号: %s ，首笔资料产品名称不可为空	Product number: %s , first product name can not be blank
+i18n_ServCloud_ServTrackManagement_000279	品號: %s ，首筆資料產品良率目標值不可為空	品号: %s ，首笔资料产品良率目标值不可为空	Product number: %s , first product target yield rate can not be blank
+i18n_ServCloud_ServTrackManagement_000280	品號: %s ，首筆資料產品良率目標值有誤，僅能輸入正數值，範圍為 %s 以下且小數不得超過 %s 位，不得為空	品号: %s ，首笔资料产品良率目标值有误，仅能输入正数值，范围为 %s 以下且小数不得超过 %s 位，不得为空	Product number: %s , first product target yield rate is incorrect, can only keyin positive value below %s and rounded off to the %s decimal place, can not be blank
+i18n_ServCloud_ServTrackManagement_000281	製程代碼: %s ，首筆資料產品名稱格式有誤 %s	制程代码: %s ，首笔资料产品名称格式有误 %s	Production process code: %s , first product name format is incorrect %s
+i18n_ServCloud_ServTrackManagement_000282	製程代碼: %s ，首筆資料產品名稱長度不可超過 %s	制程代码: %s ，首笔资料产品名称长度不可超过 %s	Production process code: %s , length of the first product name can not be over %s
+i18n_ServCloud_ServTrackManagement_000283	製程代碼: %s ，產品名稱已存在，若不為空內容需一致	制程代码: %s ，产品名称已存在，若不为空内容需一致	Production process code: %s , product name already exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000284	製程代碼: %s ，產品良率目標值已存在，若不為空內容需一致	制程代码: %s ，产品良率目标值已存在，若不为空内容需一致	Production process code: %s , product target yield rate already exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000285	製程代碼: %s ，產品備註已存在，若不為空內容需一致	制程代码: %s ，产品备注已存在，若不为空内容需一致	Production process code: %s , product remark already exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000286	派工單號: %s ，品號不存在於系統	派工单号: %s ，品号不存在于系统	Work order number: %s , product number does not exist in system
+i18n_ServCloud_ServTrackManagement_000287	派工單號不可為空	派工单号不可为空	Work order number can not be blank
+i18n_ServCloud_ServTrackManagement_000288	派工單號已存在	派工单号已存在	Work order number already exists
+i18n_ServCloud_ServTrackManagement_000289	派工單號格式有誤 %s	派工单号格式有误 %s	Work order number format is incorrect %s
+i18n_ServCloud_ServTrackManagement_000290	派工單號長度不可超過 %s	派工单号长度不可超过 %s	Length of work order number can not be over %s
+i18n_ServCloud_ServTrackManagement_000291	派工單號: %s ，品號不存在於系統	派工单号: %s ，品号不存在于系统	Work order number: %s, product number does not exist in system
+i18n_ServCloud_ServTrackManagement_000292	派工單號: %s ，品號不得為空	派工单号: %s ，品号不得为空	Work order number: %s, product number can not be blank
+i18n_ServCloud_ServTrackManagement_000293	派工單號: %s ，預估產量不得為空	派工单号: %s ，预估产量不得为空	Work order number: %s, estimated production quantity can not be blank
+i18n_ServCloud_ServTrackManagement_000294	派工單號: %s ，預估產量有誤，僅能輸入正數值，範圍為 %s 以下，不得為空	派工单号: %s ，预估产量有误，仅能输入正数值，范围为 %s 以下，不得为空	Work order number: %s, estimated production quantity is incorrect, can only keyin positive value below %s, can not be blank
+i18n_ServCloud_ServTrackManagement_000295	派工單號: %s ，初始投入量不得為空	派工单号: %s ，初始投入量不得为空	Work order number: %s, first input amount can not be blank
+i18n_ServCloud_ServTrackManagement_000296	派工單號: %s ，初始投入量有誤，僅能輸入正數值，範圍為 %s 以下，不得為空	派工单号: %s ，初始投入量有误，仅能输入正数值，范围为 %s 以下，不得为空	Work order number: %s, first input amount is incorrect, can only keyin positive value below %s, can not be blank
+i18n_ServCloud_ServTrackManagement_000297	派工單號: %s ，製程代碼不可為空	派工单号: %s ，制程代码不可为空	Work order number: %s, production process code can not be blank
+i18n_ServCloud_ServTrackManagement_000298	派工單號: %s ，製程代碼系統不存在	派工单号: %s ，制程代码系统不存在	Work order number: %s, production process code does not exist in system
+i18n_ServCloud_ServTrackManagement_000299	派工單號: %s ，品號已存在，若不為空內容需一致	派工单号: %s ，品号已存在，若不为空内容需一致	Work order number: %s, product number already exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000300	派工單號: %s ，預估產量已存在，若不為空內容需一致	派工单号: %s ，预估产量已存在，若不为空内容需一致	Work order number: %s, estimated production quantity already exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000301	派工單號: %s ，初始投入量已存在，若不為空內容需一致	派工单号: %s ，初始投入量已存在，若不为空内容需一致	Work order number: %s, first input amount alreay exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000302	派工單號: %s ，派工單已存在，若不為空內容需一致	派工单号: %s ，派工单已存在，若不为空内容需一致	Work order number: %s, work order already exists, need to be the same value if not for blank
+i18n_ServCloud_ServTrackManagement_000303	製程與不良	制程与不良	Process&Defect
+i18n_ServCloud_ServTrackManagement_000304	產品及工序	产品及工序	Product&Sequence
+i18n_ServCloud_ServTrackManagement_000305	線別	线别	P Line
+i18n_ServCloud_ServTrackManagement_000306	各線應生產工時 	各线应生产工时	PL Working Hrs
+i18n_ServCloud_ServTrackManagement_000307	下載上傳範例	下载上传范例	Download sample
+i18n_ServCloud_ServTrackManagement_000308	將 .csv 的檔案拖曳至此或按我	将 .csv 的档案拖曳至此或按我	Drag the .csv file to here, or click me
+i18n_ServCloud_ServTrackManagement_000309	派工單	派工单	Work order
+i18n_ServCloud_ServTrackManagement_000310	不良種類	不良种类	Defective type
+i18n_ServCloud_ServTrackManagement_000311	無效原因	无效原因	Inefficiency reason
+i18n_ServCloud_ServTrackManagement_000312	無效原因代碼	无效原因代码	Inefficiency reason code
+i18n_ServCloud_ServTrackManagement_000313	無效原因名稱	无效原因名称	Inefficiency reason name
+i18n_ServCloud_ServTrackManagement_000314	計入工單無效時間	计入工单无效时间	Included in production time
+i18n_ServCloud_ServTrackManagement_000315	通用無效原因	通用无效原因	General invalid reason
+i18n_ServCloud_ServTrackManagement_000316	無效原因類別	无效原因类别	Invalid reason class
+i18n_ServCloud_ServTrackManagement_000317	無效原因類型	无效原因类型	Invalid reason type
+i18n_ServCloud_ServTrackManagement_000318	無效原因代碼重覆	无效原因代码重复	Duplicate inefficiency reason code
+i18n_ServCloud_ServTrackManagement_000319	無效原因維護	无效原因维护	Inefficiency reason maintenance
+i18n_ServCloud_ServTrackManagement_000320	無效原因代碼"99"為系統代碼，不得使用	无效原因代码"99"为系统代码，不得使用	Inefficiency reason code "99" is the system code and must not be used
+i18n_ServCloud_ServTrackManagement_000321	不良品數	不良品数	Defective product quantity
+i18n_ServCloud_ServTrackManagement_000322	報廢	报废	Obsolete
+i18n_ServCloud_ServTrackManagement_000323	可維修	可维修	Can be fixed
+i18n_ServCloud_ServTrackManagement_000324	班次起始日期	班次起始日期	Shift start date
+i18n_ServCloud_ServTrackManagement_000325	班次結束日期	班次结束日期	Shift end date
+i18n_ServCloud_ServTrackManagement_000326	進站時間	进站时间	Move in time
+i18n_ServCloud_ServTrackManagement_000327	出站時間	出站时间	Move out time
+i18n_ServCloud_ServTrackManagement_000328	產量	产量	Production quantity
+i18n_ServCloud_ServTrackManagement_000329	請輸入1 ~ 999範圍的值	请输入1 ~ 999范围的值	Please enter a value ranging from 1 to 999
+i18n_ServCloud_ServTrackManagement_000330	是否換線	是否换线	Whether to change the line
+i18n_ServCloud_ServTrackManagement_000331	報廢不良品數	报废不良品数	Defective quantity (Obsolete)>>>>>>> .r21645
+i18n_ServCloud_ServTrackManagement_000332	可維修不良品數	可维修不良品数	Defective quantity (Can be fixed)
+i18n_ServCloud_Production_Can_Not_Be_Less_Than_The_Sum_Of_The_Number_Of_Defective_Products	產量不能小於不良品數的加總	产量不能小于不良品数的加总	Production can not be less than the sum of the number of defective products
+
+
+

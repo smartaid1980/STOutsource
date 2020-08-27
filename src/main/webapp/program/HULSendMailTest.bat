@@ -1,0 +1,1 @@
+java -cp  .\*;..\WEB-INF\lib\* -Xms128m -Xmx512m com.servtech.mail.Main %1 %2 %3 %4 %5 %6 %7 %8 %9

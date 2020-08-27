@@ -1,0 +1,150 @@
+<!--<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw "></i>
+      CNC 程式上下傳
+      <span>> 
+        機台列表
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png"></div>
+  </div>
+</div>-->
+
+<section id="widget-grid" ng-init="initMotorList()">
+  <!-- END ROW -->
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-th-list"></i> </span>
+          <h2>{i18n_ServCloud_CNC_Upload_0001}</h2>
+        </header>
+        <div>
+          <!-- widget div-->
+          <div class="jarviswidget-editbox">
+            <!-- widget edit box -->
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <div class="widget-body no-padding row" id="machine-table-widget">
+            <!-- widget content -->
+            <div class="row margin-top-10 margin-bottom-10">
+              <section
+                class="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                style="float: right;"
+              >
+                <div name="machineLigth" style="float: right;"></div>
+              </section>
+            </div>
+            <div class="table-responsive">
+              <table
+                id="machine-table"
+                class="table table-striped table-bordered table-hover"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      class="hasinput"
+                      class="col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                    >
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th
+                      class="hasinput"
+                      class="col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                    ></th>
+                    <th
+                      class="hasinput"
+                      class="col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                    ></th>
+                    <th
+                      class="hasinput"
+                      class="col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                    ></th>
+                  </tr>
+                  <tr>
+                    <th data-class="expand">
+                      {i18n_ServCloud_CNC_Upload_0002}
+                    </th>
+                    <th>{i18n_ServCloud_CNC_Upload_0003}</th>
+                    <th>{i18n_ServCloud_CNC_Upload_0004}</th>
+                    <th>{i18n_ServCloud_CNC_Upload_0005}</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <div
+      class="modal fade"
+      id="connect-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="remoteModalLabel"
+      data-backdrop="false"
+      data-keyboard="true"
+      style="background-color: rgba(0, 0, 0, 0.5);"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">{i18n_ServCloud_CNC_Upload_0006}</h4>
+          </div>
+          <div class="modal-body" id="modal-table-body">
+            <form class="smart-form">
+              <div class="row">
+                <section class="col col-12">
+                  <label class="label">
+                    {i18n_ServCloud_CNC_Upload_0007}:
+                    <input type="text" id="server-user" />
+                  </label>
+                </section>
+                <section class="col col-12">
+                  <label class="label">
+                    {i18n_ServCloud_CNC_Upload_0008}:
+                    <input type="password" id="server-password" />
+                  </label>
+                </section>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="connect-submit" class="btn btn-primary">
+              {i18n_ServCloud_CNC_Upload_0009}
+            </button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_CNC_Upload_0010}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end widget grid -->
+
+<script>
+  window.importPageScript()
+</script>

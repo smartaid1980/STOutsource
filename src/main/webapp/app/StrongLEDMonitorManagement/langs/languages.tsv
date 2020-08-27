@@ -1,0 +1,41 @@
+	zh_tw	zh	en
+i18n_ServCloud_Go_Back	回上一頁	回上一页	Go back to the previous page
+i18n_ServCloud_Switch_Style	切換樣式	切换样式	Switch style
+i18n_ServCloud_Grid_Name	第{index}層	第{index}层	{index} grid
+i18n_ServCloud_Store	庫	库	Store
+i18n_ServCloud_Zone_Not_Been_Set	該庫尚未設定完成！	该库尚未设定完成！	This zone has not been set up yet! 
+i18n_ServCloud_Complete_Setting_First	請先完成設定！	请先完成设定！	Please complete the settings first!
+i18n_ServCloud_Background_Image_Not_Been_Set	尚未設定背景圖！	尚未设定背景图！	Background image has not been set! 
+i18n_ServCloud_Upload_Background_Image_First	請先上傳背景圖！	请先上传背景图！	Please upload the background image first!
+i18n_ServCloud_Zone_No_Data	該庫尚無資料！	该库尚无资料！	This zone no data!
+i18n_ServCloud_Only_Supports_PNG_File	僅支援PNG格式圖片	仅支援PNG格式图片	Only supports PNG File
+i18n_ServCloud_File_Upload_Failed	檔案上傳失敗！	档案上传失败！	File upload failed!
+i18n_ServCloud_Save_Succeed	儲存成功！	储存成功！	Save succeed!
+i18n_ServCloud_Save_Failed	儲存失敗！	储存失败！	Save failed!
+i18n_ServCloud_Please_Input_Percent_Under_Hundred	只能輸入不超過百位的數字百分比	只能输入不超过百位的数字百分比	Please input percent number under 100
+i18n_ServCloud_Save	存檔	存档	Save
+i18n_ServCloud_Load	載入	载入	Load
+i18n_ServCloud_Upload_Image	上傳圖檔	上传图档	Upload Image
+i18n_ServCloud_Load_Store	載入儲架	载入储架	Load Shelf
+i18n_ServCloud_Clear_Shelfs	清除所有儲架	清除所有储架	Clear shelfs
+i18n_ServCloud_Clear_Store	選擇欲載入庫	选择欲载入库	Choose to load the store
+i18n_ServCloud_Choose_Shelf	選擇欲載入儲架	选择欲载入儲架	Choose to load the Shelf
+i18n_ServCloud_Input_Shelf_Name	輸入儲架名稱	输入储架名称	Input Shelf Name
+i18n_ServCloud_All_Check	全選	全选	All check
+i18n_ServCloud_Confirm	確認	确认	Confirm
+i18n_ServCloud_Close	關閉	关闭	Close
+i18n_ServCloud_Upload_Background_Image	上傳背景圖	上传背景图	Upload Background Image
+i18n_ServCloud_Upload_Shelf_Image	上傳儲架圖檔	上传储架图档	Upload Shelf Image
+i18n_ServCloud_Use_Shelf_Image	使用儲架圖檔	使用储架图档	Use Shelf Image
+i18n_ServCloud_Drag_Image_Here	將圖片檔拖曳至此	将图片档拖曳至此	Drag image here
+i18n_ServCloud_Upload	上傳	上传	Upload
+i18n_ServCloud_Click	或點擊	或点击	or Click
+i18n_ServCloud_Confirm_Delete	確認刪除?	确认删除?	Confirm delete?
+i18n_ServCloud_Quantity	數量	数量	Quantity
+i18n_ServCloud_Numerical_Representation	數值表示	数值表示	Numerical representation
+i18n_ServCloud_Remaining_Compartment	剩餘儲位	剩余储位	Remaining compartment
+i18n_ServCloud_Total_Compartment	總儲位	总储位	Total compartment
+i18n_ServCloud_Thing_ID	物料編號	物料编号	Thing ID
+i18n_ServCloud_Material_Name	原料名稱	原料名称	Material name
+i18n_ServCloud_Exp_Date	有效日期	有效日期	Exp date
+i18n_ServCloud_Store_Path	庫的路徑	库的路径	Store Path

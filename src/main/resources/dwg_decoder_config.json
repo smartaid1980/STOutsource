@@ -1,0 +1,9 @@
+{
+  "pathOfConverter":"C:\\Program Files\\ODA\\ODAFileConverter_title 19.8.0\\ODAFileConverter.exe",
+  "inputFolder":"C:\\Users\\Mike\\Downloads\\convert\\input",
+  "outputFolder":"C:\\Users\\Mike\\Downloads\\convert\\output",
+  "outputVersion":"ACAD2013",
+  "outputType":"DXF",
+  "recursiveFlag":"0",
+  "auditFlag":"0"
+}

@@ -1,0 +1,24 @@
+{
+  "app": {
+    "id": "DowntimeAnalysisEnzoy",
+    "name": "i18n_ServCloud_DowntimeAnalysis",
+    "type": 1,
+    "description": "Downtime Analysis for Enzoy.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_downtime_analysis",
+      "name": "i18n_ServCloud_10_DowntimeAnalysis_Enzoy"
+    },
+    {
+      "id": "20_downtime_analysis_by_product_id_Work_order",
+      "name": "i18n_ServCloud_20_DowntimeAnalysis_by_workorder_Enzoy"
+    },
+    {
+      "id": "30_idle_macro_editor",
+      "name": "i18n_ServCloud_30_IdleMacroEditor"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

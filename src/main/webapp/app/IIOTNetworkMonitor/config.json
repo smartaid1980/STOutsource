@@ -1,0 +1,11 @@
+{
+  "app": {
+    "id": "NetworkMonitor",
+    "name": "聯網監控",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [{ "id": "01_network_monitor", "name": "聯網監控" }],
+  "tags": ["20140918000005"]
+}

@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "IIOTAlarmLog",
+    "name": "告警通報歷史查詢",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_alarm_log",
+      "name": "告警通報歷史查詢"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

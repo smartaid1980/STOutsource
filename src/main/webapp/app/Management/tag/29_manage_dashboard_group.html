@@ -1,0 +1,115 @@
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-group"></i> </span>
+          <h2>{i18n_ServCloud_Dashboard_Group_Management}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="stk-dashboard-group-table"
+              stk-entity-pk="d_group_id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">
+                    {i18n_ServCloud_Dashboard_Group_ID}
+                  </th>
+                  <th>{i18n_ServCloud_Dashboard_Group_Name}</th>
+                  <th>{i18n_ServCloud_User_Name}</th>
+                  <th>{i18n_ServCloud_Dashboard_Authorization}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="d_group_id"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Dashboard_Group_ID}"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="d_group_name"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Dashboard_Group_Name}"
+                    />
+                  </td>
+                  <td>
+                    <select
+                      name="sys_users"
+                      class="form-control custom-scroll"
+                      multiple="multiple"
+                      stk-api="api/user/read"
+                      stk-option-value="user_id"
+                      stk-option-text="user_name"
+                    ></select>
+                  </td>
+                  <td>
+                    <select
+                      name="sys_d_auths"
+                      class="form-control custom-scroll"
+                      multiple="multiple"
+                      stk-api="api/sysDashboardAuth/read"
+                      stk-option-value="d_auth_id"
+                      stk-option-text="d_auth_name"
+                    ></select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+
+<script>
+  window.importPageScript()
+</script>

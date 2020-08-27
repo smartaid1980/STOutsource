@@ -1,0 +1,54 @@
+#rfq-detail-edit .col {
+  height: 32px;
+  border: none;
+}
+#rfq-detail-edit input {
+  padding: 0 10px;
+}
+#rfq-detail-edit .group {
+  padding: 10px 0;
+  margin: 10px 0;
+  border-width: 1px 0;
+  border-color: #ccc;
+  border-style: dashed;
+  background-color: #f7f7f7;
+}
+#rfq-detail-edit .group .group-title {
+  font-size: 18px;
+  font-weight: 900;
+}
+#rfq-detail-edit .group .group-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+#rfq-detail-edit .item {
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+}
+#rfq-detail-edit .value {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+#rfq-detail-edit .value select + input {
+  opacity: 0;
+  flex: 0;
+  padding: 0;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+}
+#rfq-detail-edit .value select {
+  flex: 2;
+  transition: all 0.3s ease-in-out;
+}
+#rfq-detail-edit .value.custom input {
+  flex: 7;
+  opacity: 1;
+  margin-left: 5px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+}
+#rfq-detail-edit label.error {
+  width: 100%;
+}

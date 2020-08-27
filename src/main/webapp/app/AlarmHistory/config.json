@@ -1,0 +1,36 @@
+{
+  "app": {
+    "id": "AlarmHistory",
+    "name": "i18n_ServCloud_AlarmHistory",
+    "type": 1,
+    "description": "警報履歷",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_cncscanByCode",
+      "name": "i18n_ServCloud_10_Alarm_Statistic_by_Codes"
+    },
+    {
+      "id": "02_cncscanByMachine",
+      "name": "i18n_ServCloud_20_Alarm_Statisti_by_Machine"
+    },
+    {
+      "id": "10_cncscanByCode_anko",
+      "name": "i18n_ServCloud_By_Code_Anko"
+    },
+    {
+      "id": "20_cncscanByMachine_anko",
+      "name": "i18n_ServCloud_By_Machine_Anko"
+    },
+    {
+      "id": "30_cncscanByCode_aidc",
+      "name": "i18n_ServCloud_30_Alarm_Statistic_by_Codes_aidc"
+    },
+    {
+      "id": "40_cncscanByMachine_aidc",
+      "name": "i18n_ServCloud_40_Alarm_Statisti_by_Machine_aidc"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

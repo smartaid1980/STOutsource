@@ -1,0 +1,79 @@
+<div class="row hidden-mobile">
+  <!--<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">-->
+  <!--<h1 class="page-title txt-color-blueDark">-->
+  <!--&lt;!&ndash; PAGE HEADER &ndash;&gt;-->
+  <!--&lt;!&ndash;<i class="fa-fw fa fa-th-large"></i>&ndash;&gt;-->
+  <!--&lt;!&ndash;Appware&ndash;&gt;-->
+  <!--</h1>-->
+  <!--</div>-->
+  <br></br>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-right">
+    <div class="btn-group applist-tag-filter">
+      <!-- <label class="checkbox-inline">
+          <input type="checkbox" value="Maintenance" class="checkbox style-0" checked="checked">
+          <span>Maintenance</span>
+      </label> -->
+    </div>
+  </div>
+</div>
+
+<!-- row -->
+<div class="row applist-row">
+  <p />
+  <p />
+  <div class="superbox col-sm-12 applist-container">
+    <!-- <ul>
+      <li>
+        <a href="">
+          <img src="app/AlarmHistory/img/default.png" alt="img">
+          <span>
+            <div>警報履歷</div>
+            <span class="app-tag-group">
+              <div class="app-tag bg-color-darken">生產管理</div>
+            </span>
+          </span>
+        </a>
+      </li>
+    </ul> -->
+  </div>
+</div>
+<!-- end row -->
+
+<script>
+  setTimeout(function loadServkit() {
+    if (window.servkit) {
+      servkit.renderApplistPage()
+    } else {
+      setTimeout(loadServkit, 500)
+    }
+  }, 0)
+
+  $('.applist-tag-filter').on('click', 'input', function (e) {
+    var activeClass = _.map($('.checkbox:checked').toArray(), function (e) {
+      return e.value
+    })
+
+    if (!activeClass.length) {
+      e.preventDefault()
+      return
+    }
+
+    $('.applist-container li').each(function (i, liEle) {
+      var $liEle = $(liEle)
+      var appClass = _.map($liEle.find('.app-tag').toArray(), function (ele) {
+        return ele.textContent.trim()
+      })
+      if (_.intersection(activeClass, appClass).length) {
+        $liEle.fadeIn(1000)
+      } else {
+        $liEle.fadeOut(500)
+      }
+    })
+  })
+
+  /*
+    servkit.requireJs(['/js/plugin/superbox/superbox.min.js'], function(){
+      $('.superbox').SuperBox();
+    });
+  */
+</script>

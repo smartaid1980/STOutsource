@@ -1,0 +1,160 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cloud"></i>
+      行動報工站
+      <span>
+        > 32_無效工作站條碼列印
+      </span>
+    </h1>
+  </div>
+</div>
+<!--Section START-->
+<section id="widget-grid" class="">
+  <!--Div row START-->
+  <div class="row">
+    <!--widget Strat-->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-blueDark"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <!--Trade Tag Title Start-->
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+          <!--Trade Tag Title End-->
+        </header>
+        <!--Trade Tag End-->
+        <!--Trade Tag Div Start-->
+        <div>
+          <!--Trade Tag  Table Start-->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-8">
+                    <div class="row">
+                      <section class="col col-6">
+                        <label class="label">無效工作站編號</label>
+                        <label class="input">
+                          <input type="text" name="line_id" id="line_id" />
+                        </label>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of row -->
+              </fieldset>
+              <footer>
+                <button id="submit-clean" class="btn btn-primary">
+                  清除
+                </button>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+            <!--Trade Tag Table End-->
+          </div>
+          <!--Trade Tag Div End-->
+        </div>
+      </div>
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"><i class="fa fa-table"></i></span>
+          <h2>無效工作站維護</h2>
+        </header>
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <div class="widget-body no-padding" id="stk-line-table-body">
+            <table
+              id="stk-line-table"
+              stk-entity-pk="line_id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">無效工作站編號</th>
+                  <th>無效工作站名稱</th>
+                  <th>啟用</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="line_id"
+                      class="form-control"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input type="text" name="line_name" class="form-control" />
+                  </td>
+                  <td>
+                    <span>
+                      <span class="onoffswitch">
+                        <input
+                          type="checkbox"
+                          name="is_open"
+                          class="onoffswitch-checkbox"
+                          checked="checked"
+                          id="isopen-onoffswitch"
+                        />
+                        <label
+                          class="onoffswitch-label"
+                          for="isopen-onoffswitch"
+                        >
+                          <span
+                            class="onoffswitch-inner"
+                            data-swchon-text="ON"
+                            data-swchoff-text="OFF"
+                          ></span>
+                          <span class="onoffswitch-switch"></span>
+                        </label>
+                      </span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--Div row END-->
+  </div>
+  <!--Section END-->
+</section>
+<div id="stk-file"></div>
+<script>
+  window.importPageScript()
+</script>

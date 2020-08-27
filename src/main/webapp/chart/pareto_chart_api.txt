@@ -1,0 +1,11 @@
+pageTitle: 頁面的title
+widgetTitle: widget的title
+dataTitle: 資料的title
+dataLabels *: 應為ㄧ長度為3的陣列格式的字串 (ex: ['不良數量', '不良比例', '累計比例'])
+dataKeyCol *: 資料做為key的欄位
+dataValueCol *: 資料中做為value的欄位
+dataPathCol: 資料中做為path欄位 (預設為PATH)
+dataPath *: 取得檔案的路徑
+filterKey: 過濾資料的key (目前固定用第一欄來過濾)
+
+p.s. 名稱後面有"*"為必填欄位

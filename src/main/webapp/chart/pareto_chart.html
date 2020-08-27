@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title> ServCloud </title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- #CSS Links -->
+  <!-- Basic Styles -->
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css"> -->
+
+  <!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production-plugins.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.min.css"> -->
+
+  <!-- SmartAdmin RTL Support -->
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.min.css"> -->
+
+  <!-- We recommend you use "your_style.css" to override SmartAdmin
+         specific styles this will also ensure you retrain your customization with each SmartAdmin update. -->
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/servtech-customize.css"> -->
+
+  <!-- 上面 7 個都被包進此內了 -->
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/all.css">
+
+  <!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/demo.min.css"> -->
+
+  <!-- ICONS -->
+  <link rel="shortcut icon" type="image/x-icon" href="../img/logo/Servcloud-icon.ico">
+  <link rel="icon" type="image/x-icon" href="../img/logo/Servcloud-icon.ico">
+
+  <!-- #GOOGLE FONT -->
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700"> -->
+
+  <!-- #APP SCREEN / ICONS -->
+  <!-- Specifying a Webpage Icon for Web Clip
+       Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+  <link rel="apple-touch-icon" href="../img/splash/sptouch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/splash/touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/splash/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/splash/touch-icon-ipad-retina.png">
+
+  <!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Startup image for web apps -->
+  <link rel="apple-touch-startup-image" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" href="../img/splash/ipad-landscape.png">
+  <link rel="apple-touch-startup-image" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" href="../img/splash/ipad-portrait.png">
+  <link rel="apple-touch-startup-image" media="screen and (max-device-width: 320px)" href="../img/splash/iphone.png">
+
+</head>
+<!-- #BODY -->
+<!-- Possible Classes
+
+    * 'smart-style-{SKIN#}'
+    * 'smart-rtl'         - Switch theme mode to RTL
+    * 'menu-on-top'       - Switch to top navigation (no DOM change required)
+    * 'no-menu'        - Hides the menu completely
+    * 'hidden-menu'       - Hides the main menu but still accessable by hovering over left edge
+    * 'fixed-header'      - Fixes the header
+    * 'fixed-navigation'  - Fixes the main menu
+    * 'fixed-ribbon'      - Fixes breadcrumb
+    * 'fixed-page-footer' - Fixes footer
+    * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
+  -->
+
+<body class="fixed-page-footer fixed-header fixed-navigation fixed-ribbon smart-style-2">
+
+  <!-- #MAIN PANEL -->
+  <div id="chart-main" role="main">
+
+    <!-- #MAIN CONTENT -->
+    <div id="content">
+
+      <section id="widget-grid" class="">
+        <!-- row -->
+        <div class="row">
+          <!-- NEW WIDGET START -->
+          <article class="col-xs-12 col-sm-12 col-md-42 col-lg-12">
+
+            <div class="jarviswidget jarviswidget-color-darken" id="graph" data-widget-sortable="false" data-widget-editbutton="false" data-widget-deletebutton="false" data-widget-colorbutton="false" data-widget-fullscreenbutton="false">
+              <header>
+                <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+                <h2 id="widget_title">{i18n_ServCloud_yieldPerato}</h2>
+                <a class="btn btn-success stk-excel-btn pull-right" title="Download data as excel"><span
+                          class="fa fa-file-excel-o fa-lg"></span></a>
+                <div class="widget-toolbar" role="menu">
+                  <div class="label label-success">
+                    <i class="fa fa-calendar"></i>　<span id="data_title"></span></div>
+                </div>
+              </header>
+              <!-- widget div-->
+              <div>
+                <!-- widget content -->
+                <div class="widget-body no-padding">
+                  <div class="padding-10">
+                    <div id="yield-chart" class="chart-large has-legend-unique"></div>
+                  </div>
+                  <div style="overflow: hidden;">
+                    <table class="table table-bordered" id="yield-info" width="100">
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- NEW WIDGET END -->
+        </div>
+        <!-- row END -->
+      </section>
+      <!-- end widget grid -->
+
+    </div>
+
+    <!-- END #MAIN CONTENT -->
+
+  </div>
+  <!-- END #MAIN PANEL -->
+
+  <script src="../js/libs/jquery-2.1.1.min.js"></script>
+  <script src="../js/libs/jquery-ui-1.10.3.min.js"></script>
+
+  <script src="../js/libs/underscore-min.js"></script>
+
+  <!-- moment -->
+  <script src="../js/plugin/moment/moment.min.js"></script>
+
+  <!-- IMPORTANT: APP CONFIG -->
+  <script src="../js/app.config.js"></script>
+
+  <!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+  <script src="../js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+  <!-- CUSTOM NOTIFICATION -->
+  <script src="../js/notification/SmartNotification.min.js"></script>
+
+  <!-- JARVIS WIDGETS -->
+  <script src="../js/smartwidgets/jarvis.widget.min.js"></script>
+
+  <!-- EASY PIE CHARTS -->
+  <script src="../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+  <!-- SPARKLINES -->
+  <script src="../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+  <!-- JQUERY VALIDATE -->
+  <script src="../js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+  <!-- JQUERY MASKED INPUT -->
+  <script src="../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+  <!-- JQUERY SELECT2 INPUT -->
+  <script src="../js/plugin/select2/select2.min.js"></script>
+
+  <!-- JQUERY UI + Bootstrap Slider -->
+  <script src="../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+  <!-- browser msie issue fix -->
+  <script src="../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+  <!-- FastClick: For mobile devices: you can disable this in app.js -->
+  <script src="../js/plugin/fastclick/fastclick.min.js"></script>
+
+  <!--[if IE 8]>
+      <h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+    <![endif]-->
+
+  <!-- Demo purpose only -->
+  <!-- <script src="js/demo.min.js"></script> -->
+
+  <!-- MAIN APP JS FILE -->
+  <script src="../js/app.min.js"></script>
+
+  <!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+  <!-- Voice command : plugin -->
+  <!-- <script src="js/speech/voicecommand.min.js"></script> -->
+
+  <!-- SmartChat UI : plugin -->
+  <script src="../js/smart-chat-ui/smart.chat.ui.min.js"></script>
+  <script src="../js/smart-chat-ui/smart.chat.manager.min.js"></script>
+
+  <script src="../js/servtech/servcloud.servkit.js"></script>
+  <script src="../js/servtech/servcloud.feature.js"></script>
+  <script src="../js/servtech/servcloud.servkit.broadcaster.js"></script>
+  <script src="../js/servtech/servcloud.servkit.crudtable.js"></script>
+  <!--<script src="../js/servtech/servcloud.servkit.monitor.js"></script>-->
+
+  <style>
+    .fixed-ribbon #content {
+      padding-top: 10px;
+    }
+  </style>
+  <script>
+    (function () {
+      var $graph = $('#graph')
+      // 頁面的title
+      var pageTitle = 'Perato'
+      // widget的title
+      var widgetTitle = 'Perato'
+      // 資料的title
+      var dataTitle = ''
+      // 資料的head
+      var dataHead = ''
+      // 呈現的labels
+      var dataLabels
+      // 資料的key的名稱
+      var dataKeyCol
+      // 資料的value的名稱
+      var dataValueCol
+      // 資料的path的名稱
+      var dataPathCol = 'PATH'
+
+      // 過濾資料的key
+      var filterKey = ''
+
+      // TODO 以下三個配合getData修改
+      var dataPath
+
+      // 參數
+      var _parameters = {}
+      // 資料
+      var _source
+      // 路徑
+      var _path
+
+      function parseQueryParameters () {
+        var query = decodeURIComponent(window.location.search.substring(1))
+        var vars = query.split('&')
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split('=')
+          var k = pair[0]
+          var v = pair[1]
+          if (typeof _parameters[k] === 'undefined') {
+            _parameters[k] = []
+          }
+          _parameters[k].push(v)
+        }
+        console.debug('parameters:')
+        console.debug(_parameters)
+      }
+
+      function getParameters (key) {
+        return (typeof _parameters[key] === 'undefined' ? null : _parameters[key])
+      }
+
+      function getParameter (key) {
+        return (typeof _parameters[key] === 'undefined' ? null : _parameters[key][0])
+      }
+
+      function initPage () {
+        // TODO modify
+        path = getParameter('path')
+        // 以下是本頁要用的參數
+        pageTitle = (getParameter('pageTitle') || pageTitle)
+        widgetTitle = (getParameter('widgetTitle') || widgetTitle)
+        dataTitle = (getParameter('dataTitle') || dataTitle)
+        dataHead = (getParameter('dataHead') || dataHead)
+        dataLabels = (typeof getParameter('dataLabels') === 'string' ? JSON.parse(getParameter('dataLabels')) : getParameter('dataLabels'))
+        dataKeyCol = getParameter('dataKeyCol')
+        dataValueCol = getParameter('dataValueCol')
+        dataPathCol = getParameter('dataPathCol') || dataPathCol
+        dataPath = getParameter('dataPath')
+        filterKey = getParameter('filterKey')
+        // 修改頁面資訊
+        $('head title').html(pageTitle)
+        $('#widget_title').html(widgetTitle)
+        $('#data_title').html(dataTitle)
+      }
+
+      // TODO 若api有調整需配合修改 
+      function getData () {
+        servkit.ajax({
+          url: servkit.rootPath + '/api/getdata/file',
+          type: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify({
+            'type': 'aheadmaster',
+            'pathPattern': dataPath
+            // 'pathPattern': project +'/output/yield/pareto/{year}/{scope}.csv',
+            // 'pathParam': {
+            //   'year': [year],
+            //   'scope': [scope]
+            // }
+          }),
+          async: false
+        }, {
+          success: function (data) {
+            _source = data
+          },
+          fail: function () {
+            console.warn('Getdata failed.')
+          }
+        })
+      }
+
+      /**
+       * filter source
+       */
+      // filter  ("無效人時", source, "不良說明", "不良總數")
+      function _filter (source, kcol, vcol, pcol, key) {
+        console.log(source)
+    console.log(kcol)
+        console.log(vcol)
+    console.log(pcol)
+    console.log(key)
+
+        // 欄位名稱
+        var cols = source[0]
+        // key的位置
+        var ki = _.indexOf(cols, kcol)
+        var vi = _.indexOf(cols, vcol)
+        var pi = _.indexOf(cols, pcol)
+        var ta = []
+        var ka = []
+        var va = []
+
+        pi = (pi > -1 ? pi : 0)
+
+        _.each(_.rest(source), function (r, i) {
+          if ((key == null || r[0] == key) && r[vi] != 0) {
+            ta.push({
+              key: r[ki],
+              value: parseFloat(r[vi]),
+              path: r[pi]
+            })
+          }
+        })
+
+        ta = _.sortBy(ta, 'value').reverse()
+
+        ka = _.pluck(ta, 'key')
+        va = _.pluck(ta, 'value')
+        pa = _.pluck(ta, 'path')
+
+        return {
+          key: ka,
+          value: va,
+          path: pa
+        }
+      }
+
+      // point interactive
+      function drawContent (source, head, labels, kCol, vCol, pCol, key) {
+        var _plot
+        var $chart = $('#yield-chart')
+        var $table = $('#yield-info')
+
+        var validTime = []
+        var badratio = []
+        var xAxisLabels = []
+        var countratio = []
+
+        var data = []
+        var duty = []
+        var tabledata = []
+        // var labels = dataLabel;
+
+        var isMinMedia = ($(window).width() <= 1024)
+
+        // 計算大小
+        if (isMinMedia) {
+          $chart.css('height', '380px')
+        } else {
+          $chart.css('height', '')
+        }
+
+        // 過濾出要的資料
+        var fd = _filter(source, kCol, vCol, pCol, key)
+        duty = fd.key
+        data = fd.value
+        _path = fd.path
+        // debug
+        // console.debug('filter result');
+        // console.debug(fd);
+
+        var sum = 0
+        for (var i = 0; i < data.length; i++) {
+          sum += data[i]
+        }
+        // console.log(sum);
+        var badcount = 0
+        for (var i = 0; i < data.length; i++) {
+          validTime.push([i, data[i]])
+          badratio.push([i, data[i] * 100 / sum])
+          badcount += data[i] * 100 / sum
+          countratio.push([i, badcount])
+          xAxisLabels.push([i, duty[i]])
+        }
+
+        var dataToDraw = [{
+          label: labels[0],
+          data: validTime,
+          color: '#8a9a61',
+          bars: {
+            show: true,
+            align: 'center',
+            barWidth: 0.5
+          }
+        }, {
+          label: labels[2],
+          data: countratio,
+          color: '#3276B1',
+          lines: {
+            show: true,
+            lineWidth: 3
+          },
+          points: {
+            show: true
+          },
+          yaxis: 2
+        }]
+
+        var options = {
+          series: {
+            valueLabels: {
+              show: true,
+              labelFormatter: function (v) {
+                return Number(v).toFixed(2)
+              }
+            }
+          },
+          grid: {
+            hoverable: true,
+            //              clickable : true  先關掉 之後要寫確認有資料再enable click的邏輯
+            clickable: false
+          },
+          tooltip: false,
+          tooltipOpts: {
+            // content: '%x - %y',
+            // dateFormat: '%b %y',
+            defaultTheme: false
+          },
+          xaxis: {
+            ticks: xAxisLabels,
+            min: -1,
+            max: data.length,
+            labelWidth: (isMinMedia ? 15 : null)
+          },
+          yaxes: [{
+            position: 'left',
+            min: 0,
+            max: Math.floor(_.max([500].concat(data)) * 1.2)
+          }, {
+            position: 'right',
+            min: 0,
+            max: 120,
+            tickFormatter: function (val, axis) {
+              return val + '%'
+            }
+          }]
+        }
+        // draw chart
+        _plot = $.plot($chart, dataToDraw, options)
+
+        // bind chart event
+        $chart.unbind('plotclick').bind('plotclick', function (ev, pos, item) {
+          // console.debug(ev);
+          // console.debug(pos);
+          // console.debug(item);
+          if (item) {
+            var dataIndex = item.dataIndex
+            var labelName = xAxisLabels[dataIndex][1]
+            var params = {
+              'pageTitle': labelName,
+              'widgetTitle': widgetTitle,
+              'dataTitle': dataTitle + ' ' + labelName,
+              'dataHead': dataHead,
+              'dataLabels': JSON.stringify(dataLabels),
+              'dataKeyCol': dataKeyCol,
+              'dataValueCol': dataValueCol,
+              'dataPath': _path[dataIndex],
+              'filterKey': filterKey
+            }
+            console.debug('plotclick')
+            console.debug(params)
+            // replace是為了把空白的+號轉為正確的encode
+            window.open('pareto_chart.html?' + $.param(params, true).replace(/\+/g, '%20'), '_blank')
+          }
+        })
+
+        /* draw table start */
+        // build table data
+        var tmp, tmpdata
+        tabledata.push([head].concat(duty, 'Total')) // 总计
+        tmpdata = _.map(dataToDraw[0].data, function (num) {
+          return num[1]
+        })
+        tabledata.push([labels[0]].concat(tmpdata, _.reduce(tmpdata, function (memo, num) {
+          return memo + num
+        }, 0)))
+        tabledata.push([labels[1]].concat(_.map(tmpdata, function (num) {
+          return (new Number(num * 100 / sum).toFixed(2)) + '%'
+        }), ''))
+        tmpdata = _.map(dataToDraw[1].data, function (num) {
+          return num[1]
+        })
+        tabledata.push([labels[2]].concat(_.map(tmpdata, function (num) {
+          return (new Number(num).toFixed(2)) + '%'
+        }), ''))
+
+        // draw table
+        var tableList = []
+        var html = []
+        var tableSplit = $(window).width() > 1024 ? 16 : 11
+        var tableTitleSize = 10
+
+        // 取得欄位總數
+        var keys = _.rest(tabledata[0])
+        // 取得去除表頭的資料
+        var values = _.map(_.rest(tabledata), _.rest)
+
+        // console.debug(keys);
+        // console.debug(values);
+        // 如果資料數量小於原本的
+        if (tableSplit > keys.length) {
+          tableSplit = keys.length
+        }
+        // 先將資料區分出表格
+        _.each(keys, function (k, i) {
+          var ti = Math.floor(i / tableSplit)
+          var ci = i % tableSplit
+          var t = tableList[ti] = (tableList[ti] || [])
+          if (_.isUndefined(tableList[ti][0])) {
+            tableList[ti][0] = []
+            tableList[ti][0].length = tableSplit
+            tableList[ti][0].fill('')
+          }
+          tableList[ti][0][ci] = k
+        })
+        _.each(values, function (vs, i) {
+          _.each(vs, function (v, j) {
+            var ti = Math.floor(j / tableSplit)
+            var ci = j % tableSplit
+            var t = tableList[ti] = (tableList[ti] || [])
+            if (_.isUndefined(tableList[ti][i + 1])) {
+              tableList[ti][i + 1] = []
+              tableList[ti][i + 1].length = tableSplit
+              tableList[ti][i + 1].fill('')
+            }
+            tableList[ti][i + 1][ci] = v
+          })
+        })
+
+        // console.debug(tableList);
+        // 繪製table
+        var title = _.map(tabledata, _.first)
+        var aw = Math.floor((100 - tableTitleSize) / tableSplit)
+        _.each(tableList, function (t, i) {
+          var label
+          var keys = []
+          _.each(t, function (r, j) {
+            html.push((j == 0 ? '<tr class="success">' : '<tr>'))
+            label = title[j]
+            _.each(r, function (c, k) {
+              var str = c
+              // 用來keep欄位
+              if (j == 0) {
+                keys.push(c)
+              }
+              // 資料標題
+              if (k == 0) {
+                html.push('<td width="' + tableTitleSize + '%"><strong>' + label + '</strong></td>')
+              }
+              // 資料內容
+              html.push('<td class="text-right" width="' + aw + '%">' + str + '</td>')
+            })
+            html.push('</td>')
+          })
+        })
+        $table.find('tbody').html(html.join(''))
+        /* draw table end */
+      }
+
+      function draw () {
+        parseQueryParameters()
+        initPage()
+        getData()
+        drawContent(_source, dataHead, dataLabels, dataKeyCol, dataValueCol, dataPathCol, filterKey)
+      }
+
+      servkit.downloadCustomizedExcel($('.stk-excel-btn'), function () {
+        console.log('.stk-excel-btn')
+        // 因為良率與無效的柏拉圖共用template所以header要從DOM上找
+        var header = [$graph.find('tr.success td:first').text()],
+          headerFormat = ['text'],
+          sum = [],
+          sumFormat = ['text', '0.0'],
+          content = [
+            [$graph.find('tbody tr[class!=success]:not(:first)').eq(0).find('td:first').text()],
+            [$graph.find('tbody tr[class!=success]:not(:first)').eq(1).find('td:first').text()],
+            [$graph.find('tbody tr[class!=success]:not(:first)').eq(2).find('td:first').text()]
+          ],
+          intFormat = ['text'],
+          percentageFormat = ['text']
+        $graph.find('tr.success').find('td:not(:first)').each(function (i, td) {
+          header.push($(td).text())
+        })
+        header = _.compact(header)
+
+        _.map($graph.find('tbody tr[class!=success]:not(:first)'),
+          function (tr, index) {
+            var array_index = index % 3
+            content[array_index] = content[array_index].concat(_.map($(tr).find('td:not(:first)'), function (td) {
+              return $(td).text().match('%') ? $(td).text().replace('%', '') / 100 : $(td).text()
+            }))
+          })
+        // 總計
+        sum.push(header.pop())
+        sum.push(content[0][header.length])
+        // 取相同長度
+        _.each(content, function (elem, index) {
+          content[index] = _.first(elem, header.length)
+        })
+        // header length有多一開始的"不良項目"
+        for (var i = 0; i < header.length - 1; i++) {
+          intFormat.push('0.0')
+          percentageFormat.push('0.0%')
+          headerFormat.push('text')
+        }
+
+        return {
+          templateName: 'pareto',
+          fileName: dataPath.split('/')[0] + '_pareto_' + pageTitle,
+          matrices: [{
+            x: 0,
+            y: 0,
+            data: [
+              [pageTitle + widgetTitle]
+            ],
+            format: ['text']
+          },
+          {
+            x: 0,
+            y: 13,
+            data: [header],
+            format: headerFormat
+          },
+          {
+            x: 0,
+            y: 14,
+            data: [content[0]],
+            format: intFormat
+          },
+          {
+            x: 0,
+            y: 15,
+            data: _.rest(content),
+            format: percentageFormat
+          },
+          {
+            x: 0,
+            y: 17,
+            data: [sum],
+            format: sumFormat
+          }
+          ]
+        }
+      })
+
+      servkit.requireJsAsync([
+        [
+          '/js/plugin/flot/jquery.flot.cust.min.js',
+          '/js/plugin/flot/jquery.flot.resize.min.js',
+          '/js/plugin/flot/jquery.flot.fillbetween.min.js',
+          '/js/plugin/flot/jquery.flot.orderBar.min.js',
+          '/js/plugin/flot/jquery.flot.pie.min.js',
+          '/js/plugin/flot/jquery.flot.tooltip.min.js',
+          '/js/plugin/flot/jquery.flot.time.min.js',
+          '/js/plugin/flot/jquery.flot.stack.min.js',
+          '/js/plugin/flot/jquery.flot.axislabels.js',
+          '/js/plugin/flot/jquery.flot.valuelabels.js'
+        ],
+        [
+          '/js/plugin/datatables/jquery.dataTables.min.js',
+          '/js/plugin/datatables/dataTables.colVis.min.js',
+          '/js/plugin/datatables/dataTables.tableTools.min.js',
+          '/js/plugin/datatables/dataTables.bootstrap.min.js',
+          '/js/plugin/datatable-responsive/datatables.responsive.min.js'
+        ]
+      ],
+      draw)
+    })()
+  </script>
+
+</body>
+
+</html>

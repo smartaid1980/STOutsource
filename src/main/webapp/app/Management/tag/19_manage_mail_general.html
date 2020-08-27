@@ -1,0 +1,91 @@
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="sending-setting-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Setting_Recipients}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="mail_type_id"
+              id="recipient-setting"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 60%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Number}</th>
+                  <th>{i18n_ServCloud_Notification_Type}</th>
+                  <th
+                    data-original-title="{i18n_ServCloud_Email_Recipeint_Tooltip}"
+                  >
+                    {i18n_ServCloud_Email_Recipient}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="mail_type_id"
+                      placeholder="{i18n_ServCloud_Number}"
+                      disabled
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="mail_type_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Notification_Type}"
+                    />
+                  </td>
+                  <td>
+                    <input name="recipient" type="text" class="form-control" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<style>
+  .bootstrap-tagsinput > input {
+    width: 100% !important;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

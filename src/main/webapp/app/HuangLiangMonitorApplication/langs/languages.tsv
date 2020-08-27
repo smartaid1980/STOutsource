@@ -1,0 +1,252 @@
+	zh_tw	zh	en
+i18n_ServCloud_EquipMonitor	設備監控	设备监控	Machine Monitor
+i18n_ServCloud_Functions	功能	功能	Functions
+i18n_ServCloud_01_machine_list	01 機台列表	01 机台列表	01 machine list
+i18n_ServCloud_Machine_List	機台列表	机台列表	Machine List
+i18n_ServCloud_Machine_Id	機台編號	机台编号	MACHINE_ID
+i18n_ServCloud_Light_Status	顯示燈號	显示灯号	Machine Status
+i18n_ServCloud_Online	上線	上线	Online
+i18n_ServCloud_Stop	停止	停止	Stop
+i18n_ServCloud_Alarm	事件發生	事件发生	Alarm
+i18n_ServCloud_Offline	離線	离线	Offline
+i18n_ServCloud_Dashboard	主要資訊	主要资讯	Dashboard
+i18n_ServCloud_Alarm_History	Alarm 履歷	Alarm 履历	Alarm History
+i18n_ServCloud_Operation	操作履歷	操作履历	Operation
+i18n_ServCloud_PMC_Message	PMC 訊息	PMC 讯息	PMC Message
+i18n_ServCloud_Alarm_Message	Alarm 訊息	Alarm 讯息	Alarm
+i18n_ServCloud_Prog_Download	CNC 記憶體下載	CNC 记忆体下载	Prog Download
+i18n_ServCloud_Prog_Upload	CNC 記憶體上傳	CNC 记忆体上传	Prog Upload
+i18n_ServCloud_Controller	控制器資訊	控制器资讯	Controller
+i18n_ServCloud_Message_History	Message 履歷	Message 履历	Message History
+i18n_ServCloud_Message	Message 訊息	Message 讯息	Message
+i18n_ServCloud_Leave	離開	离开	Exit
+i18n_ServCloud_Monitoring_Information	監控資訊	监控资讯	Monitoring information
+i18n_ServCloud_The_Controller_End_State_Column	控制器端狀態列	控制器端状态列	The controller end state column
+i18n_ServCloud_Absolute_Position	絕對座標	绝对座标	Absolute position
+i18n_ServCloud_Machine_Position	機械座標	机械座标	Machine position
+i18n_ServCloud_Relative_Position	相對座標	相对座标	Relative position
+i18n_ServCloud_Distance_To_Go	剩餘距離	剩余距离	Distance to go
+i18n_ServCloud_Parts_Data	元件資料	元件资料	Parts data
+i18n_ServCloud_Servo_Spindle	伺服 / 主軸	伺服 / 主轴	Servo / Spindle
+i18n_ServCloud_Execute_Program	執行程式	执行程式	Execute program
+i18n_ServCloud_Processing_Time_Statistics	加工時間統計	加工时间统计	Processing time statistics
+i18n_ServCloud_Modal_Other_Code	Modal other code	Modal other code	Modal other code
+i18n_ServCloud_Modal_G_Code	Modal G-code	Modal G-code	Modal G-code
+i18n_ServCloud_Parts_Total	加工元件總數	加工元件总数	Parts total
+i18n_ServCloud_Parts_Required	加工元件請求	加工元件请求	Parts required
+i18n_ServCloud_Parts_Count	加工元件數量	加工元件数量	Parts count
+i18n_ServCloud_Servo_Feedrate_Override	伺服軸進給率百分比	伺服轴进给率百分比	Servo feedrate override
+i18n_ServCloud_Servo_Actual_Feedrate	伺服軸實際進給率	伺服轴实际进给率	Servo actual feedrate
+i18n_ServCloud_Spindle_Speed_Override	主軸轉速百分比	主轴转速百分比	Spindle speed override
+i18n_ServCloud_Line_Number	行號	行号	Line number
+i18n_ServCloud_Line_Execution_Block	執行單節	执行单节	Execution block
+i18n_ServCloud_Power_Time	通電時間	通电时间	Power time
+i18n_ServCloud_Cutting_Time	切削時間	切削时间	Cutting time
+i18n_ServCloud_Cycle_Time	循環時間	循环时间	Cycle time
+i18n_ServCloud_Run_Time	運轉時間	运转时间	Run time
+i18n_ServCloud_Spindle_Actual_Speed	主軸實際轉速	主轴实际转速	Spindle actual speed
+i18n_ServCloud_Spindel_Command_speed	主軸命令轉速	主轴命令转速	Spindle command speed
+i18n_ServCloud_Time	時間	时间	Time
+i18n_ServCloud_Alarm_Code	Alarm 代碼	Alarm 代码	Alarm Code
+i18n_ServCloud_Alarm_Description	Alarm 說明	Alarm 说明	Alarm Description
+i18n_ServCloud_Operation_History	操作履歷	操作履历	Operation History
+i18n_ServCloud_Please_Enter_A_Query_Parameter	請輸入查詢參數	请输入查询参数	Please enter a query parameter
+i18n_ServCloud_Start_Number	輸入起始號碼	输入起始号码	Start Number
+i18n_ServCloud_End_Number	輸入終止號碼	输入终止号码	End Number
+i18n_ServCloud_Number	號碼	号码	Number
+i18n_ServCloud_Search	查詢	查询	Search
+i18n_ServCloud_Operation_Description	操作說明	操作说明	Operation Description
+i18n_ServCloud_Signal	信號	信号	Signal
+i18n_ServCloud_Display_Mode	顯示模式	显示模式	Display mode
+i18n_ServCloud_Address	位址	位址	Address
+i18n_ServCloud_DEC	十進制	十进制	DEC
+i18n_ServCloud_Demonstration	顯示	显示	Demonstration
+i18n_ServCloud_Program	程式名稱	程式名称	Program
+i18n_ServCloud_Size	檔案大小	档案大小	Size
+i18n_ServCloud_Note	註解	注解	Note
+i18n_ServCloud_Download	下載	下载	Download
+i18n_ServCloud_Please_Select_The_Program_Upload	請選擇檔案上傳	请选择档案上传	Please select the program upload
+i18n_ServCloud_Browse	選擇檔案	选择档案	Browse
+i18n_ServCloud_Upload	上傳檔案	上传档案	Upload
+i18n_ServCloud_Controller_Information	控制器資訊	控制器资讯	Controller information
+i18n_ServCloud_System	系統	系统	System
+i18n_ServCloud_Name	名稱	名称	Name
+i18n_ServCloud_Message_Code	Message 代碼	Message 代码	Message Code
+i18n_ServCloud_Message_Description	Message 說明	Message 说明	Message Description
+i18n_ServCloud_Plant_Area_Monitor	廠區機台監視	厂区机台监视	Plant area machine monitor
+i18n_ServCloud_Plant_Area_Monitor_Macro	廠區機台監視(macro)	厂区机台监视(macro)	Plant area machine monitor (macro)
+i18n_ServCloud_Table	表格	表格	Table
+i18n_ServCloud_List	列表	列表	List
+i18n_ServCloud_Plant_Area_Management	管理廠區	管理厂区	Plant area management
+i18n_ServCloud_Plant_Area_Information	廠區資訊	厂区资讯	Plant area information
+i18n_ServCloud_Add_Plnat_Area	新增廠區	新增厂区	Add plant area
+i18n_ServCloud_Plant_Area_Name	廠區名稱	厂区名称	Plant area name
+i18n_ServCloud_Plant_Area	廠區	厂区	Plant area
+i18n_ServCloud_Plant_Area_Size	廠區大小	厂区大小	Plant area size
+i18n_ServCloud_Row	列	列	Row
+i18n_ServCloud_Column	行	行	Column
+i18n_ServCloud_Create	建立	建立	Create
+i18n_ServCloud_Create_Plant_Area__Explanation	廠區之第一行與第一列(灰底部分)僅可輸入線別	厂区之第一行与第一列(灰底部分)仅可输入线别	The first line of the first column of the plant (gray section) can only input line
+i18n_ServCloud_Re_Create_Plant_Area__Explanation	建立新的廠區大小將會清除與機台的綁定關係，您確定要重新建立?	建立新的厂区大小将会清除与机台的绑定关系，您确定要重新建立?	The new plant will establish the binding relationship between the size of the machine's clear, you sure you want to re-build?
+i18n_ServCloud_Edite	編輯	编辑	Edit
+i18n_ServCloud_Delete	刪除	删除	Delete
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Layers	圖層	图层	Layers
+i18n_ServCloud_Submit	送出	送出	Submit
+i18n_ServCloud_Cancel	取消	取消	Cancel
+i18n_ServCloud_Plant_Area_Machine	廠區機台	厂区机台	Plant area machine
+i18n_ServCloud_Close	關閉	关闭	Close
+i18n_ServCloud_Prompt	提示	提示	Prompt
+i18n_ServCloud_Ok	確定	确定	OK
+i18n_ServCloud_Edit_Layer	編輯圖層	编辑图层	Edit layer
+i18n_ServCloud_Repeat_Setting	重複設定!	重复设定!	Repeat setting
+i18n_ServCloud_Not_Exist	不存在!	不存在!	not exist!
+i18n_ServCloud_Delete_Plant_Area_Failure	刪除廠區失敗	删除厂区失败	Delete plant area failure
+i18n_ServCloud_Delete_Plant_Area__Explanation	您確定要刪除廠區	您确定要删除厂区	Are you sure you want to remove the plant area
+i18n_ServCloud_Delete_Plant_Area__Prompt	刪除廠區時會解除機台與廠區的綁定關係!	删除厂区时会解除机台与厂区的绑定关系!	Will unbind the machine and remove the plant when the plant!
+i18n_ServCloud_Please_Enter_Number	請輸入數字	请输入数字	Please enter a number
+i18n_ServCloud_Only_Enter_Number	只能輸入數字	只能输入数字	Only enter numbers
+i18n_ServCloud_Number_Min	長度至少為	长度至少为	The minimum length of
+i18n_ServCloud_Number_Max	長度最大為	长度最大为	The maximum length of
+i18n_ServCloud_Number_Machine_Status_Management	管理機台狀態	管理机台状态	Machine status management
+i18n_ServCloud_Light_Name	燈號名稱	灯号名称	Light Name
+i18n_ServCloud_Light_Color	燈號顏色	灯号颜色	Light color
+i18n_ServCloud_Light_ID	燈號ID	灯号ID	Light ID
+i18n_ServCloud_Create_By	建立者	建立者	Created
+i18n_ServCloud_Update_By	更新者	更新者	Updated
+i18n_ServCloud_Create_Time	建立日期	建立日期	Create time
+i18n_ServCloud_Update_Time	更新日期	更新日期	Update time
+i18n_ServCloud_Update	更新	更新	Update
+i18n_ServCloud_Update_Failed	更新失敗	更新失败	Update Failed
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_Not_Yet_Bound_Any_One_Box	尚未綁定任何一台 box	尚未绑定任何一台 box	not yet bound to any one box
+i18n_ServCloud_Servo_Load	伺服軸負載	伺服轴负载	Servo Load
+i18n_ServCloud_Spindle_Load	主軸負載	主轴负载	Spindle Load
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_Monitor_Overall	整場監控	整场监控	Overall
+i18n_ServCloud_Speed	轉速	转速	Speed
+i18n_ServCloud_Feed	進給率	进给率	Feed Rate
+i18n_ServCloudr_Program	加工程式	加工程式	Program
+i18n_ServCloud_Quantity	產量	产量	Quantity
+i18n_ServCloud_Monitor_Overall	整場監控	整场监控	Plant Area Overall
+i18n_ServCloud_Monitor_Overall_List	機台監控列表	机台监控列表	Machine Monitor List
+i18n_ServCloud_Monitor_Overall_Edit	整場監控（編輯）	整场监控（编辑）	Plant Area Overall ( Edit )
+i18n_ServCloud_Monitor_Load	載入設定	载入设定	Load Setting
+i18n_ServCloud_Monitor_List	系統機台	系统机台	List Devices
+i18n_ServCloud_Monitor_Add	增加機台	增加机台	Add Device
+i18n_ServCloud_Monitor_Clear	清空機台	清空机台	Clear
+i18n_ServCloud_Monitor_Save	儲存設定	储存设定	Save
+i18n_ServCloud_Monitor_UploadBgImage	上傳背景	上传背景	Upload Background Image
+i18n_ServCloud_Monitor_Drop_File	將圖片拖曳至此上傳	将图片拖曳至此上传	
+i18n_ServCloud_Monitor_Or_Click	或點擊選進行選取	或点击选进行选取	
+i18n_ServCloud_Monitor_File_Must_Be_PNG	僅支援PNG格式圖片	仅支援PNG格式图片	
+i18n_ServCloud_Monitor_Upload_Fail	檔案上傳失敗	档案上传失败	
+i18n_ServCloud_Monitor_Enter_Machine_Id	請輸入機台授權碼	请输入机台授权码	Please enter machine licensed Id.
+i18n_ServCloud_Monitor_Save_Success	儲存成功！	储存成功！	Save success.
+i18n_ServCloud_Monitor_Save_Failed	儲存失敗，請洽管理員！	储存失败，请洽管理员！	Save failed, please contact system administrator.
+i18n_ServCloud_Utilization	稼動率	稼动率	Utilization
+i18n_ServCloud_M1	更換刀具(M1)	更换刀具(M1)	Change Tool (M1)
+i18n_ServCloud_M2	設定時間(M2)	设定时间(M2)	Setting Time (M2)
+i18n_ServCloud_M3	工件量測(M3)	工件量测(M3)	Measuring (M3)
+i18n_ServCloud_M4	故障待修(M4)	故障待修(M4)	Failure to be Repaired (M4)
+i18n_ServCloud_M5	待料(M5)	待料(M5)	Wait for Material (M5)
+i18n_ServCloud_M6	待刀具(M6)	待刀具(M6)	Wait for Tool (M6)
+i18n_ServCloud_M7	待人設定(M7)	待人设定(M7)	Wait for Setting (M7)
+i18n_ServCloud_M8	待單(M8)	待单(M8)	Wait for Order(M8)
+i18n_ServCloud_M9	機台清理(M9)	机台清理(M9)	Cleaning (M9)
+i18n_ServCloud_M10	治具加工(M10)	治具加工(M10)	Fixture Processing(M10)
+i18n_ServCloud_M11	程式變更(M11)	程式变更(M11)	Change Program (M11)
+i18n_ServCloud_M12	更換刀具(M12)	更换刀具(M12)	Change Tool (M12)
+i18n_ServCloud_M13	機台預備(M13)	机台预备(M13)	Prepare Machine (M13)
+i18n_ServCloud_M14	故障待修(M14)	故障待修(M14)	Wait for Repairing (M14)
+i18n_ServCloud_M15	機台清理(M15)	机台清理(M15)	Cleaning (M15)
+i18n_ServCloud_M999	待人顧車(M999)	待人顾车(M999)	Wait for taking care of car(M999)
+i18n_ServCloud_50_Machine_Time Diff_Content	50 標工差異	50 标工差异	Machine Time Diff Content
+i18n_ServCloud_Machine_Time_Diff_Query	標工差異查詢	标工差异查询	Machine Time Diff Query
+i18n_ServCloud_day	日期	日期	Day
+i18n_ServCloud_machine	機台	机台	Machine
+i18n_ServCloud_Idle_Min	機台閒置下限	机台闲置下限	Idel Min
+i18n_ServCloud_Idle_Max	機台閒置上限	机台闲置上限	Idel Max
+i18n_ServCloud_Utilization_Rate_Min	機台稼動率下限	机台稼动率下限	Utilization Rate Min
+i18n_ServCloud_Utilization_Rate_Max	機台稼動率上限	机台稼动率上限	Utilization Rate Max
+i18n_ServCloud_Query_Reault	查詢結果	查询结果	Query Reault
+i18n_ServCloud_Machine_ID	機台編號	机台编号	Machine ID
+i18n_ServCloud_Work_Shift	班別	班别	Work Shift
+i18n_ServCloud_op	製程	制程	OP
+i18n_ServCloud_Product_ID	產品編號	产品编号	Product ID
+i18n_ServCloud_Machine_Time	機時	机时	Machine Time
+i18n_ServCloud_Person_Time	人時	人时	Person Time
+i18n_ServCloud_Output_Target	生產目標	生产目标	Output Target
+i18n_ServCloud_Reault_Output	實際產出	实际产出	Reault Output
+i18n_ServCloud_Machine_Idle	機台閒置	机台闲置	Idle
+i18n_ServCloud_Machine_Utilization_Rate	機台稼動率	机台稼动率	Utilization Rate
+i18n_ServCloud_minute	(分)	(分)	(minute)
+i18n_ServCloud_detail	詳細信息	详细信息	Detail
+i18n_ServCloud_Start_On_Full_Time	開始加工	开始加工	Start On Time
+i18n_ServCloud_End_On_Full_Time	結束加工	结束加工	End On Time
+i18n_ServCloud_Reault_Machine_Time	實際機時	实际机时	Reault Machine Time
+i18n_ServCloud_Idle_Processing	加工閒置	加工闲置	Idle Processing
+i18n_ServCloud_Idle_Material	上下料閒置	上下料闲置	Idle Material
+i18n_ServCloud_Machine_Time_Diff	機時差異	机时差异	Machine Time Diff
+i18n_ServCloud_Person_Time_Diff	人時差異	人时差异	Person Time Diff
+i18n_ServCloud_Employee_Name	姓名	姓名	Employee Name
+i18n_ServCloud_Material_Std_Count	應上下料次數	应上下料次数	Material Std Count
+i18n_ServCloud_Reault_Count	實際上下料次數	实际上下料次数	Reault_Count
+i18n_ServCloud_up	上	上	Up
+i18n_ServCloud_down	下	下	Down
+i18n_ServCloud_Machine_Time_Std	標準機時	标准机时	Machine Time Std
+i18n_ServCloud_Person_Time_Std	標準人時	标准人时	Person Time Std
+i18n_ServCloud_Std_Minute	標準工時	标准工时	Standard Work Time
+i18n_ServCloud_Accum_Part_Count	累積顆數	累积颗数	Part Count
+i18n_ServCloud_First_Timestamp	單顆開始時間	单颗开始时间	Part Count Start Timestamp
+i18n_ServCloud_Last_Timestamp	單顆結束時間	单颗结束时间	Part Count End Timestamp
+i18n_ServCloud_First_On_Timestamp	單顆加工開始時間	单颗加工开始时间	Part Count Process Start Timestamp
+i18n_ServCloud_Last_On_Timestamp	單顆加工結束時間	单颗加工结束时间	Part Count Process End Timestamp
+i18n_ServCloud_Operate_Millisecond	加工持續時間	加工持续时间	Part Count Process Duration
+i18n_ServCloud_Part_Count_Merged	加工顆數查詢	加工颗数查询	Part Count Query
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Shift	班次	班次	Shift
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Condition
+i18n_ServCloud_Show_Demo_Data	顯示Demo資料	显示Demo资料	Show Demo Data
+i18n_ServCloud_Query_Result	搜尋結果	搜寻结果	Query Results
+i18n_ServCloud_Ip_Cam_Grid	Ip Camera 監控站	Ip Camera 监控站	Ip Camera Monitoring Station
+i18n_ServCloud_Ip_Cam_Grid_Demo	Ip Camera 監控站備援	Ip Camera 监控站备援	Ip Camera Monitoring Station Demo
+i18n_ServCloud_Monitoring_Machine_Information	機器資訊	机器资讯	Information
+i18n_ServCloud_Monitoring_Type	型號	机器资讯	Type
+i18n_ServCloud_Monitoring_Controller	控制器	控制器	Controller
+i18n_ServCloud_Monitoring_Zone	廠區	厂区	Zone
+i18n_ServCloud_Monitoring_Other_Code	Other Code	Other Code	Other Code
+i18n_ServCloud_Monitoring_Parts	加工元件	加工元件	Parts
+i18n_ServCloud_Monitoring_Parts_Required	請求	请求	Required
+i18n_ServCloud_Monitoring_Parts_Count	數量	数量	Count
+i18n_ServCloud_Monitoring_Parts_Total	總數	总数	Total
+i18n_ServCloud_Monitoring_Times	加工時間	加工时间	Time
+i18n_ServCloud_Monitoring_Times_Power	通電	通电	Power time
+i18n_ServCloud_Monitoring_Times_Run	運轉	运转	Run time
+i18n_ServCloud_Monitoring_Times_Cutting	切削	切削	Cutting time
+i18n_ServCloud_Monitoring_Servo_Actual_Feedrate	伺服軸實際進給率	伺服轴实际进给率	Servo actual feedrate
+i18n_ServCloud_Monitoring_Servo_Feedrate_Override	伺服軸進給率百分比	伺服轴进给率百分比	Servo feedrate override
+i18n_ServCloud_Monitoring_Spindle_Speed	主軸轉速	主轴转速	Spindle speed
+i18n_ServCloud_Monitoring_Spindle_Speed_Override	主軸轉速百分比	主轴转速百分比	Spindle speed override
+i18n_ServCloud_Monitoring_Program_Program	程式	程式	Program
+i18n_ServCloud_Monitoring_Program_Line_Number	行號	行号	Line number
+i18n_ServCloud_Monitoring_Program_Cycle_Time	循環時間	循环时间	Cycle time
+i18n_ServCloud_Monitoring_Program_Line_Execution_Block	執行單節	执行单节	Execution block
+i18n_ServCloud_Monitoring_Position	座標	座标	Position
+i18n_ServCloud_Monitoring_Absolute_Position	絕對	绝对	Absolute
+i18n_ServCloud_Monitoring_Machine_Position	機械	机械	Machine
+i18n_ServCloud_Monitoring_Relative_Position	相對	相对	Relative
+i18n_ServCloud_Monitoring_Distance_To_Go	距離	距离	Distance
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Condition
+i18n_ServCloud_Query_Result	搜尋結果	搜寻结果	Query Result
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start Date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_Device_Status_Stack_Chart	機台狀態歷史堆疊圖	机台状态历史堆叠图	Machine Status History Stack Chart
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_Alarm_Code	警報代碼	警报代码	Alarm Code
+i18n_ServCloud_Alarm_Code_Definition	警報代碼說明	警报代码说明	Alarm Code Definition
+i18n_ServCloud_Duration	持續時間	持续时间	Duration
+i18n_ServCloud_Cnc_Brand	控制器廠牌	控制器厂牌	Cnc Brand
+i18n_ServCloud_Start_Time	開始時間	开始时间	Start Time
+i18n_ServCloud_End_Time	結束時間	结束时间	End Time

@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "BackupQuery",
+    "name": "Backup Query",
+    "type": 1,
+    "description": "Backup Query",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_backup_query",
+      "name": "i18n_ServCloud_10_BackupQuery"
+    }
+  ],
+  "tags": ["20140918000001"]
+}

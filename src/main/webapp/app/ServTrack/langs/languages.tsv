@@ -1,0 +1,189 @@
+	zh_tw	zh	en
+i18n_ServCloud_ServTrack_000001	顯示Demo資料	显示Demo资料	Display demo data
+i18n_ServCloud_ServTrack_000002	進站時間	进站时间	Move in time
+i18n_ServCloud_ServTrack_000003	製程	制程	Production process
+i18n_ServCloud_ServTrack_000004	行動報工站	行动报工站	ServTrack
+i18n_ServCloud_ServTrack_000005	良品數 - (總生產時間 / 單件標工)	良品数 - (总生产时间 / 单件标工)	Good product quantity - (Total production time / Product cycle time per unit)
+i18n_ServCloud_ServTrack_000006	績效時間(分)	绩效时间(分)	Performance Time (min)
+i18n_ServCloud_ServTrack_000007	績效數量(件)	绩效数量(件)	Performance quantity (pieces)
+i18n_ServCloud_ServTrack_000008	(良品數 × 單件標工) - 總生產時間	(良品数 × 单件标工) - 总生产时间	(Good product quantity x Product cycle time per unit) - Total production time
+i18n_ServCloud_ServTrack_000009	線別名稱	线别名称	Production line name
+i18n_ServCloud_ServTrack_000010	線別	线别	Production line
+i18n_ServCloud_ServTrack_000011	產量	产量	Produciton quantity
+i18n_ServCloud_ServTrack_000012	產品	产品	Product
+i18n_ServCloud_ServTrack_000013	班次起始日期	班次起始日期	Shift start date
+i18n_ServCloud_ServTrack_000014	班次結束日期	班次结束日期	Shift end date
+i18n_ServCloud_ServTrack_000015	班次日期	班次日期	Shift date
+i18n_ServCloud_ServTrack_000016	清除	清除	Clear
+i18n_ServCloud_ServTrack_000017	派工單號	派工单号	Work order number
+i18n_ServCloud_ServTrack_000018	查詢結果	查询结果	Query result
+i18n_ServCloud_ServTrack_000019	查詢時間	查询时间	Query time
+i18n_ServCloud_ServTrack_000020	查詢	查询	Query
+i18n_ServCloud_ServTrack_000021	工序	工序	Production process sequence
+i18n_ServCloud_ServTrack_000022	單件標工(分)	单件标工(分)	Product cycle time per unit (minute)
+i18n_ServCloud_ServTrack_000023	出站時間	出站时间	Move out time
+i18n_ServCloud_ServTrack_000024	不良品數	不良品数	Defective product quantity
+i18n_ServCloud_ServTrack_000025	60_作業績效	60_作业绩效	60_Working performance 
+i18n_ServCloud_ServTrack_000026	開始	开始	Start
+i18n_ServCloud_ServTrack_000027	起始日期	起始日期	Start date
+i18n_ServCloud_ServTrack_000028	詳細資料	详细资料	Detail information
+i18n_ServCloud_ServTrack_000029	良率目標值(%)	良率目标值(%)	Target yield rate (%)
+i18n_ServCloud_ServTrack_000030	良率(%)	良率(%)	Yield rate (%)
+i18n_ServCloud_ServTrack_000031	良品數 / 初始投入量 x 100	良品数 / 初始投入量 x 100	Good product quantity / First input amount x 100
+i18n_ServCloud_ServTrack_000032	良品	良品	Good product
+i18n_ServCloud_ServTrack_000033	總體稼動率(%)	总体稼动率(%)	Overall equipment effectiveness (OEE) (%)
+i18n_ServCloud_ServTrack_000034	總體稼動率	总体稼动率	Overall equipment effectiveness (OEE)
+i18n_ServCloud_ServTrack_000035	總生產時間 / 單件標工	总生产时间 / 单件标工	Total production time / Product cycle time per unit
+i18n_ServCloud_ServTrack_000036	結束日期	结束日期	End date
+i18n_ServCloud_ServTrack_000037	結束	结束	End
+i18n_ServCloud_ServTrack_000038	紅色表示該次產能或良率過低	红色表示该次产能或良率过低	Red indicates that the production capacity or yield rate is lower than standard
+i18n_ServCloud_ServTrack_000039	管理者	管理者	Supervisor
+i18n_ServCloud_ServTrack_000040	產能效率目標值(%)	产能效率目标值(%)	Production capacity efficiency target rate (%)
+i18n_ServCloud_ServTrack_000041	產能效率(%)	产能效率(%)	Production capacity efficiency rate (%)
+i18n_ServCloud_ServTrack_000042	生產時間(分)	生产时间(分)	Production time (minute)
+i18n_ServCloud_ServTrack_000043	應有產量	应有产量	Required production quantity
+i18n_ServCloud_ServTrack_000044	實際產量	实际产量	Actual production quantity
+i18n_ServCloud_ServTrack_000045	在製過程	在制过程	In-production process
+i18n_ServCloud_ServTrack_000046	各線計畫達成率	各线计画达成率	Production line plan hit rate
+i18n_ServCloud_ServTrack_000047	利用率×良率×產能效率	利用率×良率×产能效率	Utilization rate x Yield rate x Production capacity efficiency
+i18n_ServCloud_ServTrack_000048	利用率(%)	利用率(%)	Unitlizaiotn rate (%)
+i18n_ServCloud_ServTrack_000049	(實際產量 × 單件標工) / 總生產時間 × 100	(实际产量 × 单件标工) / 总生产时间 × 100	(Actual production quantity x Product cycle time per unit) / Total produciton time x 100
+i18n_ServCloud_ServTrack_000050	總生產時間 / 各線各班次天應生產時間 × 100	总生产时间 / 各线各班次天应生产时间 × 100	Total production time / production line single day shift required produciton time x 100
+i18n_ServCloud_ServTrack_000051	過濾良品數	过滤良品数	Filter Good product quantity
+i18n_ServCloud_ServTrack_000052	過濾總體稼動率目標值(%)	过滤总体稼动率目标值(%)	Filter Overall equipment effectiveness (OEE) target rate(%)
+i18n_ServCloud_ServTrack_000053	過濾總體稼動率	过滤总体稼动率	Filter Overall equipment effectiveness (OEE) rate
+i18n_ServCloud_ServTrack_000054	過濾總生產時間	过滤总生产时间	Filter Total production time
+i18n_ServCloud_ServTrack_000055	過濾線別良率目標值(%)	过滤线别良率目标值(%)	Filter Production line target yield rate(%)
+i18n_ServCloud_ServTrack_000056	過濾線別良率(%)	过滤线别良率(%)	Filter Production line yield rate(%)
+i18n_ServCloud_ServTrack_000057	過濾目標值	过滤目标值	Filter Target rate
+i18n_ServCloud_ServTrack_000058	過濾應有產量	过滤应有产量	Filter Required production quantity
+i18n_ServCloud_ServTrack_000059	過濾實際產量	过滤实际产量	Filter Actual production quantity
+i18n_ServCloud_ServTrack_000060	過濾利用率	过滤利用率	Filter Utilization rate
+i18n_ServCloud_ServTrack_000061	良品數	良品数	Good product quantity
+i18n_ServCloud_ServTrack_000062	總體稼動率目標值(%)	总体稼动率目标值(%)	Overall equipment effectiveness (OEE) target rate(%)
+i18n_ServCloud_ServTrack_000063	總生產時間 / 單件標工	总生产时间 / 单件标工	Total production time / Product cycle time per unit
+i18n_ServCloud_ServTrack_000064	總生產時間 / 各線各班次天應生產時間 x 100	总生产时间 / 各线各班次天应生产时间 x 100	Total production time / Production line single day shift required production time x 100
+i18n_ServCloud_ServTrack_000065	總生產時間(小時)	总生产时间(小时)	Total production time (hour)
+i18n_ServCloud_ServTrack_000066	線別良率目標值(%)	线别良率目标值(%)	Production line target yield rate(%)
+i18n_ServCloud_ServTrack_000067	線別良率(%)	线别良率(%)	Production line yield rate(%)
+i18n_ServCloud_ServTrack_000068	目標值	目标值	Target rate
+i18n_ServCloud_ServTrack_000069	當日所有總體稼動率總和	当日所有总体稼动率总和	Sum of all overall equipment effectiveness (OEE) of the day
+i18n_ServCloud_ServTrack_000070	每日明細	每日明细	Daily details
+i18n_ServCloud_ServTrack_000071	未設定各線每日應生產工時	未设定各线每日应生产工时	Not yet setup production line daily required working hours
+i18n_ServCloud_ServTrack_000072	平均值	平均值	Average value
+i18n_ServCloud_ServTrack_000073	平均	平均	Average
+i18n_ServCloud_ServTrack_000074	各線稼動率 - 長條圖	各线稼动率 - 长条图	Production line utilization rate - bar chart
+i18n_ServCloud_ServTrack_000075	各日總體稼動率總和 / 天數 x 100	各日总体稼动率总和 / 天数 x 100	Sum of the daily overall equipment effectiveness (OEE) / Number of days x 100
+i18n_ServCloud_ServTrack_000076	40_各線總體稼動率(OEE)	40_各线总体稼动率(OEE)	40_Production line overall equipment effectiveness (OEE)
+i18n_ServCloud_ServTrack_000077	--表示此筆資料當日無進出站記錄	--表示此笔资料当日无进出站记录	--Indicate that there is no move in or move out records for this data
+i18n_ServCloud_ServTrack_000078	進出站明細	进出站明细	Move in and move out details
+i18n_ServCloud_ServTrack_000079	總體稼動率目標值(%)	总体稼动率目标值(%)	Overall equipment effectiveness (OEE) target rate(%)
+i18n_ServCloud_ServTrack_000080	當日無進出站記錄	当日无进出站记录	No move in or move out record of the day
+i18n_ServCloud_ServTrack_000081	當日利用度	当日利用度	Utilization rate of the day
+i18n_ServCloud_ServTrack_000082	未設定各線每日應生產工時	未设定各线每日应生产工时	Not yet setup production line daily required working hours
+i18n_ServCloud_ServTrack_000083	各線當日利用度	各线当日利用度	Production line utilization rate of the day
+i18n_ServCloud_ServTrack_000084	利用率 x 良率 x 產能效率	利用率 x 良率 x 产能效率	Utilization rate x Yield rate x Production capacity efficiency
+i18n_ServCloud_ServTrack_000085	且當日無進出站記錄	且当日无进出站记录	and no move in or move out records of the day
+i18n_ServCloud_ServTrack_000086	50_各線當日計畫達成率	50_各线当日计画达成率	50_Production line plan of the day hit rate
+i18n_ServCloud_ServTrack_000087	--表示該筆資料當日無進出站記錄	--表示该笔资料当日无进出站记录	--Indicate that there is no move in or move out records for this data
+i18n_ServCloud_ServTrack_000088	##表示該筆資料未設定各線每日應生產工時	##表示该笔资料未设定各线每日应生产工时	##Indicate that the data is not yet setup production line daily required working hours
+i18n_ServCloud_ServTrack_000089	預估產量	预估产量	Estimated production quantity
+i18n_ServCloud_ServTrack_000090	開工時間	开工时间	Production start time
+i18n_ServCloud_ServTrack_000091	總時間	总时间	Total time
+i18n_ServCloud_ServTrack_000092	綜合查詢	综合查询	Integrated query
+i18n_ServCloud_ServTrack_000093	結案	结案	Closed
+i18n_ServCloud_ServTrack_000094	產品名稱	产品名称	Product name
+i18n_ServCloud_ServTrack_000095	派工單狀態	派工单状态	Work order status
+i18n_ServCloud_ServTrack_000096	未開工	未开工	Not yet started
+i18n_ServCloud_ServTrack_000097	未結案	未结案	Not yet closed
+i18n_ServCloud_ServTrack_000098	最新進站	最新进站	Latest move in
+i18n_ServCloud_ServTrack_000099	是	是	Yes
+i18n_ServCloud_ServTrack_000100	工單結案	工单结案	Work order closed
+i18n_ServCloud_ServTrack_000101	工單狀態	工单状态	Work order status
+i18n_ServCloud_ServTrack_000102	填寫時間	填写时间	Created time
+i18n_ServCloud_ServTrack_000103	填寫人	填写人	Editor
+i18n_ServCloud_ServTrack_000104	否	否	No
+i18n_ServCloud_ServTrack_000105	初始投入量	初始投入量	First input amount
+i18n_ServCloud_ServTrack_000106	30_派工單在製過程	30_派工单在制过程	30_Work order in-production process
+i18n_ServCloud_ServTrack_000107	詳細記錄	详细记录	Details
+i18n_ServCloud_ServTrack_000108	良率	良率	Yield rate
+i18n_ServCloud_ServTrack_000109	總生產時間	总生产时间	Total production time
+i18n_ServCloud_ServTrack_000110	目標差值	目标差值	Target difference
+i18n_ServCloud_ServTrack_000111	目標值(%)	目标值(%)	Target value (%)
+i18n_ServCloud_ServTrack_000112	產品良率目標值(%)	产品良率目标值(%)	Product target yield rate (%)
+i18n_ServCloud_ServTrack_000113	派工單良率統計-長條圖	派工单良率统计-长条图	Work order yield rate - bar chart
+i18n_ServCloud_ServTrack_000114	派工單良率(%)	派工单良率(%)	Work order yield rate (%)
+i18n_ServCloud_ServTrack_000115	派工單良率%	派工单良率%	Work order yield rate (%)
+i18n_ServCloud_ServTrack_000116	派工單良率	派工单良率	Work order yield rate
+i18n_ServCloud_ServTrack_000117	未完工	未完工	Unfinished
+i18n_ServCloud_ServTrack_000118	最後工序產量	最后工序产量	Production quantity of the last producion process sequence
+i18n_ServCloud_ServTrack_000119	出站時間 - 進站時間	出站时间 - 进站时间	Move out time - move in time
+i18n_ServCloud_ServTrack_000120	不良數	不良数	Defevtive product quantity
+i18n_ServCloud_ServTrack_000121	20_派工單良率統計	20_派工单良率统计	20_Work order yield rate
+i18n_ServCloud_ServTrack_000122	顯示 Demo 資料	显示 Demo 资料	Display demo data
+i18n_ServCloud_ServTrack_000123	過濾進站時間	过滤进站时间	Filter Move in time
+i18n_ServCloud_ServTrack_000124	過濾製程良率	过滤制程良率	Filter Production process yield rate
+i18n_ServCloud_ServTrack_000125	過濾良率	过滤良率	Filter Yield rate
+i18n_ServCloud_ServTrack_000126	過濾總產量	过滤总产量	Filter Total production quantity
+i18n_ServCloud_ServTrack_000127	過濾產量	过滤产量	Filter Production quantity
+i18n_ServCloud_ServTrack_000128	過濾班次時間	过滤班次时间	Filter Shift time
+i18n_ServCloud_ServTrack_000129	過濾出站時間	过滤出站时间	Filter Move out time
+i18n_ServCloud_ServTrack_000130	過濾不良數	过滤不良数	Filter Defective product quantity
+i18n_ServCloud_ServTrack_000131	製程良率(%)	制程良率(%)	Production process yield rate (%)
+i18n_ServCloud_ServTrack_000132	製程良率	制程良率	Production process yield rate
+i18n_ServCloud_ServTrack_000133	良品數 / 實際產量 x 100	良品数 / 实际产量 x 100	Good product quantity / Actual production quantity x 100
+i18n_ServCloud_ServTrack_000134	總產量	总产量	Total production quantity
+i18n_ServCloud_ServTrack_000135	當月總良率	当月总良率	Total yield rate of the month
+i18n_ServCloud_ServTrack_000136	產品製程良率統計 - 長條圖	产品制程良率统计 - 长条图	Yield rate for the production process of the product - bar chart
+i18n_ServCloud_ServTrack_000137	實際產量 - 不良數	实际产量 - 不良数	Actual production quantity - defective product quantity
+i18n_ServCloud_ServTrack_000138	實際產量 - 不良數	实际产量 - 不良数	Actual production quantity - defective product quantity
+i18n_ServCloud_ServTrack_000139	不良累計圖	不良累计图	Defect accumulation chart
+i18n_ServCloud_ServTrack_000140	10_產品製程良率統計	10_产品制程良率统计	10_Product production process yield rate
+i18n_ServCloud_ServTrack_000141	最後工序良品數	最后工序良品数	Good product quantity of the last producion process sequence
+i18n_ServCloud_ServTrack_000142	派工單達成率(%)	派工单达成率(%)	Work order hit rate (%)
+i18n_ServCloud_ServTrack_000143	製程與線別請擇一選取	制程与线别请择一选取	Production process and production line can not both be selected
+i18n_ServCloud_ServTrack_000144	稼動率目標值	稼动率目标值	Target utilization rate
+i18n_ServCloud_ServTrack_000145	稼動率目標值(%)	稼动率目标值(%)	Target utilization rate(%)
+i18n_ServCloud_ServTrack_000146	良率目標值	良率目标值	Target yield rate
+i18n_ServCloud_ServTrack_000147	良率目標值(%)	良率目标值(%)	Target yield rate(%)
+i18n_ServCloud_ServTrack_Jumpway	行动报工站模拟器	ServTrack Simulator
+i18n_ServCloud_ServTrack_000148	已完成量	已完成量	Finish QT'Y
+i18n_ServCloud_ServTrack_000149	責任量	责任量	Current QT'Y
+i18n_ServCloud_ServTrack_000150	責任未完成量	责任未完成量	Current Balance
+i18n_ServCloud_ServTrack_000151	工單未完成量	工单未完成量	MO Balance
+i18n_ServCloud_ServTrack_000152	明細	明细	Details
+i18n_ServCloud_ServTrack_000153	製程順序	制程顺序	Process Flow
+i18n_ServCloud_ServTrack_000154	當前狀態	当前状态	Station
+i18n_ServCloud_ServTrack_000155	工單總數	工单总数	MO QT'Y
+i18n_ServCloud_ServTrack_000156	匯出明細	汇出明细	Export Details
+i18n_ServCloud_ServTrack_000157	可維修不良品數	可维修不良品数	Defective quantity (Can be fixed)
+i18n_ServCloud_ServTrack_000158	報廢不良品數	报废不良品数	Defective quantity (Obsolete)
+i18n_ServCloud_ServTrack_All_Pending_Unfinished_Records	所有暫停未結束紀錄	所有暂停未结束纪录	Currently paused
+i18n_ServCloud_ServTrack_Date_Query	日期查詢	日期查询	Query by date
+i18n_ServCloud_ServTrack_Invalid_Class	無效類別	无效类别	Inefficiency type
+i18n_ServCloud_ServTrack_Invalid_Reason	無效原因	无效原因	Inefficiency reason
+i18n_ServCloud_ServTrack_Tablet_Name	平板名稱	平板名称	Tablet name
+i18n_ServCloud_ServTrack_Start_Time	開始時間	开始时间	Start time
+i18n_ServCloud_ServTrack_End_Time	結束時間	结束时间	End time
+i18n_ServCloud_ServTrack_Cumulative_Time	累計時間(分)	累计时间(分)	Cumulative time (min)
+i18n_ServCloud_ServTrack_Shared_Category	共用類別	共用类别	Common type
+i18n_ServCloud_ServTrack_Process_Specific	製程專用	制程专用	Process type
+i18n_ServCloud_ServTrack_number_of_people	人數	人数	Worker count
+i18n_ServCloud_ServTrack_Date	日期	日期	Date
+i18n_ServCloud_ServTrack_Completion_ratio	完成比率	完成比率	Completion ratio
+i18n_ServCloud_ServTrack_Whether_To_Transfer	是否轉移	是否转移	Whether to transfer
+i18n_ServCloud_ServTrack_Transfer_time	轉移時間	转移时间	Transfer time
+i18n_ServCloud_ServTrack_Transfer	轉移	转移	Transfer
+i18n_ServCloud_ServTrack_Transfer_Statistics	轉移統計	转移统计	Transfer statistics
+i18n_ServCloud_Cancel	取消	取消	Cancel
+i18n_ServCloud_Confirm	確認	确认	Confirm
+i18n_ServCloud_Cumulative_Time	累計報工時間	累计报工时间	Cumulative time
+i18n_ServCloud_Accumulated_Workers	累計報工人時	累计报工人时	Accumulated workers
+i18n_ServCloud_Hour	小時	小时	Hour
+i18n_ServCloud_Human_Time	人時	人时	Human time
+i18n_ServCloud_Work_Quantity	工單數	工单数	Number of work orders
+i18n_ServCloud_Piece	件	件	Piece
+i18n_ServCloud_Cumulative_Output	累計產量	累计产量	Cumulative output
+i18n_ServCloud_Cumulative_Good	累計良品數	累计良品数	Cumulative number of good products
+i18n_ServCloud_Transfer_Quantity	共X筆報工記錄移	共X笔报工记录移	Total X pen report shift
+i18n_ServCloud_Purpose_Of_Splitting_Bill	拆單目的	拆单目的	purpose of splitting bill

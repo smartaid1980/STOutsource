@@ -1,0 +1,229 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="search-query-conditions-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Model_Selection}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate" id="main-form1">
+              <fieldset style="padding: 14px 14px 5px;">
+                <div class="row">
+                  <div class="col col-10">
+                    <div class="row">
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-6 col-lg-4"
+                      >
+                        <div
+                          class="col col-xs-6 col-sm-6 col-md-12 col-lg-12"
+                          style="margin-bottom: 17px;"
+                        >
+                          <label class="label"
+                            >{i18n_ServCloud_Lighting_Series}</label
+                          >
+                          <label class="select">
+                            <select id="series-select"> </select>
+                            <i></i>
+                          </label>
+                        </div>
+                      </section>
+                      <section
+                        id="status"
+                        class="col col-xs-12 col-sm-12 col-md-6 col-lg-4"
+                      >
+                        <div
+                          class="col col-xs-6 col-sm-6 col-md-12 col-lg-12"
+                          style="margin-bottom: 15px;"
+                        >
+                          <label class="label"
+                            >{i18n_ServCloud_Lighting_Model}</label
+                          >
+                          <label class="select">
+                            <select id="model-select"> </select>
+                            <i></i>
+                          </label>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Query}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        id="detail-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Field_Content}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="query-result"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <!-- <th></th> -->
+                  <th class="hasinput" style="width: 30%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 62%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th style="width: 4%;"></th>
+                </tr>
+                <tr>
+                  <!-- <th>{欄位}</th> -->
+                  <th>{i18n_ServCloud_Field_Name}</th>
+                  <th>{i18n_ServCloud_Mandatory}</th>
+                  <th>{i18n_ServCloud_Options}</th>
+                  <th>{i18n_ServCloud_Edit}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+
+    <!-- MODAL START -->
+    <div
+      class="modal fade"
+      id="edit-column-modal-widget"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" style="display: inline-block;">
+              {i18n_ServCloud_Edit_Field}
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <div class="widget-body no-padding">
+              <form class="" id="edit-column-form" novalidate="novalidate">
+                <div class="row" style="">
+                  <div class="col col-lg-9 col-md-12">
+                    <label>{i18n_ServCloud_Field_Name}</label>
+                    <input type="text" name="name" class="form-control" />
+                  </div>
+                  <div class="col col-lg-3 col-md-12 checkbox">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="required"
+                        class="checkbox style-0"
+                      />
+                      <span>{i18n_ServCloud_Mandatory}</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col col-lg-12">
+                    <label>{i18n_ServCloud_Field_Option}</label>
+                    <input type="text" name="options" data-role="tagsinput" />
+                    <p class="note">
+                      <strong>{i18n_ServCloud_Prompt}:</strong>
+                      {i18n_ServCloud_After_Entering_The_Press}
+                      <span class="label label-default">Enter</span>
+                      {i18n_ServCloud_New}，<span class="label label-default"
+                        >←</span
+                      >
+                      <span class="label label-default">→</span>
+                      {i18n_ServCloud_Cursor_Control}，<span
+                        class="label label-default"
+                        >Backspace</span
+                      >
+                      {i18n_ServCloud_With}
+                      <span class="label label-default">Delete</span>
+                      {i18n_ServCloud_Delete_Or_Click_Skewer}
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="modal-footer"
+            style="margin-top: 0.5vw; text-align: right;"
+          >
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="confirm-column-btn"
+            >
+              {i18n_ServCloud_Send_Out}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL END-->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #edit-column-form .row {
+    padding: 10px 20px;
+  }
+
+  #query-result a {
+    text-decoration: underline;
+  }
+  #query-result .label {
+    margin: 5px;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

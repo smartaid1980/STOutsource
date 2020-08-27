@@ -1,0 +1,52 @@
+{
+  "app": {
+    "id": "UtilizationStd",
+    "name": "i18n_ServCloud_UtilizationStd",
+    "type": 1,
+    "description": "Provide usage statistics, daily reports, schedule adjustment, chart display, product names, working program reaction management and custom reaction management for each devices in the factory.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_daily",
+      "name": "i18n_ServCloud_10_DailUtilization"
+    },
+    {
+      "id": "10_daily_enzoy",
+      "name": "i18n_ServCloud_10_DailUtilization_Enzoy"
+    },
+    {
+      "id": "10_daily_cosmos",
+      "name": "i18n_ServCloud_10_DailUtilization_Cosmos"
+    },
+    {
+      "id": "20_monthly",
+      "name": "i18n_ServCloud_20_Monthly_Utilization"
+    },
+    {
+      "id": "20_monthly_enzoy",
+      "name": "i18n_ServCloud_20_Monthly_Utilization_Enzoy"
+    },
+    {
+      "id": "25_yearly",
+      "name": "i18n_ServCloud_25_Yearly_Utilization"
+    },
+    {
+      "id": "30_product_information",
+      "name": "i18n_ServCloud_30_Product_Information"
+    },
+    {
+      "id": "40_customer_manage",
+      "name": "i18n_ServCloud_40_Customer_Management"
+    },
+    {
+      "id": "50_product_manage",
+      "name": "i18n_ServCloud_50_Product_Management"
+    },
+    {
+      "id": "70_device_status_statistic",
+      "name": "i18n_ServCloud_70_Machine_Status_History"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

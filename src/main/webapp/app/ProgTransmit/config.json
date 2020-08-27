@@ -1,0 +1,24 @@
+{
+  "app": {
+    "id": "ProgTransmit",
+    "name": "Prog Transmit",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_machines",
+      "name": "i18n_ServCloud_Machines"
+    },
+    {
+      "id": "02_cnc_download",
+      "name": "i18n_ServCloud_Cnc_Download"
+    },
+    {
+      "id": "03_cnc_upload",
+      "name": "i18n_ServCloud_Cnc_Upload"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

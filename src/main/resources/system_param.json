@@ -1,0 +1,5 @@
+{
+  "DB_JNDI_NAME": "java:comp/env/jdbc/servcloud",
+  "DATA_PATH": "C:/Servtech/Servolution/Platform/rawdata",
+  "CUST_PARAM_PATH": "C:/Servtech/Servolution/Platform/cust_param"
+}

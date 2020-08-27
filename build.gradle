@@ -1,0 +1,586 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter() // js-plugin
+    }
+    //for build war
+    dependencies {
+        // activejdbc Model instrumentation
+        classpath group: 'org.javalite', name: 'activejdbc', version: '1.4.13'
+        classpath group: 'org.javalite', name: 'activejdbc-instrumentation', version: '1.4.13'
+
+        // css combine
+        // classpath 'com.eriwen:gradle-css-plugin:1.11.1'
+
+        // js combine
+        // classpath 'com.eriwen:gradle-js-plugin:1.12.1'
+
+        // protobuf
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.0'
+    }
+}
+
+plugins {
+    id "com.eriwen.gradle.js" version "2.14.1"
+    id "com.eriwen.gradle.css" version "2.14.0"
+}
+apply plugin: 'war'
+apply plugin: 'css'
+apply plugin: 'com.eriwen.gradle.js'
+
+import org.javalite.instrumentation.Instrumentation
+
+sourceCompatibility = 1.8
+
+// def tomcatRootPath = 'C:/Servtech/Servolution/Platform/tomcat-6.0.37'
+def tomcatRootPath = 'C:/Servtech/Servolution/Platform/tomcat-8.0.50'
+def appName = 'ServCloud'
+
+// release will compress js file
+def release = false
+
+// will append to all-min.js file name such as all-min-20150101000000.js
+def buildTimestamp = new Date().format('yyyyMMddHHmmss')
+
+def versionDate = new Date().format('yyMMdd')
+
+def grpcVersion = '1.0.0' // CURRENT_GRPC_VERSION
+
+archivesBaseName = "$appName-" + (release ? 'RELEASE' : 'DEBUG')
+webAppDirName = 'build/tmp/webapp'
+version "3.0.${versionDate}." + (release ? getAndIncrementReleaseSequence(versionDate) : '0')
+
+System.properties['file.encoding'] = "UTF-8"
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+compileJava.options.fork = true
+//compileJava.options.forkOptions.executable = 'C:/platform_server/jdk1.6.0_30/bin/javac.exe'
+//compileJava.options.forkOptions.executable = 'C:/Program Files/Java/jdk1.8.0_40/bin/javac.exe'
+// buildscript {
+//     repositories {
+//         mavenCentral()
+//         jcenter() // js-plugin
+//     }
+//     dependencies {
+//         // activejdbc Model instrumentation
+//         classpath group: 'org.javalite', name: 'activejdbc', version: '1.4.13'
+//         classpath group: 'org.javalite', name: 'activejdbc-instrumentation', version: '1.4.13'
+
+//         // css combine
+//         classpath 'com.eriwen:gradle-css-plugin:1.11.1'
+
+//         // js combine
+//         classpath 'com.eriwen:gradle-js-plugin:1.12.1'
+
+//         // protobuf
+//         classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.0'
+//     }
+// }
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    // 架在我們家哦
+    maven {
+        url "http://192.168.130.115:8081/artifactory/servtechCentral"
+    }
+}
+//for coding
+dependencies {
+
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    // https://mvnrepository.com/artifact/org.openoffice/ridl
+    compile group: 'org.openoffice', name: 'ridl', version: '4.1.2'
+
+    compile group: 'com.github.livesense', name: 'jodconverter-core', version: '1.0.5'
+
+    // springframework
+    compile 'org.springframework:spring-core:4.1.4.RELEASE'
+    compile 'org.springframework:spring-webmvc:4.1.4.RELEASE'
+//    compile 'org.springframework:spring-tx:4.1.4.RELEASE'
+
+    // db
+    compile 'mysql:mysql-connector-java:5.1.35'
+    compile 'org.javalite:activejdbc:1.4.11'
+    compile 'org.javalite:activejdbc-instrumentation:1.4.11'
+
+    // https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc
+    compile group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '7.0.0.jre8'
+
+    // log
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'org.slf4j:slf4j-log4j12:1.7.12'
+    compile 'log4j:log4j:1.2.17'
+
+    // json & request/response body inject
+    compile 'com.google.code.gson:gson:2.3.1'
+
+    // guava(convenient util)
+    compile 'com.google.guava:guava:18.0'
+
+    // poi for excel
+    compile 'org.apache.poi:poi:3.13'
+    compile 'org.apache.poi:poi-ooxml:3.13'
+
+    // mqtt
+    compile 'org.fusesource.mqtt-client:mqtt-client:1.10'
+
+    //dom4j (xml parser)
+    compile 'dom4j:dom4j:1.6.1'
+    //jaxen (xml XPath)
+    compile 'jaxen:jaxen:1.1.6'
+
+
+    // bean validation
+//    compile 'org.hibernate:hibernate-validator:5.1.3.Final'
+//    compile 'org.apache.tomcat.embed:tomcat-embed-el:8.0.17' // tomcat version with 6.0.XX need this to validate...
+
+    // file upload
+    compile 'commons-fileupload:commons-fileupload:1.2.2'
+    compile 'commons-io:commons-io:2.4'
+    compile 'commons-net:commons-net:3.6'
+
+    // http client
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+
+    // protocol buffer
+    compile 'com.google.protobuf:protobuf-java:2.6.1'
+    compile 'com.googlecode.protobuf-java-format:protobuf-java-format:1.2'
+
+    // barcode
+    compile 'net.sf.barcode4j:barcode4j:2.1'
+
+    // Zxing (QRCode)
+//    compile 'com.google.zxing:core:3.2.1'
+    compile 'com.solvoj.zxing-java6:core-java6:3.2.0'
+
+    // servkit from http://192.168.130.115:8081/artifactory/servtechCentral
+    compile 'com.servtech:servkit:2.0.14'
+
+    // hippo
+    compile 'com.servtech:hippopotamus:0.8'
+    compile 'com.servtech:hippopotamusFileDB:0.21'
+
+    // grpc
+//    compile "io.grpc:grpc-netty:${grpcVersion}"
+//    compile "io.grpc:grpc-protobuf:${grpcVersion}"
+//    compile "io.grpc:grpc-stub:${grpcVersion}"
+
+    //servlet
+//    providedCompile "com.servtech:servlet-api:6.0.37"
+
+    // Encoding
+    compile 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
+
+    // filemanagement
+    compile 'com.servtech:filemanagement:1.3'
+
+    // https://mvnrepository.com/artifact/com.jcraft/jsch
+    compile 'com.jcraft:jsch:0.1.54'
+
+    //csv
+    compile group: 'net.sf.opencsv', name: 'opencsv', version: '2.3'
+
+    // https://mvnrepository.com/artifact/net.java.dev.jna/jna
+    compile group: 'net.java.dev.jna', name: 'jna', version: '5.5.0'
+
+//    providedCompile 'org.apache.tomcat:tomcat-catalina:8.0.15'
+//    先把這一行註解掉， 因為開發人員不一定有tomcat 所以在引入lib的時候容易出問題
+//    providedCompile fileTree(dir: "$tomcatRootPath/lib", includes: ['*.jar'])
+
+    // https://mvnrepository.com/artifact/com.hynnet/jacob
+    compile group: 'com.hynnet', name: 'jacob', version: '1.14.3'
+
+    //unit test
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.3.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.3.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+    testCompile group: 'org.springframework', name: 'spring-jdbc', version: '5.1.5.RELEASE'
+
+    // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+}
+
+configurations {
+    all*.exclude module: 'spring-boot-starter-logging'
+}
+
+//build war disable compile test
+test {
+    exclude '**/*'
+}
+
+
+javadoc {
+    options.encoding = 'UTF-8'
+}
+
+task eslint(type: Exec) {
+    commandLine 'cmd', '/c', 'npm run lint'
+}
+
+task babel(type: Exec, dependsOn: 'eslint') {
+    commandLine 'cmd', '/c', 'npm run babel'
+}
+
+// from the Griffon ActiveJDBC plugin
+def addUrlIfNotPresent(to, what) {
+    if (!to || !what) {
+        return
+    }
+    def urls = to.URLs.toList()
+    switch (what.class) {
+        case URL: what = new File(what.toURI()); break
+        case String: what = new File(what); break
+        case GString: what = new File(what.toString()); break
+        case File: break; // ok
+        default:
+            println "Don't know how to deal with $what as it is not an URL nor a File"
+            System.exit(1)
+    }
+
+    if (what.directory && !what.exists()) {
+        what.mkdirs()
+    }
+    def url = what.toURI().toURL()
+    if (!urls.contains(url) && (what.directory || !urls.find { it.path.endsWith(what.name) })) {
+        to.addURL(url)
+    }
+}
+
+// Instrument models: borowed from the Griffon ActiveJDBC plugin.
+
+compileJava.doLast {
+    Instrumentation instrumentation = new Instrumentation()
+    def projectMainClassesDir = sourceSets.main.output.classesDir.getPath()
+    def rootLoader = this.class.classLoader.rootLoader
+    instrumentation.outputDirectory = projectMainClassesDir
+    addUrlIfNotPresent rootLoader, projectMainClassesDir
+    addUrlIfNotPresent Instrumentation.class.classLoader, projectMainClassesDir
+    instrumentation.instrument()
+
+}
+
+processResources.outputs.upToDateWhen { false }
+processResources.doLast {
+    def log4jFile = new File(sourceSets.main.output.resourcesDir, "log4j.properties");
+    def systemParamFile = new File(sourceSets.main.output.resourcesDir, "system_param.json");
+    def leanConfigFile = new File(sourceSets.main.output.resourcesDir, "META-INF/core/config/leanConfig.xml");
+    def replaceName = 'ServCloud'
+
+    def newLog4jFileContent = log4jFile.text.replaceAll(replaceName, appName)
+    log4jFile.setText(newLog4jFileContent);
+
+    def newSystemParamFileContent = systemParamFile.text.replaceAll(replaceName.toLowerCase(), appName.toLowerCase())
+    systemParamFile.setText(newSystemParamFileContent);
+
+    def newLeanConfigFileContent = leanConfigFile.text.replaceAll("YourPlatformId", appName);
+    leanConfigFile.setText(newLeanConfigFileContent)
+}
+
+task syncClasses(type: Sync, dependsOn: ['compileJava', 'processResources']) {
+    from sourceSets.main.output.classesDir, sourceSets.main.output.resourcesDir
+    into "$tomcatRootPath/webapps/$appName/WEB-INF/classes"
+}
+
+//task closeTomcat(type: Exec, dependsOn: 'build') {
+//    workingDir "$tomcatRootPath/bin"
+//    commandLine 'cmd', '/c', 'shutdown.bat'
+//}
+
+task clearAppInTomcat(type: Delete, dependsOn: 'build') {
+    delete "$tomcatRootPath/webapps/$appName"
+    delete "$tomcatRootPath/webapps/${appName}.war"
+}
+
+task moveWarToTomcat(type: Copy, dependsOn: 'clearAppInTomcat') {
+    def nameWithVersion = "${archivesBaseName}-${version}.war"
+    from "build/libs/$nameWithVersion"
+    into "$tomcatRootPath/webapps"
+    rename(nameWithVersion, "${appName}.war")
+}
+
+task unzipWarToTomcat(type: Copy, dependsOn: 'clearAppInTomcat') {
+    def nameWithVersion = "${archivesBaseName}-${version}.war"
+    def servcloudWarFile = file("build/libs/$nameWithVersion")
+    def tomcatWebappsDir = file("$tomcatRootPath/webapps/$appName")
+    from zipTree(servcloudWarFile)
+    into tomcatWebappsDir
+}
+unzipWarToTomcat << {
+    if (!release) {
+        def date = new Date().format('yyyy-MM-dd')
+        new File("$tomcatRootPath/webapps/$appName/license").write(date, 'UTF-8')
+    }
+}
+
+//task startTomcat(type: Exec, dependsOn: 'moveWarToTomcat') {
+//    workingDir "$tomcatRootPath/bin"
+//    commandLine 'cmd', '/c', 'startup.bat'
+//}
+task moveLangsToTomcat(type: Copy) {
+    from "src/main/webapp/WEB-INF/lang"
+    into "$tomcatRootPath/webapps/$appName/WEB-INF/lang"
+}
+
+task clearFrontendInTomcat(type: Delete, dependsOn: 'babel') {
+// task clearFrontendInTomcat(type: Delete) {
+    delete "$tomcatRootPath/webapps/$appName/app",
+            "$tomcatRootPath/webapps/$appName/css",
+            "$tomcatRootPath/webapps/$appName/fonts",
+            "$tomcatRootPath/webapps/$appName/img",
+            "$tomcatRootPath/webapps/$appName/js",
+            "$tomcatRootPath/webapps/$appName/index.html",
+            "$tomcatRootPath/webapps/$appName/login.html",
+            "$tomcatRootPath/webapps/$appName/applist.html"
+}
+
+task moveFrontendToTomcat(type: Copy, dependsOn: ['frontends', 'clearFrontendInTomcat']) {
+    from webAppDirName
+    into "$tomcatRootPath/webapps/$appName"
+    exclude 'WEB-INF'
+    exclude 'license'
+}
+
+task syncWebAppDirToBuildTmp(dependsOn: 'babel') {
+    // from 'src/main/webapp'
+    // into webAppDirName
+    // exclude '.idea'
+}
+syncWebAppDirToBuildTmp << {
+    new File("$webAppDirName/version").write(version, 'UTF-8')
+}
+
+task updateFuncVersion(dependsOn: 'syncWebAppDirToBuildTmp')
+updateFuncVersion << {
+    def tree = fileTree(dir: "src\\main\\webapp\\app", include: '**/*.html')
+    def map = [:]
+    map.put("platform", version)
+    tree.sort().each { File f ->
+        String rule = "\\app"
+        String path = f.getAbsolutePath();
+        int appIndex = path.lastIndexOf(rule) + 5
+        String appPath = path.substring(appIndex)
+        String appId = appPath.substring(0, appPath.indexOf("\\"))
+        String name = f.name.substring(0, f.name.lastIndexOf("."))
+        String time = new Date(f.lastModified()).format("yyyy/MM/dd HH:mm:ss")
+//        def ver = ''
+//        new ByteArrayOutputStream().withStream {
+//            os -> exec {
+//                commandLine 'cmd','/c svn info ' + path + ' | findstr Rev:'
+//                standardOutput = os
+//            }
+//                ver = os.toString()
+//        }
+//        println ver
+        map.put(appId + "_" + name, time)
+    }
+
+    def jsonStr = new groovy.json.JsonBuilder(map).toPrettyString()
+    new File("$webAppDirName/funcVersion").write(jsonStr)
+}
+
+
+task translateLanguage(dependsOn: 'syncWebAppDirToBuildTmp')
+translateLanguage << {
+    // 取得全域 i18n
+    def globalLangMap = [:].withDefault { [] }
+    def globalLangTagPos = [:]
+    new File(webAppDirName, 'langs/languages.tsv').readLines('UTF-8').each { globalLangLine ->
+        if (globalLangLine.isEmpty() || globalLangLine.startsWith("#")) {
+            // 忽略
+        } else if (!globalLangLine.startsWith('i18n')) {
+            globalLangLine.split("\t").eachWithIndex { String entry, int i ->
+                if (i != 0) globalLangTagPos[entry] = i - 1
+            }
+        } else {
+            def eachLang = globalLangLine.split("\t")
+            for (int i = 1; i < eachLang.length; i++)
+                globalLangMap[eachLang[0]] << eachLang[i]
+        }
+    }
+    file(webAppDirName + '/app').listFiles().each({ appDir ->
+        /* 1. 清掉舊的 */
+        new File(appDir, 'function').deleteDir()
+
+        try {
+            /* 2. 從 langs/languages.tsv 把語言表載進來 */
+            def langMap = [:].withDefault { [] }
+            def langTagPos = [:]
+            new File(appDir, 'langs/languages.tsv').readLines('UTF-8').each { langLine ->
+                if (langLine.isEmpty() || langLine.startsWith("#")) {
+                    // 忽略
+                } else if (!langLine.startsWith('i18n')) {
+                    langLine.split("\t").eachWithIndex { String entry, int i ->
+                        if (i != 0) langTagPos[entry] = i - 1
+                    }
+                } else {
+                    def eachLang = langLine.split("\t")
+                    for (int i = 1; i < eachLang.length; i++)
+                        langMap[eachLang[0]] << eachLang[i]
+                }
+            }
+
+            /* 3. 把 tag 資料夾底下的所有檔案，用載進來的語言表，每種語言各製一份，然後存到 function/語言tag/原本檔名 */
+            new File(appDir, 'tag').listFiles().each { funcFile ->
+                translateToDest(langMap, langTagPos, funcFile, new File(appDir, 'function'), globalLangMap, globalLangTagPos)
+            }
+
+            /* 4. dashboard 也要翻譯一下 */
+            new File(appDir, 'dashboard').listFiles().each { widgetDir ->
+                if (widgetDir.isDirectory()) {
+                    def tagDir = new File(widgetDir, 'tag')
+                    if (tagDir.exists()) {
+                        tagDir.listFiles().each { dashboardFile ->
+                            translateToDest(langMap, langTagPos, dashboardFile, widgetDir, globalLangMap, globalLangTagPos)
+                        }
+                    } else {
+                        throw RuntimeException("dashboard 每個 widget 必須為 tag 資料夾放 i18n 原始檔...")
+                    }
+                }
+            }
+
+        } catch (Exception e) {
+            println "${appDir.name} App 語言翻譯發生問題，請確認!! 錯誤訊息: ${e.getMessage()}"
+        }
+    })
+}
+
+classes.dependsOn.add('frontends')
+
+combineCss {
+    source = [
+            "$webAppDirName/css/bootstrap.min.css",
+            "$webAppDirName/css/bootstrap-datetimepicker.min.css",
+            "$webAppDirName/css/font-awesome.min.css",
+            "$webAppDirName/css/smartadmin-production-plugins.min.css",
+            "$webAppDirName/css/smartadmin-production.min.css",
+            "$webAppDirName/css/smartadmin-skin-7.css",
+            "$webAppDirName/css/smartadmin-skins.min.css",
+            "$webAppDirName/css/smartadmin-rtl.min.css",
+            "$webAppDirName/css/servtech-customize.css",
+            "$webAppDirName/css/servtech-kellytest.css",
+            "$webAppDirName/css/video-js.min.css"
+    ]
+    dest = "$webAppDirName/css/all.css"
+}
+
+//minifyCss {
+//    source = combineCss
+//    dest = webAppDirName + '/css/all-min.css'
+//}
+
+combineCss.dependsOn.add('syncWebAppDirToBuildTmp')
+
+combineJs {
+    encoding = "UTF-8"
+    def combineJsSources = []
+    def indexHtml = new File("src/main/webapp/index.html")
+    indexHtml.readLines('UTF-8').each({
+        if (it ==~ /^ *<script +src.+/ && !(it =~ /servtech.config.js/)) {
+            combineJsSources << (webAppDirName + "/" + (it =~ /src="([^"]+)"/)[0][1])
+        }
+    })
+
+    source = combineJsSources
+    dest = file("$webAppDirName/js/libs/all.js")
+}
+
+minifyJs {
+    source = combineJs
+    dest = file("$webAppDirName/js/libs/all-min-${buildTimestamp}.js")
+    closure {
+        warningLevel = 'QUIET'
+        compilerOptions.languageIn = 'ECMASCRIPT5'
+    }
+}
+
+combineJs.dependsOn.add('replaceEachScriptByMinifiedJs')
+
+task replaceEachScriptByMinifiedJs(dependsOn: 'syncWebAppDirToBuildTmp') {}
+replaceEachScriptByMinifiedJs << {
+    def indexHtml = new File("$webAppDirName/index.html")
+    def afterReplacedFileContent =
+            indexHtml.readLines('UTF-8').collect({
+                if (it ==~ /^ *<script +src.+/ && !(it =~ /servtech.config.js/)) {
+                    return "<!-- $it -->"
+                } else if (it ==~ /^ *<\/body.+/) {
+                    return "<script src=\"js/libs/all-min-${buildTimestamp}.js\"></script></body>"
+                } else {
+                    return it
+                }
+            }).join('\r\n');
+
+    indexHtml.write(afterReplacedFileContent, 'UTF-8')
+}
+
+task frontends(dependsOn: ['combineCss', 'translateLanguage', 'updateFuncVersion']) {}
+if (release) {
+    frontends.dependsOn.add('minifyJs')
+}
+
+def getAndIncrementReleaseSequence(def buildVersionDate) {
+    def releaseHistoryFile = new File('release_history');
+    def result = 1
+    try {
+        def releaseHistoryList = releaseHistoryFile.readLines('UTF-8');
+        def lastRelease = releaseHistoryList.last()
+
+        def lastReleaseDate = lastRelease.split(' ')[0]
+        def lastReleaseSeq = lastRelease.split(' ')[1]
+        def newReleaseHistory
+
+        if (lastReleaseDate == buildVersionDate) {
+            result = lastReleaseSeq.toInteger() + 1;
+            newReleaseHistory = releaseHistoryList[0..-2].join('\n') + "\n$buildVersionDate $result"
+
+        } else {
+            newReleaseHistory = releaseHistoryList.join('\n') + "\n$buildVersionDate $result"
+        }
+
+        releaseHistoryFile.write(newReleaseHistory)
+        return result
+
+    } catch (all) {
+        releaseHistoryFile.write("$buildVersionDate $result")
+        return result
+    }
+}
+
+def translateToDest(def langMap, def langTagPos, def srcFile, def destDir, def globalLangMap, def globalLangTagPos) {
+    def translatedLinesByLangTag = [:].withDefault { [] }
+
+    srcFile.readLines('UTF-8').eachWithIndex { line, lineIndex ->
+        def finder = line =~ /\{i18n_[^}]+\}/
+        def tags = []
+        while (finder.find()) {
+            tags << finder.group();
+        }
+        langTagPos.each { tagPostEntry ->
+            def newLine = line
+            tags.each { tag ->
+                if (langMap[tag[1..-2]][tagPostEntry.value] != null) {
+                    newLine = newLine.replace(tag, langMap[tag[1..-2]][tagPostEntry.value] ?: tag)
+                } else if (globalLangMap[tag[1..-2]][tagPostEntry.value] != null) {
+                    newLine = newLine.replace(tag, globalLangMap[tag[1..-2]][tagPostEntry.value] ?: tag)
+                } else {
+                    println "${srcFile.getAbsolutePath()}-${lineIndex + 1}: $tagPostEntry.key-$tag not in languages.tsv file"
+                }
+            }
+            translatedLinesByLangTag[tagPostEntry.key] << newLine
+        }
+    }
+
+    translatedLinesByLangTag.each { tagLines ->
+        def newFile = new File(destDir, tagLines.key + '/' + srcFile.name)
+        if (!newFile.parentFile.exists()) newFile.parentFile.mkdirs()
+        newFile.write(tagLines.value.join('\r\n'), 'UTF-8')
+    }
+}

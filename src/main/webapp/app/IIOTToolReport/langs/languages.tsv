@@ -1,0 +1,22 @@
+	zh_tw	zh	en
+i18n_ServCloud_Query_Condition	查詢	查询	Query Condition
+i18n_ServCloud_Start_Date	開始日期	开始日期	Start Date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_Tool_Number	刀具品號	刀具品号	Tool Number
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Chuck_Number_2	刀把編號	刀把编号	Chuck Number
+i18n_ServCloud_Submit	查詢	查询	Submit
+i18n_ServCloud_Query_Result	查詢結果	查询结果	Query Result
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Program	加工程式名稱	加工程式名称	Program
+i18n_ServCloud_Tool_No	刀號	刀号	Tool No
+i18n_ServCloud_Chuck_Number_2	刀把編號	刀把编号	Chuck Number
+i18n_ServCloud_Tool_Assign_Code	刀具編號	刀具编号	Tool Assign Code
+i18n_ServCloud_Start_Process_Time	加工開始時間	加工开始时间	Start Process Time
+i18n_ServCloud_End_Process_Time	加工結束時間	加工结束时间	End Process Time
+i18n_ServCloud_Cutting_Time	實際加工(切削)時間	实际加工(切削)时间	Cutting Time
+i18n_ServCloud_Chuck_Number_2	刀把	刀把	Chuck Number
+i18n_ServCloud_Route_List_Bar_Code	途程單條碼	途程单条码	Route List Bar Code
+i18n_ServCloud_Move_In_Time	上機時間	上机时间	Start Process Time
+i18n_ServCloud_Move_Out_Time	出站時間	出站时间	End Process Time

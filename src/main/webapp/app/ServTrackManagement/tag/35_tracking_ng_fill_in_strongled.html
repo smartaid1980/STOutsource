@@ -1,0 +1,247 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_ServTrackManagement_000020}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="query-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label st-required"
+                      >{i18n_ServCloud_ServTrackManagement_000324}</label
+                    >
+                    <label class="input"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="startDate"
+                        name="startDate"
+                        data-rule-required="true"
+                        data-rule-date="true"
+                        class="form-control"
+                      />
+                    </label>
+                    <label class="label st-required"
+                      >{i18n_ServCloud_ServTrackManagement_000325}</label
+                    >
+                    <label class="input"
+                      ><i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="endDate"
+                        name="endDate"
+                        data-rule-required="true"
+                        data-rule-date="true"
+                        class="form-control"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label"
+                      >{i18n_ServCloud_ServTrackManagement_000133}</label
+                    >
+                    <label class="input">
+                      <select
+                        class="select2 full-width"
+                        id="lineId"
+                        name="lineId"
+                      ></select>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label"
+                      >{i18n_ServCloud_ServTrackManagement_000309}</label
+                    >
+                    <label class="input">
+                      <select
+                        class="select2 full-width"
+                        id="workId"
+                        name="workId"
+                      ></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button name="submit-clean" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrackManagement_000018}
+                </button>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrackManagement_000020}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="crudTable-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_ServTrackManagement_000053}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding" id="crudTableBody">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="move_in"
+              id="crudTable"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_ServTrackManagement_000137}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000133}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000049}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000062}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000326}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000327}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000328}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000332}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000331}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="shift_day"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_ServTrackManagement_000137}"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <select
+                      name="line_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="a_servtrack_line"
+                      stk-getdata-column-text="line_name"
+                      stk-getdata-column-value="line_id"
+                      disabled
+                    ></select>
+                  </td>
+                  <td>
+                    <input
+                      name="work_id"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_ServTrackManagement_000049}"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="op"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_ServTrackManagement_000062}"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="move_in"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_ServTrackManagement_000326}"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="move_out"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_ServTrackManagement_000327}"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="output"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_ServTrackManagement_000328}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="cust_field_3"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_ServTrackManagement_000332}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="cust_field_4"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_ServTrackManagement_000331}"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

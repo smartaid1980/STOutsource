@@ -1,0 +1,85 @@
+<section id="widget-grid">
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="element2-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i class="fa fa-table"></i>
+          </span>
+          <h2>管理輪播看板</h2>
+        </header>
+        <div>
+          <div class="jarviswidget-editbox"></div>
+
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="dashboard_id"
+              id="manage-dashboard-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>輪播看板ID</th>
+                  <th>輪播看板名稱</th>
+                  <th>APP名稱</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="dashboard_id"
+                      type="text"
+                      class="form-control"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="dashboard_name"
+                      type="text"
+                      class="form-control"
+                    />
+                  </td>
+                  <td>
+                    <select
+                      name="app_id"
+                      class="form-control"
+                      stk-api="api/app/read"
+                      stk-option-value="app_id"
+                      stk-option-text="app_name"
+                      stk-pk
+                    ></select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

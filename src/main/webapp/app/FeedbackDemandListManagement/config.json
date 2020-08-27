@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "FeedbackDemandListManagement",
+    "name": "i18n_ServCloud_Feedback_DemandList_Management",
+    "type": 1,
+    "description": "Demand list.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_search_demandlist",
+      "name": "i18n_ServCloud_10_Search_DemandList"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

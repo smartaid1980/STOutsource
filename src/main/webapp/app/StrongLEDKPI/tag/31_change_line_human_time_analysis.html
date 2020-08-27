@@ -1,0 +1,230 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="search-query-conditions-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+          <h2>{i18n_ServCloud_Change_Line_Human_Time_Analysis}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form
+              class="smart-form form-horizontal"
+              novalidate="novalidate"
+              id="form"
+            >
+              <fieldset>
+                <section class="col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                  <div class="form-group">
+                    <label class="col-md-4 label st-required text-right"
+                      ><span>{i18n_ServCloud_Query_Start_Time}：</span></label
+                    >
+                    <div class="col-md-7">
+                      <label class="input"
+                        ><i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          id="start"
+                          name="start"
+                          data-rule-required="true"
+                          data-rule-date="true"
+                          class="form-control"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </section>
+                <section class="col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                  <div class="form-group">
+                    <label class="col-md-4 label st-required text-right"
+                      ><span>{i18n_ServCloud_Query_End_Time}：</span></label
+                    >
+                    <div class="col-md-7">
+                      <label class="input"
+                        ><i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          id="end"
+                          name="end"
+                          data-rule-required="true"
+                          data-rule-date="true"
+                          class="form-control"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </section>
+                <section class="col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                  <div class="form-group">
+                    <label class="col-md-4 label st-required text-right"
+                      ><span>{i18n_ServCloud_Op}</span></label
+                    >
+                    <div class="col-md-7">
+                      <label class="input">
+                        <select
+                          class="form-control"
+                          id="op"
+                          name="op"
+                          multiple="multiple"
+                          data-rule-required="true"
+                        ></select>
+                      </label>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  id="btn-frame"
+                  class="col col-xs-12 col-sm-12 col-md-3 col-lg-3"
+                >
+                  <button id="query-btn" class="btn btn-primary">
+                    {i18n_ServCloud_Query}
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+            <div id="info" class="hide">
+              <div>
+                {i18n_ServCloud_Op}：<span id="op-text"
+                  >ALL( {i18n_ServCloud_Whole_Factory} )</span
+                >
+              </div>
+            </div>
+            <div id="chart" class="hide"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #form {
+    border-bottom: 1px dashed;
+    margin: 0px 13px;
+  }
+
+  label.col-md-2.label.st-required.text-right {
+    line-height: 28px;
+  }
+
+  label.label.st-required.text-right > span {
+    padding-right: 13px;
+  }
+
+  #btn-frame {
+    text-align: center;
+  }
+
+  #btn-frame #query-btn {
+    margin: auto;
+    height: 31px;
+    padding: 0 22px;
+    cursor: pointer;
+  }
+
+  /* info */
+  #info {
+    padding: 5px 25px;
+    font-size: 1.2em;
+  }
+
+  #info > div {
+    padding: 5px 0;
+  }
+
+  /* chart */
+  #chart {
+    padding: 0 13px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #chart > div {
+    flex: auto;
+  }
+
+  .chart-frame {
+    margin-bottom: 13px;
+    height: 94%;
+  }
+
+  .chart-frame .header {
+    height: 30px;
+    background-color: #716f6cab;
+    border: 1px solid #cfcfd096;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+
+  .chart-frame .chart-body {
+    min-height: 200px;
+    padding: 10px;
+    /* height: 91%; */
+    border-left: 1px solid #cfcfd096;
+    border-right: 1px solid #cfcfd096;
+  }
+
+  .chart-frame .chart-body > .chart {
+    margin: 0;
+    width: 100%;
+    min-height: 180px;
+  }
+
+  .chart-title {
+    text-align: center;
+  }
+
+  .chart-title > .title,
+  .chart-title > .name {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  /* table */
+  .chart-table table {
+    width: 100%;
+    border: 1px solid #cfcfd096;
+    border-top: none;
+  }
+
+  .chart-table th,
+  .chart-table td {
+    border: 1px solid #cfcfd096;
+    text-align: center;
+    padding: 3px;
+    font-size: 1.2em;
+  }
+
+  .chart-table th {
+    border-top: none;
+    font-size: 1.3em;
+  }
+
+  .chart-table .row-name {
+    color: #e2d09a;
+  }
+
+  .chart-table .other {
+    color: #4472c4;
+  }
+
+  .chart-table .total {
+    color: #ffc000;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

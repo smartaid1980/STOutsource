@@ -1,0 +1,1 @@
+delete FROM m_device_light where light_id = '14';

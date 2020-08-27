@@ -1,0 +1,100 @@
+<section id="widget-grid">
+  <a href="javascript: void(0)" id="leave-btn" class="btn btn-default"
+    ><i class="fa fa-mail-reply"></i>&nbsp; {i18n_ServCloud_Go_Back}
+  </a>
+  <br />
+  <br />
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-fullscreenbutton="false"
+    data-widget-editbutton="false"
+    data-widget-collapsed="false"
+    data-widget-colorbutton="false"
+    data-widget-deletebutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <h2>【<span id="plantAreaId"></span>】</h2>
+      <!-- 暫時使用 -->
+      <div class="widget-toolbar" role="menu">
+        <button id="changeStyle" class="btn bg-color-blue txt-color-white hide">
+          切換樣式
+        </button>
+        <!-- <a href="javascript:void(0);" class="btn bg-color-blue txt-color-white stk-load">Load</a> -->
+      </div>
+    </header>
+
+    <div class="tab-content padding-10">
+      <!--  系統1  -->
+      <div id="space">
+        <div id="machine-sort"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  #machine-sort {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  #space .device {
+    position: relative;
+    border: 1px solid #666;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 5px 1%;
+    width: 23%;
+    cursor: pointer;
+  }
+
+  #space .device .device-title {
+    text-align: center;
+    padding: 0.5em;
+    padding-bottom: 2.1em;
+    background-color: #d3d3d3;
+  }
+
+  #space .device .device-info td {
+    padding: 3px;
+  }
+
+  #space {
+    margin: auto;
+  }
+
+  #space > div {
+    position: relative;
+  }
+
+  #space .device.online .device-title {
+    background: #2e8b57;
+    color: #fff;
+  }
+
+  #space .device.idle .device-title {
+    background: #ffa500;
+  }
+
+  #space .device.alarm .device-title {
+    background: #a90329;
+    color: #fff;
+  }
+
+  #space .device.offline .device-title {
+    background: #d3d3d3;
+  }
+
+  #flotTip {
+    z-index: 1061 !important;
+    font-size: 1.1em !important;
+  }
+
+  .labelValue {
+    word-break: break-word;
+  }
+</style>
+<script type="text/javascript">
+  window.importPageScript()
+</script>

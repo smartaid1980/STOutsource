@@ -1,0 +1,452 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-12">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cloud"></i>
+      {i18n_ServCloud_ServTrack_000004}
+      <span>
+        > {i18n_ServCloud_ServTrack_000106}
+      </span>
+    </h1>
+  </div>
+</div>
+<!--Section START-->
+<section id="widget-grid">
+  <!--Div row START-->
+  <div class="row">
+    <!--widget Strat-->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <!--Trade Tag Title Start-->
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_ServTrack_000020}</h2>
+          <ul class="nav nav-tabs pull-right">
+            <li class="active">
+              <a data-toggle="tab" href="#integratedQuery"
+                >{i18n_ServCloud_ServTrack_000092}</a
+              >
+            </li>
+            <li>
+              <a data-toggle="tab" href="#workId"
+                >{i18n_ServCloud_ServTrack_000017}</a
+              >
+            </li>
+          </ul>
+          <!--Trade Tag Title End-->
+        </header>
+        <div class="container">
+          <div class="tab-content">
+            <div id="integratedQuery" class="tab-pane fade in active">
+              <div class="widget-body no-padding">
+                <form class="smart-form" novalidate="novalidate" id="form1">
+                  <fieldset>
+                    <div class="row">
+                      <div class="col col-8">
+                        <div class="row">
+                          <section class="col col-6">
+                            <label class="label st-required"
+                              >{i18n_ServCloud_ServTrack_000013}</label
+                            >
+                            <label class="input">
+                              <i class="icon-append fa fa-calendar"></i>
+                              <input
+                                type="text"
+                                id="startDate"
+                                name="startDate"
+                                data-rule-required="true"
+                                data-rule-dateISO="true"
+                              />
+                            </label>
+                          </section>
+                          <section class="col col-3">
+                            <label class="label"
+                              >{i18n_ServCloud_ServTrack_000094}</label
+                            >
+                            <label class="select">
+                              <select
+                                class="select2 full-width"
+                                id="product-id"
+                              >
+                              </select>
+                            </label>
+                          </section>
+                          <section class="col col-3">
+                            <label class="label"
+                              >{i18n_ServCloud_ServTrack_000101}</label
+                            >
+                            <div class="inline-group">
+                              <label class="checkbox">
+                                <input
+                                  type="checkbox"
+                                  value="999"
+                                  name="work-status"
+                                />
+                                <i></i>
+                                <span>{i18n_ServCloud_ServTrack_000097}</span>
+                              </label>
+                              <label class="checkbox">
+                                <input
+                                  type="checkbox"
+                                  value="2"
+                                  name="work-status"
+                                  checked="checked"
+                                />
+                                <i></i>
+                                <span>{i18n_ServCloud_ServTrack_000093}</span>
+                              </label>
+                            </div>
+                          </section>
+                        </div>
+                        <div class="row">
+                          <section class="col col-6">
+                            <label class="label st-required"
+                              >{i18n_ServCloud_ServTrack_000014}</label
+                            >
+                            <label class="input">
+                              <i class="icon-append fa fa-calendar"></i>
+                              <input
+                                type="text"
+                                id="endDate"
+                                name="endDate"
+                                data-rule-required="true"
+                                data-rule-dateISO="true"
+                              />
+                            </label>
+                          </section>
+                        </div>
+                      </div>
+                      <!-- end of row -->
+                    </div>
+                  </fieldset>
+                  <footer>
+                    <button name="submit-clean" class="btn btn-primary">
+                      {i18n_ServCloud_ServTrack_000016}
+                    </button>
+                    <button id="submit-btn" class="btn btn-primary">
+                      {i18n_ServCloud_ServTrack_000020}
+                    </button>
+                    <button id="demo-btn" class="btn btn-success showdemo">
+                      {i18n_ServCloud_ServTrack_000001}
+                    </button>
+                  </footer>
+                </form>
+              </div>
+            </div>
+            <div id="workId" class="tab-pane fade">
+              <div class="widget-body no-padding">
+                <form class="smart-form" novalidate="novalidate" id="form2">
+                  <fieldset>
+                    <div class="row">
+                      <div class="col col-8">
+                        <div class="row">
+                          <section class="col col-6">
+                            <label class="label"
+                              >{i18n_ServCloud_ServTrack_000017}</label
+                            >
+                            <label class="select">
+                              <select class="select2 full-width" id="work-id">
+                              </select>
+                            </label>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <footer>
+                    <button name="submit-clean" class="btn btn-primary">
+                      {i18n_ServCloud_ServTrack_000016}
+                    </button>
+                    <button id="submit-btn2" class="btn btn-primary">
+                      {i18n_ServCloud_ServTrack_000020}
+                    </button>
+                    <button id="demo-btn2" class="btn btn-success showdemo">
+                      {i18n_ServCloud_ServTrack_000001}
+                    </button>
+                  </footer>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="date-table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+        style="display: none;"
+      >
+        <header>
+          <span class="widget-icon"><i class="fa fa-table"></i></span>
+          <h2>{i18n_ServCloud_ServTrack_000018}</h2>
+        </header>
+        <div class="container">
+          <div style="margin: -20px 5px 10px;">
+            <br />
+            <span
+              >{i18n_ServCloud_ServTrack_000015} :
+              <span id="shift-range-title"></span
+            ></span>
+            <br />
+            <span
+              >{i18n_ServCloud_ServTrack_000012} :
+              <span id="product-name-title"></span
+            ></span>
+            <br />
+            <span
+              >{i18n_ServCloud_ServTrack_000017} :
+              <span id="work-id-title"></span
+            ></span>
+            <br />
+            <span
+              >{i18n_ServCloud_ServTrack_000095} :
+              <span id="work-status-title"></span
+            ></span>
+            <br />
+            <span name="currentDate"></span>
+            <br />
+            <br />
+          </div>
+          <div class="widget-body no-padding">
+            <table
+              id="date-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                  <th class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    <select
+                      type="text"
+                      class="form-control"
+                      style="width: 100%;"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">{i18n_ServCloud_ServTrack_000017}</th>
+                  <th>{i18n_ServCloud_ServTrack_000012}</th>
+                  <th>{i18n_ServCloud_ServTrack_000102}</th>
+                  <th>{i18n_ServCloud_ServTrack_000103}</th>
+                  <th>{i18n_ServCloud_ServTrack_000090}</th>
+                  <th>{i18n_ServCloud_ServTrack_000089}</th>
+                  <th>{i18n_ServCloud_ServTrack_000141}</th>
+                  <th>{i18n_ServCloud_ServTrack_000142}</th>
+                  <th>{i18n_ServCloud_ServTrack_000100}</th>
+                  <th>{i18n_ServCloud_ServTrack_000045}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+                <h4 class="modal-title">{i18n_ServCloud_ServTrack_000045}</h4>
+              </div>
+              <div class="modal-body">
+                <div id="dispatch-list-status"></div>
+                <div id="swimlaneChart"></div>
+
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  id="modal-process-table-widget"
+                  data-widget-editbutton="false"
+                  data-widget-deletebutton="false"
+                  data-widget-colorbutton="false"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                  style="display: none;"
+                >
+                  <header>
+                    <span class="widget-icon"><i class="fa fa-table"></i></span>
+                    <h2>{i18n_ServCloud_ServTrack_000018}</h2>
+                  </header>
+                  <div class="container">
+                    <div class="widget-body no-padding">
+                      <table
+                        id="modal-process-table"
+                        class="table table-striped table-bordered table-hover"
+                        width="100%"
+                      >
+                        <thead>
+                          <tr>
+                            <th data-class="expand">work order</th>
+                            <th>{i18n_ServCloud_ServTrack_000153}</th>
+                            <th>{i18n_ServCloud_ServTrack_000154}</th>
+                            <th>{i18n_ServCloud_ServTrack_000155}</th>
+                            <th>
+                              {i18n_ServCloud_ServTrack_000148}({i18n_ServCloud_ServTrack_000061})
+                            </th>
+                            <th>{i18n_ServCloud_ServTrack_000151}</th>
+                            <th>
+                              {i18n_ServCloud_ServTrack_Completion_ratio}(%)
+                            </th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--Div row END-->
+  </div>
+  <!--Section END-->
+  <style>
+    .d3chart {
+      shape-rendering: crispEdges;
+    }
+
+    .mini text {
+      font-size: 14px;
+      font-family: Microsoft JhengHei, Helvetica, Arial, sans-serif;
+    }
+
+    .main text {
+      font-size: 14px;
+      font-family: Microsoft JhengHei, Helvetica, Arial, sans-serif;
+    }
+
+    .month text {
+      text-anchor: start;
+      font-family: Microsoft JhengHei, Helvetica, Arial, sans-serif;
+    }
+
+    .todayLine {
+      stroke: blue;
+      stroke-width: 1.5;
+    }
+
+    .axis line,
+    .axis path {
+      stroke: black;
+    }
+
+    .miniItem {
+      stroke-width: 6;
+    }
+
+    .tracking {
+      stroke: green;
+      fill: #2fa12f;
+    }
+
+    .trackingNoMoveOut {
+      stroke: rgb(255, 133, 51);
+      fill: #ffaa33;
+    }
+
+    .brush .extent {
+      stroke: gray;
+      fill: blue;
+      fill-opacity: 0.165;
+    }
+
+    .frameLine {
+      stroke: black;
+      stroke-width: 1.5;
+    }
+
+    .modal-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+
+    .modal-body {
+      max-height: calc(100vh - 150px);
+      overflow-y: auto;
+    }
+  </style>
+  <script>
+    window.importPageScript()
+  </script>
+</section>

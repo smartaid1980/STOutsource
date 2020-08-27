@@ -1,0 +1,128 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_ServTrack_000020}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="query-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label"
+                      >{i18n_ServCloud_ServTrack_000012}</label
+                    >
+                    <label class="input">
+                      <select
+                        class="select2 full-width"
+                        id="product_id"
+                        name="product_id"
+                      ></select>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label"
+                      >{i18n_ServCloud_ServTrack_000010}</label
+                    >
+                    <label class="input">
+                      <select
+                        class="select2 full-width"
+                        id="line_id"
+                        name="line_id"
+                      ></select>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label"
+                      >{i18n_ServCloud_ServTrack_000017}</label
+                    >
+                    <label class="input">
+                      <select
+                        class="select2 full-width"
+                        id="work_id"
+                        name="work_id"
+                      ></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button name="submit-clean" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrack_000016}
+                </button>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrack_000020}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="report-table-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_ServTrack_000018}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              id="report-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_ServTrack_000002}</th>
+                  <th>{i18n_ServCloud_ServTrack_000010}</th>
+                  <th>{i18n_ServCloud_ServTrack_000017}</th>
+                  <th>{i18n_ServCloud_ServTrack_000021}</th>
+                  <th>{i18n_ServCloud_ServTrack_000012}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

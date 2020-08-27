@@ -1,0 +1,1 @@
+<command name="cnc_Offset" cycletype="count" cyclevalue="1" timeout="0"><params><param name="G_TOFS" count="1" frequency="0" isRepeat="true"><inputs><input name="P_NUMBER" type="startend">0</input><input name="P_COUNT">1</input></inputs><filters></filters><process /></param></params></command>

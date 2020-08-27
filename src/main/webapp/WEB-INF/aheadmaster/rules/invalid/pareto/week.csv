@@ -1,0 +1,4 @@
+groupCol(newCol(E),"週") ###(A)groupCol(newCol(T),"製程")
+groupCol(newCol(AA),"無效代碼") ###(B)
+groupCol(newCol(AB),"無效說明") ###(C)
+dataCol(newCol(AF),"無效人時",SUM,"%.0f") ###(D)

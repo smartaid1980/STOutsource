@@ -1,0 +1,66 @@
+<section id="widget-grid">
+  <div class="row">
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="jarviswidget">
+        <header>
+          <div class="jarviswidget-ctrls jarviswidget-color-darken" role="menu">
+            <!-- <a id="search" href="javascript:void(0);" class="button-icon">
+                       <i class="fa fa-search"></i>
+                      </a> -->
+          </div>
+          <ul id="widget-tab" class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#by-machine">
+                <i class="fa fa-lg icon-warning-sign"></i> 依机台统计
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#by-code">
+                <i class="fa fa-lg icon-warning-sign"></i> 依警报统计
+              </a>
+            </li>
+          </ul>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <div class="tab-pane fade in active" id="by-machine">
+              <!-- <div id="by-machine-chart"></div> -->
+            </div>
+            <div class="tab-pane fade" id="by-code">
+              <!-- <div id="by-code-chart"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<style>
+  #by-machine,
+  #by-code {
+    display: block;
+    visibility: hidden;
+    height: 0;
+  }
+
+  #by-machine.active,
+  #by-code.active {
+    height: 100%;
+    visibility: visible;
+  }
+
+  .flot-x-axis > div {
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    /* IE 9 */
+    -moz-transform: rotate(-30deg);
+    /* Firefox */
+    -webkit-transform: rotate(-30deg);
+    /* Safari and Chrome */
+    -o-transform: rotate(-30deg);
+    /* Opera */
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

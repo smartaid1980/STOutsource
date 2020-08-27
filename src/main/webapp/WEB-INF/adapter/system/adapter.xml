@@ -1,0 +1,154 @@
+<ClosedTalk>
+	<Version>1.0</Version>
+	<!-- 發那科 i-series with Ethernet -->
+	<Register>
+		<Device>
+			<ID>FANUC</ID>
+			<Driver>
+				<File>.\CustomDrivers\FocasLib.dll</File>
+				<AssemblyName>FocasLib.FOCASDriver</AssemblyName>
+				<Parameters>
+					<Parameter name="IP" value="192.168.1.202"/>
+					<Parameter name="PORT" value="8193"/>
+					<Parameter name="SCAN" value ="true" readonly="true"/>
+				</Parameters>
+			</Driver>
+		</Device>
+		<Groups>
+			<Group>CNC</Group>
+		</Groups>
+	</Register>
+	<!-- 三菱 M70/M70 -->
+	<!-- MitsubishiDriver -->
+	<!-- SYSTEM_TYPE: 5-M700L, 6-M700M,, 8-M800L, 9-M800M; L-車床, M-銑床 -->
+	<!-- MACHINE_NO: 1~255 -->
+	<Register>
+		<Device>
+			<ID>Mitsubishi</ID>
+			<Driver>
+				<File>.\CustomDrivers\MitsubishiDriver.dll</File>
+				<AssemblyName>Mitsubishi.MitsubishiDriver</AssemblyName>
+				<Parameters>
+					<Parameter name="IP" value="192.168.130.170"/>
+					<Parameter name="PORT" value="683"/>
+					<Parameter name="SYSTEM_TYPE" value="6"/>
+					<Parameter name="MACHINE_NO" value="1"/>
+					<Parameter name="TIMEOUT_100MS" value="100"/>
+				</Parameters>
+			</Driver>
+		</Device>
+		<Groups>
+			<Group>CNC</Group>
+		</Groups>
+    </Register>
+	<!-- 海德漢 iTNC530 -->
+	<Register>
+		<Device>
+			<ID>Heidenhain</ID>
+			<Driver>
+				<File>.\CustomDrivers\ITNCAdapter.dll</File>
+				<AssemblyName>ITNCAdapter.ITNCAdapter</AssemblyName>
+				<Parameters>
+					<Parameter name="NAME" value ="ITNC530"/>
+					<Parameter name="IP" value ="192.168.20.31"/>
+				</Parameters>
+			</Driver>
+		</Device>
+		<Groups>
+			<Group>CNC</Group>
+		</Groups>
+	</Register>
+	<!-- 西門子 840D SL With RPC -->
+	<Register>
+		<Device>
+			<ID>Siemens</ID>
+			<Driver>
+				<File>.\CustomDrivers\SiemensDriver.dll</File>
+				<AssemblyName>Siemens.SiemensDriver</AssemblyName>
+				<Parameters>
+					<Parameter name="HOST_ID" value="H1"/>
+					<Parameter name="HOST_PORT" value="3010"/>
+					<Parameter name="MACHINE_ID" value ="SL_M1"/>
+					<Parameter name="MACHINE_IP" value ="192.168.20.41"/>
+					<Parameter name="MACHINE_PORT" value ="3011"/>
+					<Parameter name="MACHINE_TIMEOUT" value ="5"/>
+				</Parameters>
+			</Driver>
+		</Device>
+		<Groups>
+			<Group>CNC</Group>
+		</Groups>
+	</Register>
+	<!-- 新代 WinCE series -->
+	<Register>
+		<Device>
+			<ID>SYNTEC</ID>
+			<Driver>
+				<File>.\CustomDrivers\SyntecDriver.dll</File>
+				<AssemblyName>Syntec.SyntecDriver</AssemblyName>
+				<Parameters>
+					<Parameter name="IP" value="192.168.20.51"/>
+					<Parameter name="SCAN" value ="true" readonly="true"/>
+				</Parameters>
+			</Driver>
+		</Device>
+		<Groups>
+			<Group>SYNTEC</Group>
+		</Groups>
+	</Register>
+	<!-- 寶元 LNC6000 -->
+	<Register>
+		<Device>
+			<ID>LNC</ID>
+			<Driver>
+				<File>.\CustomDrivers\LNCDriver.dll</File>
+				<AssemblyName>LNCController.LNCDriver</AssemblyName>
+				<Parameters>
+					<Parameter name="IP" value="192.168.20.61"/>
+					<Parameter name="SOFTWARE_TYPE" value ="2"/>
+					<Parameter name="TALKINFO_NUM" value ="2"/>
+					<Parameter name="MAKER_ID" value ="88606267"/>
+					<Parameter name="ENCSTRING" value ="7CF0F0C1A0BBD8862D8AFFA08D9C2815D6928BF20F58107F"/>
+					<Parameter name="SERVER_IDX" value ="0"/>
+				</Parameters>
+			</Driver>
+		</Device>
+		<Groups>
+			<Group>CNC</Group>
+		</Groups>
+	</Register>
+	<!-- 捷準  -->
+	<Register>
+		<Device>
+			<ID>HURCO</ID>
+			<Driver>
+			<File>.\CustomDrivers\HurcoDriver.dll</File>
+			<AssemblyName>HurcoController.HurcoDriver</AssemblyName>
+			<Parameters>
+				<Parameter name="IP" value="192.168.20.71"/>
+				<Parameter name="PORT" value="502"/>
+			</Parameters>
+			</Driver>
+		</Device>
+		<Groups>
+			<Group>CNC</Group>
+		</Groups>
+	</Register>
+	<!-- 智研  -->
+	<Register>
+		<Device>
+			<ID>INTEK</ID>
+			<Driver>
+			<File>.\CustomDrivers\INTEKDriver.dll</File>
+			<AssemblyName>INTEKDriver.INTEK</AssemblyName>
+			<Parameters>
+				<Parameter name="IP" value="192.168.20.81"/>
+				<Parameter name="PORT" value="50000"/>
+			</Parameters>
+			</Driver>
+		</Device>
+		<Groups>
+			<Group>CNC</Group>
+		</Groups>
+	</Register>
+</ClosedTalk>

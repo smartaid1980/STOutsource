@@ -1,0 +1,356 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Choose_Warehouse}</h2>
+          <div class="widget-toolbar">
+            <span class="onoffswitch-title">{i18n_ServCloud_Change_Freq}</span>
+            <span class="onoffswitch">
+              <input
+                class="form-control spinner spinner-right"
+                id="refresh-freq-spinner"
+                value="30"
+                type="text"
+                disabled
+              />
+            </span>
+          </div>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form id="query-form" class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label st-required"
+                      >{i18n_ServCloud_Warehouse}</label
+                    >
+                    <label class="input">
+                      <select
+                        id="ware-select"
+                        name="ware"
+                        class="form-control"
+                      ></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="query-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Start_Carousel}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <h2>{i18n_ServCloud_Closing_Manage}</h2>
+        </header>
+        <div>
+          <div class="widget-body">
+            <button
+              class="btn btn-default"
+              data-toggle="modal"
+              data-target="#close-modal"
+            >
+              {i18n_ServCloud_Closing_Document}
+            </button>
+            <p class="alarm">{i18n_ServCloud_Closing_Info}</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 hide">
+      <div
+        id="dashboard"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Dashboard}</h2>
+          <div class="jarviswidget-ctrls">
+            <a id="rotate-end" href="javascript:void(0);" class="button-icon">
+              <i class="fa fa-times"></i>
+            </a>
+          </div>
+        </header>
+        <div>
+          <div class="widget-body no-padding txt-sm">
+            <div>
+              <div class="info">
+                <div></div>
+                <div id="store" class="txt-md">
+                  {i18n_ServCloud_Warehouse}：<span></span>
+                </div>
+                <div id="update-time">
+                  {i18n_ServCloud_Last_Synchronization_Time}：<span>---</span>
+                </div>
+              </div>
+              <div id="title" class="txt-lg">
+                {i18n_ServCloud_Recruitment_Receipt}
+              </div>
+              <div id="table-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <div
+      class="modal fade"
+      id="close-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">{i18n_ServCloud_Closing_Document}</h4>
+          </div>
+          <div class="modal-body">
+            <h4 class="alarm">{i18n_ServCloud_Closing_Confirm}</h4>
+          </div>
+          <div class="modal-footer">
+            <button id="close-btn" class="btn btn-primary">
+              {i18n_ServCloud_Confirm}
+            </button>
+            <button class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_Cancel}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #jarviswidget-fullscreen-mode .jarviswidget > div {
+    overflow: hidden;
+  }
+
+  #jarviswidget-fullscreen-mode .jarviswidget .widget-body {
+    height: 101%;
+  }
+
+  #dashboard.jarviswidget .widget-body > div {
+    background: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    color: #e8e8e8;
+    padding: 1rem 0;
+  }
+
+  .txt-sm {
+    font-size: 2.2rem;
+  }
+
+  .txt-md {
+    font-size: 3.2rem;
+  }
+
+  .txt-lg {
+    font-size: 4rem;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+  }
+
+  .info > * {
+    flex-basis: 33.3%;
+  }
+
+  .alarm {
+    color: red;
+  }
+
+  p.alarm {
+    display: inline;
+  }
+
+  #store {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #update-time {
+    text-align: end;
+    padding-right: 1.2rem;
+  }
+
+  #title {
+    text-align: center;
+    font-weight: bold;
+    color: #ffa500;
+  }
+
+  /* 頻率設定 */
+  #refresh-freq-spinner {
+    padding-left: 5px;
+  }
+
+  #refresh-freq-spinner ~ a.ui-spinner-button {
+    line-height: 19px;
+    cursor: pointer;
+  }
+
+  span.ui-spinner.ui-widget.ui-widget-content.ui-corner-all {
+    margin-top: -9px;
+  }
+
+  /* table */
+  #table-container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #table-container > * {
+    flex-basis: 50%;
+    padding: 0.5rem 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #table-container > div > div {
+    flex-basis: 33.3%;
+  }
+
+  #table-container .table-title {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #table-container .table-records {
+    text-align: end;
+  }
+
+  #table-container table {
+    width: 100%;
+  }
+
+  #table-container thead {
+    background: #2361ff59;
+  }
+
+  #table-container th,
+  #table-container td {
+    padding: 0.8rem 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 30rem;
+  }
+
+  #overdue tbody,
+  #overdue .page:hover {
+    background: rgba(169, 3, 41, 0.6);
+  }
+
+  #overdue .page,
+  #overdue .page.disabled:hover {
+    background: rgba(169, 3, 41, 0.3);
+  }
+
+  #overdue .page.active {
+    background: rgba(169, 3, 41, 1);
+  }
+
+  #today tbody,
+  #today .page {
+    background: #2e8b5799;
+  }
+
+  #today .page.active {
+    background: #2e8b57;
+  }
+
+  #today .page:hover {
+    background: #2e8b57cc;
+  }
+
+  #today .page.disabled:hover {
+    background: #2e8b5799;
+  }
+
+  #today tbody,
+  #today .page:hover {
+    background: rgba(46, 139, 87, 0.6);
+  }
+
+  #today .page,
+  #today .page.disabled:hover {
+    background: rgba(46, 139, 87, 0.3);
+  }
+
+  #today .page.active {
+    background: rgba(46, 139, 87, 1);
+  }
+
+  #table-container .table-footer {
+    flex-basis: 100%;
+    text-align: end;
+  }
+
+  .pages {
+    display: inline-block;
+    padding: 0;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+  }
+
+  .page {
+    display: inline-flex;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    border: 0.1rem solid #cccccca6;
+  }
+
+  .page > a {
+    color: white;
+    padding: 0.1rem 0.7rem;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .disabled,
+  .disabled > a {
+    cursor: not-allowed;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,30 @@
+<record>
+    <params>
+        <param name="G_MSGH()" type="Array">
+            <contents>
+                <content fetchtime="20130626062959000" elapsed_sec="0.2915192">
+                    <values type="Array">
+                        <value fromType="STR" toType="STR">202013-06-06 14:31:00</value>
+                        <value fromType="STR" toType="STR">202013-06-06 14:31:03</value>
+                        <value fromType="STR" toType="STR">202013-06-06 14:31:05</value>
+                        <value fromType="STR" toType="STR">202013-06-10 10:17:34</value>
+                        <value fromType="STR" toType="STR">202013-06-10 10:17:34</value>
+                        <value fromType="STR" toType="STR">202013-06-10 10:17:35</value>
+                        <value fromType="STR" toType="STR">202013-06-26 10:44:16</value>
+                        <value fromType="STR" toType="STR">202013-06-26 10:44:17</value>
+                    </values>
+                    <values type="Array">
+                        <value fromType="DEC" toType="DEC">1501</value>
+                        <value fromType="DEC" toType="DEC">1503</value>
+                        <value fromType="DEC" toType="DEC">1505</value>
+                        <value fromType="DEC" toType="DEC">1503</value>
+                        <value fromType="DEC" toType="DEC">1500</value>
+                        <value fromType="DEC" toType="DEC">1501</value>
+                        <value fromType="DEC" toType="DEC">1500</value>
+                        <value fromType="DEC" toType="DEC">1501</value>
+                    </values>
+                </content>
+            </contents>
+        </param>
+    </params>
+</record>

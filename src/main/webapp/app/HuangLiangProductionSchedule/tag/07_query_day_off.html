@@ -1,0 +1,349 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        id="query-condition-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form
+              id="query-condition-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label st-required">起始日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="startDate"
+                          id="start-date"
+                          data-rule-required="true"
+                          data-rule-dateISO="true"
+                        />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label st-required">結束日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="endDate"
+                          id="end-date"
+                          data-rule-required="true"
+                          data-rule-dateISO="true"
+                        />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+      <!-- detail DATATABLE -->
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>查詢結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="query-result-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>休假日</th>
+                  <th>刪除</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+    <div
+      class="modal fade"
+      id="duplicate-day-off-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">新增重複天</h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <form
+              id="duplicate-day-off-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-6 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">班次起始日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="duplicate_start_Date"
+                          id="duplicate-start-date"
+                        />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-6 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">班次結束日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="duplicate_end_Date"
+                          id="duplicate-end-date"
+                        />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-12 col-md-12 col-sm-12">
+                    <section>
+                      <label class="label">休假日</label>
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input type="checkbox" name="day" value="1" />
+                          <i></i>一
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="day" value="2" />
+                          <i></i>二
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="day" value="3" />
+                          <i></i>三
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="day" value="4" />
+                          <i></i>四
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="day" value="5" />
+                          <i></i>五
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="day" value="6" />
+                          <i></i>六
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="day" value="7" />
+                          <i></i>日
+                        </label>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="save-duplicate-day-off-btn"
+            >
+              儲存
+            </button>
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              取消
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="affected-schedule-modal-widget"
+      tabindex="-1"
+      role="dialog"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">排程需要調整</h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <h4 class="font-md padding-bottom-10" style="font-weight: bold;">
+              以下日期已有預排或排程，若有需要調整，請至生產排程預排功能修改
+            </h4>
+            <table
+              id="affected-schedule-table"
+              class="table table-striped table-bordered"
+              width="100%"
+            >
+              <thead>
+                <th style="width: 40%;">日期</th>
+                <th style="width: 30%;">機台</th>
+                <th style="width: 30%;">生產指令</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              data-dismiss="modal"
+            >
+              確定
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="single-day-off-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">新增休假日</h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <form
+              id="single-day-off-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-12 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label st-required">休假日</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="required"
+                          id="insert-day-off-input"
+                          name="day_off"
+                        />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="save-single-day-off-btn"
+            >
+              儲存
+            </button>
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              取消
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ROW END -->
+</section>
+<style></style>
+<script>
+  window.importPageScript()
+</script>

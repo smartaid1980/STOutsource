@@ -1,0 +1,12 @@
+{
+  "rd": "strongled_rd",
+  "account": "strongled_account",
+  "procurement": "strongled_procurement",
+  "assistant": "strongled_assistant",
+  "financial": "strongled_financial",
+  "rdLeader": "strongled_rd_leader",
+  "presale": "strongled_presale",
+  "procLeader": "strongled_procurement_leader",
+  "finLeader": "strongled_financial_leader",
+  "accountAst": "strongled_account_assistant"
+}

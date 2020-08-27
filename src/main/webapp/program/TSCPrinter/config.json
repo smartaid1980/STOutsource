@@ -1,0 +1,5 @@
+{
+	"successOutPutPath" : "./print_success" ,
+	"failOutPutPath" : "./print_fail" ,
+	"inPutPath" : "./temp_code"
+}

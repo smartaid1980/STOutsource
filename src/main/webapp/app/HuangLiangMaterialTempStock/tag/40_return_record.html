@@ -1,0 +1,410 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      材料暫入
+      <span>
+        > 退料紀錄查詢
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="query"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-4">
+                    <section>
+                      <label class="label st-required">暫入上架起始日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="startDate" id="start-date" />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label st-required">暫入上架結束日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="endDate" id="end-date" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">退料起始日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="returnStartDate"
+                          id="return-start-date"
+                        />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">退料結束日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="returnEndDate"
+                          id="return-end-date"
+                        />
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">材料庫</label>
+                      <label class="select">
+                        <select id="mrp" name="mrp"></select>
+                        <i></i>
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">採購單號</label>
+                      <label class="input">
+                        <input type="text" name="po" id="po" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+                <button id="showdemo" class="btn btn-success hide">
+                  Demo
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- detail DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>查詢結果</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 9%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 9%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 9%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hide"></th>
+                </tr>
+                <tr>
+                  <th>退料時間</th>
+                  <th>退料原因</th>
+                  <th>材料庫</th>
+                  <th>採購單號</th>
+                  <th>廠商</th>
+                  <th>材料條碼</th>
+                  <th>材料外徑</th>
+                  <th>材料長度</th>
+                  <th>上漆顏色</th>
+                  <th>位置</th>
+                  <th>數量(KG)</th>
+                  <th>暫入上架日期</th>
+                  <th>暫入上架人員</th>
+                  <th class="hide">品名</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+<!-- modal dialog START -->
+<div
+  class="modal fade"
+  id=""
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="remoteModalLabel"
+  data-backdrop="false"
+  data-keyboard="true"
+  style="background-color: rgba(0, 0, 0, 0.5);"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg" style="width: fit-content;">
+    <div class="modal-content" id="repair-result-content" style="">
+      <div class="modal-header">
+        <h4 class="modal-title" style="float: left;">匯出退料單</h4>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="return-record-template" style="">
+          <section class="record-head" style="">
+            <h1 class="text-center">皇亮精密企業股份有限公司</h1>
+            <h1 class="text-center">進貨退出單</h1>
+            <div class="row">
+              <div class="col-sm-8">
+                廠商名稱：（H001） 皇亮精密企業股份有限公司（製一、二課）
+              </div>
+              <div class="col-sm-4">
+                單據日期：<span class="record-date"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">電話：07-6166666</div>
+              <div class="col-sm-4">
+                單據編號：<span class="record-id"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">傳真：07-6168655</div>
+              <div class="col-sm-6">倉號：（ ）總倉</div>
+            </div>
+          </section>
+          <section class="record-body" style="">
+            <div class="" style="">
+              <div
+                class="text-center"
+                style="width: 25%; text-indent: 15px; letter-spacing: 15px;"
+              >
+                採購單編號
+              </div>
+              <div
+                class="text-center"
+                style="width: 25%; text-indent: 18px; letter-spacing: 18px;"
+              >
+                物品編號
+              </div>
+              <div
+                class="text-center"
+                style="width: 27%; text-indent: 50px; letter-spacing: 50px;"
+              >
+                品名
+              </div>
+              <div
+                class="text-center"
+                style="width: 13%; text-indent: 10px; letter-spacing: 10px;"
+              >
+                數量
+              </div>
+              <div
+                class="text-center"
+                style="width: 10%; text-indent: 8px; letter-spacing: 8px;"
+              >
+                單位
+              </div>
+            </div>
+            <div class="" style="">
+              <div class="text-center po-id" style="width: 25%;"></div>
+              <div class="text-center mat-id" style="width: 25%;"></div>
+              <div class="text-center mat-name" style="width: 27%;"></div>
+              <div class="text-center return-qty" style="width: 13%;"></div>
+              <div class="text-center" style="width: 10%; float: right;">
+                公斤
+              </div>
+            </div>
+          </section>
+          <section class="record-foot" style="height: 4.5cm;">
+            <div class="row">
+              <div class="col-sm-2">備註：</div>
+              <div class="col-sm-10">
+                <div class="row">
+                  1. 當月補進可不扣當月帳款，若隔月補進請依正常流程進貨請款
+                </div>
+                <div class="row">
+                  2. 退貨補入請填寫單據編號例：［1000101001B］退貨單右上角處
+                </div>
+              </div>
+            </div>
+            <div class="" style="">
+              <div class="" style="width: 18%; display: inline-block;">
+                主管：蘇靜雯
+              </div>
+              <div class="" style="width: 18%; display: inline-block;">
+                品管：林忠慶
+              </div>
+              <div class="" style="width: 27%; display: inline-block;">
+                廠商回簽：
+              </div>
+              <div class="" style="width: 18%; display: inline-block;">
+                經辦
+              </div>
+              <div class="" style="width: 13%; display: inline-block;">
+                品管量測
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="progress">
+          <div class="progress-bar bg-color-blue"></div>
+        </div>
+        <!-- <button class="btn btn-warning">取消</button>
+        <button class="btn btn-primary">退料</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal dialog END -->
+<style>
+  .return-record-template {
+    /* width: 595px;
+    height: 421px; */
+    border: 1px solid black;
+    font-size: 16px;
+    height: 13cm;
+    width: 20cm;
+    font-family: '細明體';
+    /* position: absolute;
+    top: -15cm;
+    left: -21cm; */
+  }
+  .record-head {
+    height: 5cm;
+    overflow: hidden;
+    padding: 13px 13px;
+  }
+  .record-head h1:nth-child(2) {
+    text-decoration: underline;
+  }
+  .record-body {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 3.5cm;
+    padding: 13px 0;
+  }
+  .record-body div:first-child div {
+    /* text-decoration: underline; */
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+  }
+  .record-body div:first-child div::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid black;
+  }
+  .record-body div div {
+    float: left;
+  }
+  .record-foot {
+    box-sizing: border-box;
+    height: 4.5cm;
+    padding: 13px 13px;
+  }
+  .record-foot > div:nth-child(2) {
+    padding: 50px 0;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

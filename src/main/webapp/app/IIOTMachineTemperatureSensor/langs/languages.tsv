@@ -1,0 +1,34 @@
+	zh_tw	zh	en
+i18n_ServCloud_ProcessParam	過程參數	过程参数	Process Param
+i18n_ServCloud_Cnc_Param	機台參數	机台参数	Machine Cnc Param
+i18n_ServCloud_Power_Param	機台總用電	机台总用电	Machine Electricity Param
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Query	查詢	查询	Query
+i18n_ServCloud_Start_Date	開始時間	开始时间	Start Time
+i18n_ServCloud_End_Date	結束時間	结束时间	End Time
+i18n_ServCloud_Submit	提交	提交	Submit
+i18n_ServCloud_Demo	顯示Demo資料	显示Demo资料	Show Demo Data
+i18n_ServCloud_Param_Curve	機台過程參數曲線	机台过程参数曲线	Machine Param Curve
+i18n_ServCloud_Table	過程參數表格	过程参数表格	Process Param Table
+i18n_ServCloud_Number	序號	序号	Index
+i18n_ServCloud_Time	時間	时间	Time
+i18n_ServCloud_G_VAVG	平均電壓	平均电压	Average Voltage
+i18n_ServCloud_G_IAVG	平均電流	平均电流	Average Current
+i18n_ServCloud_G_KWTL	總實功率(瓦特)	总实功率(瓦特)	Total Real Power (W)
+i18n_ServCloud_G_VART	總虛功率(乏)	总虚功率(乏)	Total Reactive Power (VAR)
+i18n_ServCloud_G_VATL	視在功率(伏安)	视在功率(伏安)	Apparent Power (VA)
+i18n_ServCloud_G_PFAV	平均功因	平均功因	Average Power Factor
+i18n_ServCloud_G_VBAV	平均電壓(相電壓)	平均电压(相电压)	Average Voltage (Phase Voltage)
+i18n_ServCloud_G_KWHP	總瓦時+	总瓦时+	Total Watt-Hour+
+i18n_ServCloud_G_KWHM	總瓦時- (Wh-)	总瓦时- (Wh-)	Total Watt-Hour- (Wh-)
+i18n_ServCloud_G_VRHP	總乏時+ (Wh+)	总乏时+ (Wh+)	Total Varhour+ (Wh+)
+i18n_ServCloud_G_VRHM	總乏時- (Wh-)	总乏时- (Wh-)	Total Varhour- (Wh-)
+i18n_ServCloud_G_KVAH	總伏安時 (伏安小時)	总伏安时 (伏安小时)	Total Volt Ampere Hour (volt-ampere-hour)
+i18n_ServCloud_G_SPMC	主軸負載	主轴负载	Spindle Current
+i18n_ServCloud_G_ACTS	主軸實際轉速	主轴实际转速	Actual Spindle Speed
+i18n_ServCloud_G_SPMS	主軸命令轉速	主轴命令转速	Command Spindle Speed
+i18n_ServCloud_G_SPSO	主軸轉速百分比	主轴转速百分比	Spindle Speed Adjustment
+i18n_ServCloud_G_ACTF	實際進給率	实际进给率	Actual Axis Feedrate
+i18n_ServCloud_G_CMDF	命令進給率	命令进给率	Command Axis Feedrate
+i18n_ServCloud_G_FERP	進給率百分比	进给率百分比	Feedrate Adjustment
+i18n_ServCloud_Param_Process_Hint	檢視加工過程中主軸負載與機台總耗電量的關連	检视加工过程中主轴负载与机台总耗电量的关连	Review the connection of machine spindle load and total power consumption during processing.

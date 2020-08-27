@@ -1,0 +1,25 @@
+	zh_tw	zh	en
+i18n_ServCloud_Query_Condition	查詢	查询	Query Condition
+i18n_ServCloud_Clean	清除	清除	Clean
+i18n_ServCloud_Submit	查詢	查询	Submit
+i18n_ServCloud_Query_Result	查詢結果	查询结果	Query Result
+
+i18n_ServCloud_Initial_Date	建立起始日期	建立起始日期	Initial Date
+i18n_ServCloud_End_Date	建立結束日期	建立结束日期	End Date
+i18n_ServCloud_Tool_Number	刀具品號	刀具品号	Tool Number
+i18n_ServCloud_Tool_Type	刀具類型	刀具类型	Tool Type
+i18n_ServCloud_Start_To_Enable	啟用	启用	Start To Enable
+i18n_ServCloud_Please_select_one	是或否選項請擇一選取	是或否选项请择一选取	Please select one
+i18n_ServCloud_Yes	是	是	Yes
+i18n_ServCloud_No	否	否	No
+i18n_ServCloud_Tool_Management	管理刀具	管理刀具	Tool Management
+i18n_ServCloud_Tool_Assign_Code	刀具編號	刀具编号	Tool Assign Code
+i18n_ServCloud_Tool_Number	刀具品號	刀具品号	Tool Number
+i18n_ServCloud_Tool_Diameter	刀具直徑	刀具直径	Tool Diameter
+i18n_ServCloud_Life_Of_Tool_Usage(hrs)	使用壽命(小時)	使用寿命(小时)	Life Of Tool Usage(hrs)
+i18n_ServCloud_Alarm_Of_Tool_Usage(hrs)	警示剩餘壽命(小時)	警示剩余寿命(小时)	Alarm Of Tool Usage(hrs)
+i18n_ServCloud_Cutting_Time(hh:mm:ss)	實際總加工時間(時:分:秒)	实际总加工时间(时:分:秒)	Cutting Time(hh:mm:ss)
+i18n_ServCloud_Set_Up_Time	建立時間	建立时间	Set Up Time
+i18n_ServCloud_Tool_Status	刀具狀態	刀具状态	Tool Status
+i18n_ServCloud_Setting	設定	设定	Setting
+i18n_ServCloud_Batch_Archiving	批次建檔	批次建档	Batch Archiving

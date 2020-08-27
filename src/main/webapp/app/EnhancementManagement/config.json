@@ -1,0 +1,36 @@
+{
+  "app": {
+    "id": "EnhancementManager",
+    "name": "EnhancementManager",
+    "type": 1,
+    "description": "EnhancementManagement.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_machine_management",
+      "name": "10 機台管理"
+    },
+    {
+      "id": "20_process_management",
+      "name": "20 製程管理"
+    },
+    {
+      "id": "21_process_ng_management",
+      "name": "21 製程不良管理"
+    },
+    {
+      "id": "30_product_management",
+      "name": "30 產品管理"
+    },
+    {
+      "id": "31_product_op_management",
+      "name": "31 產品工序管理"
+    },
+    {
+      "id": "40_idle_reason_management",
+      "name": "40 閒置原因管理"
+    }
+  ],
+  "tags": ["20140918000999"]
+}

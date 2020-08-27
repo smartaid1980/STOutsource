@@ -1,0 +1,384 @@
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon">
+            <i class="fa fa-clock-o"></i>
+          </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Shift}</h2>
+          </span>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="stk-work-shift-table"
+              stk-entity-pk="id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 35%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Name}</th>
+                  <th data-hide="phone,tablet">{i18n_ServCloud_Description}</th>
+                  <th data-hide="phone,tablet">{i18n_ServCloud_Type}</th>
+                  <th data-hide="phone,tablet">{i18n_ServCloud_Week_Date}</th>
+                  <th>{i18n_ServCloud_Shift_Time}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="group_name"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Name}"
+                    />
+                  </td>
+                  <td>
+                    <textarea
+                      name="description"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Description}"
+                    ></textarea>
+                  </td>
+                  <td>
+                    <div>
+                      <label class="radio">
+                        <input
+                          type="radio"
+                          name="type"
+                          value="weekday"
+                          checked=""
+                        />
+                        <i></i>{i18n_ServCloud_Week}</label
+                      >
+                      <label class="radio">
+                        <input type="radio" name="type" value="date" />
+                        <i></i>{i18n_ServCloud_Date}</label
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <div class="weekday-type">
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="work_shift_childs"
+                            value="0"
+                          />
+                          <i></i>{i18n_ServCloud_Sunday}</label
+                        >
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="work_shift_childs"
+                            value="1"
+                          />
+                          <i></i>{i18n_ServCloud_Monday}</label
+                        >
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="work_shift_childs"
+                            value="2"
+                          />
+                          <i></i>{i18n_ServCloud_Tuesday}</label
+                        >
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="work_shift_childs"
+                            value="3"
+                          />
+                          <i></i>{i18n_ServCloud_Wednesday}</label
+                        >
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="work_shift_childs"
+                            value="4"
+                          />
+                          <i></i>{i18n_ServCloud_Thursday}</label
+                        >
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="work_shift_childs"
+                            value="5"
+                          />
+                          <i></i>{i18n_ServCloud_Friday}</label
+                        >
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="work_shift_childs"
+                            value="6"
+                          />
+                          <i></i>{i18n_ServCloud_Saturday}</label
+                        >
+                      </div>
+                      <div class="date-type" hidden>
+                        <div
+                          class="input-group"
+                          style="position: relative; margin: 10px 0;"
+                        >
+                          <i
+                            class="fa fa-lg fa-times-circle-o"
+                            style="
+                              position: absolute;
+                              top: -5px;
+                              left: -5px;
+                              z-index: 3;
+                              display: none;
+                            "
+                          ></i>
+                          <input
+                            class="form-control datepicker"
+                            type="text"
+                            placeholder="{i18n_ServCloud_Date}"
+                          />
+                          <span class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                          </span>
+                        </div>
+
+                        <div
+                          class="input-group"
+                          style="position: relative; margin: 10px 0;"
+                        >
+                          <i
+                            class="fa fa-lg fa-times-circle-o"
+                            style="
+                              position: absolute;
+                              top: -5px;
+                              left: -5px;
+                              z-index: 3;
+                              display: none;
+                            "
+                          ></i>
+                          <input
+                            class="form-control datepicker"
+                            type="text"
+                            placeholder="{i18n_ServCloud_Date}"
+                          />
+                          <span class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div name="work_shift_times">
+                      <div
+                        class="inline-group"
+                        style="position: relative; margin: 15px 0 10px 15px;"
+                      >
+                        <i
+                          class="fa fa-lg fa-times-circle-o"
+                          style="
+                            position: absolute;
+                            top: -5px;
+                            left: -5px;
+                            z-index: 3;
+                            display: none;
+                          "
+                        ></i>
+
+                        <div class="input-group" style="display: table;">
+                          <span
+                            class="badge inbox-badge"
+                            style="position: absolute; top: -5px; right: -20px;"
+                            >1</span
+                          >
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="{i18n_ServCloud_Shift_Name}"
+                          />
+                          <span class="input-group-addon">
+                            <i class="fa fa-bookmark-o"></i>
+                          </span>
+                        </div>
+                        <div class="input-group" style="display: table;">
+                          <input
+                            class="form-control clockpicker"
+                            type="text"
+                            placeholder="{i18n_ServCloud_Start_Time}"
+                            data-autoclose="true"
+                          />
+                          <span class="input-group-addon">
+                            <i class="fa fa-clock-o"></i>
+                          </span>
+                        </div>
+                        <div class="input-group" style="display: table;">
+                          <input
+                            class="form-control clockpicker"
+                            type="text"
+                            placeholder="{i18n_ServCloud_End_Time}"
+                            data-autoclose="true"
+                          />
+                          <span class="input-group-addon">
+                            <i class="fa fa-clock-o"></i>
+                          </span>
+                        </div>
+
+                        <div class="input-group" style="display: table;">
+                          <span class="onoffswitch">
+                            <input
+                              type="checkbox"
+                              name="is_open"
+                              class="onoffswitch-checkbox"
+                              checked="checked"
+                              id="isopen-onoffswitch-1"
+                            />
+                            <label
+                              class="onoffswitch-label"
+                              for="isopen-onoffswitch-1"
+                            >
+                              <span
+                                class="onoffswitch-inner"
+                                data-swchon-text="ON"
+                                data-swchoff-text="OFF"
+                              ></span>
+                              <span class="onoffswitch-switch"></span>
+                            </label>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div
+                        class="inline-group"
+                        style="position: relative; margin: 15px 0 10px 15px;"
+                      >
+                        <i
+                          class="fa fa-lg fa-times-circle-o"
+                          style="
+                            position: absolute;
+                            top: -5px;
+                            left: -5px;
+                            z-index: 3;
+                            display: none;
+                          "
+                        ></i>
+
+                        <div class="input-group" style="display: table;">
+                          <span
+                            class="badge inbox-badge"
+                            style="position: absolute; top: -5px; right: -20px;"
+                            >2</span
+                          >
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="{i18n_ServCloud_Shift_Name}"
+                          />
+                          <span class="input-group-addon">
+                            <i class="fa fa-bookmark-o"></i>
+                          </span>
+                        </div>
+                        <div class="input-group" style="display: table;">
+                          <input
+                            class="form-control clockpicker"
+                            type="text"
+                            placeholder="{i18n_ServCloud_Start_Time}"
+                            data-autoclose="true"
+                          />
+                          <span class="input-group-addon">
+                            <i class="fa fa-clock-o"></i>
+                          </span>
+                        </div>
+                        <div class="input-group" style="display: table;">
+                          <input
+                            class="form-control clockpicker"
+                            type="text"
+                            placeholder="{i18n_ServCloud_End_Time}"
+                            data-autoclose="true"
+                          />
+                          <span class="input-group-addon">
+                            <i class="fa fa-clock-o"></i>
+                          </span>
+                        </div>
+                        <div class="input-group" style="display: table;">
+                          <span class="onoffswitch">
+                            <input
+                              type="checkbox"
+                              name="is_open"
+                              class="onoffswitch-checkbox"
+                              checked="checked"
+                              id="isopen-onoffswitch-2"
+                            />
+                            <label
+                              class="onoffswitch-label"
+                              for="isopen-onoffswitch-2"
+                            >
+                              <span
+                                class="onoffswitch-inner"
+                                data-swchon-text="ON"
+                                data-swchoff-text="OFF"
+                              ></span>
+                              <span class="onoffswitch-switch"></span>
+                            </label>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+
+<script>
+  window.importPageScript()
+</script>

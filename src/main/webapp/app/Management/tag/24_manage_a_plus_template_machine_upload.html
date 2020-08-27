@@ -1,0 +1,160 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      系統管理
+      <span>
+        > 預設機台參數上傳
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>上傳檔案</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-4">
+                    <label class="label">機台</label>
+                    <label class="select"
+                      ><i></i>
+                      <select id="machine" name="machine"></select>
+                    </label>
+                  </section>
+                  <section class="col col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <label class="label">請選擇檔案上傳：</label>
+                    <label for="file" class="input input-file">
+                      <div class="button">
+                        <input id="inputFile" type="file" name="inputFile" />
+                        選擇檔案
+                      </div>
+                      <input
+                        id="uploadFilePath"
+                        type="text"
+                        placeholder="Include file"
+                        readonly=""
+                      />
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢目前設定
+                </button>
+                <button id="upload-btn" class="btn btn-success">
+                  上傳檔案
+                </button>
+                <!--<button id="showdemo" class="btn btn-success">
+                                  顯示Demo資料
+                                </button>-->
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- day DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="detail-table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>設定檔<span id="machine-setting-name"></span></h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="crud-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            ></table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- day DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+
+    <!-- 刪除用的Modal -->
+    <div id="crud-table-modal-delete" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content delete-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h4 class="modal-title">
+              <i class="fa fa-warning"></i>
+              <span class="">Are you sure to delete selected items?</span>
+            </h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <button
+              id="crud-table-modal-delete-submit"
+              type="button"
+              class="btn btn-danger"
+            >
+              <i class="fa fa-trash-o"></i>
+            </button>
+            <!-- 確認刪除按鈕 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

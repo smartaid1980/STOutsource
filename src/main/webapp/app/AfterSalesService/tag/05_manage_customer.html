@@ -1,0 +1,324 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cloud"></i>
+      {i18n_ServCloud_After_Sales_Service}
+      <span>
+        > {i18n_ServCloud_05_Manage_Customer}
+      </span>
+    </h1>
+  </div>
+</div>
+<!--Section START-->
+<section id="widget-grid" class="">
+  <!--Div row START-->
+  <div class="row">
+    <!--widget Strat-->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-blueDark"
+        id="stk-customer-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <!--Attribute Tag Title Start-->
+        <header>
+          <span class="widget-icon"> <i class="fa fa-cloud-upload"></i> </span>
+          <h2>{i18n_ServCloud_Manage_Customer}</h2>
+          <!--Attribute Tag Title End-->
+        </header>
+        <!--Area Tag End-->
+        <!--Area Tag Div Start-->
+        <div>
+          <!--Trade Tag  Table Start-->
+          <div class="widget-body">
+            <!--   <iframe id="txtArea1" style="display:none"></iframe>
+                    <button id="btnExport" align="rigth"> EXPORT </button> -->
+            <div class="table-responsive">
+              <table
+                id="crud-table"
+                class="table table-striped table-bordered table-hover"
+              ></table>
+              <!-- 長datatables -->
+            </div>
+            <!--Area Tag Table End-->
+          </div>
+          <!--Area Tag Div End-->
+        </div>
+      </div>
+      <!--widget END-->
+    </article>
+    <!--Div row END-->
+  </div>
+  <!--Section END-->
+  <div id="crud-table-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <form id="crud-table-form" class="smart-form client-form">
+          <span id="update-row-index" style="display: none;"></span>
+          <header>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <!-- 關閉 modal 按鈕 -->
+            <h4 id="crud-table-form-header" class="modal-title"></h4>
+            <!-- header: 新增或編輯 -->
+          </header>
+          <fieldset>
+            <section>
+              <label class="label">客戶代碼</label>
+              <label class="input">
+                <input
+                  id="cus_id"
+                  class="form-control"
+                  type="text"
+                  name="cus_id"
+                  placeholder="客戶代碼"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">客戶名稱</label>
+              <label class="input">
+                <input
+                  id="cus_name"
+                  class="form-control"
+                  type="text"
+                  name="cus_name"
+                  placeholder="客戶名稱"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">統一編號</label>
+              <label class="input">
+                <input
+                  id="uni_no"
+                  class="form-control"
+                  type="text"
+                  name="cus_name"
+                  placeholder="統一編號"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">行業別</label>
+              <select id="trade_id" class="select2" name="trade_id"></select>
+            </section>
+            <section>
+              <label class="label">地區代碼</label>
+              <select id="area_id" class="select2" name="area_id"></select>
+            </section>
+            <section>
+              <label class="label">電話</label>
+              <label class="input">
+                <input
+                  id="phone"
+                  class="form-control"
+                  type="text"
+                  name="phone"
+                  placeholder="電話"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">傳真</label>
+              <label class="input">
+                <input
+                  id="fax"
+                  class="form-control"
+                  type="text"
+                  name="fax"
+                  placeholder="傳真"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">地址</label>
+              <label class="input">
+                <input
+                  id="address"
+                  class="form-control"
+                  type="text"
+                  name="address"
+                  placeholder="地址"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">負責業務</label>
+              <label class="input">
+                <input
+                  id="sales_id"
+                  class="form-control"
+                  type="text"
+                  name="sales_id"
+                  placeholder="負責業務"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">負責代理商</label>
+              <select id="factor_id" class="select2" name="factor_id"></select>
+            </section>
+            <section>
+              <label class="label">累積未收款</label>
+              <label class="input">
+                <input
+                  id="payment_goods"
+                  class="form-control"
+                  type="text"
+                  name="payment_goods"
+                  placeholder="累積未收款"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">連絡人</label>
+              <label class="input">
+                <input
+                  id="contact_name"
+                  class="form-control"
+                  type="text"
+                  name="contact_name"
+                  placeholder="連絡人"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">連絡人分機</label>
+              <label class="input">
+                <input
+                  id="ext_phone"
+                  class="form-control"
+                  type="text"
+                  name="ext_phone"
+                  placeholder="連絡人分機"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">連絡人手機</label>
+              <label class="input">
+                <input
+                  id="cell_phone"
+                  class="form-control"
+                  type="text"
+                  name="cell_phone"
+                  placeholder="連絡人手機"
+                />
+              </label>
+            </section>
+            <section>
+              <label class="label">連絡人e-mail</label>
+              <label class="input">
+                <input
+                  id="email"
+                  class="form-control"
+                  type="text"
+                  name="email"
+                  placeholder="連絡人e-mail"
+                />
+              </label>
+            </section>
+          </fieldset>
+          <footer>
+            <button
+              id="crud-table-submit"
+              type="submit"
+              class="btn btn-success"
+            >
+              <i class="fa fa-save"></i>
+            </button>
+            <!-- type="submit" 會觸發驗證 -->
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <!-- type="button" 不會觸發驗證 -->
+          </footer>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--==================== Details Modal END ====================-->
+
+  <!-- 刪除用的Modal -->
+  <div id="crud-table-modal-delete" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content delete-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <h4 class="modal-title">
+            <i class="fa fa-warning"></i> Are you sure to delete selected items?
+          </h4>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            <i class="fa fa-times"></i>
+          </button>
+          <button
+            id="crud-table-modal-delete-submit"
+            type="button"
+            class="btn btn-danger"
+          >
+            <i class="fa fa-trash-o"></i>
+          </button>
+          <!-- 確認刪除按鈕 -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="checkModal"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+    data-backdrop="false"
+    data-keyboard="true"
+    style="background-color: rgba(0, 0, 0, 0.5);"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true"
+          >
+            &times;
+          </button>
+          <input
+            id="modalTitle"
+            type="text"
+            placeholder="提示&hellip;"
+            class="modal-title"
+          />
+          <label id="modalTag" style="display: none;"></label>
+        </div>
+        <div class="modal-body">
+          客戶代碼為索引,不得重覆...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">OK</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+</section>
+<script>
+  window.importPageScript()
+</script>

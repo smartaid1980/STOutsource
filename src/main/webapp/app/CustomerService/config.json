@@ -1,0 +1,24 @@
+{
+  "app": {
+    "id": "CustomerService",
+    "name": "i18n_ServCloud_Customer_Service",
+    "type": 1,
+    "description": "Provide agent information for customer service.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_agent_info",
+      "name": "i18n_ServCloud_01_agent_info"
+    },
+    {
+      "id": "02_license_update",
+      "name": "i18n_ServCloud_02_license_update"
+    },
+    {
+      "id": "30_log_download",
+      "name": "i18n_ServCloud_30_Log_Download"
+    }
+  ],
+  "tags": ["20140918000999"]
+}

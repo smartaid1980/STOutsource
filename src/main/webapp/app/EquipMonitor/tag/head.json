@@ -1,0 +1,12 @@
+[
+  {
+    "htmlName": "01_info",
+    "functionText": "{i18n_ServCloud_Dashboard}",
+    "iconClass": "fa fa-list-alt fa-3x"
+  },
+  {
+    "htmlName": "11_leave",
+    "functionText": "{i18n_ServCloud_Leave}",
+    "iconClass": "fa fa-sign-out fa-3x"
+  }
+]

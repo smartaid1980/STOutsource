@@ -1,0 +1,152 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="device-watch-management-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>管理單位機台</h2>
+        </header>
+        <div id="update-enable-alarm-time"></div>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="machine_id"
+              id="device-watch-management"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 16%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 14%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 14%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 14%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 14%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 14%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 14%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>控制器廠牌</th>
+                  <th>機台名稱</th>
+                  <th>所屬單位</th>
+                  <th>是否開啟機台告警</th>
+                  <th>群組</th>
+                  <th>機器名稱</th>
+                  <th>所屬單位名稱</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="cnc_brand"
+                      type="text"
+                      class="form-control"
+                      placeholder="廠牌"
+                    />
+                  </td>
+                  <td>
+                    <select
+                      name="machine_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="m_device"
+                      stk-getdata-column-text="device_name"
+                      stk-getdata-column-value="device_id"
+                      stk-pk
+                    ></select>
+                  </td>
+                  <td>
+                    <select
+                      name="dept_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="a_iiot_dept"
+                      stk-getdata-column-text="dept_name"
+                      stk-getdata-column-value="dept_id"
+                      stk-getdata-where="is_open = 'Y'"
+                    ></select>
+                  </td>
+                  <td>
+                    <span>
+                      <span class="onoffswitch">
+                        <input
+                          type="checkbox"
+                          name="is_alarm_open"
+                          class="onoffswitch-checkbox"
+                          checked="checked"
+                          id="isopen-onoffswitch"
+                        />
+                        <label
+                          class="onoffswitch-label"
+                          for="isopen-onoffswitch"
+                        >
+                          <span
+                            class="onoffswitch-inner"
+                            data-swchon-text="ON"
+                            data-swchoff-text="OFF"
+                          ></span>
+                          <span class="onoffswitch-switch"></span
+                        ></label>
+                      </span>
+                    </span>
+                  </td>
+                  <td>
+                    <input
+                      name="group_id"
+                      type="text"
+                      class="form-control"
+                      placeholder="群組"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="machine_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="機器名稱"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="dept_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="所屬單位名稱"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

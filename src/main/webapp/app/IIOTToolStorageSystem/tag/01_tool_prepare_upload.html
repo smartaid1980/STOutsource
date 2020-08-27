@@ -1,0 +1,160 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>自動化線刀具櫃儲位狀態</h2>
+          <ul id="shelf" class="nav nav-tabs pull-right in">
+            <li class="active">
+              <a data-shelf="C" href="javascript:void(0)">C櫃</a>
+            </li>
+            <li>
+              <a data-shelf="D" href="javascript:void(0)">D櫃</a>
+            </li>
+            <li>
+              <a data-shelf="E" href="javascript:void(0)">E櫃</a>
+            </li>
+          </ul>
+        </header>
+        <div>
+          <div class="widget-body">
+            <button class="btn btn-primary refresh-btn" title="Refresh">
+              <span class="fa fa-refresh fa-lg"></span>
+            </button>
+            <p>查詢時間：<span id="refresh-time"></span></p>
+            <table id="status-table" class="table"></table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <div
+      class="modal fade"
+      id="prep-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">加工程式：<span id="nc_name"></span></h4>
+          </div>
+          <div class="modal-body">
+            <div
+              id="prep-table-widget"
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>備刀單紀錄</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding">
+                  <table
+                    id="prep-table"
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 33%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>加工程式名稱</th>
+                        <th>備刀單紀錄新增時間</th>
+                        <th>備刀單紀錄修改時間</th>
+                        <th>備刀單編號</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="confirm-btn" class="btn btn-primary">確認</button>
+            <button class="btn btn-default" data-dismiss="modal">取消</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #status-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  #status-table th,
+  #status-table td {
+    border: 1px solid #ccc;
+    height: 3.5vw;
+    vertical-align: middle;
+    text-align: center;
+    word-break: break-all;
+    white-space: initial;
+    padding: 5px;
+  }
+
+  #status-table th > div {
+    width: 5vw;
+    margin: auto;
+  }
+
+  #status-table tbody tr > td:nth-child(2) {
+    font-weight: bold;
+  }
+
+  .pos.empty {
+    background: #d3d3d380;
+    color: #c3c3c3;
+  }
+
+  .pos.full {
+    background: #2e8b5780;
+  }
+
+  .pos.full.tocheck {
+    color: red;
+  }
+
+  tr.clicked {
+    background-color: #ecf3f8 !important;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

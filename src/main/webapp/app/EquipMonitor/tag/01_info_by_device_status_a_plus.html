@@ -1,0 +1,168 @@
+<!-- <ul id="breadcrumb_table" class="breadcrumbDark"  collapse="#collapse_table">test</ul> -->
+<div class="row">
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span
+        >>
+        <span id="machine-id-head"></span>
+        > {i18n_ServCloud_Dashboard}
+      </span>
+    </h1>
+  </div>
+</div>
+
+<section id="widget-grid">
+  <a href="javascript: void(0)" id="leave-btn" class="btn btn-default"
+    ><i class="fa fa-mail-reply"></i>&nbsp; 回上一頁 </a
+  ><br /><br />
+
+  <div class="row">
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="false"
+        data-widget-colorbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header class="head">
+          <span class="widget-icon">
+            <i class="glyphicon glyphicon-stats"></i>
+          </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Dashboard}</h2></span
+          >
+        </header>
+        <div class="tab-pane fade active in padding-10 no-padding-bottom">
+          <div class="row no-space">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+              <span id="param1-title"></span>
+              <div id="param1" class="chart-large txt-color-blue"></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 show-stats">
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                  {i18n_ServCloud_Machine_Status} <br />
+                  <span id="status" class="badge">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </span>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                  <a
+                    href="javascript: void(0)"
+                    class="fa fa-bar-chart-o pull-right"
+                    id="link-chart2"
+                  ></a>
+                </div>
+                <div id="param2"></div>
+                <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                  <a
+                    href="javascript: void(0)"
+                    class="fa fa-bar-chart-o pull-right"
+                    id="link-chart3"
+                  ></a>
+                </div>
+                <div id="param3"></div>
+                <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                  <a
+                    href="javascript: void(0)"
+                    class="fa fa-bar-chart-o pull-right"
+                    id="link-chart4"
+                  ></a>
+                </div>
+                <div id="param4"></div>
+                <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                  <a
+                    href="javascript: void(0)"
+                    class="fa fa-bar-chart-o pull-right"
+                    id="link-chart5"
+                  ></a>
+                </div>
+                <div id="param5"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="show-stat-microcharts">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a
+                href="javascript: void(0)"
+                class="fa fa-bar-chart-o pull-right"
+                id="link-chart6"
+              ></a>
+              <div id="param6"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a
+                href="javascript: void(0)"
+                class="fa fa-bar-chart-o pull-right"
+                id="link-chart7"
+              ></a>
+              <div id="param7"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a
+                href="javascript: void(0)"
+                class="fa fa-bar-chart-o pull-right"
+                id="link-chart8"
+              ></a>
+              <div id="param8"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a
+                href="javascript: void(0)"
+                class="fa fa-bar-chart-o pull-right"
+                id="link-chart9"
+              ></a>
+              <div id="param9"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget data-widget-collapsed jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="false"
+        data-widget-colorbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header class="head">
+          <span class="widget-icon">
+            <i class="glyphicon glyphicon-stats"></i>
+          </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Overall_Info}</h2></span
+          >
+        </header>
+        <div class="show-stat-microcharts no-padding" id="other"></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+  #monitor .head {
+    color: #aaa;
+  }
+  #monitor .value {
+    font-weight: bold;
+  }
+</style>
+
+<script type="text/javascript">
+  window.importPageScript()
+</script>

@@ -1,0 +1,83 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="doc-table-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Doc_Manage}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="doc_id"
+              id="doc-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 50%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Doc_Org_ID}</th>
+                  <th>{i18n_ServCloud_Doc_Name}</th>
+                  <th>{i18n_ServCloud_Doc_Desc}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="doc_org_id"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Doc_Org_ID}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="doc_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Doc_Name}"
+                    />
+                  </td>
+                  <td>
+                    <textarea
+                      name="doc_desc"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Doc_Desc}"
+                      cols="20"
+                      rows="5"
+                    ></textarea>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

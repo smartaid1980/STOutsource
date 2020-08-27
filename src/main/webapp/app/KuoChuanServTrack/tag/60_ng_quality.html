@@ -1,0 +1,195 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cloud"></i>
+      行動報工站
+      <span>
+        > 60_不良原因分析
+      </span>
+    </h1>
+  </div>
+</div>
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-blueDark"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form id="main-form" class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-4">
+                    <label class="label st-required">生產起始日期</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="startDate"
+                        name="startDate"
+                        data-rule-required="true"
+                        data-rule-dateISO="true"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label">產品類型</label>
+                    <label class="select">
+                      <select class="select2" id="product_type_id"></select>
+                    </label>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label st-required">製程</label>
+                    <label class="select">
+                      <select
+                        class="select2 full-width"
+                        id="process_code"
+                        name="process_code"
+                        data-rule-required="true"
+                      ></select>
+                    </label>
+                  </section>
+                </div>
+                <div class="row">
+                  <section class="col col-4">
+                    <label class="label st-required">生產結束日期</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="endDate"
+                        name="endDate"
+                        data-rule-required="true"
+                        data-rule-dateISO="true"
+                      />
+                    </label>
+                  </section>
+                </div>
+                <!-- end of row -->
+              </fieldset>
+              <footer>
+                <button name="submit-clean" class="btn btn-primary">
+                  清除
+                </button>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+          <h2>統計結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <div>
+              <h4 id="line-chart-ngquality-title" align="center"></h4>
+              <div id="line-chart-ngquality" class="chart"></div>
+              <h4 id="line-chart-ngquality-grid" align="center"></h4>
+            </div>
+          </div>
+          <!-- widget content end -->
+        </div>
+        <!--widget div end  -->
+      </div>
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+          <h2>統計結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <div>
+              <h4 id="line-chart-trackingng-title" align="center"></h4>
+              <div>
+                <div
+                  style="
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 5px;
+                  "
+                >
+                  數 <br />量
+                </div>
+                <div
+                  id="line-chart-trackingng"
+                  class="chart"
+                  style="
+                    text-align: center;
+                    width: 93%;
+                    display: inline-block;
+                    vertical-align: middle;
+                  "
+                ></div>
+                <div
+                  style="
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 5px;
+                  "
+                >
+                  累 <br />積 <br />百 <br />分 <br />比
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- widget content end -->
+        </div>
+        <!--widget div end  -->
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+<script type="text/javascript">
+  window.importPageScript()
+</script>

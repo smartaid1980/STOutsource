@@ -1,0 +1,22 @@
+CREATE TABLE  `servcloud`.`a_strongled_bill_stock_in` (
+  `bill_no` varchar(20) NOT NULL COMMENT '單號= BillNO',
+  `bill_date` varchar(8) NOT NULL COMMENT '單據日期= BillDate',
+  `bill_detail` int(10) unsigned NOT NULL COMMENT '明細分項= PRowNO',
+  `material_id` varchar(50) NOT NULL COMMENT '原料代碼= ProdID',
+  `material _sub` varchar(20) NOT NULL COMMENT '原料分項 無分項者：預設”0000”= BatchID',
+  `remark` varchar(200) DEFAULT NULL COMMENT '說明 = prodName，本案等同於產品名稱',
+  `ware_id` varchar(20) NOT NULL COMMENT '倉別= WareID',
+  `quantity` decimal(10,4) NOT NULL COMMENT '數量= PQuantity',
+  `delivery_date` varchar(8) NOT NULL COMMENT '出廠日期= ProduceDate',
+  `column_1` varchar(20) DEFAULT NULL COMMENT '預留欄位1',
+  `column_2` varchar(20) DEFAULT NULL COMMENT '預留欄位2',
+  `column_3` varchar(20) DEFAULT NULL COMMENT '預留欄位3',
+  `column_4` varchar(20) DEFAULT NULL COMMENT '預留欄位4',
+  `column_5` varchar(20) DEFAULT NULL COMMENT '預留欄位5',
+  `status` int(10) unsigned NOT NULL COMMENT '狀態 Default: 0，表示未生成條碼1，	已生成條碼未入庫9，	已入庫',
+  `create_by` varchar(20) NOT NULL COMMENT '建立者=userid',
+  `create_time` bigint(20) unsigned NOT NULL COMMENT '建立時間=當地時間的長整數',
+  `modify_by` varchar(20) NOT NULL COMMENT '更新者=userid',
+  `modify_time` bigint(20) unsigned NOT NULL COMMENT '更新時間=當地時間的長整數',
+  PRIMARY KEY (`bill_no`,`bill_detail`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

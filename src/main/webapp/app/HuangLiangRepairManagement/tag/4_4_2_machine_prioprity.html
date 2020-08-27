@@ -1,0 +1,219 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      機台維護管理
+      <span>
+        > 機台重要性調整
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<div class="row">
+  <div id="content" class="span10">
+    <div id="01_alarm_by_codeContent">
+      <div style="background-color: black;">
+        <font color="white">&nbsp;機台重要性調整</font>
+      </div>
+      <div id="collapse_query" class="accordion-body collapse in">
+        <div class="well">
+          <form name="f">
+            <table class="table table-striped table-bordered table-hover">
+              <tr>
+                <td align="center" colspan="6">
+                  <br />螢幕顯示區
+                  <br />
+                  <br />
+                </td>
+              </tr>
+              <tr>
+                <td align="center">維修等級(高)</td>
+                <td></td>
+                <td align="center">維修等級(中)</td>
+                <td></td>
+                <td align="center">維修等級(低)</td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <select
+                    id="slt1"
+                    name="leftList"
+                    multiple="multiple"
+                    size="6"
+                    style="width: 200px;"
+                  >
+                    <!-- <option value="1">HULM01</option>
+                                        <option value="1">HULM02</option>
+                                        <option value="1">HULM04</option>
+                                        <option value="1">HULM08</option> -->
+                  </select>
+                </td>
+                <td align="center" width="5%">
+                  <br />
+                  <input
+                    class="edit-btn"
+                    id="high_to_med"
+                    type="button"
+                    name=""
+                    value=">>"
+                  />
+                  <br />
+                  <br />
+                  <input
+                    class="edit-btn"
+                    id="med_to_high"
+                    type="button"
+                    name=""
+                    value="<<"
+                  />
+                  <br />
+                </td>
+                <td align="center">
+                  <select
+                    id="slt2"
+                    name="centerList"
+                    multiple="multiple"
+                    size="6"
+                    style="width: 200px;"
+                  >
+                    <!-- <option value="1">HULM03</option>
+                                        <option value="1">HULM05</option> -->
+                  </select>
+                </td>
+                <td width="5%" align="center">
+                  <br />
+                  <input
+                    class="edit-btn"
+                    id="med_to_low"
+                    type="button"
+                    name=""
+                    value=">>"
+                  />
+                  <br />
+                  <br />
+                  <input
+                    class="edit-btn"
+                    id="low_to_med"
+                    type="button"
+                    name=""
+                    value="<<"
+                  />
+                  <br />
+                </td>
+                <td align="center">
+                  <select
+                    id="slt3"
+                    name="rightList"
+                    multiple="multiple"
+                    size="6"
+                    style="width: 200px;"
+                  >
+                    <!-- <option value="1">HULM09</option>
+                                        <option value="1">HULM12</option>
+                                        <option value="1">HULM13</option>
+                                        <option value="1">HULM14</option>
+                                        <option value="1">HULM15</option>
+                                        <option value="1">HULM20</option>
+                                        <option value="1">HULM21</option>
+                                        <option value="1">HULM22</option> -->
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <table class="table table-striped table-bordered table-hover">
+              <tr>
+                <td align="center">
+                  <input
+                    class="edit-btn"
+                    id="non_to_high"
+                    type="button"
+                    name=""
+                    value="↑↑"
+                  />
+                  <input
+                    class="edit-btn"
+                    id="high_to_non"
+                    type="button"
+                    name=""
+                    value="↓↓"
+                  />
+                </td>
+                <td align="center" colspan="3">
+                  <input
+                    class="edit-btn"
+                    id="non_to_med"
+                    type="button"
+                    name=""
+                    value="↑↑"
+                  />
+                  <input
+                    class="edit-btn"
+                    id="med_to_non"
+                    type="button"
+                    name=""
+                    value="↓↓"
+                  />
+                </td>
+                <td align="center">
+                  <input
+                    class="edit-btn"
+                    id="non_to_low"
+                    type="button"
+                    name=""
+                    value="↑↑"
+                  />
+                  <input
+                    class="edit-btn"
+                    id="low_to_non"
+                    type="button"
+                    name=""
+                    value="↓↓"
+                  />
+                </td>
+              </tr>
+            </table>
+            <table class="table table-striped table-bordered table-hover">
+              <tr>
+                <td align="center" colspan="6">
+                  <br />螢幕未顯示區
+                  <br />
+                  <br />
+                </td>
+              </tr>
+              <tr>
+                <td align="center" colspan="6">
+                  <select
+                    id="slt4"
+                    name="downList"
+                    multiple="multiple"
+                    size="6"
+                    style="width: 20%;"
+                  >
+                    <!-- <option value="1">HULM30</option>
+                                        <option value="1">HULM31</option>
+                                        <option value="1">HULM32</option>
+                                        <option value="1">HULM33</option> -->
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </form>
+          <center>
+            <a id="add_tab" class="btn btn-primary edit-btn"> 儲存 </a>
+          </center>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.importPageScript()
+    </script>
+  </div>
+</div>

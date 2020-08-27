@@ -1,0 +1,287 @@
+{
+  "order": [
+    ["series", "model_number"],
+    ["lamp_type", "is_emc"],
+    ["lamp_length", "lamp_bead_number"],
+    ["control_way", "watt"],
+    ["segmentation", "work_voltage"],
+    {
+      "title": "Led_Lamp",
+      "row": [
+        ["composition", "composition_coef"],
+        ["lamp_beads_composition", "angle_claim"],
+        "color_temperature",
+        "light_brand"
+      ]
+    },
+    {
+      "title": "Power_Lines_And_Signal_Lines",
+      "row": [
+        ["is_merge_power_and_signal"],
+        ["power_cable_inout", "signal_line_inout"],
+        ["power_cable_length", "signal_line_length"],
+        ["is_power_cable_waterproof", "is_signal_line_waterproof"]
+      ]
+    },
+    ["concatenation", "connection_cable_length"],
+    ["support", "lamp_color"],
+    ["protect_class", "line_color"],
+    ["glass_color", "light_barrier"],
+    ["fall_prevention"]
+  ],
+  "series": {
+    "name": "燈具系列",
+    "i18n": "Lighting_Series",
+    "required": 1,
+    "htmlType": "list_custom",
+    "maxLength": 20
+  },
+  "model_number": {
+    "name": "燈具型號",
+    "i18n": "Lighting_Model",
+    "required": 1,
+    "htmlType": "list_custom",
+    "maxLength": 20
+  },
+  "lamp_type": {
+    "name": "燈具類型",
+    "i18n": "Lighting_Type",
+    "required": 0,
+    "options": {
+      "0": "点光源",
+      "1": "洗墙灯/线条灯",
+      "2": "投光灯"
+    },
+    "htmlType": "list"
+  },
+  "is_emc": {
+    "name": "是否過EMC",
+    "i18n": "Do_you_want_to_over_EMC",
+    "required": 1,
+    "isTF": true,
+    "htmlType": "radio"
+  },
+  "lamp_length": {
+    "name": "灯具长度",
+    "i18n": "Lighting_Length",
+    "required": 1,
+    "htmlType": "custom",
+    "maxLength": 20,
+    "validationClass": ["vld-pos-int-n-zero"]
+  },
+  "control_way": {
+    "name": "控制方式",
+    "i18n": "Control_Method",
+    "options": ["单色常亮(W)", "DMX"],
+    "required": 1,
+    "htmlType": "list"
+  },
+  "watt": {
+    "name": "灯具功率",
+    "i18n": "Lighting_Power",
+    "required": 1,
+    "htmlType": "custom",
+    "maxLength": 20,
+    "validationClass": ["vld-pos-num"]
+  },
+  "segmentation": {
+    "name": "分段方式",
+    "i18n": "Segmented_Way",
+    "required": 1,
+    "htmlType": "custom",
+    "maxLength": 20,
+    "validationClass": ["vld-pos-int-n-zero"]
+  },
+  "lamp_bead_number": {
+    "name": "LED灯珠数",
+    "i18n": "Led_Lamp_Few_Beads",
+    "required": 1,
+    "htmlType": "custom",
+    "maxLength": 5,
+    "validationClass": ["vld-pos-int"]
+  },
+  "composition": {
+    "name": "組成方式",
+    "i18n": "Composition_Way",
+    "options": ["RGBW", "RGB", "W", "W(N+L)", "RGB+W", "R+G+B+W", "2RGB+W"],
+    "required": 1,
+    "htmlType": "list"
+  },
+  "composition_coef": {
+    "name": "組成係數",
+    "i18n": "Composition_Coefficient",
+    "required": 1,
+    "htmlType": "custom",
+    "maxLength": 5,
+    "validationClass": ["vld-pos-int"]
+  },
+  "lamp_beads_composition": {
+    "name": "燈珠組成",
+    "i18n": "Lamp_Beads_Composition",
+    "required": 0,
+    "htmlType": "custom",
+    "maxLength": 20
+  },
+  "light_brand": {
+    "name": "品牌",
+    "i18n": "Brands",
+    "options": ["进口不指定", "国产", "CREE", "OSRAM", "LUMI"],
+    "required": 1,
+    "htmlType": "list_custom",
+    "indeterminateCount": true,
+    "maxLength": 30
+  },
+  "color_temperature": {
+    "name": "色温值",
+    "i18n": "Color_Temperature_Value",
+    "required": 0,
+    "htmlType": "list",
+    "indeterminateCount": true,
+    "maxLength": 7,
+    "validationClass": ["vld-pos-int"]
+  },
+  "work_voltage": {
+    "name": "工作电压",
+    "i18n": "Operating_Voltage",
+    "options": ["12", "24", "36", "110", "220"],
+    "required": 1,
+    "htmlType": "list_custom",
+    "maxLength": 20,
+    "validationClass": ["vld-pos-int"]
+  },
+  "angle_claim": {
+    "name": "发光角度",
+    "i18n": "Beam_Angle",
+    "required": 1,
+    "htmlType": "list"
+  },
+  "power_cable_length": {
+    "name": "电源线出线长度",
+    "i18n": "The_Length_Of_The_Power_Line_Outlet",
+    "options": ["300", "500"],
+    "required": 1,
+    "htmlType": "list_custom",
+    "maxLength": 20,
+    "validationClass": ["vld-pos-int"]
+  },
+  "signal_line_length": {
+    "name": "信号线出线长度",
+    "i18n": "Line_Length_Of_The_Signal_Line",
+    "options": ["300", "500"],
+    "required": 1,
+    "htmlType": "list_custom",
+    "maxLength": 20,
+    "validationClass": ["vld-pos-int"]
+  },
+  "is_power_cable_waterproof": {
+    "name": "电源线是否带防水接头",
+    "i18n": "Power_Cord_Connector_With_A_Waterproof",
+    "required": 1,
+    "isTF": true,
+    "htmlType": "radio"
+  },
+  "is_signal_line_waterproof": {
+    "name": "信号线是否带防水接头",
+    "i18n": "Signal_Wire_Connector_With_A_Waterproof",
+    "required": 1,
+    "isTF": true,
+    "htmlType": "radio"
+  },
+  "is_merge_power_and_signal": {
+    "name": "電源線與信號線合併",
+    "i18n": "The_Combined_Power_Line_And_The_Signal_Line",
+    "required": 1,
+    "isTF": true,
+    "htmlType": "radio"
+  },
+  "power_cable_inout": {
+    "name": "電源線進出方式",
+    "i18n": "Power_Cord_Out_Of_The_Way",
+    "required": 1,
+    "options": ["只进不出", "一进一出"],
+    "htmlType": "list"
+  },
+  "signal_line_inout": {
+    "name": "信號線進出方式",
+    "i18n": "Signal_Lines_Out_Of_The_Way",
+    "required": 1,
+    "options": ["只进不出", "一进一出"],
+    "htmlType": "list"
+  },
+  "concatenation": {
+    "name": "灯具串接數量",
+    "i18n": "Lighting_The_Way_Series",
+    "options": ["1", "2", "3", "4", "5", "6"],
+    "required": 1,
+    "htmlType": "list_custom",
+    "maxLength": 20,
+    "validationClass": ["vld-pos-int"]
+  },
+  "connection_cable_length": {
+    "name": "连接线长度(mm)",
+    "i18n": "Cable_Length",
+    "required": 0,
+    "htmlType": "custom",
+    "maxLength": 20,
+    "validationClass": ["vld-pos-int"]
+  },
+  "support": {
+    "name": "支架选择",
+    "i18n": "Select_The_Bracket",
+    "options": ["固定支架", "旋转支架(60°)", "旋转支架(90°)", "卡簧支架"],
+    "required": 1,
+    "htmlType": "list_custom",
+    "maxLength": 20
+  },
+  "lamp_color": {
+    "name": "灯具外觀颜色",
+    "i18n": "Lighting_Color",
+    "options": ["铝本色"],
+    "required": 1,
+    "htmlType": "list_custom",
+    "maxLength": 20
+  },
+  "protect_class": {
+    "name": "防护等级(IP)",
+    "i18n": "Degree_Of_Protection_(Ip)",
+    "options": ["65", "66", "67", "68"],
+    "required": 0,
+    "default": 0,
+    "htmlType": "list_custom",
+    "maxLength": 20
+  },
+  "line_color": {
+    "name": "缆线颜色",
+    "i18n": "Cable_Color",
+    "options": ["黑", "白"],
+    "required": 0,
+    "default": 0,
+    "htmlType": "list_custom",
+    "maxLength": 20
+  },
+  "glass_color": {
+    "name": "玻璃外观颜色",
+    "i18n": "Glass_Color",
+    "options": ["灰", "白", "黑", "无"],
+    "required": 0,
+    "default": 0,
+    "htmlType": "list_custom",
+    "maxLength": 20
+  },
+  "light_barrier": {
+    "name": "擋光板",
+    "i18n": "Light_Barrier",
+    "required": 0,
+    "default": 0,
+    "isTF": true,
+    "htmlType": "radio"
+  },
+  "fall_prevention": {
+    "name": "防墜落",
+    "i18n": "Fall_Protection",
+    "required": 0,
+    "default": 0,
+    "isTF": true,
+    "htmlType": "radio"
+  }
+}

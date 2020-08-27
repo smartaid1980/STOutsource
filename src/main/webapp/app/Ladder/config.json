@@ -1,0 +1,20 @@
+{
+  "app": {
+    "id": "Ladder",
+    "name": "i18n_ServCloud_Ladder",
+    "type": 1,
+    "description": "Ladder",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_machine_list",
+      "name": "i18n_ServCloud_01_Machine_List"
+    },
+    {
+      "id": "02_ladder_monitor",
+      "name": "i18n_ServCloud_02_Ladder_Monitor"
+    }
+  ],
+  "tags": ["20140918000001"]
+}

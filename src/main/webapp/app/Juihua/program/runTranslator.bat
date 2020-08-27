@@ -1,0 +1,1 @@
+..\..\..\..\..\..\jdk1.6.0_30\bin\java -cp .\*;..\..\..\WEB-INF\lib\* com.servtech.calculator.juihua.JuihuaReport %1 %2 %3 %4 %5 %6 %7

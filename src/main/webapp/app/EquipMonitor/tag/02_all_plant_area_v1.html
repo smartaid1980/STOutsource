@@ -1,0 +1,173 @@
+<section id="widget-grid">
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-editbutton="false"
+    data-widget-collapsed="false"
+    data-widget-colorbutton="false"
+    data-widget-deletebutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <h2>{i18n_ServCloud_Monitoring_All_Zone}</h2>
+      <div class="widget-toolbar" role="menu">
+        <button id="changeStyle" class="btn bg-color-blue txt-color-white hide">
+          {i18n_ServCloud_Switch_Style}
+        </button>
+      </div>
+    </header>
+
+    <div class="widget-body padding-10">
+      <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="machineLigth" style="float: right;"></div>
+      </section>
+      <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="loadWidget">
+          <div>
+            <h2>{i18n_ServCloud_ALL_Plant_Area_Machine}</h2>
+            <div id="all_machine"></div>
+          </div>
+          <table>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div id="space">
+          <div>
+            <img src="./app/EquipMonitor/img/plantArea/bkg.png" />
+            <h5 id="update-utilization-info">
+              <b
+                >{i18n_ServCloud_Utilization}&nbsp;
+                <i
+                  class="fa fa-info-circle"
+                  title="{i18n_ServCloud_Last_Update_Time}："
+                  style="cursor: pointer;"
+                ></i> </b
+              ><br />
+              <span>---</span>
+              <!-- <br> -->
+              <!-- 更新频率:15分钟 -->
+            </h5>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+<style>
+  #update-utilization-info {
+    position: absolute;
+    top: 77%;
+    left: -22%;
+  }
+
+  .btn {
+    cursor: default;
+  }
+
+  img {
+    max-width: 85%;
+  }
+
+  #loadWidget {
+    display: flex;
+    padding: 0 30px;
+  }
+
+  #loadWidget > div {
+    margin: auto;
+  }
+
+  #loadWidget div h2 {
+    text-align: center;
+    padding-right: 10px;
+    margin: 5px 0;
+  }
+
+  #loadWidget table {
+    width: 75%;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  #loadWidget table td {
+    border: 1px solid #ccc;
+    padding: 4px 11px;
+  }
+
+  #loadWidget table td > a > div {
+    /* display: inline-block; */
+    margin: auto;
+  }
+
+  #loadWidget table td > a > span {
+    display: block;
+    text-align: center;
+    /* margin: auto; */
+  }
+
+  #loadWidget table td > a {
+    display: block;
+  }
+
+  #all_machine {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    padding-right: 10px !important;
+  }
+
+  #flotTip {
+    z-index: 1061 !important;
+    font-size: 1.1em !important;
+  }
+
+  #space {
+    /* position: relative; */
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin: auto; */
+    margin-top: -120px;
+  }
+
+  #space > div {
+    position: relative;
+    float: right;
+    max-width: 80%;
+  }
+
+  #space img {
+    display: block;
+    /* margin: auto; */
+    /* max-width: 95%; */
+    margin-left: 60px;
+  }
+
+  .utilizationRate {
+    background: #0043d2;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 15px;
+    line-height: 25px;
+    z-index: 1;
+    transition: 0.3s background-color ease;
+  }
+
+  .utilizationRate:hover {
+    color: white;
+    background: rgb(29, 93, 219);
+    z-index: 5;
+  }
+
+  .utilizationRate > span {
+    font-size: 18px;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

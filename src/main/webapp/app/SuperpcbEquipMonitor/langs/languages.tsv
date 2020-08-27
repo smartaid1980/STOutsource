@@ -1,0 +1,30 @@
+	zh_tw	zh	en
+i18n_ServCloud_Monitoring_All_Zone	全廠區	全厂区	All Plant Area
+i18n_ServCloud_DI_Exposure_Machine	DI曝光機	DI曝光机	DI exposure machine
+i18n_ServCloud_Outer_Layer_Treatment	外層前處理	外层前处理	Outer layer treatment
+i18n_ServCloud_Go_Back	回上一頁	回上一页	Go back to the previous page
+i18n_ServCloud_Instant_Information	即時資訊	即时资讯	Instant information
+i18n_ServCloud_Historical_Information	歷史資訊	历史资讯	Historical information
+i18n_ServCloud_System_Update_Time	上次更新時間	上次更新时间	Last update time
+i18n_ServCloud_Updated_Frequency	每30秒更新一次	每30秒更新一次	Updated every 30 seconds
+i18n_ServCloud_Light_Status	顯示燈號	显示灯号	Machine Status
+i18n_ServCloud_Offline	離線	离线	Offline
+i18n_ServCloud_Light_Working	加工	加工	Working
+i18n_ServCloud_Light_Idle	閒置	闲置	Idle
+i18n_ServCloud_Light_Alarm	警報	警报	Alarm
+i18n_ServCloud_Historical_Information	歷史資訊	历史资讯	Historical information
+i18n_ServCloud_Production_Item_Number	生產料號	生产料号	Production item number
+i18n_ServCloud_Level	層面	层面	Level
+i18n_ServCloud_Message_Exposure	訊息曝光	讯息曝光	Message exposure
+i18n_ServCloud_Lubricant_Life_Accumulation	燈具的使用壽命累積	灯具的使用寿命累积	Lubricant life accumulation
+i18n_ServCloud_Level	層面	层面	Level
+i18n_ServCloud_Recording_Time	記錄時間	记录时间	Recording time
+i18n_ServCloud_Dry_Film_Model	乾膜型號	干膜型号	Dry film model
+i18n_ServCloud_Exposure_Quantity	曝光數量	曝光数量	Exposure quantity
+i18n_ServCloud_Plant_Area_Information	廠區資訊	厂区资讯	Plant area information
+i18n_ServCloud_Plant_Area	廠區	厂区	Plant area
+i18n_ServCloud_Plant_Area_Name	廠區名稱	厂区名称	Plant area name
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_Symbol_String	不可含特殊字元	不可含特殊字元	Cannot contain special characters

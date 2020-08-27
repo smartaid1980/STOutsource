@@ -1,0 +1,171 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>未連線機台Macro 輸入</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="main-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="padding-10">
+                      <label class="label">機台名稱</label>
+                      <label class="input">
+                        <select class="form-control" id="machine"></select>
+                      </label>
+                    </div>
+                  </section>
+                  <section
+                    class="col col-xs-12 col-sm-6 col-md-6 col-lg-6"
+                    style="text-align: right;"
+                  >
+                    <div class="padding-10">
+                      <h4 class="">上次更新時間</h4>
+                      <span id="last-time" class="font-md"></span>
+                    </div>
+                  </section>
+
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <div class="panel panel-success pricing-big padding-10">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">
+                            <i
+                              class="fa fa-user margin-top-5 margin-right-5 txt-color-blue"
+                            ></i>
+                            M521 (人員編號)
+                          </h3>
+                        </div>
+                        <div class="the-price panel-body text-align-center">
+                          <div
+                            class="col-xs-6 col-sm-6 col-md-12 col-lg-12 panel-block-black"
+                          >
+                            <h1>
+                              <strong><span id="m521-label"></span></strong>
+                            </h1>
+                          </div>
+                          <div
+                            class="col-xs-6 col-sm-6 col-md-12 col-lg-12 panel-block-white"
+                          >
+                            <label class="input">
+                              <input
+                                type="text"
+                                id="m521-text"
+                                placeholder="M521 輸入"
+                                class="form-control"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <div class="panel panel-teal pricing-big padding-10">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">
+                            <i
+                              class="fa fa-gears margin-top-5 margin-right-5 txt-color-white"
+                            ></i>
+                            M522 (機台狀態)
+                          </h3>
+                        </div>
+                        <div class="the-price panel-body text-align-center">
+                          <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                            <h1>
+                              <strong><span id="m522-label"></span></strong>
+                            </h1>
+                          </div>
+                          <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                            <label class="input">
+                              <input
+                                type="text"
+                                id="m522-text"
+                                placeholder="M522 輸入"
+                                class="form-control"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <div class="panel panel-primary pricing-big padding-10">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">
+                            <i
+                              class="fa fa-file-text-o margin-top-5 margin-right-5 txt-color-white"
+                            ></i>
+                            M523 (訂單編號/樣品管編)
+                          </h3>
+                        </div>
+                        <div class="the-price panel-body text-align-center">
+                          <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                            <h1>
+                              <strong><span id="m523-label"></span></strong>
+                            </h1>
+                          </div>
+                          <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                            <label class="input">
+                              <input
+                                type="text"
+                                id="m523-text"
+                                placeholder="M523 輸入"
+                                class="form-control"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit" class="btn btn-primary">全部提交</button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  .pricing-big .the-price {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #dadada;
+    border-top: 0px !important;
+    border-radius: 0 0 5px 5px;
+    background: unset;
+    color: unset;
+    font-size: 1;
+  }
+
+  .panel-heading {
+    border: 1px solid !important;
+    border-bottom: 0px !important;
+    border-radius: 5px 5px 0 0 !important;
+    border-color: #dadada !important;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

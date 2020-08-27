@@ -1,0 +1,279 @@
+<!-- <ul id="breadcrumb_table" class="breadcrumbDark"  collapse="#collapse_table">test</ul> -->
+<div class="row">
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span
+        >>
+        <span id="machineIdHead"></span>
+        > {i18n_ServCloud_Dashboard}
+      </span>
+    </h1>
+  </div>
+</div>
+
+<section id="widget-grid">
+  <div id="monitorHeader">
+    <ul id="headTabs" class="nav nav-tabs bordered">
+      <li class="">
+        <a id="info" href="javascript:void(0)" align="center">
+          <span class="fa fa-list-alt fa-3x"></span>
+          <br />
+          <span>{i18n_ServCloud_Dashboard}</span>
+        </a>
+      </li>
+      <li class="">
+        <a id="leave" href="javascript:void(0)" align="center">
+          <span class="fa fa-sign-out fa-3x"></span>
+          <br />
+          <span>{i18n_ServCloud_Leave}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-fullscreenbutton="false"
+    data-widget-editbutton="false"
+    data-widget-collapsed="false"
+    data-widget-colorbutton="false"
+    data-widget-deletebutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <span
+        >&nbsp;&nbsp;&nbsp;
+        <h2>
+          【{i18n_ServCloud_Monitoring_Information}】LEAN_ID =
+          <span id="boxId"></span> {i18n_ServCloud_Machine_Id} =
+          <span id="machineId"></span> {i18n_ServCloud_Name} =
+          <span id="machineName"></span></h2
+      ></span>
+      <ul id="widget-tab" class="nav nav-tabs pull-right">
+        <li class="active">
+          <a data-toggle="tab" href="#system1">
+            <i class="fa fa-lg fa-info-circle"></i>
+            <span class="hidden-mobile hidden-tablet"> System 1 </span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="tab-content padding-10">
+      <!--  系統1  -->
+      <div class="tab-pane fade in active" id="system1">
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-crosshairs"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>溫度 ( °C )</h2></span
+                >
+              </header>
+              <ul
+                class="vertical-bars margin-bottom-10"
+                style="position: relative;"
+              >
+                <li>
+                  <h3>上熱盤實際溫度 : <span id="G_UPAT">---</span>°C</h3>
+                  <div
+                    class="progress vertical bottom margin-top-5"
+                    style="border-radius: 100px 100px 100px 100px;"
+                  >
+                    <div
+                      class="progress-bar bg-color-blue"
+                      aria-valuetransitiongoal="0"
+                      aria-valuenow="0"
+                      style="height: 0%;"
+                      id="G_UPAT-bar"
+                    >
+                      0
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <h3>上熱盤設定溫度 : <span id="G_UPST">---</span>°C</h3>
+                  <div
+                    class="progress vertical bottom margin-top-5"
+                    style="border-radius: 100px 100px 100px 100px;"
+                  >
+                    <div
+                      class="progress-bar bg-color-blue"
+                      aria-valuetransitiongoal="0"
+                      aria-valuenow="0"
+                      style="height: 0%;"
+                      id="G_UPST-bar"
+                    >
+                      0
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <h3>下熱盤實際溫度 : <span id="G_LPAT">---</span>°C</h3>
+                  <div
+                    class="progress vertical bottom margin-top-5"
+                    style="border-radius: 100px 100px 100px 100px;"
+                  >
+                    <div
+                      class="progress-bar bg-color-blue"
+                      aria-valuetransitiongoal="0"
+                      aria-valuenow="0"
+                      style="height: 0%;"
+                      id="G_LPAT-bar"
+                    >
+                      0
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <h3>下熱盤設定溫度 : <span id="G_LPST">---</span>°C</h3>
+                  <div
+                    class="progress vertical bottom margin-top-5"
+                    style="border-radius: 100px 100px 100px 100px;"
+                  >
+                    <div
+                      class="progress-bar bg-color-blue"
+                      aria-valuetransitiongoal="0"
+                      aria-valuenow="0"
+                      style="height: 0%;"
+                      id="G_LPST-bar"
+                    >
+                      0
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <!--<td id="G_UPAT" class="text-center">---</td>-->
+        </div>
+
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-gavel"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>壓力 ( kg/cm² )</h2></span
+                >
+                <span class="workshift-part-count"></span>
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-lg-9 col-md-9 col-sm-9 col-xs-9">主機壓力</td>
+                  <td id="G_ACTP" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    ---
+                  </td>
+                </tr>
+                <tr>
+                  <td>一次排氣壓力</td>
+                  <td id="G_FEXP">---</td>
+                </tr>
+                <tr>
+                  <td>一次加硫壓力</td>
+                  <td id="G_FASP">---</td>
+                </tr>
+              </table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-gear"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>狀態與產量</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-xs-9 col-sm-9 col-md-9 col-lg-9">機台狀態</td>
+                  <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <span
+                      id="G_CONS"
+                      class="btn"
+                      style="background: #f3f3f3;"
+                    ></span>
+                    <span id="machine-light-name"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>當日產量</td>
+                  <td id="G_PSCP">---</td>
+                </tr>
+              </table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-clock-o"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>一次加硫時間</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">實際時間</td>
+                  <td id="G_FSAT" class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    ---
+                  </td>
+                </tr>
+                <tr>
+                  <td>設定時間</td>
+                  <td id="G_FSST">---</td>
+                </tr>
+              </table>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!--  系統2  -->
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  window.importPageScript()
+</script>

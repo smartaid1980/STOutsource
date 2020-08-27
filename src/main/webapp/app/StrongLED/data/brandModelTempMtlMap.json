@@ -1,0 +1,436 @@
+{
+  "field": "single_power_class",
+  "m": {
+    "field": "lamp_bead_type",
+    "B": {
+      "field": "lamp_bead_brand",
+      "国产": {
+        "field": "lamp_bead_model",
+        "天电 3030": {
+          "YF01-D-TD-3030/BLUE-3V": 1
+        }
+      }
+    },
+    "G": {
+      "field": "lamp_bead_brand",
+      "国产": {
+        "field": "lamp_bead_model",
+        "天电 3030": {
+          "YF01-D-TD-3030/GREEN-3V": 1
+        }
+      }
+    },
+    "R": {
+      "field": "lamp_bead_brand",
+      "国产": {
+        "field": "lamp_bead_model",
+        "天电 3030": {
+          "YF01-D-TD-3030/RED-3V": 1
+        }
+      }
+    },
+    "RGB": {
+      "field": "lamp_bead_brand",
+      "国产": {
+        "field": "lamp_bead_model",
+        "天电 3030": {}
+      }
+    },
+    "RGBW": {
+      "field": "color_temperature",
+      "3000": {
+        "field": "lamp_bead_brand",
+        "CREE": {
+          "field": "lamp_bead_model",
+          "CREE 四合一": {
+            "YF01-D-CREE-CLQ6A-TLW/3000K": 1
+          }
+        }
+      },
+      "4000": {
+        "field": "lamp_bead_brand",
+        "CREE": {
+          "field": "lamp_bead_model",
+          "CREE 四合一": {
+            "YF01-D-CREE-CLQ6A-TLW/4000K": 1
+          }
+        }
+      },
+      "6500": {
+        "field": "lamp_bead_brand",
+        "CREE": {
+          "field": "lamp_bead_model",
+          "CREE 四合一": {
+            "YF01-D-CREE-CLQ6A-TLW/6500K": 1
+          }
+        }
+      }
+    },
+    "W": {
+      "field": "color_temperature",
+      "1800": {
+        "field": "lamp_bead_brand",
+        "国产": {
+          "field": "lamp_bead_model",
+          "天电 3030": {
+            "YF01-D-TD-3030/1800K-6V": 1
+          }
+        }
+      },
+      "2200": {
+        "field": "lamp_bead_brand",
+        "OSRAM": {
+          "field": "lamp_bead_model",
+          "OSRAM 3030": {
+            "YF01-D-OSRAM-3030-2200K": 1
+          }
+        },
+        "国产": {
+          "field": "lamp_bead_model",
+          "天电 3030": {
+            "YF01-D-TD-3030/2200K-6V": 1
+          }
+        }
+      },
+      "2700": {
+        "field": "lamp_bead_brand",
+        "OSRAM": {
+          "field": "lamp_bead_model",
+          "OSRAM 3030": {
+            "YF01-D-OSRAM-3030-2700K": 1
+          }
+        }
+      },
+      "3000": {
+        "field": "lamp_bead_brand",
+        "OSRAM": {
+          "field": "lamp_bead_model",
+          "OSRAM 3030": {
+            "YF01-D-OSRAM-3030-3000K-01": 1
+          }
+        }
+      },
+      "3500": {
+        "field": "lamp_bead_brand",
+        "OSRAM": {
+          "field": "lamp_bead_model",
+          "OSRAM 3030": {
+            "YF01-D-OSRAM-3030-3500K": 1
+          }
+        }
+      },
+      "4000": {
+        "field": "lamp_bead_brand",
+        "OSRAM": {
+          "field": "lamp_bead_model",
+          "OSRAM 3030": {
+            "YF01-D-OSRAM-3030-4000K": 1
+          }
+        }
+      },
+      "4500": {
+        "field": "lamp_bead_brand",
+        "OSRAM": {
+          "field": "lamp_bead_model",
+          "OSRAM 3030": {
+            "YF01-D-OSRAM-3030-4500K": 1
+          }
+        }
+      },
+      "5000": {
+        "field": "lamp_bead_brand",
+        "OSRAM": {
+          "field": "lamp_bead_model",
+          "OSRAM 3030": {
+            "YF01-D-OSRAM-3030-5000K": 1
+          }
+        }
+      },
+      "5700": {
+        "field": "lamp_bead_brand",
+        "OSRAM": {
+          "field": "lamp_bead_model",
+          "OSRAM 3030": {
+            "YF01-D-OSRAM-3030-5700K": 1
+          }
+        }
+      },
+      "6500": {
+        "field": "lamp_bead_brand",
+        "OSRAM": {
+          "field": "lamp_bead_model",
+          "OSRAM 3030": {
+            "YF01-D-OSRAM-3030-6500K": 1
+          }
+        },
+        "国产": {
+          "field": "lamp_bead_model",
+          "天电 3030": {
+            "YF01-D-TD-3030/6500K": 1
+          }
+        }
+      }
+    }
+  },
+  "s": {
+    "field": "lamp_bead_type",
+    "B": {
+      "field": "lamp_bead_brand",
+      "国产": {
+        "field": "lamp_bead_model",
+        "天电 3014": {
+          "YF01-D-TD-3014/BLUE": 1
+        }
+      }
+    },
+    "G": {
+      "field": "lamp_bead_brand",
+      "国产": {
+        "field": "lamp_bead_model",
+        "天电 3014": {
+          "YF01-D-TD-3014/GREEN": 1
+        }
+      }
+    },
+    "R": {
+      "field": "lamp_bead_brand",
+      "国产": {
+        "field": "lamp_bead_model",
+        "天电 3014": {
+          "YF01-D-TD-3014/RED": 1
+        }
+      }
+    },
+    "RGB": {
+      "field": "lamp_bead_brand",
+      "进口不指定": {
+        "field": "lamp_bead_model",
+        "OSRAM 3535": {
+          "YF01-D-OSRAM-LRTBGVTG-3535RGB": 1
+        }
+      },
+      "OSRAM": {
+        "field": "lamp_bead_model",
+        "OSRAM 3535": {
+          "YF01-D-OSRAM-LRTBGVTG-3535RGB": 1
+        }
+      },
+      "CREE": {
+        "field": "lamp_bead_model",
+        "CREE 3535": {
+          "YF01-D-CREE-CLX6E-FKC-CHKMPDGBB79363": 1
+        }
+      },
+      "国产": {
+        "field": "lamp_bead_model",
+        "国产 3535": {
+          "YF01-D-LM-LS-3535RGB": 1
+        }
+      }
+    },
+    "RGBW": {
+      "field": "color_temperature",
+      "3000": {
+        "field": "lamp_bead_brand",
+        "国产": {
+          "field": "lamp_bead_model",
+          "国产5050四合一": {
+            "YF01-D-YLL-5050RGBW/3000K": 1
+          }
+        }
+      },
+      "4000": {
+        "field": "lamp_bead_brand",
+        "国产": {
+          "field": "lamp_bead_model",
+          "国产5050四合一": {
+            "YF01-D-YLL-5050RGBW/4000K": 1
+          }
+        }
+      },
+      "5600": {
+        "field": "lamp_bead_brand",
+        "国产": {
+          "field": "lamp_bead_model",
+          "国产5050四合一": {
+            "YF01-D-LM-LS-5050FX/5600K": 1
+          }
+        }
+      }
+    },
+    "W": {
+      "field": "model_number",
+      "CV3E": {
+        "field": "color_temperature",
+        "2700": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 3014": {
+              "YF01-D-OSRAM-5U8X-L1N2": 1
+            }
+          }
+        },
+        "3000": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 3014": {
+              "YF01-D-OSRAM-5R8T-L1N2": 1
+            }
+          }
+        },
+        "3500": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 3014": {
+              "YF01-D-OSRAM-5O8Q-L1N2": 1
+            }
+          }
+        },
+        "4000": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 3014": {
+              "YF01-D-OSRAM-5L7N-L1N2": 1
+            }
+          }
+        },
+        "5000": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 3014": {
+              "YF01-D-OSRAM-5H7I-L1N2": 1
+            }
+          }
+        },
+        "5700": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 3014": {
+              "YF01-D-OSRAM-5E8G-L1N2/0.2W": 1
+            }
+          }
+        },
+        "6500": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 3014": {
+              "YF01-D-OSRAM-5C8E-L1N2": 1
+            }
+          }
+        }
+      },
+      "others": {
+        "field": "color_temperature",
+        "1800": {
+          "field": "lamp_bead_brand",
+          "国产": {
+            "field": "lamp_bead_model",
+            "天电 3014": {
+              "YF01-D-TD-3014/1700K": 1
+            }
+          }
+        },
+        "2200": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 2835": {
+              "YF01-D-ORSAM-2835/2200K-3V": 1
+            }
+          }
+        },
+        "2700": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 2835": {
+              "YF01-D-ORSAM-2835/2700K-3V": 1
+            }
+          },
+          "国产": {
+            "field": "lamp_bead_model",
+            "天电 3014": {
+              "YF01-D-TD-3014/2700K/90": 1
+            }
+          }
+        },
+        "3000": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 2835": {
+              "YF01-D-ORSAM-2835/3000K-3V": 1
+            }
+          }
+        },
+        "3500": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 2835": {
+              "YF01-D-ORSAM-2835/3500K-3V": 1
+            }
+          }
+        },
+        "4000": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 2835": {
+              "YF01-D-ORSAM-2835/4000K-3V": 1
+            }
+          }
+        },
+        "4500": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 2835": {
+              "YF01-D-ORSAM-2835/4500K-3V": 1
+            }
+          }
+        },
+        "5000": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 2835": {
+              "YF01-D-ORSAM-2835/5000K-3V": 1
+            }
+          }
+        },
+        "5700": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 2835": {
+              "YF01-D-ORSAM-2835/5700K-3V": 1
+            }
+          }
+        },
+        "6500": {
+          "field": "lamp_bead_brand",
+          "OSRAM": {
+            "field": "lamp_bead_model",
+            "OSRAM 2835": {
+              "YF01-D-ORSAM-2835/6500K-3V": 1
+            }
+          },
+          "国产": {
+            "field": "lamp_bead_model",
+            "天电 3014": {
+              "YF01-D-TD-3014/6500K": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

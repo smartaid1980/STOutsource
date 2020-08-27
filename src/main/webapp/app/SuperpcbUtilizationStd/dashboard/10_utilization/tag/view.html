@@ -1,0 +1,65 @@
+<div id="utilization-time" class="col col-6">
+  <h1>
+    {i18n_ServCloud_System_Update_Time}：<span
+    ></span>(<span>{i18n_ServCloud_Updated_Frequency}</span>)
+  </h1>
+</div>
+<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 utilization">
+  <div
+    class="jarviswidget jarviswidget-color-darken"
+    data-widget-fullscreenbutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header id="day-bar-chart-head">
+      <h2>{i18n_ServCloud_ImmediateDailyUtilization}</h2>
+    </header>
+    <div>
+      <div class="widget-body">
+        <h2 id="day-bar-chart-title">{i18n_ServCloud_DailyUtilization}</h2>
+        <div id="day-bar-chart" style="width: 100%; height: 300px;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 utilization">
+  <div
+    class="jarviswidget jarviswidget-color-darken"
+    data-widget-fullscreenbutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header id="month-bar-chart-head">
+      <h2>{i18n_ServCloud_ImmediateMonthlyUtilization}</h2>
+    </header>
+    <div>
+      <div class="widget-body">
+        <h2 id="day-bar-chart-title">{i18n_ServCloud_MonthlyUtilization}</h2>
+        <div id="month-bar-chart" style="width: 100%; height: 300px;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  #utilization-time {
+    padding-left: 13px;
+  }
+
+  #day-bar-chart-title,
+  #month-bar-chart-title {
+    text-align: center;
+  }
+
+  .utilization {
+    padding-top: 5px;
+  }
+
+  #utilization-time,
+  #day-bar-chart-head,
+  #day-bar-chart-title,
+  #day-bar-chart,
+  #month-bar-chart-head,
+  #month-bar-chart-title,
+  #month-bar-chart {
+    font-size: 2em;
+  }
+</style>

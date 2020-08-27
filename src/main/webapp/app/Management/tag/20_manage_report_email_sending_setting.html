@@ -1,0 +1,94 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="sending-setting-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Sending_Setting}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="mail_server_ip"
+              id="sending-setting"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 25%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Sening_Mail_Server_IP}</th>
+                  <th>{i18n_ServCloud_Sending_Port}</th>
+                  <th>{i18n_ServCloud_Sending_Account}</th>
+                  <th>{i18n_ServCloud_Sending_Password}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="mail_server_ip"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Sening_Mail_Server_IP}"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="port"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Sending_Port}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="account"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Sending_Account}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="password"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Sending_Password}"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

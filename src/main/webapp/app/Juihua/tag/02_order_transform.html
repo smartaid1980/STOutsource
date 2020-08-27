@@ -1,0 +1,118 @@
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- UPLOAD select-supplier-zone WIDGET START -->
+    <article
+      id="select-supplier-zone"
+      class="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+    >
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-colorbutton="false"
+        data-widget-editbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-custombutton="false"
+        data-widget-sortable="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-cloud"></i> </span>
+          <h2>採購單輸出</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label>採購單輸出日期</label>
+                  <div class="input-group">
+                    <input
+                      id="output-order-date"
+                      type="text"
+                      placeholder="Select a date"
+                      class="form-control datepicker"
+                    />
+                    <span class="input-group-addon"
+                      ><i class="fa fa-calendar"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span
+              id="translate"
+              class="btn btn-default"
+              style="width: 100%; margin: 10px 0;"
+              >轉採購單</span
+            >
+          </div>
+          <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+      </div>
+      <!-- end widget -->
+    </article>
+
+    <article id="order-result-zone" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-colorbutton="false"
+        data-widget-editbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-custombutton="false"
+        data-widget-sortable="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-download"></i> </span>
+          <h2>採購單</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body">
+            <table id="download-table" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>採購單號</th>
+                  <th>採購批次</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+      </div>
+      <!-- end widget -->
+    </article>
+    <!-- UPLOAD order-result-zone WIDGET END -->
+  </div>
+</section>
+
+<script>
+  window.importPageScript()
+</script>

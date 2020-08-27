@@ -1,0 +1,15 @@
+<record>
+    <params>
+        <param name="G_ALAM()" type="Array">
+            <contents>
+                <content fetchtime="20121015151536862" elapsed_sec="0.3576915">
+                    <values type="Array">
+                        <value fromType="DEC" toType="DEC">110</value>
+                        <value fromType="DEC" toType="DEC">1100</value>
+                        <value fromType="DEC" toType="DEC">1101</value>
+                    </values>
+                </content>
+            </contents>
+        </param>
+    </params>
+</record>

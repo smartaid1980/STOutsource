@@ -1,0 +1,2 @@
+groupCol(newCol(D),"季") ###(A)groupCol(newCol(T),"製程")
+dataCol(newCol(AF),"無效人時",SUM,"%.0f") ###(B)

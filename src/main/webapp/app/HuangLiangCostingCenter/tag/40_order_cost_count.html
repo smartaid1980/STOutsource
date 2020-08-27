@@ -1,0 +1,284 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-6">
+                    <section>
+                      <label class="label">訂單編號</label>
+                      <label class="input">
+                        <input type="text" id="order_id" />
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-6">
+                    <section>
+                      <label class="label">管編</label>
+                      <label class="input">
+                        <input type="text" id="manage_id" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="chart-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>成本比例圖表</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div
+            id="chart-widget-body"
+            class="widget-body"
+            style="display: flex; flex-wrap: wrap;"
+          ></div>
+        </div>
+      </div>
+
+      <!-- detail DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Query_Result}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 5%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾訂單編號"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾機台編號"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾機台派工數"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾生產數"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾生產不良數"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾CNC成本總時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾CNC加工總金額"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾刀具使用總數"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾刀具成本總金額"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾材料使用總數量"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 3%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾材料單位"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾材料成本總金額"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾訂單總成本"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾單類加工成本"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾報價業務人員"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾單顆報價金額"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 4%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾差異比%"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th>訂單編號</th>
+                  <th>機台編號</th>
+                  <th>機台派工數</th>
+                  <th>生產數</th>
+                  <th>生產不良數</th>
+                  <th
+                    data-original-title="300~103~隔天早上08:00，前綴'*'表示訂單尚未下線，時間持續增加"
+                  >
+                    CNC成本總時間
+                  </th>
+                  <th
+                    data-original-title="CNC成本總時間(轉換為分鐘)*設備使用加工成本"
+                  >
+                    CNC加工總金額
+                  </th>
+                  <th
+                    data-original-title="加總狀態非取消且成本分類為刀具的量產領刀明細領刀數量"
+                  >
+                    刀具使用總數
+                  </th>
+                  <th
+                    data-original-title="加總狀態非取消的量產領刀明細使用成本"
+                  >
+                    刀具成本總金額
+                  </th>
+                  <th>材料使用總數量</th>
+                  <th>材料單位</th>
+                  <th>材料成本總金額</th>
+                  <th
+                    data-original-title="CNC設備成本+刀具成本總金額+材料使用總金額"
+                  >
+                    訂單總成本
+                  </th>
+                  <th data-original-title="訂單總成本/(生產數量-生產不良數)">
+                    單類加工成本
+                  </th>
+                  <th>報價業務人員</th>
+                  <th>單顆報價金額</th>
+                  <th
+                    data-original-title="(單顆報價金額-單顆加工成本)/單顆報價金額"
+                  >
+                    差異比%
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+        <!-- widget content END -->
+      </div>
+      <!-- widget div END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

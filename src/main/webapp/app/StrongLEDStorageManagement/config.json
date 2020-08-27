@@ -1,0 +1,40 @@
+{
+  "app": {
+    "id": "StrongLEDStorageManagement",
+    "name": "i18n_ServCloud_Storage_Management",
+    "type": 1,
+    "description": "StrongLED Storage Management",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_manage_zone",
+      "name": "i18n_ServCloud_10_Manage_Zone"
+    },
+    {
+      "id": "20_manage_storage",
+      "name": "i18n_ServCloud_20_Manage_Storage"
+    },
+    {
+      "id": "21_manage_storage_type",
+      "name": "i18n_ServCloud_21_Manage_Storage_Type"
+    },
+    {
+      "id": "30_manage_thing",
+      "name": "i18n_ServCloud_30_Manage_Thing"
+    },
+    {
+      "id": "40_manage_document",
+      "name": "i18n_ServCloud_40_Manage_Document"
+    },
+    {
+      "id": "50_manage_sender",
+      "name": "i18n_ServCloud_50_Manage_Sender"
+    },
+    {
+      "id": "60_manage_employee",
+      "name": "i18n_ServCloud_60_Manage_Employee"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

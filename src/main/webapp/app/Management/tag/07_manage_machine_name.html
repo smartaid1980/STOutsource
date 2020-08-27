@@ -1,0 +1,133 @@
+<!-- widget grid -->
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Manage_Machine_Name}</h2></span
+          >
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="stk-machine-name-table"
+              stk-entity-pk="device_id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 28%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 38%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">{i18n_ServCloud_Machine_ID}</th>
+                  <th>{i18n_ServCloud_Name}</th>
+                  <th>{i18n_ServCloud_Manage_Is_Real_Data}</th>
+                  <th>{i18n_ServCloud_Manage_Demo_Status}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="device_id"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Machine_ID}"
+                      stk-required="{i18n_ServCloud_Stk_Required}"
+                      stk-pk="{i18n_ServCloud_Stk_Pk}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="device_name"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Name}"
+                      stk-required="{i18n_ServCloud_Stk_Required}"
+                    />
+                  </td>
+                  <td>
+                    <span>
+                      <span class="onoffswitch">
+                        <input
+                          type="checkbox"
+                          name="is_real_data"
+                          class="onoffswitch-checkbox"
+                          checked="checked"
+                          id="isopen-onoffswitch"
+                        />
+                        <label
+                          class="onoffswitch-label"
+                          for="isopen-onoffswitch"
+                        >
+                          <span
+                            class="onoffswitch-inner"
+                            data-swchon-text="ON"
+                            data-swchoff-text="OFF"
+                          ></span>
+                          <span class="onoffswitch-switch"></span>
+                        </label>
+                      </span>
+                    </span>
+                  </td>
+                  <td>
+                    <select
+                      name="demo_status"
+                      class="form-control custom-scroll"
+                      stk-getdata-source="db"
+                      stk-getdata-name="m_device_light"
+                      stk-getdata-column-value="light_id"
+                      stk-getdata-column-text="light_name"
+                    ></select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+
+<script>
+  window.importPageScript()
+</script>

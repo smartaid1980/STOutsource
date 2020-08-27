@@ -1,0 +1,18 @@
+ALTER TABLE `a_storage_material_thing` 
+ ADD COLUMN `material_sub` VARCHAR(20) NOT NULL DEFAULT '0000' COMMENT '原料分項，無分項者預設0000=批號，同ERP.batchID批號' AFTER `material_id`,
+ MODIFY COLUMN `remark` VARCHAR(1024) CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT '產品名稱，等同於 ERP.prodName AKA material_name' AFTER `material_sub`,
+ ADD COLUMN `bill_from` VARCHAR(20) COMMENT '來源單號=bill_no' AFTER `remark`,
+ ADD COLUMN `bill_detail` INTEGER UNSIGNED COMMENT '來源細項=bill_detail' AFTER `bill_from`,
+ ADD COLUMN `code_no` INTEGER UNSIGNED COMMENT '條碼序號' AFTER `bill_detail`,
+ ADD COLUMN `column1` VARCHAR(20) COMMENT '保留' AFTER `code_no`,
+ ADD COLUMN `column2` VARCHAR(20) COMMENT '保留' AFTER `column1`,
+ ADD COLUMN `column3` VARCHAR(20) COMMENT '保留' AFTER `column2`,
+ ADD COLUMN `delivery_date` VARCHAR(8) COMMENT '出廠日期=delivery_date' AFTER `column3`,
+ MODIFY COLUMN `exp_date` DATE COMMENT '有效日期' AFTER `delivery_date`,
+ ADD COLUMN `in_stock` BOOLEAN NOT NULL DEFAULT 0 COMMENT '是否入庫' AFTER `exp_date`,
+ MODIFY COLUMN `is_new` BOOLEAN NOT NULL DEFAULT 1 COMMENT '是否全新' AFTER `in_stock`,
+ MODIFY COLUMN `status` INTEGER UNSIGNED NOT NULL DEFAULT 0 COMMENT '保留' AFTER `is_new`,
+ ADD INDEX `Index_material_sub`(`material_sub`),
+ ADD INDEX `Index_bill_from`(`bill_from`),
+ ADD INDEX `Index_code_no`(`code_no`),
+ DROP FOREIGN KEY `FK_a_storage_material_thing_material_id`;

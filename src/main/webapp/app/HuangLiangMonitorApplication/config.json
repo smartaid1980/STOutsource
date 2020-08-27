@@ -1,0 +1,40 @@
+{
+  "app": {
+    "id": "HuangLiangMonitorApplication",
+    "name": "監控應用服務",
+    "type": 1,
+    "description": "Monitor Application",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "02_plant_area_monitor",
+      "name": "i18n_ServCloud_Plant_Area_Monitor"
+    },
+    {
+      "id": "03_management_plant",
+      "name": "i18n_ServCloud_Plant_Area_Management"
+    },
+    {
+      "id": "04_manage_machine_light",
+      "name": "i18n_ServCloud_Number_Machine_Status_Management"
+    },
+    {
+      "id": "10_machine_status_query",
+      "name": "機台狀態查詢"
+    },
+    {
+      "id": "20_part_count_merged",
+      "name": "顆數查詢"
+    },
+    {
+      "id": "25_machine_status_history",
+      "name": "機台歷史狀態查詢(多機)"
+    },
+    {
+      "id": "30_download_raw_data",
+      "name": "機台原始資料下載(解碼)"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

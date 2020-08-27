@@ -1,0 +1,147 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      機台維護管理
+      <span>
+        > 維修人員報到
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<div
+  class="jarviswidget jarviswidget-color-darken hide"
+  id="check-in-widget"
+  data-widget-editbutton="false"
+  data-widget-deletebutton="false"
+  data-widget-collapsed="true"
+>
+  <header>
+    <span class="widget-icon"> <i class="fa fa-calendar"></i> </span>
+
+    <h2>報到與簽退</h2>
+  </header>
+
+  <!-- widget div-->
+  <div>
+    <!-- widget edit box -->
+    <div class="jarviswidget-editbox">
+      <!-- This area used as dropdown edit box -->
+    </div>
+    <!-- end widget edit box -->
+
+    <!-- widget content -->
+    <div class="widget-body no-padding">
+      <form id="check-in" class="smart-form" novalidate="novalidate">
+        <fieldset>
+          <section class="col col-4">
+            <label class="label">現在時間</label>
+            <label class="input">
+              <h3 id="timestmap"></h3>
+            </label>
+          </section>
+
+          <section class="col col-4">
+            <label class="label">員工編號</label>
+            <label class="input">
+              <i class="icon-append fa fa-user"></i>
+              <input type="text" id="user_id" />
+            </label>
+          </section>
+
+          <section class="col col-4">
+            <label class="label">密碼</label>
+            <label class="input">
+              <i class="icon-append fa fa-lock"></i>
+              <input type="password" id="password" />
+            </label>
+          </section>
+        </fieldset>
+
+        <footer>
+          <button
+            id="check-in-btn"
+            data-action="checkIn"
+            class="btn btn-primary"
+          >
+            報到
+          </button>
+          <button
+            id="check-out-btn"
+            data-action="checkOut"
+            class="btn btn-success"
+          >
+            簽退
+          </button>
+        </footer>
+      </form>
+    </div>
+    <!-- widget content end -->
+  </div>
+  <!--widget div end  -->
+</div>
+
+<div
+  class="jarviswidget jarviswidget-color-darken"
+  id="calendar-widget"
+  data-widget-editbutton="false"
+  data-widget-deletebutton="false"
+  data-widget-collapsed="true"
+>
+  <header>
+    <span class="widget-icon"> <i class="fa fa-calendar"></i> </span>
+
+    <h2>維修人員報到紀錄</h2>
+  </header>
+
+  <!-- widget div-->
+  <div>
+    <!-- widget edit box -->
+    <div class="jarviswidget-editbox">
+      <!-- This area used as dropdown edit box -->
+    </div>
+    <!-- end widget edit box -->
+
+    <!-- widget content -->
+    <div class="widget-body no-padding">
+      <div class="widget-body-toolbar">
+        <div id="calendar-buttons">
+          <div class="btn-group">
+            <a
+              href="javascript:void(0)"
+              class="btn btn-default btn-xs"
+              id="btn-prev"
+              ><i class="fa fa-chevron-left"></i
+            ></a>
+            <a
+              href="javascript:void(0)"
+              class="btn btn-default btn-xs"
+              id="btn-next"
+              ><i class="fa fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+    <!-- widget content end -->
+  </div>
+  <!--widget div end  -->
+</div>
+
+<style>
+  .fc-time-grid .fc-slats td {
+    height: 150px;
+  }
+</style>
+
+<script>
+  window.importPageScript()
+</script>

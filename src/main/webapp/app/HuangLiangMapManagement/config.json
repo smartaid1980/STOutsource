@@ -1,0 +1,44 @@
+{
+  "app": {
+    "id": "HuangLiangMapManagement",
+    "name": "選單維護",
+    "type": 1,
+    "description": "選單維護",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_alarm_code",
+      "name": "故障代碼"
+    },
+    {
+      "id": "02_repair_item",
+      "name": "維修項目"
+    },
+    {
+      "id": "03_exam_defective_cause",
+      "name": "例檢不良原因"
+    },
+    {
+      "id": "04_followup_work",
+      "name": "廠務稼動後續工程"
+    },
+    {
+      "id": "05_repair_type",
+      "name": "維修類型"
+    },
+    {
+      "id": "06_material_property",
+      "name": "材料屬性選單設定"
+    },
+    {
+      "id": "07_material_profile",
+      "name": "材料設定"
+    },
+    {
+      "id": "08_material_location",
+      "name": "材料庫位置設定"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

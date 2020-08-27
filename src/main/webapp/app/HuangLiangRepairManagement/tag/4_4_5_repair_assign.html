@@ -1,0 +1,112 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      機台維護管理
+      <span>
+        > 機台維修派工
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<div class="row">
+  <div id="content" class="span10">
+    <div id="01_alarm_by_codeContent">
+      <div style="background-color: black;">
+        <font color="white"
+          >&nbsp;機台維修派工查詢 / <i class="fa fa-search"></i
+        ></font>
+      </div>
+      <div id="collapse_query">
+        <div class="well">
+          <table width="100%">
+            <tr>
+              <td height="100%">
+                <input
+                  type="radio"
+                  name="a2"
+                  value="1"
+                  checked="checked"
+                />未派工&nbsp;
+                <input type="radio" name="a2" value="2" />已派工、尚未維修&nbsp;
+              </td>
+            </tr>
+          </table>
+          <br />
+          <!-- <center><a id="query-btn" class="btn btn-default">查詢</a></center> -->
+        </div>
+      </div>
+      <div style="background-color: black;">
+        <font color="white"
+          >&nbsp;機台維修派工 / <i class="fa fa-search"></i
+        ></font>
+      </div>
+      <div id="collapse_table" style="height: 0px;">
+        <div class="well">
+          <table class="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>機台編號</th>
+                <th>班別</th>
+                <th>顧車人員員編</th>
+                <th>顧車人員姓名</th>
+                <th>故障發生時間</th>
+                <th>故障通報時間</th>
+                <th>指派維修人員</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <td>2016-08-24</td>
+                <td>H30</td>
+                <td>A</td>
+                <td>00381</td>
+                <td>王小美</td>
+                <td>08:00:00</td>
+                <td>08:03:32</td>
+                <td>
+                    <select>
+                        <option>請選擇</option>
+                        <option>姚宗榮</option>
+                        <option>顏立人</option>
+                    </select>
+               </td>
+            </tr>
+            <tr>
+                <td>2016-08-24</td>
+                <td>H31</td>
+                <td>A</td>
+                <td>00381</td>
+                <td>王小美</td>
+                <td>08:03:00</td>
+                <td>08:07:35</td>
+                <td>
+                    <select>
+                        <option>請選擇</option>
+                        <option>姚宗榮</option>
+                        <option>顏立人</option>
+                    </select>
+               </td>
+            </tr> -->
+            </tbody>
+          </table>
+          <!-- <center>
+              <a class="btn btn-primary btn-xs" data-toggle="collapse">儲存</a>
+          </center> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.importPageScript()
+</script>

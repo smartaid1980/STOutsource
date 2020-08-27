@@ -1,0 +1,16 @@
+<record>
+    <params>
+        <param name="G_AMSG()" type="Array">
+            <contents>
+                <content fetchtime="20130607164938312" elapsed_sec="0.2547301">
+                    <values type="Array">
+                        <value fromType="DEC" toType="DEC">1500</value>
+                        <value fromType="DEC" toType="DEC">1501</value>
+						<value fromType="DEC" toType="DEC">1503</value>
+						<value fromType="DEC" toType="DEC">1505</value>
+                    </values>
+                </content>
+            </contents>
+        </param>
+    </params>
+</record>

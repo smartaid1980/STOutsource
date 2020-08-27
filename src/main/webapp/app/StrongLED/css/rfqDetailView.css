@@ -1,0 +1,30 @@
+#rfq-detail-view .col {
+  height: 20px;
+}
+#rfq-detail-view .col.multiple-line {
+  height: fit-content;
+  min-height: 20px;
+  word-break: break-all;
+}
+#rfq-detail-view .group {
+  padding: 10px 0;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+#rfq-detail-view .group .group-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+#rfq-detail-view .group .group-subtitle {
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+#rfq-detail-view .value {
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 1024px) {
+  #rfq-detail-view .value {
+    border: none;
+  }
+}

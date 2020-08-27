@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "ServTank",
+    "name": "ServTank 管理",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_servcore_config",
+      "name": "ServCore 設定"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

@@ -1,0 +1,36 @@
+{
+  "app": {
+    "id": "HuangLiangMaterialTempStock",
+    "name": "材料暫入模組",
+    "type": 1,
+    "description": "材料暫入模組",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_pending_iqc",
+      "name": "待驗料紀錄查詢"
+    },
+    {
+      "id": "20_pending_stock",
+      "name": "待審入庫材料查詢"
+    },
+    {
+      "id": "30_pending_return",
+      "name": "待退材料查詢"
+    },
+    {
+      "id": "40_return_record",
+      "name": "退料記錄查詢"
+    },
+    {
+      "id": "50_stock_record",
+      "name": "材料入庫紀錄查詢"
+    },
+    {
+      "id": "60_material_stock",
+      "name": "材料庫存查詢"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

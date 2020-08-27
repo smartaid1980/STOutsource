@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<command name="cnc_NCDownload" cycletype="count" cyclevalue="1" timeout="0"><params><param name="G_DNCP" count="1" frequency="0" isRepeat="true"><inputs><input name="P_PARAM">G</input></inputs><filters/><process/></param></params></command>

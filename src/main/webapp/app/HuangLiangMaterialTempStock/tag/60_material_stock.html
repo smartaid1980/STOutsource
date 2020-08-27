@@ -1,0 +1,359 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">材料庫</label>
+                      <label class="select">
+                        <select id="mrp" name="mrp"></select>
+                        <i></i>
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">材料</label>
+                      <label class="select">
+                        <select id="material" name="material"></select>
+                        <i></i>
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">架位代碼</label>
+                      <label class="select select-multiple">
+                        <select
+                          id="location"
+                          name="location"
+                          multiple="multiple"
+                        ></select>
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+                <button id="showdemo" class="btn btn-success hide">
+                  Demo
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+      <!-- detail DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>查詢結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input class="form-control" type="text" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input class="form-control" type="text" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input class="form-control" type="text" />
+                  </th>
+                  <th style="width: 5%;"></th>
+                  <th style="width: 5%;"></th>
+                  <th style="width: 7%;"></th>
+                </tr>
+                <tr>
+                  <th>材料庫</th>
+                  <th>採購單號</th>
+                  <th>廠商</th>
+                  <th>材料條碼</th>
+                  <th>材料編碼</th>
+                  <th>外徑</th>
+                  <th>材料長度</th>
+                  <th>上漆顏色</th>
+                  <th>位置</th>
+                  <th>數量(KG)</th>
+                  <th>MRP批號</th>
+                  <th>暫入上架時間</th>
+                  <th>數量調整</th>
+                  <th>儲位變更</th>
+                  <th>異動紀錄</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+      <!-- modal dialog START -->
+      <div
+        class="modal fade"
+        id="modal-adjust"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title adjust-qty" style="float: left;">
+                材料數量調整
+              </h4>
+              <h4 class="modal-title adjust-location" style="float: left;">
+                材料儲位變更
+              </h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="mat-info-row">
+                <div>材料庫</div>
+                <div class="mat-info" data-name="mstock_name"></div>
+              </div>
+              <div class="mat-info-row">
+                <div>採購單號</div>
+                <div class="mat-info" data-name="po_no"></div>
+              </div>
+              <div class="mat-info-row">
+                <div>材料條碼</div>
+                <div class="mat-info" data-name="mat_code"></div>
+              </div>
+              <div class="mat-info-row">
+                <div>材料編碼</div>
+                <div class="mat-info" data-name="mat_id"></div>
+              </div>
+              <div class="mat-info-row">
+                <div>外徑</div>
+                <div class="mat-info" data-name="mat_od"></div>
+              </div>
+              <div class="mat-info-row">
+                <div>長度</div>
+                <div class="mat-info" data-name="mat_length"></div>
+              </div>
+              <div class="mat-info-row">
+                <div>上漆顏色</div>
+                <div class="mat-info" data-name="mat_color"></div>
+              </div>
+              <div class="mat-info-row">
+                <div>暫入上架時間</div>
+                <div class="mat-info" data-name="shelf_time"></div>
+              </div>
+              <div class="mat-info-row">
+                <div>當前位置</div>
+                <div class="mat-info" data-name="location"></div>
+              </div>
+              <div class="mat-info-row">
+                <div>當前庫存數量(<span class="unit"></span>)</div>
+                <div class="mat-info" data-name="mstock_qty"></div>
+              </div>
+              <div class="mat-info-row adjust-qty">
+                <div style="line-height: 32px;">
+                  修改庫存數量(<span class="unit"></span>)為
+                </div>
+                <div class="">
+                  <input
+                    type="text"
+                    class="form-control chg-qty required"
+                    placeholder=""
+                  />
+                  <small class="hide" id="qty-incorrect" style="color: red;"
+                    >請填修改後數量</small
+                  >
+                </div>
+              </div>
+              <div class="mat-info-row adjust-location">
+                <div style="line-height: 32px;">修改儲位為</div>
+                <div class="">
+                  <select
+                    class="form-control chg-location required"
+                    name="location"
+                  ></select>
+                </div>
+              </div>
+              <div class="mat-info-row adjust-qty">
+                <div style="line-height: 32px;">修改原因</div>
+                <div class="">
+                  <select
+                    class="form-control chg-reason required"
+                    name="chg_reason"
+                  ></select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default" data-dismiss="modal">取消</button>
+              <button class="btn btn-primary" id="adjust-confirm">確認</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal dialog END -->
+      <!-- modal dialog START -->
+      <div
+        class="modal modal-record fade"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style="width: 1200px;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" style="float: left;">材料異動紀錄</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <table
+                id="chg-record-table"
+                class="table table-striped table-bordered table-hover"
+                width="100%"
+              >
+                <thead>
+                  <tr>
+                    <th>材料庫</th>
+                    <th>材料條碼</th>
+                    <th>採購單號</th>
+                    <th>修改類型</th>
+                    <th>原位置</th>
+                    <th>修改位置</th>
+                    <th>原數量</th>
+                    <th>修改數量</th>
+                    <th>異動原因</th>
+                    <th>異動時間</th>
+                    <th>異動人</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-dismiss="modal">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal dialog END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+<style>
+  .mat-info-row {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .mat-info-row > div:nth-child(1) {
+    flex: 2;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .mat-info-row > div:nth-child(2) {
+    flex: 3;
+  }
+  .modal.qty .adjust-location {
+    display: none;
+  }
+  .modal.location .adjust-qty {
+    display: none;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

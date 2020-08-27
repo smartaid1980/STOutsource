@@ -1,0 +1,172 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- QUERY WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_ServTrack_000020}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form id="query-form" class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="radio">
+                      <input
+                        type="radio"
+                        value="unfinished"
+                        name="query-type"
+                        checked="checked"
+                      />
+                      <i></i>
+                      <p>
+                        {i18n_ServCloud_ServTrack_All_Pending_Unfinished_Records}
+                      </p>
+                    </label>
+                  </section>
+                  <section
+                    id="date-form"
+                    class="col col-xs-12 col-sm-12 col-md-6 col-lg-6"
+                  >
+                    <label class="radio">
+                      <input type="radio" value="date" name="query-type" />
+                      <i></i>
+                      <p>{i18n_ServCloud_ServTrack_Date_Query}</p>
+                    </label>
+                    <section class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                      <label class="label st-required"
+                        >{i18n_ServCloud_ServTrack_000027}</label
+                      >
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="start-date"
+                          class="form-control"
+                          data-rule-required="true"
+                          data-rule-dateISO="true"
+                          disabled
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrack_000010}</label
+                      >
+                      <label class="input">
+                        <select
+                          name="line-id"
+                          class="select2 full-width"
+                        ></select>
+                      </label>
+                    </section>
+                    <section class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                      <label class="label st-required"
+                        >{i18n_ServCloud_ServTrack_000036}</label
+                      >
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          name="end-date"
+                          class="form-control"
+                          data-rule-required="true"
+                          data-rule-dateISO="true"
+                          disabled
+                        />
+                      </label>
+                    </section>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="query-btn" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrack_000020}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- QUERY WIDGET END -->
+    <!-- RESULT WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="detail-table-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_ServTrack_000018}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="detail-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_ServTrack_Date}</th>
+                  <th>{i18n_ServCloud_ServTrack_000010}</th>
+                  <th>{i18n_ServCloud_ServTrack_Invalid_Class}</th>
+                  <th>{i18n_ServCloud_ServTrack_000003}</th>
+                  <th>{i18n_ServCloud_ServTrack_Invalid_Reason}</th>
+                  <th>{i18n_ServCloud_ServTrack_Tablet_Name}</th>
+                  <th>{i18n_ServCloud_ServTrack_Start_Time}</th>
+                  <th>{i18n_ServCloud_ServTrack_End_Time}</th>
+                  <th>{i18n_ServCloud_ServTrack_Cumulative_Time}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- RESULT WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

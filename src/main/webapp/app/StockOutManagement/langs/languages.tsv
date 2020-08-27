@@ -1,0 +1,77 @@
+	zh_tw	zh	en
+i18n_ServCloud_Data_Upload	資料上傳	资料上传	Data Upload
+i18n_ServCloud_Employee_Data_Upload	員工資料上傳	员工资料上传	Employee Data Upload
+i18n_ServCloud_ERP_Data_Upload	ERP資料上傳	ERP资料上传	ERP Data Upload
+i18n_ServCloud_dragXlsxFile	將.xlsx檔案拖曳至此	将.xlsx档案拖曳至此	Drag .xlsx file in here
+i18n_ServCloud_orClick	或按我	或按我	or click me
+i18n_ServCloud_Upload_Failed	上傳失敗	上传失败	Upload failed.
+i18n_ServCloud_Upload_Time	上傳時間	上传时间	Upload_Time
+i18n_ServCloud_Upload_DataName	上傳檔名	上传檔名	Upload_DataName
+i18n_ServCloud_Total_Rows	總筆數	总笔数	Total_Rows
+i18n_ServCloud_Success_Rows	成功筆數	成功笔数	Success_Rows
+i18n_ServCloud_Fail_Rows	失敗列數	失败列数	Fail_Rows
+i18n_ServCloud_Upload_Account	上傳帳號	上传帐号	Upload_Account
+i18n_ServCloud_warehouse_material_Sending_Main	查詢出庫單主檔	查询出库单主檔	warehouse_material_Sending_Main
+i18n_ServCloud_warehouse_material_Sending_List	查詢出庫單明細	查询出库单明细	warehouse_material_Sending_List
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_Inquire	查詢	查询	Inquire
+i18n_ServCloud_Query_Result	查詢結果	查询结果	Query Result
+i18n_ServCloud_Warehouse_Out_Type	出庫方式	出库方式	Warehouse_Out_Type
+i18n_ServCloud_Supplier_Material_Id	供應商料號	供应商料号	Supplier_Material_Id
+i18n_ServCloud_Warehouse_Out_PageNumber	出庫單號	出库单号	Warehouse_Out_PageNumber
+i18n_ServCloud_Item_Number	品項項次	品項項次	Item_Number
+i18n_ServCloud_Storage_Date	入庫單日期	入库单日期	Storage_Date
+i18n_ServCloud_Warehouse_Out_Start_Date	出庫單起始日期	出库单起始日期	Warehouse_Out_Start_DateStart_Date
+i18n_ServCloud_Warehouse_Out_End_Date	出庫單結束日期	出库单结束日期	Warehouse_Out_End_Date
+i18n_ServCloud_Warehouse_Out_Time	出庫時間	出库时间	Warehouse_Out_Time
+i18n_ServCloud_Warehouse_Out_Order	發料單	发料单	Warehouse_Out_Order
+i18n_ServCloud_Warehouse_Out_List	發料單明細	发料单明細	Warehouse_Out_List
+i18n_ServCloud_Warehouse_Out_Order_No	發料單號	发料单号	Warehouse_Out_Order_No
+i18n_ServCloud_Unit_Qty	單件數量	单件数量	Unit_Qty
+i18n_ServCloud_Storage_Number	入庫數	入库数	Storage_Number
+i18n_ServCloud_Residue_Warehousing	餘料入库	余料入库	Residue_Warehousing
+i18n_ServCloud_Yes	是	是	Yes
+i18n_ServCloud_No	否	否	No
+i18n_ServCloud_Transferred_Out	是否已註記轉出	是否已注记转出	Transferred_Out
+i18n_ServCloud_Warehouse	倉別	仓别	Warehouse
+i18n_ServCloud_Pkg-Id	PKG-ID	PKG-ID	PKG-ID
+i18n_ServCloud_Part_No	料號	料号	Part No
+i18n_ServCloud_Quantity	數量	数量	Quantity
+i18n_ServCloud_Date_Code	出廠日期	出厂日期	Date_Code
+i18n_ServCloud_LotNo	供應商批號	供应商批号	LotNo
+i18n_ServCloud_Work_ID	工單號	工单号	Work Id
+i18n_ServCloud_Work_Number	工單數	工单数	Work_Number
+i18n_ServCloud_Work_Total_Demand	工單總需求數	工单总需求数	Work_Total_Demand
+i18n_ServCloud_Transfer_Start_Date	轉入起始日期	转入起始日期	Transfer_Start__Date
+i18n_ServCloud_Transfer_End_Date	轉入結束日期	转入结束日期	Transfer_End_Date
+i18n_ServCloud_Picking_Unit	領料單位	领料单位	Picking_Unit
+i18n_ServCloud_Unit	單位	单位	Unit
+i18n_ServCloud_Line	線別	线别	Line
+i18n_ServCloud_Product	產品	产品	Product
+i18n_ServCloud_Warehouse_Out_Date	應發料日期	应发料日期	Warehouse_Out_Date
+i18n_ServCloud_Status	狀態	状态	status
+i18n_ServCloud_Details	明細	明细	Details
+i18n_ServCloud_Case_Closed	結案	结案	Case_Closed
+i18n_ServCloud_Case_Closed_Done	已結案	已结案	Case_Closed_Done
+i18n_ServCloud_Composition_And_Dosage	組成用量	组成用量	Composition_And_Dosage
+i18n_ServCloud_Previously_Sent_Quantity	先前已發數量	先前已发数量	Previously_Sent_Quantity
+i18n_ServCloud_Number_Of_Applications	本次請領數量	本次请领数量	Number_Of_Applications
+i18n_ServCloud_Quantity_Received	本次已領數量	本次已领数量	Quantity_Received
+i18n_ServCloud_Quantity_Not_Received	本次未領數量	本次未领数量	Quantity_Not_Received
+i18n_ServCloud_Drop_Out	退出	退出	drop out
+i18n_ServCloud_Supplier	供應商	供应商	supplier
+i18n_ServCloud_Machine_Model	機台型號	机台型号	Machine_Model
+i18n_ServCloud_Machine_Number	機台號	机台号	Machine_Number
+i18n_ServCloud_Program_Name	程式名稱	程式名称	Program_Name
+i18n_ServCloud_Track	軌道	轨道	Track
+i18n_ServCloud_SubTrack	子軌道	子轨道	SubTrack
+i18n_ServCloud_Material_ID	原料料號	原料料号	Material_ID
+i18n_ServCloud_Specification	規格	规格	specification
+i18n_ServCloud_Feeder_type	供料器類型	供料器类型	Feeder_type
+i18n_ServCloud_Location	站位	站位	Location
+i18n_ServCloud_PCA	主件料號	主件料号	PCA
+i18n_ServCloud_Version	版別	版别	Version
+i18n_ServCloud_Issue_Date	發行日期	发行日期	Issue_Date
+i18n_ServCloud_Feed_Station_Details	料站明細	料站明细	Feed_Station_Details
+i18n_ServCloud_Feed_Station_ID	料站表編號	料站表编号	Feed_Station_ID

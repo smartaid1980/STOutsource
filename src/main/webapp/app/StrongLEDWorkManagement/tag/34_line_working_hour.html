@@ -1,0 +1,452 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-12">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      {i18n_ServCloud_ServTrackManagement_000007}
+      <span>
+        > {i18n_ServCloud_ServTrackManagement_000147}
+      </span>
+    </h1>
+  </div>
+</div>
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_ServTrackManagement_000121}</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form id="myForm" class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-6">
+                    <label class="label st-required"
+                      >{i18n_ServCloud_ServTrackManagement_000130}</label
+                    >
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="start-date"
+                        name="start-date"
+                        data-rule-required="true"
+                        data-rule-dateISO="true"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-6">
+                    <label class="label st-required"
+                      >{i18n_ServCloud_ServTrackManagement_000134}</label
+                    >
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="end-date"
+                        name="end-date"
+                        data-rule-required="true"
+                        data-rule-dateISO="true"
+                      />
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button name="submit-clean" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrackManagement_000018}
+                </button>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrackManagement_000057}
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="stk-line-shift-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+        style="display: none;"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-clock-o"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_ServTrackManagement_000147}</h2></span
+          >
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding" id="line-shift-prev">
+            <table
+              id="stk-line-shift-table"
+              class="table table-striped table-bordered table-hover"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 85%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th data-class="expand" align="center">
+                    {i18n_ServCloud_ServTrackManagement_000137}
+                  </th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000204}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000205}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+      <div
+        class="modal fade"
+        id="add-line-hour"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div id="add-line-hour-content" class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title">
+                {i18n_ServCloud_ServTrackManagement_000142}
+              </h4>
+            </div>
+            <div class="modal-body">
+              <form class="smart-form" id="modal-form" novalidate="novalidate">
+                <fieldset>
+                  <div class="row">
+                    <section class="col col-6">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000130}</label
+                      >
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" id="modal-start-date" />
+                      </label>
+                    </section>
+                    <section class="col col-6">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000134}</label
+                      >
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" id="modal-end-date" />
+                      </label>
+                    </section>
+                    <section class="col col-12">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000152}</label
+                      >
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            checked="checked"
+                            value="1"
+                            name="week-day"
+                          />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000154}</span
+                          >
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            checked="checked"
+                            value="2"
+                            name="week-day"
+                          />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000151}</span
+                          >
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            checked="checked"
+                            value="3"
+                            name="week-day"
+                          />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000153}</span
+                          >
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            checked="checked"
+                            value="4"
+                            name="week-day"
+                          />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000146}</span
+                          >
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            checked="checked"
+                            value="5"
+                            name="week-day"
+                          />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000150}</span
+                          >
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" value="6" name="week-day" />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000149}</span
+                          >
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" value="0" name="week-day" />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000141}</span
+                          >
+                        </label>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="row">
+                    <section class="col col-6">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000144}</label
+                      >
+                      <label class="input">
+                        <input type="text" id="modal-line-hour" />
+                      </label>
+                    </section>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default" data-dismiss="modal">
+                {i18n_ServCloud_ServTrackManagement_000078}
+              </button>
+              <button id="modal-submit-btn" class="btn btn-primary">
+                {i18n_ServCloud_ServTrackManagement_000057}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="line-hour-edit"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title">
+                {i18n_ServCloud_ServTrackManagement_000132}
+              </h4>
+            </div>
+            <div class="modal-body" id="modal-table-body">
+              <div
+                class="jarviswidget jarviswidget-color-darken"
+                id="QC"
+                data-widget-editbutton="false"
+                data-widget-deletebutton="false"
+                data-widget-togglebutton="false"
+                data-widget-fullscreenbutton="false"
+              >
+                <header>
+                  <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+                  <h2>{i18n_ServCloud_ServTrackManagement_000132}</h2>
+                </header>
+                <!-- widget div-->
+                <div>
+                  <!-- widget content -->
+                  <div class="widget-body no-padding">
+                    <table
+                      id="modal-edit-table"
+                      class="table table-striped table-bordered table-hover"
+                      width="100%"
+                      stk-entity-pk="line_id"
+                    >
+                      <thead>
+                        <tr>
+                          <th
+                            class="hasinput col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                          >
+                            <input
+                              type="text"
+                              class="form-control"
+                              style="width: 100%;"
+                            />
+                          </th>
+                          <th
+                            class="hasinput col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                          >
+                            <input
+                              type="text"
+                              class="form-control"
+                              style="width: 100%;"
+                            />
+                          </th>
+                          <th
+                            class="hasinput col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                          >
+                            <input
+                              type="text"
+                              class="form-control"
+                              style="width: 100%;"
+                            />
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>{i18n_ServCloud_ServTrackManagement_000140}</th>
+                          <th data-class="expand">
+                            {i18n_ServCloud_ServTrackManagement_000133}
+                          </th>
+                          <th>{i18n_ServCloud_ServTrackManagement_000136}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr stk-input-template hidden="hidden">
+                          <td>
+                            <input
+                              type="text"
+                              disabled="disabled"
+                              name="shift_day"
+                              class="form-control"
+                            />
+                          </td>
+                          <td>
+                            <input
+                              type="text"
+                              name="line_id"
+                              class="form-control"
+                              stk-pk
+                            />
+                          </td>
+                          <td>
+                            <input
+                              type="text"
+                              name="duration_sp"
+                              class="form-control"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="alertModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body" id="alertMessage"></div>
+            <div class="modal-footer">
+              <button
+                id="alert-submit-btn"
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                {i18n_ServCloud_ServTrackManagement_000213}
+              </button>
+              <button
+                id="alert-cancel-btn"
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                {i18n_ServCloud_ServTrackManagement_000214}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,17 @@
+	zh_tw	zh	en
+i18n_ServCloud_Ip_Cam	Ip Cam	Ip Cam	Ip Cam
+i18n_ServCloud_Manage_Ip_Cam	Ip Cam 管理	Ip Cam 管理	Ip Cam Management
+i18n_ServCloud_Ip_Cam_Title	Ip Cam標題	Ip Cam标题	Ip Cam Title
+i18n_ServCloud_No_Bundle	不綁定	不绑定	No Machine binded
+i18n_ServCloud_IP	IP 位址	IP 位址	IP Address
+i18n_ServCloud_Port	Port	Port	Port
+i18n_ServCloud_Sequence	Ip Cam 排列順序	Ip Cam 排列顺序	Ip Cam Squence
+i18n_ServCloud_Device_Binding	設備绑定	设备绑定	Device Binding
+i18n_ServCloud_Production_Line_Binding	綁定產線	绑定产线	Production Line Binding
+i18n_ServCloud_Plant_Binding	綁定廠區	绑定厂区	Plant Area Binding
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_Ip_Cam_Grid	Ip Cam 監控站	Ip Cam 监控站	Ip Cam Monitoring Station
+i18n_ServCloud_Ip_Cam_Grid_Demo	Ip Cam 監控站備援	Ip Cam 监控站备援	Ip Cam Monitoring Station Demo
+i18n_ServCloud_Ip_Cam_User_Name	Ip Cam 帳號	Ip Cam 帐号	Ip Cam User Name
+i18n_ServCloud_Ip_Cam_Password	Ip Cam 密碼	Ip Cam 密码	Ip Cam Password

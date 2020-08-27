@@ -1,0 +1,423 @@
+<section id="widget-grid">
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Production_Schedule_Recommend}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding" data-style="dark">
+            <div class="block">
+              <div class="block-header">
+                <!-- <h3>{i18n_ServCloud_Production_Schedule_Recommend}</h3> -->
+              </div>
+              <div>
+                <table id="work-table">
+                  <thead>
+                    <tr>
+                      <th>{i18n_ServCloud_Schedule}</th>
+                      <th>{i18n_ServCloud_Work_Order}</th>
+                      <th>{i18n_ServCloud_Booking_Delivery_Date}</th>
+                      <th>{i18n_ServCloud_Delivery_Volume}</th>
+                      <th>{i18n_ServCloud_Standard_Work}</th>
+                      <th>{i18n_ServCloud_Expected_Completion_Date}</th>
+                      <th>{i18n_ServCloud_Disparity}</th>
+                      <th class="highlight">
+                        {i18n_ServCloud_Scheduling_Advice}
+                      </th>
+                      <th class="highlight">
+                        {i18n_ServCloud_Adjusted_Completion_Date}
+                      </th>
+                      <th class="highlight">{i18n_ServCloud_Impact_Note}</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-header"></div>
+              <div>
+                <div class="tracking-status-container">
+                  <div class="table-container">
+                    <h3>{i18n_ServCloud_Process_Report_Status}</h3>
+                    <div class="legend">
+                      <div>
+                        <div class="legend-color">
+                          <div class="bar-icon">
+                            <hr style="background: rgb(33, 125, 10);" />
+                          </div>
+                        </div>
+                        <div class="legend-label">
+                          {i18n_ServCloud_Ongoing_Process}
+                        </div>
+                      </div>
+                      <div>
+                        <div class="legend-color">
+                          <div class="bar-icon">
+                            <hr style="background: #3d3c5a;" />
+                          </div>
+                        </div>
+                        <div class="legend-label">
+                          {i18n_ServCloud_Process_Completed}
+                        </div>
+                      </div>
+                    </div>
+                    <table id="tracking-table" class="work-table">
+                      <thead>
+                        <tr>
+                          <th>{i18n_ServCloud_Move_In_Time}</th>
+                          <th>{i18n_ServCloud_Move_Out_Time}</th>
+                          <th>{i18n_ServCloud_Line}</th>
+                          <th>{i18n_ServCloud_Work}</th>
+                          <th>{i18n_ServCloud_Output}</th>
+                          <th>{i18n_ServCloud_Adverse_Number}</th>
+                          <th>{i18n_ServCloud_Process}</th>
+                          <th>{i18n_ServCloud_Yield}</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+                  <div class="chart-container"></div>
+                </div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-header">
+                <h3>
+                  {i18n_ServCloud_Line_State_Stacking_Diagram}<span
+                    id="progress-chart-line"
+                  ></span>
+                </h3>
+              </div>
+              <div>
+                <div id="progress-chart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+</section>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="./app/Dashboard/css/servtrack_in_and_out_station.css"
+/>
+<style>
+  #jarviswidget-fullscreen-mode .jarviswidget > div {
+    overflow: hidden;
+  }
+
+  .smart-style-5 .jarviswidget > header h2 {
+    font-size: 2.2rem;
+    padding-left: 10px;
+    font-weight: bolder;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    border-left: 5px solid #36a4b5 !important;
+    padding-left: 20px;
+    /* padding: 7px 15px; */
+    color: #36a4b5;
+    margin: 20px 0 0 0;
+  }
+
+  [data-style='dark'] .work-table {
+    background-color: #00000000;
+  }
+
+  [data-style='dark'] .work-table tr.working {
+    background: linear-gradient(
+      180deg,
+      rgba(46, 228, 0, 0.3) 0%,
+      rgba(5, 148, 22, 0.34) 50%,
+      rgba(46, 228, 0, 0.33) 100%
+    );
+    color: white;
+  }
+
+  #work-table tbody > tr,
+  .work-table tbody > tr {
+    border-bottom: 1px solid #dadada40;
+  }
+
+  #work-table {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  #work-table th,
+  #work-table td {
+    /* border: 1px solid white; */
+    padding: 10px 15px;
+    text-align: center;
+    /* color: white; */
+  }
+
+  #work-table th {
+    background-color: rgb(31, 54, 69);
+    border-bottom: 1px solid #dadada40;
+    border-top: 1px solid #dadada40;
+  }
+
+  #work-table th:not(.highlight) + th.highlight {
+    border-left: 1px solid #dadada40;
+  }
+
+  #work-table th.highlight {
+    background-color: #00bfc166;
+  }
+
+  #work-table tr > td:last-child {
+    text-align: left;
+  }
+
+  .tracking-status-container {
+    display: flex;
+  }
+
+  .tracking-status-container .table-container {
+    background: #1f1e2c;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+
+  .tracking-status-container > div:first-child {
+    flex-basis: 40%;
+  }
+
+  .tracking-status-container > div:last-child {
+    flex-basis: 60%;
+  }
+
+  .legend {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .legend > div {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .legend hr {
+    width: 30px;
+    margin: 5px 6px;
+    border-top-width: 3px;
+  }
+
+  .legend .point-line-icon {
+    position: relative;
+  }
+
+  .legend .point-line-icon > div {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 40%;
+    top: -79%;
+  }
+
+  .legend .bar-icon > hr {
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+
+  .legend .legend-label {
+    font-size: 1.5rem;
+  }
+
+  #tracking-table {
+    /* width: 100%; */
+    font-size: 1.3rem;
+  }
+
+  #tracking-table thead {
+    background: #1f3645;
+  }
+
+  #tracking-table th,
+  #tracking-table td {
+    border: none;
+    padding: 10px 5px;
+    text-align: center;
+    /* color: white; */
+  }
+
+  .chart-container {
+    padding: 0 10px;
+  }
+
+  .chart-container > div {
+    display: flex;
+    background: #1f1e2c;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    /* margin-bottom: 20px; */
+  }
+
+  .chart-container > div:first-child {
+    margin-bottom: 32px;
+    margin-top: 2rem;
+  }
+
+  .chart-container > div > div {
+    flex-basis: 60%;
+  }
+
+  .chart-container .chart-group {
+    flex-basis: 40%;
+    height: 20rem;
+    /* width: 20rem; */
+  }
+  .chart-container .chart-group > div {
+    display: flex;
+    width: 100%;
+    height: 90%;
+  }
+  .chart-container .chart-group .pie-chart {
+    flex-basis: 60%;
+  }
+  .chart-container .chart-group .chart-legend {
+    /* flex-basis: 40%; */
+    background: #2f2d44;
+    margin: 20px 10px;
+    padding: 10px;
+    align-self: center;
+    font-size: 17px;
+  }
+
+  /* .chart-container .legend>table {
+    top: 15px !important;
+    right: -20px !important;
+  } */
+
+  .chart-container .chart-group > div {
+    /* height: 80%; */
+    width: 90%;
+    margin: auto;
+  }
+
+  .chart-container .chart-group > p {
+    text-align: center;
+  }
+
+  .chart-container .chart-label {
+    border: 1px solid grey;
+    font-size: 8pt;
+    font-size: 17px;
+    /* text-align: center; */
+    padding: 5px;
+    color: white;
+    /* width: 50px; */
+  }
+
+  .chart-container .title {
+    font-size: 2rem;
+    color: #36a4b5;
+    font-weight: bolder;
+    padding-top: 2rem;
+  }
+
+  .chart-container .title > span {
+    font-size: 1.4rem;
+  }
+
+  .text-group {
+    padding: 10px 0;
+  }
+
+  .text-group > div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 1.6rem;
+    padding: 5px 0;
+  }
+
+  .text-group .left {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left .today-percent {
+    background-color: #2dc100a1;
+    /* clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%); */
+    padding: 7px 15px;
+    width: 82px;
+    text-align: center;
+    color: white;
+  }
+
+  .text-group .right {
+    flex-basis: 65%;
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    /* top: 15%; */
+    /* right: 0; */
+    /* margin-top: 0.6rem; */
+    /* margin-left: -4rem; */
+  }
+
+  .right .history-percent {
+    color: #b0b0b0;
+    background: #2785106b;
+    /* clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%); */
+    padding: 7px 15px;
+    width: 82px;
+    text-align: center;
+  }
+
+  .right .link {
+    padding: 0 0.4rem 0 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .right .text-reason-info {
+    /* border: 1px solid saddlebrown; */
+    /* padding: 0.5rem; */
+    /* width: 100%; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background: linear-gradient(
+      180deg,
+      rgba(228, 0, 0, 0.5) 0%,
+      rgba(255, 0, 0, 0.24) 50%,
+      rgba(228, 0, 0, 0.5) 100%
+    );
+    padding: 8px 15px;
+    border-radius: 0.3rem;
+    /* font-size: 0.5rem; */
+    margin-left: 1.5rem;
+  }
+
+  .right .text-reason-info i {
+    color: #ffe700;
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

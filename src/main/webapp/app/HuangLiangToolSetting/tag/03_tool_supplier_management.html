@@ -1,0 +1,108 @@
+<!-- widget grid -->
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i></span>
+          <h2>刀具廠商設定</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="stk-table"
+              stk-entity-pk="tsup_id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 40%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 40%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th style="width: 10%;"></th>
+                </tr>
+                <tr>
+                  <th data-class="expand">廠商代碼</th>
+                  <th>廠商名稱</th>
+                  <th>啟用</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      type="text"
+                      name="tsup_id"
+                      class="form-control"
+                      placeholder="廠商代碼"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="tsup_name"
+                      class="form-control"
+                      placeholder="廠商名稱"
+                    />
+                  </td>
+                  <td>
+                    <span>
+                      <span class="onoffswitch">
+                        <input
+                          type="checkbox"
+                          name="is_open"
+                          class="onoffswitch-checkbox"
+                          checked="checked"
+                          id="isopen-onoffswitch"
+                        />
+                        <label
+                          class="onoffswitch-label"
+                          for="isopen-onoffswitch"
+                        >
+                          <span
+                            class="onoffswitch-inner"
+                            data-swchon-text="ON"
+                            data-swchoff-text="OFF"
+                          ></span>
+                          <span class="onoffswitch-switch"></span>
+                        </label>
+                      </span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<script type="text/javascript">
+  window.importPageScript()
+</script>

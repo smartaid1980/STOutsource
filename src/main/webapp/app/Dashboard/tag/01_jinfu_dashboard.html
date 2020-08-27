@@ -1,0 +1,125 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-tasks fa-fw"></i> 電子看板
+    </h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-2 col-md-2 col-lg-2 hide">
+    <div class="form-group">
+      <label>切換頻率(秒)</label>
+      <input
+        class="form-control spinner spinner-left"
+        id="refresh-freq-spinner"
+        value="30"
+        type="text"
+      />
+    </div>
+  </div>
+  <div class="col-sm-2 col-md-2 col-lg-2 hide">
+    <div class="form-group">
+      <a
+        class="btn btn-info btn-lg margin-top-10"
+        data-toggle="collapse"
+        href="#collapse_table"
+        id="fullscreen-btn"
+        >全螢幕檢視</a
+      >
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12" id="rotate-canvas">
+    <div id="marquee-container">
+      <span id="marquee"></span>
+    </div>
+    <div id="canvas" class="text-center"></div>
+  </div>
+</div>
+
+<style>
+  @import url('app/CHODashboard/css/style.css');
+  #canvas > .machine-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+  }
+  #canvas > .machine-row > div {
+    margin: 0 1.2rem 1rem;
+    width: 157px;
+  }
+  .outter-circle {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  .inner-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin: 0 auto;
+    height: 127px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+  }
+
+  /* 多行省略效果 */
+  .title .product-name {
+    /* height: 74px; */ /* 74px約略是3行的高度，產品名稱會靠上對齊 */
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .value {
+    font-size: 18px;
+    top: 12%;
+  }
+
+  .diff {
+    font-size: 18px;
+  }
+
+  #marquee-container {
+    margin: 0;
+  }
+
+  /* CSS3 跑馬燈效果 */
+  #marquee-container span {
+    display: inline-block;
+  }
+  #marquee-container span.run {
+    padding-left: 100%;
+    /* show the marquee just outside the paragraph */
+    animation: marquee 15s linear infinite;
+  }
+
+  #marquee-container span.run:hover {
+    animation-play-state: paused;
+  }
+
+  /* Make it move */
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+</style>
+
+<script>
+  window.importPageScript()
+</script>

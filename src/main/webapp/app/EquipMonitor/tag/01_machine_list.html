@@ -1,0 +1,102 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span>> i18n_ServCloud_Machine_List </span>
+    </h1>
+  </div>
+</div>
+
+<section
+  data-ng-controller="submitCtrl"
+  id="widget-grid"
+  ng-init="initDeviceList()"
+>
+  <!-- END ROW -->
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>i18n_ServCloud_Machine_List</h2></span
+          >
+        </header>
+        <div style="text-align: right;">
+          <div style="display: inline-block; padding: 0px 10px;">
+            i18n_ServCloud_Light_Status:<br />
+            <img />
+          </div>
+          <div
+            style="display: inline-block; padding: 0px 10px;"
+            class="text-center"
+          >
+            <img
+              data-ng-src="EquipMonitor/img/light/online.png"
+            /><br />i18n_ServCloud_Online
+          </div>
+          <div
+            style="display: inline-block; padding: 0px 10px;"
+            class="text-center"
+          >
+            <img
+              data-ng-src="EquipMonitor/img/light/idle.png"
+            /><br />i18n_ServCloud_Stop
+          </div>
+          <div
+            style="display: inline-block; padding: 0px 10px;"
+            class="text-center"
+          >
+            <img
+              data-ng-src="EquipMonitor/img/light/alarm.png"
+            /><br />i18n_ServCloud_Alarm
+          </div>
+          <div
+            style="display: inline-block; padding: 0px 10px;"
+            class="text-center"
+          >
+            <img
+              data-ng-src="EquipMonitor/img/light/offline.png"
+            /><br />i18n_ServCloud_Offline
+          </div>
+        </div>
+        <!-- widget div-->
+        <div class="superbox col-sm-12">
+          <div
+            class="superbox-list"
+            data-ng-repeat="device in deviceList"
+            style="vertical-align: top;"
+          >
+            <a href="" ng-click="checkStatus(device.deviceId, device.status)">
+              <img
+                data-ng-src="EquipMonitor/img/device/{{device.status}}.png"
+                alt="{{device.deviceId}}"
+                title="{{device.deviceId}}"
+                class="superbox-img"
+                data-ng-class="device.status=='offline' ? 'disabled-img' : ''"
+              />
+              <p class="superbox-list-text txt-color-blueDark text-center">
+                {{device.deviceId}}
+              </p>
+            </a>
+          </div>
+          <div class="superbox-float"></div>
+        </div>
+        <!-- end widget div -->
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+</section>
+<!-- end widget grid -->
+
+<script type="text/javascript">
+  window.importPageScript()
+</script>

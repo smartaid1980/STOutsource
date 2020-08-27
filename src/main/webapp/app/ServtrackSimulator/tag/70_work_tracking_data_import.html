@@ -1,0 +1,269 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      {i18n_ServCloud_ServTrackManagement_000007}
+      <span>
+        > 上傳報工紀錄
+      </span>
+    </h1>
+  </div>
+</div>
+<button class="btn btn-primary" id="clearDB">清除報工與不良紀錄資料</button>
+<button class="btn btn-primary" id="calcuate">計算報表資料</button>
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>上傳報工紀錄</h2>
+          <div class="widget-toolbar">
+            <button class="btn btn-success" id="download-example">
+              {i18n_ServCloud_ServTrackManagement_000188}
+            </button>
+          </div>
+          <ul id="data-import-tab" class="nav nav-tabs pull-right">
+            <li class="active">
+              <a
+                id="import-5"
+                class="change-tab-event"
+                data-toggle="tab"
+                style="cursor: pointer;"
+                >報工紀錄</a
+              >
+            </li>
+            <li>
+              <a
+                id="import-6"
+                class="change-tab-event"
+                data-toggle="tab"
+                style="cursor: pointer;"
+                >報工不良紀錄</a
+              >
+            </li>
+          </ul>
+        </header>
+        <div>
+          <div class="widget-body">
+            <form id="data-upload">
+              <!-- <span class="text-center">
+                  <span class="font-lg visible-xs-block visible-sm-block visible-lg-block">
+                    <span class="font-lg">
+                      <i class="fa fa-caret-right text-danger"></i> 將 .csv 的檔案拖曳至此
+                      <span class="font-xs">或按我</span>
+                </span>
+                </span>
+                </span> -->
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+      </div>
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        id="data-table-widget-1"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+        style="display: none;"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-user"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>報工紀錄上傳結果</h2></span
+          >
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- <h4 class="alert alert-info "></h4> -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="data-table-1"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">進站時間</th>
+                  <th>線別代碼</th>
+                  <th>派工單編號</th>
+                  <th>產品工序</th>
+                  <th>客製參數1</th>
+                  <th>客製參數2</th>
+                  <th>客製參數3</th>
+                  <th>客製參數4</th>
+                  <th>客製參數5</th>
+                  <th>班次日期</th>
+                  <th>出站時間</th>
+                  <th>實際產量</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+      <div
+        id="data-table-widget-2"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+        style="display: none;"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-user"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>報工不良紀錄上傳結果</h2></span
+          >
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="data-table-2"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">進站時間</th>
+                  <th>線別代碼</th>
+                  <th>派工單編號</th>
+                  <th>產品工序</th>
+                  <th>製程代碼</th>
+                  <th>不良原因代碼</th>
+                  <th>客製參數1</th>
+                  <th>客製參數2</th>
+                  <th>客製參數3</th>
+                  <th>客製參數4</th>
+                  <th>客製參數5</th>
+                  <th>不良數</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+    </article>
+    <div id="stk-file"></div>
+    <input style="display: none;" type="text" id="upload-type" value="1" />
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<script>
+  window.importPageScript()
+</script>

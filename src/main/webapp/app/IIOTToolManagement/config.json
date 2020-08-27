@@ -1,0 +1,19 @@
+{
+  "app": {
+    "id": "IIOTToolManagement",
+    "name": "������蕭蹓遴�蕭嚙踐���蕭",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_tool_spec",
+      "name": "������蕭蹓遴�蕭��粟���蕭嚙踐�"
+    },
+    { "id": "02_tool_holder", "name": "嚙踝蕭嚙踝蕭����嚙�" },
+    { "id": "03_tool", "name": "���撱箸��" },
+    { "id": "04_tool_prepare_list_import", "name": "04_備刀單上傳" }
+  ],
+  "tags": ["20140918000002"]
+}

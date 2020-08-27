@@ -1,0 +1,235 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      機台維護管理
+      <span>
+        > 機台故障記錄
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+
+          <h2>機台維修記錄查詢 / <i class="fa fa-search"></i></h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-4">
+                    <label class="label">開始日期</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input type="text" name="startDate" id="start-date" />
+                    </label>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label">結束日期</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input type="text" name="endDate" id="end-date" />
+                    </label>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label">機台編號</label>
+                    <label class="select select-multiple">
+                      <select
+                        id="machine"
+                        name="machine"
+                        multiple="multiple"
+                      ></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="report-table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>機台故障記錄查詢結果 / <i class="fa fa-search"></i></h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="report-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 故障通報時間 -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾故障通報時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <!-- 機台編號 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <!-- 班次 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <!-- 維修人員員編 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <!-- 維修人員姓名 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <!--<th class="hasinput" style="width:8%">&lt;!&ndash; 警報發生時間 &ndash;&gt;-->
+                  <!--<input type="text" class="form-control" placeholder="過濾警報發生時間"/>-->
+                  <!--</th>-->
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 派工時間 -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾派工時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 維修起始時間 -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾維修起始時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 維修結束時間 -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾維修結束時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 暫停時間 -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾暫停時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 累計時間 -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾累計時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <!-- 故障代碼 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <!-- 故障代碼說明 -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾故障代碼說明"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-original-title="*. 在 Macro522=101 的時間點">
+                    故障通報時間
+                  </th>
+                  <th>機台編號</th>
+                  <th>班別</th>
+                  <th>維修人員員編</th>
+                  <th>維修人員姓名</th>
+                  <!--<th>警報發生時間</th>-->
+                  <th>派工時間</th>
+                  <th data-original-title="*. 在 Macro522=200 的時間點">
+                    維修起始時間
+                  </th>
+                  <th data-original-title="*. 在 Macro522=100 的時間點">
+                    維修結束時間
+                  </th>
+                  <th data-original-title="*. 在 Macro522=215 總時間">
+                    暫停時間
+                  </th>
+                  <th data-original-title="*. 維修結束時間-維修起始時間-暫停">
+                    累計時間
+                  </th>
+                  <th>故障代碼</th>
+                  <th>故障代碼說明</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- day DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

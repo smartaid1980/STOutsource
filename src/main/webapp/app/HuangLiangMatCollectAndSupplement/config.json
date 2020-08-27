@@ -1,0 +1,20 @@
+{
+  "app": {
+    "id": "HuangLiangMatCollectAndSupplement",
+    "name": "領補料作業",
+    "type": 1,
+    "description": "領補料作業",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_material_assignment_record",
+      "name": "領補料派工記錄"
+    },
+    {
+      "id": "02_material_cunsumption_status",
+      "name": "材料耗用狀況查詢"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

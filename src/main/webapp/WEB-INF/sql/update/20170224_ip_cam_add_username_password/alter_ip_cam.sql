@@ -1,0 +1,4 @@
+ALTER TABLE `m_ip_cam`
+  MODIFY COLUMN `ip` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  ADD COLUMN `user_name` VARCHAR(45) DEFAULT '' AFTER `ip`,
+  ADD COLUMN `password` VARCHAR(45) DEFAULT '' AFTER `user_name`;

@@ -1,0 +1,333 @@
+<section id="widget-grid">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-4">
+                    <section>
+                      <label class="label st-required">驗料起始日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="startDate" id="start-date" />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label st-required">驗料結束日期</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="endDate" id="end-date" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">材料庫</label>
+                      <label class="select">
+                        <select id="mrp" name="mrp"></select>
+                        <i></i>
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">採購單號</label>
+                      <label for="" class="input">
+                        <input type="text" name="po" id="po" class="" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+                <button id="showdemo" class="btn btn-success hide">
+                  Demo
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+      <!-- detail DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>查詢結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 6%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th colspan="2" style="width: 12%;"></th>
+                </tr>
+                <tr>
+                  <th>暫入上架時間</th>
+                  <th data-class="expand">驗料時間</th>
+                  <th>材料庫</th>
+                  <th>採購單號</th>
+                  <th>廠商</th>
+                  <th>材料條碼</th>
+                  <th>外徑</th>
+                  <th>長度</th>
+                  <th>位置</th>
+                  <th>數量(KG)</th>
+                  <th>驗料人員</th>
+                  <th>驗料狀態</th>
+                  <th>通知退料</th>
+                  <th>入庫</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+      <!-- modal dialog START -->
+      <div
+        class="modal fade"
+        id="check-detail"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" style="width: fit-content;">
+          <div
+            class="modal-content"
+            id="repair-result-content"
+            style="width: 1200px;"
+          >
+            <div class="modal-header">
+              <h4 class="modal-title" style="float: left;">驗料詳細資訊</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div
+                class="jarviswidget jarviswidget-color-darken"
+                data-widget-editbutton="false"
+                data-widget-deletebutton="false"
+                data-widget-collapsed="true"
+              >
+                <header>
+                  <h2>驗料項目</h2>
+                </header>
+                <!-- widget div-->
+                <div>
+                  <!-- widget content -->
+                  <div class="widget-body no-padding" style="min-height: 0;">
+                    <table
+                      class="table table-striped table-bordered table-hover"
+                      width="100%"
+                    >
+                      <thead>
+                        <tr>
+                          <th>材料庫</th>
+                          <th>採購單號</th>
+                          <th>廠商</th>
+                          <th>材料條碼</th>
+                          <th>位置</th>
+                          <th>數量(KG)</th>
+                          <th>暫入上架時間</th>
+                          <th>暫入上架人員</th>
+                          <th>驗料時間</th>
+                          <th>驗料人員</th>
+                          <th>驗料狀態</th>
+                          <th>NG原因</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <td name="mstock_name"></td>
+                        <td name="po_no"></td>
+                        <td name="sup_id"></td>
+                        <td name="mat_code"></td>
+                        <td name="location"></td>
+                        <td name="shelf_qty"></td>
+                        <td name="shelf_time"></td>
+                        <td name="shelf_by"></td>
+                        <td name="iqc_time"></td>
+                        <td name="iqc_by"></td>
+                        <td name="iqc_result"></td>
+                        <td name="iqc_ng_reason"></td>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- widget content END -->
+                </div>
+                <!-- widget div END -->
+              </div>
+              <div
+                class="jarviswidget jarviswidget-color-darken"
+                data-widget-editbutton="false"
+                data-widget-deletebutton="false"
+                data-widget-collapsed="true"
+              >
+                <header>
+                  <h2>驗料詳細資訊</h2>
+                </header>
+                <!-- widget div-->
+                <div>
+                  <!-- widget content -->
+                  <div class="widget-body no-padding">
+                    <table
+                      class="table table-striped table-bordered table-hover"
+                      width="100%"
+                    >
+                      <thead>
+                        <tr>
+                          <th style="width: 10%;"></th>
+                          <th style="width: 18%;">材料</th>
+                          <th style="width: 18%;">材料外徑</th>
+                          <th style="width: 18%;">材料長度</th>
+                          <th style="width: 18%;">驗料位置</th>
+                          <th style="width: 18%;">品質</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="background-color: #edf0f2;">數據</td>
+                          <td name="mat_id"></td>
+                          <td name="mat_od"></td>
+                          <td name="mat_length"></td>
+                          <td name="location"></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td style="background-color: #edf0f2;">驗料狀態</td>
+                          <td name="iqc_mat_id"></td>
+                          <td name="iqc_od"></td>
+                          <td name="iqc_length"></td>
+                          <td name="iqc_location"></td>
+                          <td name="iqc_quality"></td>
+                        </tr>
+                        <tr>
+                          <td style="background-color: #edf0f2;">驗料數值</td>
+                          <td></td>
+                          <td name="iqc_od_val"></td>
+                          <td name="iqc_length_val"></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- widget content END -->
+                </div>
+                <!-- widget div END -->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary btn-close hide">關閉</button>
+              <button class="btn btn-warning btn-action btn-return">
+                退料
+              </button>
+              <button class="btn btn-primary btn-action btn-stock">入庫</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal dialog END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+<style>
+  .btn-ok {
+    color: #3b9ff3;
+  }
+  .btn-ng {
+    color: red;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,114 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="sender-table-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Sender_Manage}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="sender_id"
+              id="sender-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 40%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 20%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Sender_Name}</th>
+                  <th>{i18n_ServCloud_Sender_Desc}</th>
+                  <th>{i18n_ServCloud_Sender_Key}</th>
+                  <th>{i18n_ServCloud_Enabled}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="sender_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Sender_Name}"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <textarea
+                      name="sender_desc"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Sender_Desc}"
+                      cols="20"
+                      rows="5"
+                      disabled
+                    ></textarea>
+                  </td>
+                  <td>
+                    <input
+                      name="sender_key"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Sender_Key}"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <span>
+                      <span class="onoffswitch">
+                        <input
+                          type="checkbox"
+                          name="sender_enabled"
+                          class="onoffswitch-checkbox"
+                          checked="checked"
+                          id="enabled-onoffswitch"
+                        />
+                        <label
+                          class="onoffswitch-label"
+                          for="enabled-onoffswitch"
+                        >
+                          <span
+                            class="onoffswitch-inner"
+                            data-swchon-text="ON"
+                            data-swchoff-text="OFF"
+                          ></span>
+                          <span class="onoffswitch-switch"></span>
+                        </label>
+                      </span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

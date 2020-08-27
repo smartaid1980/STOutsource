@@ -1,0 +1,638 @@
+/* 整組bg color */
+.smart-style-5,
+.smart-style-5 #jarviswidget-fullscreen-mode .jarviswidget {
+  background: #2c343ebf;
+}
+
+/* 合約 */
+.smart-style-5.fixed-ribbon #ribbon {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border-top: 1px solid rgba(255, 255, 225, 0.1);
+}
+
+/* 左側欄的bg color */
+.smart-style-5 .fc-border-separate thead tr,
+.smart-style-5 .table thead tr,
+.smart-style-5 aside#left-panel {
+  background: #1b2027 !important;
+}
+
+/* 左側欄的link color */
+
+/* 左側欄的link hover */
+.smart-style-5 a:focus,
+.smart-style-5 a:hover {
+  counter-reset: #ffe459;
+}
+
+/* 左側欄 active的三角形 */
+nav ul li.active > a::before {
+  color: #2c343e;
+}
+
+/* 左側欄的link user change password */
+.smart-style-5 .login-info a {
+  margin-top: 9px;
+}
+.login-info {
+  height: auto !important;
+}
+.smart-style-5 .login-info a span + i {
+  padding-left: 11px;
+}
+.smart-style-5 #header,
+.smart-style-5 .login-info > span {
+  border-bottom: 1px solid #2c343e;
+}
+.smart-style-5 .login-info > span {
+  background: #35383b;
+  margin: 10px;
+  display: block;
+  border-radius: 10px;
+  height: 43px;
+  padding: 6px 0 0 14px;
+  transition: all 0.4s;
+  color: #c8c8c8;
+}
+.smart-style-5 .login-info > span > a {
+  transition: all 0.4s;
+  color: #c8c8c8;
+}
+.smart-style-5 .login-info > span > a:hover {
+  color: #ffec8d;
+  transition: all 0.4s;
+}
+.smart-style-5 .login-info > span:hover {
+  transition: all 0.4s;
+}
+/* 顯示app的類型 右上角 */
+.smart-style-5 .btn-label {
+  background: rgba(0, 0, 0, 0.65);
+}
+.smart-style-5 .btn-default,
+.smart-style-5 .btn-default.active,
+.smart-style-5 .btn-default:active,
+.smart-style-5 .btn-default:focus,
+.smart-style-5 .btn-default:hover,
+.smart-style-5 .open > .dropdown-toggle.btn-default {
+  background: rgba(0, 0, 0, 0.37);
+}
+/* 點app的hover */
+.smart-style-5 .applist-row .superbox-list:hover {
+  background: rgba(80, 205, 255, 0.356);
+  transition: all 0.2s;
+}
+/* 顯示app的類型 font-color */
+.smart-style-5 .btn-default,
+.smart-style-5 .btn-default.active,
+.smart-style-5 .btn-default:active,
+.smart-style-5 .btn-default:focus,
+.smart-style-5 .btn-default:hover,
+.smart-style-5 .open > .dropdown-toggle.btn-default {
+  color: #c8c8c8;
+}
+
+/* 中間放app list */
+.smart-style-5 .applist-row .superbox-list {
+  opacity: 0.6;
+  transition: all 0.2s;
+}
+
+.smart-style-5 .applist-row .superbox-list:hover {
+  opacity: 1;
+}
+
+.smart-style-5 .superbox-img:hover {
+  opacity: 1;
+}
+
+/* footer */
+.smart-style-5 .page-footer {
+  background: #222830 !important;
+  height: 50px;
+}
+.smart-style-5 #project-context > :first-child,
+.smart-style-5 #sparks li h5,
+.smart-style-5 .ajax-notifications > .alert.alert-transparent,
+.smart-style-5 .bootstrap-duallistbox-container label,
+.smart-style-5 .form header,
+.smart-style-5 .inbox-side-bar h6,
+.smart-style-5 .project-context > :first-child,
+.smart-style-5 [class^='txt-color-'] {
+  color: #a1a1a1 !important;
+}
+
+/* 進入app後 */
+
+.smart-style-5 a:focus,
+.smart-style-5 a:hover {
+  color: #ffec8d;
+}
+
+/* ----------------設備監控----------------- */
+
+/* 麵包屑大標 */
+.smart-style-5 #project-context > :first-child,
+.smart-style-5 #sparks li h5,
+.smart-style-5 .ajax-notifications > .alert.alert-transparent,
+.smart-style-5 .bootstrap-duallistbox-container label,
+.smart-style-5 .form header,
+.smart-style-5 .inbox-side-bar h6,
+.smart-style-5 .project-context > :first-child,
+.smart-style-5 [class^='txt-color-'] {
+  color: #cacaca !important;
+}
+
+/* 表格 */
+.smart-style-5 .bg-color-darken,
+.smart-style-5 .jarviswidget-color-darken > header {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.smart-style-5 .jarviswidget > div {
+  background: rgba(0, 0, 0, 0.25) !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 設備監控 全廠區機台div */
+
+.smart-style-5 #all-plant-area {
+  padding-top: 18px;
+}
+.smart-style-5 .all-devices {
+  border: #717171 1px solid;
+}
+
+.smart-style-5 .device > .device-header {
+  background: #55597494 !important;
+  color: #dadada;
+}
+
+.smart-style-5 .all-devices {
+  border: #717171 1px solid !important;
+}
+.smart-style-5 .devices .device:first-child {
+  border-left: #717171 1px solid !important;
+}
+
+.smart-style-5 .device {
+  border-right: #717171 1px solid !important;
+  border-top: #717171 1px solid !important;
+  border-bottom: #717171 1px solid !important;
+}
+
+.smart-style-5 #image {
+  border: #717171 1px solid !important;
+}
+
+/* alert選廠區 */
+#extr-page.smart-style-5,
+.smart-style-5 .MessageBoxContainer,
+.smart-style-5 .ajax-dropdown,
+.smart-style-5 .modal-content {
+  background: #39414a;
+}
+
+.smart-style-5 .flot-text {
+  color: #fff !important;
+}
+
+/* 詳細資訊 bar條 */
+
+.smart-style-5 .bg-color-blue {
+  background: rgb(0, 181, 255) !important;
+}
+.smart-style-5 .bg-color-orangeDark {
+  background: rgb(255, 161, 87) !important;
+}
+.smart-style-5 .bg-color-greenLight {
+  background: rgb(0, 255, 104) !important;
+}
+.smart-style-5 .show-stat-microcharts > div {
+  background: rgba(133, 193, 255, 0.15) !important;
+}
+.smart-style-5 .bg-color-blueDark {
+  background: rgb(103, 198, 255) !important;
+}
+.smart-style-5 .monitor > div {
+  border-bottom: 1px solid #dadada40;
+  border-right: 1px solid #dadada40;
+}
+
+.smart-style-5 [class*=' txt-color-'] {
+  color: #fff;
+}
+
+.smart-style-5 {
+  color: #dadada;
+}
+
+.smart-style-5 .monitor .value,
+[data-id='T2-D'] .value,
+.smart-style-5 #content #widget-grid div article .jarviswidget .value,
+.smart-style-5
+  #content
+  #widget-grid
+  div
+  article
+  .jarviswidget
+  .widget-body
+  div
+  .param-text {
+  color: #00f385c4 !important;
+}
+
+.smart-style-5 .monitor .param-text {
+  color: #00f385c4 !important;
+}
+
+.smart-style-5 [data-id='T2-D'] {
+  border-left: 1px solid #dadada30;
+  border-bottom: 1px solid #dadada30;
+}
+
+.smart-style-5 [data-id='T2-D'] > div {
+  border-right: 1px solid #dadada30;
+  border-top: 1px solid #dadada30;
+}
+
+/* 合約跟系統版本 */
+.smart-style-5 #license-date,
+.smart-style-5 #system-version {
+  background: rgba(127, 207, 113, 0.5) !important;
+}
+
+.smart-style-5 [data-id='T1-A'] .flot-text {
+  color: #dadada !important;
+}
+
+/* 機台監控 > 詳細資訊 > template1/2 */
+.smart-style-5 .template button.clicked {
+  background-color: #00c4ffd9;
+  color: #fff;
+  border: none;
+}
+
+.smart-style-5 .template button.clicked:hover {
+  background-color: #00c4ffd9;
+  color: #fff;
+  border: none;
+}
+
+.smart-style-5 .template .btn,
+.smart-style-5 .device .btn {
+  background: #1886c6e3;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.smart-style-5 .template .btn:hover,
+.smart-style-5 .device .btn:hover {
+  transition: all 0.3s;
+  color: #fff;
+}
+
+/* 管理工段 表格 */
+.smart-style-5 .no-padding .dataTables_wrapper {
+  border-top: 1px solid #dadada40;
+}
+
+/* 機台監視 */
+.smart-style-5 #s2 section {
+  padding: 20px 20px 0 20px;
+}
+
+.smart-style-5 .nav-tabs {
+  border-color: #dadada30;
+}
+
+.smart-style-5 .tab-content section .table-bordered tbody tr:first {
+  background: #ffffff50 !important;
+}
+
+/* 編輯另外打開的modal */
+.smart-style-5 .ui-widget-overlay {
+  background: #000;
+}
+.smart-style-5 .ui-dialog {
+  background: #3a787b;
+}
+.ui-dialog-content .form-inline fieldset {
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.ui-dialog-content .form-inline form .table-bordered {
+  margin-top: 15px;
+}
+.smart-style-5 .form-control {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.smart-style-5 .ui-dialog .ui-dialog-titlebar {
+  padding: 15px 10px;
+}
+
+.smart-style-5 form .table-bordered tbody {
+  color: #000;
+}
+
+/* 篩選bar */
+.smart-style-5 .form-control {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* 綠色btn */
+.smart-style-5 .btn-success,
+.smart-style-5 .bg-color-green,
+.smart-style-5 .btn-success.active,
+.smart-style-5 .btn-success:active,
+.smart-style-5 .btn-success:focus,
+.smart-style-5 .btn-success:hover,
+.smart-style-5 .open > .dropdown-toggle.btn-success,
+.smart-style-5 .sa-chat-learnmore-btn,
+.smart-style-5 .sa-chat-learnmore-btn:active,
+.smart-style-5 .sa-chat-learnmore-btn:focus,
+.smart-style-5 .sa-chat-learnmore-btn:hover {
+  background: rgba(51, 224, 54, 0.74) !important;
+  border-color: rgba(35, 216, 38, 0.3) !important;
+}
+/* 橘色btn */
+.smart-style-5 .btn-warning,
+.smart-style-5 .bg-color-orange,
+.smart-style-5 .btn-warning.active,
+.smart-style-5 .btn-warning:active,
+.smart-style-5 .btn-warning:focus,
+.smart-style-5 .btn-warning:hover,
+.smart-style-5 .open > .dropdown-toggle.btn-warning {
+  background: rgba(255, 174, 0, 0.92) !important;
+  border-color: rgba(208, 145, 11, 0.83) !important;
+}
+/* 紅色btn */
+.smart-style-5 .bg-color-red {
+  background: rgba(234, 35, 35, 0.81) !important;
+  border-color: rgba(255, 7, 7, 0.28) !important;
+}
+
+/* 老舊機台監控 */
+.smart-style-5 .panel-footer {
+  background: rgba(99, 99, 99, 0.51);
+  border-top-color: rgba(255, 255, 225, 0.15);
+}
+
+.smart-style-5 .panel-body .info:not(:last-child) {
+  border-right-color: rgba(255, 255, 225, 0.15);
+}
+
+.smart-style-5 .panel {
+  border-color: rgba(255, 255, 225, 0.15);
+}
+
+.smart-style-5 .panel-body small {
+  color: #dadada;
+}
+
+/* 廠區監控 一堆小卡 */
+.smart-style-5 #space .device-info-position {
+  color: #888;
+}
+.smart-style-5 #space .device .device-title {
+  color: #404040 !important;
+}
+.smart-style-5 #space .device .device-info .value-head {
+  color: #888;
+}
+.smart-style-5 #space .device .device-info .value-text {
+  color: #888;
+}
+
+/* 廠區機台監視 */
+.smart-style-5 #plantAreaTable tr:first-child {
+  background-color: #88888847 !important;
+}
+
+#plantAreaTable col {
+  background-color: #88888847 !important;
+}
+
+#plantAreaTable tr:first-child,
+#plantAreaTable tr td:first-child {
+  background-color: #88888847 !important;
+}
+
+.smart-style-5 .table-bordered,
+.smart-style-5 .table-bordered > tbody > tr > td,
+.smart-style-5 .table-bordered > tbody > tr > th,
+.smart-style-5 .table-bordered > tfoot > tr > td,
+.smart-style-5 .table-bordered > tfoot > tr > th,
+.smart-style-5 .table-bordered > thead > tr > td,
+.smart-style-5 .table-bordered > thead > tr > th {
+  border-color: rgba(255, 255, 225, 0.15) !important;
+}
+
+.smart-style-5 .nav > li > a:focus,
+.smart-style-5 .nav > li > a:hover {
+  background: #00abff5e;
+  color: #fff !important;
+}
+
+.smart-style-5 .nav-tabs > li > a {
+  color: #dadada;
+}
+
+.smart-style-5 #widget-grid .jarviswidget > div #space {
+  background: rgba(255, 255, 255, 0.88) !important;
+  color: #000;
+}
+
+/* 廠區率顯示 相對位置  */
+.smart-style-5 #image [data-id='EDM'] {
+  top: 5% !important;
+  left: 35% !important;
+}
+.smart-style-5 #image [data-id='grindingMachine'] {
+  top: 18% !important;
+  left: 4% !important;
+}
+.smart-style-5 #image [data-id='machiningCenter'] {
+  top: 14% !important;
+  left: 79% !important;
+}
+.smart-style-5 #image [data-id='manualLathe'] {
+  top: 11% !important;
+  left: 19% !important;
+}
+.smart-style-5 #image [data-id='wireEDM'] {
+  top: 68% !important;
+  left: 81% !important;
+}
+.smart-style-5 #image > div {
+  padding-top: 6vw;
+}
+
+/* 機台監控 編輯 */
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > .widget-body
+  .paramEdit
+  .device
+  .device-title
+  input,
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > .widget-body
+  .paramEdit
+  .device
+  .device-info
+  select,
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > .widget-body
+  .paramEdit
+  .device
+  .device-info
+  input {
+  color: #404040 !important;
+}
+
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > .widget-body
+  > .paramEdit
+  > .device {
+  background-color: transparent;
+}
+
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > .widget-body
+  .paramEdit
+  .device
+  .device-title
+  div
+  a {
+  color: #000;
+}
+
+/* 機台監控 編輯 的點一下跳出小卡可編輯 */
+.smart-style-5 #content > #widget-grid > .jarviswidget > div > #top {
+  background-color: rgb(218, 218, 218);
+  border: 1px solid #696969 !important;
+}
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > #top
+  > .device-title {
+  background-color: #afafaf;
+}
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > #top
+  > .device-title
+  input,
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > #top
+  > .device-info
+  select,
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > #top
+  > .device-info
+  input {
+  color: #2b2b2b;
+}
+
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > #top
+  > .device-info
+  td:first-child,
+.smart-style-5
+  #content
+  > #widget-grid
+  > .jarviswidget
+  > div
+  > #top
+  > .device-info
+  th:first-child {
+  color: #2b2b2b;
+}
+
+/* 廠區監視雞台PLC2 */
+.smart-style-5 #plantAreaTable tr td > .todayProduct,
+#plantAreaTable tr td:first-child {
+  color: #00d8ff !important;
+}
+
+.smart-style-5 .smart-form .input input[disabled],
+.smart-style-5 .smart-form .select select[disabled],
+.smart-style-5 .smart-form .textarea textarea[disabled] {
+  background-color: #484848;
+  border-color: #636363;
+}
+
+.smart-style-5
+  #content
+  > #widget-grid
+  .jarviswidget
+  .smart-form
+  fieldset
+  > section
+  > label
+  > input {
+  color: #000;
+  margin-right: 5px;
+}
+
+.smart-style-5
+  #content
+  > #widget-grid
+  .jarviswidget
+  .widget-body
+  > .smart-form
+  > fieldset {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.smart-style-5
+  #content
+  > #widget-grid
+  .jarviswidget
+  .widget-body
+  > .smart-form
+  > footer {
+  background-color: rgba(255, 255, 255, 0);
+  border-top: 1px solid rgba(130, 130, 130, 0.67);
+}

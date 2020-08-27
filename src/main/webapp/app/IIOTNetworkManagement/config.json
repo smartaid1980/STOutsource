@@ -1,0 +1,11 @@
+{
+  "app": {
+    "id": "NetworkManagement",
+    "name": "聯網管理",
+    "type": 1,
+    "description": "NetworkManagement",
+    "version": "1.0"
+  },
+  "functions": [{ "id": "01_network_management", "name": "聯網管理" }],
+  "tags": ["20140918000005"]
+}

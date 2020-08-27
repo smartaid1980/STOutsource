@@ -1,0 +1,28 @@
+{
+  "app": {
+    "id": "HuangLiangUtilizationDataMaintenance",
+    "name": "稼動資料維護",
+    "type": 1,
+    "description": "Utilization Data Maintenance",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_quality_detect_data_maintenance",
+      "name": "品質檢測數據維護"
+    },
+    {
+      "id": "20_plant_department_utilization_record_maintenance",
+      "name": "各機台廠務部稼動紀錄表維護"
+    },
+    {
+      "id": "30_sample_editor",
+      "name": "已生產樣品管編補填"
+    },
+    {
+      "id": "40_quality_detect_unfilled_log",
+      "name": "品質檢測數據未登打紀錄"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

@@ -1,0 +1,78 @@
+{
+  "timestamp": {
+    "sequence": 1,
+    "fa": "fa-clock-o",
+    "bgc": "blue",
+    "name": "資料更新時間",
+    "comment": "資料更新時間"
+  },
+  "status": {
+    "sequence": 2,
+    "fa": "fa-gear",
+    "bgc": "servkit.getMachineLightColor(value)",
+    "name": "沖壓機運行狀態",
+    "comment": "加工/閒置"
+  },
+  "working_time": {
+    "sequence": 3,
+    "fa": "fa-clock-o",
+    "bgc": "blue",
+    "name": "沖壓機今日作業時間 (ms)",
+    "comment": "自 00:00:00 起運行狀態為加工之累積時間"
+  },
+  "temperature_probe": {
+    "sequence": 4,
+    "fa": "fa-fire",
+    "bgc": "orange",
+    "name": "曲軸溫度",
+    "comment": "曲軸溫度",
+    "max": 10,
+    "min": 0
+  },
+  "current": {
+    "sequence": 5,
+    "fa": "fa-flash",
+    "bgc": "orange",
+    "name": "沖壓機運行電流",
+    "comment": "沖壓機運行電流",
+    "max": 10,
+    "min": 0
+  },
+  "light1_on_times": {
+    "sequence": 6,
+    "fa": "fa-download",
+    "bgc": "green",
+    "name": "沖壓次數",
+    "comment": "沖壓次數",
+    "max": 10,
+    "min": 0
+  },
+  "light2": {
+    "sequence": 7,
+    "fa": "fa-check",
+    "bgc": "purple",
+    "name": "防護罩是否被打開",
+    "comment": "防護罩是否被打開"
+  },
+  "light2_last_on": {
+    "sequence": 8,
+    "fa": "fa-clock-o",
+    "bgc": "blue",
+    "name": "皮帶最近檢查時刻",
+    "comment": "防護罩最近一次被打開的時間"
+  },
+  "light3": {
+    "sequence": 9,
+    "fa": "fa-check",
+    "bgc": "purple",
+    "name": "潤滑油蓋是否被打開",
+    "comment": "潤滑油蓋是否被打開"
+  },
+  "light3_last_on": {
+    "sequence": 10,
+    "fa": "fa-clock-o",
+    "bgc": "blue",
+    "name": "潤滑油最近檢查時刻",
+    "comment": "潤滑油最近一次被打開的時間"
+  }
+}

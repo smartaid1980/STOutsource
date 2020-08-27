@@ -1,0 +1,187 @@
+<style>
+  .chart {
+    shape-rendering: crispEdges;
+  }
+
+  .mini text {
+    font: 15px sans-serif;
+  }
+
+  .main text {
+    font: 12px sans-serif;
+  }
+
+  .month text {
+    text-anchor: start;
+  }
+
+  .todayLine {
+    stroke: blue;
+    stroke-width: 1.5;
+  }
+
+  .axis line,
+  .axis path {
+    stroke: black;
+  }
+
+  .miniItem {
+    stroke-width: 150;
+  }
+
+  .chart {
+    stroke: gray;
+    fill: #ddd;
+  }
+
+  .brush .extent {
+    stroke: gray;
+    fill: blue;
+    fill-opacity: 0.165;
+  }
+
+  .frameLine {
+    stroke: black;
+    stroke-width: 1;
+  }
+
+  #tooltip {
+    position: absolute;
+    width: 210px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+  }
+
+  #tooltip.hidden {
+    display: none;
+  }
+
+  #tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  rect:hover {
+    fill: orange;
+  }
+</style>
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa-fw fa fa-cloud"></i>
+      行動報工站
+      <span>
+        > 設備利用度
+      </span>
+    </h1>
+  </div>
+</div>
+<!--Section START-->
+<section id="widget-grid" class="">
+  <!--Div row START-->
+  <div class="row">
+    <!--widget Strat-->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-blueDark"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <!--Trade Tag Title Start-->
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+          <!--Trade Tag Title End-->
+        </header>
+        <!--Trade Tag End-->
+        <!--Trade Tag Div Start-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form id="main-form" class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-4">
+                    <label class="label st-required">班次日期</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input
+                        type="text"
+                        id="shift-day"
+                        name="shift-day"
+                        data-rule-required="true"
+                        data-rule-dateISO="true"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label st-required">設備</label>
+                    <select
+                      class="select2 full-width"
+                      name="line-id"
+                      id="line-id"
+                      data-rule-required="true"
+                    >
+                    </select>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button name="submit-clean" class="btn btn-primary">
+                  清除
+                </button>
+                <button id="submit-btn" class="btn btn-primary">查詢</button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--widget END-->
+      <!-- Horizontal Bar Chart Start -->
+      <!-- NEW WIDGET START -->
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"><i class="fa fa-bar-chart-o"></i></span>
+          <h2>查詢結果</h2>
+        </header>
+        <div>
+          <div style="text-align: left;">
+            <p style="font-size: 18px;" id="detail"></p>
+          </div>
+          <div id="tooltip" class="hidden">
+            <p><strong>詳細資料</strong></p>
+            <p><span id="value"></span></p>
+          </div>
+          <div id="swimlaneChart"></div>
+        </div>
+      </div>
+    </article>
+    <!--Div row END-->
+  </div>
+  <!--Section END-->
+</section>
+<script>
+  window.importPageScript()
+</script>

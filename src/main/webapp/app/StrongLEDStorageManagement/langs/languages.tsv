@@ -1,0 +1,294 @@
+	zh_tw	zh	en
+i18n_ServCloud_Storage_Structure_Manage	儲位結構管理	储位结构管理	Storage Structure management
+i18n_ServCloud_Storage_Structure	儲位結構	储位结构	Storage Structure
+i18n_ServCloud_Storage_Manage	儲位管理	储位管理	Storage management
+i18n_ServCloud_Store_Manage	庫管理	库管理	Store management
+i18n_ServCloud_Confirm	確認	确认	Confirm
+i18n_ServCloud_Save	存檔	存档	Save
+i18n_ServCloud_Save_Success	存檔成功!	存档成功!	Save Success!
+i18n_ServCloud_Save_Failed	存檔失敗!	存档失败!	Save Failed!
+i18n_ServCloud_Delete_Info	刪除後將無法復原，確定要刪除此節點 ?	删除后将无法复原，确定要删除此节点 ?	Are you sure to delete the selected node?
+i18n_ServCloud_ID	ID(代號)	ID(代号)	ID
+i18n_ServCloud_Name	名稱	名称	Name
+i18n_ServCloud_Add_Quantity	增加數量	增加数量	Add Quantity
+i18n_ServCloud_Exist_ID	重複編號	重复编号	Exist ID
+i18n_ServCloud_Exit_Info	離開前是否要存檔？	离开前是否要存档？	Do you want to archive before you leave?
+i18n_ServCloud_Reset	重置	重置	Reset
+i18n_ServCloud_Show	檢視	检视	Show
+i18n_ServCloud_All_Fold	底下全部摺疊	底下全部折叠	All Fold
+i18n_ServCloud_All_Unfold	底下全部展開	底下全部展开	All Unfold
+i18n_ServCloud_Only_English_Or_Number	僅能輸入英數字	仅能输入英数字	Only English or Number
+i18n_ServCloud_Only_Number	僅能輸入數字	仅能输入数字	Only Number
+i18n_ServCloud_Max_Length_3	最大可輸入3位數	最大可输入3位数	Max length is 3
+i18n_ServCloud_Store	庫	库	Store
+i18n_ServCloud_Store_ID	庫編號	库编号	Store ID
+i18n_ServCloud_Store_Name	庫名稱	库名称	Store name
+i18n_ServCloud_Store_Desc	庫描述	库描述	Store description
+i18n_ServCloud_Shelf_Manage	儲架管理	储架管理	Shelf management
+i18n_ServCloud_Shelf_ID	儲架編號	储架编号	Shelf ID
+i18n_ServCloud_Shelf_Name	儲架名稱	储架名称	Shelf name
+i18n_ServCloud_Shelf_Desc	儲架描述	储架描述	Shelf description
+i18n_ServCloud_Shelf_Type	儲架類型	储架类型	Shelf type
+i18n_ServCloud_Shelf_Grid_Count	儲架的層數	储架的层数	Shelf grid Count
+i18n_ServCloud_Shelf_Rule	儲架規則	储架规则	Shelf rule
+i18n_ServCloud_Shelf_Type_Manage	儲架類型管理	储架类型管理	Shelf type management
+i18n_ServCloud_Shelf_Type_ID	儲架類型編號	储架类型编号	Shelf type ID
+i18n_ServCloud_Shelf_Type_Name	儲架類型名稱	储架类型名称	Shelf type name
+i18n_ServCloud_Shelf_Type_Desc	儲架類型描述	储架类型描述	Shelf type description
+i18n_ServCloud_Shelf_Type_Cell	儲架類型的儲位數	储架类型的储位数	Shelf type cell
+i18n_ServCloud_Thing_Manage	物料管理	物料管理	Thing management
+i18n_ServCloud_Thing_ID	物料編號	物料编号	Thing ID
+i18n_ServCloud_Thing_Org_ID	物料公司內編號	物料公司内编号	Thing orginal ID
+i18n_ServCloud_Thing_Name	物料名稱	物料名称	Thing name
+i18n_ServCloud_Thing_Desc	物料描述	物料描述	Thing description
+i18n_ServCloud_Thing_Type	物料類型	物料类型	Thing type
+i18n_ServCloud_Thing_Cell	物料佔據格數	物料占据格数	Thing cell
+i18n_ServCloud_Thing_Unit	物料單位	物料单位	Thing unit
+i18n_ServCloud_Thing_Pcs	物料數量	物料数量	Thing pieces
+i18n_ServCloud_Material_Manage	原料管理	原料管理	Material management
+i18n_ServCloud_Material_Code	原料代碼	原料代码	Material code
+i18n_ServCloud_Material_ID	原料編號	原料编号	Material ID
+i18n_ServCloud_Material_Org_ID	原料公司內編號	原料公司内编号	Material orginal ID
+i18n_ServCloud_Material_Name	原料名稱	原料名称	Material name
+i18n_ServCloud_Material_Desc	原料描述	原料描述	Material description
+i18n_ServCloud_Material_Supplier	原料供應商	原料供应商	Material supplier
+i18n_ServCloud_Material_Type	原料類型	原料类型	Material type
+i18n_ServCloud_Material_Cell	原料佔據格數	原料占据格数	Material cell
+i18n_ServCloud_Material_Unit	原料單位	原料单位	Material unit
+i18n_ServCloud_Material_Pcs	原料數量	原料数量	Material pieces
+i18n_ServCloud_Material_Storage	原料進貨	原料進貨	Material storage
+i18n_ServCloud_Storage_Time	入庫時間	入库时间	Storage time
+i18n_ServCloud_Exp_Date	有效日期	有效日期	Exp date
+i18n_ServCloud_Get_Material_Inquire	領料查詢	领料查询	Thing inquire
+i18n_ServCloud_Material_Inquire	原料查詢	原料查询	Thing inquire
+i18n_ServCloud_Doc_Manage	單據管理	单据管理	Document management
+i18n_ServCloud_Doc	單據	单据	Document
+i18n_ServCloud_Doc_ID	單據編號	单据编号	Document ID
+i18n_ServCloud_Doc_Org_ID	單據原始編號	单据原始编号	Document orginal ID
+i18n_ServCloud_Doc_Name	單據名稱	单据名称	Document name
+i18n_ServCloud_Doc_Desc	單據描述	单据描述	Document description
+i18n_ServCloud_Doc_Date	單據日期	单据日期	Document date
+i18n_ServCloud_Sender_Manage	平板管理	平板管理	Tablet management
+i18n_ServCloud_Sender	平板	平板	Tablet
+i18n_ServCloud_Sender_ID	平板編號	平板编号	Tablet ID
+i18n_ServCloud_Sender_Name	平板名稱	平板名称	Tablet name
+i18n_ServCloud_Sender_Desc	平板描述	平板描述	Tablet description
+i18n_ServCloud_Sender_Key	平板的KEY	平板的KEY	Tablet key
+i18n_ServCloud_Enabled	是否啟用	是否启用	Enabled
+i18n_ServCloud_Emp_Manage	人員管理	人员管理	Employee management
+i18n_ServCloud_Emp	人員	人员	Employee
+i18n_ServCloud_Emp_ID	人員編號	人员编号	Employee ID
+i18n_ServCloud_Emp_Org_ID	人員公司內編號	人员公司内编号	Employee orginal ID
+i18n_ServCloud_Emp_Name	人員名稱	人员名称	Employee name
+i18n_ServCloud_Emp_Desc	人員描述	人员描述	Employee description
+i18n_ServCloud_Supplier_Manage	供應商管理	供应商管理	Supplier management
+i18n_ServCloud_Supplier	供應商	供应商	Supplier
+i18n_ServCloud_Supplier_ID	供應商編號	供应商编号	Supplier ID
+i18n_ServCloud_Supplier_Org_ID	供應商公司內編號	供应商公司内编号	Supplier orginal ID
+i18n_ServCloud_Supplier_Name	供應商名稱	供应商名称	Supplier name
+i18n_ServCloud_Supplier_Desc	供應商描述	供应商描述	Supplier description
+i18n_ServCloud_Valid_Number	請填數字	请填数字	Please enter a valid number.
+i18n_ServCloud_Valid_Json	請填JSON格式	请填JSON格式	Please enter JSON type.
+i18n_ServCloud_Out_Of_Len	長度超出欄位限制: {size}字元	长度超出栏位限制: {size}字元	Length exceeds field limit: {size} characters.
+i18n_ServCloud_Shelf_Position_Manage	儲位管理	储位管理	Shelf Position management
+i18n_ServCloud_Position_ID	儲位編號	储位编号	Position ID
+i18n_ServCloud_Position_Name	儲位名稱	储位名称	Position name
+i18n_ServCloud_Shelf	儲架	储架	Shelf
+i18n_ServCloud_Position_Desc	儲位描述	储位描述	Position description
+i18n_ServCloud_Grid_Index	層位置	层位置	Grid index
+i18n_ServCloud_Cell_Index	儲位位置	储位位置	Cell index
+i18n_ServCloud_Auto_Create_Position	建立儲位	建立储位	Create Position
+i18n_ServCloud_Auto_Create_Position_Failed	建立儲位失敗	建立储位失败	Create Position Failed
+i18n_ServCloud_Auto_Create_Position_Succeeded	建立儲位成功	建立储位成功	Create Position Succeeded
+i18n_ServCloud_Print_Checked_Qrcode	輸出勾選的QR碼	输出勾选的QR码	print QRCode
+i18n_ServCloud_Print_Qrcode	列印QR碼	列印QR码	print QRCode
+i18n_ServCloud_Submit	送出	送出	Submit
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_Purchase_Results	進貨結果	進貨结果	Purchase Results
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start Date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_Work_ID	工單編號	工单编号	Work Id
+i18n_ServCloud_OP	工序	工序	OP
+i18n_ServCloud_Grid_Name	第{index}層	第{index}层	{index} grid
+i18n_ServCloud_Quantity	數量	数量	Quantity
+i18n_ServCloud_Query_Result	查詢結果	查询结果	Query Result
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start date
+i18n_ServCloud_End_Date	結束日期	结束日期	End date
+i18n_ServCloud_Work_Competed	此工單已完成領料	此工单已完成领料	This work order has been completed
+i18n_ServCloud_No_Work_Pick_Info	無工單領料資訊	无工单领料资讯	No work order picking information
+i18n_ServCloud_Pickup_Manage	檢料管理	检料管理	Pickup management
+i18n_ServCloud_Pickup_Color	檢料顏色	检料颜色	Pickup color
+i18n_ServCloud_Pickup_By	檢料人員	检料人员	Pickup by
+i18n_ServCloud_Pickup_Time	檢料時間	检料时间	Pickup time
+i18n_ServCloud_Pickup_Cumulative_Time	檢料累積時間	检料累积时间	Pickup cumulative time
+i18n_ServCloud_Stop_Pickup	停止檢料	停止检料	Stop Pickup
+i18n_ServCloud_Day	天	天	Day
+i18n_ServCloud_Hour	時	时	Hour
+i18n_ServCloud_Min	分	分	Min
+i18n_ServCloud_Second	秒	秒	Second
+i18n_ServCloud_Position_Light_Manage	儲位燈號管理	储位灯号管理	Position light management
+i18n_ServCloud_Piller_Light_Manage	柱位燈號管理	柱位灯号管理	Piller light management
+i18n_ServCloud_Light_Index	燈號編號	灯号编号	Light start index
+i18n_ServCloud_Light_Start_Index	燈號起始編號	灯号起始编号	Light index
+i18n_ServCloud_Green	綠色	绿色	green
+i18n_ServCloud_Red	紅色	红色	red
+i18n_ServCloud_Yellow	黃色	黄色	yellow
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Condition
+i18n_ServCloud_Query_Result	搜尋結果	搜寻结果	Query Result
+i18n_ServCloud_Structure_Level	結構層級	结构层级	Structure Level
+i18n_ServCloud_Position_Code	儲位編碼	储位编码	Position Code
+i18n_ServCloud_Choose_Structure_Level	選擇結構層級	选择结构层级	Choose Structure Level
+i18n_ServCloud_Choose_Position_Zone	選擇位置(區域)	选择位置(区域)	Choose Position(zone)
+i18n_ServCloud_Choose_Print_Size	選擇列印大小	选择列印大小	Choose print size
+i18n_ServCloud_Show_Path	顯示結構層級	显示结构层级	Show path
+i18n_ServCloud_Print_Qrcode	列印條碼	列印条码	Print QRCode
+i18n_ServCloud_Big_Tag	大標籤	大标签	Big tag
+i18n_ServCloud_Small_Tag	小標籤	小标签	Small tag
+i18n_ServCloud_Purchase_Order_Query	進貨單查詢	进货单查询	Purchase order query
+i18n_ServCloud_No_Code_Purchase_Order	所有未產生條碼進貨單	所有未产生条码进货单	All bar code purchase orders are not generated
+i18n_ServCloud_Has_Code_Unstocked_Purchase_Order	已產生條碼，未入庫進貨單	已产生条码，未入库进货单	Bar code has been generated, unstocked purchase order
+i18n_ServCloud_All_Unstocked_Purchase_Order	所有未入庫進貨單	所有未入库进货单	All unstocked purchase orders
+i18n_ServCloud_Batch_Number	批號	批号	Batch number
+i18n_ServCloud_Batch_Quantity	該批數量	该批数量	Batch quantity
+i18n_ServCloud_Manufacture_Date	出廠日期	出厂日期	Date of manufacture
+i18n_ServCloud_Generate_Or_Reprint_Qrcode	產生/重新列印條碼	产生/重新列印条码	Generate/reprint QRCode
+i18n_ServCloud_Refresh_Purchase_Order	更新進貨單	更新进货单	Refresh purchase order
+i18n_ServCloud_Last_Synchronization_Time	最後資料同步時間	最后资料同步时间	Last synchronization time
+i18n_ServCloud_Generate_Qrcode	產生條碼	产生条码	Generate QRCode
+i18n_ServCloud_Reprint_Qrcode	重新列印	重新列印	Reprint
+i18n_ServCloud_Create_Material_Qrcode	產生原料條碼	产生原料条码	Produce raw material barcode
+i18n_ServCloud_Serial_Number	序號	序号	Serial number
+i18n_ServCloud_Unit	單位	单位	Unit
+i18n_ServCloud_Change_Quantity	修改數量	修改数量	Change quantity
+i18n_ServCloud_Purchase_Order_Basic_Info	進貨單基本資料	进货单基本资料	Purchase order basic information
+i18n_ServCloud_Packing_Amount	包裝量	包装量	Packing amount
+i18n_ServCloud_Change_Min_Packing_Amount	更改最小包裝量	更改最小包装量	Change the minimum amount of packaging
+i18n_ServCloud_Generated_With_Min_Packing_Amount	以最小包裝量生成	以最小包装量生成	Generated with minimum package size
+i18n_ServCloud_Generated_A_Whole_Batch	整批生成一件	整批生成一件	Generate a whole batch
+i18n_ServCloud_Generate_And_Print_Qrcode	產生條碼並列印	产生条码并列印	Generate QRCode and print
+i18n_ServCloud_Generate_Without_Print_Qrcode	產生條碼不列印	产生条码不列印	Generate barcodes without printing
+i18n_ServCloud_Positive_Integer_Alert	請輸入正整數	请输入正整数	Please enter a positive integer
+i18n_ServCloud_Sync_Alert	與最後一次同步時間小於30分鐘	与最后一次同步时间小于30分钟	The last synchronization time is less than 30 minutes
+i18n_ServCloud_Total_Not_Equal_quantity	數量加總不等於該批數量	数量加总不等于该批数量	The total amount does not equal the batch quantity
+i18n_ServCloud_Dashboard	輪播看板	轮播看板	Dashboard
+i18n_ServCloud_Order_No	單號	单号	Order No.
+i18n_ServCloud_Due_Date	應發料日	应发料日	Due Date
+i18n_ServCloud_Remarks	備註	备注	Remarks
+i18n_ServCloud_Remaining_Records	剩餘{index}筆記錄	剩余{index}笔记录	{index} remaining records
+i18n_ServCloud_Overdue_Picklist	逾期	逾期	Overdue
+i18n_ServCloud_Today_Picklist	當日	当日	Today
+i18n_ServCloud_Recruitment_Receipt	應領料單據	应领料单据	Recruitment Receipt
+i18n_ServCloud_Warehouse	倉別	仓别	Warehouse
+i18n_ServCloud_Previous	上一頁	上一页	Previous
+i18n_ServCloud_Next	下一頁	下一页	Next
+i18n_ServCloud_Choose_Warehouse	選擇倉別	选择仓别	Choose Warehouse
+i18n_ServCloud_Start_Carousel	開始輪播	开始轮播	Start Carousel
+i18n_ServCloud_Unlock_Manage	解除鎖定管理	解除锁定管理	Unlock management
+i18n_ServCloud_Remark	說明	说明	Remark
+i18n_ServCloud_Locked_By	鎖定人員	锁定人员	Locked by
+i18n_ServCloud_Unlock	解除鎖定	解除锁定	Unlock
+i18n_ServCloud_Change_Freq	畫面切換頻率(秒)	画面切换频率(秒)	Change Frequency (sec)
+i18n_ServCloud_Closing_Manage	結案管理	结案管理	Closing management
+i18n_ServCloud_Closing_Document	結案單據	结案单据	Closing document
+i18n_ServCloud_Closing_Info	註：結清今日以前所有領料單	注：结清今日以前所有领料单	Note: Closing all requisitions before today
+i18n_ServCloud_Closing_Confirm	確認結清今日以前所有領料單？	确认结清今日以前所有领料单？	Confirm all the picking lists before today?
+i18n_ServCloud_Part_No	料號	料号	Part No
+i18n_ServCloud_Specification	規格	规格	specification
+i18n_ServCloud_Supplier	供應商	供应商	supplier
+i18n_ServCloud_Quantity	數量	数量	Quantity
+i18n_ServCloud_Date_Code	Date Code	Date Code	Date Code
+i18n_ServCloud_Lot	LOT	LOT	LOT
+i18n_ServCloud_Expiry_Date	到期日	到期日	expiry date
+i18n_ServCloud_Number_Of_Single_Piece	單件數量	单件数量	Number of single piece
+i18n_ServCloud_Drop_Out	退出	退出	drop out
+i18n_ServCloud_Edit_Jinhuo_Dan	編輯進貨單	编辑进货单	Edit Jinhuo Dan
+i18n_ServCloud_Store	儲存	储存	Store
+i18n_ServCloud_Generating_Pkg-Id	產生PKG-ID	产生PKG-ID	Generating PKG-ID
+i18n_ServCloud_Print_Barcode_Check	列印勾選條碼	列印勾选条码	Print Barcode check
+i18n_ServCloud_Print_All	列印全部	列印全部	Print All
+i18n_ServCloud_Cancel_Sync	取消同步	取消同步	Cancel Sync
+i18n_ServCloud_Pkg-Id	PKG-ID	PKG-ID	PKG-ID
+i18n_ServCloud_No._Jinhuo_Dan	進貨單號	进货单号	No. Jinhuo Dan
+i18n_ServCloud_Item_Number	品號	品号	Item number
+i18n_ServCloud_Jinhuo_Dan_Serial_Number	進貨單序號	进货单序号	Jinhuo Dan serial number
+i18n_ServCloud_Number_Of_Acceptance	驗收數量	验收数量	Number of acceptance
+i18n_ServCloud_Prepaid_Date	預交日期	预交日期	Prepaid date
+i18n_ServCloud_Need_To_Specify_The_Storage_Spaces	需要指定儲位	需要指定储位	Need to specify the storage spaces
+i18n_ServCloud_Storage_Spaces_Put_Record	儲位擺放紀錄	储位摆放纪录	Storage spaces put record
+i18n_ServCloud_Purchase_Order_No	採購單號	采购单号	Purchase Order No
+i18n_ServCloud_The_Last_Time_Placement	最後放置時間	最后放置时间	The last time placement
+i18n_ServCloud_Item_Number_Storage_Cell_Has_Been_Placed_/_Number	儲格已放置品號/數量	储格已放置品号/数量	Item number storage cell has been placed / Number
+i18n_ServCloud_During_Placement	放置期間	放置期间	During placement
+i18n_ServCloud_Storage_Spaces_Placed	放置儲位	放置储位	Storage spaces placed
+i18n_ServCloud_Change_Material	修改物料	修改物料	Change Material
+i18n_ServCloud_Storage_Spaces	儲位	储位	Storage spaces
+i18n_ServCloud_Depending_On_The_Type	依據類型	依据类型	Depending on the type
+i18n_ServCloud_Material_Types	物料類型	物料类型	Material Types
+i18n_ServCloud_Based_On_The_Structure	依據結構	依据结构	Based on the structure
+i18n_ServCloud_Region	區域	区域	region
+i18n_ServCloud_Buffer_Time	緩衝時間	缓冲时间	Buffer time
+i18n_ServCloud_Cancel	取消	取消	cancel
+i18n_ServCloud_Coding_Region	區域編碼	区域编码	Coding region
+i18n_ServCloud_The_Number_Of_Layers	層數	层数	The number of layers
+i18n_ServCloud_The_Number_Of_Cells	格數	格数	The number of cells
+i18n_ServCloud_Inquire	查詢	查询	Inquire
+i18n_ServCloud_Query_Conditions	查詢條件	查询条件	Query conditions
+i18n_ServCloud_Do_Not_Purchase_Orders	採購單別	采购单别	Do not purchase orders
+i18n_ServCloud_Purchase_Order_Number	採購單序號	采购单序号	Purchase Order Number
+i18n_ServCloud_Materials_Storage_Spaces_Walkthrough	物料儲位預排	物料储位预排	Materials storage spaces walkthrough
+i18n_ServCloud_Date	日期	日期	date
+i18n_ServCloud_Scheduled_To_Be_A_Single_Product_Purchase_Items	待排程採購單品項	待排程采购单品项	Scheduled to be a single product purchase items
+i18n_ServCloud_Editing_Walkthrough	編輯預排	编辑预排	Editing walkthrough
+i18n_ServCloud_During_The_Placement_Start_Date	放置期間起始日期	放置期间起始日期	During the placement start date
+i18n_ServCloud_During_The_Placement_End_Date	放置期間結束日期	放置期间结束日期	During the placement end date
+i18n_ServCloud_Walkthrough	預排	预排	Walkthrough
+i18n_ServCloud_No_Information_Walkthrough	無預排資料	无预排资料	No information walkthrough
+i18n_ServCloud_No_Actual_Data	無實際資料	无实际资料	No actual data
+i18n_ServCloud_Actual	實際	实际	actual
+i18n_ServCloud_Pre-Quantity_Row	預排數量	预排数量	Pre-quantity row
+i18n_ServCloud_The_Actual_Amount	實際數量	实际数量	the actual amount
+i18n_ServCloud_Total	總計	总计	total
+i18n_ServCloud_Last_Week	前一周	前一周	last week
+i18n_ServCloud_For_The_Current_Week	當前一周	当前一周	For the current week
+i18n_ServCloud_A_Week_Later	後一周	后一周	A week later
+i18n_ServCloud_Material_Details	物料明細	物料明细	Material Details
+i18n_ServCloud_Material_Barcode	物料條碼	物料条码	Material barcode
+i18n_ServCloud_During_The_Walkthrough	預排期間	预排期间	During the walkthrough
+i18n_ServCloud_Storage_Spaces_Walkthrough	預排儲位	预排储位	Storage spaces walkthrough
+i18n_ServCloud_This_Purchase_Order_Has_Not_Yet_Approved_Demolition	此採購單尚未拆批	此采购单尚未拆批	This purchase order has not yet approved demolition
+i18n_ServCloud_Walk-Food_Items_Barcode	預排品項條碼	预排品项条码	Walk-food items barcode
+i18n_ServCloud_Walkthrough_Product_Item_Number	預排品項序號	预排品项序号	Walkthrough product item number
+i18n_ServCloud_Purchase_Order_List	採購單列表	采购单列表	Purchase Order List
+i18n_ServCloud_Name	品名	品名	Name
+i18n_ServCloud_Split_Batches	拆批	拆批	Split batches
+i18n_ServCloud_Approved_Purchase_Orders_Demolition	採購單拆批	采购单拆批	Approved purchase orders demolition
+i18n_ServCloud_Purchase_Order_Information	採購單資訊	采购单资讯	Purchase Order Information
+i18n_ServCloud_Storage_And_Exits	儲存結果並離開	储存结果并离开	Storage and exits
+i18n_ServCloud_Update_Purchase_Order	更新採購單	更新采购单	Update Purchase Order
+i18n_ServCloud_Failure	失敗	失败	failure
+i18n_ServCloud_Please_Contact_Your_System_Administrator	請聯絡系統管理員	请联络系统管理员	Please contact your system administrator
+i18n_ServCloud_Hour	小時	小时	hour
+i18n_ServCloud_Shelf_Coding	貨架編碼	货架编码	Shelf coding
+i18n_ServCloud_Has_Approved_The_Demolition	已拆批	已拆批	Has approved the demolition
+i18n_ServCloud_Batch_Is_Not_Opened	未拆批	未拆批	Batch is not opened
+i18n_ServCloud_Has_Been_Approved_But_Not_Yet_Completed_The_Demolition_Walkthrough	已拆批但未完成預排	已拆批但未完成预排	Has been approved but not yet completed the demolition walkthrough
+i18n_ServCloud_Enter_The_Purchase_Order_Number_On_Their_Own	自行輸入採購單號	自行输入采购单号	Enter the purchase order number on their own
+i18n_ServCloud_Status	狀態	状态	status
+i18n_ServCloud_This_Material_Is_Placed_No_Storage_Spaces	此原料無可放置儲位	此原料无可放置储位	This material is placed no storage spaces
+i18n_ServCloud_Go_To	請至	请至	Go to
+i18n_ServCloud_Set_Up	設定	设定	set up
+i18n_ServCloud_Designated_Storage_Spaces	指定儲位	指定储位	Designated storage spaces
+i18n_ServCloud_During_The_Pre-Placed_In_Rows	預排放置期間	预排放置期间	During the pre-placed in rows
+i18n_ServCloud_Do_Not_Jinhuo_Dan	進貨單別	进货单别	Do not Jinhuo Dan
+i18n_ServCloud_Warehousing_Expected_Start_Date	預計入庫起始日期	预计入库起始日期	Warehousing expected start date
+i18n_ServCloud_Expected_Completion_Date_Storage	預計入庫完成日期	预计入库完成日期	Expected completion date storage
+i18n_ServCloud_Machine_Type_ID	機種編號	机种编号	Machine Type Id
+i18n_ServCloud_Product_ID	產品編號	产品编号	Product Id
+i18n_ServCloud_Machine_Type_Name	機種名稱	机种名称	Machine Type Name
+i18n_ServCloud_Machine_Type_Desc	機種說明	机种说明	Machine Type Description
+i18n_ServCloud_Fault_Storage	故障儲位	故障储位	Fault_Storage
+i18n_ServCloud_Whether_To_Clear	是否清除	是否清除	Whether_To_Clear
+i18n_ServCloud_Create_Time	建立時間	建立时间	Create_Time
+i18n_ServCloud_Create_By	創建者	创建者	Create_By
+i18n_ServCloud_Abnormal_Storage	異常儲位	异常储位	Abnormal_Storage

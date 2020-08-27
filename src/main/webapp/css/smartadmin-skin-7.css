@@ -1,0 +1,638 @@
+/*login css start*/
+.smart-style-7 .client-form header {
+    border-bottom-color: #00B6AD;
+    background: #00B6AD;
+    color:#fff;
+}
+/*login css end */
+html { background: #FBFBFB; }
+.smart-style-7 #shortcut { background-color: rgba(255,255,255,.9) }
+.smart-style-7 #shortcut ul {
+    -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+    border-bottom: 1px solid #A8BADB;
+}
+.smart-style-7 .superbox-list.active:before { color: #EDF1F3 }
+.smart-style-7 .superbox-img-description { color: #9EA8B1!important }
+.smart-style-7 .project-context>:first-child { text-shadow: none }
+.smart-style-7 .project-selector { color: #B2C1D5 }
+.smart-style-7 .project-selector:hover { color: #66767E }
+.smart-style-7 #logo {margin: 5px;}
+.smart-style-7 #logo img {height: 38px; width: auto;}
+.smart-style-7 #logo-group span#activity {
+    background: none!important;
+    border: none!important;
+    color: #C5C6CA;
+}
+.smart-style-7 #logo-group span#activity:hover { color: #66767E }
+.smart-style-7 #logo-group>span .badge { background: #008DC4 }
+.smart-style-7 .header-search>input[type=text] {
+    background: #161B22;
+    border: 1px solid #0F1217;
+    color: #66767E;
+    border-radius: 4px;
+}
+.smart-style-7 #ribbon {
+    background: #FBFBFB;
+    border-bottom: 3px solid #DCE2E6 !important;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #9B9B9B;
+}
+.smart-style-7 .btn.btn-ribbon { background: #9498A0 }
+.smart-style-7 aside {
+    background: #1BAEA6;
+    background: -webkit-gradient(linear,left top,right top,color-stop(99%,#1BAEA6),color-stop(100%,#1BAEA6));
+    background: -webkit-linear-gradient(left,#1BAEA6 99%,#1BAEA6 100%);
+    background: -webkit-gradient(linear,top left,top right,from(#1BAEA6),to(#1BAEA6));
+    background: linear-gradient(to right,#1BAEA6 99%,#1BAEA6 100%);
+    min-height: 100%;
+}
+.smart-style-7 #left-panel {
+    /*padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 64px;*/
+}
+.smart-style-7 .login-info {
+    padding-bottom: 80px!important;
+    height: auto;
+    padding-top: 20px !important;
+}
+.smart-style-7 .login-info span {
+    padding: 0;
+    background: #1BAEA6;
+    border-radius: 4px;
+}
+.smart-style-7 .login-info a {
+    font-size: 16px!important;
+    color: #fff;
+    margin-top: 2px;
+}
+.smart-style-7 .login-info a span {
+    padding: 0;
+    font-size: 16px!important;
+    max-width: 105px;
+}
+.smart-style-7 .login-info img { width: 35px }
+.smart-style-7 .login-info .change-pwd-panel {
+    background: #EDF0F2;
+    color:#6D6D6E;
+}
+.smart-style-7 .login-info .change-pwd-panel::before {
+    border-bottom: 20px solid #EDF0F2;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    left: 100px;
+}
+.smart-style-7 .login-info .change-pwd-panel legend {
+    color:#6D6D6E;
+    border-bottom: 0px;
+}
+.smart-style-7 .login-info span.input-group-addon {
+    padding: 6px 10px;
+    background: #EDF0F2;
+    border-radius: 0px;
+}
+.smart-style-7 .login-info .pwd-submit{
+    text-align: center;
+}
+.fixed-navigation nav {
+    padding-bottom: 120px;
+}
+.smart-style-7 .user_image{
+    max-width: 105px;
+    width: 4em;
+    height: 3em;
+}
+.smart-style-7 .fa-inverse {
+    color: gray;
+    padding-top:8px;
+}
+.smart-style-7 .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 100px;
+    text-align: center;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    position: absolute;
+}
+.smart-style-7 nav ul li a {
+    color: #fff !important;
+    font-size: 12px!important;
+}
+.smart-style-7 nav ul ul { background: #E6F4F5;}
+.smart-style-7 nav ul ul>li:hover b { color: #fff !important }
+.smart-style-7 nav ul ul li>a { padding-left: 23px }
+.smart-style-7 nav ul ul ul li a { padding-left: 30px }
+.smart-style-7 nav ul ul ul ul li a { padding-left: 40px }
+.smart-style-7 nav ul ul ul ul ul li a { padding-left: 50px }
+.smart-style-7 nav ul ul ul ul ul ul li a { padding-left: 60px }
+.smart-style-7 nav>ul>li>a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top:1px solid #1E807B;
+}
+.smart-style-7 nav>ul>li>a>i { font-size: 25px!important;margin-left: 10px; }
+.smart-style-7 nav>ul>li>a b { top: 30px }
+/*button css start*/
+.smart-style-7 .btn-primary{
+    background-color: #00B6AD;
+    border-color: #00B6AD;
+}
+.smart-style-7 .smart-form footer .btn{
+    background-color: #00B6AD;
+    border-color: #00B6AD;
+    font: 500 14px "Microsoft JhengHei", Helvetica, Arial, sans-serif !important;
+}
+.smart-style-7 .btn-primary.active,
+.smart-style-7 .btn-primary:active,
+.smart-style-7 .btn-primary:focus,
+.smart-style-7 .btn-primary:hover,
+.smart-style-7 .open .dropdown-toggle.btn-primary {
+    background-color: #00B6AD;
+    border-color: #4A4A4A;
+}
+.smart-style-7 .cancel-change-pwd {
+    background-color: #254441;
+    border-color: #254441;
+    color: #fff;
+}
+.smart-style-7 #rotate-start{
+    background: #50E3C2;
+    border-color: #50E3C2;
+}
+.smart-style-7 #rotate-start .btn-label {
+    background: #00B6AD;
+    color:#fff;
+    border-radius: 0px;
+}
+.smart-style-7 #rotate-start .btn-default.active .btn-label{
+    background: #A7B7C2;
+    color: #757677;
+}
+.smart-style-7 .btn-default {
+    background-color: #EDF0F2;
+    border-color: #EDF0F2;
+    color: #B2B3B4;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
+}
+.smart-style-7 .btn-default.active,
+.smart-style-7 .btn-default:active{
+    background-color: #EDF0F2;
+    border-color: #EDF0F2;
+    color: #757677;
+}
+.smart-style-7 .btn-default:focus,
+.smart-style-7 .btn-default:hover {
+  background-color: #EDF0F2;
+  border-color: #4A4A4A;
+  color: #757677;
+}
+
+.smart-style-7 .act-restore,
+.smart-style-7 .act-list{
+    background-color: #5A96FA !important;
+    border-color: #5A96FA !important;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.smart-style-7 .btn-success {
+    background-color: #00B6AD;
+    border-color: #00B6AD;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.smart-style-7 .btn-success.active,
+.smart-style-7 .btn-success:active,
+.smart-style-7 .btn-success:focus,
+.smart-style-7 .btn-success:hover,
+.smart-style-7 .open .dropdown-toggle.btn-success {
+    background-color: #00B6AD;
+    border-color: #4A4A4A;
+}
+.smart-style-7 .save-td .btn-success {
+    padding: 1px 5px;
+}
+.smart-style-7 .btn-danger {
+    background-color: #CE3E50;
+    border-color: #CE3E50;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.smart-style-7 .btn-danger.active,
+.smart-style-7 .btn-danger:active,
+.smart-style-7 .btn-danger:focus,
+.smart-style-7 .btn-danger:hover,
+.smart-style-7 .open .dropdown-toggle.btn-danger {
+    background-color: #CE3E50;
+    border-color: #4A4A4A;
+}
+.smart-style-7 .cancel-td .btn-danger {
+    padding: 1px 5px;
+}
+.smart-style-7 .btn-warning {
+    background-color: #F4BA59;
+    border-color: #F4BA59;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.smart-style-7 .btn-warning.active,
+.smart-style-7 .btn-warning:active,
+.smart-style-7 .btn-warning:focus,
+.smart-style-7 .btn-warning:hover,
+.smart-style-7 .open .dropdown-toggle.btn-warning {
+    background-color: #F4BA59;
+    border-color: #4A4A4A;
+}
+.smart-style-7 #submit,
+.smart-style-7 #submit-btn {
+    background-color: #449BF7;
+    border-color: #449BF7;
+    color: #fff;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
+}
+.smart-style-7 #submit.active,
+.smart-style-7 #submit:active,
+.smart-style-7 #submit:focus,
+.smart-style-7 #submit:hover,
+.smart-style-7 #submit-btn.active,
+.smart-style-7 #submit-btn:active,
+.smart-style-7 #submit-btn:focus,
+.smart-style-7 #submit-btn:hover {
+    background-color: #449BF7;
+    border-color: #4A4A4A;
+    color: #fff;
+}
+.smart-style-7 #showdemo,
+.smart-style-7 #showDemo,
+.smart-style-7 .stk-refresh-btn,
+.smart-style-7 .edit-plant-area-btn,
+.smart-style-7 .update-light{
+    background-color: #A7B7C2;
+    border-color: #A7B7C2;
+    color: #fff;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
+}
+.smart-style-7 #showdemo.active,
+.smart-style-7 #showdemo:active,
+.smart-style-7 #showdemo:focus,
+.smart-style-7 #showdemo:hover,
+.smart-style-7 #showDemo.active,
+.smart-style-7 #showDemo:active,
+.smart-style-7 #showDemo:focus,
+.smart-style-7 #showDemo:hover,
+.smart-style-7 .stk-refresh-btn.active,
+.smart-style-7 .stk-refresh-btn:active,
+.smart-style-7 .stk-refresh-btn:focus,
+.smart-style-7 .stk-refresh-btn:hover,
+.smart-style-7 .edit-plant-area-btn.active,
+.smart-style-7 .edit-plant-area-btn:active,
+.smart-style-7 .edit-plant-area-btn:focus,
+.smart-style-7 .edit-plant-area-btn:hover,
+.smart-style-7 .update-light.active,
+.smart-style-7 .update-light:active,
+.smart-style-7 .update-light:focus,
+.smart-style-7 .update-light:hover {
+    background-color: #A7B7C2;
+    border-color: #4A4A4A;
+    color: #fff;
+}
+.smart-style-7 .stk-delete-btn {
+    background-color: #FF6F59;
+    border-color: #FF6F59;
+    color: #fff;
+    padding: 6px 12px;
+}
+.smart-style-7 .stk-delete-btn.active,
+.smart-style-7 .stk-delete-btn:active,
+.smart-style-7 .stk-delete-btn:focus,
+.smart-style-7 .stk-delete-btn:hover {
+    background-color: #FF6F59;
+    border-color: #4A4A4A;
+}
+.smart-style-7 .stk-insert-btn {
+    background-color: #50E3C2;
+    border-color: #50E3C2;
+    color: #fff;
+    padding: 6px 12px;
+}
+.smart-style-7 .stk-insert-btn.active,
+.smart-style-7 .stk-insert-btn:active,
+.smart-style-7 .stk-insert-btn:focus,
+.smart-style-7 .stk-insert-btn:hover {
+    background-color: #50E3C2;
+    border-color: #4A4A4A;
+}
+/*button css send*/
+.smart-style-7 .bg-color-red { background: #DB4A67!important }
+.smart-style-7 .bg-color-blue { background: #4387bf!important }
+.smart-style-7 .smart-form .toggle i:before { background-color: #3b9ff3 }
+.smart-style-7 .bg-color-greenLight { background-color: #89AD45!important }
+.smart-style-7 .bg-color-orange { background-color: #D6A848!important }
+.smart-style-7 .bg-color-teal { background-color: #5ba0a3!important }
+.smart-style-7 .minifyme {
+    background: #D7DAE2;
+    border-bottom: 1px solid #818181;
+    color: #7E7E7E;
+}
+.smart-style-7 .minifyme:hover { color: #4E4E4E }
+.smart-style-7 .onoffswitch-inner:before {
+    background: #3b9ff3;
+    border-color: #3b9ff3 #257DC7 #2A7DC4;
+}
+.smart-style-7 .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch:before { color: #84A83E }
+.smart-style-7 .ui-chatbox-titlebar { background: #576574!important }
+.smart-style-7 .ui-chatbox-titlebar.ui-state-focus { background: #EDF1F3!important }
+body.smart-style-7 { background: #FBFBFB }
+.smart-style-7 #header,
+.smart-style-7 .page-footer,
+.smart-style-7 .superbox-show {
+    background-image: none;
+    background-color: #EDF1F3;
+}
+.smart-style-7 #hide-menu a>i,
+.smart-style-7 .btn-header>:first-child>a {
+    background: 0 0;
+    border: none!important;
+    color: #C5C6CA!important;
+    box-shadow: none!important;
+}
+.smart-style-7 #hide-menu a:hover i,
+.smart-style-7 .btn-header>:first-child>a:hover {
+    color: #66767E!important;
+    cursor: pointer!important;
+}
+.smart-style-7 .header-dropdown-list a.dropdown-toggle,
+.smart-style-7 .header-search>button { color: #ADADAD !important; }
+.smart-style-7 #ribbon .breadcrumb,
+.smart-style-7 #ribbon .breadcrumb a,
+.smart-style-7 #ribbon .breadcrumb li:last-child,
+.smart-style-7 #ribbon .breadcrumb>.active { color: #9B9B9B !important }
+.smart-style-7 #system-version,
+.smart-style-7 #license-date {
+    border-radius: 0px;
+    border: 1px solid #ADADAD;
+}
+.menu-on-top.smart-style-7 #left-panel { padding-top: 49px!important }
+.smart-style-7 .login-info,
+.smart-style-7 .login-info span {
+    border: 0!important;
+    box-shadow: none!important;
+    margin-left: 10px;
+}
+.fa-stack-3x {
+    font-size: 3em;
+}
+.smart-style-7 nav ul li.active>a{
+    color: #fff !important;
+    font-weight: 700;
+}
+.smart-style-7 nav ul li.open>a,
+.smart-style-7 nav ul li.open>a b {
+    color: #fff !important;
+    font-weight: 700;
+}
+.smart-style-7 nav ul li a:hover {
+    color: #fff !important;
+    background: none!important;
+}
+.smart-style-7 nav ul ul li a,
+.smart-style-7 nav ul ul li.active>a,
+.smart-style-7 nav ul ul li>a:hover {
+    color: #697881 !important;
+    font-weight: 700;
+}
+.smart-style-7 nav>ul ul li::before,
+.smart-style-7 nav>ul>li>ul::before {
+    border: none!important
+}
+nav ul li.active > a::before {
+    /*content: "<";
+    font-family: FontAwesome;
+    */display: block;
+    height: 27px;
+    line-height: normal;
+    width: 27px;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+nav ul li ul li.active > a::before {
+   color:#92959F;
+}
+.smart-style-7 .dropdown-menu>li>a:focus,
+.smart-style-7 .dropdown-menu>li>a:hover { background-color: #3E90D4 }
+.smart-style-7 .pagination>.active>a,
+.smart-style-7 .pagination>.active>a:focus,
+.smart-style-7 .pagination>.active>a:hover,
+.smart-style-7 .pagination>.active>span,
+.smart-style-7 .pagination>.active>span:focus,
+.smart-style-7 .pagination>.active>span:hover { background-color: #00B6AD }
+.smart-style-7.minified .login-info { margin: 0!important }
+.smart-style-7.minified .login-info a { margin-top: 4px }
+.smart-style-7.minified .login-info span { padding: 0 }
+.smart-style-7.minified #left-panel {
+    padding: 0!important;
+    padding-top: 50px!important;
+}
+.smart-style-7.minified nav ul>li>a { padding: 12px 11px }
+.smart-style-7.minified nav ul li.active>a:before {
+    height: 23px;
+    right: -19px;
+    top: 7px;
+    font-size: 20px;
+    color: #66767E;
+}
+.smart-style-7.minified nav>ul>li {
+    border-bottom: 1px solid #E6E6E6;
+    border-top: 1px solid #FFF;
+}
+.smart-style-7.minified nav>ul>li>a>i { font-size: 18px!important }
+.smart-style-7.minified nav>ul>li>ul,
+.smart-style-7.minified nav>ul>li>ul>li,
+.smart-style-7.minified nav>ul>li>ul>li>ul>li { background: #fff!important }
+.smart-style-7 .smart-form .checkbox input:checked+i,
+.smart-style-7 .smart-form .radio input:checked+i,
+.smart-style-7 .smart-form .toggle input:checked+i { border-color: #3b9ff3 }
+.smart-style-7 .smart-form .rating input+label:hover,
+.smart-style-7 .smart-form .rating input+label:hover~label { color: #3b9ff3 }
+.smart-style-7.menu-on-top .menu-item-parent { font-size: 10px }
+.smart-style-7.menu-on-top #left-panel {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.smart-style-7.menu-on-top nav ul ul li>a {
+    text-shadow: none!important;
+    color: #646E75;
+}
+.smart-style-7.menu-on-top nav ul ul li a {
+    padding-left: 10px!important;
+    font-size: 13px;
+}
+.smart-style-7.menu-on-top nav ul ul li:hover>a {
+    color: #66767E!important;
+    background-color: #5E6C88;
+}
+.smart-style-7.menu-on-top nav ul ul .active>a { color: #66767E!important }
+.smart-style-7.menu-on-top nav>ul ul ul { border-top: 1px solid #c7c7c7!important }
+.smart-style-7.menu-on-top nav>ul ul li:hover>ul { background: #333 }
+.smart-style-7.menu-on-top nav>ul>li>a:after { color: #8AA1B3!important }
+.smart-style-7.menu-on-top aside { background: inherit }
+.smart-style-7.menu-on-top aside#left-panel {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #B8B8B8;
+    border-top: 1px solid #333;
+}
+.smart-style-7.menu-on-top aside#left-panel nav>ul>li {
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+.smart-style-7.menu-on-top aside#left-panel nav>ul>li>a {
+    text-shadow: none!important;
+    font-size: 13px;
+    padding: 10px 9px!important;
+}
+.smart-style-7.menu-on-top aside#left-panel nav>ul>li>ul { background: #EDF1F3 }
+.smart-style-7.menu-on-top aside#left-panel nav>ul>li:hover {
+    background: #2e3e57;
+    border-right-color: #66767E;
+    border-left-color: #66767E;
+}
+.smart-style-7.menu-on-top aside#left-panel nav>ul>li:hover>a {
+    color: #F1F1F1!important;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding-left: 8px!important;
+    padding-right: 8px!important;
+}
+.smart-style-7.menu-on-top nav ul ul li a,
+.smart-style-7.menu-on-top nav ul ul ul li a { color: #ADBED3!important }
+.smart-style-7.menu-on-top nav ul ul li a:hover,
+.smart-style-7.menu-on-top nav ul ul ul li a:hover {
+    color: #66767E;
+    background-color: #5E6C88!important;
+}
+.smart-style-7.menu-on-top nav ul ul,
+.smart-style-7.menu-on-top nav ul ul ul {
+    background: #2e3e57!important;
+    border: 1px solid transparent;
+}
+.smart-style-7.menu-on-top nav ul ul li:hover>a:after,
+.smart-style-7.menu-on-top nav>ul ul>li a:after,
+.smart-style-7.menu-on-top nav>ul ul>li a:hover:after,
+.smart-style-7.menu-on-top nav>ul>li>a:after { color: #D5D5D5 }
+.smart-style-7.menu-on-top nav ul ul li:hover>a:after,
+.smart-style-7.menu-on-top nav>ul ul>li a:hover:after { color: #66767E }
+.smart-style-7.menu-on-top nav ul ul .active>a:hover,
+.smart-style-7.menu-on-top nav ul ul li.active:hover>a { color: #66767E!important }
+
+.smart-style-7 .monitor-overall .card {
+    /*width: 290px;*/
+    /*height: 240px;*/
+}
+.smart-style-7 .monitor-overall .card .header .status {
+    /*margin: 5px 10px 20px 10px;*/
+    border-bottom: 4px #A7B7C2 solid;
+}
+.smart-style-7 .monitor-overall .card .content .tab-chart {
+    /*margin: 10px 0 10px;*/
+    text-align: center;
+}
+.smart-style-7 .nav-tabs.bordered {
+    text-align: center;
+}
+.smart-style-7 .nav-tabs > li > a > .fa {
+    opacity: .8;
+    color: #434343;
+}
+.smart-style-7 .nav-tabs > li.active > a {
+    box-shadow: 0 -2px 0 #00B6AD;
+}
+/*jarviswidget table css start*/
+.smart-style-7 .jarviswidget > header {
+    background: #EDF0F2;
+    border: 1px solid #A7B7C2;
+    color: #4A4A4A;
+}
+.smart-style-7 .bg-color-darken {
+    background-color: #00B6AD !important;
+}
+.smart-style-7 .jarviswidget-color-darken > header {
+    border-color: #00B6AD !important;
+    background: #00B6AD;
+    color: #fff;
+}
+.smart-style-7 .input-group-addon {
+    background-color: #E6F7F7;
+}
+.smart-style-7 #headTabs > li {
+    width: 108px;
+}
+.smart-style-7 .alert-info {
+    border-color: #A7B7C2;
+    color: #4A4A4A;
+    background-color: #EDF0F2;
+}
+.smart-style-7 .fc-head-container thead tr, .table thead tr {
+    background-color: #EDF0F2;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#EDF0F2),to(#EDF0F2));
+    background-image: -webkit-linear-gradient(top,#EDF0F2 0,#EDF0F2 100%);
+    background-image: -moz-linear-gradient(top,#EDF0F2,#EDF0F2 100%);
+    background-image: -ms-linear-gradient(top,#EDF0F2 0,#EDF0F2 100%);
+    background-image: -o-linear-gradient(top,#EDF0F2 0,#EDF0F2 100%);
+    background-image: -linear-gradient(top,#EDF0F2 0,#EDF0F2 100%);
+}
+.smart-style-7 .form-control {
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: scroll;
+}
+
+.smart-style-7 .form-control select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    overflow: scroll;
+}
+
+.smart-style-7 .form-control select:focus {
+    outline: none;
+}
+
+/*tool-bar hidden
+.widget-toolbar {
+    visibility: hidden;
+}
+/*tool-bar hidden*/
+/*jarviswidget table css end*/
+
+.smart-style-7 .popover .popover-title {
+    background-color: #00B6AD;
+}
+
+.smart-style-7 .popover .popover-content {
+    color: #333;
+}
+
+.smart-style-7 .change-pwd-panel .form-control {
+    width: 235px;
+}

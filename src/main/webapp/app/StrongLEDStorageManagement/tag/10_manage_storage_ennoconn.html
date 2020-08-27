@@ -1,0 +1,263 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Storage_Structure}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <h1 style="padding: 0 25px;">
+              <span
+                class="semi-bold"
+                style="display: flex; justify-content: center;"
+                >{i18n_ServCloud_Storage_Structure} =
+                <span id="structure"></span>
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Storage_Manage}</h2>
+          <div class="widget-toolbar" role="menu">
+            <a
+              href="javascript:void(0);"
+              id="edit-tree-btn"
+              class="btn btn-primary"
+              >{i18n_ServCloud_Edit}</a
+            >
+            <a
+              href="javascript:void(0);"
+              id="quit-edit-tree-btn"
+              class="btn btn-default hide"
+              >{i18n_ServCloud_Cancel}</a
+            >
+            <a
+              href="javascript:void(0);"
+              id="save-tree-btn"
+              class="btn btn-success hide"
+              >{i18n_ServCloud_Save}</a
+            >
+          </div>
+        </header>
+        <div>
+          <div id="storage" class="widget-body no-padding view"></div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- 增加節點 MODAL START -->
+    <div class="modal fade close-modal" id="add-node-modal" tabindex="-1">
+      <div class="modal-dialog demo-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 id="create-node-level-text" class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <button id="create-btn" class="btn btn-primary">
+              <i class="fa fa-plus"></i>
+            </button>
+            <div class="row">
+              <form
+                id="create-form"
+                class="smart-form"
+                novalidate="novalidate"
+              ></form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button type="button" class="btn btn-primary" id="confirm-add-btn">
+              {i18n_ServCloud_Confirm}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 增加節點 MODAL END-->
+    <!-- 編輯節點 MODAL START -->
+    <div class="modal fade close-modal" id="edit-node-modal" tabindex="-1">
+      <div class="modal-dialog demo-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 id="edit-node-level-text" class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <form id="edit-form" class="smart-form" novalidate="novalidate">
+                <article>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label class="col-md-4 control-label form-text"
+                        >{i18n_ServCloud_ID}</label
+                      >
+                      <div class="col-md-8 input">
+                        <input
+                          class="form-control"
+                          data-type="id"
+                          name="id"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label class="col-md-3 control-label form-text"
+                        >{i18n_ServCloud_Name}</label
+                      >
+                      <div class="col-md-8 input">
+                        <input
+                          class="form-control"
+                          data-type="name"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </section>
+                  <section
+                    class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 hide"
+                  >
+                    <div class="form-group">
+                      <label class="col-md-4 control-label form-text"
+                        >{i18n_ServCloud_Light_Index}</label
+                      >
+                      <div class="col-md-8 input">
+                        <input
+                          class="form-control"
+                          data-type="light"
+                          name="light"
+                          type="text"
+                          data-rule-digits="true"
+                          data-msg-digits="{i18n_ServCloud_Only_Number}"
+                        />
+                      </div>
+                    </div>
+                  </section>
+                </article>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button type="button" class="btn btn-primary" id="confirm-edit-btn">
+              {i18n_ServCloud_Confirm}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 編輯節點 MODAL END-->
+    <!-- 刪除節點 MODAL START -->
+    <div class="modal fade close-modal" id="delete-node-modal" tabindex="-1">
+      <div class="modal-dialog demo-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 id="delete-node-level-text" class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <h5>{i18n_ServCloud_Delete_Info}</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="confirm-delete-btn"
+            >
+              {i18n_ServCloud_Confirm}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 刪除節點 MODAL END-->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #storage.view .create-node,
+  #storage.view .edit-node,
+  #storage.view .delete-node {
+    display: none;
+  }
+
+  .btn.btn-xs {
+    margin: 0 2px;
+  }
+
+  .node-name {
+    display: inline-block;
+    padding: 0 3px 0 5px;
+  }
+
+  #create-btn {
+    margin-bottom: 5px;
+  }
+
+  #create-form > article,
+  #edit-form > article {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  #create-form .form-text,
+  #add-position-form .form-text,
+  #edit-form .form-text {
+    font-size: 1.3em;
+    line-height: 2em;
+    /* text-align: right; */
+    /* padding-right: 5px; */
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

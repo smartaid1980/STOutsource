@@ -1,0 +1,228 @@
+<!--<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw "></i>
+      CNC 程式上下傳
+			<span>> 
+				<span id="machineIdHead"></span>
+				>
+				CNC 程式下載
+			</span>
+    </h1>
+  </div>
+</div>-->
+
+<section id="widget-grid">
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <button
+          id="go-back-page"
+          class="btn btn-default btn-lg"
+          style="float: left; margin-bottom: 15px;"
+        >
+          <span><i class="fa fa-arrow-left"></i></span>&nbsp;&nbsp;Back
+        </button>
+      </section>
+      <div
+        class="jarviswidget data-widget-collapsed col-xs-3 col-sm-3 col-md-3 col-lg-3"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="true"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_CNC_Data_Server_0001}</h2></span
+          >
+        </header>
+        <div class="tree" style="height: 100vh; overflow: scroll;">
+          <ul role="tree">
+            <li id="home" class="parent_li" role="treeitem"></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="jarviswidget col-xs-9 col-sm-9 col-md-9 col-lg-9"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="true"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_CNC_Data_Server_0002}</h2></span
+          >
+        </header>
+        <div id="file-list" style="height: 100vh; overflow: scroll;">
+          <div
+            class="col-xs-8 col-sm-8 col-md-8 col-lg-8"
+            style="margin-bottom: 40px;"
+          >
+            <input
+              type="file"
+              id="file_select"
+              style="display: none;"
+              multiple="multiple"
+            />
+            <button
+              data-toggle="tooltip"
+              title="{i18n_ServCloud_CNC_Data_Server_0003}"
+              class="btn btn-sm btn-default pull-left"
+              id="upload_btn"
+              style="z-index: 1; margin: 2px;"
+            >
+              <span class="fa fa-lg fa-upload"></span>
+            </button>
+            <button
+              data-toggle="tooltip"
+              title="{i18n_ServCloud_CNC_Data_Server_0004}"
+              class="btn btn-sm btn-default pull-left"
+              id="download_btn"
+              style="z-index: 1; margin: 2px;"
+            >
+              <span class="fa fa-lg fa-download"></span>
+            </button>
+            <button
+              data-toggle="tooltip"
+              title="{i18n_ServCloud_CNC_Data_Server_0005}"
+              class="btn btn-sm btn-default pull-left"
+              id="refresh_btn"
+              style="z-index: 1; margin: 2px;"
+            >
+              <span class="fa fa-lg fa-refresh"></span>
+            </button>
+            <!--<button data-toggle="tooltip" title="{i18n_ServCloud_CNC_Data_Server_0006}" class="btn btn-sm btn-default pull-left" id="create_folder_btn" style='z-index:1;margin: 2px;'><span class="fa fa-lg fa-plus"></span></button>-->
+            <button
+              data-toggle="tooltip"
+              title="{i18n_ServCloud_CNC_Data_Server_0007}"
+              class="btn btn-sm btn-default pull-left"
+              id="delete_btn"
+              style="z-index: 1; margin: 2px;"
+            >
+              <span class="fa fa-lg fa-times"></span>
+            </button>
+          </div>
+          <div
+            id="upload_list"
+            class="well pull-right col-xs-4 col-sm-4 col-md-4 col-lg-4"
+            style="display: none; margin-bottom: 0px; margin-top: 10px;"
+          >
+            <div
+              style="margin-top: 10px; margin-bottom: 10px;"
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+            >
+              <button
+                id="add_file_btn"
+                class="btn btn-sm btn-success pull-left"
+                style="margin-right: 2px;"
+              >
+                <i class="glyphicon glyphicon-plus"></i
+                ><span>{i18n_ServCloud_CNC_Data_Server_0008}</span>
+              </button>
+              <button
+                id="all_upload_btn"
+                class="btn btn-sm btn-primary pull-left"
+                style="margin-right: 2px;"
+              >
+                <i class="glyphicon glyphicon-upload"></i
+                ><span>{i18n_ServCloud_CNC_Data_Server_0009}</span>
+              </button>
+              <button
+                id="all_clear_btn"
+                class="btn btn-sm btn-warning pull-left"
+                style="margin-right: 2px;"
+              >
+                <i class="glyphicon glyphicon-ban-circle"></i
+                ><span>{i18n_ServCloud_CNC_Data_Server_0010}</span>
+              </button>
+            </div>
+            <div id="upload_detail" class="table table-striped"></div>
+          </div>
+          <div class="widget-body col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <ul id="file-content" class="list-inline"></ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="create-folder-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title">{i18n_ServCloud_CNC_Data_Server_0011}</h4>
+            </div>
+            <div class="modal-body" id="modal-table-body">
+              <form class="smart-form">
+                <div class="row">
+                  <section class="col col-12">
+                    <label class="label">
+                      {i18n_ServCloud_CNC_Data_Server_0012}:
+                      <input
+                        type="text"
+                        id="modal_currPath"
+                        disabled="disabled"
+                      />
+                    </label>
+                  </section>
+                  <section class="col col-12">
+                    <label class="label">
+                      {i18n_ServCloud_CNC_Data_Server_0013}:
+                      <input
+                        type="text"
+                        id="modal_create_name"
+                        data-rule-required="true"
+                      />
+                    </label>
+                  </section>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                id="create_modal_submit"
+                class="btn btn-primary"
+              >
+                {i18n_ServCloud_CNC_Upload_0009}
+              </button>
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                {i18n_ServCloud_CNC_Upload_0010}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <div id="forms"></div>
+</section>
+<script type="text/javascript">
+  window.importPageScript()
+</script>

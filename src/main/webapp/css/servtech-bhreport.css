@@ -1,0 +1,49 @@
+.bhr-chart {
+  /*display: inline-block;*/
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.bhr-chart .bhr-chart-title,
+.bhr-chart .bhr-chart-plot {
+  display: inline-block;
+  margin: auto;
+}
+.bhr-chart .bhr-chart-title {
+  margin-bottom: 1em;
+}
+.bhr-chart .bhr-chart-plot .legend.toggleable tr {
+  cursor: pointer;
+}
+.bhr-chart .bhr-chart-plot .legend.toggleable tr.toggle-disabled {
+  opacity: 0.6;
+}
+.bhr-chart .bhr-chart-plot .valueLabels {
+  font-size: smaller;
+}
+.bhr-chart .bhr-chart-plot .valueLabels .valueLabelLight {
+  opacity: 0;
+}
+.bhr-chart .bhr-chart-plot .valueLabels .valueLabel {
+  margin-left: -1.2em;
+  margin-top: -1.3em;
+}
+.bhr-chart .bhr-chart-plot .pieLabel {
+  color: #fff;
+}
+
+.smart-style-5 .bhr-chart .bhr-chart-plot .legend .legendLabel {
+  color: #fff;
+}
+.smart-style-5 .bhr-chart .bhr-chart-plot .pieLabel {
+  color: #000;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

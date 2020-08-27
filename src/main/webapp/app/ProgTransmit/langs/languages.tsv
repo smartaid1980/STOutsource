@@ -1,0 +1,94 @@
+	zh_tw	zh	en
+i18n_ServCloud_ProgTransmit	CNC 程式上下傳	CNC 程式上下传	CNC Program Upload/Download
+i18n_ServCloud_Machine_List	機台列表	机台列表	Machine List
+i18n_ServCloud_Machines	機台列表	机台列表	Machine List
+i18n_ServCloud_Prog_Upload_Download	程式上下傳	程式上下传	Program Transmit
+i18n_ServCloud_Light_Status	顯示燈號	显示灯号	Machine Status
+i18n_ServCloud_Name	名稱	名称	Name
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_Prog_Download	CNC 程式下載	CNC 程式下载	CNC Prog Download
+i18n_ServCloud_Prog_Upload	CNC 程式上傳	CNC 程式上传	CNC Prog Upload
+i18n_ServCloud_Leave	離開	离开	Exit
+i18n_ServCloud_Monitoring_Information	監控資訊	监控资讯	Monitoring information
+i18n_ServCloud_Machine_Id	機台編號	机台编号	MACHINE_ID
+i18n_ServCloud_Program	程式名稱	程式名称	Program
+i18n_ServCloud_Size	檔案大小	档案大小	Size
+i18n_ServCloud_Note	註解	注解	Note
+i18n_ServCloud_Download	下載	下载	Download
+i18n_ServCloud_Please_Select_The_Program_Upload	請選擇檔案上傳	请选择档案上传	Please select the program upload
+i18n_ServCloud_Browse	選擇檔案	选择档案	Browse
+i18n_ServCloud_Upload	上傳檔案	上传档案	Upload
+i18n_ServCloud_Controller_Information	控制器資訊	控制器资讯	Controller information
+i18n_ServCloud_System	系統	系统	System
+i18n_ServCloud_Remaining_Storage	剩餘空間	剩余空间	Remaining Storage
+i18n_ServCloud_Prog_Upload_List	CNC 程式上傳列表	CNC 程式上传列表	CNC Prog Upload List
+i18n_ServCloud_File_Name	檔名	档名	File Name
+i18n_ServCloud_Cancel	取消	取消	Cancel
+i18n_ServCloud_Cancel_All	全部取消	全部取消	Cancel All
+i18n_ServCloud_Multi_File_Download	多檔下載	多档下载	Multi-file Download
+i18n_ServCloud_Select_File	選取檔案	选取档案	Select File
+i18n_ServCloud_Upload_File_Description	上傳內容格式說明:<br/>內容第一行必須為"%"，第二行為加工程式名稱和註解，最後一行使用"%"當作結尾。<br/>例: <br/>%<br/>O0001 (comment)<br/>...<br/>%<br/>	上传内容格式说明:<br/>内容第一行必须为"%"，第二行为加工程式名称和注解，最后一行使用"%"当作结尾。 <br/>例: <br/>%<br/>O0001 (comment)<br/>...<br/>%<br/>	Description of the upload format:<br/>The first line of content must be "%", the second line is the name of the program and the comment, the last line using "%" as the end.<br/>example: <br/>%<br/>O0001 (comment)<br/>...<br/>%<br/>
+i18n_ServCloud_Fanuc_Cnc_Upload	CNC 程式上下傳	CNC 程式上下传	CNC Program Upload/Download
+i18n_ServCloud_Fanuc_Data_Server	CNC 程式上下傳	CNC 程式上下传	CNC DataServer
+i18n_ServCloud_Fanuc_Log_Query	CNC 程式上下傳	CNC 程式上下传	CNC Program Upload/Download
+i18n_ServCloud_CNC_Upload_0001	機台列表	机台列表	Machine List
+i18n_ServCloud_CNC_Upload_0002	機台名稱	机台名称	Machine Name
+i18n_ServCloud_CNC_Upload_0003	機台狀態	机台状态	Machine Status
+i18n_ServCloud_CNC_Upload_0004	DataServer狀態	DataServer状态	DataServer Status
+i18n_ServCloud_CNC_Upload_0005	程式上下傳	程式上下传	Program Upload/Download
+i18n_ServCloud_CNC_Upload_0006	登入	登入	Login
+i18n_ServCloud_CNC_Upload_0007	帳號	帐号	Account
+i18n_ServCloud_CNC_Upload_0008	密碼	密码	Password
+i18n_ServCloud_CNC_Upload_0009	提交	提交	Submit
+i18n_ServCloud_CNC_Upload_0010	取消	取消	Cancel
+i18n_ServCloud_CNC_Upload_0011	程式上下傳	程式上下传	Program Upload/Download
+i18n_ServCloud_CNC_Upload_0012	是	是	Yes
+i18n_ServCloud_CNC_Upload_0013	取消	取消	Cancel
+i18n_ServCloud_CNC_Upload_0014	使用預設使用者登入	使用预设使用者登入	Use default account login
+i18n_ServCloud_CNC_Upload_0015	顯示燈號	显示灯号	Light
+i18n_ServCloud_CNC_Upload_0016	連線	连线	Connection
+i18n_ServCloud_CNC_Upload_0017	使用其它使用者	使用其它使用者	Use other account
+i18n_ServCloud_CNC_Data_Server_0001	目錄列表	目录列表	Folder List
+i18n_ServCloud_CNC_Data_Server_0002	清單	清单	List
+i18n_ServCloud_CNC_Data_Server_0003	上傳檔案	上传档案	Upload File
+i18n_ServCloud_CNC_Data_Server_0004	下載檔案	下载档案	Download File
+i18n_ServCloud_CNC_Data_Server_0005	重新整理	重新整理	Refresh
+i18n_ServCloud_CNC_Data_Server_0006	新增資料夾	新增资料夹	Create Folder
+i18n_ServCloud_CNC_Data_Server_0007	刪除	删除	Delete
+i18n_ServCloud_CNC_Data_Server_0008	新增檔案	新增档案	Create File
+i18n_ServCloud_CNC_Data_Server_0009	全部上傳	全部上传	All File Upload
+i18n_ServCloud_CNC_Data_Server_0010	清除列表	清除列表	Clear List
+i18n_ServCloud_CNC_Data_Server_0011	新增資料夾	新增资料夹	Create Folder
+i18n_ServCloud_CNC_Data_Server_0012	當前路徑	当前路径	Current Path
+i18n_ServCloud_CNC_Data_Server_0013	資料夾名稱	资料夹名称	Folder Name
+i18n_ServCloud_CNC_Data_Server_0014	同步成功	同步成功	Sync is Success
+i18n_ServCloud_CNC_Data_Server_0015	同步失敗， 請確認	同步失败， 请确认	Sync is Fail Please Check
+i18n_ServCloud_CNC_Data_Server_0016	準備下載檔案，請稍後	准备下载档案，请稍后	Download Files, Please Wait
+i18n_ServCloud_CNC_Data_Server_0017	個檔案	个档案	File
+i18n_ServCloud_CNC_Data_Server_0018	沒有選取任何檔案	没有选取任何档案	No Select any File
+i18n_ServCloud_CNC_Data_Server_0019	請選擇下載檔案	请选择下载档案	Please Select want Download File
+i18n_ServCloud_CNC_Data_Server_0020	無法取得列表	无法取得列表	Can not get File List
+i18n_ServCloud_CNC_Data_Server_0021	大小超出限制	大小超出限制	File is out Size
+i18n_ServCloud_CNC_Data_Server_0022	大小限制為 1GB 以內	大小限制为 1GB 以内	File Size Within the Range of 1GB
+i18n_ServCloud_CNC_Data_Server_0023	上傳位置	上传位置	Upload Site
+i18n_ServCloud_CNC_Data_Server_0024	檔案名稱	档案名称	File Name
+i18n_ServCloud_CNC_Data_Server_0025	檔案大小	档案大小	File Size
+i18n_ServCloud_CNC_Data_Server_0026	同步至 Data Server 中	同步至 Data Server 中	Sync to DataServer
+i18n_ServCloud_CNC_Data_Server_0027	上傳	上传	Upload
+i18n_ServCloud_CNC_Data_Server_0028	清除	清除	Clear
+i18n_ServCloud_CNC_Data_Server_0029	資料夾新增成功	资料夹新增成功	Create Folder is Success
+i18n_ServCloud_CNC_Data_Server_0030	資料夾新增失敗	资料夹新增失败	Create Folder is Fail
+i18n_ServCloud_CNC_Data_Server_0031	刪除以下檔案	删除以下档案	Delete Files
+i18n_ServCloud_CNC_Data_Server_0032	刪除檔案成功	删除档案成功	Delte File is Success
+i18n_ServCloud_CNC_Data_Server_0033	刪除檔案失敗	删除档案失败	Delete File is Fail
+i18n_ServCloud_CNC_Data_Server_0034	日誌查詢條件	日志查询条件	Log Query Condition
+i18n_ServCloud_CNC_Data_Server_0035	開始日期	开始日期	start Date
+i18n_ServCloud_CNC_Data_Server_0036	結束日期	结束日期	End Date
+i18n_ServCloud_CNC_Data_Server_0037	日誌查詢結果	日志查询结果	Log Query Result
+i18n_ServCloud_CNC_Data_Server_0038	動作	动作	Action
+i18n_ServCloud_CNC_Data_Server_0039	命令開始時間	命令开始时间	Command Start Time
+i18n_ServCloud_CNC_Data_Server_0040	命令結束時間	命令结束时间	Command End Time
+i18n_ServCloud_CNC_Data_Server_0041	執行結果	执行结果	Result
+i18n_ServCloud_CNC_Data_Server_0042	操作電腦的IP	操作电脑的IP	Operating The Computer's IP
+i18n_ServCloud_CNC_Data_Server_0043	上傳者	上传者	Uploaded By
+i18n_ServCloud_CNC_Data_Server_0044	新增時間	新增时间	Add Time

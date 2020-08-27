@@ -1,0 +1,71 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="piller-light-table-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Piller_Light_Manage}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="pks"
+              id="piller-light-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 50%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 50%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Shelf_Name}</th>
+                  <th>{i18n_ServCloud_Light_Index}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <select
+                      name="map_id"
+                      class="form-control"
+                      stk-getdata-source="db"
+                      stk-getdata-name="a_storage_store"
+                      stk-getdata-column-value="store_id"
+                      stk-getdata-column-text="store_name"
+                    ></select>
+                  </td>
+                  <td>
+                    <input
+                      name="light_id"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Light_Index}"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<script>
+  window.importPageScript()
+</script>

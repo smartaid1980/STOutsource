@@ -1,0 +1,269 @@
+<section id="widget-grid">
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-fullscreenbutton="false"
+    data-widget-editbutton="false"
+    data-widget-collapsed="false"
+    data-widget-colorbutton="false"
+    data-widget-deletebutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <h2>編輯工段位置</h2>
+      <!-- Edit -->
+      <div class="widget-toolbar" role="menu">
+        <a
+          href="javascript:void(0);"
+          class="btn bg-color-green txt-color-white stk-save"
+          >Save</a
+        >
+      </div>
+      <div class="widget-toolbar" role="menu">
+        <a
+          href="javascript:void(0);"
+          class="btn bg-color-red txt-color-white stk-upload"
+          >Upload Image</a
+        >
+      </div>
+    </header>
+    <div class="widget-body">
+      <div id="draw-area"></div>
+    </div>
+  </div>
+
+  <div
+    id="upload-modal"
+    class="modal fade"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="remoteModalLabel"
+    data-backdrop="false"
+    data-keyboard="true"
+    style="background-color: rgba(0, 0, 0, 0.5);"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" id="upload-modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="float: left;">上傳背景圖</h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="widget-body">
+            <form action="" id="mydropzone"></form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  h3 {
+    margin: 10px 0;
+  }
+
+  #update-utilization-info {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    text-align: initial;
+  }
+
+  #draw-area {
+    text-align: center;
+  }
+
+  #all-plant-area {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .all-devices {
+    height: 300px;
+    /* width: 25%; */
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 0;
+  }
+
+  .all-devices > div {
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    height: 100%;
+  }
+
+  .all-devices > h3 {
+    margin: 12px 0 11px;
+  }
+
+  #all {
+    height: 79%;
+    width: 79%;
+    margin: auto;
+  }
+
+  .devices {
+    height: 300px;
+    width: 75%;
+    display: flex;
+  }
+
+  .device {
+    width: 20%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    border-top: #ccc 1px solid;
+    border-bottom: #ccc 1px solid;
+  }
+
+  .devices .device:first-child {
+    border-left: #ccc 1px solid;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .devices .device:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .devices .device:first-child:last-child {
+    border-radius: 5px;
+  }
+
+  .device > .device-header {
+    width: 100%;
+    height: 40px;
+    background-color: #1d2028;
+    color: white;
+    padding-top: 5px;
+    font-size: 19px;
+  }
+
+  .devices .device:first-child .device-header {
+    border-radius: 5px 0 0;
+  }
+
+  .devices .device:last-child .device-header {
+    border-radius: 0 5px 0 0;
+  }
+
+  .devices .device:first-child:last-child .device-header {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .device > .device-body {
+    height: 186px;
+  }
+
+  .device > .device-body > div {
+    width: 86%;
+    height: 86%;
+    margin: 26px auto;
+  }
+
+  .device .show-plant-area-info {
+    cursor: default;
+  }
+
+  #all-plant-area > .devices > div {
+    /* padding-left: 10px; */
+    width: 100%;
+    display: flex;
+  }
+
+  #all-plant-area .device {
+    width: 25%;
+  }
+
+  #image {
+    position: relative;
+  }
+
+  #image > div {
+    position: relative;
+    float: right;
+    /* padding-top: 50px; */
+    height: 100%;
+    width: 100%;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+  }
+
+  #image img {
+    max-height: 100%;
+    max-width: 100%;
+    float: right;
+  }
+
+  #draw-area > #image {
+    width: 100%;
+    /* height: 400px; */
+    margin-top: 22px;
+    display: flex;
+  }
+
+  #draw-area > .devices {
+    width: 100%;
+    margin-top: 22px;
+  }
+
+  #draw-area > .devices > div {
+    width: 100%;
+    display: flex;
+  }
+
+  #draw-area > #all-plant-area > #image {
+    /* width: 73%; */
+    /* height: 300px; */
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  .device-label {
+    text-align: center;
+    padding: 4px;
+    color: #444;
+    font-weight: bold;
+    font-size: 18px !important;
+  }
+
+  .utilization-rate {
+    background: #0043d2;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 15px;
+    line-height: 25px;
+    z-index: 1;
+    transition: 0.3s background-color ease;
+  }
+
+  .utilization-rate:hover {
+    color: white;
+    background: rgb(29, 93, 219);
+    z-index: 5;
+  }
+
+  .utilization-rate > span {
+    font-size: 18px;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

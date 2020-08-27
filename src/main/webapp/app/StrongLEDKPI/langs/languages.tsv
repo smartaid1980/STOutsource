@@ -1,0 +1,81 @@
+	zh_tw	zh	en
+i18n_ServCloud_Yield_Rate_Statistics	良率統計	良率统计	Yield rate statistics
+i18n_ServCloud_Year	年	年	Year
+i18n_ServCloud_Month	月	月	Month
+i18n_ServCloud_Op	製程	制程	Op
+i18n_ServCloud_Query	查詢	查询	Query
+i18n_ServCloud_Target_Value	目標值	目标值	Target value
+i18n_ServCloud_Confirm	確認	确认	Confirm
+i18n_ServCloud_Quarter_Statistics	季統計	季統計	Quarter statistics
+i18n_ServCloud_Month_Statistics	月統計	月统计	Month statistics
+i18n_ServCloud_Week_Statistics	周統計	周统计	Week statistics
+i18n_ServCloud_Day_Statistics	日統計	日统计	Day statistics
+i18n_ServCloud_Target_Alert	請輸入1~100	请输入1~100	Please enter 1~100
+i18n_ServCloud_Yield_Rate	良率	良率	Yield rate
+i18n_ServCloud_Total_Average	總平均	总平均	Total average
+i18n_ServCloud_Query_Start_Time	查詢起始時間	查询起始时间	Query start time
+i18n_ServCloud_Query_End_Time	查詢結束時間	查询结束时间	Query end time
+i18n_ServCloud_Defective_Reason_Analysis	不良原因分析	不良原因分析	Defective reason analysis
+i18n_ServCloud_Defective_Quantity	不良數	不良数	Defective quantity
+i18n_ServCloud_Defective_Rate	不良率	不良率	Defective rate
+i18n_ServCloud_Production_Number	生產數	生产数	Production number
+i18n_ServCloud_Total_Process_Production	製程生產總數	制程生产总数	Total process production
+i18n_ServCloud_Other_Projects	其他項目	其他项目	Other projects
+i18n_ServCloud_Total	總數	总数	Total
+i18n_ServCloud_Analysis_by	依[]分析	依[]分析	Analysis by []
+i18n_ServCloud_Display_At_Most_Top	最多顯示前[max]筆[]	最多显示前[max]笔[]	Display at most top [max] []
+i18n_ServCloud_Whole_Factory	全廠不分製程	全厂不分制程	The whole factory does not divide the process
+i18n_ServCloud_Defective_Reason	不良原因	不良原因	Defective reason
+i18n_ServCloud_Product	產品	产品	Product
+i18n_ServCloud_Line	線別	线别	Line
+i18n_ServCloud_Layer	圖層	图层	Layer
+
+i18n_ServCloud_Invalid_Person_Statistics	無效人時	无效人时	Invalid person statistics
+i18n_ServCloud_Daily_Average_Invalid_Person	日均無效人時	日均无效人时	Daily average invalid person
+i18n_ServCloud_Invalid_Person_Analysis	無效人時分析	無效人時分析	Invalid person analysis
+i18n_ServCloud_Invalid_Person	無效人時	無效人時	Invalid person
+
+i18n_ServCloud_Change_Line_Human_Time_Statistics	換線人時	换线人时	Change line human time statistics
+i18n_ServCloud_Daily_Average_Change_Line_Person	日均換線人時	日均换线人时	Daily average change line person
+i18n_ServCloud_Change_Line_Human_Time_Analysis	換線人時分析	换线人時分析	Change line human time analysis
+i18n_ServCloud_Change_Line_Human_Time	換線人時	换线人時	Change line human time
+
+i18n_ServCloud_Efficiency_Statistics	效率	效率	Efficiency statistics
+i18n_ServCloud_Staff_Efficiency_Statistics	人員效率	人员效率	Staff efficiency statistics
+i18n_ServCloud_Line_Efficiency_Statistics	線別效率	线别效率	Line efficiency statistics
+i18n_ServCloud_Efficiency_Analysis	效率分析	效率分析	Efficiency analysis
+i18n_ServCloud_Operation	作業	作业	Pperation
+i18n_ServCloud_Invalid	無效	無效	Invalid
+i18n_ServCloud_Standard	標準	标准	Standard
+i18n_ServCloud_Human_Time	人時	人时	Human time
+i18n_ServCloud_ServTrack_000003	製程	制程	Production process
+i18n_ServCloud_ServTrack_000002	進站時間	进站时间	Move in time
+i18n_ServCloud_ServTrack_000010	線別	线别	Production line
+i18n_ServCloud_ServTrack_000012	產品	产品	Product
+i18n_ServCloud_ServTrack_000015	班次日期	班次日期	Shift date
+i18n_ServCloud_ServTrack_000011	產量	产量	Produciton quantity
+i18n_ServCloud_ServTrack_000021	工序	工序	Production process sequence
+i18n_ServCloud_ServTrack_000023	出站時間	出站时间	Move out time
+i18n_ServCloud_ServTrack_000030	良率(%)	良率(%)	Yield rate (%)
+i18n_ServCloud_ServTrack_000061	良品數	良品数	Good product quantity
+i18n_ServCloud_ServTrack_000120	不良數	不良数	Defevtive product quantity
+i18n_ServCloud_ServTrack_000133	良品數 / 實際產量 x 100	良品数 / 实际产量 x 100	Good product quantity / Actual production quantity x 100
+i18n_ServCloud_ServTrack_000017	派工單號	派工单号	Work order number
+i18n_ServCloud_Purpose_Of_Splitting_Bill	拆單目的	拆单目的	purpose of splitting bill
+i18n_ServCloud_Work_Center	工作中心	工作中心	Work Center
+i18n_ServCloud_ServTrack_000078	進出站明細	进出站明细	Move in and move out details
+i18n_ServCloud_By_Process	依製程	依制程	By Process
+i18n_ServCloud_By_Work	依工單	依工单	By Work
+i18n_ServCloud_Machine_Running_Time_In_Minute	機台運轉時間(分)	机台运转时间(分)	Machine running time in minute
+i18n_ServCloud_Production_Time_In_Minute	生產時間(分)	生产时间(分)	Production time in minute
+i18n_ServCloud_Utilization	稼動率	稼动率	Utilization
+i18n_ServCloud_ServTrack_number_of_people	人數	人数	Worker count
+i18n_ServCloud_ServTrack_000022	單件標工(分)	单件标工(分)	Product cycle time per unit (minute)
+i18n_ServCloud_Machine_Networked_Production	機聯網產量	机联网产量	Machine networked production
+i18n_ServCloud_Hour_Output	小時產出	小时产出	Hour output
+i18n_ServCloud_Workers_Who_Report	報工人員	报工人员	Workers who report
+i18n_ServCloud_Product_Number	產品編號	产品编号	Product Number
+i18n_ServCloud_The_Top_Ticket	上層工單	上层工单	The top ticket
+i18n_ServCloud_Product_Series	產品系列	产品系列	Product Series
+i18n_ServCloud_Handle_Product_Number	產品柄數	产品柄数	Handle product number
+i18n_ServCloud_Product_Material	產品材質	产品材质	product material

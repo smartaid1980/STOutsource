@@ -1,0 +1,372 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- 選擇模組 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="query-module-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{選擇模組}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate" id="main-form1">
+              <fieldset style="padding: 14px 14px 5px;">
+                <div class="row">
+                  <div class="col col-10">
+                    <div class="row">
+                      <section
+                        class="col col-xs-12 col-sm-12 col-md-6 col-lg-4"
+                      >
+                        <div
+                          class="col col-xs-6 col-sm-6 col-md-12 col-lg-12"
+                          style="margin-bottom: 17px;"
+                        >
+                          <label class="label">{模組編號}</label>
+                          <label class="select">
+                            <select id="module-select"> </select>
+                            <i></i>
+                          </label>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Query}
+                </button>
+                <button id="add-module-btn" class="btn btn-success hide">
+                  <i class="fa fa-plus"></i> {新增模組}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 選擇模組 END -->
+    <!-- 料件資訊 START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="material-information-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Material_Information}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="module-material"
+              class="table table-striped table-bordered table-hover"
+              name="module-material"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 9%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 50%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th style="width: 5%;"></th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Item_Number}</th>
+                  <th>{i18n_ServCloud_Item_Name}</th>
+                  <th>{i18n_ServCloud_Specification}</th>
+                  <th>{i18n_ServCloud_Unit}</th>
+                  <th>{i18n_ServCloud_Remark}</th>
+                  <th>{i18n_ServCloud_The_Standard_Amount}</th>
+                  <th>{i18n_ServCloud_Edit}</th>
+                </tr>
+              </thead>
+            </table>
+
+            <form class="smart-form" id="confirm-material">
+              <footer>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="material-save-btn"
+                  disabled
+                >
+                  {i18n_ServCloud_Store}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- 料件資訊 END -->
+    <!-- 新建物料 MODAL START -->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="material-management-modal-widget"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" style="display: inline-block;">
+              {i18n_ServCloud_New_Material}
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <div class="widget-body no-padding">
+              <form
+                class="smart-form"
+                id="material-management-modal"
+                novalidate="novalidate"
+              >
+                <fieldset>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Item_Name}</label>
+                    <label class="input">
+                      <input type="text" name="mtl_name" class="form-control" />
+                    </label>
+                  </section>
+                  <!-- <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Material_Types}</label>
+                    <label class="input">
+                      <select name="mtl_type" class="form-control">
+                        <option value=""></option>
+                        <option value="{i18n_ServCloud_Overall_Property}">{i18n_ServCloud_Overall_Property}</option>
+                        <option value="{i18n_ServCloud_Wire}">{i18n_ServCloud_Wire}</option>
+                        <option value="{i18n_ServCloud_Lamp_Beads}">{i18n_ServCloud_Lamp_Beads}</option>
+                        <option value="{i18n_ServCloud_Structure}">{i18n_ServCloud_Structure}</option>
+                        <option value="{i18n_ServCloud_Control_Method}">{i18n_ServCloud_Control_Method}</option>
+                      </select>
+                    </label>
+                  </section> -->
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Unit}</label>
+                    <label class="input">
+                      <input type="text" name="unit" class="form-control" />
+                    </label>
+                  </section>
+
+                  <!-- <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label class="label">{i18n_ServCloud_Crafts}</label>
+                    <label class="input">
+                      <input type="text" name="process" class="form-control">
+                    </label>
+                  </section> -->
+
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label class="label"
+                      >{i18n_ServCloud_Specification}
+                      ({i18n_ServCloud_Most}100字)</label
+                    >
+                    <label class="input" style="height: fit-content;">
+                      <textarea
+                        name="spec"
+                        class="form-control"
+                        rows="3"
+                      ></textarea>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label class="label"
+                      >{i18n_ServCloud_Remark}
+                      ({i18n_ServCloud_Most}50字)</label
+                    >
+                    <label class="input" style="height: fit-content;">
+                      <textarea
+                        name="remark"
+                        class="form-control"
+                        rows="3"
+                      ></textarea>
+                    </label>
+                  </section>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="modal-footer"
+            style="margin-top: 0.5vw; text-align: right;"
+          >
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="add-material-btn"
+            >
+              {i18n_ServCloud_New}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新建物料 MODAL END-->
+    <!-- 新增現有物料 MODAL START -->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="existing-material-modal-widget"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" style="display: inline-block;">
+              {i18n_ServCloud_Existing_Materials}
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin-top: 0;"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <div class="widget-body">
+              <div
+                class="alert alert-warning fade in"
+                id="price-alert"
+                style="margin: 0;"
+              >
+                <i class="fa-fw fa fa-info"></i>
+                <strong>{i18n_ServCloud_material_widget_alert}</strong>
+              </div>
+
+              <table
+                id="existing-material-list"
+                class="table table-striped table-bordered table-hover"
+                width="100%"
+              >
+                <thead>
+                  <tr>
+                    <th class="hasinput" style="width: 20%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 10%;">
+                      <select class="form-control"></select>
+                    </th>
+                    <th class="hasinput" style="width: 50%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 10%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 10%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>{i18n_ServCloud_Item_Number}</th>
+                    <th>{i18n_ServCloud_Item_Name}</th>
+                    <th>{i18n_ServCloud_Specification}</th>
+                    <th>{i18n_ServCloud_Unit}</th>
+                    <th>{i18n_ServCloud_Remark}</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+
+          <div
+            class="modal-footer"
+            style="margin-top: 0.5vw; text-align: right;"
+          >
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="add-existing-material-btn"
+            >
+              {i18n_ServCloud_New}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新增現有物料 MODAL END-->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  #material-management-modal-widget .modal-dialog {
+    width: 1200px;
+  }
+
+  #existing-material-modal-widget .modal-dialog {
+    width: 1200px;
+  }
+  #existing-material-list .form-control {
+    width: 100%;
+  }
+  #module-material tbody tr.read .cancel-material,
+  #module-material tbody tr.read .update-material {
+    display: none;
+  }
+
+  #module-material tbody tr.edit .edit-material,
+  #module-material tbody tr.edit input[type='checkbox'] {
+    display: none;
+  }
+  #material-management-modal textarea {
+    resize: none;
+    padding: 5px 10px;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

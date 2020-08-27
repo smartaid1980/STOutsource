@@ -1,0 +1,56 @@
+	zh_tw	zh	en
+i18n_ServCloud_Query_Conditions	查詢條件	查询条件	Query conditions
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start date
+i18n_ServCloud_End_Date	結束日期	结束日期	End date
+i18n_ServCloud_Store	庫	库	Store
+i18n_ServCloud_Store_Name	庫名稱	库名称	Store Name
+i18n_ServCloud_Shelf	儲架	储架	Shelf
+i18n_ServCloud_Shelf_Name	儲架名稱	储架名称	Shelf Name
+i18n_ServCloud_Grid_Index	層	层	Grid index
+i18n_ServCloud_Cell_Index	儲位	储位	Cell index
+i18n_ServCloud_Query	查詢	查询	Query
+i18n_ServCloud_Query_result	查詢結果	查询结果	Query result
+i18n_ServCloud_Log_Time	紀錄時間	纪录时间	Log time
+i18n_ServCloud_Emp	人員	人员	Employee
+i18n_ServCloud_Emp_Name	人員名稱	人员名称	Employee Name
+i18n_ServCloud_Thing	物料	物料	Thing
+i18n_ServCloud_Thing_ID	物料編號	物料编号	Thing ID
+i18n_ServCloud_Thing_Name	物料名稱	物料名称	Thing Name
+i18n_ServCloud_Thing_Quantity	物料數量	物料数量	Thing Quantity
+i18n_ServCloud_Material_ID	原料編號	原料编号	Material ID
+i18n_ServCloud_Material_Name	原料名稱	原料名称	Material name
+i18n_ServCloud_Doc	單據	单据	Document
+i18n_ServCloud_Doc_Name	單據名稱	单据名称	Document Name
+i18n_ServCloud_Sender	平板	平板	Tablet
+i18n_ServCloud_Sender_Name	平板名稱	平板名称	Tablet Name
+i18n_ServCloud_Log_Type	進出類型	进出类型	Log type
+i18n_ServCloud_Log_Thing_Count	進出物料數量	进出物料数量	Log count
+i18n_ServCloud_Log_Desc	紀錄描述	纪录描述	Log description
+i18n_ServCloud_Move_In	進站	进站	Move in
+i18n_ServCloud_Move_Out	出站	出站	Move out
+i18n_ServCloud_Choose_Structure_Level	選擇結構層級	选择结构层级	Choose Structure Level
+i18n_ServCloud_Choose_Position_Zone	選擇位置(區域)	选择位置(区域)	Choose Position(zone)
+i18n_ServCloud_Position_Code	儲位編碼	储位编码	Position Code
+i18n_ServCloud_Position_Name	儲位名稱	储位名称	Position name
+i18n_ServCloud_Query_Result	查詢結果	查询结果	Query Result
+i18n_ServCloud_Submit	送出	送出	Submit
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Condition
+i18n_ServCloud_Bill_No	製令單號	制令单号	Bill No
+i18n_ServCloud_Bill_Date	單據日期	单据日期	Bill Date
+i18n_ServCloud_Stock_Out_date	應領料日	应领料日	Due Date
+i18n_ServCloud_Remark	備註	备注	Remark
+i18n_ServCloud_Ware_ID	倉別	仓别	Ware
+i18n_ServCloud_Return_ID	退料ID	退料ID	Return ID
+i18n_ServCloud_Return_Datetime	退料時間	退料时间	Return Time
+i18n_ServCloud_Stock_Out_Bill_Type	製令單別	制令单别	Stock out bill type
+i18n_ServCloud_Return_Bill_Type	退料單別	退料单别	Return bill type
+i18n_ServCloud_Return_Thing	退料原料	退料原料	Return thing
+i18n_ServCloud_Return_Material	退料物料	退料物料	Return material
+i18n_ServCloud_Return_pcs	退料數量	退料数量	Return pcs
+i18n_ServCloud_Position_No	退料儲位編碼	退料储位编码	Return storage no
+i18n_ServCloud_Return_Storage_Name	退料儲位名稱	退料储位名称	Return storage name
+i18n_ServCloud_Stock_In_Bill_No	進貨單號	进货单号	Stock in bill no
+i18n_ServCloud_Stock_Out_Bill_No	製令單號	制令单号	Stock out bill no
+i18n_ServCloud_Production_line	生產線別	生产线别	Production line
+i18n_ServCloud_Warehousing	入庫	入库	Warehousing
+i18n_ServCloud_A_Library	出庫	出库	A library

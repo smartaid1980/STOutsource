@@ -1,0 +1,375 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- detail DATATABLE -->
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>查詢結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="query-result-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>機台</th>
+                  <th>生產指令</th>
+                  <th>管編</th>
+                  <th>派工數</th>
+                  <th>生產數</th>
+                  <th>不良數</th>
+                  <th>材料</th>
+                  <th>材料使用狀況</th>
+                  <th>剩餘材料耗用時間</th>
+                  <th>材料監控</th>
+                  <th>加工方式</th>
+                  <th>庫存狀況</th>
+                  <th>補料派工</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+    <div class="modal fade" id="state-modal-widget" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document" style="width: 1200px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">綁定採購單庫存狀況</h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <div
+              id="wo-po-binding-widget"
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-editbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-collapsed="true"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>綁定記錄狀況</h2>
+              </header>
+              <!-- widget div-->
+              <div>
+                <!-- widget content -->
+                <div class="widget-body no-padding">
+                  <table
+                    id="wo-po-binding-table"
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>材料庫</th>
+                        <th>採購單號</th>
+                        <th>廠商</th>
+                        <th>材料條碼</th>
+                        <th>已綁定數量</th>
+                        <th>單位</th>
+                        <th>綁定已領</th>
+                        <th>狀態</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div
+              id="wo-po-binding-mat-stock-widget"
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-editbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-collapsed="true"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>領物料派工綁定物料</h2>
+              </header>
+              <!-- widget div-->
+              <div>
+                <!-- widget content -->
+                <div class="widget-body no-padding">
+                  <table
+                    id="wo-po-binding-mat-stock-table"
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>材料庫</th>
+                        <th>採購單號</th>
+                        <th>上架時間</th>
+                        <th>廠商</th>
+                        <th>材料條碼</th>
+                        <th>位置</th>
+                        <th>長度</th>
+                        <th>庫存</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              返回
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="modal fade" id="collect-material-assignment-modal-widget" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document" style="width: 1200px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">領料派工</h3>
+          </div>
+          <div class="modal-body" style="border:none !important">
+            <form class="form-horizontal">
+              <fieldset>
+                <div class="form-group col-lg-6 col-sm-12">
+                  <div class="row">
+                    <label class="control-label col-lg-4">生產指令</label>
+                    <div class="col-lg-8">
+                      <span id="wo-to-assign"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-lg-6 col-sm-12">
+                  <div class="row">
+                    <label class="control-label col-lg-4">機台</label>
+                    <div class="col-lg-8">
+                      <span id="machine-to-assign"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-lg-6 col-sm-12">
+                  <div class="row">
+                    <label class="control-label col-lg-4">材料條碼</label>
+                    <div class="col-lg-8">
+                      <input type="text" name="mat_code" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-lg-6 col-sm-12">
+                  <div class="row">
+                    <label class="control-label col-lg-4" for="prepend">修尾尺寸(mm)</label>
+                    <div class="col-lg-8">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <span class="checkbox">
+                                <label>
+                                  <input type="checkbox" name="is-rework" class="checkbox style-0" checked>
+                                  <span></span>
+                                </label>
+                              </span>
+                            </span>
+                            <input class="form-control" name="rework-size" placeholder="" type="text">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            <hr>
+            <table id="material-to-assign-table" class="table table-striped table-bordered table-hover" width="100%">
+              <thead>
+                <tr>
+                  <th>材料庫</th>
+                  <th>採購單號</th>
+                  <th>上架時間</th>
+                  <th>廠商</th>
+                  <th>材料條碼</th>
+                  <th>位置</th>
+                  <th>長度</th>
+                  <th>顏色</th>
+                  <th>派工數</th>
+                  <th>派工備註</th>
+                  <th>位置備註</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <hr>
+            <h3>可派工物料</h3>
+            <table id="assignable-material-table" class="table table-striped table-bordered table-hover" width="100%">
+              <thead>
+                <tr>
+                  <th><input type="checkbox" class="form-control stk-all-checkbox"></th>
+                  <th>材料庫</th>
+                  <th>採購單號</th>
+                  <th>上架時間</th>
+                  <th>廠商</th>
+                  <th>材料條碼</th>
+                  <th>位置</th>
+                  <th>長度</th>
+                  <th>顏色</th>
+                  <th>庫存</th>
+                  <th>派工數</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <hr>
+            <h3>暫入上架物料</h3>
+            <table id="temp-stock-material-table" class="table table-striped table-bordered table-hover" width="100%">
+              <thead>
+                <tr>
+                  <th>材料庫</th>
+                  <th>採購單號</th>
+                  <th>上架時間</th>
+                  <th>廠商</th>
+                  <th>材料條碼</th>
+                  <th>位置</th>
+                  <th>長度</th>
+                  <th>顏色</th>
+                  <th>暫入庫存</th>
+                  <th>狀態</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btnClass" data-toggle="modal" data-target="#collect-material-assignment-modal-widget">取消</button>
+            <button type="button" class="btn btn-success btnClass" id="save-material-assignment-btn">儲存</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <!-- ROW END -->
+</section>
+<style>
+  label.error {
+    color: red;
+  }
+
+  /* highlight */
+  tr:hover td.alarm {
+    background-color: rgb(255, 113, 113, 0.7);
+  }
+
+  tr:hover td.alert {
+    background-color: rgb(255, 242, 204, 0.7);
+  }
+
+  td.alarm {
+    background-color: rgb(255, 113, 113);
+  }
+
+  td.alert {
+    background-color: rgb(255, 242, 204);
+  }
+
+  /* 綁定採購單庫存狀況的綁定記錄狀況 */
+  #wo-po-binding-widget .widget-body {
+    min-height: auto;
+  }
+
+  #wo-po-binding-widget .dt-toolbar,
+  #wo-po-binding-mat-stock-widget .dt-toolbar,
+  #wo-po-binding-widget .dt-toolbar-footer {
+    display: none;
+  }
+
+  #material-to-assign-info {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+  }
+
+  #location-detail-modal-widget #edit-material-assignment-btn,
+  #location-detail-modal-widget #cancel-edit-btn {
+    display: none;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

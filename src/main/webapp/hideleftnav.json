@@ -1,0 +1,11 @@
+{
+  "AlarmClear": [
+    "01_alarm_clear_troubleshooting",
+    "02_clear_log_history",
+    "03_alarm_clear_edit_setting_method"
+  ],
+  "EquipMonitor": ["31_old_machine_detail"],
+  "ProgTransmit": ["02_cnc_download", "03_cnc_upload", "05_fanuc_data_server"],
+  "ToolManagement": ["02_tool_compensate", "03_tool_history"],
+  "ServTrack": ["51_line_use_day"]
+}

@@ -1,0 +1,380 @@
+<record>
+    <params>
+        <param name="G_PMCY(X,1,100,n)" type="Hash">
+            <contents>
+                <content fetchtime="20121015140357330" elapsed_sec="2.6365760">
+                    <values type="Hash">
+                        <key>X0000</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0001</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0002</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0003</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0004</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0005</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0006</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0007</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0008</key>
+                        <value fromType="DEC" toType="DEC">16</value>
+                        <key>X0009</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0010</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0011</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0012</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0013</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0014</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0015</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0016</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0017</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0018</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0019</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0020</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0021</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0022</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0023</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0024</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0025</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0026</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0027</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0028</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0029</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0030</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0031</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0032</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0033</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0034</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0035</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0036</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0037</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0038</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0039</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0040</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0041</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0042</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0043</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0044</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0045</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0046</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0047</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0048</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0049</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0050</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0051</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0052</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0053</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0054</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0055</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0056</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0057</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0058</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0059</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0060</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0061</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0062</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0063</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0064</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0065</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0066</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0067</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0068</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0069</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0070</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0071</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0072</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0073</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0074</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0075</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0076</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0077</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0078</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0079</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0080</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0081</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0082</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0083</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0084</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0085</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0086</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0087</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0088</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0089</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0090</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0091</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0092</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0093</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0094</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0095</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0096</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0097</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0098</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0099</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0100</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0101</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0102</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0103</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0104</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0105</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0106</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0107</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0108</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0109</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0110</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0111</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0112</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0113</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0114</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0115</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0116</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0117</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0118</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0119</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0120</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0121</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0122</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0123</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0124</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0125</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0126</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0127</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0200</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0201</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0202</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0203</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0204</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0205</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0206</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0207</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0208</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0209</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0210</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0211</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0212</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0213</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0214</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0215</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0216</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0217</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0218</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0219</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0220</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0221</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0222</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0223</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0224</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0225</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0226</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0227</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0228</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0229</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0230</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0231</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0232</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0233</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0234</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0235</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0236</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0237</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0238</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0239</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0240</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0241</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0242</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0243</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0244</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0245</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0246</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0247</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0248</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0249</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0250</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0251</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0252</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0253</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0254</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                        <key>X0255</key>
+                        <value fromType="DEC" toType="DEC">0</value>
+                    </values>
+                </content>
+            </contents>
+        </param>
+    </params>
+</record>

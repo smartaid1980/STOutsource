@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "SingleLineAnalysis",
+    "name": "i18n_ServCloud_Single_Line_Analysis",
+    "type": 1,
+    "description": "i18n_ServCloud_Single_Line_Analysis",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_single_line_statistical",
+      "name": "i18n_ServCloud_Execute_Single_Statistics"
+    }
+  ],
+  "tags": ["20140918000003"]
+}

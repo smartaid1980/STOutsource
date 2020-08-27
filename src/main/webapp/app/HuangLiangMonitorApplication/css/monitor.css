@@ -1,0 +1,266 @@
+/* monitor start */
+/* space */
+.monitor-overall .space {
+  float: left;
+  position: relative;
+  margin: 0 20px 20px 0;
+  /*border: 1px lightgray solid;*/
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+.monitor-overall .space .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.8;
+  /* unselect */
+  -moz-user-select: none; /* for Firefox */
+  -webkit-user-select: none; /* for Chrome */
+}
+
+.monitor-overall .space .device {
+  position: absolute;
+  max-width: 82px;
+  cursor: pointer;
+}
+
+.monitor-overall .space .device:hover .info {
+  color: brown;
+}
+
+.monitor-overall .space .device .picture {
+  border: 1px #a9a9a9 solid;
+  width: 38px;
+  height: 15px;
+  overflow: hidden;
+  /*background: url("./app/EquipMonitor/img/light/offline.png") no-repeat center;*/
+  background: url('../img/light/offline.png') no-repeat center;
+}
+.monitor-overall .space .device.online .picture {
+  /*background: url("./app/EquipMonitor/img/light/online.png") no-repeat center;*/
+  background: url('../img/light/online.png') no-repeat center;
+}
+.monitor-overall .space .device.idle .picture {
+  /*background: url("./app/EquipMonitor/img/light/idle.png") no-repeat center;*/
+  background: url('../img/light/idle.png') no-repeat center;
+}
+.monitor-overall .space .device.alarm .picture {
+  /*background: url("./app/EquipMonitor/img/light/alarm.png") no-repeat center;*/
+  background: url('../img/light/alarm.png') no-repeat center;
+}
+.monitor-overall .space .device .info {
+  display: none;
+  font-size: 1.15em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.monitor-overall .space.mode-inner .device {
+  max-width: 130px;
+}
+.monitor-overall .space.mode-inner .device .picture {
+  display: inline-block;
+  margin-right: 5px;
+  width: 60px;
+  height: 30px;
+}
+.monitor-overall .space.mode-inner .device .info {
+  display: inline-block;
+  height: 30px;
+  vertical-align: top;
+}
+
+/* list */
+.monitor-overall .list {
+  float: left;
+}
+.monitor-overall .list .item .content .tab-text .tab-panel:first-child {
+  border-bottom: 1px lightgray solid;
+}
+
+/* card */
+.monitor-overall .card {
+  float: left;
+  margin: 0 10px 20px 0;
+  border: 1px lightgray solid;
+  width: 180px;
+  height: 216px;
+}
+
+.monitor-overall .card .header .title {
+  padding: 10px 10px 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.monitor-overall .card .header .status {
+  margin: 0 10px 0 20px;
+  border-bottom: 4px #d3d3d3 solid;
+}
+.monitor-overall .card.online .header .status {
+  border-color: #2e8b57;
+}
+.monitor-overall .card.idle .header .status {
+  border-color: #ffa500;
+}
+.monitor-overall .card.alarm .header .status {
+  border-color: #a90329;
+}
+.monitor-overall .card .content .tab-chart {
+  margin: 10px 0 5px;
+}
+.monitor-overall .card .content .tab-chart .tab-panel:first-child {
+  border-right: 1px lightgray solid;
+}
+.monitor-overall .card .content .tab-chart .title {
+  text-align: center;
+  margin: 0 0 6px 0;
+}
+.monitor-overall .card .content .tab-text {
+  margin: 0 10px;
+  border-top: 1px lightgray solid;
+}
+.monitor-overall .card .content .tab-text .tab-panel:first-child {
+  border-bottom: 1px lightgray solid;
+}
+.monitor-overall .card .content .tab-text .tab-panel {
+  padding: 8px 5px;
+}
+.monitor-overall .card .content .title {
+  display: inline-block;
+  width: 68px;
+  font-weight: 600;
+  line-height: 1em;
+  overflow: hidden;
+}
+.monitor-overall .card .content .value {
+  display: inline-block;
+  width: 70px;
+  line-height: 1em;
+  text-align: right;
+  overflow: hidden;
+}
+
+/* detail */
+.monitor-overall .card.detail {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 2px 2px 2px rgba(20%, 20%, 20%, 0.6),
+    4px 4px 6px rgba(20%, 20%, 20%, 0.4), 6px 6px 12px rgba(20%, 20%, 20%, 0.4);
+  z-index: 999999;
+}
+
+.monitor-overall .card .degree-sign:after,
+.percent-sign:after {
+  content: '' !important;
+  line-height: normal;
+}
+
+.monitor-overall .card .easy-pie-chart .txt-percent {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  width: 100%;
+  /* color: #444; */
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+}
+
+/* edit */
+.monitor-overall.edit .space {
+  outline: 1px lightgray solid;
+}
+.monitor-overall.edit .space .device {
+  cursor: move;
+}
+.monitor-overall.edit .space .device .info {
+  display: block;
+}
+
+/* option */
+.monitor-overall.edit .option {
+  margin: 0 0 10px;
+  /*float: right;*/
+  /*height: 600px;*/
+}
+.monitor-overall.edit .option .opts .btn {
+  display: block;
+  margin-bottom: 1em;
+  width: 90%;
+}
+.monitor-overall.edit .option .editor {
+  width: 100%;
+  height: 500px;
+}
+.monitor-overall.edit .option .edit .btn {
+  float: right;
+  margin-top: 10px;
+}
+.monitor-overall.edit .space .device {
+  cursor: move;
+}
+.monitor-overall.edit .space .device .opt {
+  display: none;
+  position: absolute;
+  top: -15px;
+  right: 0;
+  width: 100%;
+}
+.monitor-overall.edit .space .device:hover .opt {
+  display: block;
+}
+
+.monitor-overall.edit .space .device .opt i {
+  font-size: 1.3em;
+  color: brown;
+  cursor: pointer;
+  float: right;
+}
+.monitor-overall.edit .space .device .opt i:hover {
+  color: red;
+}
+
+/* large mode */
+.monitor-overall.large .list {
+  display: block;
+  margin: auto;
+  float: none;
+  clear: both;
+  overflow-y: hidden;
+}
+.monitor-overall.large .card {
+  width: 288px;
+  height: 305px;
+  font-size: 18px;
+}
+.monitor-overall.large .card .content .tab-chart .title {
+  width: 100%;
+}
+.monitor-overall.large .card .content .title {
+  width: 45%;
+}
+.monitor-overall.large .card .content .value {
+  width: 45%;
+}
+
+/* black theme fixed */
+.smart-style-5 .monitor-overall .card.detail {
+  background: rgba(86, 86, 86, 1);
+}
+
+/* common fixed */
+.clear:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+/* monitor end */

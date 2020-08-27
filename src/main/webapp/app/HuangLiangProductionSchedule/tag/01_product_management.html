@@ -1,0 +1,244 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        id="query-condition-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form
+              id="query-condition-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-4">
+                    <section>
+                      <label class="label st-required">材料庫</label>
+                      <label class="select select-multiple">
+                        <select
+                          id="mstock_name-select"
+                          name="mstock_name"
+                          multiple
+                          class="required"
+                        ></select>
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-4">
+                    <section>
+                      <label class="label st-required">管編</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="required"
+                          id="product_id-input"
+                          name="product_id"
+                        />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-4">
+                    <section>
+                      <label class="label">圖號</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="product_pid-input"
+                          name="product_pid"
+                        />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+      <!-- detail DATATABLE -->
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>查詢結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="query-result-table"
+              class="table table-striped table-bordered table-hover"
+              stk-entity-pk="pks"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 7%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 15%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                </tr>
+                <tr>
+                  <th>材料庫</th>
+                  <th>管編</th>
+                  <th>圖號</th>
+                  <th>使用材料編碼</th>
+                  <th>形狀</th>
+                  <th>外徑</th>
+                  <th>單件用量(mm)</th>
+                  <th>預設標工(sec)</th>
+                  <th>預設機型</th>
+                  <th>加工方式</th>
+                  <th>多製程加工</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <select
+                      name="mstock_name"
+                      class="form-control"
+                      stk-pk
+                    ></select>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="product_id"
+                      class="form-control"
+                      placeholder="管編"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="product_pid"
+                      class="form-control"
+                      placeholder="圖號"
+                    />
+                  </td>
+                  <td>
+                    <select name="mat_id" class="form-control"></select>
+                  </td>
+                  <td>
+                    <select name="mat_shape" class="form-control"></select>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="mat_dim"
+                      class="form-control"
+                      placeholder="外徑"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="mat_usage"
+                      class="form-control"
+                      placeholder="單件用量"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="def_runtime"
+                      class="form-control"
+                      placeholder="預設標工"
+                    />
+                  </td>
+                  <td>
+                    <select name="def_mactype" class="form-control"></select>
+                  </td>
+                  <td>
+                    <select name="process" class="form-control"></select>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      name="multiprogram"
+                      class="form-control"
+                      placeholder="多製程加工"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

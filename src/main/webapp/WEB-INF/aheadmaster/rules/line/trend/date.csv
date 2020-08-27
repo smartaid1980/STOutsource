@@ -1,0 +1,7 @@
+groupCol(newCol(A),"日期") ###(A)
+groupCol(newCol(AA),"無效代碼") ###(B)
+groupCol(newCol(AB),"無效說明") ###(C)
+filterCol(groupCol(newCol(AC),"是否換線"),"Y") ###(D)
+dataCol(newCol(AA),"換線次數",COUNT,"%.0f") ###(E)
+dataCol(newCol(AE),"無效時間",SUM,"%.0f") ###(F)無效時間
+dataCol(newCol(AF),"換線時間",SUM,"%.0f") ###(G)無效人時

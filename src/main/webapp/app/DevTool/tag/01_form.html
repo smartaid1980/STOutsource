@@ -1,0 +1,2080 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- 框 Widget -->
+      <div
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>框</h2>
+          <ul class="nav nav-tabs pull-right">
+            <li class="active">
+              <a data-toggle="tab" href="#tabs-widget">widget</a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#tabs-modal">modal</a>
+            </li>
+          </ul>
+        </header>
+        <div>
+          <div class="widget-body">
+            <div id="tabs" class="tab-content">
+              <div class="tab-pane fade in active" id="tabs-widget">
+                <article>
+                  <button
+                    id="createWidget"
+                    class="btn btn-primary"
+                    style="margin-bottom: 5px;"
+                  >
+                    <span class="fa fa-plus fa-lg"></span>
+                  </button>
+                  <button
+                    id="import"
+                    class="btn btn-primary"
+                    style="margin-bottom: 5px;"
+                    data-toggle="modal"
+                    data-target="#configFilesModal"
+                  >
+                    匯入
+                  </button>
+                  <button
+                    class="btn btn-warning"
+                    id="testEngine"
+                    style="margin-bottom: 5px;"
+                  >
+                    test
+                  </button>
+                </article>
+              </div>
+              <div class="tab-pane fade" id="tabs-modal">
+                <article>
+                  <button
+                    id="createModal"
+                    class="btn btn-primary"
+                    style="margin-bottom: 5px;"
+                  >
+                    <span class="fa fa-plus fa-lg"></span>
+                  </button>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 框 Widget END -->
+    </article>
+    <!-- WIDGET END -->
+
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- 元件編輯 Widget -->
+      <div
+        class="jarviswidget jarviswidget-color-darken editor"
+        data-widget-fullscreenbutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-pencil"></i> </span>
+          <h2>元件編輯</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="settingElementForm">
+              <fieldset>
+                <div class="row">
+                  <div class="setting widgetElementSetting hide">
+                    <!-- Widget Icon -->
+                    <section class="col col-xs-12 col-sm-6 col-md-2 col-lg-2">
+                      <label class="label">Widget的圖示</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="widgetIcon"
+                        />
+                      </label>
+                    </section>
+                    <!-- Widget Title -->
+                    <section class="col col-xs-12 col-sm-6 col-md-2 col-lg-2">
+                      <label class="label">Widget Title</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="widgetTitle"
+                        />
+                      </label>
+                    </section>
+                    <!-- Col xs -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                      <label class="label">col-xs</label>
+                      <label class="input">
+                        <select class="form-control" name="widgetXsSize">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- Col sm -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                      <label class="label">col-sm</label>
+                      <label class="input">
+                        <select class="form-control" name="widgetSmSize">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- Col md -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                      <label class="label">col-md</label>
+                      <label class="input">
+                        <select class="form-control" name="widgetMdSize">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- Col lg -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                      <label class="label">col-lg</label>
+                      <label class="input">
+                        <select class="form-control" name="widgetLgSize">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- Widget Form, Fullscreen, Toggle -->
+                    <section class="col col-xs-12 col-sm-9 col-md-9 col-lg-7">
+                      <div class="col col-4">
+                        <label class="checkbox">
+                          <input type="checkbox" name="widgetForm" />
+                          <i></i>是否有form</label
+                        >
+                        <section class="col col-12 hide">
+                          <label class="label">Form ID</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              name="widgetFormId"
+                              class="form-control"
+                            />
+                          </label>
+                          <label class="label">Button ID</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              name="widgetButtonId"
+                              class="form-control"
+                            />
+                          </label>
+                          <label class="label">Button連動的table</label>
+                          <label class="input">
+                            <select
+                              class="form-control"
+                              name="widgetFormButtonTableBinding"
+                            ></select>
+                          </label>
+                        </section>
+                      </div>
+                      <div class="col col-4">
+                        <label class="checkbox">
+                          <input type="checkbox" name="widgetFullsreen" />
+                          <i></i>是否有全螢幕功能</label
+                        >
+                      </div>
+                      <div class="col col-4">
+                        <label class="checkbox">
+                          <input type="checkbox" name="widgetToggle" />
+                          <i></i>是否有縮放功能</label
+                        >
+                      </div>
+                    </section>
+                  </div>
+                  <div class="setting modalElementSetting hide">
+                    <!-- Modal Title -->
+                    <section class="col col-xs-12 col-sm-6 col-md-5 col-lg-3">
+                      <label class="label">Modal Title</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="modalTitle"
+                        />
+                      </label>
+                    </section>
+                    <!-- Modal ID -->
+                    <section class="col col-xs-12 col-sm-6 col-md-5 col-lg-3">
+                      <label class="label">Modal ID</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="modalId"
+                        />
+                      </label>
+                    </section>
+                    <!-- Modal Size -->
+                    <section class="col col-xs-12 col-sm-6 col-md-5 col-lg-3">
+                      <label class="label">Modal大小</label>
+                      <label class="input">
+                        <select class="form-control" name="modalSize">
+                          <option value="sm">小</option>
+                          <option value="md">中</option>
+                          <option value="lg">大</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- Modal Form -->
+                    <section class="col col-xs-12 col-sm-6 col-md-5 col-lg-3">
+                      <div>
+                        <label class="checkbox">
+                          <input type="checkbox" name="modalForm" />
+                          <i></i>是否有form</label
+                        >
+                        <section class="col col-12 hide">
+                          <label class="label">Form ID</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              name="modalFormId"
+                              class="form-control"
+                            />
+                          </label>
+                          <label class="label">Button ID</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              name="modalButtonId"
+                              class="form-control"
+                            />
+                          </label>
+                          <label class="label">Button Text</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              name="modalButtonText"
+                              class="form-control"
+                              value="Save Changes"
+                            />
+                          </label>
+                          <label class="label">Button連動的table</label>
+                          <label class="input">
+                            <select
+                              class="form-control"
+                              name="modalFormButtonTableBinding"
+                            ></select>
+                          </label>
+                        </section>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="setting formElementSetting hide">
+                    <!-- Title -->
+                    <section class="col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <label class="label">Title</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formTitle"
+                        />
+                      </label>
+                    </section>
+                    <!-- Start End Date Title -->
+                    <section
+                      class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 hide"
+                    >
+                      <label class="label">Start Title</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formStartTitle"
+                        />
+                      </label>
+                      <label class="label">End Title</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formEndTitle"
+                        />
+                      </label>
+                    </section>
+                    <!-- start End Date ID -->
+                    <section
+                      class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 hide"
+                    >
+                      <label class="label">Start ID</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formStartId"
+                        />
+                      </label>
+                      <label class="label">End ID</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formEndId"
+                        />
+                      </label>
+                    </section>
+                    <!-- start End Date Name -->
+                    <section
+                      class="col col-xs-12 col-sm-4 col-md-4 col-lg-4 hide"
+                    >
+                      <label class="label">Start Name</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formStartName"
+                        />
+                      </label>
+                      <label class="label">End Name</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formEndName"
+                        />
+                      </label>
+                    </section>
+                    <!-- Col xs -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                      <label class="label">col-xs</label>
+                      <label class="input">
+                        <select class="form-control" name="formXsSize">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- Col sm -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                      <label class="label">col-sm</label>
+                      <label class="input">
+                        <select class="form-control" name="formSmSize">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- Col md -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                      <label class="label">col-md</label>
+                      <label class="input">
+                        <select class="form-control" name="formMdSize">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- Col lg -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                      <label class="label">col-lg</label>
+                      <label class="input">
+                        <select class="form-control" name="formLgSize">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- ID -->
+                    <section class="col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <label class="label">ID</label>
+                      <label class="input">
+                        <input type="text" class="form-control" name="formId" />
+                      </label>
+                    </section>
+                    <!-- Name -->
+                    <section class="col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <label class="label">name</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formName"
+                        />
+                      </label>
+                    </section>
+                    <!-- Binding table Column -->
+                    <section class="col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <label class="label">連結的table欄位</label>
+                      <label class="input">
+                        <select
+                          class="form-control"
+                          name="formBindingTableColumn"
+                        ></select>
+                      </label>
+                    </section>
+                    <!-- Required -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                      <label class="label">是否必填</label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="formRequired" />
+                        <i></i>必填</label
+                      >
+                    </section>
+                    <!-- StartEndDate or Radio or Checkbox same line -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                      <label class="label">是否同排</label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="formSameLine" />
+                        <i></i>同排</label
+                      >
+                    </section>
+                    <!-- Validate -->
+                    <section
+                      class="col col-xs-4 col-sm-3 col-md-2 col-lg-2 hide"
+                    >
+                      <label class="label">驗證</label>
+                      <label class="input">
+                        <select class="form-control" name="formValidate">
+                          <option value="">無</option>
+                          <option value="date">日期</option>
+                          <option value="number">數字</option>
+                          <option value="digits">正整數</option>
+                          <option value="range">數字大小</option>
+                          <option value="lengthrange">長度</option>
+                          <option value="email">email</option>
+                        </select>
+                      </label>
+                    </section>
+                    <!-- Validate min, max, range, minlength, maxlength, rangelength -->
+                    <section
+                      class="col col-xs-4 col-sm-3 col-md-2 col-lg-2 hide"
+                    >
+                      <label class="label">最大值</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formValidateMax"
+                        />
+                      </label>
+                      <label class="label">最小值</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formValidateMin"
+                        />
+                      </label>
+                    </section>
+                    <!-- Validate Info -->
+                    <section
+                      class="col col-xs-4 col-sm-4 col-md-6 col-lg-2 hide"
+                    >
+                      <label class="label">驗證提示字</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formValidateInfo"
+                        />
+                      </label>
+                    </section>
+                    <!-- Another Validate -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-12 col-lg-5 hide"
+                    >
+                      <label class="label">其他驗證</label>
+                      <div class="inline-group">
+                        <label class="radio">
+                          <input
+                            type="radio"
+                            value="positive"
+                            name="formRegDirection"
+                            checked="checked"
+                          />
+                          <i></i>正向</label
+                        >
+                        <label class="radio">
+                          <input
+                            type="radio"
+                            value="negative"
+                            name="formRegDirection"
+                          />
+                          <i></i>反向</label
+                        >
+                      </div>
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input type="checkbox" name="formRegSpecialChar" />
+                          <i></i>特殊字元(&lt; &gt; , " 半形空白
+                          全形空白)</label
+                        >
+                        <label class="checkbox">
+                          <input type="checkbox" name="formRegEngNum" />
+                          <i></i>英文和數字</label
+                        >
+                        <label class="checkbox">
+                          <input type="checkbox" name="formRegChinese" />
+                          <i></i>中文</label
+                        >
+                        <label class="checkbox">
+                          <input type="checkbox" name="formReg1More" />
+                          <i></i>1以上的整數</label
+                        >
+                      </div>
+                    </section>
+                    <!-- DatePicker minDate or maxDate -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-8 col-lg-5 hide"
+                    >
+                      <label class="label">選擇限制</label>
+                      <div class="inline-group">
+                        <label class="radio">
+                          <input
+                            type="radio"
+                            value="formDateNone"
+                            name="formDateConfig"
+                            checked="checked"
+                          />
+                          <i></i>無</label
+                        >
+                        <label class="radio">
+                          <input
+                            type="radio"
+                            value="formDateBefore"
+                            name="formDateConfig"
+                          />
+                          <i></i>只能選擇以前的日期</label
+                        >
+                        <label class="radio">
+                          <input
+                            type="radio"
+                            value="formDateAfter"
+                            name="formDateConfig"
+                          />
+                          <i></i>只能選擇以後的日期</label
+                        >
+                      </div>
+                    </section>
+                    <!-- Checkbox and radio quantity, text and value -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-6 col-lg-8 hide"
+                    >
+                      <div class="col col-3">
+                        <label class="label">數量</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="formCheckBoxRadioQuantity"
+                          />
+                        </label>
+                      </div>
+                      <div class="col col-3">
+                        <label class="label">選擇元件</label>
+                        <label class="input">
+                          <select
+                            class="form-control"
+                            name="formCheckBoxRadioElement"
+                          ></select>
+                        </label>
+                      </div>
+                      <div class="col col-3">
+                        <label class="label">元件名稱</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="formCheckBoxRadioText"
+                          />
+                        </label>
+                      </div>
+                      <div class="col col-3">
+                        <label class="label">元件值</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="formCheckBoxRadioValue"
+                          />
+                        </label>
+                      </div>
+                    </section>
+                    <!-- Radio default checked -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-5 col-lg-5 hide"
+                    >
+                      <div class="col col-3">
+                        <label class="label">預設勾選</label>
+                        <label class="input">
+                          <select
+                            class="form-control"
+                            name="formRadioChecked"
+                          ></select>
+                        </label>
+                      </div>
+                    </section>
+                    <!-- Checkbox default checked -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-5 col-lg-5 hide"
+                    >
+                      <div class="col col-3">
+                        <label class="label">預設勾選</label>
+                        <label class="select select-multiple">
+                          <select
+                            multiple="multiple"
+                            class="form-control"
+                            name="formCheckBoxChecked"
+                          ></select>
+                        </label>
+                      </div>
+                    </section>
+                    <!-- Start End Date both default today and limit days -->
+                    <section
+                      class="col col-xs-12 col-sm-5 col-md-5 col-lg-5 hide"
+                    >
+                      <label class="label">選項</label>
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input type="checkbox" name="formBothToday" />
+                          <i></i>兩個都預設為今天</label
+                        >
+                        <label class="checkbox">
+                          <input type="checkbox" name="formBothLimit" />
+                          <i></i>限制之間的天數</label
+                        >
+                      </div>
+                      <section>
+                        <label class="label">限制天數</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="formBothLimitDays"
+                          />
+                        </label>
+                      </section>
+                    </section>
+                    <!-- Select data -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-12 col-lg-5 hide"
+                    >
+                      <label class="label">資料設定</label>
+
+                      <div class="inline-group">
+                        <label class="radio">
+                          <input type="radio" value="DB" name="formSelectBy" />
+                          <i></i>從資料庫</label
+                        >
+                        <label class="radio">
+                          <input
+                            type="radio"
+                            value="user"
+                            name="formSelectBy"
+                            checked="checked"
+                          />
+                          <i></i>自訂</label
+                        >
+                      </div>
+                      <div class="inline-group hide">
+                        <div class="col col-4">
+                          <label class="label">資料表名稱</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="formSelectDBTable"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-4">
+                          <label class="label">選項文字的欄位名稱</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="formSelectDBColumnText"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-4">
+                          <label class="label">選項值的欄位名稱</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="formSelectDBColumnValue"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-12">
+                          <label class="label">條件</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="formSelectDBWhere"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-4">
+                          <label class="label">選擇連動的select</label>
+                          <label class="input">
+                            <select
+                              class="form-control"
+                              name="formSelectBinding"
+                            ></select>
+                          </label>
+                        </div>
+                        <div class="col col-4">
+                          <label class="label">連動的欄位名稱</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="formSelectBindingColumn"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="inline-group">
+                        <div class="col col-3">
+                          <label class="label">數量</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="formSelectQuantity"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-3">
+                          <label class="label">選擇選項</label>
+                          <label class="input">
+                            <select
+                              class="form-control"
+                              name="formSelectElement"
+                            ></select>
+                          </label>
+                        </div>
+                        <div class="col col-3">
+                          <label class="label">選項文字</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="formSelectText"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-3">
+                          <label class="label">選項值</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="formSelectValue"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- Multiple Select defalut checked all -->
+                    <section class="col col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                      <label class="label">是否預設全選</label>
+                      <label class="checkbox">
+                        <input type="checkbox" name="formDefaultAll" />
+                        <i></i>預設全選</label
+                      >
+                    </section>
+                    <!-- Label Text -->
+                    <section class="col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <label class="label">Text</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="formText"
+                        />
+                      </label>
+                    </section>
+                    <!-- Select data -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-12 col-lg-5 hide"
+                    >
+                      <label class="label">是否透明</label>
+                      <div class="inline-group">
+                        <label class="radio">
+                          <input type="radio" value="0" name="formOpacity" />
+                          <i></i>透明</label
+                        >
+                        <label class="radio">
+                          <input
+                            type="radio"
+                            value="1"
+                            name="formOpacity"
+                            checked="checked"
+                          />
+                          <i></i>不透明</label
+                        >
+                      </div>
+                    </section>
+                  </div>
+                  <div class="setting tableElementSetting hide">
+                    <!-- Column Quantity, Select Type, Align, Title, Name, Width, DataType(btn, <a>) -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    >
+                      <!-- Column Quantity -->
+                      <div class="col col-2">
+                        <label class="label">欄位數量</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="tableColumnQuantity"
+                          />
+                        </label>
+                      </div>
+                      <!-- Column element -->
+                      <div class="col col-2">
+                        <label class="label">欄位選項</label>
+                        <label class="input">
+                          <select
+                            class="form-control"
+                            name="tableColumnElement"
+                          ></select>
+                        </label>
+                      </div>
+                      <!-- Select Type -->
+                      <div class="col col-2">
+                        <label class="label">欄位查詢方式</label>
+                        <label class="input">
+                          <select class="form-control" name="tableColumnSearch">
+                            <option value="input">input</option>
+                            <option value="select">select</option>
+                          </select>
+                        </label>
+                      </div>
+                      <!-- Align -->
+                      <div class="col col-2">
+                        <label class="label">欄位對齊方式</label>
+                        <label class="input">
+                          <select class="form-control" name="tableColumnAlign">
+                            <option value="left">靠左</option>
+                            <option value="center">置中</option>
+                            <option value="right">靠右</option>
+                          </select>
+                        </label>
+                      </div>
+                      <!-- Title -->
+                      <div class="col col-2">
+                        <label class="label">欄位名稱</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="tableColumnTitleName"
+                          />
+                        </label>
+                      </div>
+                      <!-- Name -->
+                      <div class="col col-2">
+                        <label class="label">欄位的head</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="tableColumnName"
+                            placeholder="同config檔裡的head"
+                          />
+                        </label>
+                      </div>
+                      <!-- Width -->
+                      <div class="col col-2">
+                        <label class="label">欄位寬度(%)</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="tableColumnWidget"
+                          />
+                        </label>
+                      </div>
+                      <!-- FormatType(text, 0, 0.00, 000%) -->
+                      <div class="col col-2">
+                        <label class="label">欄位資料格式</label>
+                        <label class="input">
+                          <select
+                            class="form-control"
+                            name="tableColumnFormatType"
+                          >
+                            <option value="text">文字</option>
+                            <option value="int">整數</option>
+                            <option value="decimal">小數</option>
+                            <option value="percent">百分比</option>
+                          </select>
+                        </label>
+                      </div>
+                      <!-- DataType(btn, <a>) -->
+                      <div class="col col-2">
+                        <label class="label">欄位資料樣式</label>
+                        <label class="input">
+                          <select
+                            class="form-control"
+                            name="tableColumnDataType"
+                          >
+                            <option value="text">文字</option>
+                            <!-- 連結modal或另一個html -->
+                            <option value="button">按鈕</option>
+                            <option value="href">超連結</option>
+                            <!-- <option value="tag">標籤</option> -->
+                            <!-- <option value="onoffswitch">開關</option> -->
+                          </select>
+                        </label>
+                      </div>
+                      <!-- button in table setting -->
+                      <div class="col col-2">
+                        <label class="label">按鈕樣式</label>
+                        <label class="input">
+                          <select
+                            class="form-control"
+                            name="tableColumnBtnType"
+                          >
+                            <option value="">none</option>
+                            <option value="default">default</option>
+                            <option value="primary">primary</option>
+                            <option value="success">success</option>
+                            <option value="info">info</option>
+                            <option value="warning">warning</option>
+                            <option value="danger">danger</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="col col-2">
+                        <label class="label">欄位文字</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="tableColumnText"
+                          />
+                        </label>
+                      </div>
+                      <div class="col col-2">
+                        <label class="label">欄位文字的Title</label>
+                        <label class="input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="tableColumnTitle"
+                          />
+                        </label>
+                      </div>
+                      <div class="col col-2">
+                        <label class="label">行為設定</label>
+                        <div class="inline-group" style="margin-bottom: 6px;">
+                          <label class="radio">
+                            <input
+                              type="radio"
+                              value="none"
+                              name="tableColumnBtnBinding"
+                              checked="checked"
+                            />
+                            <i></i>無</label
+                          >
+                          <label class="radio">
+                            <input
+                              type="radio"
+                              value="Modal"
+                              name="tableColumnBtnBinding"
+                            />
+                            <i></i>modal</label
+                          >
+                          <!-- <label class="radio"> -->
+                          <!-- <input type="radio" value="Html" name="tableColumnBtnBinding"> -->
+                          <!-- <i></i>其他Html</label> -->
+                          <!-- <label class="radio"> -->
+                          <!-- <input type="radio" value="Other" name="tableColumnBtnBinding"> -->
+                          <!-- <i></i>其他行為</label> -->
+                        </div>
+                        <div class="inline-group">
+                          <div class="col col-10 hide">
+                            <label class="label">modal</label>
+                            <label class="input">
+                              <select
+                                class="form-control"
+                                name="tableColumnBtnBindingModal"
+                              ></select>
+                            </label>
+                          </div>
+                          <!-- <div class="col col-10 hide"> -->
+                          <!-- <label class="label">其他html</label> -->
+                          <!-- <label class="input"> -->
+                          <!-- <select class="form-control" name="tableColumnBtnBindingHtml"></select> -->
+                          <!-- </label> -->
+                          <!-- </div> -->
+                          <!-- <div class="col col-10 hide"> -->
+                          <!-- <label class="label">其他行為</label> -->
+                          <!-- <label class="input"> -->
+                          <!-- <select class="form-control" name="tableColumnBtnBindingOther"></select> -->
+                          <!-- </label> -->
+                          <!-- </div> -->
+                        </div>
+                      </div>
+                      <!-- Edit input type -->
+                      <div class="col col-2">
+                        <label class="label">欄位編輯的樣式</label>
+                        <label class="input">
+                          <select
+                            class="form-control"
+                            name="tableColumnInputType"
+                          >
+                            <option value="input">input</option>
+                            <option value="select">select</option>
+                            <option value="multipleSelect"
+                              >multiple select</option
+                            >
+                            <option value="switch">switch</option>
+                            <option value="textarea">textarea</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="col col-5 setting-group hide">
+                        <div class="inline-group">
+                          <div class="col col-4">
+                            <label class="label">開起時的值</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnInputSWitchOpen"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-4">
+                            <label class="label">關起時的值</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnInputSWitchClose"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- If edit input type is select -->
+                      <div class="col col-5 hide">
+                        <label class="label">欄位編輯的資料設定</label>
+                        <div class="inline-group">
+                          <label class="radio">
+                            <input
+                              type="radio"
+                              value="DB"
+                              name="tableColumnInputSelectBy"
+                            />
+                            <i></i>從資料庫</label
+                          >
+                          <label class="radio">
+                            <input
+                              type="radio"
+                              value="user"
+                              name="tableColumnInputSelectBy"
+                              checked="checked"
+                            />
+                            <i></i>自訂</label
+                          >
+                        </div>
+                        <div class="inline-group hide">
+                          <div class="col col-4">
+                            <label class="label">資料表名稱</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnInputSelectDBTable"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-4">
+                            <label class="label">選項文字的欄位名稱</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnInputSelectDBColumnText"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-4">
+                            <label class="label">選項值的欄位名稱</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnInputSelectDBColumnValue"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-12">
+                            <label class="label">條件</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnInputSelectDBWhere"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                        <div class="inline-group">
+                          <div class="col col-3">
+                            <label class="label">數量</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnInputSelectQuantity"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-3">
+                            <label class="label">選擇選項</label>
+                            <label class="input">
+                              <select
+                                class="form-control"
+                                name="tableColumnInputSelectElement"
+                              ></select>
+                            </label>
+                          </div>
+                          <div class="col col-3">
+                            <label class="label">選項文字</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnInputSelectText"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-3">
+                            <label class="label">選項值</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnInputSelectValue"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Disable -->
+                      <div class="col col-2">
+                        <label class="label">欄位是否可編輯</label>
+                        <label class="input">
+                          <select
+                            class="form-control"
+                            name="tableColumnInputDisabled"
+                          >
+                            <option value="none">可編輯</option>
+                            <option value="edit">新增時才可編輯</option>
+                            <option value="always">不可編輯</option>
+                          </select>
+                        </label>
+                      </div>
+                      <!-- column text -->
+                      <div class="col col-5 hide">
+                        <label class="label">欄位顯示文字</label>
+                        <div class="inline-group">
+                          <label class="radio">
+                            <input
+                              type="radio"
+                              value="none"
+                              name="tableColumnChangeText"
+                              checked
+                            />
+                            <i></i>不轉換文字</label
+                          >
+                          <label class="radio">
+                            <input
+                              type="radio"
+                              value="DB"
+                              name="tableColumnChangeText"
+                            />
+                            <i></i>從資料庫轉換文字</label
+                          >
+                          <label class="radio">
+                            <input
+                              type="radio"
+                              value="user"
+                              name="tableColumnChangeText"
+                            />
+                            <i></i>自訂轉換文字</label
+                          >
+                        </div>
+                        <div class="inline-group hide">
+                          <div class="col col-2" style="padding: 0 5px;">
+                            <label class="label">資料表名稱</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnTextDBTable"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-2" style="padding: 0 5px;">
+                            <label class="label">文字的欄位名稱</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnTextDBColumnText"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-2" style="padding: 0 5px;">
+                            <label class="label">值的欄位名稱</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnTextDBColumnValue"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-2" style="padding: 0 5px;">
+                            <label class="label">條件</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnTextDBWhere"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                        <div class="inline-group hide">
+                          <div class="col col-2" style="padding: 0 5px;">
+                            <label class="label">數量</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnTextSelectQuantity"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-2" style="padding: 0 5px;">
+                            <label class="label">選項</label>
+                            <label class="input">
+                              <select
+                                type="text"
+                                class="form-control"
+                                name="tableColumnTextSelectElement"
+                              ></select>
+                            </label>
+                          </div>
+                          <div class="col col-2" style="padding: 0 5px;">
+                            <label class="label">文字</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnTextSelectText"
+                              />
+                            </label>
+                          </div>
+                          <div class="col col-2" style="padding: 0 5px;">
+                            <label class="label">值</label>
+                            <label class="input">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="tableColumnTextSelectValue"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <hr style="width: 98%; margin: 0px auto 12px;" />
+                    <!-- table ID -->
+                    <section class="col col-xs-12 col-sm-6 col-md-5 col-lg-2">
+                      <label class="label">Table ID</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="tableId"
+                        />
+                      </label>
+                    </section>
+                    <!-- Data Source -->
+                    <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                      <label class="label">資料來源</label>
+                      <div class="inline-group">
+                        <label class="radio">
+                          <input
+                            type="radio"
+                            value="file"
+                            name="tableDataFrom"
+                            checked="checked"
+                          />
+                          <i></i>檔案</label
+                        >
+                        <label class="radio">
+                          <input type="radio" value="DB" name="tableDataFrom" />
+                          <i></i>資料庫</label
+                        >
+                      </div>
+                      <div class="inline-group">
+                        <div class="col col-6" style="padding: 0 5px;">
+                          <label class="label">app</label>
+                          <label class="input">
+                            <select
+                              class="form-control"
+                              name="tableDataFromApp"
+                            ></select>
+                          </label>
+                        </div>
+                        <div class="col col-6" style="padding: 0 5px;">
+                          <label class="label">filename</label>
+                          <label class="input">
+                            <select
+                              class="form-control"
+                              name="tableDataFromFile"
+                            ></select>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="inline-group hide">
+                        <div class="col col-6" style="padding: 0 5px;">
+                          <label class="label">資料表名稱</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="tableDataFromTableModel"
+                              placeholder="module.model.Device"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-6" style="padding: 0 5px;">
+                          <label class="label">key</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="tableDataFromKey"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-6" style="padding: 0 5px;">
+                          <label class="label">條件</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="tableDataFromWhere"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- Column Order -->
+                    <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                      <label class="label">依欄位排序</label>
+                      <div class="inline-group">
+                        <div class="col col-6" style="padding: 0 5px;">
+                          <label class="label">選擇欄位</label>
+                          <label class="input">
+                            <select
+                              class="form-control"
+                              name="tableOrderColumn"
+                            ></select>
+                          </label>
+                        </div>
+                        <div class="col col-6" style="padding: 0 5px;">
+                          <label class="label">排序方式</label>
+                          <label class="input">
+                            <select class="form-control" name="tableOrderType">
+                              <option value="asc">正序</option>
+                              <option value="desc">倒序</option>
+                            </select>
+                          </label>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- CRUD Function -->
+                    <section
+                      class="col col-xs-12 col-sm-6 col-md-3 col-lg-2 hide"
+                    >
+                      <label class="label">CRUD功能選擇</label>
+                      <label class="input">
+                        <select
+                          multiple="multiple"
+                          class="form-control"
+                          name="tableCRUDAvailable"
+                        ></select>
+                      </label>
+                    </section>
+                    <!-- CRUD Edit -->
+                    <section
+                      class="col col-xs-12 col-sm-6 col-md-3 col-lg-2 hide"
+                    >
+                      <label class="label">CRUD編輯時的modal</label>
+                      <label class="input">
+                        <select
+                          class="form-control"
+                          name="tableCRUDEditModal"
+                        ></select>
+                      </label>
+                    </section>
+                    <!-- reportTable export -->
+                    <section
+                      class="col col-xs-12 col-sm-6 col-md-6 col-lg-3 hide"
+                    >
+                      <label class="label">匯出</label>
+                      <div>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            value="none"
+                            name="tableExport"
+                          />
+                          <i></i>具匯出功能</label
+                        >
+                      </div>
+                      <div class="inline-group hide">
+                        <div class="col col-6" style="padding: 0 5px;">
+                          <label class="label">匯出的檔名</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="tableExportFilename"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-6" style="padding: 0 5px;">
+                          <label class="label">匯出的欄位</label>
+                          <label class="input">
+                            <select
+                              multiple="multiple"
+                              class="form-control"
+                              name="tableExportColumns"
+                            ></select>
+                          </label>
+                        </div>
+                      </div>
+                    </section>
+                    <hr style="width: 98%; margin: 0px auto 12px;" />
+                    <!-- custom btn -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    >
+                      <label class="label">客製化按鈕</label>
+                      <div class="inline-group">
+                        <div class="col col-1" style="padding: 0 5px;">
+                          <label class="label">按鈕數量</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="tableBtnQuantity"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-2" style="padding: 0 5px;">
+                          <label class="label">按鈕選項</label>
+                          <label class="input">
+                            <select
+                              class="form-control"
+                              name="tableBtnElement"
+                            ></select>
+                          </label>
+                        </div>
+                        <div class="col col-2" style="padding: 0 5px;">
+                          <label class="label">按鈕樣式</label>
+                          <label class="input">
+                            <select class="form-control" name="tableBtnType">
+                              <option value="">none</option>
+                              <option value="default">default</option>
+                              <option value="primary">primary</option>
+                              <option value="success">success</option>
+                              <option value="info">info</option>
+                              <option value="warning">warning</option>
+                              <option value="danger">danger</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="col col-2" style="padding: 0 5px;">
+                          <label class="label">按鈕文字</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="tableBtnText"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-2" style="padding: 0 5px;">
+                          <label class="label">按鈕的Title</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="tableBtnTitle"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-2" style="padding: 0 5px;">
+                          <label class="label">行為設定</label>
+                          <div class="inline-group">
+                            <label class="radio">
+                              <input
+                                type="radio"
+                                value="none"
+                                name="tableBtnBinding"
+                                checked="checked"
+                              />
+                              <i></i>無</label
+                            >
+                            <label class="radio">
+                              <input
+                                type="radio"
+                                value="Modal"
+                                name="tableBtnBinding"
+                              />
+                              <i></i>modal</label
+                            >
+                            <!-- <label class="radio"> -->
+                            <!-- <input type="radio" value="Html" name="tableBtnBinding"> -->
+                            <!-- <i></i>其他Html</label> -->
+                            <!-- <label class="radio"> -->
+                            <!-- <input type="radio" value="Other" name="tableBtnBinding"> -->
+                            <!-- <i></i>其他行為</label> -->
+                          </div>
+                          <div class="inline-group">
+                            <div class="col col-10 hide">
+                              <label class="label">modal</label>
+                              <label class="input">
+                                <select
+                                  class="form-control"
+                                  name="tableBtnBindingModal"
+                                ></select>
+                              </label>
+                            </div>
+                            <!-- <div class="col col-10 hide"> -->
+                            <!-- <label class="label">其他html</label> -->
+                            <!-- <label class="input"> -->
+                            <!-- <select class="form-control" name="tableBtnBindingHtml"></select> -->
+                            <!-- </label> -->
+                            <!-- </div> -->
+                            <!-- <div class="col col-10 hide"> -->
+                            <!-- <label class="label">其他行為</label> -->
+                            <!-- <label class="input"> -->
+                            <!-- <select class="form-control" name="tableBtnBindingOther"></select> -->
+                            <!-- </label> -->
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <hr style="width: 98%; margin: 0px auto 12px;" />
+                    <!-- chart -->
+                    <section
+                      class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    >
+                      <label class="label">圖表</label>
+                      <div>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            value="none"
+                            name="chartExists"
+                          />
+                          <i></i>繪製圖表</label
+                        >
+                      </div>
+                      <div class="inline-group hide">
+                        <div
+                          class="col col-xs-12 col-sm-6 col-md-2 col-lg-2"
+                          style="padding: 0 5px;"
+                        >
+                          <label class="label">圖表樣式</label>
+                          <label class="input">
+                            <select class="form-control" name="chartType">
+                              <option value="bars">直條圖</option>
+                              <!-- <option value="pie">圓餅圖</option> -->
+                              <option value="lines">折線圖</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div
+                          class="col col-xs-12 col-sm-6 col-md-2 col-lg-2"
+                          style="padding: 0 5px;"
+                        >
+                          <label class="label">圖表顏色</label>
+                          <label class="input">
+                            <select class="form-control" name="chartColor">
+                              <option value="blue">藍色</option>
+                              <option value="green">綠色</option>
+                              <option value="orange">橘色</option>
+                              <option value="purple">紫色</option>
+                              <option value="red">紅色</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div
+                          class="col col-xs-12 col-sm-6 col-md-4 col-lg-2"
+                          style="padding: 0 5px;"
+                        >
+                          <label class="label">圖表繪製的欄位</label>
+                          <label class="input">
+                            <select
+                              class="form-control"
+                              name="chartColumn"
+                            ></select>
+                          </label>
+                        </div>
+                        <div
+                          class="col col-xs-12 col-sm-6 col-md-4 col-lg-4"
+                          style="padding: 0 5px;"
+                        >
+                          <label class="label">y軸 文字</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="chartYLabel"
+                            />
+                          </label>
+                        </div>
+                        <div
+                          class="col col-xs-12 col-sm-6 col-md-4 col-lg-2"
+                          style="padding: 0 5px;"
+                        >
+                          <label class="label">x軸 刻度</label>
+                          <label class="input">
+                            <select
+                              multiple="multiple"
+                              class="form-control"
+                              name="chartXTick"
+                            ></select>
+                          </label>
+                        </div>
+                        <div
+                          class="col col-xs-12 col-sm-6 col-md-4 col-lg-4"
+                          style="padding: 0 5px;"
+                        >
+                          <label class="label">x軸 文字</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="chartXLabel"
+                            />
+                          </label>
+                        </div>
+                        <div
+                          class="col col-xs-12 col-sm-6 col-md-2 col-lg-2"
+                          style="padding: 0 5px;"
+                        >
+                          <label class="label">標準值</label>
+                          <label class="input">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="chartStandard"
+                            />
+                          </label>
+                        </div>
+                        <div class="col col-xs-12 col-sm-6 col-md-2 col-lg-2">
+                          <label class="label">匯出</label>
+                          <div class="inline-group">
+                            <label class="checkbox">
+                              <input
+                                type="checkbox"
+                                value="none"
+                                name="chartExport"
+                              />
+                              <i></i>具匯出功能</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-ele-btn" class="btn btn-primary">
+                  送出
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 元件編輯 Widget END -->
+    </article>
+    <!-- WIDGET END -->
+
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- 元件選擇 Widget -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-wrench"></i> </span>
+          <h2>元件選擇</h2>
+        </header>
+        <div>
+          <div class="widget-body" style="min-height: 0px;">
+            <div id="elementsBtn">
+              <div class="btn btn-info" data-type="textBtn">文字輸入</div>
+              <div class="btn btn-info" data-type="dateBtn">日期輸入</div>
+              <div class="btn btn-info" data-type="startEndDateBtn">
+                起始及結束日期輸入
+              </div>
+              <div class="btn btn-info" data-type="selectBtn">下拉式選單</div>
+              <div class="btn btn-info" data-type="select2Btn">
+                含搜尋功能的下拉式選單
+              </div>
+              <div class="btn btn-info" data-type="multipleSelectBtn">
+                多選下拉式選單
+              </div>
+              <div class="btn btn-info" data-type="radioBtn">單選選項</div>
+              <div class="btn btn-info" data-type="checkboxBtn">多選選項</div>
+              <div class="btn btn-info" data-type="labelBtn">說明文字</div>
+              <div class="btn btn-info" data-type="hrBtn">分隔線</div>
+              <div class="btn btn-info" data-type="CRUDTableBtn">
+                可編輯報表
+              </div>
+              <div class="btn btn-info" data-type="reportTableBtn">報表</div>
+            </div>
+            <div class="smart-form hide" id="elementsEx">
+              <section
+                class="col col-xs-12 col-sm-12 col-md-4 col-lg-4"
+                data-type="text"
+              >
+                <label class="label">text</label>
+                <label class="input">
+                  <input type="text" class="form-control" />
+                </label>
+              </section>
+              <section
+                class="col col-xs-12 col-sm-12 col-md-4 col-lg-4"
+                data-type="date"
+              >
+                <label class="label">date</label>
+                <label class="input">
+                  <i class="icon-append fa fa-calendar"></i>
+                  <input type="text" class="form-control" />
+                </label>
+              </section>
+              <section
+                class="col col-xs-12 col-sm-12 col-md-4 col-lg-4"
+                data-type="startEndDate"
+              >
+                <label class="label">start date</label>
+                <label class="input">
+                  <i class="icon-append fa fa-calendar"></i>
+                  <input type="text" class="form-control" />
+                </label>
+                <label class="label">end date</label>
+                <label class="input">
+                  <i class="icon-append fa fa-calendar"></i>
+                  <input type="text" class="form-control" />
+                </label>
+              </section>
+              <section
+                class="col col-xs-12 col-sm-12 col-md-4 col-lg-4"
+                data-type="select"
+              >
+                <label class="label">select</label>
+                <label class="input">
+                  <select class="form-control"></select>
+                </label>
+              </section>
+              <section
+                class="col col-xs-12 col-sm-12 col-md-4 col-lg-4"
+                data-type="select2"
+              >
+                <label class="label">select2</label>
+                <label class="select">
+                  <select class="select2 full-width"></select>
+                </label>
+              </section>
+              <section
+                class="col col-xs-12 col-sm-12 col-md-4 col-lg-4"
+                data-type="multipleSelect"
+              >
+                <label class="label">multiple select</label>
+                <label class="select select-multiple">
+                  <select multiple="multiple" class="form-control"></select>
+                </label>
+              </section>
+              <section
+                class="col col-xs-6 col-sm-4 col-md-2 col-lg-2"
+                data-type="radio"
+              >
+                <label class="label">radio</label>
+                <div class="inline-group">
+                  <label class="radio">
+                    <input type="radio" name="denominator" />
+                    <i></i>
+                    <p>radio</p>
+                  </label>
+                </div>
+              </section>
+              <section
+                class="col col-xs-6 col-sm-4 col-md-2 col-lg-2"
+                data-type="checkbox"
+              >
+                <label class="label">checkbox</label>
+                <div class="inline-group">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <i></i>
+                    <p>checkbox</p>
+                  </label>
+                </div>
+              </section>
+              <section
+                class="col col-xs-6 col-sm-4 col-md-2 col-lg-2"
+                data-type="label"
+              >
+                <label>
+                  <span>label title</span>:
+                  <span>label text</span>
+                </label>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 元件選擇 Widget END -->
+      <div class="text-center">
+        <label>app: </label>
+        <label class="select" style="margin: 5px;">
+          <select name="line-name" id="app_id" class="form-control"></select>
+        </label>
+        <label>func: </label>
+        <label class="select" style="margin: 5px;">
+          <select name="line-name" id="func_id" class="form-control"></select>
+        </label>
+        <label>json檔檔名: </label>
+        <label class="input" style="margin: 5px;">
+          <input type="text" class="form-control" id="configFileName" />
+        </label>
+        <button class="btn btn-primary" id="export" style="margin-bottom: 5px;">
+          匯出
+        </button>
+        <button
+          class="btn btn-primary"
+          id="download"
+          style="margin-bottom: 5px;"
+        >
+          下載
+        </button>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="configFilesModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">歷史紀錄</h4>
+          </div>
+          <div class="modal-body">
+            <table
+              id="allConfigFiles"
+              class="table table-striped table-bordered table-hover"
+            >
+              <thead>
+                <tr>
+                  <th class="filename">
+                    選擇檔案
+                    <span id="inputFilename"></span>
+                    <span class="fa fa-refresh fa-lg hide"></span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="text-center"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- MODAL END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  .focus {
+    box-shadow: rgb(115, 179, 229) 0px 1px 5px 1px;
+  }
+
+  #elementsBtn .btn {
+    margin-bottom: 5px;
+  }
+
+  #elementsEx {
+    padding-top: 20px;
+  }
+
+  #elementsEx section,
+  .jarviswidget section {
+    padding-bottom: 10px;
+  }
+
+  fieldset > .row,
+  .modal-body > .row,
+  .modal-body > .row > form {
+    min-height: 50px;
+  }
+
+  .modal-body > .row > form {
+    display: flow-root;
+  }
+
+  .smart-form .inline-group {
+    margin: 0 -15px 0 0;
+  }
+
+  section > .col {
+    padding-left: 0px !important;
+  }
+
+  .widget-body .no-padding {
+    margin-top: -13px !important;
+  }
+
+  .smart-form input {
+    margin-bottom: 2px;
+  }
+
+  .hr-section {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  .hr-section.focus {
+    padding: 2px 0px !important;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

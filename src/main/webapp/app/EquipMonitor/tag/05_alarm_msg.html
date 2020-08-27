@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span
+        >>
+        <span id="machineIdHead"></span>
+        > {i18n_ServCloud_Alarm_Message}
+      </span>
+    </h1>
+  </div>
+</div>
+
+<section id="widget-grid">
+  <div id="monitorHeader"></div>
+
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-fullscreenbutton="false"
+    data-widget-editbutton="false"
+    data-widget-collapsed="false"
+    data-widget-colorbutton="false"
+    data-widget-deletebutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <span
+        >&nbsp;&nbsp;&nbsp;
+        <h2>
+          【{i18n_ServCloud_Monitoring_Information}】LEAN_ID =
+          <span id="boxId"></span> {i18n_ServCloud_Machine_Id} =
+          <span id="machineId"></span> {i18n_ServCloud_Name} =
+          <span id="machineName"></span></h2
+      ></span>
+    </header>
+  </div>
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+        data-widget-fullscreenbutton="false"
+        data-widget-editbutton="false"
+        data-widget-collapsed="true"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Alarm_Message}</h2></span
+          >
+        </header>
+        <div>
+          <div class="widget-body no-padding" id="table_widget">
+            <table
+              id="response-data-table"
+              class="table table-bordered"
+            ></table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+  </div>
+</section>
+<script type="text/javascript">
+  window.importPageScript()
+</script>

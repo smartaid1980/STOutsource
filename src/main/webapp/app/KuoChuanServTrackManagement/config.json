@@ -1,0 +1,44 @@
+{
+  "app": {
+    "id": "KuoChuanServTrackManagement",
+    "name": "i18n_ServCloud_Kuo_Chuan_ServTrack_Management",
+    "type": 1,
+    "description": "KuoChuanServTrackManagement",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "20_process_maintain",
+      "name": "i18n_ServCloud_20_Process_Maintain"
+    },
+    {
+      "id": "21_product_maintain",
+      "name": "i18n_ServCloud_21_Product_Maintain"
+    },
+    {
+      "id": "22_device_maintain",
+      "name": "i18n_ServCloud_22_Device_Maintain"
+    },
+    {
+      "id": "23_emp_maintain",
+      "name": "i18n_ServCloud_23_Emp_Maintain"
+    },
+    {
+      "id": "31_work",
+      "name": "i18n_ServCloud_31_Work"
+    },
+    {
+      "id": "32_invalid_device_qrcode_print",
+      "name": "i18n_ServCloud_32_Invalid_Device_Qrcode_Print"
+    },
+    {
+      "id": "33_work_op_qrcode_print",
+      "name": "i18n_ServCloud_33_Work_Op_Qrcode_Print"
+    },
+    {
+      "id": "40_time_clock_data_import",
+      "name": "i18n_ServCloud_40_Time_Clock_Data_Import"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

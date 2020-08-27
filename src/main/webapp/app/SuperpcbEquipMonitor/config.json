@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "SuperpcbEquipMonitor",
+    "name": "興普設備監控",
+    "type": 1,
+    "description": "Machine monitor.",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_plant_area",
+      "name": "10 廠區監控"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

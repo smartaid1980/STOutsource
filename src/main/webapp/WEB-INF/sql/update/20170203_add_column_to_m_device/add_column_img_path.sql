@@ -1,0 +1,1 @@
+ALTER TABLE `m_device` ADD COLUMN `img_path` VARCHAR(200) DEFAULT '' AFTER `device_mac`;

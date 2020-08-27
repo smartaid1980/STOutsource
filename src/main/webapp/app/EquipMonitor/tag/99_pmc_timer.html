@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Basic Styles -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="http://localhost:8080/ServCloud/public/frontend/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="http://localhost:8080/ServCloud/public/frontend/css/font-awesome.min.css"
+    />
+
+    <!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="http://localhost:8080/ServCloud/public/frontend/css/smartadmin-production.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="http://localhost:8080/ServCloud/public/frontend/css/smartadmin-skins.min.css"
+    />
+
+    <!-- SmartAdmin RTL Support is under construction-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="http://localhost:8080/ServCloud/public/frontend/css/smartadmin-rtl.min.css"
+    />
+  </head>
+  <ul id="breadcrumb_table" class="breadcrumbDark" collapse="#collapse_table">
+    test
+  </ul>
+  <div id="collapse_table" class="accordion-body collapse in">
+    <div class="well">
+      <div style="height: 50px;"></div>
+
+      <div class="container" id="test_Submit">
+        <div class="row row-centered">
+          <div class="col-xs-12 col-centered">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">PMC訊息</h3>
+              </div>
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td>
+                      起使號碼：
+                      <input
+                        type="text"
+                        size="5"
+                        name="startNum"
+                        id="pNumber"
+                        value="1"
+                      />
+                    </td>
+                    <td>
+                      結束號碼：
+                      <input
+                        type="text"
+                        size="5"
+                        name="endNum"
+                        id="pCount"
+                        value="100"
+                      />
+                      <font color="red">*支援最大值為 250</font>
+                    </td>
+                    <td>顯示號碼：2 bytes</td>
+                    <td>
+                      <button class="btn btn-primary" id="send">查詢</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-centered">
+          <div class="col-xs-12 col-centered">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">PMC訊息</h3>
+              </div>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <td>Address</td>
+                    <td>數值</td>
+                    <td>單位 (ms)</td>
+                  </tr>
+                </thead>
+                <tbody getData="G_PMTR2()"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!-- <script href="http://localhost:8080/ServCloud/public/frontend/js/libs/jquery-2.0.2.min.js"></script> -->
+<script
+  type="text/javascript"
+  src="../../../../public/frontend/js/bootstrap/bootstrap.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="../../../../public/frontend/js/utils/jquery.servtech.servcloud.execJob.js"
+></script>
+<script
+  type="text/javascript"
+  src="../../../../public/frontend/js/utils/jquery.servtech.servcloud.boxCmd.js"
+></script>
+<script type="text/javascript">
+  window.importPageScript()
+</script>

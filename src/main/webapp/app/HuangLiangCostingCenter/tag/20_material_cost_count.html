@@ -1,0 +1,225 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-6">
+                    <section>
+                      <label class="label">訂單編號</label>
+                      <label class="input">
+                        <input type="text" id="order_id" />
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-6">
+                    <section>
+                      <label class="label">管編</label>
+                      <label class="input">
+                        <input type="text" id="manage_id" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- detail DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Result}</h2>
+          <ul id="widget-tab" class="nav nav-tabs pull-right">
+            <li class="active">
+              <a data-toggle="tab" href="#hr1"
+                ><span class="hidden-mobile hidden-tablet">材料總成本</span>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#hr2"
+                ><span class="hidden-mobile hidden-tablet"
+                  >各機台使用明細</span
+                ></a
+              >
+            </li>
+          </ul>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="hr1">
+                <table
+                  id="table"
+                  class="table table-striped table-bordered table-hover"
+                  width="100%"
+                >
+                  <thead>
+                    <tr>
+                      <th class="hasinput" style="width: 12.5%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 12.5%;">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placefolder="過濾訂單數"
+                        />
+                      </th>
+                      <th class="hasinput" style="width: 12.5%;">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placefolder="過濾生產總數"
+                        />
+                      </th>
+                      <th class="hasinput" style="width: 12.5%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 15%;">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placefolder="過濾領補料總數量"
+                        />
+                      </th>
+                      <th class="hasinput" style="width: 10%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 12.5%;">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placefolder="過濾領補料總金額"
+                        />
+                      </th>
+                      <th class="hasinput" style="width: 12.5%;">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placefolder="過濾領補料次數"
+                        />
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>訂單編號</th>
+                      <th>訂單數</th>
+                      <th>生產總數</th>
+                      <th>材料編碼</th>
+                      <th>領補料總數量</th>
+                      <th>單位</th>
+                      <th>領補料總金額</th>
+                      <th>領補料次數</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="hr2">
+                <table
+                  id="table-detail"
+                  class="table table-striped table-bordered table-hover"
+                  width="100%"
+                >
+                  <thead>
+                    <tr>
+                      <th class="hasinput" style="width: 15%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 10%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 10%;">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placefolder="過濾已生產數量"
+                        />
+                      </th>
+                      <th class="hasinput" style="width: 20%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 15%;">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placefolder="過濾領補料派工數"
+                        />
+                      </th>
+                      <th class="hasinput" style="width: 15%;">
+                        <select class="form-control"></select>
+                      </th>
+                      <th class="hasinput" style="width: 10%;">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placefolder="領補料總金額"
+                        />
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>訂單編號</th>
+                      <th>機台名稱</th>
+                      <th>已生產數量</th>
+                      <th>材料條碼</th>
+                      <th>領補料派工數</th>
+                      <th>單位</th>
+                      <th>領補料總金額</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

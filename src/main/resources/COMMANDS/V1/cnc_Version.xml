@@ -1,0 +1,1 @@
+<command name="cnc_Version" cycletype="count" cyclevalue="1" timeout="0"><params><param name="G_SYSM" count="1" frequency="0" isRepeat="true"><inputs></inputs><filters></filters><process /></param></params></command>

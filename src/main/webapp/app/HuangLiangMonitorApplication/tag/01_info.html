@@ -1,0 +1,828 @@
+<!-- <ul id="breadcrumb_table" class="breadcrumbDark"  collapse="#collapse_table">test</ul> -->
+<div class="row">
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      {i18n_ServCloud_EquipMonitor}
+      <span
+        >>
+        <span id="machineIdHead"></span>
+        > {i18n_ServCloud_Dashboard}
+      </span>
+    </h1>
+  </div>
+</div>
+
+<section id="widget-grid">
+  <div id="monitorHeader"></div>
+
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-fullscreenbutton="false"
+    data-widget-editbutton="false"
+    data-widget-collapsed="false"
+    data-widget-colorbutton="false"
+    data-widget-deletebutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <span
+        >&nbsp;&nbsp;&nbsp;
+        <h2>
+          【{i18n_ServCloud_Monitoring_Information}】LEAN_ID =
+          <span id="boxId"></span> {i18n_ServCloud_Machine_Id} =
+          <span id="machineId"></span> {i18n_ServCloud_Name} =
+          <span id="machineName"></span></h2
+      ></span>
+      <ul id="widget-tab" class="nav nav-tabs pull-right">
+        <li class="active">
+          <a data-toggle="tab" href="#system1">
+            <i class="fa fa-lg fa-info-circle"></i>
+            <span class="hidden-mobile hidden-tablet"> System 1 </span>
+          </a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#system2">
+            <i class="fa fa-lg fa-info-circle"></i>
+            <span class="hidden-mobile hidden-tablet"> System 2 </span></a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="tab-content padding-10">
+      <!--  系統1  -->
+      <div class="tab-pane fade in active" id="system1">
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-tachometer"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_The_Controller_End_State_Column}
+                  </h2></span
+                >
+              </header>
+              <!-- <div getData="G_STAT()" trData="true"></div> -->
+              <table id="G_STAT" class="table table-bordered"></table>
+            </div>
+          </article>
+        </div>
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-crosshairs"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_Absolute_Position} (
+                    <span id="G_POSA_G_PSUT"></span> )
+                  </h2></span
+                >
+              </header>
+              <table
+                id="G_POSA"
+                class="table table-bordered"
+                tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+              ></table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-crosshairs"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_Machine_Position} (
+                    <span id="G_POSM_G_PSUT"></span> )
+                  </h2></span
+                >
+              </header>
+              <table
+                id="G_POSM"
+                class="table table-bordered"
+                tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+              ></table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-crosshairs"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_Relative_Position} (
+                    <span id="G_POSR_G_PSUT"></span> )
+                  </h2></span
+                >
+              </header>
+              <table
+                id="G_POSR"
+                class="table table-bordered"
+                tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+              ></table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-crosshairs"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_Distance_To_Go} (
+                    <span id="G_POSD_G_PSUT"></span> )
+                  </h2></span
+                >
+              </header>
+              <table
+                id="G_POSD"
+                class="table table-bordered"
+                tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+              ></table>
+            </div>
+          </article>
+        </div>
+
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-gavel"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Parts_Data}</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    {i18n_ServCloud_Parts_Total}
+                  </td>
+                  <td
+                    id="G_TOCP"
+                    class="col-lg-3 col-md-3 col-sm-3 col-xs-3"
+                  ></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Parts_Required}</td>
+                  <td id="G_USCP"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Parts_Count}</td>
+                  <td id="G_PSCP"></td>
+                </tr>
+              </table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-gear"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Servo_Spindle}</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td
+                    data-original-title="讀取CNC控制軸的實際進給率"
+                    class="col-xs-9 col-sm-9 col-md-9 col-lg-9"
+                  >
+                    {i18n_ServCloud_Servo_Actual_Feedrate}
+                  </td>
+                  <td
+                    id="G_ACTF"
+                    class="col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-original-title="讀取CNC控制軸的進給率百分比">
+                    {i18n_ServCloud_Servo_Feedrate_Override}
+                  </td>
+                  <td id="G_FERP"></td>
+                  <!--<td>
+                    <div id="G_FERP" class="easy-pie-chart txt-color-blue easyPieChart" data-percent="0" data-pie-size="40">
+                      <span class="percent percent-sign font-xs">0</span>
+                    </div>
+                  </td>-->
+                </tr>
+                <tr>
+                  <td data-original-title="讀取伺服軸負載">
+                    {i18n_ServCloud_Servo_Load}
+                  </td>
+                  <td id="G_SRMC"></td>
+                </tr>
+                <tr>
+                  <td data-original-title="讀取CNC上主軸的實際轉速">
+                    {i18n_ServCloud_Spindle_Actual_Speed}
+                  </td>
+                  <td id="G_ACTS"></td>
+                </tr>
+                <tr>
+                  <td data-original-title="讀取CNC上主軸的命令轉速">
+                    {i18n_ServCloud_Spindel_Command_speed}
+                  </td>
+                  <td id="G_SPMS"></td>
+                </tr>
+                <tr>
+                  <td data-original-title="讀取CNC上主軸的轉速百分比">
+                    {i18n_ServCloud_Spindle_Speed_Override}
+                  </td>
+                  <td id="G_SPSO"></td>
+                  <!--<td>
+                    <div id="G_SPSO" class="easy-pie-chart txt-color-blue easyPieChart" data-percent="0" data-pie-size="40">
+                      <span class="percent percent-sign font-xs">0</span>
+                    </div>
+                  </td>-->
+                </tr>
+                <tr>
+                  <td data-original-title="讀取主軸負載">
+                    {i18n_ServCloud_Spindle_Load}
+                  </td>
+                  <td id="G_SPMC"></td>
+                </tr>
+              </table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-code"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Execute_Program}</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    {i18n_ServCloud_Program}
+                  </td>
+                  <td
+                    id="G_PRGM"
+                    class="col-xs-8 col-sm-8 col-md-8 col-lg-8"
+                  ></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Line_Number}</td>
+                  <td id="G_SEQN"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Line_Execution_Block}</td>
+                  <td id="G_EXEP"></td>
+                </tr>
+              </table>
+            </div>
+          </article>
+        </div>
+
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-bolt"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Processing_Time_Statistics}</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    {i18n_ServCloud_Power_Time}
+                  </td>
+                  <td
+                    id="G_ELCT"
+                    class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right"
+                  ></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Cutting_Time}</td>
+                  <td id="G_CUTT" class="text-right"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Cycle_Time}</td>
+                  <td id="G_CYCT" class="text-right"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Run_Time}</td>
+                  <td id="G_OPRT" class="text-right"></td>
+                </tr>
+              </table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Modal_Other_Code}</h2></span
+                >
+              </header>
+              <table id="G_MODA" class="table table-bordered"></table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Modal_G_Code}</h2></span
+                >
+              </header>
+              <table id="G_MODA-G" class="table table-bordered"></table>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!--  系統2  -->
+      <div class="tab-pane fade" id="system2">
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-tachometer"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_The_Controller_End_State_Column}
+                  </h2></span
+                >
+              </header>
+              <!-- <div getData="G_STAT()" trData="true"></div> -->
+              <table id="G_STAT2" class="table table-bordered"></table>
+            </div>
+          </article>
+        </div>
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-crosshairs"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_Absolute_Position} (
+                    <span id="G_POSA_G_PSUT2"></span> )
+                  </h2></span
+                >
+              </header>
+              <table
+                id="G_POSA2"
+                class="table table-bordered"
+                tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+              ></table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-crosshairs"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_Machine_Position} (
+                    <span id="G_POSM_G_PSUT2"></span> )
+                  </h2></span
+                >
+              </header>
+              <table
+                id="G_POSM2"
+                class="table table-bordered"
+                tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+              ></table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-crosshairs"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_Relative_Position} (
+                    <span id="G_POSR_G_PSUT2"></span> )
+                  </h2></span
+                >
+              </header>
+              <table
+                id="G_POSR2"
+                class="table table-bordered"
+                tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+              ></table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon">
+                  <i class="fa fa-crosshairs"></i>
+                </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>
+                    {i18n_ServCloud_Distance_To_Go} (
+                    <span id="G_POSD_G_PSUT2"></span> )
+                  </h2></span
+                >
+              </header>
+              <table
+                id="G_POSD2"
+                class="table table-bordered"
+                tdClass="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+              ></table>
+            </div>
+          </article>
+        </div>
+
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-gavel"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Parts_Data}</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    {i18n_ServCloud_Parts_Total}
+                  </td>
+                  <td
+                    id="G_TOCP2"
+                    class="col-lg-3 col-md-3 col-sm-3 col-xs-3"
+                  ></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Parts_Required}</td>
+                  <td id="G_USCP2"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Parts_Count}</td>
+                  <td id="G_PSCP2"></td>
+                </tr>
+              </table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-gear"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Servo_Spindle}</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                    {i18n_ServCloud_Servo_Actual_Feedrate}
+                  </td>
+                  <td
+                    id="G_ACTF2"
+                    class="col-xs-3 col-sm-3 col-md-3 col-lg-3"
+                  ></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Servo_Feedrate_Override}</td>
+                  <td id="G_FERP2"></td>
+                  <!--<td>
+            <div id="G_FERP" class="easy-pie-chart txt-color-blue easyPieChart" data-percent="0" data-pie-size="40">
+              <span class="percent percent-sign font-xs">0</span>
+            </div>
+          </td>-->
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Servo_Load}</td>
+                  <td id="G_SRMC2"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Spindle_Actual_Speed}</td>
+                  <td id="G_ACTS2"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Spindel_Command_speed}</td>
+                  <td id="G_SPMS2"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Spindle_Speed_Override}</td>
+                  <td id="G_SPSO2"></td>
+                  <!--<td>
+            <div id="G_SPSO" class="easy-pie-chart txt-color-blue easyPieChart" data-percent="0" data-pie-size="40">
+              <span class="percent percent-sign font-xs">0</span>
+            </div>
+          </td>-->
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Spindle_Load}</td>
+                  <td id="G_SPMC2"></td>
+                </tr>
+              </table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-code"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Execute_Program}</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    {i18n_ServCloud_Program}
+                  </td>
+                  <td
+                    id="G_PRGM2"
+                    class="col-xs-8 col-sm-8 col-md-8 col-lg-8"
+                  ></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Line_Number}</td>
+                  <td id="G_SEQN2"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Line_Execution_Block}</td>
+                  <td id="G_EXEP2"></td>
+                </tr>
+              </table>
+            </div>
+          </article>
+        </div>
+
+        <div class="row">
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-bolt"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Processing_Time_Statistics}</h2></span
+                >
+              </header>
+              <table class="table table-bordered">
+                <tr>
+                  <td class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    {i18n_ServCloud_Power_Time}
+                  </td>
+                  <td
+                    id="G_ELCT2"
+                    class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right"
+                  ></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Cutting_Time}</td>
+                  <td id="G_CUTT2" class="text-right"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Cycle_Time}</td>
+                  <td id="G_CYCT2" class="text-right"></td>
+                </tr>
+                <tr>
+                  <td>{i18n_ServCloud_Run_Time}</td>
+                  <td id="G_OPRT2" class="text-right"></td>
+                </tr>
+              </table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Modal_Other_Code}</h2></span
+                >
+              </header>
+              <table id="G_MODA2" class="table table-bordered"></table>
+            </div>
+          </article>
+          <article class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div
+              class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+              data-widget-fullscreenbutton="false"
+              data-widget-editbutton="false"
+              data-widget-collapsed="false"
+              data-widget-colorbutton="false"
+              data-widget-deletebutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <span
+                  >&nbsp;&nbsp;&nbsp;
+                  <h2>{i18n_ServCloud_Modal_G_Code}</h2></span
+                >
+              </header>
+              <table id="G_MODA-G2" class="table table-bordered"></table>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  window.importPageScript()
+</script>

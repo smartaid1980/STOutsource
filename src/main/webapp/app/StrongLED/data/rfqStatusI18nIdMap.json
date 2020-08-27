@@ -1,0 +1,16 @@
+{
+  "0": "Undone",
+  "1": "Pre-Sale_Audit",
+  "6": "Bom_To_Be_Demolished",
+  "11": "To_Be_In_Charge_Of_R_&_D_Review",
+  "16": "Monovalent_Be_Fed",
+  "21": "To_Be_In_Charge_Of_Procurement_Review",
+  "26": "To_Be_Completed_Factory_Profits",
+  "31": "Treasurer_Pending_Review",
+  "36": "To_Be_Completed_Market_Profits_(Non-Standard_Products)",
+  "41": "To_Be_Completed_Market_Profits_(Standard_Products)",
+  "96": "Cancel_Inquiry",
+  "97": "Return_Rfq",
+  "98": "Quote_Completed",
+  "99": "End_Quote"
+}

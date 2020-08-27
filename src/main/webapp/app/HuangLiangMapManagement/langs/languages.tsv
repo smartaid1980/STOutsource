@@ -1,0 +1,151 @@
+	zh_tw	zh	en
+i18n_ServCloud_Account	帳號	帐号	Account
+i18n_ServCloud_Machine_ID	授權碼	授权码	License ID
+i18n_ServCloud_Machine_Name	設備編號	设备编号	Machine ID
+i18n_ServCloud_Creator	建立人	建立人	Creator
+i18n_ServCloud_Creation_date	建立日期	建立日期	Creation date
+i18n_ServCloud_Update	更新	更新	Update
+i18n_ServCloud_Updated_Date	更新日期	更新日期	Updated Date
+i18n_ServCloud_IP	IP 位址	IP 位址	IP Address
+i18n_ServCloud_MAC	MAC 位址	MAC 位址	MAC Address
+i18n_ServCloud_ID	ID	ID	ID
+i18n_ServCloud_Port	Port	Port	Port
+i18n_ServCloud_Supervisor	管理者	管理者	Supervisor
+i18n_ServCloud_Name	名稱	名称	Name
+i18n_ServCloud_Device_Name	設備名稱	设备名称	Device Name
+i18n_ServCloud_Device_Bind	設備绑定	设备绑定	Device Bind
+i18n_ServCloud_Email	Email	Email	Email
+i18n_ServCloud_Phone	電話	电话	Phone
+i18n_ServCloud_Address	地址	地址	Address
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Group	群組	群组	Group
+i18n_ServCloud_Close	啟用	启用	Available
+i18n_ServCloud_Group_ID	群組編號	群组编号	Group ID
+i18n_ServCloud_Group_Name	群組名稱	群组名称	Group Name
+i18n_ServCloud_Authorization	權限	权限	Authorization
+i18n_ServCloud_Authorization_ID	權限編號	权限编号	Authorization ID
+i18n_ServCloud_Authorization_Name	權限名稱	权限名称	Authorization Name
+i18n_ServCloud_Authorization_Function_Bind	功能綁定	功能绑定	Function Bind
+i18n_ServCloud_Category	類別	类别	Category
+i18n_ServCloud_Description	描述	描述	Description
+i18n_ServCloud_Version	版本	版本	Version
+i18n_ServCloud_App_ID	程式編號	程式编号	APP ID
+i18n_ServCloud_App_Name	程式名稱	程式名称	APP Name
+i18n_ServCloud_Type	類型	类型	Type
+i18n_ServCloud_Directory	路徑	路径	Directory
+i18n_ServCloud_Cron	Cron	Cron	Cron
+i18n_ServCloud_Job_Name	工作	工作	Job Name
+i18n_ServCloud_Job_Group_Name	工作群組名稱	工作群组名称	Job Group Name
+i18n_ServCloud_Prev_exec	上次執行時間	上次执行时间	Prev exec
+i18n_ServCloud_Next_exec	下次執行時間	下次执行时间	Next exec
+i18n_ServCloud_Manage_Schedule	排程管理	排程管理	Schedule Management
+i18n_ServCloud_Shift	班次管理	班次管理	Shift Management
+i18n_ServCloud_Manage_Appware	應用程式管理	应用程式管理	Appware Management
+i18n_ServCloud_Manage_User	使用者管理	使用者管理	User Management
+i18n_ServCloud_Manage_Group	群組管理	群组管理	Group Management
+i18n_ServCloud_Manage_Authorise	權限管理	权限管理	Authorization Management
+i18n_ServCloud_Open	開啟	开启	Open
+i18n_ServCloud_Manage_Machine	設備管理	设备管理	Machine Management
+i18n_ServCloud_Manage_Box	Box 管理	Box 管理	Box Management
+i18n_ServCloud_Application	應用程式	应用程式	Application
+i18n_ServCloud_Authority_Management	權限管理	权限管理	Authority Management
+i18n_ServCloud_Machine_and_Box	設備與 Box	设备与 Box	Machine and Box
+i18n_ServCloud_App_Dir	APP 資料夾	APP 资料夹	App Dir
+i18n_ServCloud_Bat_Dir	Bat 資料夾	Bat 资料夹	Bat Dir
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_Stk_Email_Invalid_Info	信箱格式有誤	信箱格式有误	Email format incorrect
+i18n_ServCloud_Stk_Cron_Invalid_Info	Cron 格式不正確	Cron 格式不正确	Cron format incorrect
+i18n_ServCloud_Stk_Ip_Invalid_Info	IP 格式不正確	IP 格式不正确	IP format incorrect
+i18n_ServCloud_Stk_Port_Invalid_Info	port 格式不正確	port 格式不正确	port format incorrect
+i18n_ServCloud_Manage_Machine_Name	設備名稱管理	设备名称管理	Machine Name Management
+i18n_ServCloud_Manage_Macro	Macro號碼管理	Macro号码管理	Macro Management
+i18n_ServCloud_Submit	提交	提交	Submit
+i18n_ServCloud_Reboot_ServBox_hint	設定必須重啟 ServBox mini 以生效，您是否要現在重啟 ?	设定必须重启 ServBox mini 以生效，您是否要现在重启 ?	You have to reboot ServBox to enable the setting, reboot now?
+i18n_ServCloud_Manage_User_Pwd	更新使用者密碼	更新使用者密码	Change User Password
+i18n_ServCloud_Update_Pwd	密碼更新	密码更新	Update password
+i18n_ServCloud_Input_Old_Pwd	請輸入舊密碼	请输入旧密码	Input old password
+i18n_ServCloud_Input_New_Pwd	請輸入新密碼	请输入新密码	Input new password
+i18n_ServCloud_Input_New_Pwd_Again	請再次輸入新密碼	请再次输入新密码	Input new password again
+i18n_ServCloud_Length_Not_Less	長度不可少於	长度不可少于	Length not less than
+i18n_ServCloud_New_Pwd_Not_The_Same	新密碼不相同	新密码不相同	New password not the same
+i18n_ServCloud_Download_Raw_Data_Decode	下載設備原始資料(解碼)	下载设备原始资料(解码)	Download Machine Raw Data (Decode)
+i18n_ServCloud_Download	下載	下载	Download
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Condition
+i18n_ServCloud_Week_Date	星期/日期	星期/日期	Week/Date
+i18n_ServCloud_Shift_Time	班次時間	班次时间	Shift time
+i18n_ServCloud_Week	星期	星期	Week
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Sunday	日	日	Sun.
+i18n_ServCloud_Monday	一	一	Mon.
+i18n_ServCloud_Tuesday	二	二	Tue.
+i18n_ServCloud_Wednesday	三	三	Wed.
+i18n_ServCloud_Thursday	四	四	Thu.
+i18n_ServCloud_Friday	五	五	Fri.
+i18n_ServCloud_Saturday	六	六	Sat.
+i18n_ServCloud_Shift_Name	班別名稱	班别名称	Work shift name
+i18n_ServCloud_Start_Time	開始時間	开始时间	Start time
+i18n_ServCloud_End_Time	結束時間	结束时间	End time
+i18n_ServCloud_Manage_Line_Type	產線類別管理	产线类别管理	Line Type Management
+i18n_ServCloud_Op	製程	制程	Operation
+i18n_ServCloud_Op_Seq	製程序號	制程序号	Operation sequence
+i18n_ServCloud_Machine_Num	機台數量	机台数量	Machine Amount
+i18n_ServCloud_Op_Seq_Muti	該產線類別的序號重複	该产线类别的序号重复	Duplicated operation sequence in this line type
+i18n_ServCloud_Invalid_Time_Range	時間範圍有誤	时间范围有误	Time range incorrect
+i18n_ServCloud_Invalid_Time_Format	時間格式有誤，必須為 HH:MM	时间格式有误，必须为 HH:MM	Time format incorrect, must be HH:MM
+i18n_ServCloud_Create_App	上傳 ServCloud APP	上传 ServCloud APP	Upload ServCloud APP
+i18n_ServCloud_Or_Click	或按我	或按我	Or Click
+i18n_ServCloud_Drop_APP_File	將 APP 拖曳至此	将 APP 拖曳至此	Drop the APP to here
+i18n_ServCloud_To_Upload	上傳	上传	for upload
+i18n_ServCloud_File_Must_Be_Zip	檔案格式需為 zip	档案格式需为 zip	Require a zip format file
+i18n_ServCloud_Func_Id_Name	功能 ID / 名稱	功能 ID / 名称	Function ID / name
+i18n_ServCloud_Start_Date	開始日期	开始日期	Start date
+i18n_ServCloud_End_Date	結束日期	结束日期	End date
+i18n_ServCloud_Edit	編輯	编辑	Edit
+i18n_ServCoud_Line_Type	產線類別	产线类别	Line type
+i18n_ServCloud_Choose	請選擇...	请选择...	Choose...
+i18n_ServCloud_Must_Choose	必須選擇一個類別	必须选择一个类别	You must select an option.
+i18n_ServCloud_Line_Machine_Form	產線機台對應表	产线机台对应表	Line-machine csv
+i18n_ServCloud_Drop_File	將檔案拖曳至此	将档案拖曳至此	Drop the upload file to here
+i18n_ServCloud_Manage_Cnc_Brand	CNC廠牌管理	CNC厂牌管理	CNC Brand Management
+i18n_ServCloud_Cnc_Brand	CNC廠牌	CNC厂牌	CNC brand
+i18n_ServCloud_Monitor_Page_Bind	監控頁面綁定	监控页面绑定	Monitor page bind
+i18n_ServCloud_Machine_Editor	設備類型管理	设备类型管理	Machine Editor Management
+i18n_ServCloud_Manage_Header	資料欄位管理	资料栏位管理	Data Header Management
+i18n_ServCloud_Manage_param	屬性	属性	Parameters
+i18n_ServCloud_Manage_Shift_Group	班次群組	班次群组	Shift Group
+i18n_ServCloud_Manage_Shift_Desc	班次描述	班次描述	Shift Description
+i18n_ServCloud_Manage_Type	類型	类型	Type
+i18n_ServCloud_Manage_Shift	班次	班次	Shift
+i18n_ServCloud_Manage_Date_Week	日期/星期	日期/星期	Date / Week
+i18n_ServCloud_Manage_Shift_Management	班次管理	班次管理	Shift Management
+i18n_ServCloud_Manage_Shift_Group_Name	班次群組名稱	班次群组名称	Shift Group Name
+i18n_ServCloud_Manage_Shift_Sequence	班次順序	班次顺序	Shift Sequence
+i18n_ServCloud_Manage_Shift_Name	班次名稱	班次名称	Shift Name
+i18n_ServCloud_Manage_Cancel	取消	取消	Cancel
+i18n_ServCloud_Manage_Finish	完成	完成	Finish
+i18n_ServCloud_Manage_Is_Real_Data	真實資料	真实资料	Real data
+i18n_ServCloud_Manage_Demo_Status	測試狀態	测试状态	Demo status
+i18n_ServCloud_Stk_Date_Duplicate	日期重覆	日期重覆	date exits!
+i18n_ServCloud_Manage_Ip_Cam	Ip Camera 管理	Ip Camera 管理	Ip Camera Management
+i18n_ServCloud_Show_in_Monitor	顯示於監控頁面	显示于监控页面	Show in Monitor Page
+i18n_ServCloud_Sequence	Ip Camera 排列順序	Ip Camera 排列顺序	Ip Camera Squence
+i18n_ServCloud_Machine_Type	機種	机种	Machine Type
+i18n_ServCloud_Manage_Alarm	管理警報代碼	管理警报代码	Manage Alarm
+i18n_ServCloud_Alarm_Code	警報代碼	警报代码	Alarm Code
+i18n_ServCloud_Alarm_Name	警報名稱	警报名称	Alarm Name
+i18n_ServCloud_Alarm_Description	警報說明	警报说明	Alarm description
+i18n_ServCloud_Alarm_Clear	故障排除	故障排除	Alarm Clear
+i18n_ServCloud_Exception_Msg	例外錯誤，請聯絡系統管理員	例外错误，请联络系统管理员	Exception, call system manager, please.
+i18n_ServCloud_ID_Already_Exists	此ID已存在	此ID已存在	ID already exists
+i18n_ServCloud_Delete_FK_Error_Msg	有其他table引用到此筆資料，所以無法進行刪除的動作	有其他table引用到此笔资料，所以无法进行删除的动作	There are other table references to this record  information, so the operation can not be deleted
+i18n_ServCloud_Ip_Cam_Title	Ip Camera標題	Ip Camera标题	Ip Camera Title
+i18n_ServCloud_No_Bundle	不綁定	不绑定	No Machine binded
+i18n_ServCloud_Alarm_Info_Msg	警報代碼十進位和十六進位只需選一種填寫，未填寫的另一欄在新增時會自動轉換。	警报代码十进位和十六进位只需选一种填写，未填写的另一栏在新增时会自动转换。	Alarm Codes decimal and hexadecimal just choose one to fill in the other fields are not filled in the new time will be automatically converted.
+i18n_ServCloud_Alarm_10	警報代碼(十進位)	警报代码(十进位)	Alarm Code (decimal)
+i18n_ServCloud_Alarm_16	警報代碼(十六進位)	警报代码(十六进位)	Alarm Code (HEX)
+i18n_ServCloud_Manage_Alarm_Anko	管理警報代碼 (PLC)	管理警报代码 (PLC)	Manage Alarm (PLC)
+i18n_ServCloud_10_And_16_Only_One_Selected	十進位和十六進位只能選一欄填	十进位和十六进位只能选一栏填	Decimal and hexadecimal can only choose a column filled
+i18n_ServCloud_10_And_16_Is_Null	十進位和十六進位都為空	十进位和十六进位都为空	Decimal and hexadecimal is empty
+i18n_ServCloud_Manage_Machine_Group	管理機台群組	管理机台群组	Manage Machine Group
+i18n_ServCloud_Store	儲存	储存	Store

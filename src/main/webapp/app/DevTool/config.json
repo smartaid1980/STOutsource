@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "DevTool",
+    "name": "i18n_ServCloud_DevTool",
+    "type": 1,
+    "description": "DevTool",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_form",
+      "name": "i18n_ServCloud_DevTool_01_form"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

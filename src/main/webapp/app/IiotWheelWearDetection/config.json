@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "IiotWheelWearDetection",
+    "name": "砂輪磨耗偵測系統",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "20_microphone_sensing",
+      "name": "麥克風偵測"
+    }
+  ],
+  "tags": ["20140918000999"]
+}

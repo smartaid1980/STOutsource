@@ -1,0 +1,7 @@
+{
+  "type": "DeviceStatus",
+  "gridClass": "col-xs-12 col-sm-12 col-md-12 col-lg-12",
+  "title": "<i class='glyphicon glyphicon-stats'></i> <strong>{i18n_ServCloud_Outer_Layer_Treatment}</strong>",
+  "contentPadding": true,
+  "dependencies": ["/js/plugin/d3/d3.min.js"]
+}

@@ -1,0 +1,747 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-12">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa-fw fa fa-cloud"></i>
+      {i18n_ServCloud_ServTrackManagement_000075}
+      <span>
+        > {i18n_ServCloud_ServTrackManagement_000050}
+      </span>
+    </h1>
+  </div>
+</div>
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_ServTrackManagement_000020}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate" id="main-form">
+              <fieldset>
+                <div>
+                  <div class="row">
+                    <section class="col col-4">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000070}</label
+                      >
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          id="start-date"
+                          name="startDate"
+                          data-rule-required="true"
+                          data-rule-dateISO="true"
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-4">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000071}</label
+                      >
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          id="end-date"
+                          name="end-date"
+                          data-rule-required="true"
+                          data-rule-dateISO="true"
+                        />
+                      </label>
+                    </section>
+                    <section class="col col-4">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000064}</label
+                      >
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            value="999"
+                            name="work-status"
+                            checked="checked"
+                          />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000055}</span
+                          >
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" value="2" name="work-status" />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000207}</span
+                          >
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" value="9" name="work-status" />
+                          <i></i>
+                          <span
+                            >{i18n_ServCloud_ServTrackManagement_000059}</span
+                          >
+                        </label>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="row">
+                    <section class="col col-4">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000049}</label
+                      >
+                      <label class="input">
+                        <select class="select2" id="work-id"> </select>
+                      </label>
+                    </section>
+                    <section class="col col-4">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000043}</label
+                      >
+                      <label class="input">
+                        <select class="select2" id="product-id"> </select>
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button name="submit-clean" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrackManagement_000018}
+                </button>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_ServTrackManagement_000020}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="stk-work-table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+        style="display: none;"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-user"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_ServTrackManagement_000053}</h2></span
+          >
+        </header>
+        <div>
+          <div class="jarviswidget-editbox"></div>
+          <div class="widget-body no-padding" id="stk-work-table-body">
+            <table
+              id="stk-work-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th
+                    style="display: none;"
+                    class="hasinput"
+                    style="width: 1%;"
+                  >
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th
+                    style="display: none;"
+                    class="hasinput"
+                    style="width: 1%;"
+                  >
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th
+                    style="display: none;"
+                    class="hasinput"
+                    style="width: 1%;"
+                  >
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 12%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 3%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 3%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 3%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 3%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th
+                    style="display: none;"
+                    class="hasinput"
+                    style="width: 1%;"
+                  >
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">
+                    {i18n_ServCloud_ServTrackManagement_000049}
+                  </th>
+                  <th style="display: none;">
+                    {i18n_ServCloud_ServTrackManagement_000044}
+                  </th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000045}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000025}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000080}</th>
+                  <th style="display: none;">
+                    {i18n_ServCloud_ServTrackManagement_000047}
+                  </th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000072}</th>
+                  <th style="display: none;">
+                    {i18n_ServCloud_ServTrackManagement_000073}
+                  </th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000074}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000027}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000081}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000060}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000034}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000078}</th>
+                  <th>{i18n_ServCloud_ServTrackManagement_000037}</th>
+                  <th style="display: none;">
+                    {i18n_ServCloud_ServTrackManagement_000077}
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal fade" id="modal-op" role="dialog">
+          <div class="modal-dialog">
+            <div
+              class="modal-content"
+              style="
+                width: 1500px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+              "
+            >
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+                <h4 class="modal-title">
+                  {i18n_ServCloud_ServTrackManagement_000060}
+                </h4>
+              </div>
+              <div class="modal-body">
+                <div
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-editbutton="false"
+                  data-widget-deletebutton="false"
+                  data-widget-colorbutton="false"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-edit"></i>
+                    </span>
+                    <h2>{i18n_ServCloud_ServTrackManagement_000051}</h2>
+                  </header>
+                  <div>
+                    <div class="widget-body no-padding">
+                      <form class="smart-form" novalidate="novalidate">
+                        <fieldset>
+                          <div>
+                            <div class="row">
+                              <section class="col col-6">
+                                <label class="label"
+                                  >{i18n_ServCloud_ServTrackManagement_000049} |
+                                  <span id="modal-work-note"></span
+                                ></label>
+                              </section>
+                              <section class="col col-6">
+                                <label class="label"
+                                  >{i18n_ServCloud_ServTrackManagement_000045} |
+                                  <span id="modal-product-note"></span
+                                ></label>
+                              </section>
+                            </div>
+                            <div class="row">
+                              <section class="col col-6">
+                                <label class="label"
+                                  >{i18n_ServCloud_ServTrackManagement_000025} |
+                                  <span id="modal-quantity-note"></span
+                                ></label>
+                              </section>
+                              <section class="col col-6">
+                                <label class="label"
+                                  >{i18n_ServCloud_ServTrackManagement_000080} |
+                                  <span id="modal-input-note"></span
+                                ></label>
+                              </section>
+                            </div>
+                            <div class="row" style="display: none;">
+                              <span id="modal-product-id-note"></span>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="stk-op-widget"
+                  class="jarviswidget jarviswidget-color-darken"
+                  data-widget-editbutton="false"
+                  data-widget-deletebutton="false"
+                  data-widget-togglebutton="false"
+                  data-widget-fullscreenbutton="false"
+                >
+                  <!--Attribute Tag Title Start-->
+                  <header>
+                    <span class="widget-icon">
+                      <i class="fa fa-cloud-upload"></i>
+                    </span>
+                    <h2>{i18n_ServCloud_ServTrackManagement_000061}</h2>
+                  </header>
+                  <div>
+                    <div id="stk-op-table-body" class="widget-body no-padding">
+                      <table
+                        id="stk-op-table"
+                        stk-entity-pk="pks"
+                        class="table table-striped table-bordered table-hover"
+                      >
+                        <thead>
+                          <tr>
+                            <th
+                              class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                              style="width: 20%;"
+                            >
+                              <input type="text" class="form-control" />
+                            </th>
+                            <th
+                              class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                              style="width: 20%;"
+                            >
+                              <input type="text" class="form-control" />
+                            </th>
+                            <th
+                              class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                              style="width: 20%;"
+                            >
+                              <input type="text" class="form-control" />
+                            </th>
+                            <th
+                              class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                              style="width: 20%;"
+                            >
+                              <input type="text" class="form-control" />
+                            </th>
+                            <th
+                              class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                              style="width: 20%;"
+                            >
+                              <input type="text" class="form-control" />
+                            </th>
+                            <th
+                              class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                              style="width: 20%;"
+                            >
+                              <input type="text" class="form-control" />
+                            </th>
+                          </tr>
+                          <tr>
+                            <th data-class="expand">work order</th>
+                            <th>{i18n_ServCloud_ServTrackManagement_000062}</th>
+                            <th>{i18n_ServCloud_ServTrackManagement_000035}</th>
+                            <th>{i18n_ServCloud_ServTrackManagement_000076}</th>
+                            <th>{i18n_ServCloud_ServTrackManagement_000081}</th>
+                            <th>{i18n_ServCloud_Material}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr stk-input-template hidden="hidden">
+                            <td>
+                              <input
+                                type="text"
+                                name="work_id"
+                                class="form-control"
+                                placeholder="work order"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                name="op"
+                                class="form-control"
+                                placeholder="{i18n_ServCloud_ServTrackManagement_000062}"
+                                stk-pk
+                              />
+                            </td>
+                            <td>
+                              <select
+                                style="width: 100%;"
+                                class="select2"
+                                name="process_code"
+                              ></select>
+                              <!-- <input type="text" name="process_code" class="form-control" placeholder="製程"/> -->
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                name="std_hour"
+                                class="form-control"
+                                placeholder="{i18n_ServCloud_ServTrackManagement_000076}"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                name="remark"
+                                class="form-control"
+                                placeholder="{i18n_ServCloud_ServTrackManagement_000081}"
+                              />
+                            </td>
+                            <td>
+                              <button
+                                disabled="disabled"
+                                class="btn btn-primary"
+                                name="material-btn"
+                              >
+                                {i18n_ServCloud_Material}
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="modal-work"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="remoteModalLabel"
+        data-backdrop="false"
+        data-keyboard="true"
+        style="background-color: rgba(0, 0, 0, 0.5);"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title" id="modal-work-title">
+                {i18n_ServCloud_ServTrackManagement_000036}
+              </h4>
+            </div>
+            <div class="modal-body">
+              <form
+                class="smart-form"
+                id="modal-work-form"
+                novalidate="novalidate"
+              >
+                <fieldset>
+                  <div class="row">
+                    <section class="col col-6">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000049}</label
+                      >
+                      <label class="input">
+                        <input type="text" id="modal-work-id" />
+                      </label>
+                    </section>
+                    <section class="col col-6">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000045}</label
+                      >
+                      <select id="modal-work-product" class="select2"></select>
+                    </section>
+                    <section class="col col-6">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000025}</label
+                      >
+                      <label class="input">
+                        <input type="text" id="modal-quantity" />
+                      </label>
+                    </section>
+                    <section class="col col-6">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000080}</label
+                      >
+                      <label class="input">
+                        <input type="text" id="modal-input" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="row">
+                    <section class="col col-6">
+                      <label class="label"
+                        >{i18n_ServCloud_ServTrackManagement_000081}</label
+                      >
+                      <label class="input">
+                        <textarea
+                          class="form-control"
+                          rows="5"
+                          id="modal-remark"
+                        ></textarea>
+                      </label>
+                    </section>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default" data-dismiss="modal">
+                {i18n_ServCloud_ServTrackManagement_000078}
+              </button>
+              <button id="modal-submit-btn" class="btn btn-primary">
+                {i18n_ServCloud_ServTrackManagement_000057}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="modal-material"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                ×
+              </button>
+              <h4 class="modal-title">{i18n_ServCloud_Material}</h4>
+            </div>
+            <div class="modal-body">
+              <div
+                class="jarviswidget jarviswidget-color-darken"
+                data-widget-togglebutton="false"
+                data-widget-fullscreenbutton="false"
+              >
+                <header>
+                  <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+                  <h2>{i18n_ServCloud_ServTrackManagement_000051}</h2>
+                </header>
+                <div>
+                  <div class="widget-body no-padding">
+                    <form class="smart-form" novalidate="novalidate">
+                      <fieldset>
+                        <div>
+                          <div class="row">
+                            <section class="col col-6">
+                              <label class="label"
+                                >{i18n_ServCloud_ServTrackManagement_000049} |
+                                <span id="modal-material-work-note"></span
+                              ></label>
+                            </section>
+                            <section class="col col-6">
+                              <label class="label"
+                                >{i18n_ServCloud_ServTrackManagement_000045} |
+                                <span id="modal-material-product-note"></span
+                              ></label>
+                            </section>
+                          </div>
+                          <div class="row">
+                            <section class="col col-6">
+                              <label class="label"
+                                >{i18n_ServCloud_ServTrackManagement_000062} |
+                                <span id="modal-material-op-note"></span
+                              ></label>
+                            </section>
+                            <section class="col col-6">
+                              <label class="label"
+                                >{i18n_ServCloud_ServTrackManagement_000035} |
+                                <span id="modal-material-process-note"></span
+                              ></label>
+                            </section>
+                          </div>
+                          <div class="row" style="display: none;">
+                            <span id="modal-product-id-note"></span>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="stk-material-widget"
+                class="jarviswidget jarviswidget-color-darken"
+                data-widget-togglebutton="false"
+                data-widget-fullscreenbutton="false"
+              >
+                <!--Attribute Tag Title Start-->
+                <header>
+                  <span class="widget-icon">
+                    <i class="fa fa-cloud-upload"></i>
+                  </span>
+                  <h2>{i18n_ServCloud_Material_Edit}</h2>
+                </header>
+                <div>
+                  <div class="widget-body no-padding">
+                    <table
+                      id="stk-material-table"
+                      stk-entity-pk="pks"
+                      class="table table-striped table-bordered table-hover"
+                    >
+                      <thead>
+                        <tr>
+                          <th
+                            class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                            style="width: 25%;"
+                          >
+                            <input type="text" class="form-control" />
+                          </th>
+                          <th
+                            class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                            style="width: 25%;"
+                          >
+                            <input type="text" class="form-control" />
+                          </th>
+                          <th
+                            class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                            style="width: 25%;"
+                          >
+                            <input type="text" class="form-control" />
+                          </th>
+                          <th
+                            class="hasinput col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                            style="width: 25%;"
+                          >
+                            <input type="text" class="form-control" />
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>{i18n_ServCloud_Material_Num}</th>
+                          <th>{i18n_ServCloud_Specification}</th>
+                          <th>{i18n_ServCloud_Used_Quantity}</th>
+                          <th>{i18n_ServCloud_Remark}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr stk-input-template hidden="hidden">
+                          <td>
+                            <select
+                              name="material_id"
+                              class="form-control"
+                              stk-getdata-source="db"
+                              stk-getdata-name="a_storage_material"
+                              stk-getdata-column-value="material_id"
+                              stk-getdata-column-text="material_id"
+                              stk-pk
+                            ></select>
+                          </td>
+                          <td>
+                            <textarea
+                              name="material_desc"
+                              type="text"
+                              class="form-control"
+                              placeholder="{i18n_ServCloud_Specification}"
+                              cols="20"
+                              rows="5"
+                              disabled
+                            ></textarea>
+                          </td>
+                          <td>
+                            <input
+                              name="use_qty"
+                              type="text"
+                              class="form-control"
+                              placeholder="{i18n_ServCloud_Used_Quantity}"
+                            />
+                          </td>
+                          <td>
+                            <textarea
+                              name="remark"
+                              type="text"
+                              class="form-control"
+                              placeholder="{i18n_ServCloud_Remark}"
+                              cols="20"
+                              rows="5"
+                            ></textarea>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<script>
+  window.importPageScript()
+</script>

@@ -1,0 +1,24 @@
+{
+  "app": {
+    "id": "ServtrackSimulator",
+    "name": "i18n_ServCloud_ServTrack_Simulator",
+    "type": 1,
+    "description": "ServtrackSimulator",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "50_basic_data_import",
+      "name": "i18n_ServCloud_50_Basic_Data_Import"
+    },
+    {
+      "id": "60_work_data_import",
+      "name": "i18n_ServCloud_60_Work_Data_Import"
+    },
+    {
+      "id": "70_work_tracking_data_import",
+      "name": "i18n_ServCloud_70_Work_Tracking_Data_Import"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

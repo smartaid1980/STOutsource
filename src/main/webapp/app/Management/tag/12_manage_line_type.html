@@ -1,0 +1,308 @@
+<!-- widget grid -->
+<section id="widget-grid" class="">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken jarviswidget-sortable"
+        id="wid-id-0"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Manage_Line_Type}</h2></span
+          >
+          <!--<ul id="widget-tab-1" class="nav nav-tabs pull-right">
+      <li class="active">
+        <a data-toggle="tab" id="t1" href="#hr1"> <i class="fa fa-pencil-square-o"></i> <span
+            class="hidden-mobile hidden-tablet">產線類別</span> </a>
+      </li>
+      <!--<li>
+        <a data-toggle="tab" href="#hr2"> <i class="fa fa-pencil-square-o"></i> <span class="hidden-mobile hidden-tablet">編輯產線</span> </a>
+      </li>
+      <li>
+        <a data-toggle="tab" id="t2" href="#hr2"> <i class="fa fa-lg fa-arrow-circle-o-down"></i> <span
+            class="hidden-mobile hidden-tablet">新增</span></a>
+      </li>
+    </ul> -->
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <div class="tab-content">
+              <!--<div class="tab-pane fade in active" id="hr1">-->
+              <table
+                id="line-type-table"
+                stk-entity-pk="type_id"
+                class="table table-striped table-bordered table-hover"
+                width="100%"
+              >
+                <thead>
+                  <tr>
+                    <th class="hasinput" style="width: 10%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 10%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                    <th class="hasinput" style="width: 80%;">
+                      <input type="text" class="form-control" />
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>產線類別</th>
+                    <th>製程數</th>
+                    <th>製程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr stk-input-template hidden="hidden">
+                    <td>
+                      <input
+                        type="text"
+                        name="type_name"
+                        class="form-control"
+                        placeholder="產線類別"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        name="op_num"
+                        class="form-control spinner"
+                        value="1"
+                        min="1"
+                        placeholder="製程數"
+                      />
+                    </td>
+                    <td>
+                      <div name="op">
+                        <table
+                          id="inbox-table"
+                          class="table table-striped table-hover"
+                        >
+                          <thead>
+                            <tr>
+                              <th class="text-center">#</th>
+                              <th class="text-center">製程名稱</th>
+                              <th class="text-center">製程描述</th>
+                              <th class="text-center">機台數量</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="opTr">
+                              <td style="width: 15%;">
+                                <span class="label label-default op_seq"
+                                  >1</span
+                                >
+                              </td>
+                              <td style="width: 30%;">
+                                <input
+                                  class="op_name"
+                                  type="text"
+                                  placeholder="製程名稱"
+                                />
+                              </td>
+                              <td style="width: 40%;">
+                                <textarea class="op_desc"></textarea>
+                              </td>
+                              <td style="width: 15%;">
+                                <input
+                                  class="spinner machine_num"
+                                  type="text"
+                                  value="1"
+                                  min="1"
+                                  placeholder="機台數量"
+                                />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--</div>
+        <div class="tab-pane fade" id="hr2">
+          <div class="widget-body ">
+            <form id="new-type-form" class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-10">
+                    <div id="bootstrap-wizard-1" class="col-sm-12">
+                      <div class="form-bootstrapWizard ">
+                        <ul class="bootstrapWizard form-wizard text-center">
+                          <li class="active" data-target="#step1">
+                            <a href="#tab1" data-toggle="tab"> <span class="step">1</span> <span
+                                class="title">Download</span>
+                            </a>
+                          </li>
+                          <li data-target="#step2">
+                            <a href="#tab2" data-toggle="tab"> <span class="step">2</span> <span
+                                class="title">Upload</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab1">
+
+
+                    <h3><strong>Step 1 </strong> - Download line-machine csv</h3>
+
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-flag fa-lg fa-fw"></i></span>
+                            <select name="country" class="form-control input-lg" id="type-selector">
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <button class="btn btn-default btn-lg" id="downloadBtn">
+                          <i class="fa fa-download"></i> 提交
+                        </button>
+                      </div>
+                    </div>
+                    <br>
+                  </div>
+                  <div class="tab-pane" id="tab2">
+                    <br>
+
+                    <div class="widget-body">
+                      <h3><strong>Step 2</strong> - Upload</h3>
+
+                      <div class="row">
+                        <div class="widget-body">
+                          <div class="dropzone dz-clickable" id="mydropzone" name="file">
+                            <div class="dz-default dz-message">
+                              <span><span class="text-center"><span
+                                  class="font-lg visible-xs-block visible-sm-block visible-lg-block"><span
+                                  class="font-lg"><i class="fa fa-caret-right text-danger"></i> Drop files <span
+                                  class="font-xs">to upload</span></span><span>&nbsp;&nbsp;<h4
+                                  class="display-inline"> (Or Click)</h4></span></span></span></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <footer>
+                          <button class="btn btn-primary" id="uploadBtn">
+                            <i class="fa fa-upload"></i> Add !
+                          </button>
+                        </footer>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>-->
+            </div>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+      <div
+        class="jarviswidget jarviswidget-color-darken jarviswidget-sortable"
+        id="wid-id-11"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>產線</h2></span
+          >
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <!--<div class="jarviswidget-editbox"></div>-->
+          <div id="line-table-widget" class="widget-body no-padding">
+            <table
+              id="line-table"
+              stk-entity-pk="line_id"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 80%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>產線類別</th>
+                  <th>產線名稱</th>
+                  <th>產線製程機台配置</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <select
+                      name="type_name"
+                      class="form-control custom-scroll"
+                      stk-api="api/lineType/typeList"
+                      stk-handler="handler"
+                    ></select>
+                  </td>
+                  <td>
+                    <input
+                      name="line_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="產線名稱"
+                    />
+                  </td>
+                  <td>
+                    <div name="details" id="line-detail"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- end widget content -->
+        </div>
+        <!-- end widget div -->
+      </div>
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+<style type="text/css">
+  .no-close .ui-dialog-titlebar-close {
+    display: none;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

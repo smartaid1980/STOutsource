@@ -1,0 +1,20 @@
+{
+  "app": {
+    "id": "HuangLiangToolUse",
+    "name": "領刀單管理",
+    "type": 1,
+    "description": "領刀單管理",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_mp_tool_use_management",
+      "name": "量產類領刀單管理"
+    },
+    {
+      "id": "02_sp_tool_use_management",
+      "name": "其他類領刀單管理"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

@@ -1,0 +1,864 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- QUERY WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+          <!-- <h2>看板</h2> -->
+        </header>
+        <div>
+          <div class="widget-body">
+            <div id="gauge-zone" class="mode1">
+              <div class="select">
+                <select id="order">
+                  <option value="delay">逾時</option>
+                  <option value="output">產量</option>
+                  <option value="date">交期</option>
+                </select>
+              </div>
+              <div id="gauge-container"></div>
+            </div>
+            <div id="decision" class="mode1">
+              <div class="zone">
+                <div id="timing-diagram-zone"></div>
+                <div id="decision-zone">
+                  <button id="confirm" class="btn">確認</button>
+                </div>
+              </div>
+              <div class="zone">
+                <div id="flot-zone">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div id="info" class="mode1Init hide">無決策方案</div>
+            <div id="alert-zone" class="sr-card mode2">
+              <div class="txt-lg title">警示訊息</div>
+              <!-- <div class="txt-sm">警報 / 目前發生異常,需要進行決策處理</div> -->
+              <div class="body"></div>
+            </div>
+            <div id="product-zone" class="sr-card mode2">
+              <div class="txt-lg title">關聯產品</div>
+              <div class="pull-right pie-chart-info">
+                <div class="target point"></div>
+                <span class="target txt-sm point-name">預期產量</span>
+                <!-- <span class="txt-sm">/</span> -->
+                <div class="output point"></div>
+                <span class="output txt-sm point-name">實際產量</span>
+              </div>
+              <span id="pie-chart-value-info" class="pie-chart-value txt-sm"
+                >實際產量 / 預期產量</span
+              >
+              <!-- <div class="txt-sm">產品進度  /  目前生產進度落後的產品一覽表(目前生產數量/預計生產數量)</div> -->
+              <div class="body"></div>
+            </div>
+            <div id="reason-zone" class="sr-card mode2">
+              <div class="txt-lg title">原因分析</div>
+              <!-- <div class="txt-sm">逾期原因 / 造成逾期各項原因分析一覽</div> -->
+              <!-- <div id="reason-zone-title">逾期原因分析</div> -->
+              <div class="body"></div>
+              <!-- <div id="reason-zone-body"> -->
+              <!-- <div id="reason-title" class="block-title">原因列表</div> -->
+              <!-- <div id="reason-body"></div> -->
+              <!-- </div> -->
+            </div>
+            <div id="ai-zone" class="sr-card mode2">
+              <div class="txt-lg title">決策建議</div>
+              <!-- <div class="txt-sm"></div> -->
+              <div class="body">
+                <div class="decision-info">
+                  <div class="txt-sm">
+                    原因類型：<span class="txt-sm type"></span>
+                  </div>
+                  <div class="txt-sm dim right">
+                    <span class="txt-sm"></span>
+                  </div>
+                  <div class="txt-sm">
+                    主要原因：<span class="txt-sm reason"></span>
+                  </div>
+                </div>
+                <div class="decision"></div>
+              </div>
+              <div class="txt-lg title">方針選定結果</div>
+              <!-- <div class="txt-sm"></div> -->
+              <div class="body">
+                <div class="txt-sm result"></div>
+              </div>
+              <!-- <div class="block-title">AI決策建議</div> -->
+              <!-- <div>原因類型：<span class="type"></span></div> -->
+              <!-- <div>主要原因：<span class="reason"></span></div> -->
+              <!-- <hr style="width: 90%; margin: 10px auto 16px;"> -->
+              <!-- <div class="decision"></div> -->
+              <!-- <hr style="width: 90%; margin: 16px auto 10px;"> -->
+              <!-- <div class="block-title">方針選定結果</div> -->
+              <!-- <div class="result"></div> -->
+              <!-- <div class="dim">決策維度：<span></span></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- QUERY WIDGET END -->
+  </div>
+  <!-- end row -->
+</section>
+<link rel="stylesheet" href="app/Dashboard/css/situation_room_4k.css" />
+<style>
+  .mode1,
+  .mode2 {
+    display: none;
+  }
+
+  #jarviswidget-fullscreen-mode .jarviswidget > div {
+    overflow: hidden;
+  }
+
+  .jarviswidget > div {
+    background-color: rgb(41, 42, 46) !important;
+    padding: 10px 0;
+    color: white;
+  }
+
+  .jarviswidget .widget-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0px;
+  }
+
+  .jarviswidget .widget-body > div.mode1 {
+    border: 0.15rem solid rgba(111, 112, 112, 0.84);
+    min-height: 100%;
+    border-radius: 3px;
+    margin: 5px;
+    /* flex: 0 0 49%; */
+  }
+
+  select {
+    box-shadow: none;
+    border: 0 !important;
+    background: rgba(77, 77, 77, 0.62);
+  }
+
+  .select {
+    position: relative;
+    display: flex;
+    width: 8rem;
+    height: 3.8rem;
+    /* line-height: 3; */
+    overflow: hidden;
+    border-radius: 0.25rem;
+  }
+
+  select {
+    flex: 1;
+    padding: 0 0.5rem;
+    color: rgb(60, 172, 230);
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.8rem 1rem;
+    background: #626262;
+    cursor: pointer;
+    transition: 0.25s all ease;
+    pointer-events: none;
+  }
+
+  .select:hover::after {
+    color: #2b90f8;
+  }
+
+  option {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .jarviswidget .widget-body > div.mode1 {
+    flex-basis: 98%;
+    /* display: flex; */
+  }
+
+  .select {
+    margin: 5px;
+  }
+
+  #gauge-zone {
+    flex-direction: column;
+  }
+
+  #gauge-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #gauge-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 19%;
+    padding: 5px;
+  }
+
+  .gauge {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px;
+    width: 93%;
+    border: 2px solid #b8b8b8e3;
+    border-radius: 5px;
+  }
+
+  .gauge:hover {
+    cursor: pointer;
+    /* background: #4c4d5175; */
+    border-color: rgba(92, 170, 219, 0.76);
+  }
+
+  .gauge.clicked {
+    /* background: #4c4d5175; */
+    border-color: rgb(92, 170, 219);
+    box-shadow: 0px 0px 9px 0px rgb(92, 170, 219);
+  }
+
+  .gauge-chart {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .gauge-name {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: -8px;
+    padding-bottom: 10px;
+  }
+
+  .gauge-decision-icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 3px 9px;
+    border: 2px solid rgb(242, 47, 47);
+    border-radius: 18px;
+    background: rgba(255, 133, 158, 0.34);
+    /* font-size: 1.1em; */
+  }
+
+  .gauge-decision-icon.made {
+    border-color: #b0a9a9;
+    color: #b0a9a9;
+    background: rgba(205, 176, 182, 0.34);
+  }
+
+  #timing-diagram-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .zone {
+    width: 50%;
+  }
+
+  #decision-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 10px 16px;
+    padding: 5px;
+    border: 2px solid rgb(75, 75, 77);
+    background-color: rgb(55, 55, 57);
+    border-radius: 8px;
+    letter-spacing: 0.1rem;
+    position: relative;
+  }
+
+  #decision-zone > div {
+    display: flex;
+    padding: 5px;
+  }
+
+  .decision-radio {
+    flex-basis: 30%;
+  }
+
+  .decision-info {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  [type='radio']:checked,
+  [type='radio']:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+
+  [type='radio']:checked + label,
+  [type='radio']:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+  }
+
+  [type='radio']:checked + label:before,
+  [type='radio']:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(125, 123, 128);
+    border-radius: 100%;
+    background: rgb(48, 49, 51);
+  }
+
+  [type='radio']:checked + label:after,
+  [type='radio']:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: rgb(120, 203, 237);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  [type='radio']:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  [type='radio']:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  #confirm {
+    border: 2px solid rgb(76, 75, 80);
+    background-color: rgb(61, 61, 63);
+  }
+
+  #confirm:hover {
+    color: rgb(92, 170, 219);
+  }
+
+  #confirm:active {
+    color: rgb(120, 203, 237);
+  }
+
+  #confirm:focus {
+    color: rgb(120, 203, 237);
+  }
+
+  #flot-zone {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #flot-zone > div {
+    width: 90%;
+    height: 80%;
+  }
+
+  .flot-tick-label.tickLabel,
+  .legendLabel {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .on-time {
+    color: rgb(68, 219, 138);
+  }
+
+  #info {
+    justify-content: center;
+    font-size: 5rem;
+  }
+
+  .mode2 {
+    border: none !important;
+    /* background-color: #6f7072; */
+    flex-direction: column;
+  }
+
+  #alert-zone,
+  #reason-zone {
+    flex-basis: 32%;
+  }
+
+  #alert-zone {
+    border: none;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* padding: 10px; */
+  }
+
+  #alert-zone > .body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #reason-zone {
+    /* flex-direction: column; */
+  }
+
+  #reason-zone-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 5px 10px;
+  }
+
+  #reason-zone-body {
+    /* border: 0.15rem solid rgba(111, 112, 112, 0.84); */
+    /* border-radius: 3px; */
+  }
+
+  #reason-zone-body > * {
+    margin: 5px 10px 15px;
+  }
+
+  #reason-zone-body span {
+    font-size: 3rem;
+  }
+
+  .block-title {
+    /* font-size: 4rem; */
+    font-weight: bold;
+  }
+
+  #reason-body > div {
+    /* margin: 12px 0; */
+  }
+
+  #product-zone,
+  #ai-zone {
+    flex-basis: 65%;
+  }
+
+  #product-zone {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 20px 115px; */
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+
+  #product-zone > .body {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    flex: auto;
+  }
+
+  #ai-zone {
+    flex-direction: column;
+    position: relative;
+  }
+
+  #ai-zone > * {
+    /* margin: 0 10px; */
+  }
+
+  #ai-zone > .block-title {
+    /* margin: 5px 10px; */
+  }
+
+  #ai-zone > *:not(.block-title) {
+    /* font-size: 3rem; */
+  }
+
+  #ai-zone .decision-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #ai-zone .decision-info > * {
+    flex-basis: 50%;
+    margin-bottom: 0.2;
+  }
+
+  #ai-zone .decision-info .right {
+    text-align: right;
+  }
+
+  .alert-box {
+    padding: 0.2rem 0;
+    margin: 0.3rem 0;
+    /* border: 1px solid rgb(255,100,131); */
+    border-radius: 0.3rem;
+    background-color: rgba(156, 36, 63, 0.23);
+    /* font-size: 4rem; */
+    cursor: pointer;
+    animation: fade 0.2s linear;
+    transition: all 0.2s;
+    color: #ffffff61;
+    width: 100%;
+  }
+
+  .alert-box:hover {
+    background-color: rgba(169, 3, 41, 0.4);
+    color: #ffffff80;
+    /* background-color: rgb(134, 91, 109); */
+  }
+
+  .alert-box.active {
+    background-color: rgb(169, 3, 41, 0.9);
+    color: #fff;
+  }
+
+  .point {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 0 !important;
+  }
+
+  .pie-chart-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+
+  #pie-chart-value-info {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .pie-chart-info > .output.point {
+    background-color: #2e8b57;
+  }
+
+  .pie-chart-info > .target.point {
+    background-color: #ffa500;
+  }
+
+  .pie-chart-info > * {
+    margin: 1vh;
+  }
+
+  .reason-group {
+    margin-bottom: 1rem;
+  }
+
+  .desc {
+    margin-top: 1rem;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .progress {
+    background-color: #61616152;
+    box-shadow: none;
+    margin-bottom: 4px;
+  }
+
+  .progress .progress-bar {
+    background-image: none;
+  }
+
+  .progress span {
+    position: absolute;
+    margin-top: 1%;
+  }
+
+  #ai-zone > .dim {
+    /* position: absolute; */
+    /* right: 0; */
+    margin: 5px 10px;
+  }
+
+  .decision {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .decision > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.1rem 0 0.7rem 0;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    background: #ffffff0a;
+    border-radius: 0.7rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    /* border-top: 1px solid #cecece; */
+    /* border-bottom: 1px solid #cecece; */
+    border: 0.13rem solid #4576884a;
+    color: #fff4;
+    font-weight: bolder;
+  }
+
+  .decision > div:hover {
+    /* background: #19565d; */
+  }
+
+  .decision > div.active {
+    background: #027516;
+    color: #ffffff;
+    border: 0.13rem solid #94ff5b;
+    font-weight: bolder;
+  }
+
+  .sr-card {
+    height: 25.25rem;
+  }
+
+  /* .decision>div.left-border::before {
+    background-color: #cecece;
+    bottom: 50%;
+    content: '';
+    display: block;
+    height: 0.5vh;
+    left: 0;
+    position: absolute;
+    transform: translate(0, 50%);
+    width: 0.1vh;
+  } */
+
+  .decision .decision-btn {
+    /* background-color: rgb(73, 193, 191); */
+    /* font-size: 3rem; */
+  }
+
+  hr.vertical {
+    height: 97%;
+    border-top: 0px;
+    border-right: 1px solid;
+    margin: 0;
+  }
+
+  .easy-pie-chart-zone {
+    margin: 0 0.9rem;
+    flex-basis: 20%;
+    text-align: center;
+  }
+
+  .pie-chart-name {
+    display: block;
+  }
+
+  .outter {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 0;
+    /* position-relative d-inline-flex align-items-center justify-content-center */
+  }
+
+  .inner {
+    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position-relative position-absolute pos-left pos-right pos-top pos-bottom d-flex align-items-center justify-content-center */
+  }
+
+  .js-percent {
+    /* d-flex align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom fw-300 fs-xs */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* font-size: 3.5rem; */
+    font-weight: 300;
+  }
+
+  .pie-chart-value {
+    padding: 0.5rem;
+    border-radius: 10rem;
+    background-color: #16152394;
+    color: #fff7;
+    font-weight: 900;
+    margin-top: 1rem !important;
+    display: block;
+    margin: 0 1rem;
+  }
+
+  .pie-chart-value.alarm-value {
+    background-color: #8b0727c9;
+  }
+
+  @media (min-width: 3840px) {
+    .widget-body span,
+    .widget-body button,
+    .widget-body select,
+    .widget-body text,
+    .widget-body div {
+      /* font-size: 3.8rem; */
+    }
+
+    .widget-body option {
+      font-size: 3.8rem;
+    }
+
+    .select {
+      width: 15rem;
+      height: 5rem;
+    }
+
+    .select::after {
+      padding: 0.3rem 1rem;
+    }
+
+    #confirm {
+      font-size: 3.8rem;
+    }
+
+    .flot-tick-label.tickLabel,
+    .legendLabel {
+      font-size: 3.8rem;
+    }
+
+    .flot-y-axis .tickLabel {
+      left: -10px !important;
+    }
+
+    .legendColorBox > div > div {
+      border-top-width: 0.5rem !important;
+      border-right-width: 0.5rem !important;
+      border-bottom-width: 0.5rem !important;
+      border-left-width: 0.5rem !important;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .legend table {
+      top: -26px !important;
+    }
+
+    #info {
+      font-size: 10rem;
+    }
+
+    [type='radio']:checked + label:before,
+    [type='radio']:not(:checked) + label:before {
+      width: 28px;
+      height: 28px;
+    }
+
+    [type='radio']:checked + label > span,
+    [type='radio']:not(:checked) + label > span {
+      padding-left: 15px;
+    }
+
+    [type='radio']:checked + label:after,
+    [type='radio']:not(:checked) + label:after {
+      width: 16px;
+      height: 16px;
+      top: 6px;
+      left: 6px;
+    }
+
+    .mode2 {
+      /* margin: 14px !important; */
+      /* border-radius: 16px !important; */
+    }
+
+    #alert-zone .alert-box {
+      /* font-size: 5rem; */
+    }
+
+    #product-zone .js-percent {
+      /* font-size: 6rem; */
+    }
+
+    #reason-zone-title {
+      /* font-size: 10rem; */
+    }
+
+    #reason-zone-body span {
+      /* font-size: 5rem; */
+    }
+
+    #ai-zone .block-title {
+      /* font-size: 10rem; */
+    }
+
+    .decision > div {
+      /* border-top-width: 3px; */
+      /* border-bottom-width: 3px; */
+      /* padding: 50px 15px; */
+    }
+
+    .decision > div.left-border::before {
+      /* width: 3px; */
+    }
+
+    .progress {
+      height: 75px;
+      margin-bottom: 0.4rem;
+    }
+
+    .title {
+      padding: 5px;
+      border-left-width: 5px;
+    }
+
+    .decision > div.left-border::before {
+      /* height: 50px; */
+    }
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

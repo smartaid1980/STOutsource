@@ -1,0 +1,93 @@
+	zh_tw	zh	en
+i18n_ServCloud_Utilization_Statistics	稼動應用統計	稼动应用统计	Utilization Statistics
+i18n_ServCloud_Utilization_by_Machine	各機台日稼動報表	各机台日稼动报表	Utilization by Machine
+i18n_ServCloud_Downtime_Report	無效時間分析	无效时间分析	Downtime Report
+i18n_ServCloud_Employee_Utilization_by_Machine	各機台顧車人員稼動率查詢	各机台​​顾车人员稼动率查询	Employee Utilization by Machine
+i18n_ServCloud_Product_Utilization	產品稼動率查詢	产品稼动率查询	Product Utilization
+i18n_ServCloud_Quality_Utilization_by_Machine	各機台品質稼動率	各机台​​品质稼动率	Quality Utilization by Machine
+i18n_ServCloud_Quality_Utilization_by_Product	產品品質稼動率	产品品质稼动率	Quality Utilization by Product
+i18n_ServCloud_Calibration_Record_by_Machine	各機台校車紀錄查詢	各机台校车纪录查询	Calibration Record by Machine
+i18n_ServCloud_Calibration_Record_by_Product	產品校車紀錄查詢	产品校车纪录查询	Calibration Record by Product
+i18n_ServCloud_Employee_Performance	顧車人員績效查詢	顾车人员绩效查询	Employee Performance
+i18n_ServCloud_Customer_Sample_Analysis	客戶樣本分析	客户样本分析	Customer Sample Analysis
+i18n_ServCloud_Utilization_of_Factory_Affairs_Department 	廠務部稼動紀錄表查詢	厂务部稼动纪录表查询	Utilization of Factory Affairs Department
+i18n_ServCloud_Functions	功能	功能	Functions
+i18n_ServCloud_Bar_Chart	長條圖	长条图	Bar Chart
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Condition
+i18n_ServCloud_Query_Result	搜尋結果	搜寻结果	Query Result
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start Date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Mode	報表形式	报表形式	Mode
+i18n_ServCloud_detail	明細	明细	Detail
+i18n_ServCloud_day	日期	日期	Day
+i18n_ServCloud_class	班次	班次	Shift
+i18n_ServCloud_Shift_Time	班次時間	班次时间	Shift Time
+i18n_ServCloud_Natural_Day	自然天	自然天	Natural Day
+i18n_ServCloud_Show_Demo_Data	顯示Demo資料	显示Demo资料	Show Demo Data
+i18n_ServCloud_Submit	提交	提交	Submit
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Class	班次	班次	Shift
+i18n_ServCloud_Program	程式	程式	Program
+i18n_ServCloud_Process_Program	加工程式	加工程式	Process Program
+i18n_ServCloud_Power_Time	通電時間	通电时间	Power Time
+i18n_ServCloud_Operation_Time	運轉時間	运转时间	Operation Time
+i18n_ServCloud_Cutting_Time	切削時間	切削时间	Cutting Time
+i18n_ServCloud_No_Work_Time	無效時間	无效时间	Downtime
+i18n_ServCloud_Cutting_Operation	切削時間/運轉時間	切削时间/运转时间	Cutting/Operation
+i18n_ServCloud_Utilization	稼動率	稼动率	Utilization
+i18n_ServCloud_Effective_Utiliziation	有效稼動率	有效稼动率	Effective Utiliziation
+i18n_ServCloud_Filter	過濾	过滤	Filter
+i18n_ServCloud_Employee	人員	人员	Employee
+i18n_ServCloud_Downtime_Code	閒置代碼	闲置代码	Downtime Code
+i18n_ServCloud_Downtime_Factor	閒置原因	闲置原因	Downtime Factor
+i18n_ServCloud_Time(minute)	時間(分)	时间(分)	Time(minute)
+i18n_ServCloud_Proportion	占比	占比	Proportion
+
+i18n_ServCloud_Employee_Id	員編	员编	Employee Id
+i18n_ServCloud_Employee_Name	人員姓名	人员姓名	Employee Name
+i18n_ServCloud_Order_Id	訂單號碼	订单号码	Order Id
+i18n_ServCloud_Mnagement_Id	管編	管编	Mnagement Id
+i18n_ServCloud_Multi_process	多次製程	多次制程	Multi-process
+i18n_ServCloud_Actual_Partcount	實際產量	实际产量	Actual Partcount
+i18n_ServCloud_Examination_Defectives	例檢不良品	例检不良品	Examination Defectives
+i18n_ServCloud_Examination_Goods	例檢良品	例检良品	Examination Goods
+i18n_ServCloud_Quality_Utilization_of_Examination	例檢品質稼動率	例检品质稼动率	Quality Utilization of Examination
+i18n_ServCloud_QC_Partcount	QC總數量	QC总数量	QC Partcount
+i18n_ServCloud_QC_Defectives	QC不良品	QC不良品	QC Defectives
+i18n_ServCloud_QC_Goods	QC後良品數量	QC后良品数量	QC Goods
+i18n_ServCloud_Total_Quality_Utilization	總品質稼動率	总品质稼动率	Total Quality Utilization
+
+
+i18n_ServCloud_ACHB_Utiliziation	ACHB稼動率	ACHB稼动率	ACHB Utiliziation
+i18n_ServCloud_Actions	操作	操作	Actions
+i18n_ServCloud_Product_Code	產品代碼	产品代码	Product Code
+i18n_ServCloud_Customer_Name	顧客名稱	顾客名称	Customer Name
+i18n_ServCloud_Pie_Chart	圓餅圖	圆饼图	Pie Chart
+i18n_ServCloud_Customer_Id	顧客編號	顾客编号	Customer Id
+i18n_ServCloud_Product_Id	產品編號	产品编号	Process Id
+i18n_ServCloud_11_Amd	11 AMD	11 AMD	11 AMD
+i18n_ServCloud_Amd	AMD	AMD	AMD
+i18n_ServCloud_Module	模組	模组	Module
+i18n_ServCloud_Piece	零件	零件	Piece
+i18n_ServCloud_Work_Seq	工序	工序	Sequence
+i18n_ServCloud_60_Adapter_Params	60 擷取參數	60 撷取参数	50 Fetch Parameters
+i18n_ServCloud_Adapter_Params	擷取參數	撷取参数	Fetch Parameters
+i18n_ServCloud_Adapter_Params_Name	參數名稱	参数名称	Parameter Name
+i18n_ServCloud_Adapter_Params_RW	讀/寫	读/写	Read/Writer
+i18n_ServCloud_Device_Status_Stack_Chart	機台狀態歷史堆疊圖	机台状态历史堆叠图	Machine Status History Stack Chart
+i18n_ServCloud_Query_Date	查詢日期	查询日期	Query Date
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_Alarm_Code	警報代碼	警报代码	Alarm Code
+i18n_ServCloud_Alarm_Code_Definition	警報代碼說明	警报代码说明	Alarm Code Definition
+i18n_ServCloud_Start_Time	開始時間	开始时间	Start Time
+i18n_ServCloud_End_Time	結束時間	结束时间	End Time
+i18n_ServCloud_Duration	持續時間	持续时间	Duration
+i18n_ServCloud_partCount	完成量	完成量	Part Time
+i18n_ServCloud_Hint	提示	提示	Hint
+i18n_ServCloud_HintDetail	只能登打一次，請確認後再儲存	只能登打一次，请确认后再储存	Can only edit once, please check before save.
+i18n_ServCloud_Hint_Text	同一產品加工之間之閒置，若<30分鐘則併入加工狀態，並於表格中以"加工(閒置)"表示	同一产品加工之间之闲置，若<30分钟则并入加工状态，并于表格中以"加工(闲置)"表示	The idle between processing for the same product will be merged as processing in chart and labeled as "加工(閒置)"  in table.
+i18n_ServCloud_Cnc_Brand	控制器廠牌	控制器厂牌	Cnc Brand
+i18n_ServCloud_target	目標	目标	Target
+i18n_ServCloud_General	一般	一般	Gen
+i18n_ServCloud_Effective	有效	有效	Eff

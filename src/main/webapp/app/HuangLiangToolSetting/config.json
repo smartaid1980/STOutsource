@@ -1,0 +1,28 @@
+{
+  "app": {
+    "id": "HuangLiangToolSetting",
+    "name": "刀具基本設定",
+    "type": 1,
+    "description": "刀具基本設定",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_tool_type_management",
+      "name": "刀具類型設定"
+    },
+    {
+      "id": "02_tool_location_management",
+      "name": "刀具儲位設定"
+    },
+    {
+      "id": "03_tool_supplier_management",
+      "name": "刀具廠商設定"
+    },
+    {
+      "id": "04_tool_management",
+      "name": "刀具設定"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

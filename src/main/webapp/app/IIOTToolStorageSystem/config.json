@@ -1,0 +1,15 @@
+{
+  "app": {
+    "id": "IIOTToolReport",
+    "name": "嚙踝蕭嚙踝�蕭赯芷嚙�",
+    "type": 1,
+    "description": "",
+    "version": "1.0"
+  },
+  "functions": [
+    { "id": "01_tool_used_resume", "name": "01_嚙踝蕭嚙踝�頛魂��漱憸�" },
+    { "id": "02_tool_tracking", "name": "02_����撌亦����" },
+    { "id": "01_tool_used_resume", "name": "01_刀具使用履歷" }
+  ],
+  "tags": ["20140918000002"]
+}

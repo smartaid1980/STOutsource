@@ -1,0 +1,46 @@
+<record>
+    <params>
+        <param name="G_SYSM()" type="Array">
+            <contents>
+                <content fetchtime="20121015141019760" elapsed_sec="0.3301265">
+					<values type="Array">
+						<value fromType="STR" toType="STR">CNC basic software</value>
+						<value fromType="STR" toType="STR">CNC option software A2</value>
+						<value fromType="STR" toType="STR">BOOT Software</value>
+						<value fromType="STR" toType="STR">PMC system software 1</value>
+						<value fromType="STR" toType="STR">PPMC ladder 1 (first ladder)</value>
+						<value fromType="STR" toType="STR">1st spindle software</value>
+						<value fromType="STR" toType="STR">Graphic software 1</value>
+						<value fromType="STR" toType="STR">Graphic software 4(font dat)</value>
+						<value fromType="STR" toType="STR">Network management</value>
+						<value fromType="STR" toType="STR">Embedded Ethernet</value>
+					</values>
+					<values type="Array">
+						<value fromType="STR" toType="STR">----</value>
+						<value fromType="STR" toType="STR">----</value>
+						<value fromType="STR" toType="STR">60W1</value>
+						<value fromType="STR" toType="STR">40A0</value>
+						<value fromType="STR" toType="STR"></value>
+						<value fromType="STR" toType="STR"></value>
+						<value fromType="STR" toType="STR">60V8</value>
+						<value fromType="STR" toType="STR">60VE</value>
+						<value fromType="STR" toType="STR">656F</value>
+						<value fromType="STR" toType="STR">656E</value>
+					</values>
+					<values type="Array">
+						<value fromType="STR" toType="STR">----</value>
+						<value fromType="STR" toType="STR">----</value>
+						<value fromType="STR" toType="STR">0001</value>
+						<value fromType="STR" toType="STR">03.0</value>
+						<value fromType="STR" toType="STR"></value>
+						<value fromType="STR" toType="STR"></value>
+						<value fromType="STR" toType="STR">03.0</value>
+						<value fromType="STR" toType="STR">0001</value>
+						<value fromType="STR" toType="STR">0002</value>
+						<value fromType="STR" toType="STR">0003</value>
+					</values>
+                </content>
+            </contents>
+        </param>
+    </params>
+</record>

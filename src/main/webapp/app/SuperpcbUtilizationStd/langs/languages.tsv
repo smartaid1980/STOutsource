@@ -1,0 +1,149 @@
+	zh_tw	zh	en
+i18n_ServCloud_UtilizationStd	稼動管理	稼动管理	Utilization Rate Analysis
+i18n_ServCloud_Functions	功能	功能	Functions
+i18n_ServCloud_DailyUtilization	日稼動	日稼动	Daily Utilization
+i18n_ServCloud_DailyUtilization_Anko	日稼動率報表(PLC)	日稼动率报表(PLC)	Daily Utilization (PLC)
+i18n_ServCloud_05_Alarm_Message	05 警示訊息	05 警示讯息	05 Alarm Message
+i18n_ServCloud_10_DailUtilization	10 日稼動率報表	10 日稼动率报表	01 Daily Utilization
+i18n_ServCloud_10_DailUtilization_Enzoy	日稼動率報表	日稼动率报表	Daily Utilization
+i18n_ServCloud_Monthly_Utilization	月稼動率報表	月稼动率报表	Monthly Utilization
+i18n_ServCloud_20_Monthly_Utilization	20 月稼動率報表	20 月稼动率报表	02 Monthly Utilization
+i18n_ServCloud_20_Monthly_Utilization_Enzoy	月稼動率報表	月稼动率报表	Monthly Utilization
+i18n_ServCloud_Yearly_Utilization	年稼動率報表	年稼动率报表	Yearly Utilization
+i18n_ServCloud_25_Yearly_Utilization	25 年稼動率報表 25 年稼动率报表	25 Yearly Utilization
+i18n_ServCloud_40_Customer_Management	40 客戶及品名設定	40 客户及品名设定	40 Customer Management
+i18n_ServCloud_Product_Management	品名及加工程式對應設定	品名及加工程式对应设定	Product Management
+i18n_ServCloud_50_Product_Management	50 品名及加工程式對應設定	50 品名及加工程式对应设定	50 Product Management
+i18n_ServCloud_Machine_Status_History	機台歷史狀態查詢	机台历史状态查询	Machine Status History 
+i18n_ServCloud_70_Machine_Status_History	70 機台歷史狀態查詢	70 机台历史状态查询	70 Machine Status History 
+i18n_ServCloud_Bar_Chart	長條圖	长条图	Bar Chart
+i18n_ServCloud_Query_Condition	搜尋條件	搜寻条件	Query Condition
+i18n_ServCloud_Query_Result	搜尋結果	搜寻结果	Query Result
+i18n_ServCloud_Query_Month	查詢月份	查询月份	Query Month
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start Date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Mode	報表形式	报表形式	Mode
+i18n_ServCloud_detail	明細	明细	Detail
+i18n_ServCloud_day	日期	日期	Date
+i18n_ServCloud_class	班次	班次	Shift
+i18n_ServCloud_Show_Demo_Data	顯示Demo資料	显示Demo资料	Show Demo Data
+i18n_ServCloud_Submit	提交	提交	Submit
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Class	班次	班次	Shift
+i18n_ServCloud_Program	程式	程式	Program
+i18n_ServCloud_Power_Time	通電時間	通电时间	Power Time
+i18n_ServCloud_Operation_Time	運轉時間	运转时间	Operation Time
+i18n_ServCloud_Cutting_Time	切削時間	切削时间	Cutting Time
+i18n_ServCloud_No_Work_Time	閒置時間	闲置时间	Downtime
+i18n_ServCloud_Alarm_Time	警報時間	警报时间	Alarm time
+i18n_ServCloud_Idle_Time	閒置時間	闲置时间	Idel Time
+i18n_ServCloud_Invalid_Time	上班閒置時間	上班闲置时间	Down Time On Work
+i18n_ServCloud_Output	產出	产出	Output
+i18n_ServCloud_Utilization	稼動率	稼动率	Utilization
+i18n_ServCloud_Effective_Utiliziation	有效稼動率	有效稼动率	Effective Utilization
+i18n_ServCloud_ACHB_Utiliziation_New	ACHB稼動率(新)	ACHB稼动率(新)	ACHB Utilization (New)
+i18n_ServCloud_ACHB_Utiliziation_Old	ACHB稼動率(舊)	ACHB稼动率(旧)	ACHB Utilization (Old)i18n_ServCloud_Actions	操作	操作	Actions
+i18n_ServCloud_Product_Code	產品代碼	产品代码	Product Code
+i18n_ServCloud_Customer_Name	顧客名稱	顾客名称	Customer Name
+i18n_ServCloud_Pie_Chart	圓餅圖	圆饼图	Pie Chart
+i18n_ServCloud_Customer_Id	顧客編號	顾客编号	Customer Id
+i18n_ServCloud_Process_Program	加工程式	加工程式	Process Program
+i18n_ServCloud_Product_Id	產品編號	产品编号	Process Id
+i18n_ServCloud_11_Amd	11 AMD	11 AMD	11 AMD
+i18n_ServCloud_Amd	AMD	AMD	AMD
+i18n_ServCloud_Module	模組	模组	Module
+i18n_ServCloud_Piece	零件	零件	Piece
+i18n_ServCloud_Work_Seq	工序	工序	Sequence
+i18n_ServCloud_60_Adapter_Params	60 擷取參數	60 撷取参数	50 Fetch Parameters
+i18n_ServCloud_Adapter_Params	擷取參數	撷取参数	Fetch Parameters
+i18n_ServCloud_Adapter_Params_Name	參數名稱	参数名称	Parameter Name
+i18n_ServCloud_Adapter_Params_RW	讀/寫	读/写	Read/Writer
+i18n_ServCloud_Device_Status_Stack_Chart	機台狀態歷史堆疊圖	机台状态历史堆叠图	Machine Status History Stack Chart
+i18n_ServCloud_Query_Date	查詢日期	查询日期	Query Date 
+i18n_ServCloud_Status	狀態	状态	Status
+i18n_ServCloud_Alarm_Code	警報代碼	警报代码	Alarm Code
+i18n_ServCloud_Alarm_Code_Definition	警報代碼說明	警报代码说明	Alarm Code Definition
+i18n_ServCloud_Start_Time	開始時間	开始时间	Start Time
+i18n_ServCloud_End_Time	結束時間	结束时间	End Time
+i18n_ServCloud_Duration	持續時間	持续时间	Duration
+i18n_ServCloud_partCount	完成量	完成量	Part Time
+i18n_ServCloud_Hint	提示	提示	Hint
+i18n_ServCloud_Hint_Text	同一產品加工之間之閒置，若<30分鐘則併入加工狀態，並於表格中以"加工(閒置)"表示	同一产品加工之间之闲置，若<30分钟则并入加工状态，并于表格中以"加工(闲置)"表示	The idle between processing for the same product will be merged as processing in chart and labeled as "加工(閒置)"  in table.
+i18n_ServCloud_Cnc_Brand	控制器廠牌	控制器厂牌	Cnc Brand
+i18n_ServCloud_target	目標	目标	Target
+i18n_ServCloud_General	一般	一般	Gen
+i18n_ServCloud_Effective	有效	有效	Eff
+i18n_ServCloud_Filter	過濾	过滤	Filter
+i18n_ServCloud_Shift_Time	班次時間	班次时间	Shift Time
+i18n_ServCloud_Natural_Day	自然天	自然天	Natural Day
+i18n_ServCloud_Plant_Area	廠區	厂区	Plant area
+i18n_ServCloud_Demonation	計算根據	计算根据	Base on
+i18n_ServCloud_NC_Production_Progress	NC機台生產進度	NC机台生产进度	NC Production Progress
+i18n_ServCloud_Department	部門	部门	Department
+i18n_ServCloud_DataStillCalc	報表計算中	报表计算中	Report int calculation
+i18n_ServCloud_M4_10_Operation_Time	M4, 10運轉時間	M4, 10运转时间	M4, 10 operation time
+i18n_ServCloud_M1_2_3_5_999_Downtime	M1, 2, 3, 5~999閒置時間	M1, 2, 3, 5~999闲置时间	M1, 2, 3, 5~999 downtime
+i18n_ServCloud_ACHB_Oee_Hint	*因為2017/03/17之前的資料無法使用新公式計算，故保留"ACHB稼動率(舊)"供顯示	*因为2017/03/17之前的资料无法使用新公式计算，故保留"ACHB稼动率(旧)"供显示	*There is no way using old data  to calculate ACHB Utilization with new formular, so keep column `ACHB Utilization (Old)` to show old data.
+i18n_ServCloud_Operator_ID	操作員編號	操作员编号	Operator ID
+i18n_ServCloud_Order_No	訂單編號	订单编号	Work order
+i18n_ServCloud_Part_No	零件編號	零件编号	Part No.
+i18n_ServCloud_Cycle_Time	標工(秒)	标工(秒)	Cycle Time(second)
+i18n_ServCloud_Rejected_Qty	不良品數	不良品数	Defective Qty
+i18n_ServCloud_Product_Information	產品資訊	產品資訊	Product Information
+i18n_ServCloud_Set	設定	设定	Set
+i18n_ServCloud_Edit	編輯	编辑	Edit
+i18n_ServCloud_Cancel	取銷	取销	Cancel
+i18n_ServCloud_05_Main_Axis_Efficiency_TH	05 主軸效率監控TH	05 主轴效率监控TH	05 Main Axis Efficiency TH
+i18n_ServCloud_Query_Result	查詢結果	查询结果	Query Result
+i18n_ServCloud_Query_Date	查詢日期	查询日期	Query Date
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Main_Axis_State_Diagram	主軸狀態圖	主轴状态图	Main Axis State Diagram
+i18n_ServCloud_Feed_Rate_State_Diagram	進給狀態圖	进给状态图	Feed Rate State Diagram
+i18n_ServCloud_Actual_Output	良品數	良品数	Qualified Qty
+i18n_ServCloud_10_DailUtilization_Cosmos	10 日稼動率報表	10 日稼动率报表	01 Daily Utilization
+i18n_ServCloud_30_Product_Information	30 產品資訊	30 产品资讯	30 Product Information
+i18n_ServCloud_Max_Value_50	長度不可超過50	长度不可超过50	Please enter a value less than 50
+i18n_ServCloud_Required	不可為空	不可为空	This field is required.
+i18n_ServCloud_Max_Value_10	長度不可超過10	长度不可超过10	Please enter a value less than 10
+i18n_ServCloud_Max_Value_20	長度不可超過20	长度不可超过20	Please enter a value less than 20
+i18n_ServCloud_Valid_Number	請填數字	请填数字	Please enter a valid number.
+i18n_ServCloud_Update_Success	更新成功	更新成功	Update Success
+i18n_ServCloud_Update_Failed	更新失敗	更新失败	Update Failed
+i18n_ServCloud_Insert_Success	新增成功	新增成功	Insert Success
+i18n_ServCloud_Insert_Failed	新增失敗	新增失败	Insert Failed
+i18n_ServCloud_Main_Axis_Speed	主軸轉速	主轴转速	Main Axis Speed
+i18n_ServCloud_Main_Axis_Status	主軸狀態	主轴状态	Main Axis Status
+i18n_ServCloud_Feed_Rate	進給率	进给率	Feed Rate
+i18n_ServCloud_Feed_Rate_Status	進給狀態	进给状态	Feed Rate Status
+i18n_ServCloud_Continued_Time	持續時間	持续时间	Continued Time
+i18n_ServCloud_Off_Time	離線時間	离线时间	Off Time
+i18n_ServCloud_UtilizationStd_Main_Axis_Rate_001	加工	加工	Operating
+i18n_ServCloud_UtilizationStd_Main_Axis_Rate_002	閒置	闲置	Idle
+i18n_ServCloud_UtilizationStd_Main_Axis_Rate_003	警報	警报	Alarm
+i18n_ServCloud_UtilizationStd_Main_Axis_Rate_004	顯示燈號	显示灯号	Machine Status
+i18n_ServCloud_UtilizationStd_Main_Axis_Rate_005	超出門檻值	超出门槛值	Exceed the threshold
+i18n_ServCloud_UtilizationStd_Main_Axis_Rate_006	正常	正常	Normal
+i18n_ServCloud_UtilizationStd_Main_Axis_Rate_007	未知	未知	Unknow
+i18n_ServCloud_UtilizationStd_Main_Axis_Rate_008	主軸狀態	主轴状态	Spindle status
+i18n_ServCloud_UtilizationStd_Main_Axis_Rate_009	進給率狀態	进给率状态	Feed rate status
+i18n_ServCloud_Idle_Alarm_Code	閒置&警報代碼	闲置&警报代码	Downtime and Alarm Code
+i18n_ServCloud_Time_Fix	時間校正	时间校正	Time Fix
+i18n_ServCloud_Split_Count	分割數量	分割数量	Split Count
+i18n_ServCloud_Add_Success	新增成功	新增成功	Add Success
+i18n_ServCloud_Add_Fail	新增失敗	新增失败	Add Fail
+i18n_ServCloud_30_Edit_Quality_Cosmos	30 不良品數編輯	30 不良品数编辑	30 Edit Defective Quality
+i18n_ServCloud_40_Edit_Idle_Cosmos	40 閒置編輯	40 闲置编辑	40 Edit Idle
+i18n_ServCloud_Cycle_Time_STD	標工	标工	Cycle Time
+i18n_ServCloud_10_DailUtilization_Cosmos_Pony	10 日稼動率報表	10 日稼动率报表	01 Daily Utilization
+i18n_ServCloud_10_Average	平均稼動率	平均稼动率	Average Utilization
+i18n_ServCloud_Capacity_Utilization	產能稼動率	产能稼动率	Capacity Utilization
+i18n_ServCloud_Avg_Capacity_Utilization	平均產能稼動率	平均产能稼动率	Avg Capacity Utilization
+i18n_ServCloud_Utilization_Condition	稼動率小於	稼动率小于	The rate of utilization is less than
+i18n_ServCloud_ImmediateDailyUtilization	即時日稼動率	即时日稼动率	Immediate daily utilization rate
+i18n_ServCloud_System_Update_Time	上次更新時間	上次更新时间	Last update time
+i18n_ServCloud_Updated_Frequency	每30秒更新一次	每30秒更新一次	Updated every 30 seconds
+i18n_ServCloud_Cumulative_Operation_Time	累積運轉(綠燈)時間	累积运转(绿灯)时间	Cumulative operation Time (green light)
+i18n_ServCloud_Hour	小時	小时	Hour
+i18n_ServCloud_ImmediateMonthlyUtilization	即時月稼動率	即时月稼动率	Immediate monthly utilization rate
+i18n_ServCloud_MonthlyUtilization	月稼動	月稼动	Monthly Utilization

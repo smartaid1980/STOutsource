@@ -1,0 +1,16 @@
+{
+  "app": {
+    "id": "StrongLEDAccessControl",
+    "name": "i18n_ServCloud_Access_Control",
+    "type": 1,
+    "description": "StrongLED Access Control",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_access_query",
+      "name": "i18n_ServCloud_10_Access_Query"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

@@ -1,0 +1,5 @@
+{
+  "type": "DeviceStatus",
+  "gridClass": "col-xs-12 col-sm-12 col-md-12 col-lg-12",
+  "title": "<i class='fa fa-reorder'></i> <strong>{i18n_ServCloud_Monitoring_All_Zone}</strong>"
+}

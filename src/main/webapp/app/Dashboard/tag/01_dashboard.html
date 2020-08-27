@@ -1,0 +1,131 @@
+<section id="widget-grid" class="" style="overflow: hidden;">
+  <a
+    id="rotate-start"
+    href="javascript:void(0);"
+    class="btn btn-labeled btn-info"
+  >
+    <span class="btn-label"><i class="fa fa-desktop"></i></span>
+    {i18n_ServCloud_Screen}
+  </a>
+
+  <div class="row"></div>
+</section>
+<style>
+  #rotate-start {
+    margin-bottom: 10px;
+  }
+
+  #fullscreen-mask,
+  #rotate-backward,
+  #rotate-play,
+  #rotate-forward {
+    width: 31px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+  }
+
+  #fullscreen-mask {
+    right: 0;
+  }
+
+  #rotate-backward {
+    right: 96px;
+  }
+
+  #rotate-play {
+    right: 64px;
+  }
+
+  #rotate-forward {
+    right: 32px;
+  }
+
+  #fullscreen-mask:hover,
+  #rotate-backward:hover,
+  #rotate-play:hover,
+  #rotate-forward:hover {
+    color: #000;
+    background-color: #ccc;
+  }
+
+  #fullscreen-mask:active,
+  #rotate-backward:active,
+  #rotate-play:active,
+  #rotate-forward:active {
+    width: 29px;
+    height: 31px;
+    top: 1px;
+  }
+
+  #fullscreen-mask:active {
+    right: 1px;
+  }
+
+  #rotate-backward:active {
+    right: 97px;
+  }
+
+  #rotate-play:active {
+    right: 65px;
+  }
+
+  #rotate-forward:active {
+    right: 33px;
+  }
+
+  #rotate-progress-bar {
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+  }
+
+  #rotate-progress-bar .rotate-bar {
+    height: 100%;
+    display: inline-block;
+    position: static;
+  }
+
+  #rotate-progress-bar .rotate-bar-on {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+
+  #rotate-progress-bar .rotate-bar-off {
+    background-color: rgba(203, 203, 203, 0.5);
+  }
+
+  .widget-body {
+    height: 100%;
+  }
+
+  .rotate-fullscreen-header {
+    width: 100%;
+    height: 10%;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* chart legend */
+
+  .legendColorBox div > div {
+    width: 12px;
+    height: 12px;
+  }
+
+  .legendLabel span {
+    font-size: 18px;
+  }
+</style>
+
+<script>
+  window.importPageScript()
+</script>

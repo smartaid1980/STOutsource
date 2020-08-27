@@ -1,0 +1,51 @@
+{
+  "name": "servcloud_d2",
+  "version": "3.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "lint-report": "eslint --quiet --ignore-path product.eslintignore -f node_modules/eslint-detailed-reporter/lib/detailed.js -o report.html --ext .html,.js --fix src/main/webapp/",
+    "lint": "eslint --quiet --ignore-path product.eslintignore --ext .html,.js src/main/webapp/",
+    "jsdoc": "jsdoc src/main/webapp/js/servtech -d jsdoc",
+    "babel": "babel ./src/main/webapp --out-dir build/tmp/webapp --copy-files",
+    "babel-html": "babel-html -s src/main/webapp -d build/tmp/webapp --copy-files",
+    "build-core-js-bundle": "node --experimental-modules ./util/core-js-builder/index.js"
+  },
+  "keywords": [
+    "servtech"
+  ],
+  "author": "Jenny",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.10.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-strict-mode": "^7.8.3",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "core-js-builder": "^3.6.5",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "2.0.5"
+  },
+  "dependencies": {
+    "babel-html": "^0.5.1",
+    "core-js": "^3.6.5",
+    "eslint-detailed-reporter": "^0.7.3",
+    "jsdoc": "^3.5.5",
+    "npm": "^5.6.0",
+    "powerbi-client": "^2.5.0"
+  },
+  "description": ""
+}

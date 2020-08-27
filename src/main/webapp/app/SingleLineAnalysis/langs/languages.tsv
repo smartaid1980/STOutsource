@@ -1,0 +1,86 @@
+	zh_tw	zh	en
+i18n_ServCloud_Search	搜尋條件	搜寻条件	Search
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Submit	送出	送出	Submit
+i18n_ServCloud_Main_Statistics	主程式執行時間統計	主程式执行时间统计	Main program execution time statistics
+i18n_ServCloud_Run_Statistics	子程式執行時間統計	子程式执行时间统计	Run program execution time statistics
+i18n_ServCloud_Single_Statistics	單節執行時間統計	单节执行时间统计	Single program execution time statistics
+i18n_ServCloud_Statistical_List	統計清單	统计清单	Statistical list
+i18n_ServCloud_Name	機台名稱	机台名称	Machine Name
+i18n_ServCloud_Single_Execution_Count	單節執行次數	单节执行次数	Single execution count
+i18n_ServCloud_Execution_Time	執行時間	执行时间	Execution time
+i18n_ServCloud_Program_Block	程式單節	程式单节	Program block
+i18n_ServCloud_Subprogram	子程式	子程式	Subprogram
+i18n_ServCloud_Number	件數	件数	Number
+i18n_ServCloud_Main_Program	主程式	主程式	Main program
+i18n_ServCloud_Start_Date	起始日期	起始日期	Start Date
+i18n_ServCloud_End_Date	結束日期	结束日期	End Date
+i18n_ServCloud_Start_Time	起始時間	起始时间	Start Time
+i18n_ServCloud_End_Time	結束時間	结束时间	End Time
+i18n_ServCloud_Edit	編輯	编辑	Edit
+i18n_ServCloud_Stk_Required	此欄位必填	此栏位必填	Required
+i18n_ServCloud_Stk_Pk	欄位名稱，不得重複	栏位名称，不得重复	Duplicate value is not allowed
+i18n_ServCloud_Valid_Number	請填數字	请填数字	Please enter a valid number.
+i18n_ServCloud_Time_Greater_Than_0	運行時間須為正整數	运行时间须为正整数	Running time must be a positive integer
+i18n_ServCloud_Set_Program_Time	 設定主程式時間	 设定主程式时间	 Setting the main program time
+i18n_ServCloud_Set_Run_Time	 設定子程式時間	 设定子程式时间	 Setting the Subprogram program time
+i18n_ServCloud_Main_Program_Time	主程式名稱	主程式名称	Main program name
+i18n_ServCloud_Operation_Time	運行時間	运行时间	operation hours
+i18n_ServCloud_Back	回上一頁	回上一页	Back
+i18n_ServCloud_Display_Next	點擊橫條圖展開單節時間統計	点击横条图展开单节时间统计	Click on the bar graph to expand the single-section time statistics.
+i18n_ServCloud_Display_Single	點擊橫條圖展開子程式時間統計	点击横条图展开子程式时间统计	Click on the bar graph to display the subroutine
+i18n_ServCloud_Expand	展開	展开	Expand
+i18n_ServCloud_No_Data	無資料	无资料	No Data
+i18n_ServCloud_Comparison_List	比較列表	比较列表	Comparison List
+i18n_ServCloud_Search_List	搜尋列表	搜寻列表	Inquire
+i18n_ServCloud_Search	查詢	查询	Search
+i18n_ServCloud_Auto_Search	自動查詢	自动查询	Auto Search
+i18n_ServCloud_Comparison	比較	比较	Comparison
+i18n_ServCloud_List	列表	列表	List
+i18n_ServCloud_Date	日期	日期	Date
+i18n_ServCloud_Join_All	全部加入	全部加入	Join All
+i18n_ServCloud_Join	加入	加入	Join
+i18n_ServCloud_Delete_All	刪除全部	删除全部	delete All
+i18n_ServCloud_Delete	刪除	删除	delete
+i18n_ServCloud_Estimated	預估時間	预估时间	Estimated Value
+i18n_ServCloud_Standard	基準值	基准值	Estimated Standard Value
+i18n_ServCloud_Comparison_Value	比較值	比较值	Comparison
+i18n_ServCloud_Custom_Query	自訂查詢	自订查询	Custom Query
+i18n_ServCloud_Comparison_Estimated_Time	比對預估	比对预估	Comparison Estimated
+i18n_ServCloud_Worst_Comparison_Estimate	最差比對預估	最差比对预估	Worst Comparison Estimate
+i18n_ServCloud_Best_Comparison_Estimate	最佳比對預估	最佳比对预估	Best Comparison Estimate
+i18n_ServCloud_Top_10	首10件比對	首10件比对	10 in front
+i18n_ServCloud_Buttom_10	末10件比對	末10件比对	The last 10
+i18n_ServCloud_Page	頁面	页面	Page
+i18n_ServCloud_Pick	挑選	挑选	Pick
+i18n_ServCloud_Tooltip_Btn_Search	自定義比較內容	自定义比较内容	Custom comparison content
+i18n_ServCloud_Tooltip_Btn_All	所有顆數與預估值比較	所有颗数与预估值比较	Compare all figures with estimated values
+i18n_ServCloud_Tooltip_Btn_LongTime	執行時間最長3顆與預估值比較	执行时间最长3颗与预估值比较	The maximum execution time is 3 compared with the estimated value.
+i18n_ServCloud_Tooltip_Btn_ShortTime	執行時間最短3顆與預估值比較	执行时间最短3颗与预估值比较	The shortest execution time is 3 compared with the estimated value
+i18n_ServCloud_Tooltip_Btn_Close10	末10件比對	末10件比对	The last 10 
+i18n_ServCloud_Tooltip_Far10	首10件比對	首10件比对	10 in front
+i18n_ServCloud_No_Estimated	無預估值	无预估值	No Estimated Value
+i18n_ServCloud_Actual_Value	實際值	实际值	Actual Value
+i18n_ServCloud_Actual_Time	實際時間	实际时间	Real Time
+i18n_ServCloud_Estimated_Time	預估時間	预估时间	Estimated Value
+i18n_ServCloud_Set_Program_Machine_Info	同時間同機台只能有一個主程式	同时间同机台只能有一个主程式	At the same time, there can only be one main program in the same machine.
+i18n_ServCloud_Set_Program_Time_Info	起始時間不可晚於結束時間	起始时间不可晚于结束时间	Start time cannot be later than the end time.
+i18n_ServCloud_All	不分件數	不分件数	No number of pieces
+i18n_ServCloud_Blue	藍色	蓝色	Blue
+i18n_ServCloud_Big_Standard	大於基準值	大于基准值	Greater than the reference value
+i18n_ServCloud_Small_Standard	小於基準值	小于基准值	Less than the reference value
+i18n_ServCloud_Red	紅色	红色	red
+i18n_ServCloud_Green	綠色	绿色	green
+i18n_ServCloud_Blank_Lines	空白行	空白行	Blank lines
+i18n_ServCloud_Time_Type	時間類型	时间类型	Time type
+i18n_ServCloud_Upload_Setting	上傳設定	上传设定	Upload settings
+i18n_ServCloud_Upload_Area	檔案上傳	档案上传	File upload
+i18n_ServCloud_Replace_Target	更換目標	更换目标	Replacement target
+i18n_ServCloud_File_Size	檔案大小	档案大小	File size
+i18n_ServCloud_File_Size_Search	上傳檔案查詢	上传档案查询	Upload File Search
+i18n_ServCloud_Create_Upload_Area	建立上傳區	建立上传区	Create upload area
+i18n_ServCloud_Upload_Info	拖曳檔案至此或點選上傳檔案	拖曳档案至此或点选上传档案	Drop files here to upload
+i18n_ServCloud_Last_Modify	最後修改時間	最后修改时间	Last Modified
+i18n_ServCloud_File_Content	檔案內容	档案内容	File content
+i18n_ServCloud_Preview	預覽	预览	Preview
+i18n_ServCloud_Show_Demo_Data	顯示Demo資料	显示Demo资料	Show Demo Data

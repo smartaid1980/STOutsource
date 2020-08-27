@@ -1,0 +1,205 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cog"></i>
+      機台維護管理
+      <span>
+        > 維修通報記錄
+      </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>維修通報記錄 / <i class="fa fa-search"></i></h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-4">
+                    <label class="label">開始日期</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input type="text" name="startDate" id="start-date" />
+                    </label>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label">結束日期</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-calendar"></i>
+                      <input type="text" name="endDate" id="end-date" />
+                    </label>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label">機台編號</label>
+                    <label class="select select-multiple">
+                      <select
+                        id="machine"
+                        name="machine"
+                        multiple="multiple"
+                      ></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="report-table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>維修通報記錄查詢結果 / <i class="fa fa-search"></i></h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="report-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾警報發生時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <!-- 機台編號 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <!-- 班別 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <!-- 顧車人員員編 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <!-- 顧車人員姓名 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <!--<th class="hasinput" style="width:8%">-->
+                  <!--<input type="text" class="form-control" />-->
+                  <!--</th>-->
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 故障通報時間 -->
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 故障→通報時間 -->
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 維修人員員編 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 維修人員姓名 -->
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 開始維修時間 -->
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <!-- 通報→維修時間 -->
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th
+                    data-original-title="*. 當 機台發生警報 或 無警報但有按下 Macro522=101(故障待修) 時"
+                  >
+                    警報發生時間
+                  </th>
+                  <th>機台編號</th>
+                  <th>班別</th>
+                  <th>顧車人員員編</th>
+                  <th>顧車人員姓名</th>
+                  <!--<th>故障發生時間</th>-->
+                  <th
+                    data-original-title="*. 在 Macro522 輸入 101 的時間點<br/>*. 不正常中斷：機台警報沒輸入101就變回加工中"
+                  >
+                    故障通報時間
+                  </th>
+                  <th>故障→通報時間</th>
+                  <th data-original-title="*. 在 Macro522 輸入 200 的員編">
+                    維修人員員編
+                  </th>
+                  <th>維修人員姓名</th>
+                  <th data-original-title="*. 在 Macro522 輸入 200 的時間點">
+                    開始維修時間
+                  </th>
+                  <th>通報→維修時間</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- day DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

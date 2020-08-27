@@ -1,0 +1,64 @@
+	zh_tw	zh	en
+i18n_ServCloud_Query_Condition	查詢	查询	Query Condition
+i18n_ServCloud_Tool_Type	刀具類型	刀具类型	Tool Type
+i18n_ServCloud_Tool_Number	刀具品號	刀具品号	Tool Number
+i18n_ServCloud_Submit	查詢	查询	Submit
+i18n_ServCloud_Clean	清除	清除	Clean
+i18n_ServCloud_Tool_maintenance_specifications	刀具規格維護	刀具规格维护	Tool maintenance specifications
+i18n_ServCloud_Sync_With_ERP	ERP同步	ERP同步	Sync With ERP
+i18n_ServCloud_Last_Synchronization:	前次系統同步更新時間 :	前次系统同步更新时间 :	Last Synchronization:
+i18n_ServCloud_Tool_Diameter	刀具直徑	刀具直径	Tool Diameter
+i18n_ServCloud_Life_Of_Tool_Usage(hrs)	使用壽命(小時)	使用寿命(小时)	Life Of Tool Usage(hrs)
+i18n_ServCloud_Alarm_Of_Tool_Usage(hrs)	警示剩餘壽命(小時)	警示剩余寿命(小时)	Alarm Of Tool Usage(hrs)
+i18n_ServCloud_No_time_synchronization	尚無同步時間	尚无同步时间	No time synchronization
+i18n_ServCloud_Please_fill_in_numbers	請填數字	请填数字	Please fill in numbers
+			
+i18n_ServCloud_Chuck_Name	刀把名稱	刀把名称	Chuck Name
+i18n_ServCloud_Chuck_Number	刀把代碼	刀把代码	Chuck Number
+i18n_ServCloud_Query_Result	查詢結果	查询结果	Query Result
+i18n_ServCloud_Using_Status	啟用	启用	Using Status
+i18n_ServCloud_Maintenance_of_tool_chuck	刀把維護	刀把维护	Maintenance of tool chuck
+i18n_ServCloud_Setting	設定	设定	Setting
+i18n_ServCloud_Chuck_Type	刀把品號	刀把品号	Chuck Type
+i18n_ServCloud_Chuck_Code	刀把代碼	刀把代码	Chuck Code
+i18n_ServCloud_Department	所屬單位	所属单位	Department
+i18n_ServCloud_Add_Tool_Chuck	新增刀把	新增刀把	Add Tool Chuck		
+			
+i18n_ServCloud_Initial_Date	建立起始日期	建立起始日期	Initial Date
+i18n_ServCloud_End_Date	建立結束日期	建立结束日期	End Date
+i18n_ServCloud_Start_To_Enable	啟用	启用	Start To Enable
+i18n_ServCloud_Tool_Management	管理刀具	管理刀具	Tool Management
+i18n_ServCloud_Batch_Archiving	批次建檔	批次建档	Batch Archiving
+i18n_ServCloud_Tool_Assign_Code	刀具編號	刀具编号	Tool Assign Code
+i18n_ServCloud_Cutting_Time(hh:mm:ss)	實際總加工時間(時:分:秒)	实际总加工时间(时:分:秒)	Cutting Time(hh:mm:ss)
+i18n_ServCloud_Set_Up_Time	建立時間	建立时间	Set Up Time
+i18n_ServCloud_Please_select_one	是或否選項請擇一選取	是或否选项请择一选取	Please select one
+i18n_ServCloud_Yes	是	是	Yes
+i18n_ServCloud_No	否	否	No
+i18n_ServCloud_Tool_Status	刀具狀態	刀具状态	Tool Status
+			
+i18n_ServCloud_Upload_Tool_List	備刀單上傳	备刀单上传	Upload Tool List
+i18n_ServCloud_Drag_and_drop_the_excel_file_or_click_here	將 .xlsx 的檔案拖曳至此或按我	将 .xlsx 的档案拖曳至此或按我	Drag and drop the excel file or click here
+i18n_ServCloud_Upload_Result	上傳結果	上传结果	Upload Result
+i18n_ServCloud_Program	加工程式名稱	加工程式名称	Program
+i18n_ServCloud_Tool_List_Upload	備刀單上傳時間	备刀单上传时间	Tool List Upload
+i18n_ServCloud_File_Set_Up	檔案建立時間	档案建立时间	File Set Up
+i18n_ServCloud_Tool_Usage	使用刀具	使用刀具	Tool Usage
+			
+			
+i18n_ServCloud_Create_Time	備刀紀錄新增時間	备刀纪录新增时间	Create Time
+i18n_ServCloud_Edit_Time	備刀紀錄修改時間	备刀纪录修改时间	Edit Time
+i18n_ServCloud_Tool_Information	使用刀具	使用刀具	Tool Information
+i18n_ServCloud_Using_Record	結案	结案	Using Record
+			
+i18n_ServCloud_Tool_No	刀號	刀号	Tool No
+i18n_ServCloud_Start_Process_Time	加工開始時間	加工开始时间	Start Process Time
+i18n_ServCloud_End_Process_Time	加工結束時間	加工结束时间	End Process Time
+i18n_ServCloud_Cutting_Time	實際加工(切削)時間	实际加工(切削)时间	Cutting Time
+i18n_ServCloud_Machine	機台	机台	Machine
+i18n_ServCloud_Move_In_Time	上機時間	上机时间	Start Process Time
+i18n_ServCloud_Move_Out_Time	出站時間	出站时间	End Process Time
+			
+i18n_ServCloud_Cancel	取消	取消	Cancel
+i18n_ServCloud_Save	儲存	储存	Save
+i18n_ServCloud_Edit	編輯	编辑	Edit

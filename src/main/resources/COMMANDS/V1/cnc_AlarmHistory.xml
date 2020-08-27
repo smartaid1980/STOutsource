@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<command name="cnc_AlarmHistory" cycletype="count" cyclevalue="1" timeout="0"><params><param name="G_AAMH" count="1" frequency="0" isRepeat="true"><inputs/><filters/><process/></param></params></command>

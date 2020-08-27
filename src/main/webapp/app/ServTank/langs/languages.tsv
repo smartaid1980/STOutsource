@@ -1,0 +1,12 @@
+﻿	zh_tw	zh	en
+i18n_ServCloud_01_ServCore_Config	01_ServCore組態設定	10_ServCore组态设定	01_ServCore Configuration
+i18n_ServCloud_Remove_ServCore	移除	移除	Remove
+i18n_ServCloud_Add_ServCore	新增	新增	Add
+i18n_ServCloud_Remove_Success	移除成功	移除成功	Remove Success
+i18n_ServCloud_Remove_Fail	移除失敗	移除失败	Remove Fail
+i18n_ServCloud_Add_Success	新增成功	新增成功	Add Success
+i18n_ServCloud_Add_Fail	新增失敗	新增失败	Add Fail
+i18n_ServCloud_Please_Input	請輸入	请输入	Please Input
+i18n_ServCloud_Sync_Success	同步成功	同步成功	Sync Success
+i18n_ServCloud_Sync_Fail	同步失敗	同步失敗	Sync Fail
+i18n_ServCloud_Syncing	同步中	同步中	Sync Processing

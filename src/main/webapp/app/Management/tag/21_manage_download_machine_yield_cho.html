@@ -1,0 +1,116 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form
+              id="stk-report-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <section class="col col-2">
+                    <div>
+                      <label class="label">{i18n_ServCloud_Start_Date}</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="startDate" />
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-2">
+                    <div>
+                      <label class="label">&nbsp;</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-clock-o"></i>
+                        <input
+                          class="form-control clockpicker"
+                          name="startDateClock"
+                          type="text"
+                          value="00:00"
+                          data-autoclose="true"
+                        />
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-2">
+                    <div>
+                      <label class="label">{i18n_ServCloud_End_Date}</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="endDate" />
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-2">
+                    <div>
+                      <label class="label">&nbsp;</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-clock-o"></i>
+                        <input
+                          class="form-control clockpicker"
+                          name="endDateClock"
+                          type="text"
+                          value="00:00"
+                          data-autoclose="true"
+                        />
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-4">
+                    <label class="label">{i18n_ServCloud_Device_Name}</label>
+                    <label class="select">
+                      <select name="device" multiple="multiple"></select>
+                    </label>
+                  </section>
+                </div>
+                <!--<div class="row">
+                    <section class="col col-12">
+                        <label class="label">Download type</label>
+                        <div class="inline-group">
+                            <label class="radio"><input type="radio" id="type-raw-data" name="radio-inline" checked=""><i></i>raw data</label>
+                            <label class="radio"><input type="radio" id="type-machine-yield" name="radio-inline"><i></i>machine yield</label>
+                        </div>
+                    </section>
+                </div>-->
+              </fieldset>
+
+              <footer>
+                <button id="send-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Download}
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

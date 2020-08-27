@@ -1,0 +1,32 @@
+{
+  "app": {
+    "id": "HuangLiangProductionSchedule",
+    "name": "生產排程",
+    "type": 1,
+    "description": "生產排程",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_product_management",
+      "name": "管編生產條件設定"
+    },
+    {
+      "id": "02_machine_assignment",
+      "name": "生產排程機台派工"
+    },
+    {
+      "id": "03_query_work_order_status",
+      "name": "生產指令狀態查詢"
+    },
+    {
+      "id": "04_pre_schedule",
+      "name": "生產排程預排"
+    },
+    {
+      "id": "05_machine_list_management",
+      "name": "機台能力設定"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

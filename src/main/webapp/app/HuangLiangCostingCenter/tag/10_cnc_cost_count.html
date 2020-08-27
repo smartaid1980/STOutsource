@@ -1,0 +1,214 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="QC"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <div class="col col-6">
+                    <section>
+                      <label class="label">訂單編號</label>
+                      <label class="input">
+                        <input type="text" id="order_id" />
+                      </label>
+                    </section>
+                  </div>
+
+                  <div class="col col-6">
+                    <section>
+                      <label class="label">管編</label>
+                      <label class="input">
+                        <input type="text" id="manage_id" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+
+      <!-- detail DATATABLE -->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="table-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+          <h2>{i18n_ServCloud_Query_Result}</h2>
+        </header>
+
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 8%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 5%;">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾校車開始時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾訂單下線時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾訂單花費總時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾機台下線待機時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾CNC成本總時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾校車時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾維修時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾量產時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾待機時間"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 8%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placefolder="過濾總天數"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th>訂單編號</th>
+                  <th>機台名稱</th>
+                  <th data-original-title="300">校車開始時間</th>
+                  <th data-original-title="103">訂單下線時間</th>
+                  <th
+                    data-original-title="300~103，前綴'*'表示訂單尚未下線，時間持續增加"
+                  >
+                    訂單花費總時間
+                  </th>
+                  <th data-original-title="103~隔天早上08:00">
+                    機台下線待機時間
+                  </th>
+                  <th
+                    data-original-title="300~103~隔天早上08:00，前綴'*'表示訂單尚未下線，時間持續增加"
+                  >
+                    CNC成本總時間
+                  </th>
+                  <th data-original-title="(3xx)300~304或300~100">校車時間</th>
+                  <th data-original-title="(2xx)2xx-206">維修時間</th>
+                  <th
+                    data-original-title="(1xx)100~103-維修(2xx)-校車(3xx)-待料(104)，前綴'*'表示訂單尚未下線，時間持續增加"
+                  >
+                    量產時間
+                  </th>
+                  <th data-original-title="103~300或103~100">待機時間</th>
+                  <th
+                    data-original-title="該訂單在該機台第一次出現的時間~最後一次出現的時間"
+                  >
+                    總天數
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+  </div>
+  <!-- ROW END -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

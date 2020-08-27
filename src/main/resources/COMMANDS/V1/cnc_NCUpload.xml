@@ -1,0 +1,1 @@
+<command name="cnc_NCUpload" cycletype="count" cyclevalue="1" timeout="0"><params><param name="S_UNCP" count="1" frequency="0" isRepeat="true"><inputs><input name="P_VALUE">#uploadFileContent</input></inputs><filters></filters><process></process> <value></value></param></params></command>

@@ -1,0 +1,15 @@
+	zh_tw	zh	en
+i18n_ServCloud_Ladder	遠端PLC梯形圖監視	远端PLC梯形图监视	Remote PLC Ladder Monitoring
+i18n_ServCloud_Ladder_Monitor	梯形圖監視	梯形图监视	Ladder monitor
+i18n_ServCloud_Machine_List	機台列表	机台列表	Machine list
+i18n_ServCloud_Select_File	選擇檔案	选择档案	Select file
+i18n_ServCloud_Not_Upload	尚未上傳	尚未上传	Not upload
+i18n_ServCloud_Uploading	上傳中...	上传中...	Uploading...
+i18n_ServCloud_Address	位址	位址	Address
+i18n_ServCloud_Search	搜尋	搜寻	Search
+i18n_ServCloud_Upload_Success	上傳成功！	上传成功！	Upload success!
+i18n_ServCloud_Upload_Fail	上傳失敗！	上传失败！	Upload fail!
+i18n_ServCloud_Ladder_Name	階梯圖名稱： 	阶梯图名称：	Ladder name: 
+i18n_ServCloud_Load_Fail	載入失敗...	载入失败...	Load fail...
+i18n_ServCloud_Cancel_Fetch	停止擷取	停止撷取	Stop fetch
+i18n_ServCloud_Success	成功！	成功！	Success!

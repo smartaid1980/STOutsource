@@ -1,0 +1,136 @@
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h1 class="page-title txt-color-blueDark">
+      <i class="fa fa-table fa-fw"></i>
+      資料上傳服務
+      <span>> 顧車人員名單轉入 </span>
+    </h1>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right dev-logo-div">
+    <div class="dev-logo pull-right"><img src="./img/devs/servtech.png" /></div>
+  </div>
+</div>
+
+<!-- widget grid -->
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="dropzone-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-colorbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>{i18n_ServCloud_Employee_Data_Upload}</h2></span
+          >
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body">
+            <div class="row no-margin">
+              <form action="" class="dropzone dropzone-v15" id="dropzone">
+                <span class="text-center">
+                  <span
+                    class="font-lg visible-xs-block visible-sm-block visible-lg-block"
+                  >
+                    <span class="font-lg">
+                      <i class="fa fa-caret-right text-danger"></i>
+                      {i18n_ServCloud_dragXlsxFile}
+                      <span class="font-xs">{i18n_ServCloud_orClick}</span>
+                    </span>
+                  </span>
+                </span>
+              </form>
+            </div>
+            <!-- end .row-->
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<!-- end widget grid -->
+
+<section>
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Widget ID (each widget will need unique ID)-->
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="care-emp-widget"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-fullscreenbutton="false"
+        data-widget-colorbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-gears"></i> </span>
+          <span
+            >&nbsp;&nbsp;&nbsp;
+            <h2>顧車人員名單</h2></span
+          >
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="care-emp-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 50%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾顧車人員編號"
+                    />
+                  </th>
+                  <th class="hasinput" style="width: 50%;">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="過濾顧車人員姓名"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <th data-class="expand">顧車人員編號</th>
+                  <th>顧車人員姓名</th>
+                </tr>
+              </thead>
+            </table>
+            <!-- end .row-->
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Widget ID END -->
+    </article>
+    <!-- NEW WIDGET END -->
+  </div>
+  <!-- row END -->
+</section>
+<script>
+  window.importPageScript()
+</script>

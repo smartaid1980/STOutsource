@@ -1,0 +1,48 @@
+{
+  "app": {
+    "id": "StrongLED",
+    "name": "i18n_ServCloud_Quick_Quote",
+    "type": 1,
+    "description": "快速報價",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "10_query_rfq",
+      "name": "i18n_ServCloud_10_Inquiry_inquiry"
+    },
+    {
+      "id": "11_rfq_detail",
+      "name": "i18n_ServCloud_11_Inquiry_contents"
+    },
+    {
+      "id": "13_project_management",
+      "name": "i18n_ServCloud_13_Item_List"
+    },
+    {
+      "id": "20_product_management",
+      "name": "i18n_ServCloud_20_Management_Inquiry"
+    },
+    {
+      "id": "21_product_detail",
+      "name": "i18n_ServCloud_21_Product_Content"
+    },
+    {
+      "id": "30_material_management",
+      "name": "i18n_ServCloud_30_Material_Management"
+    },
+    {
+      "id": "40_rfq_column_management",
+      "name": "i18n_ServCloud_40_Rfq_Field_Management"
+    },
+    {
+      "id": "50_material_module_management",
+      "name": "i18n_ServCloud_50_Material_Management_Module"
+    },
+    {
+      "id": "60_material_module_rule_management",
+      "name": "i18n_ServCloud_60_Material_Management_Module_Rules"
+    }
+  ],
+  "tags": ["20140918000999"]
+}

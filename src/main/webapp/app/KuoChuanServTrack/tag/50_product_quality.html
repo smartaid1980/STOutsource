@@ -1,0 +1,346 @@
+<div class="row">
+  <!-- col -->
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+    <h1 class="page-title txt-color-blueDark">
+      <!-- PAGE HEADER -->
+      <i class="fa-fw fa fa-cloud"></i>
+      行動報工站
+      <span>
+        > 50_產品良率
+      </span>
+    </h1>
+  </div>
+</div>
+<section id="widget-grid" class="">
+  <div class="row">
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-colorbutton="false"
+        data-widget-togglebutton="false"
+        data-widget-fullscreenbutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+        </header>
+        <div class="container">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#integratedQuery">綜合查詢</a>
+            </li>
+            <li><a data-toggle="tab" href="#workId">派工單號</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="integratedQuery" class="tab-pane fade in active">
+              <div class="widget-body">
+                <form id="main-form" class="smart-form" novalidate="novalidate">
+                  <fieldset>
+                    <div class="row">
+                      <div class="row">
+                        <section class="col col-4">
+                          <label class="label st-required">班次起始日期</label>
+                          <label class="input">
+                            <i class="icon-append fa fa-calendar"></i>
+                            <input
+                              type="text"
+                              name="start-date"
+                              id="start-date"
+                              data-rule-required="true"
+                              data-rule-dateISO="true"
+                            />
+                          </label>
+                        </section>
+                        <section class="col col-3">
+                          <label class="label">品項</label>
+                          <label class="select">
+                            <select
+                              multiple="multiple"
+                              class="select2 full-width"
+                              id="product-id"
+                            >
+                            </select>
+                            <i> </i>
+                          </label>
+                        </section>
+                        <section class="col col-3">
+                          <label class="label">工單狀態</label>
+                          <div class="form-group">
+                            <input
+                              type="checkbox"
+                              value="999"
+                              name="work-status"
+                              checked="checked"
+                            />
+                            <span>未結案</span>
+                            <input
+                              type="checkbox"
+                              value="2"
+                              name="work-status"
+                            />
+                            <span>結案</span>
+                          </div>
+                        </section>
+                      </div>
+                      <div class="row">
+                        <section class="col col-4">
+                          <label class="label st-required">班次結束日期</label>
+                          <label class="input">
+                            <i class="icon-append fa fa-calendar"></i>
+                            <input
+                              type="text"
+                              name="end-date"
+                              id="end-date"
+                              data-rule-required="true"
+                              data-rule-dateISO="true"
+                            />
+                          </label>
+                        </section>
+                      </div>
+                    </div>
+                    <!-- end of row -->
+                  </fieldset>
+                  <footer>
+                    <button name="submit-clean" class="btn btn-primary">
+                      清除
+                    </button>
+                    <button id="submit-btn" class="btn btn-primary">
+                      查詢
+                    </button>
+                    <button id="demo-btn" class="btn btn-success">
+                      顯示Demo資料
+                    </button>
+                  </footer>
+                </form>
+              </div>
+            </div>
+            <div id="workId" class="tab-pane fade">
+              <div class="widget-body">
+                <form
+                  id="main-form2"
+                  class="smart-form"
+                  novalidate="novalidate"
+                >
+                  <fieldset>
+                    <div class="row">
+                      <div class="col col-8">
+                        <div class="row">
+                          <section class="col col-6">
+                            <label class="label">派工單號</label>
+                            <select
+                              class="select2 full-width"
+                              name="work-id"
+                              id="work-id"
+                            >
+                            </select>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <footer>
+                    <button name="submit-clean" class="btn btn-primary">
+                      清除
+                    </button>
+                    <button id="submit-btn2" class="btn btn-primary">
+                      查詢
+                    </button>
+                    <button id="demo-btn2" class="btn btn-success">
+                      顯示Demo資料
+                    </button>
+                  </footer>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="jarviswidget jarviswidget-color-darken"
+          id="date-table-widget"
+          data-widget-editbutton="false"
+          data-widget-deletebutton="false"
+          data-widget-colorbutton="false"
+          data-widget-togglebutton="false"
+          data-widget-fullscreenbutton="false"
+          style="display: none;"
+        >
+          <header>
+            <span class="widget-icon"><i class="fa fa-table"></i></span>
+            <h2>查詢結果</h2>
+          </header>
+          <div class="container">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a data-toggle="tab" href="#listQuality">派工單良率</a>
+              </li>
+              <li><a data-toggle="tab" href="#detailRecord">詳細記錄</a></li>
+            </ul>
+            <div class="tab-content">
+              <div id="listQuality" class="tab-pane fade in active">
+                <div style="position: relative; left: 10px;">
+                  <br />
+                  <span style="float: left;" name="complexQueryStatus"></span>
+                  <br />
+                  <br />
+                </div>
+                <div>
+                  <div class="widget-body no-padding">
+                    <table
+                      id="date-table"
+                      class="table table-striped table-bordered table-hover"
+                      width="100%"
+                    >
+                      <thead>
+                        <tr>
+                          <th class="hasinput" style="width: 12%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 12%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 12%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 12%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 12%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th
+                            style="display: none;"
+                            class="hasinput"
+                            style="width: 12%;"
+                          >
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 12%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th data-class="expand">派工單號</th>
+                          <th>品項</th>
+                          <th>初始投入量</th>
+                          <th>最後工序產量</th>
+                          <th>派工單良率(%)</th>
+                          <th style="display: none;">產品良率目標值(%)</th>
+                          <th>總生產時間</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div id="detailRecord" class="tab-pane fade">
+                <div style="position: relative; left: 10px;">
+                  <br />
+                  <span style="float: left;" name="complexQueryStatus"></span>
+                  <br />
+                  <br />
+                </div>
+                <div>
+                  <div class="widget-body no-padding">
+                    <table
+                      id="date-table2"
+                      class="table table-striped table-bordered table-hover"
+                      width="100%"
+                    >
+                      <thead>
+                        <tr>
+                          <th class="hasinput" style="width: 9%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 7%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th
+                            style="display: none;"
+                            class="hasinput"
+                            style="width: 7%;"
+                          >
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 5%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 7%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th
+                            style="display: none;"
+                            class="hasinput"
+                            style="width: 7%;"
+                          >
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 9%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th
+                            style="display: none;"
+                            class="hasinput"
+                            style="width: 9%;"
+                          >
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 7%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 7%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 7%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th class="hasinput" style="width: 7%;">
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th
+                            style="display: none;"
+                            class="hasinput"
+                            style="width: 7%;"
+                          >
+                            <select type="text" class="form-control"></select>
+                          </th>
+                          <th
+                            style="display: none;"
+                            class="hasinput"
+                            style="width: 7%;"
+                          >
+                            <select type="text" class="form-control"></select>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th data-class="expand">派工單號</th>
+                          <th>品項</th>
+                          <th style="display: none;">班次日期</th>
+                          <th>工序</th>
+                          <th>製程</th>
+                          <th style="display: none;">線別</th>
+                          <th>進站時間</th>
+                          <th style="display: none;">進出站時間(時)</th>
+                          <th>產量</th>
+                          <th>良品數</th>
+                          <th>不良數</th>
+                          <th>良率(%)</th>
+                          <th style="display: none;">產品良率目標值(%)</th>
+                          <th style="display: none;">異常</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<script>
+  window.importPageScript()
+</script>

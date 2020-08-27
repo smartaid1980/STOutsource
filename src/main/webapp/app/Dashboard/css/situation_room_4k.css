@@ -1,0 +1,48 @@
+@media (min-width: 3840px) {
+  html {
+    font-size: 40px;
+  }
+}
+
+#jarviswidget-fullscreen-mode .jarviswidget > div {
+  overflow: hidden;
+}
+
+.txt-sm {
+  font-size: 1rem !important;
+  margin-bottom: 0.3rem;
+}
+
+.txt-md {
+  font-size: 1.4rem !important;
+}
+.txt-lg {
+  font-size: 1.8rem !important;
+}
+
+.sr-card {
+  background-color: #222b45;
+  border: 0 solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem 0 #1a1f33;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin: 0.5rem;
+  padding: 2rem;
+}
+
+.smart-style-5 .jarviswidget-color-darken > header {
+  border-left: none !important;
+}
+
+.title {
+  color: #36a4b5;
+  margin-bottom: 3vh;
+}
+
+.title::before {
+  content: '　';
+  padding: 0.5vh;
+  border-left: 0.5rem solid #36a4b5;
+}

@@ -1,0 +1,999 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Query_Condition}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" id="query-form" novalidate="novalidate">
+              <fieldset>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="label">{i18n_ServCloud_Program}</label>
+                    <label class="input">
+                      <select
+                        class="select2 full-width"
+                        id="tool-nc"
+                        name="tool-nc"
+                      ></select>
+                    </label>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button name="submit-clean" class="btn btn-primary">
+                  {i18n_ServCloud_Clean}
+                </button>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Submit}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        class="jarviswidget jarviswidget-color-darken"
+        id="tool-prep-table-widget"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Query_Result}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding" id="tool-prep-table-body">
+            <table
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+              stk-entity-pk="tool_prep_id"
+              id="tool-prep-table"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: 24%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 28%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 28%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Program}</th>
+                  <th>{i18n_ServCloud_Create_Time}</th>
+                  <th>{i18n_ServCloud_Edit_Time}</th>
+                  <th>{i18n_ServCloud_Tool_Information}</th>
+                  <th>{i18n_ServCloud_Using_Record}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr stk-input-template hidden="hidden">
+                  <td>
+                    <input
+                      name="nc_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Program}"
+                      stk-pk
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="create_time"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Create_Time}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="modify_time"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Edit_Time}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="use_tool"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Tool_Information}"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="case_close_down"
+                      type="text"
+                      class="form-control"
+                      placeholder="{i18n_ServCloud_Using_Record}"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div id="stk-file"></div>
+    <!-- WIDGET END -->
+    <div
+      class="modal fade"
+      id="update-tool-prep-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">編輯備刀紀錄</h4>
+          </div>
+          <div class="modal-body">
+            <!-- NEW WIDGET START -->
+            <div
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>備刀單</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding" id="prep-list-result-body">
+                  <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <h1><span id="nc-name-text"></span></h1>
+                  </div>
+                  <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <h1><span id="tool-prep-id-text"></span></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="jarviswidget jarviswidget-color-darken"
+              id="tool-prep-list-table-widget"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>使用刀具</h2>
+              </header>
+              <div>
+                <div
+                  class="widget-body no-padding"
+                  id="tool-prep-list-table-body"
+                >
+                  <table
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                    stk-entity-pk="tool_prep_id"
+                    id="tool-prep-list-table"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="hasinput" style="width: 1%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 1%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 5%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 5%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 10%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 10%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 10%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 16%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 7%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 1%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>tool_prep_id</th>
+                        <th>nc_name</th>
+                        <th>刀號(T)</th>
+                        <th>刀長補正(H)</th>
+                        <th>刀具直徑</th>
+                        <th>刀具類型</th>
+                        <th>刀具品號</th>
+                        <th>刀具長度</th>
+                        <th>組件名稱</th>
+                        <th>刀具編號</th>
+                        <th>部門</th>
+                        <th>刀把編號</th>
+                        <th>memo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr stk-input-template hidden="hidden">
+                        <td>
+                          <input
+                            name="tool_prep_id"
+                            type="text"
+                            class="form-control"
+                            placeholder="tool_prep_id"
+                            stk-pk
+                          />
+                        </td>
+                        <td>
+                          <input
+                            name="nc_name"
+                            type="text"
+                            class="form-control"
+                            placeholder="nc_name"
+                            stk-pk
+                          />
+                        </td>
+                        <td>
+                          <input
+                            name="tool_no"
+                            type="text"
+                            class="form-control"
+                            placeholder="刀號"
+                            stk-pk
+                          />
+                        </td>
+                        <td>
+                          <input
+                            name="compensation"
+                            type="text"
+                            class="form-control"
+                            placeholder="刀長補正"
+                            disabled
+                          />
+                        </td>
+                        <td>
+                          <input
+                            name="tool_spec"
+                            type="text"
+                            class="form-control"
+                            placeholder="刀具直徑"
+                            disabled
+                          />
+                        </td>
+                        <td>
+                          <input
+                            name="tool_type"
+                            type="text"
+                            class="form-control"
+                            placeholder="刀具類型"
+                            disabled
+                          />
+                        </td>
+                        <td>
+                          <input
+                            name="tool_code"
+                            type="text"
+                            class="form-control"
+                            placeholder="刀具品號"
+                            disabled
+                          />
+                        </td>
+                        <td>
+                          <input
+                            name="tool_length"
+                            type="text"
+                            class="form-control"
+                            placeholder="刀具長度"
+                            disabled
+                          />
+                        </td>
+                        <td>
+                          <input
+                            name="holder_type"
+                            type="text"
+                            class="form-control"
+                            placeholder="組件名稱"
+                            disabled
+                          />
+                        </td>
+                        <td>
+                          <select
+                            name="tool_id"
+                            class="select2 full-width"
+                          ></select>
+                        </td>
+                        <td>
+                          <select
+                            name="dept_id"
+                            class="select2 full-width"
+                          ></select>
+                        </td>
+                        <td>
+                          <select
+                            name="holder_id"
+                            class="select2 full-width"
+                          ></select>
+                        </td>
+                        <td>
+                          <input
+                            name="memo"
+                            type="text"
+                            class="form-control"
+                            placeholder="memo"
+                            disabled
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="create-tool-prep-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">新增備刀紀錄</h4>
+          </div>
+          <div class="modal-body">
+            <div
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>備刀單</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding">
+                  <form
+                    class="smart-form"
+                    id="query-form-create"
+                    novalidate="novalidate"
+                  >
+                    <fieldset>
+                      <div class="row">
+                        <section
+                          class="col col-xs-12 col-sm-12 col-md-4 col-lg-4"
+                        >
+                          <label class="label">加工程式名稱</label>
+                          <label class="input">
+                            <select
+                              class="select2 full-width"
+                              id="tool-nc-create"
+                              name="tool-nc-create"
+                            ></select>
+                          </label>
+                        </section>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="jarviswidget jarviswidget-color-darken"
+              id="tool-nc-list-table-widget"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>使用刀具</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding">
+                  <table
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                    id="tool-nc-list-table"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="hasinput" style="width: 10%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 15%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 15%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 24%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 10%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 5%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>刀號(T)</th>
+                        <th>刀長補正(H)</th>
+                        <th>刀具直徑</th>
+                        <th>刀具類型</th>
+                        <th>刀具品號</th>
+                        <th>刀具長度</th>
+                        <th>組件名稱</th>
+                        <th>刀具編號</th>
+                        <th>刀把所屬單位</th>
+                        <th>刀把編號</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="create-tool-prep-cancel"
+              type="button"
+              class="btn undefinedBtn"
+            >
+              取消
+            </button>
+            <button
+              id="create-tool-prep-submit-btn"
+              type="button"
+              class="btn btn-primary"
+            >
+              備刀完成確認
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="use-tool-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">使用刀具</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <form
+                class="smart-form"
+                id="use-tool-form"
+                novalidate="novalidate"
+              >
+                <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <table
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                    id="tool-nc-list-table"
+                  >
+                    <thead>
+                      <tr>
+                        <th>刀號(T)</th>
+                        <th>刀長補正(H)</th>
+                        <th>刀具直徑</th>
+                        <th>刀具類型</th>
+                        <th>刀具品號</th>
+                        <th>刀具長度</th>
+                        <th>組件名稱</th>
+                      </tr>
+                      <tr>
+                        <th id="tool-no-tr"></th>
+                        <th id="com-tr"></th>
+                        <th id="tool-spec-tr"></th>
+                        <th id="tool-type-tr"></th>
+                        <th id="tool-code-tr"></th>
+                        <th id="tool-length-tr"></th>
+                        <th id="holder-type-tr"></th>
+                      </tr>
+                    </thead>
+                  </table>
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <hr style="width: 98%; margin: 6px auto;" />
+                  </section>
+                  <label class="label">使用刀具</label>
+
+                  <section class="col col-xs-6 col-sm-6 col-md-3 col-lg-6">
+                    <label class="radio">
+                      <input
+                        type="radio"
+                        id="type_select"
+                        name="type"
+                        value="tool-id-select"
+                        data-rule-required="true"
+                        data-msg-required="請選填"
+                        checked
+                      />
+                      <i></i>
+                      <p>輸入</p>
+                    </label>
+                    <label class="input">
+                      <select
+                        class="select2 full-width"
+                        id="tool-id-create"
+                        name="tool-id-create"
+                        data-rule-required="#type_select:checked"
+                      ></select>
+                    </label>
+                  </section>
+
+                  <section class="col col-xs-6 col-sm-6 col-md-3 col-lg-6">
+                    <label class="radio">
+                      <input
+                        type="radio"
+                        id="type_customer"
+                        name="type"
+                        value="tool-id-cus"
+                        data-rule-required="true"
+                        data-toggle="modal"
+                        data-target="#batch-create-tool-modal"
+                      />
+                      <i></i>
+                      <p>自訂</p>
+                    </label>
+                    <label class="input">
+                      <input
+                        type="text"
+                        id="cus-tool-id-create"
+                        class="form-control"
+                        data-rule-required="#type_customer:checked"
+                      />
+                    </label>
+                  </section>
+                  <span id="tool-id-alarm-msg"></span>
+                  <section class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <hr style="width: 98%; margin: 6px auto;" />
+                  </section>
+                  <section class="col col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                    <label id="element25"> <span>使用刀把</span>: </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <label class="label">部門</label>
+                    <label class="input">
+                      <select
+                        class="select2 full-width holder-id-trigger"
+                        name="dept-id"
+                      ></select>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <label class="label">刀把代號</label>
+                    <label class="input">
+                      <select
+                        class="select2 full-width holder-id-trigger"
+                        name="holder-code"
+                      ></select>
+                    </label>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <label class="label">刀把編號</label>
+                    <label class="input">
+                      <select
+                        class="select2 full-width"
+                        name="holder-id"
+                        data-rule-required="true"
+                      ></select>
+                    </label>
+                  </section>
+                </section>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="use-tool-cancel" type="button" class="btn undefinedBtn">
+              取消
+            </button>
+            <button
+              id="use-tool-submit-btn"
+              type="button"
+              class="btn btn-primary"
+            >
+              確認
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="batch-create-tool-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">新增刀具</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <form
+                class="smart-form"
+                id="batch-create-tool-form"
+                novalidate="novalidate"
+              >
+                <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <label class="label">{i18n_ServCloud_Tool_Number}</label>
+                  <label class="input">
+                    <input
+                      type="text"
+                      id="tool-code-batch"
+                      name="tool-code-batch"
+                      class="form-control"
+                    />
+                  </label>
+                </section>
+
+                <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <label class="label">{i18n_ServCloud_Tool_Diameter}</label>
+                  <label class="input">
+                    <input
+                      type="text"
+                      id="tool-spec-batch"
+                      name="tool-spec-batch"
+                      class="form-control"
+                    />
+                  </label>
+                </section>
+                <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <label class="label">{i18n_ServCloud_Tool_Type}</label>
+                  <label class="input">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="tool-type-batch"
+                      name="tool-type-batch"
+                    />
+                  </label>
+                </section>
+
+                <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-6">
+                  <label class="label"
+                    >{i18n_ServCloud_Life_Of_Tool_Usage(hrs)}</label
+                  >
+                  <label class="input">
+                    <input
+                      type="text"
+                      id="use-life-hr-batch"
+                      name="use-life-hr-batch"
+                      data-rule-number="true"
+                      data-msg-pattern="必需為數字"
+                      class="form-control"
+                    />
+                  </label>
+                </section>
+                <section class="col col-xs-12 col-sm-12 col-md-4 col-lg-6">
+                  <label class="label"
+                    >{i18n_ServCloud_Alarm_Of_Tool_Usage(hrs)}</label
+                  >
+                  <label class="input">
+                    <input
+                      type="text"
+                      id="alarm-life-hr-batch"
+                      name="alarm-life-hr-batch"
+                      data-rule-number="true"
+                      data-msg-pattern="必需為數字"
+                      class="form-control"
+                    />
+                  </label>
+                </section>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="batch-create-cancel"
+              type="button"
+              class="btn undefinedBtn"
+            >
+              {i18n_ServCloud_Cancel}
+            </button>
+            <button
+              id="batch-create-tool-submit-btn"
+              type="button"
+              class="btn btn-primary"
+            >
+              {i18n_ServCloud_Save}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="close-case-check-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">確認</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <span style="font-size: 16px;">備刀單是否結案?</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="close-case-cancel"
+              type="button"
+              class="btn undefinedBtn"
+            >
+              否
+            </button>
+            <button
+              id="close-case-submit-btn"
+              type="button"
+              class="btn btn-primary"
+            >
+              是
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 快速建立備刀單紀錄 MODAL START -->
+    <div
+      class="modal fade"
+      id="quickly-insert-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">快速建立備刀單紀錄</h4>
+          </div>
+          <div class="modal-body">
+            <div
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>備刀單</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding">
+                  <form
+                    class="smart-form"
+                    id="query-form-create"
+                    novalidate="novalidate"
+                  >
+                    <fieldset>
+                      <div class="row">
+                        <section
+                          class="col col-xs-12 col-sm-12 col-md-4 col-lg-4"
+                        >
+                          <label class="label">加工程式名稱</label>
+                          <label class="input">
+                            <select
+                              class="select2 full-width"
+                              id="quickly-insert-tool-nc-create"
+                            ></select>
+                          </label>
+                        </section>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="jarviswidget jarviswidget-color-darken"
+              id="quickly-insert-tool-nc-list-table-widget"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <header>
+                <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                <h2>使用刀具</h2>
+              </header>
+              <div>
+                <div class="widget-body no-padding">
+                  <table
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                    id="quickly-insert-tool-nc-list-table"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="hasinput" style="width: 10%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 15%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: 8%;">
+                          <input type="text" class="form-control" />
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>刀號(T)</th>
+                        <th>刀長補正(H)</th>
+                        <th>刀具直徑</th>
+                        <th>刀具類型</th>
+                        <th>刀具品號</th>
+                        <th>刀具長度</th>
+                        <th>組件名稱</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="quickly-insert-btn" class="btn btn-primary">
+              確認
+            </button>
+            <button class="btn btn-default" data-dismiss="modal">取消</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 快速建立備刀單紀錄 MODAL END -->
+  </div>
+  <!-- end row -->
+</section>
+<style>
+  .modal-body {
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+  }
+
+  .modal-xl {
+    width: 95%;
+    max-width: 2000px;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

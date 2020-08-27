@@ -1,0 +1,52 @@
+{
+  "app": {
+    "id": "Juihua",
+    "name": "i18n_ServCloud_Juihua",
+    "type": 1,
+    "description": "Management",
+    "version": "1.0"
+  },
+  "functions": [
+    {
+      "id": "01_order_to_month_plan",
+      "name": "i18n_ServCloud_Juihua_Order_To_Month_Plan"
+    },
+    {
+      "id": "01_order_to_month_plan_demo",
+      "name": "i18n_ServCloud_Juihua_Order_To_Month_Plan_Demo"
+    },
+    {
+      "id": "02_order_transform",
+      "name": "i18n_ServCloud_Juihua_Order_Transform"
+    },
+    {
+      "id": "03_supplier_give_material_amount",
+      "name": "i18n_ServCloud_Juihua_Supplier_Give_Material_Amount"
+    },
+    {
+      "id": "04_download_receive_material",
+      "name": "i18n_ServCloud_Juihua_Download_Receive_Material"
+    },
+    {
+      "id": "05_receive_material",
+      "name": "i18n_ServCloud_Juihua_Receive_Material"
+    },
+    {
+      "id": "06_supplier_name_setting",
+      "name": "i18n_ServCloud_Juihua_Supplier_Name_Settings"
+    },
+    {
+      "id": "07_supplier_deliver_setting",
+      "name": "i18n_ServCloud_Juihua_Supplier_Deliver_Settings"
+    },
+    {
+      "id": "08_supplier_trip_setting",
+      "name": "i18n_ServCloud_Juihua_Supplier_Trip_Settings"
+    },
+    {
+      "id": "09_query_no_received",
+      "name": "i18n_ServCloud_Juihua_Query_No_Received"
+    }
+  ],
+  "tags": ["20140918000002"]
+}

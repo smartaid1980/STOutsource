@@ -1,0 +1,8 @@
+{
+  "type": "Report",
+  "gridClass": "col-xs-12 col-sm-12 col-md-12 col-lg-12",
+  "title": "<i class='fa fa-bar-chart-o'></i> <strong>{i18n_ServCloud_ProcessParam}</strong>",
+  "contentPadding": true,
+  "disable": false,
+  "dependencies": ["/js/plugin/dygraphs/dygraph-combined.min.js"]
+}

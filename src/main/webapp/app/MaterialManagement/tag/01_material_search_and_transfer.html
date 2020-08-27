@@ -1,0 +1,424 @@
+<section id="widget-grid">
+  <!-- row -->
+  <div class="row">
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="search-query-conditions-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>{i18n_ServCloud_Inquire}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <form class="smart-form" novalidate="novalidate" id="form">
+              <fieldset>
+                <div class="row">
+                  <!-- check -->
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <section>
+                      <label class="checkbox" id="checkbox_group">
+                        <input type="checkbox" name="select_all" value="All" />
+                        入庫狀態 <i></i>
+                      </label>
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="storage_status"
+                            value="0"
+                          />
+                          <i></i>未入庫
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="storage_status"
+                            value="1"
+                          />
+                          <i></i>已入庫
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="storage_status"
+                            value="9"
+                          />
+                          <i></i>鎖定
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="storage_status"
+                            value="98"
+                          />
+                          <i></i>領出至移動料架
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="storage_status"
+                            value="99"
+                          />
+                          <i></i>領出
+                        </label>
+                      </div>
+                    </section>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div>
+                      <label class="label">{i18n_ServCloud_Warehouse}</label>
+                      <label class="input">
+                        <select
+                          id="warehouse_select"
+                          type="text"
+                          class="form-control"
+                        ></select>
+                      </label>
+                    </div>
+                  </section>
+                </div>
+
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                    <div>
+                      <label class="label"
+                        >{i18n_ServCloud_Expiry_Date}開始</label
+                      >
+                      <label class="input"
+                        ><i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          id="startDate"
+                          data-rule-required="true"
+                          data-rule-date="true"
+                          class="form-control"
+                        />
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                    <div>
+                      <label class="label"
+                        >{i18n_ServCloud_Expiry_Date}結束</label
+                      >
+                      <label class="input"
+                        ><i class="icon-append fa fa-calendar"></i>
+                        <input
+                          type="text"
+                          id="endDate"
+                          data-rule-required="true"
+                          data-rule-date="true"
+                          class="form-control"
+                        />
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div>
+                      <label class="label"
+                        >{i18n_ServCloud_Supplier_Material_Id}</label
+                      >
+                      <label class="input">
+                        <select
+                          id="vender_pn"
+                          type="text"
+                          class="form-control"
+                        ></select>
+                      </label>
+                    </div>
+                  </section>
+                </div>
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div>
+                      <label class="label">{i18n_ServCloud_Vender_Pn}</label>
+                      <label class="input">
+                        <select
+                          id="material_id"
+                          type="text"
+                          class="form-control"
+                        ></select>
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div>
+                      <label class="label">Date Code</label>
+                      <label class="input">
+                        <input
+                          id="date_code"
+                          type="text"
+                          class="form-control"
+                        />
+                      </label>
+                    </div>
+                  </section>
+                </div>
+
+                <div class="row">
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div>
+                      <label class="label">{i18n_ServCloud_Supplier}</label>
+                      <label class="input">
+                        <input id="supplier" type="text" class="form-control" />
+                      </label>
+                    </div>
+                  </section>
+                  <section class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div>
+                      <label class="label"
+                        >{i18n_ServCloud_LotNo} (LOT No.)</label
+                      >
+                      <label class="input">
+                        <input id="lot_no" type="text" class="form-control" />
+                      </label>
+                    </div>
+                  </section>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  {i18n_ServCloud_Inquire}
+                </button>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WIDGET END -->
+
+    <!-- NEW WIDGET START -->
+    <article class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken frame"
+        data-widget-fullscreenbutton="false"
+        data-widget-togglebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>{i18n_ServCloud_Query_Result}</h2>
+        </header>
+        <div>
+          <div class="widget-body no-padding">
+            <table
+              id="query-result"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput" style="width: calc(100% / 12);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 12);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 12);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 12);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 12);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 7%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 12);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 12);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 12);">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: 10%;">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput" style="width: calc(100% / 12);">
+                    <input type="text" class="form-control" />
+                  </th>
+                </tr>
+                <tr>
+                  <th>{i18n_ServCloud_Pkg-Id}</th>
+                  <th>{i18n_ServCloud_Storage_Date}</th>
+                  <th>{i18n_ServCloud_Part_No}(CPN)</th>
+                  <th>{i18n_ServCloud_Supplier_Name}</th>
+                  <th>{i18n_ServCloud_Date_Code}(Date Code)</th>
+                  <th>{i18n_ServCloud_LotNo}(LotNo)</th>
+                  <th>{i18n_ServCloud_Expiry_Date}</th>
+                  <th>{i18n_ServCloud_Warehouse}</th>
+                  <th>{i18n_ServCloud_Storage_Spaces}</th>
+                  <th>{i18n_ServCloud_Quantity}</th>
+                  <th>{i18n_ServCloud_Status}</th>
+                  <th>{i18n_ServCloud_Records}</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div
+      class="modal fade"
+      id="detail-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" style="width: 80vw;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              ×
+            </button>
+            <h4 class="modal-title">{i18n_ServCloud_Material_Records}</h4>
+          </div>
+
+          <!-- 料件紀錄 上方資料 -->
+          <div class="modal-body">
+            <div
+              id="records_widget"
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <div>
+                <div class="widget-body no-padding" style="min-height: 0px;">
+                  <table
+                    id="detail_table"
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                  ></table>
+                </div>
+              </div>
+            </div>
+
+            <!-- 料件紀錄 下方資料 -->
+            <div
+              id="item_table_widget"
+              class="jarviswidget jarviswidget-color-darken"
+              data-widget-fullscreenbutton="false"
+              data-widget-togglebutton="false"
+            >
+              <div>
+                <div class="widget-body no-padding">
+                  <table
+                    id="item_table"
+                    class="table table-striped table-bordered table-hover"
+                    width="100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                        <th class="hasinput" style="width: calc(100% / 11);">
+                          <input type="text" class="form-control" />
+                        </th>
+                      </tr>
+                      <tr>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Time}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Type}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Storage_PageNumber}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Warehouse_Out_Order}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Feed_Station_Table}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Warehouse_Type}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Storage_Position}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Warehouse_Out}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Warehouse_Out_Position}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Quantity}
+                        </th>
+                        <th style="width: calc(100% / 11);">
+                          {i18n_ServCloud_Transferred_Out}
+                        </th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              {i18n_ServCloud_Drop_Out}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end row -->
+</section>
+
+<script>
+  window.importPageScript()
+</script>

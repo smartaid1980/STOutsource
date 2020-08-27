@@ -1,0 +1,209 @@
+<section id="widget-grid">
+  <a
+    href="javascript: void(0)"
+    id="outer-layer-treatment-leave-btn"
+    class="btn btn-default"
+    ><i class="fa fa-mail-reply"></i>&nbsp; {i18n_ServCloud_Go_Back}
+  </a>
+  <br />
+  <br />
+  <div
+    class="jarviswidget jarviswidget-color-darken data-widget-collapsed"
+    data-widget-fullscreenbutton="false"
+    data-widget-togglebutton="false"
+  >
+    <header>
+      <span class="widget-icon"> <i class="fa fa-reorder"></i> </span>
+      <h2>{i18n_ServCloud_Outer_Layer_Treatment}</h2>
+    </header>
+    <div>
+      <div class="widget-body">
+        <div id="outer-layer-treatment-space">
+          <div class="picture col col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <div
+              class="col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+              style="display: -webkit-inline-box;"
+            >
+              <span id="status"></span>
+              <div style="margin: -5px 0 0 7px;">
+                <span id="alarm-info"></span>
+              </div>
+            </div>
+            <img class="bg" />
+          </div>
+          <div class="signal col col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <div
+              id="param1"
+              class="show-stats col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+            >
+              <span class="title">輸送速度 (M)</span>
+              <br />
+              <span class="value">---</span>
+            </div>
+            <div
+              id="param2"
+              class="show-stats col col-xs-6 col-sm-6 col-md-6 col-lg-6"
+            >
+              <span class="title">
+                超粗化#1噴壓
+                <span class="pull-right">
+                  <span class="actual-value">---</span>
+                  <span class="standard-value">/2.5</span>
+                </span>
+              </span>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-color-blue"
+                  style="width: 0%;"
+                ></div>
+              </div>
+            </div>
+            <div
+              id="param3"
+              class="show-stats col col-xs-6 col-sm-6 col-md-6 col-lg-6"
+            >
+              <span class="title">
+                超粗化#2噴壓
+                <span class="pull-right">
+                  <span class="actual-value">---</span>
+                  <span class="standard-value">/2.5</span>
+                </span>
+              </span>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-color-blue"
+                  style="width: 0%;"
+                ></div>
+              </div>
+            </div>
+            <div
+              id="param4"
+              class="show-stats col col-xs-6 col-sm-6 col-md-6 col-lg-6"
+            >
+              <span class="title">超粗化槽溫度</span>
+              <div class="chart-gauge" id="gauge1"></div>
+            </div>
+            <div
+              id="param5"
+              class="show-stats col col-xs-6 col-sm-6 col-md-6 col-lg-6"
+            >
+              <span class="title">烘乾溫度</span>
+              <div class="chart-gauge" id="gauge2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  #outer-layer-treatment-space > div {
+    margin-bottom: 10px;
+  }
+
+  #outer-layer-treatment-space .signal {
+    padding: 0px;
+    border-right: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+  }
+
+  #outer-layer-treatment-space #status {
+    padding: 5px 10px;
+    border: 1px solid #666;
+    font-size: 14px;
+    color: #000;
+    background: #d3d3d3;
+  }
+
+  #outer-layer-treatment-space #status.online {
+    background: #2e8b57;
+  }
+
+  #outer-layer-treatment-space #status.idle {
+    background: #ffa500;
+  }
+
+  #outer-layer-treatment-space #status.alarm {
+    background: #a90329;
+  }
+
+  #outer-layer-treatment-space #alarm-info {
+    color: red;
+    font-size: 1.5em;
+  }
+
+  #outer-layer-treatment-time h3 {
+    margin-top: 0px;
+  }
+
+  #outer-layer-treatment-space .picture {
+    text-align: center;
+  }
+
+  #outer-layer-treatment-space .picture > div {
+    text-align: left;
+  }
+
+  #outer-layer-treatment-space .show-stats {
+    border-left: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    padding: 5px 10px;
+  }
+
+  #outer-layer-treatment-space .show-stats .standard-value {
+    font-size: 14px;
+  }
+
+  #outer-layer-treatment-space .show-stats .progress {
+    height: 7px;
+    margin-top: 4px;
+  }
+
+  #outer-layer-treatment-space .show-stats .value {
+    font-size: 1.5em;
+    color: green;
+  }
+
+  #outer-layer-treatment-space .chart-gauge {
+    width: 250px;
+    margin: auto;
+  }
+
+  #outer-layer-treatment-space .chart-gauge .chart-first,
+  .chart-third {
+    fill: #d62728;
+  }
+
+  #outer-layer-treatment-space .chart-gauge .chart-second {
+    fill: #2fa12f;
+  }
+
+  #outer-layer-treatment-space .chart-gauge .needle,
+  .needle-center {
+    fill: #000000;
+  }
+
+  #outer-layer-treatment-space .chart-gauge .text {
+    color: '#112864';
+    font-size: 16px;
+  }
+
+  #outer-layer-treatment-space .chart-gauge .min {
+    font-size: 14px;
+    text-anchor: middle;
+    transform: translate(-93px, -31px) rotate(-64deg);
+  }
+
+  #outer-layer-treatment-space .chart-gauge .max {
+    font-size: 14px;
+    text-anchor: middle;
+    transform: translate(93px, -31px) rotate(66deg);
+  }
+
+  #outer-layer-treatment-space .chart-gauge svg {
+    font: 10px sans-serif;
+  }
+</style>
+<script type="text/javascript">
+  window.importPageScript()
+</script>

@@ -1,0 +1,608 @@
+<section id="widget-grid" class="">
+  <!-- ROW START -->
+  <div class="row">
+    <!-- WIDGET START -->
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Query Condition -->
+      <div
+        id="query-condition-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+          <h2>查詢</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <form
+              id="query-condition-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">訂單編號</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          id="order_id-input"
+                          name="order_id"
+                        />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">管編</label>
+                      <label class="input">
+                        <input
+                          type="text"
+                          class=""
+                          id="product_id-input"
+                          name="product_id"
+                        />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">機台派工狀態</label>
+                      <div class="inline-group">
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="status"
+                            value="unclosed"
+                            checked
+                          />
+                          <i></i>未結案
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" name="status" value="closed" />
+                          <i></i>已結案
+                        </label>
+                        <label class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="status"
+                            value="canceled"
+                          />
+                          <i></i>已取消
+                        </label>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">派工日期起始</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="startDate" id="start-date" />
+                      </label>
+                    </section>
+                    <section>
+                      <label class="label">派工日期結束</label>
+                      <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input type="text" name="endDate" id="end-date" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label st-required">機台編號</label>
+                      <label class="select select-multiple">
+                        <select
+                          id="machine_id-select"
+                          name="machine_id"
+                          multiple="multiple"
+                          data-rule-required="true"
+                          aria-required="true"
+                        ></select>
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+              <footer>
+                <button id="submit-btn" class="btn btn-primary">
+                  查詢
+                </button>
+              </footer>
+            </form>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- Query Condition END -->
+      <!-- detail DATATABLE -->
+      <div
+        id="query-result-widget"
+        class="jarviswidget jarviswidget-color-darken"
+        data-widget-editbutton="false"
+        data-widget-deletebutton="false"
+        data-widget-collapsed="true"
+      >
+        <header>
+          <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+          <h2>查詢結果</h2>
+        </header>
+        <!-- widget div-->
+        <div>
+          <!-- widget edit box -->
+          <div class="jarviswidget-editbox">
+            <!-- This area used as dropdown edit box -->
+          </div>
+          <!-- end widget edit box -->
+          <!-- widget content -->
+          <div class="widget-body no-padding">
+            <table
+              id="query-result-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <input type="text" class="form-control" />
+                  </th>
+                  <th class="hasinput">
+                    <select class="form-control"></select>
+                  </th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>材料庫</th>
+                  <th>生產指令</th>
+                  <th>機台編號</th>
+                  <th>派工時間</th>
+                  <th>管編</th>
+                  <th>派工數</th>
+                  <th>生產數</th>
+                  <th>不良數</th>
+                  <th>預計上線日</th>
+                  <th>預計完工日</th>
+                  <th>實際生產日</th>
+                  <th>實際完工日</th>
+                  <th>派工狀態</th>
+                  <th>領料</th>
+                  <th>取消</th>
+                  <th>結案</th>
+                  <th>編輯</th>
+                  <th>詳細內容</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <!-- widget content END -->
+        </div>
+        <!-- widget div END -->
+      </div>
+      <!-- detail DATATABLE END -->
+    </article>
+    <!-- WIDGET END -->
+    <div
+      class="modal fade"
+      id="confirm-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title" id="confirm-title"></h3>
+          </div>
+
+          <div class="modal-body" style="border: none !important;">
+            <h5 id="confirm-content"></h5>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-toggle="modal"
+              data-target="#confirm-modal-widget"
+            >
+              取消
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btnClass"
+              id="confirm-yes"
+            >
+              確認
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="create-assignment-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">機台派工</h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <form
+              id="create-assignment-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-4 col-sm-12">
+                    <section>
+                      <label class="label st-required">訂單編號</label>
+                      <label class="input">
+                        <input type="text" name="order_id" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-sm-12">
+                    <section>
+                      <label class="label st-required">機台</label>
+                      <label class="select">
+                        <select name="machine_id"></select>
+                        <i></i>
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-sm-12">
+                    <section>
+                      <label class="label">管編</label>
+                      <label class="input">
+                        <input type="text" name="product_id" disabled />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-4 col-sm-12">
+                    <section>
+                      <label class="label">標工</label>
+                      <label class="input">
+                        <input type="text" name="m_ptime" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-sm-12">
+                    <section>
+                      <label class="label">單件用量</label>
+                      <label class="input">
+                        <input type="text" name="m_usage" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-sm-12">
+                    <section>
+                      <label class="label st-required">派工數量</label>
+                      <label class="input">
+                        <input type="text" name="m_qty" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-4 col-sm-12">
+                    <section>
+                      <label class="label">預計上線日期</label>
+                      <label class="input">
+                        <input type="text" name="exp_mdate" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-sm-12">
+                    <section>
+                      <label class="label">製程順序</label>
+                      <label class="input">
+                        <input type="text" name="pg_seq" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">材料監控</label>
+                      <div class="inline-group">
+                        <label class="radio">
+                          <input
+                            type="radio"
+                            name="mat_control"
+                            value="Y"
+                            checked
+                          />
+                          <i></i>是
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="mat_control" value="N" />
+                          <i></i>否
+                        </label>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <section>
+                      <label class="label">校車人員</label>
+                      <label class="select">
+                        <select name="work_by"></select>
+                        <i></i>
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-toggle="modal"
+              data-target="#create-assignment-modal-widget"
+            >
+              取消
+            </button>
+            <button
+              type="button"
+              class="btn btn-success btnClass"
+              id="create-assignment-btn"
+            >
+              確認
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="edit-assignment-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">編輯派工紀錄</h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <form
+              id="edit-assignment-form"
+              class="smart-form"
+              novalidate="novalidate"
+            >
+              <fieldset>
+                <div class="row">
+                  <div class="col col-lg-6 col-md-12 col-sm-12">
+                    <section>
+                      <label class="label">派工數</label>
+                      <label class="input">
+                        <input type="text" name="m_qty" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-6 col-md-12 col-sm-12">
+                    <section>
+                      <label class="label">校車人員</label>
+                      <label class="select">
+                        <select name="work_by"></select>
+                        <i></i>
+                      </label>
+                    </section>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-6 col-md-12 col-sm-12">
+                    <section>
+                      <label class="label">標工</label>
+                      <label class="input">
+                        <input type="text" name="m_ptime" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-6 col-md-12 col-sm-12">
+                    <section>
+                      <label class="label">單件用量</label>
+                      <label class="input">
+                        <input type="text" name="m_usage" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-6 col-md-12 col-sm-12">
+                    <section>
+                      <label class="label">預計生產日</label>
+                      <label class="input">
+                        <input type="text" name="exp_mdate" />
+                      </label>
+                    </section>
+                  </div>
+                  <div class="col col-lg-6 col-md-12 col-sm-12">
+                    <section>
+                      <label class="label">預計完工日</label>
+                      <label class="input">
+                        <input type="text" name="exp_edate" />
+                      </label>
+                    </section>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-toggle="modal"
+              data-target="#edit-assignment-modal-widget"
+            >
+              取消
+            </button>
+            <button
+              type="button"
+              class="btn btn-success btnClass"
+              id="update-assignment-btn"
+            >
+              儲存
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="assignment-detail-modal-widget"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">機台派工詳細內容</h3>
+          </div>
+          <div class="modal-body" style="border: none !important;">
+            <table
+              id="assignment-detail-table"
+              class="table table-striped table-bordered"
+              width="100%"
+            >
+              <tbody></tbody>
+            </table>
+            <h4>標工變更紀錄</h4>
+            <table
+              id="m_ptime-chg-log-table"
+              class="table table-striped table-bordered table-hover"
+              width="100%"
+            >
+              <thead>
+                <tr>
+                  <th>原標工</th>
+                  <th>原預計完成時間</th>
+                  <th>當下已生產時間</th>
+                  <th>當下已生產數</th>
+                  <th>M522=211的發生時間</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btnClass"
+              data-dismiss="modal"
+            >
+              關閉
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ROW END -->
+</section>
+<style>
+  #material-to-assign-info {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+  }
+  #location-detail-modal-widget #edit-material-assignment-btn,
+  #location-detail-modal-widget #cancel-edit-btn {
+    display: none;
+  }
+  #create-assignment-form [name='order_id'] {
+    position: relative;
+    z-index: 10000;
+  }
+  .ui-autocomplete {
+    z-index: 9999 !important;
+  }
+
+  label.error {
+    color: red;
+  }
+</style>
+<script>
+  window.importPageScript()
+</script>

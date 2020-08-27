@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>ServCloud</title>
+    <link
+      rel="shortcut icon"
+      href="img/logo/Servcloud-icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="img/logo/Servcloud-icon.ico" type="image/x-icon" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      table {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      tr,
+      td {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .tip,
+      .form {
+        width: 100%;
+        position: relative;
+      }
+      .form {
+        margin-top: 20px;
+      }
+
+      #valid-code,
+      #valid-btn {
+        width: 80%;
+        height: 32px;
+        font-size: 16px;
+        outline: none;
+      }
+      #valid-code {
+        padding: 10px;
+        display: block;
+        margin: auto;
+        border: 1px solid rgb(203, 203, 203);
+        -moz-border-radius: 0;
+        border-radius: 0;
+      }
+      #valid-btn {
+        margin: 10px;
+        color: white;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        background: rgb(66, 184, 221);
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      #valid-btn:hover {
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0.05, #0688fa),
+          color-stop(1, #2dabf9)
+        );
+        background: -moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+        background: -webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+        background: -o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+        background: -ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+        background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+        background-color: #0688fa;
+      }
+      #valid-btn:active {
+        position: relative;
+        top: 1px;
+      }
+
+      #nelson {
+        width: 55%;
+        height: 75%;
+        position: relative;
+      }
+
+      #message {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        padding: 10px 3px;
+        border-style: solid;
+        border-width: 3px;
+        text-align: center;
+        color: #333;
+        background: #fff;
+        /* css3 */
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+      /* creates larger curve */
+      #message:before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        bottom: -15px;
+        left: 10px;
+        width: 20px;
+        height: 10px;
+        border-style: solid;
+        border-width: 0 3px 3px 0;
+        background: transparent;
+        /* css3 */
+        -webkit-border-bottom-right-radius: 80px 50px;
+        -moz-border-radius-bottomright: 80px 50px;
+        border-bottom-right-radius: 80px 50px;
+        /* reduce the damage in FF3.0 */
+        display: block;
+      }
+      /* creates smaller curve */
+      #message:after {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        bottom: -15px;
+        left: 10px;
+        width: 10px;
+        height: 10px;
+        border-style: solid;
+        border-width: 0 3px 3px 0;
+        background: transparent;
+        /* css3 */
+        -webkit-border-bottom-right-radius: 40px 50px;
+        -moz-border-radius-bottomright: 40px 50px;
+        border-bottom-right-radius: 40px 50px;
+        /* reduce the damage in FF3.0 */
+        display: block;
+      }
+      /* creates a small circle to produce a rounded point where the two curves meet */
+      #message > :first-child:before {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 9px;
+        width: 3px;
+        height: 3px;
+        /* css3 */
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+      /* creates a white rectangle to cover part of the oval border*/
+      #message > :first-child:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 23px;
+        width: 7px;
+        height: 10px;
+        background: #fff;
+      }
+      #message > p {
+        font-size: 16px;
+      }
+
+      #message.green,
+      #message.green:before,
+      #message.green:after {
+        border-color: #5a8f00;
+      }
+      #message.green > :first-child:before {
+        background: #5a8f00;
+      }
+      #message.red,
+      #message.red:before,
+      #message.red:after {
+        border-color: #f00;
+      }
+      #message.red > :first-child:before {
+        background: #f00;
+      }
+
+      @media screen and (min-width: 769px) {
+        .tip,
+        .form {
+          width: 45%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        #valid-code,
+        #valid-btn {
+          font-size: 30px;
+          height: 64px;
+        }
+        #valid-btn {
+          moz-border-radius: 10px;
+          border-radius: 10px;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        #message {
+          width: 250px;
+          padding: 15px 5px;
+          border-width: 5px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          border-radius: 20px;
+        }
+        #message:before {
+          bottom: -18px;
+          left: 18px;
+          width: 13px;
+          height: 8px;
+          border-width: 0 5px 5px 0;
+        }
+        #message:after {
+          bottom: -18px;
+          left: 10px;
+          width: 10px;
+          height: 8px;
+          border-width: 0 5px 5px 0;
+        }
+        #message > :first-child:before {
+          bottom: -18px;
+          left: 9px;
+          width: 5px;
+          height: 5px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+        }
+        #message > :first-child:after {
+          bottom: -10px;
+          left: 25px;
+          width: 6px;
+          height: 10px;
+        }
+        #message > p {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <div class="tip">
+            <img id="nelson" src="img/nelson.png" />
+            <blockquote id="message" class="green">
+              <p>請輸入啟動碼來啟動產品！</p>
+            </blockquote>
+          </div>
+          <div class="form">
+            <input id="valid-code" type="text" placeholder="啟動碼" autofocus />
+            <button id="valid-btn">啟動</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <script src="js/libs/jquery-2.1.1.min.js"></script>
+    <script>
+      var jumpCount = 30
+
+      function jump() {
+        var topValue = jumpCount % 2 === 0 ? -20 : 0
+        $('#nelson').animate({ top: topValue })
+        jumpCount--
+        if (jumpCount > 0) {
+          setTimeout(jump, 200)
+        } else {
+          $('#nelson').animate({ top: topValue })
+          window.location.href = rootPath() + '/login.html'
+        }
+      }
+
+      function startJump() {
+        setTimeout(jump, 0)
+      }
+
+      function rootPath() {
+        var strFullPath = document.location.href,
+          strPath = document.location.pathname,
+          pos = strFullPath.indexOf(strPath),
+          prePath = strFullPath.substring(0, pos),
+          postPath = strPath.substring(0, strPath.substr(1).indexOf('/') + 1)
+        return prePath + postPath
+      }
+
+      function validateCodeBling() {
+        var changeCount = 7,
+          $validCode = $('#valid-code')
+
+        setTimeout(function changeBgColor() {
+          if (changeCount > 0) {
+            changeCount % 2 === 1
+              ? $validCode.css('background-color', '#ffe6e6')
+              : $validCode.css('background-color', '#fff')
+
+            changeCount -= 1
+            setTimeout(changeBgColor, 100)
+          } else {
+            $validCode.css('background-color', '#fff')
+          }
+        }, 0)
+      }
+
+      $('#valid-btn').on('click', function (evt) {
+        var $validCode = $('#valid-code'),
+          code = $validCode.val(),
+          $validBtn = $(this),
+          waitCount = 0,
+          intervalId
+
+        if (code) {
+          $validCode.attr('disabled', true)
+          $validBtn.attr('disabled', true)
+          $validBtn.html('驗證中')
+          intervalId = setInterval(function () {
+            var dots = ''
+            for (var i = 0; i < waitCount % 6; i++) {
+              dots += '.'
+            }
+            $validBtn.html('驗證中' + dots)
+            waitCount++
+          }, 500)
+
+          $.ajax({
+            url: rootPath() + '/api/license/validate?code=' + code,
+            type: 'GET',
+          })
+            .done(function (response) {
+              if (response) {
+                switch (response.type) {
+                  case 0:
+                    $('#message')
+                      .removeClass('red')
+                      .addClass('green')
+                      .find('p')
+                      .html(
+                        '啟動成功！</br>前往<a href="' +
+                          rootPath() +
+                          '/login.html">登入頁面</a>！'
+                      )
+                    startJump()
+                    break
+                  case 1:
+                  default:
+                    $('#message')
+                      .removeClass('green')
+                      .addClass('red')
+                      .find('p')
+                      .html('啟動失敗: ' + response.data)
+                    break
+                }
+              }
+            })
+            .always(function (response) {
+              clearInterval(intervalId)
+
+              if (response) {
+                if (response.type !== 0) {
+                  $validCode.attr('disabled', false)
+                  $validCode.focus()
+                  $validBtn.attr('disabled', false)
+                  $validBtn.html('啟動')
+                } else {
+                  $validBtn.html('成功')
+                }
+              } else {
+                $validCode.attr('disabled', false)
+                $validBtn.attr('disabled', false)
+                $validBtn.html('啟動')
+              }
+            })
+        } else {
+          validateCodeBling()
+        }
+      })
+
+      $(window).on('keyup', function (evt) {
+        // enter
+        if (evt.which === 13) {
+          $('#valid-btn').trigger('click')
+        }
+      })
+    </script>
+  </body>
+</html>
