@@ -74,20 +74,21 @@ public class YihChengWorkQualityController {
                 }
                 String sql = sb.toString();
                 System.out.println(sql);
-                Map<String,String> opQualitySpContainer = new HashMap<String, String>();
+//                Map<String,String> opQualitySpContainer = new HashMap<String, String>();
 
-                List<Map> pResult = Product.findAll().toMaps();
-                for(Map data : pResult) {
-                    String pdId = data.get("product_id").toString();
-                    String productQualitySp = data.get("product_quality_sp").toString();
-                    opQualitySpContainer.put(pdId, productQualitySp);
-                }
+//                List<Map> pResult = Product.findAll().toMaps();
+//                for(Map data : pResult) {
+//                    String pdId = data.get("product_id").toString();
+//                    String productQualitySp = data.get("product_quality_sp").toString();
+//                    opQualitySpContainer.put(pdId, productQualitySp);
+//                }
 
                 List<Map> result = TrackingDetailView.findBySQL(sql).toMaps();
                 for (Map data : result ){
                     String pdId = data.get("product_id").toString();
                     String shiftDateStr = data.get("shift_day").toString();
-                    String productQualitySp = opQualitySpContainer.get(pdId).toString();
+//                    String productQualitySp = opQualitySpContainer.get(pdId).toString();
+                    String productQualitySp = Product.findFirst("product_id = ?", pdId).getString("product_quality_sp");
                     data.put("shift_day", shiftDateStr);
                     data.put("product_quality_sp", productQualitySp);
 
@@ -97,10 +98,10 @@ public class YihChengWorkQualityController {
                     String op = data.get("op").toString();
                     String lineId = data.get("line_id").toString();
                     String moveIn = data.get("move_in").toString();
-                    Map<String, String> toolMoldEmpInfo = getToolMoldEmployee(moveIn, lineId, data.get("work_id").toString(), op);
-                    String toolId = toolMoldEmpInfo.get("toolId");
-                    String moldId = toolMoldEmpInfo.get("moldId");
-                    String employeeName = toolMoldEmpInfo.get("employeeName");
+                    Map<String, Object> toolMoldEmpInfo = getToolMoldEmployee(moveIn, lineId, data.get("work_id").toString(), op);
+                    Object toolId = toolMoldEmpInfo.get("toolId");
+                    Object moldId = toolMoldEmpInfo.get("moldId");
+                    Object employeeName = toolMoldEmpInfo.get("employeeName");
                     data.put("shift", shift);
                     data.put("lot_purpose", lot_purpose);
                     data.put("tool_id", toolId);

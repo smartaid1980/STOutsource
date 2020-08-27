@@ -32,6 +32,7 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import static com.servtech.servcloud.core.util.RequestResult.fail;
 import static com.servtech.servcloud.core.util.RequestResult.success;
@@ -213,46 +214,68 @@ public class YihChengExcelController {
         Work work = Work.findFirst("work_id = ?", work_id);
         if (work != null) {
 
+            CellStyle style = wb.createCellStyle();
+            Font font = wb.createFont();
+            font.setFontName("Calibri");
+            font.setFontHeightInPoints((short)10);
+            style.setWrapText(true);
+            style.setFont(font);
+
             for (int currentSheetIdx = 0; currentSheetIdx < total_page; currentSheetIdx++) {
                 System.out.println("currentSheetIdx :" + currentSheetIdx);
                 Sheet sheet = wb.getSheetAt(currentSheetIdx);
 
-
                 QRcodeService.create(wb, sheet, 0, 5, work_id);
-
                 Row oneTimeRow8 = sheet.getRow(7);
+                oneTimeRow8.setRowStyle(style);
                 String now = new SimpleDateFormat("yyyy/MM/dd HH:MM").format(new Date());
-
                 oneTimeRow8.getCell(6).setCellValue(now);//製表日
-                oneTimeRow8.getCell(30).setCellValue(SysUser.findById(user_id).getString("user_name"));//製表者
+                oneTimeRow8.getCell(29).setCellValue(SysUser.findById(user_id) == null ? null : SysUser.findById(user_id).getString("user_name"));//製表者
                 oneTimeRow8.getCell(37).setCellValue(currentSheetIdx + 1 + "/" + total_page);//頁次
 
                 Row oneTimeRow10 = sheet.getRow(9);
+                oneTimeRow10.setRowStyle(style);
                 oneTimeRow10.getCell(8).setCellValue(work_id);//工單號碼
-                oneTimeRow10.getCell(32).setCellValue(SysUser.findById(user_id).getString("user_name"));//部門廠商
+                oneTimeRow10.getCell(32).setCellValue(work.getString("dept_name"));//部門廠商
 
                 Row oneTimeRow11 = sheet.getRow(10);
+                oneTimeRow11.setRowStyle(style);
                 oneTimeRow11.getCell(8).setCellValue(work.getString("product_id"));//產品編號
                 oneTimeRow11.getCell(32).setCellValue(work.getString("po"));//訂單單號
 
                 Row oneTimeRow12 = sheet.getRow(11);
+                oneTimeRow12.setRowStyle(style);
                 oneTimeRow12.getCell(8).setCellValue(work.getString("product_name"));//品名
                 oneTimeRow12.getCell(32).setCellValue(work.getString("exp_start_date"));//預計開工日
 
                 Row oneTimeRow13 = sheet.getRow(12);
-                oneTimeRow13.getCell(8).setCellValue(work.getString("product_desc"));//規格
+                oneTimeRow13.setRowStyle(style);
+                String product_desc = work.getString("product_desc");
+                oneTimeRow13.getCell(8).setCellValue(product_desc);//規格
+//                Map<String, Object> strInfo = getLength(product_desc, 53);
+//                if(strInfo.get("index") != null){
+//                    oneTimeRow13.getCell(8).setCellValue(product_desc.substring(0,(int)strInfo.get("index")));//規格
+//                    Row oneTimeRow14 = sheet.getRow(13);
+//                    oneTimeRow14.getCell(22).setCellValue(product_desc.substring((int)strInfo.get("index")));
+//                }else {
+//                    oneTimeRow13.getCell(8).setCellValue(product_desc);//規格
+//                }
+
                 oneTimeRow13.getCell(32).setCellValue(work.getString("exp_end_date"));//預計完工日
 
                 Row oneTimeRow14 = sheet.getRow(13);
+                oneTimeRow14.setRowStyle(style);
                 oneTimeRow14.getCell(8).setCellValue(work.getString("product_process"));//製程編號:
                 oneTimeRow14.getCell(32).setCellValue(work.getString("work_date"));//開單日期:
 
                 Row oneTimeRow15 = sheet.getRow(14);
+                oneTimeRow15.setRowStyle(style);
                 oneTimeRow15.getCell(8).setCellValue(work.getString("work_class"));//工單型態:
                 oneTimeRow15.getCell(11).setCellValue(work.getString("work_class_name"));//工單型態:
                 oneTimeRow15.getCell(32).setCellValue(work.getString("unit"));//生產單位:
 
                 Row oneTimeRow16 = sheet.getRow(15);
+                oneTimeRow16.setRowStyle(style);
                 oneTimeRow16.getCell(8).setCellValue(work.getString("edn"));//工程圖號:
                 oneTimeRow16.getCell(32).setCellValue(work.getString("customer_id"));//客戶代號:
 
@@ -265,18 +288,20 @@ public class YihChengExcelController {
                     Map work_op = work_op_list.get(hasWriteCount);
                     op_first_row += add_row;
                     Row oneTimeRow22 = sheet.getRow(op_first_row);
+                    oneTimeRow22.setRowStyle(style);
                     String op = String.format("%04d", Integer.valueOf(work_op.get("op").toString()));
                     oneTimeRow22.getCell(2).setCellValue(op); //製序(OP) 要補到4位數
                     oneTimeRow22.getCell(10).setCellValue(work_op.get("process_code").toString());//製程說明
-                    QRcodeService.create(wb, sheet, op_first_row, 13, work_id + "-" + op);
+                    QRcodeService.create(wb, sheet, op_first_row + 1, 13, work_id + "-" + op);
                     oneTimeRow22.getCell(22).setCellValue(work_op.get("date_start_exp").toString());//預計開工日
-                    oneTimeRow22.getCell(24).setCellValue(Double.valueOf(work_op.get("output_exp").toString()));//標準產出量
-                    oneTimeRow22.getCell(28).setCellValue(Double.valueOf(work_op.get("qty_input_exp").toString()));//良品轉入量
+                    oneTimeRow22.getCell(24).setCellValue(Double.valueOf(work_op.get("output_exp") == null ? "0.0" : work_op.get("output_exp").toString()));//標準產出量
+                    oneTimeRow22.getCell(28).setCellValue(Double.valueOf(work_op.get("qty_input_exp") == null ? "0.0" : work_op.get("qty_input_exp").toString()));//良品轉入量
 
                     Row oneTimeRow23 = sheet.getRow(op_first_row + 1);
+                    oneTimeRow23.setRowStyle(style);
                     oneTimeRow23.getCell(2).setCellValue(work_op.get("division_desc").toString()); //工作中心說明
-                    oneTimeRow23.getCell(18).setCellValue(work_op.get("yc_machine_id").toString());//機器編號
-                    oneTimeRow23.getCell(22).setCellValue(work_op.get("date_end_exp").toString());//預計完工日
+                    oneTimeRow23.getCell(18).setCellValue(work_op.get("yc_machine_id") == null ? null : work_op.get("yc_machine_id").toString());//機器編號
+                    oneTimeRow23.getCell(22).setCellValue(work_op.get("date_end_exp") == null ? null : work_op.get("date_end_exp").toString());//預計完工日
                     oneTimeRow23.getCell(24).setCellValue(Double.valueOf(work_op.get("qty_wip").toString()));//在製餘量
                     oneTimeRow23.getCell(28).setCellValue(Double.valueOf(work_op.get("qty_output_exp").toString()));//良品轉出量
                     hasWriteCount++;
@@ -292,6 +317,26 @@ public class YihChengExcelController {
                 }   //寫8筆工序了，準備換新分頁
             }
         }
+    }
+
+    public static Map<String, Object> getLength(String value, int Max) {
+        Map<String, Object> result = new HashMap<>();
+        int valueLength = 0;
+        String pattern = "[\\u4E00-\\u9FA5]+";
+        for (int i = 0; i < value.length(); i++) {
+            String temp = value.substring(i, i + 1);
+            if (Pattern.matches(pattern, temp)) {
+                valueLength += 2;
+            } else {
+                valueLength += 1;
+            }
+            if(result.get("index") == null && (valueLength >= Max)){
+                result.put("index", i + 1);
+            }
+        }
+        System.out.println(value.substring((int)result.get("index")));
+        result.put("length", valueLength);
+        return result;
     }
 
     static void addSheet(Workbook wb, int datas) {
@@ -317,6 +362,7 @@ public class YihChengExcelController {
         static {
             hints = new Hashtable();
             hints.put(EncodeHintType.CHARACTER_SET, ENCODE);
+            hints.put(EncodeHintType.MARGIN, 0);
         }
 
 
@@ -346,7 +392,7 @@ public class YihChengExcelController {
                     anchor.setRow1(row);
                     Drawing drawing = sheet.createDrawingPatriarch();
                     Picture picture = drawing.createPicture(anchor, pictureIdx);
-                    picture.resize(6.0, 4.0);
+                    picture.resize(4, 3);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

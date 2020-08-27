@@ -69,6 +69,7 @@ public class YihChengSplitBatchController {
                     new_work.fromMap(ori_work_map);
                     new_work.set("work_id", new_work_id);
                     new_work.set("e_quantity", new_work_qty);
+                    new_work.set("op_start", op);
                     new_work.set("status_id", 0);
                     new_work.set("lot_purpose", lot_purpose);
                     new_work.set("parent_id", work.getString("parent_id") == null ? work_id : work.getString("parent_id") + "|" + work_id);
@@ -183,6 +184,10 @@ public class YihChengSplitBatchController {
                 new_work.fromMap(ori_work_map);
                 new_work.set("work_id", new_local_work_id);
                 new_work.set("e_quantity", new_work_qty);
+//                new_work.set("input", new_work_qty);
+                if(op != null && !op.equals("")){
+                    new_work.set("op_start", getOpStart(work_id, op, lot_purpose));
+                }
                 new_work.set("status_id", 0);
                 new_work.set("remark", remark);
                 new_work.set("lot_purpose", lot_purpose);
@@ -240,6 +245,14 @@ public class YihChengSplitBatchController {
             e.printStackTrace();
             Base.rollbackTransaction();
             return fail(e.getMessage());
+        }
+    }
+
+    private Object getOpStart(String work_id , String op, int lot_purpose) {
+        if(lot_purpose == 4){
+            return WorkOp.findFirst("work_id = ? and op > ? order by op", work_id, op).getString("op");
+        }else {
+            return op;
         }
     }
 

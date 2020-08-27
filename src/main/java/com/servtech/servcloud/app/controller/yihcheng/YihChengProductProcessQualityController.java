@@ -10,6 +10,8 @@ import com.servtech.servcloud.app.model.yihcheng.WorkTrackingTool;
 import com.servtech.servcloud.core.db.ActiveJdbc;
 import com.servtech.servcloud.core.db.Operation;
 import com.servtech.servcloud.core.util.RequestResult;
+import org.javalite.activejdbc.Base;
+import org.javalite.activejdbc.RowProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -72,17 +74,17 @@ public class YihChengProductProcessQualityController {
                     String pdName = data.get("product_name").toString();
                     String moveIn = data.get("move_in").toString();
                     String moveOut = data.get("move_out").toString();
-                    Map<String, String> toolMoldEmpInfo = getToolMoldEmployee(moveIn, lineId, workId, op);
-                    String toolId = toolMoldEmpInfo.get("toolId");
-                    String moldId = toolMoldEmpInfo.get("moldId");
-                    String employeeName = toolMoldEmpInfo.get("employeeName");
+                    Map<String, Object> toolMoldEmpInfo = getToolMoldEmployee(moveIn, lineId, workId, op);
+                    Object toolId = toolMoldEmpInfo.get("toolId");
+                    Object moldId = toolMoldEmpInfo.get("moldId");
+                    Object employeeName = toolMoldEmpInfo.get("employeeName");
                     String output = data.get("output").toString();
                     String goQuantity = data.get("go_quantity").toString();
                     String ngQuantity = data.get("ng_quantity").toString();
                     String quality = data.get("quality").toString();
                     String opQualitySp = data.get("op_quality_sp") == null ? null : data.get("op_quality_sp").toString();
 
-                    Map<String, String> mData = new HashMap<String, String>();
+                    Map<String, Object> mData = new HashMap<>();
                     mData.put("op", op);
                     mData.put("process_name", processName);
                     mData.put("shift_day", shiftDateStr);
@@ -108,20 +110,39 @@ public class YihChengProductProcessQualityController {
         });
     }
 
-    static Map<String, String> getToolMoldEmployee(String moveIn, String lineId, String workId, String op) {
-        Map<String, String> result = new HashMap<>();
-        WorkTrackingTool workTrackingTool = WorkTrackingTool.findFirst("move_in = ? and line_id = ? and work_id = ? and op = ?",moveIn, lineId, workId, op);
-        String toolId = workTrackingTool == null ? null : workTrackingTool.getString("tool_id");
+    static Map<String, Object> getToolMoldEmployee(String moveIn, String lineId, String workId, String op) {
+        Map<String, Object> result = new HashMap<>();
+        List<Map> workTrackingTool = WorkTrackingTool.find("move_in = ? and line_id = ? and work_id = ? and op = ?",moveIn, lineId, workId, op).toMaps();
 
-        WorkTrackingMold workTrackingMold = WorkTrackingMold.findFirst("move_in = ? and line_id = ? and work_id = ? and op = ?",moveIn, lineId, workId, op);
-        String moldId = workTrackingMold == null ? null : workTrackingMold.getString("mold_id");
+        List<Map> workTrackingMold = WorkTrackingMold.find("move_in = ? and line_id = ? and work_id = ? and op = ?",moveIn, lineId, workId, op).toMaps();
 
-        WorkTrackingEmployee workTrackingEmployee = WorkTrackingEmployee.findFirst("move_in = ? and line_id = ? and work_id = ? and op = ?",moveIn, lineId, workId, op);
-        String employeeName = workTrackingEmployee == null ? null : Employee.findById(workTrackingEmployee.getString("employee_id")).getString("emp_name");
+        List<Map> workTrackingEmployee = WorkTrackingEmployee.find("move_in = ? and line_id = ? and work_id = ? and op = ?",moveIn, lineId, workId, op).toMaps();
 
-        result.put("toolId",toolId);
-        result.put("moldId",moldId);
-        result.put("employeeName",employeeName);
+        result.put("toolId", listObjToListString(workTrackingTool, "tool_id"));
+        result.put("moldId",listObjToListString(workTrackingMold, "mold_id"));
+        result.put("employeeName",listEmpToListEmpName(workTrackingEmployee));
+        return result;
+    }
+
+    private static Object listEmpToListEmpName(List<Map> list) {
+        if(list == null || list.size() == 0)
+            return null;
+
+        List<String> result = new ArrayList<>();
+        list.forEach(map -> {
+            result.add(Employee.findById(map.get("employee_id").toString()).getString("emp_name"));
+        });
+        return result;
+    }
+
+    private static Object listObjToListString(List<Map> list, String key) {
+        if(list == null || list.size() == 0)
+            return null;
+
+        List<String> result = new ArrayList<>();
+        list.forEach(map -> {
+            result.add(map.get(key).toString());
+        });
         return result;
     }
 }

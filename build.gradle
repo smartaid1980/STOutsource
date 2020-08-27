@@ -314,6 +314,7 @@ task unzipWarToTomcat(type: Copy, dependsOn: 'clearAppInTomcat') {
     from zipTree(servcloudWarFile)
     into tomcatWebappsDir
 }
+
 unzipWarToTomcat << {
     if (!release) {
         def date = new Date().format('yyyy-MM-dd')

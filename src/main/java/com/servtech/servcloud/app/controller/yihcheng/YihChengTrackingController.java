@@ -81,6 +81,7 @@ public class YihChengTrackingController {
 
                     InvalidLineStatusLog newInvalidLineStatusLog = new InvalidLineStatusLog();
                     newInvalidLineStatusLog.fromMap(data);
+                    newInvalidLineStatusLog.set("move_in", invalidLineStatusLog.getString("move_in"));
                     newInvalidLineStatusLog.set("work_id", invalidLineStatusLog.getString("work_id"));
                     newInvalidLineStatusLog.set("op", invalidLineStatusLog.getString("op"));
                     newInvalidLineStatusLog.insert();

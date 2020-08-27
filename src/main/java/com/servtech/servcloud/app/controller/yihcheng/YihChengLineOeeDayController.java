@@ -67,10 +67,10 @@ public class YihChengLineOeeDayController {
                     String op = data.get("op").toString();
                     String lineId = data.get("line_id").toString();
                     String moveIn = data.get("move_in").toString();
-                    Map<String, String> toolMoldEmpInfo = getToolMoldEmployee(moveIn, lineId, data.get("work_id").toString(), op);
-                    String toolId = toolMoldEmpInfo.get("toolId");
-                    String moldId = toolMoldEmpInfo.get("moldId");
-                    String employeeName = toolMoldEmpInfo.get("employeeName");
+                    Map<String, Object> toolMoldEmpInfo = getToolMoldEmployee(moveIn, lineId, data.get("work_id").toString(), op);
+                    Object toolId = toolMoldEmpInfo.get("toolId");
+                    Object moldId = toolMoldEmpInfo.get("moldId");
+                    Object employeeName = toolMoldEmpInfo.get("employeeName");
                     data.put("shift", shift);
                     data.put("lot_purpose", lot_purpose);
                     data.put("tool_id", toolId);
