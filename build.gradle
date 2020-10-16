@@ -81,7 +81,7 @@ repositories {
     mavenLocal()
     // 架在我們家哦
     maven {
-        url "http://192.168.130.115:8081/artifactory/servtechCentral"
+      url "http://203.74.121.111:58081/artifactory/servtechCentral"
     }
 }
 //for coding

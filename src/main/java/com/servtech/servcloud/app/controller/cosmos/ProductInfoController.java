@@ -2,6 +2,7 @@ package com.servtech.servcloud.app.controller.cosmos;
 
 import com.servtech.servcloud.app.model.cosmos.Product;
 import com.servtech.servcloud.app.model.cosmos.ProgramProduction;
+import com.servtech.servcloud.app.model.cosmos.ProgramProductionByShift;
 import com.servtech.servcloud.core.db.ActiveJdbc;
 import com.servtech.servcloud.core.db.Operation;
 import com.servtech.servcloud.core.filter.AuthFilter;
@@ -146,6 +147,7 @@ public class ProductInfoController {
                             data.get("part_id").toString() + "|" +
                             data.get("std_hours").toString() + "|" +
                             data.get("ng_quantity").toString();
+
                     Product product = new Product();
                     product.fromMap(data);
 
@@ -161,6 +163,7 @@ public class ProductInfoController {
             return fail(e.getMessage());
         }
     }
+
 
     @RequestMapping(value = "/insertUpdatePgProduction", method = RequestMethod.POST)
     public RequestResult<?> insertUpdatePgProduction(@RequestBody final Map data) {
@@ -178,6 +181,7 @@ public class ProductInfoController {
         Double doubleCycleTime = Double.valueOf(data.get("cycle_time").toString());
         String cycleTime = String.valueOf(doubleCycleTime * 1000);
         String ngQty = data.get("ng_quantity").toString();
+
         try {
             return ActiveJdbc.operTx(new Operation<RequestResult<?>>() {
                 @Override
@@ -213,7 +217,7 @@ public class ProductInfoController {
                             partNo + "|" +
                             cycleTime + "|" +
                             ngQty + "|" +
-                            userName;
+                               userName;
 
                     String querySql = "SELECT * FROM a_cosmos_program_production where " +
                             "date = '" + date + "' AND " +
@@ -229,6 +233,7 @@ public class ProductInfoController {
                     ProgramProduction programProduction = new ProgramProduction();
                     if (queryProgProduction.size() > 0) {
                         data.put("cycle_time" ,cycleTime);
+                        // 已存在修改
                         data.put("modify_by", userName);
                         data.put("modify_time", new Timestamp(System.currentTimeMillis()));
                         programProduction.fromMap(data);
@@ -240,6 +245,8 @@ public class ProductInfoController {
                         }
                     } else {
                         data.put("cycle_time" ,cycleTime);
+                        // 不存在加入
+
                         data.put("create_by", userName);
                         data.put("create_time", new Timestamp(System.currentTimeMillis()));
                         data.put("modify_by", userName);
@@ -259,6 +266,119 @@ public class ProductInfoController {
             return fail(e.getMessage());
         }
     }
+
+
+
+    @RequestMapping(value = "/insertUpdatePgProductionByShift", method = RequestMethod.POST)
+    public RequestResult<?> insertUpdatePgProductionByShift(@RequestBody final Map data) {
+        String date = data.get("date").toString();
+        String machineId = data.get("machine_id").toString();
+        String workShift = data.get("work_shift").toString();
+
+        String operatorId = data.get("operator_id").toString();
+        String orderNo = data.get("order_no").toString();
+        String partNo = data.get("part_no").toString();
+
+        String dbOperatorId = data.get("db_operator_id").toString();
+        String dbOrderNo = data.get("db_order_no").toString();
+        String dbPartNo = data.get("db_part_no").toString();
+        Double doubleCycleTime = Double.valueOf(data.get("cycle_time").toString());
+        String cycleTime = String.valueOf(doubleCycleTime * 1000);
+        String ngQty = data.get("ng_quantity").toString();
+
+        // 為了相容原來少2個參數的版本,用預設值
+        String actOutput =  data.getOrDefault("actual_output","0").toString();
+       // String operEff = data.getOrDefault("operator_eff","0").toString();
+
+        try {
+            return ActiveJdbc.operTx(new Operation<RequestResult<?>>() {
+                @Override
+                public RequestResult<?> operate() {
+                    String userName = (String) request.getSession().getAttribute(AuthFilter.SESSION_LOGIN_KEY);
+
+                    String insertLog = "INSERT" + "|" +
+                            date + "|" +
+                            machineId + "|" +
+                            workShift + "|" +
+                            dbOperatorId + "|" +
+                            dbOrderNo + "|" +
+                            dbPartNo + "|" +
+                            operatorId + "|" +
+                            orderNo + "|" +
+                            partNo + "|" +
+                            cycleTime + "|" +
+                            ngQty + "|" +
+                            actOutput +"|" +
+                            //operEff + "|"+
+                            userName;
+
+
+                    String updateLog = "UPDATE" + "|" +
+                            date + "|" +
+                            machineId + "|" +
+                            workShift + "|" +
+                            dbOperatorId + "|" +
+                            dbOrderNo + "|" +
+                            dbPartNo + "|" +
+                            operatorId + "|" +
+                            orderNo + "|" +
+                            partNo + "|" +
+                            cycleTime + "|" +
+                            ngQty + "|" +
+                            actOutput +"|" +
+                            //operEff + "|"+
+                            userName;
+
+                    String querySql = "SELECT * FROM a_cosmos_program_production_by_shift where " +
+                            "date = '" + date + "' AND " +
+                            "machine_id = '" + machineId + "' AND " +
+                            "work_shift = '" + workShift + "' AND " +
+                            "operator_id = '" + operatorId + "' AND " +
+                            "order_no = '" + orderNo + "' AND " +
+                            "part_no = '" + partNo + "';";
+
+                    List<Map> queryProgProduction = ProgramProductionByShift.findBySQL(querySql).toMaps();
+
+                    ProgramProductionByShift programProduction = new ProgramProductionByShift();
+                    if (queryProgProduction.size() > 0) {
+                        data.put("cycle_time" ,cycleTime);
+                        // 已存在修改
+                        data.put("actual_output",actOutput);
+                       // data.put("operator_eff",operEff);
+                        data.put("modify_by", userName);
+                        data.put("modify_time", new Timestamp(System.currentTimeMillis()));
+                        programProduction.fromMap(data);
+                        if (programProduction.saveIt()) {
+                            LOG.info(updateLog);
+                            return success("update success");
+                        } else {
+                            return fail("update fail...");
+                        }
+                    } else {
+                        data.put("cycle_time" ,cycleTime);
+                        // 不存在加入
+                        data.put("actual_output",actOutput);
+                      //  data.put("operator_eff",operEff);
+                        data.put("create_by", userName);
+                        data.put("create_time", new Timestamp(System.currentTimeMillis()));
+                        data.put("modify_by", userName);
+                        data.put("modify_time", new Timestamp(System.currentTimeMillis()));
+                        programProduction.fromMap(data);
+                        if (programProduction.insert()) {
+                            LOG.info(insertLog);
+                            return success("insert success");
+                        } else {
+                            return fail("insert fail...");
+                        }
+                    }
+                }
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+            return fail(e.getMessage());
+        }
+    }
+
 
     public static String strSplitBy(String splitter, List<String> list) {
         String sep = "";

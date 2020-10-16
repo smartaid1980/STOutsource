@@ -174,7 +174,7 @@ i18n_ServCloud_Product_Code	產品編號	产品编号	Product Code
 i18n_ServCloud_Work_Order_Opening_Day	工單開立日	工单开立日	Work order opening day
 i18n_ServCloud_Work_Order_Completion_Date	工單完成日	工单完成日	Work order completion date
 i18n_ServCloud_Number_Of_Single_Workers	工單數量	工单数量	Number of single workers
-i18n_ServCloud_Actual_Output	實際產出	实际产出	Actual output
+i18n_ServCloud_Actual_Output2	實際產出	实际产出	Actual output
 i18n_ServCloud_Yield_Difference	產量差異	产量差异	Yield difference
 i18n_ServCloud_Degree_Of_Completion	完成度	完成度	Degree of completion
 i18n_ServCloud_Order_Close	工單結案	工单结案	Order Close
@@ -185,3 +185,8 @@ i18n_ServCloud_Cancel	取消	取消	cancel
 i18n_ServCloud_Confirm	確認	确认	confirm
 i18n_ServCloud_Product_Name	產品名稱	产品名称	product name
 i18n_ServCloud_Order_No	單號	单号	Order No.
+i18n_ServCloud_Actual_Output3	實際產出	实际产出	Actual Output
+i18n_ServCloud_Operator_Efficency	作業效率	作业效率	Operator Efficency
+i18n_ServCloud_Idle_Code	閒置代碼	闲置代码	Downtime Code
+i18n_ServCloud_Idle_Code_Name	閒置代碼名稱	闲置代码名称	Downtime Name
+
