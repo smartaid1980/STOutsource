@@ -9,6 +9,41 @@ export default function () {
       context.initMacroRecordTable()
       // 定期更新機台按鈕
       context.refreshMacroRecord()
+
+      //context.preCon.subscribeDeviceStatus()
+
+
+      // 訂閱機台狀態
+      servkit.subscribe('DeviceStatus', {
+        machines: context.preCon.getBoxList,
+        handler: function (data) {
+          _.each(data, function (elem, index) {
+            elem.eachMachine('G_CONS()', function (multisystem, machineId) {
+              var status = multisystem[0][0]
+
+              context.selectedMachineId = machineId
+
+              var needInsert = false
+              if(status == '11') {
+                if (context.latestMachineStatus[machineId] == null || 
+                    context.latestMachineStatus[machineId] != '11') {
+                    
+                      needInsert = true
+
+                }
+              }
+              context.latestMachineStatus[machineId] = status
+
+              if(needInsert) {
+                context.insertMacroRecord('999')
+              }
+          })
+        })
+      }
+    })
+
+
+
     },
     util: {
       loginInfo: JSON.parse(sessionStorage.getItem('loginInfo')),
@@ -29,6 +64,7 @@ export default function () {
       selectedMachineId: null,
       dateTimeFormat: 'YYYY/MM/DD HH:mm:ss',
       latestWorkMacroMap: {},
+      latestMachineStatus: {},
       getFormatTime(timeStr, outputType) {
         const context = this
         const viewFormat = context.dateTimeFormat
@@ -531,6 +567,7 @@ export default function () {
     },
     delayCondition: ['machineList'],
     preCondition: {
+       
       machineByGroup(done) {
         //{machineId1: machineName1, ...}
         this.commons.getMachineByGroup(done)

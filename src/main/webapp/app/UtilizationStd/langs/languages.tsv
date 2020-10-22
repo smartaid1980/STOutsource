@@ -108,6 +108,7 @@ i18n_ServCloud_Feed_Rate_State_Diagram	進給率百分比狀態圖	进给率百�
 i18n_ServCloud_Actual_Output	良品數	良品数	Qualified Qty
 i18n_ServCloud_10_DailUtilization_Cosmos	10 日稼動率報表	10 日稼动率报表	01 Daily Utilization
 i18n_ServCloud_30_Product_Information	30 產品資訊	30 产品资讯	30 Product Information
+i18n_ServCloud_31_Product_Information_By_Shift	31 產品資訊(班次)	31 产品资讯(班次)	31 Product Information(By Shift) 
 i18n_ServCloud_Max_Value_50	長度不可超過50	长度不可超过50	Please enter a value less than 50
 i18n_ServCloud_Required	不可為空	不可为空	This field is required.
 i18n_ServCloud_Max_Value_10	長度不可超過10	长度不可超过10	Please enter a value less than 10

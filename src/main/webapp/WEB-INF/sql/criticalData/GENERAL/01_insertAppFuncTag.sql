@@ -617,6 +617,7 @@ INSERT INTO `m_sys_func` (`func_id`,`app_id`,`func_name`,`hash`) VALUES
  ('30_product_information','UtilizationStd','i18n_ServCloud_30_Product_Information','null'),
  ('30_daily_production_info_cosmos','UtilizationStd','i18n_ServCloud_30_Daily_Product_Info','none'),
  ('30_edit_ng_quantity_by_cosmos','UtilizationStd','i18n_ServCloud_30_Edit_Quality_Cosmos','null'),
+ ('31_shift_production_info_cosmos','UtilizationStd','i18n_ServCloud_31_Product_Information_By_Shift','null'),
  ('40_customer_manage','UtilizationStd','i18n_ServCloud_40_Customer_Management','949eab4c-a0af-4f82-8a56-0b69d5c1534c'),
  ('40_edit_idle_by_cosmos','UtilizationStd','i18n_ServCloud_40_Edit_Idle_Cosmos','null'),
  ('50_product_manage','UtilizationStd','i18n_ServCloud_50_Product_Management','38d0e7ea-f912-499a-8e8d-5dfa72e7081c'),
