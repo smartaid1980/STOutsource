@@ -658,9 +658,9 @@ export default async function () {
                   var hh = 0
                   var mm = 0
                   var ss = 0
-                  if (items.length > 0) ss = parseInt(items[0])
+                  if (items.length > 0) hh = parseInt(items[0])
                   if (items.length > 1) mm = parseInt(items[1])
-                  if (items.length > 2) hh = parseInt(items[2])
+                  if (items.length > 2) ss = parseInt(items[2])
 
                   var operSecs = hh * 60 * 60 + mm * 60 + ss
 
@@ -956,8 +956,20 @@ export default async function () {
                         : queryProgProduction[key].actual_output
 
                     // 因為CYCLE TIME 單位為MS
+                    // 避免和其它區(用時間字串計算的有差異)
+                    var operText1 = timeData.operate_millisecond.millisecondToHHmmss()
+                    var items1 = operText1.split(':')
+                    var hh1 = 0
+                    var mm1 = 0
+                    var ss1 = 0
+                    if (items1.length > 0) hh1 = parseInt(items1[0])
+                    if (items1.length > 1) mm1 = parseInt(items1[1])
+                    if (items1.length > 2) ss1 = parseInt(items1[2])
+  
+                    var operSecs1 = hh1 * 60 * 60 + mm1 * 60 + ss1
+
                     var oper_fee =
-                      (actOut * cycleTime ) / timeData.operate_millisecond
+                      (actOut * cycleTime ) / (operSecs1 * 1000)
 
                     var hippoOperatorId = timeData.operator_id
                     var hippoOrderNo = timeData.order_no
@@ -992,11 +1004,13 @@ export default async function () {
                       //lastItem.down_time_m2 = timeData.down_time_m2
                       //lastItem.down_time_m3 = timeData.down_time_m3
                       lastItem.downTime = downTime
+                      lastItem.cycleTime = cycleTime
 
                       lastItem.part_count = parseInt(timeData.part_count)
                       lastItem.ngQty = parseInt(ngQty)
                       lastItem.actOut = parseInt(actOut)
                       lastItem.oper_fee = oper_fee
+                     
 
                       lastItem.capacityUtilization =
                         ctx.commons.getDenominator(timeData) == 0
@@ -1032,10 +1046,21 @@ export default async function () {
                       lastItem.ngQty += parseInt(ngQty)
                       lastItem.actOut += parseInt(actOut)
 
+                      var operText2 = lastItem.operate_millisecond.millisecondToHHmmss()
+                      var items2 = operText2.split(':')
+                      var hh2 = 0
+                      var mm2 = 0
+                      var ss2 = 0
+                      if (items2.length > 0) hh2 = parseInt(items2[0])
+                      if (items2.length > 1) mm2 = parseInt(items2[1])
+                      if (items2.length > 2) ss2 = parseInt(items2[2])
+    
+                      var operSecs2 = hh2 * 60 * 60 + mm2 * 60 + ss2
+
                       // 因為CYCLE TIME 已在TIME DATA中乘上1000
                       lastItem.oper_fee =
-                        (lastItem.actOut * cycleTime ) /
-                        lastItem.operate_millisecond
+                        (lastItem.actOut * lastItem.cycleTime ) /
+                        (operSecs2*1000)
 
                       lastItem.capacityUtilization =
                         ctx.commons.getDenominator(lastItem) == 0
@@ -1149,7 +1174,28 @@ export default async function () {
                               ctx.commons.getDenominator(lastItem)
                             ).floatToPercentage()
 
+                      var operText3 = lastItem.operate_millisecond.millisecondToHHmmss()
+                      var items3 = operText3.split(':')
+                      var hh3 = 0
+                      var mm3 = 0
+                      var ss3 = 0
+                      if (items3.length > 0) hh3 = parseInt(items3[0])
+                      if (items3.length > 1) mm3 = parseInt(items3[1])
+                      if (items3.length > 2) ss3 = parseInt(items3[2])      
+                      var operSecs3 = hh3 * 60 * 60 + mm3 * 60 + ss3
+
+                      lastItem.oper_fee =
+                           (lastItem.actOut * lastItem.cycleTime ) /
+                           (operSecs3*1000)
+
                       last[17] = lastItem.oper_fee.floatToPercentage()
+
+                      let marckMap = ctx.preCon.getMacro
+                      let curMIdx = 18
+                      for (let key in marckMap) {
+                        last[curMIdx] = downTime[key].millisecondToHHmmss()
+                        ++curMIdx
+                      }
 
                       last[
                         ctx.capIndex
